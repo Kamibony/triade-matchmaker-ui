@@ -1,0 +1,123 @@
+[
+  {
+    "nome": "Cunha - Coletivo Feminista",
+    "foco": "Direitos das mulheres, formação política, enfrentamento à violência doméstica, juventude e agroecologia.",
+    "matches": []
+  },
+  {
+    "nome": "Bamidelê - Organização de Mulheres Negras",
+    "foco": "Direitos das mulheres negras, combate ao racismo e intolerância religiosa.",
+    "matches": [
+      {
+        "edital": "Edital - Rede Memória Viva - Iniciativa Viva Pequena África",
+        "expiracao": "2026-10-30",
+        "score": 2,
+        "link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/BTqD7Nkp1z9mAC08XLMpVYeAmsgJOSV6hHlSmmjL_TsVRy6XrRy_Ee_9ArelIafd/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/980/334/original/Edital_Rede_Memoria_Viva.docx.pdf"
+      }
+    ]
+  },
+  {
+    "nome": "Centro da Mulher 8 de Março (CM8M)",
+    "foco": "Enfrentamento à violência contra a mulher, autonomia econômica.",
+    "matches": []
+  },
+  {
+    "nome": "Associação das Prostitutas da Paraíba",
+    "foco": "Direitos humanos, saúde integral, ISTS/HIV, geração de renda.",
+    "matches": [
+      {
+        "edital": "Catalisar 2026 - FCCSA",
+        "expiracao": "Não informado",
+        "score": 3,
+        "link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/GPX1Qhp4YW04M1WaBv1QzieH6lmGO0zDR4Ay7bWEZoQBtNVxA4yF6_j1HqIL3WoR/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/003/993/original/Edital_Catalisar_2026_Nova_marca.pdf"
+      }
+    ]
+  },
+  {
+    "nome": "Associação de Mulheres Acilina Candeia",
+    "foco": "Corte e costura, artesanato, qualificação profissional e renda.",
+    "matches": [
+      {
+        "edital": "Chamamento para Chancela de Projetos - CMDPI",
+        "expiracao": "Não informado",
+        "score": 2,
+        "link": "https://www.facebook.com/prosasconecta"
+      }
+    ]
+  },
+  {
+    "nome": "Associação de Mulheres Empreendedoras de Mangabeira",
+    "foco": "Economia solidária, microcrédito e capacitação financeira.",
+    "matches": []
+  },
+  {
+    "nome": "ONG Mulheres Que Cuidam",
+    "foco": "Assistência social a mães solo, arrecadação de alimentos.",
+    "matches": [
+      {
+        "edital": "AlimentaLAB - Laboratório de Inovação em Políticas Públicas",
+        "expiracao": "Não informado",
+        "score": 2,
+        "link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/004/891/205/original/Chamada_AlimentaLAB_2026_-_PT.pdf"
+      }
+    ]
+  },
+  {
+    "nome": "Comissão de Mulheres do Polo da Borborema",
+    "foco": "Agroecologia, fundos rotativos solidários e autonomia feminina no campo.",
+    "matches": []
+  },
+  {
+    "nome": "Associação das Mulheres Quilombolas do Bonfim",
+    "foco": "Produção rural tradicional, doces, agricultura familiar quilombola.",
+    "matches": []
+  },
+  {
+    "nome": "Associação das Louceiras Negras da Serra do Talhado",
+    "foco": "Patrimônio imaterial, cerâmica por mulheres negras quilombolas.",
+    "matches": [
+      {
+        "edital": "Edital - Rede Memória Viva - Iniciativa Viva Pequena África",
+        "expiracao": "2026-10-30",
+        "score": 3,
+        "link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/BTqD7Nkp1z9mAC08XLMpVYeAmsgJOSV6hHlSmmjL_TsVRy6XrRy_Ee_9ArelIafd/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/980/334/original/Edital_Rede_Memoria_Viva.docx.pdf"
+      },
+      {
+        "edital": "Catalisar 2026 - FCCSA",
+        "expiracao": "Não informado",
+        "score": 2,
+        "link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/GPX1Qhp4YW04M1WaBv1QzieH6lmGO0zDR4Ay7bWEZoQBtNVxA4yF6_j1HqIL3WoR/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/003/993/original/Edital_Catalisar_2026_Nova_marca.pdf"
+      },
+      {
+        "edital": "BIP: Fundo para Infância e Adolescência (FIA)",
+        "expiracao": "Não informado",
+        "score": 2,
+        "link": "https://www.facebook.com/prosasconecta"
+      }
+    ]
+  },
+  {
+    "nome": "Coletivo de Mulheres Negras Maria Maria",
+    "foco": "Enfrentamento ao racismo e sexismo, formação cultural.",
+    "matches": [
+      {
+        "edital": "Edital - Rede Memória Viva - Iniciativa Viva Pequena África",
+        "expiracao": "2026-10-30",
+        "score": 2,
+        "link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/BTqD7Nkp1z9mAC08XLMpVYeAmsgJOSV6hHlSmmjL_TsVRy6XrRy_Ee_9ArelIafd/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/980/334/original/Edital_Rede_Memoria_Viva.docx.pdf"
+      },
+      {
+        "edital": "BIP: Fundo para Infância e Adolescência (FIA)",
+        "expiracao": "Não informado",
+        "score": 2,
+        "link": "https://www.facebook.com/prosasconecta"
+      },
+      {
+        "edital": "AlimentaLAB - Laboratório de Inovação em Políticas Públicas",
+        "expiracao": "Não informado",
+        "score": 2,
+        "link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/004/891/205/original/Chamada_AlimentaLAB_2026_-_PT.pdf"
+      }
+    ]
+  }
+]
