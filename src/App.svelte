@@ -9,8 +9,8 @@
   <!-- Sidebar -->
   <aside class="w-64 bg-white border-r border-gray-200 hidden md:block overflow-y-auto">
     <div class="p-6">
-      <h1 class="text-xl font-bold text-gray-800">NGOs</h1>
-      <p class="text-sm text-gray-500 mt-2">List of non-profits</p>
+      <h1 class="text-xl font-bold text-gray-800">OSCs</h1>
+      <p class="text-sm text-gray-500 mt-2">Lista de organizações</p>
     </div>
     <nav class="mt-6">
       <ul class="space-y-2 px-4 pb-6">
@@ -37,7 +37,7 @@
       </header>
 
       <div class="mb-6">
-        <h3 class="text-xl font-semibold text-gray-800">Matched Grants</h3>
+        <h3 class="text-xl font-semibold text-gray-800">Editais Compatíveis</h3>
       </div>
 
       {#if selectedNgo.matches.length === 0}
@@ -55,7 +55,7 @@
                     Data Limite: {match.expiracao}
                   </span>
                   <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
-                    Score: {match.score}
+                    Pontuação: {match.score}
                   </span>
                 </div>
               </div>
