@@ -7,9 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+    "extract-metadata": "tsx scripts/pdf-metadata-extractor.ts"
   },
   "devDependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "@tsconfig/svelte": "^5.0.8",
     "@types/node": "^24.19.2",
@@ -18,6 +20,7 @@
     "svelte": "^5.57.2",
     "svelte-check": "^4.7.7",
     "tailwindcss": "^3.4.19",
+    "tsx": "^4.23.15",
     "typescript": "~6.0.3",
     "vite": "^8.3.5"
   }
