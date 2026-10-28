@@ -102,7 +102,22 @@ async function runStandaloneScraper() {
             throw new Error("[StandaloneProsasScraper] Failed to navigate past login page.");
         }
 
+
         const allItems: any[] = [];
+        const existingDataMap = new Map<string, any>();
+        const outPath = path.join(process.cwd(), 'src', 'data', 'editais_prosas.json');
+
+        try {
+            if (fs.existsSync(outPath)) {
+                const existingData = JSON.parse(fs.readFileSync(outPath, 'utf-8'));
+                if (Array.isArray(existingData)) {
+                    existingData.forEach(item => existingDataMap.set(String(item.id), item));
+                }
+            }
+        } catch (e) {
+            console.warn("[StandaloneProsasScraper] Failed to load existing data, starting fresh.");
+        }
+
         let currentPage = 1;
         const maxPages = 50;
         let hasMore = true;
@@ -179,15 +194,33 @@ async function runStandaloneScraper() {
             }
         }
 
+
         const uniqueMap = new Map<string, any>();
         allItems.forEach(item => uniqueMap.set(String(item.id), item));
-        const deduplicatedItems = Array.from(uniqueMap.values());
+
+        let deduplicatedItems = Array.from(uniqueMap.values());
+
+        // Merge with existing data
+        deduplicatedItems = deduplicatedItems.map(item => {
+            const existing = existingDataMap.get(String(item.id));
+            if (existing) {
+                return {
+                    ...item,
+                    deep_metadata: existing.deep_metadata,
+                    pdf_error: existing.pdf_error,
+                    pdf_skipped: existing.pdf_skipped,
+                    pdf_link: existing.pdf_link || item.pdf_link,
+                    external_link: existing.external_link || item.external_link,
+                    full_text: existing.full_text || item.full_text
+                };
+            }
+            return item;
+        });
 
         const maxDeepScrape = process.env.MAX_DEEP_SCRAPE ? parseInt(process.env.MAX_DEEP_SCRAPE, 10) : 450;
         const itemsToDeepScrape = deduplicatedItems.slice(0, maxDeepScrape);
         const concurrency = 2;
         let processedCount = 0;
-        const outPath = path.join(process.cwd(), 'src', 'data', 'editais_prosas.json');
 
         const chunkSize = 50;
         for (let i = 0; i < itemsToDeepScrape.length; i += chunkSize) {
@@ -202,7 +235,17 @@ async function runStandaloneScraper() {
                     Array.from({ length: concurrency }).map(async () => {
                         while (queue.length > 0) {
                             const item = queue.shift();
+
                             if (!item) break;
+
+                            const hasDeepMetadata = !!item.deep_metadata;
+                            const hasFullTextAndPdf = !!(item.full_text && item.pdf_link);
+                            const forceRescrape = process.env.FORCE_RESCRAPE === 'true';
+
+                            if ((hasDeepMetadata || hasFullTextAndPdf) && !forceRescrape) {
+                                // Skip deep scrape for this item
+                                continue;
+                            }
 
                             const isCentral = item.attributes && item.attributes['e_central?'] === true;
                             const detailUrl = isCentral
@@ -230,6 +273,7 @@ async function runStandaloneScraper() {
                                 // IMPLEMENT NEW PDF DETECTION LOGIC HERE BEFORE CAPTURE EXTERNAL URL
                                 let pdfLink = await workerPage.evaluate(() => {
                                     let foundPdf = '';
+                                    let annexPdf = '';
                                     const allElements = document.querySelectorAll('*');
                                     const allLinks: HTMLAnchorElement[] = [];
 
@@ -242,20 +286,28 @@ async function runStandaloneScraper() {
                                     }
 
                                     // Priorities for finding PDF links
-                                    // 1. Direct PDF links with matching text (regulamento, edital, complementares)
+                                    // 1. Direct PDF links with matching text (regulamento, edital, complementares, chamamento, documento, regras)
+                                    // 2. Deprioritize links with anexo, modelo, planilha, formulario
                                     for (let i = 0; i < allLinks.length; i++) {
                                         const a = allLinks[i];
                                         const btnText = (a.textContent || '').toLowerCase().trim();
                                         const href = a.href || a.getAttribute('href') || '';
 
                                         if (href && (href.toLowerCase().endsWith('.pdf') || href.toLowerCase().includes('.pdf?'))) {
-                                            if (btnText.includes('regulamento') || btnText.includes('edital') || btnText.includes('complementares')) {
+                                            const isAnnex = btnText.includes('anexo') || btnText.includes('modelo') || btnText.includes('planilha') || btnText.includes('formulario') || href.toLowerCase().includes('anexo') || href.toLowerCase().includes('modelo') || href.toLowerCase().includes('planilha') || href.toLowerCase().includes('formulario');
+
+                                            if (isAnnex) {
+                                                if (!annexPdf) annexPdf = href;
+                                                continue;
+                                            }
+
+                                            if (btnText.includes('regulamento') || btnText.includes('edital') || btnText.includes('complementares') || btnText.includes('chamamento') || btnText.includes('documento') || btnText.includes('regras')) {
                                                 return href;
                                             }
                                             if (!foundPdf) foundPdf = href;
                                         }
                                     }
-                                    return foundPdf;
+                                    return foundPdf || annexPdf;
                                 });
 
                                 if (pdfLink) {
@@ -310,6 +362,12 @@ async function runStandaloneScraper() {
                                 if (workerPage) {
                                     try { await workerPage.close(); } catch (e) {}
                                 }
+                            }
+
+                            processedCount++;
+                            console.log(`[Scraper] (${processedCount}/${itemsToDeepScrape.length}) ${detailUrl} -> PDF: ${item.pdf_link || 'None'} | Ext: ${item.external_link || 'None'}`);
+                            if (processedCount % 20 === 0) {
+                                fs.writeFileSync(outPath, JSON.stringify(deduplicatedItems, null, 2));
                             }
                         }
                     })
