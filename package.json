@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
-    "extract-metadata": "tsx scripts/pdf-metadata-extractor.ts"
+    "extract-metadata": "tsx scripts/pdf-metadata-extractor.ts",
+    "scrape-prosas": "tsx scripts/prosas-scraper.ts"
   },
   "devDependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -16,7 +17,10 @@
     "@tsconfig/svelte": "^5.0.8",
     "@types/node": "^24.19.2",
     "autoprefixer": "^10.6.2",
+    "playwright": "^1.64.1",
+    "playwright-extra": "^4.3.6",
     "postcss": "^8.5.32",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "svelte": "^5.57.2",
     "svelte-check": "^4.7.7",
     "tailwindcss": "^3.4.19",
