@@ -1867,350 +1867,450 @@
     "attributes": {
       "nome": "SANTA CATARINA - FOMENTO - AÇÕES CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "17394",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO para credenciamento de Parceiristas de arte e de Cultura",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19351",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 004/2026 - MAPEAMENTO, DIAGNÓSTICO E PAINEL DE DADOS CULTURAIS",
       "e_central?": false
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19302",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 002/2026 - PREMIAÇÃO DE PONTOS E PONTÕES - OURINHOS ",
       "e_central?": false
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19283",
     "attributes": {
       "nome": "EDITAL SMCT Nº 28/2026 PRÊMIO GRÃO MESTRE CORISCO ",
       "e_central?": false
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "16452",
     "attributes": {
       "nome": "Edital Ambev Brasilidades 2026",
       "e_central?": false
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19458",
     "attributes": {
       "nome": "MINAS GERAIS - BOLSA - INICIAÇÃO CIENTÍFICA JÚNIOR BIC JR IFTM E FAPEMIG - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19457",
     "attributes": {
       "nome": "MINAS GERAIS - BOLSA - DESENVOLVIMENTO TECNOLÓGICO E INOVAÇÃO PIBITI IFTM (17/2026) - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19456",
     "attributes": {
       "nome": "MINAS GERAIS - BOLSA - INICIAÇÃO CIENTÍFICA PIBIC E PIVIC IFTM (16/2026) - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19434",
     "attributes": {
       "nome": "BETIM MG - CHAMAMENTO PÚBLICO - FESTIVAIS EM CENA - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19423",
     "attributes": {
       "nome": "BAHIA - FOMENTO - POUSO DA PALAVRA: BIBLIOTECAS COMUNITÁRIAS (CHAMAMENTO 003/2026) - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19416",
     "attributes": {
       "nome": "ITABIRA MG - PREMIAÇÃO - PONTOS E PONTÕES DE CULTURA  - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19231",
     "attributes": {
       "nome": "MINAS GERAIS - CHAMAMENTO PÚBLICO - FIXAÇÃO DE DOUTORES - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19280",
     "attributes": {
       "nome": "SÃO PAULO - CHAMAMENTO PÚBLICO - LONGA-METRAGEM E OBRA SERIADA - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19047",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 025/2026 SELEÇÃO DE PROJETO PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL MEMÓRIA E PRESERVAÇÃO AUDIOVISUAL DO MUSEU DA IMAGEM E DO SOM DE MATO GROSSO DO SUL – MIS-MS MinC/FSA/BRDE/ARRANJOS REGIONAIS – 2026",
       "e_central?": false
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19048",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 26/2026 SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL PARA PRODUÇÃO AUDIOVISUAL - MATO GROSSO DO SUL - 2026 – MinC/FSA/BRDE/ARRANJOS REGIONAIS",
       "e_central?": false
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19356",
     "attributes": {
       "nome": "BRASIL - BOLSA - PESQUISA E PRODUÇÃO CIENTÍFICA E TÉCNICA - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19526",
     "attributes": {
       "nome": "POMERODE  SC - CHAMAMENTO PÚBLICO - DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19535",
     "attributes": {
       "nome": "ARACAJU  SE - CHAMAMENTO PÚBLICO - AÇÕES CONTINUADAS - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19536",
     "attributes": {
       "nome": "ARACAJU  SE - CHAMAMENTO PÚBLICO - LITERATURA - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19537",
     "attributes": {
       "nome": "ARACAJU  SE - FOMENTO - AUDIOVISUAL - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19544",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - BOLSAS DE EXTENSÃO UNIVERSITÁRIA PIBEX  - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19392",
     "attributes": {
       "nome": "NORDESTE - EDITAL - SOLUÇÕES PARA UM OCEANO SEM PLÁSTICO (SOMAR AZUL) - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19459",
     "attributes": {
       "nome": "JUIZ DE FORA  MG - CHAMAMENTO PÚBLICO - AÇÃO CLIMÁTICA JUVENIL - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "18874",
     "attributes": {
       "nome": "Parcerias Sustentáveis 2027",
       "e_central?": false
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19336",
     "attributes": {
       "nome": "CHAMADA KINROSS CONECTA INCENTIVADOS 2026 2027",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "18269",
     "attributes": {
       "nome": "CIRCULAÇÃO E PARTICIPAÇÃO AUDIOVISUAL NO EXTERIOR - EDITAL DE INTERCÂMBIO CULTURAL MINC Nº 1",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19338",
     "attributes": {
       "nome": "GUARAÍ  TO - CHAMAMENTO PÚBLICO - OFICINAS SOCIOEDUCATIVAS - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19391",
     "attributes": {
       "nome": "Chamada Pública – Programa de Eficiência Energética 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19505",
     "attributes": {
       "nome": "Edital Doar de Coração 2027",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19515",
     "attributes": {
       "nome": "MORENO  PE - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19525",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - RESILIÊNCIA, RESPOSTA E RECUPERAÇÃO DE DESASTRES - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19543",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - PD&I MOBILIDADE VEICULAR INTELIGENTE (MVI) - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19145",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - TRANSIÇÃO AGROECOLÓGICA - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19180",
     "attributes": {
       "nome": "Edital Mulheres do Nosso Bairro 2026",
       "e_central?": false
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19234",
     "attributes": {
       "nome": "SÃO PAULO  SP - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19519",
     "attributes": {
       "nome": "LAGUNA  SC - CHAMAMENTO PÚBLICO - FIA DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19497",
     "attributes": {
       "nome": "RIO DE JANEIRO - FOMENTO - BIOTÉRIOS - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19494",
     "attributes": {
       "nome": "PORTO SEGURO BA - CREDENCIAMENTO - MÚSICOS, BANDAS, GRUPOS ARTÍSTICOS E FILARMÔNICAS - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19550",
     "attributes": {
       "nome": "SÃO GONÇALO DO AMARANTE CE - FOMENTO - PROJETOS SOCIAIS, CULTURAIS, AMBIENTAIS E ESPORTIVOS - 2026/2027",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19561",
     "attributes": {
       "nome": "ARMAÇÃO DOS BÚZIOS  RJ - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19565",
     "attributes": {
       "nome": "GUARARAPES  SP - FOMENTO - PROJETOS CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19309",
     "attributes": {
       "nome": "SÃO PAULO - FOMENTO - PESQUISA E INOVAÇÃO SOCIAL - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19477",
     "attributes": {
       "nome": "PORTO SEGURO BA - SUBSÍDIO - ESPAÇOS CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19496",
     "attributes": {
       "nome": "RIO DE JANEIRO - FOMENTO - MANUTENÇÃO DE BIOTÉRIOS NB-3 - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "18875",
     "attributes": {
       "nome": "EDITAL DE SELEÇÃO SIMPLIFICADA Nº 115/2026 -  CONTADORES ",
       "e_central?": false
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19533",
     "attributes": {
       "nome": "FLORIANÓPOLIS  SC - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19466",
     "attributes": {
       "nome": "PARAÍBA - BOLSA - MESTRADO E DOUTORADO - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19548",
     "attributes": {
       "nome": "PERNAMBUCO - FOMENTO - PESQUISAS EM PLANEJAMENTO - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19491",
     "attributes": {
       "nome": "CONSELHEIRO LAFAIETE MG - PREMIAÇÃO - AGENTES CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "retry_count": 1,
+    "last_error": "No valid PDF or full_text available"
   },
   {
     "id": "19490",
@@ -4401,6 +4501,13 @@
     "attributes": {
       "nome": "EDITAL DE CREDENCIAMENTO Nº 002/2026/FETEC PROFISSIONAIS CULTURAIS ESPECIALIZADOS",
       "e_central?": false
+    }
+  },
+  {
+    "id": "19569",
+    "attributes": {
+      "nome": "NOVA LIMA  MG - CHAMAMENTO PÚBLICO - PONTOS DE CULTURA - 2026",
+      "e_central?": true
     }
   }
 ]
