@@ -106,7 +106,7 @@ const sharedGenerationConfig = {
 
 async function extractMetadataFromPdf(pdfData: ArrayBuffer): Promise<any> {
     const model = genAI.getGenerativeModel({
-        model: "gemini-3.8-flash",
+        model: "gemini-3.5-flash-lite",
         generationConfig: sharedGenerationConfig
     });
 
@@ -128,7 +128,7 @@ async function extractMetadataFromPdf(pdfData: ArrayBuffer): Promise<any> {
 
 async function extractMetadataFromText(textContent: string): Promise<any> {
     const model = genAI.getGenerativeModel({
-        model: "gemini-3.8-flash",
+        model: "gemini-3.5-flash-lite",
         generationConfig: sharedGenerationConfig
     });
 
