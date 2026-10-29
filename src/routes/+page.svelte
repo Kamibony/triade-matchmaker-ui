@@ -1,6 +1,7 @@
 <script lang="ts">
   import EditalCard from '../lib/components/EditalCard.svelte';
   import oscsData from '../data/oscs-matchmaking.json';
+  import { calculateMatches } from '../lib/matcher';
 
   // Mock data matching the requested schema
   const mockEditais = [
@@ -72,6 +73,13 @@
 
   let selectedEditalIndex = $state(0);
   let selectedEdital = $derived(mockEditais[selectedEditalIndex]);
+  let matchResults = $state<any[] | null>(null);
+
+  $effect(() => {
+    // Reset match results when selected edital changes
+    const _ = selectedEditalIndex;
+    matchResults = null;
+  });
 
   function formatCurrency(value: number | undefined) {
     if (value === undefined || value === null) return 'Não especificado';
@@ -79,9 +87,7 @@
   }
 
   function handleVerificarMatches() {
-    console.log(`Verificando matches para o edital: ${selectedEdital.attributes.nome}`);
-    console.log("Critérios do edital:", selectedEdital.deep_metadata.criterios_eliminatorios);
-    console.log("Número de ONGs cadastradas:", oscsData.length);
+    matchResults = calculateMatches(selectedEdital.deep_metadata, oscsData);
   }
 </script>
 
@@ -165,16 +171,39 @@
           <div class="p-6">
             <h4 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">OSCs Cadastradas ({oscsData.length})</h4>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {#each oscsData.slice(0, 6) as osc}
-                <div class="border border-gray-200 rounded-lg p-4 hover:border-blue-300 transition-colors bg-white">
-                  <h5 class="font-semibold text-gray-900 mb-1">{osc.nome}</h5>
-                  <p class="text-xs text-gray-500 line-clamp-2">{osc.foco}</p>
-                </div>
-              {/each}
-              {#if oscsData.length > 6}
-                <div class="border border-dashed border-gray-300 rounded-lg p-4 flex items-center justify-center bg-gray-50 text-gray-500">
-                  + {oscsData.length - 6} outras organizações
-                </div>
+              {#if matchResults}
+                {#each matchResults as osc}
+                  <div class="border border-gray-200 rounded-lg p-4 hover:border-blue-300 transition-colors bg-white">
+                    <div class="flex items-start justify-between">
+                      <h5 class="font-semibold text-gray-900 mb-1 {osc.eligibility.isEligible ? '' : 'text-gray-400 line-through'}">{osc.nome}</h5>
+                      <span class="ml-2 flex-shrink-0">
+                        {#if !osc.eligibility.isEligible}
+                          <span title={osc.eligibility.failedReason}>❌</span>
+                        {:else if osc.eligibility.score > 0}
+                          <span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded" title="Strong Match: Score {osc.eligibility.score}">✅</span>
+                        {:else}
+                          <span title="Eligible but no theme match">⚠️</span>
+                        {/if}
+                      </span>
+                    </div>
+                    {#if !osc.eligibility.isEligible}
+                      <p class="text-xs text-red-500 mt-1 mb-2">{osc.eligibility.failedReason}</p>
+                    {/if}
+                    <p class="text-xs text-gray-500 line-clamp-2">{osc.foco}</p>
+                  </div>
+                {/each}
+              {:else}
+                {#each oscsData.slice(0, 6) as osc}
+                  <div class="border border-gray-200 rounded-lg p-4 hover:border-blue-300 transition-colors bg-white">
+                    <h5 class="font-semibold text-gray-900 mb-1">{osc.nome}</h5>
+                    <p class="text-xs text-gray-500 line-clamp-2">{osc.foco}</p>
+                  </div>
+                {/each}
+                {#if oscsData.length > 6}
+                  <div class="border border-dashed border-gray-300 rounded-lg p-4 flex items-center justify-center bg-gray-50 text-gray-500">
+                    + {oscsData.length - 6} outras organizações
+                  </div>
+                {/if}
               {/if}
             </div>
           </div>
