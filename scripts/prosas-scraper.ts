@@ -126,14 +126,11 @@ async function runStandaloneScraper() {
         }
 
 
-        const uniqueMap = new Map<string, any>();
-        allItems.forEach(item => uniqueMap.set(String(item.id), item));
+        // Implement Upsert Pattern: Start with existing data, upsert new API data
+        const masterMap = new Map<string, any>(existingDataMap);
 
-        let deduplicatedItems = Array.from(uniqueMap.values());
-
-        // Merge with existing data
-        deduplicatedItems = deduplicatedItems.map(item => {
-            const existing = existingDataMap.get(String(item.id));
+        allItems.forEach(item => {
+            const existing = masterMap.get(String(item.id));
 
             // Clean attributes
             const attrs = item.attributes || {};
@@ -148,35 +145,52 @@ async function runStandaloneScraper() {
                 'e_central?': attrs['e_central?']
             };
 
-            const merged = existing ? {
-                ...item,
-                attributes: cleanAttributes,
-                deep_metadata: existing.deep_metadata,
-                pdf_error: existing.pdf_error,
-                pdf_skipped: existing.pdf_skipped,
-                pdf_link: existing.pdf_link || item.pdf_link,
-                full_text: existing.full_text || item.full_text,
-                retry_count: existing.retry_count,
-                last_error: existing.last_error
-            } : {
-                ...item,
-                attributes: cleanAttributes
-            };
+            if (existing) {
+                // Update existing record but strictly protect metadata fields
+                const merged = {
+                    ...item,
+                    attributes: cleanAttributes,
+                    deep_metadata: existing.deep_metadata,
+                    pdf_error: existing.pdf_error,
+                    pdf_skipped: existing.pdf_skipped,
+                    pdf_link: existing.pdf_link || item.pdf_link,
+                    full_text: existing.full_text || item.full_text,
+                    retry_count: existing.retry_count,
+                    last_error: existing.last_error,
+                    public_url: existing.public_url || item.public_url
+                };
 
-            // Return only the specified fields to prevent bloat
-            return {
-                id: merged.id,
-                attributes: merged.attributes,
-                public_url: merged.public_url,
-                pdf_link: merged.pdf_link,
-                full_text: merged.full_text,
-                deep_metadata: merged.deep_metadata,
-                retry_count: merged.retry_count,
-                last_error: merged.last_error,
-                pdf_error: merged.pdf_error,
-                pdf_skipped: merged.pdf_skipped
-            };
+                // Prevent bloat
+                masterMap.set(String(item.id), {
+                    id: merged.id,
+                    attributes: merged.attributes,
+                    public_url: merged.public_url,
+                    pdf_link: merged.pdf_link,
+                    full_text: merged.full_text,
+                    deep_metadata: merged.deep_metadata,
+                    retry_count: merged.retry_count,
+                    last_error: merged.last_error,
+                    pdf_error: merged.pdf_error,
+                    pdf_skipped: merged.pdf_skipped
+                });
+            } else {
+                // Insert new record
+                masterMap.set(String(item.id), {
+                    id: item.id,
+                    attributes: cleanAttributes,
+                    public_url: item.public_url,
+                    pdf_link: item.pdf_link,
+                    full_text: item.full_text,
+                    deep_metadata: item.deep_metadata,
+                    retry_count: item.retry_count,
+                    last_error: item.last_error,
+                    pdf_error: item.pdf_error,
+                    pdf_skipped: item.pdf_skipped
+                });
+            }
         });
+
+        let deduplicatedItems = Array.from(masterMap.values());
 
         const maxDeepScrape = process.env.MAX_DEEP_SCRAPE ? parseInt(process.env.MAX_DEEP_SCRAPE, 10) : 450;
         const itemsToDeepScrape = deduplicatedItems.slice(0, maxDeepScrape);
@@ -231,7 +245,6 @@ async function runStandaloneScraper() {
                                     return text.replace(/\n\s*\n/g, '\n').trim();
                                 });
 
-                                // IMPLEMENT NEW PDF DETECTION LOGIC HERE BEFORE CAPTURE EXTERNAL URL
                                 let pdfLink = await workerPage.evaluate(() => {
                                     let foundPdf = '';
                                     let annexPdf = '';
