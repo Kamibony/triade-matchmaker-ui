@@ -1,6 +1,7 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { google } from 'googleapis';
 
 // Load environment variables if available or assume it's passed directly to the script
 const apiKey = process.env.GEMINI_API_KEY || '';
@@ -126,6 +127,54 @@ async function extractMetadataFromPdf(pdfData: ArrayBuffer): Promise<any> {
     return JSON.parse(text);
 }
 
+
+
+async function uploadPdfToDrive(pdfData: ArrayBuffer, fileName: string): Promise<string | null> {
+    const credsEnv = process.env.GCP_DRIVE_CREDENTIALS;
+    if (!credsEnv) {
+        console.warn('GCP_DRIVE_CREDENTIALS is not set. Skipping Drive upload.');
+        return null;
+    }
+
+    try {
+        const credentials = JSON.parse(credsEnv);
+        const auth = new google.auth.GoogleAuth({
+            credentials,
+            scopes: ['https://www.googleapis.com/auth/drive.file']
+        });
+
+        const drive = google.drive({ version: 'v3', auth });
+
+        // Convert ArrayBuffer to Buffer, then to a Readable stream for Google APIs
+        const { Readable } = require('stream');
+        const buffer = Buffer.from(pdfData);
+        const stream = new Readable();
+        stream.push(buffer);
+        stream.push(null);
+
+        const fileMetadata = {
+            name: fileName,
+            parents: ['1FIbNfAzFS7uMSF0iMIgy64tRWIIWhYOZ']
+        };
+
+        const media = {
+            mimeType: 'application/pdf',
+            body: stream
+        };
+
+        const response = await drive.files.create({
+            requestBody: fileMetadata,
+            media: media,
+            fields: 'id, webViewLink'
+        });
+
+        console.log(`Successfully uploaded ${fileName} to Drive. Link: ${response.data.webViewLink}`);
+        return response.data.webViewLink || null;
+    } catch (e: any) {
+        console.error(`Failed to upload ${fileName} to Drive: ${e.message}`);
+        return null;
+    }
+}
 async function extractMetadataFromText(textContent: string): Promise<any> {
     const model = genAI.getGenerativeModel({
         model: "gemini-3.5-flash-lite",
@@ -236,9 +285,19 @@ export async function processEditais() {
             }
         } else if (downloadResult.success && downloadResult.data) {
             try {
+                const editalId = edital.id ? edital.id.toString() : String(i);
+
+                // Upload to Google Drive
+                const fileName = `${editalId}_edital.pdf`;
+                const driveLink = await uploadPdfToDrive(downloadResult.data, fileName);
+
                 const metadata = await extractMetadataFromPdf(downloadResult.data);
-                metadata.edital_id = edital.id ? edital.id.toString() : String(i);
+                metadata.edital_id = editalId;
                 metadata.fonte_dados = "pdf";
+
+                if (driveLink) {
+                    metadata.drive_pdf_link = driveLink;
+                }
 
                 edital.deep_metadata = metadata;
                 if (edital.full_text) {
