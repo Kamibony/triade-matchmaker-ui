@@ -56,14 +56,18 @@ async function extractMetadataFromPdf(pdfData: ArrayBuffer): Promise<any> {
                 type: "object",
                 properties: {
                     edital_id: { type: "string" },
+                    resumo_objetivo: { type: "string", description: "1-2 sentences in pt-BR summarizing the grant's core goal" },
+                    temas_principais: { type: "array", items: { type: "string" }, description: "array of strings in pt-BR (e.g., 'mulheres', 'agricultura familiar', 'cultura', 'saúde')" },
                     criterios_eliminatorios: {
                         type: "object",
                         properties: {
                             idade_minima_cnpj_anos: { type: "number", nullable: true },
-                            estados_permitidos: { type: "array", items: { type: "string" } },
-                            natureza_juridica_excluida: { type: "array", items: { type: "string" } }
+                            abrangencia_nacional: { type: "boolean" },
+                            estados_permitidos: { type: "array", items: { type: "string" }, description: "array of 2-letter UF strings (e.g., 'PB', 'SC') - empty if national without state restrictions" },
+                            municipios_permitidos: { type: "array", items: { type: "string" }, description: "array of strings (Format: 'Município - UF'). CRITICAL: Fill this if the PDF or its Annexes restrict participation to a specific list of municipalities. Leave empty if the entire state/country is eligible." },
+                            natureza_juridica_excluida: { type: "array", items: { type: "string" }, description: "array of strings (e.g., 'igreja', 'sindicato', 'fins lucrativos')" }
                         },
-                        required: ["idade_minima_cnpj_anos", "estados_permitidos", "natureza_juridica_excluida"]
+                        required: ["idade_minima_cnpj_anos", "abrangencia_nacional", "estados_permitidos", "municipios_permitidos", "natureza_juridica_excluida"]
                     },
                     financeiro: {
                         type: "object",
@@ -79,12 +83,12 @@ async function extractMetadataFromPdf(pdfData: ArrayBuffer): Promise<any> {
                             exige_cnd: { type: "boolean" },
                             exige_balanco_patrimonial: { type: "boolean" },
                             exige_cebas: { type: "boolean" },
-                            exigencias_especificas_adicionais: { type: "array", items: { type: "string" } }
+                            exigencias_especificas_adicionais: { type: "array", items: { type: "string" }, description: "array of strings for strict K.O. rules, e.g., 'Exige projeto aprovado no DOU via PRONON/PRONAS', 'Benefício exclusivo para moradores de SC'" }
                         },
                         required: ["exige_cnd", "exige_balanco_patrimonial", "exige_cebas", "exigencias_especificas_adicionais"]
                     }
                 },
-                required: ["edital_id", "criterios_eliminatorios", "financeiro", "burocracia_e_documentos"]
+                required: ["edital_id", "resumo_objetivo", "temas_principais", "criterios_eliminatorios", "financeiro", "burocracia_e_documentos"]
             }
         }
     });
