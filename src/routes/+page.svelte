@@ -1,78 +1,12 @@
 <script lang="ts">
   import EditalCard from '../lib/components/EditalCard.svelte';
   import oscsData from '../data/oscs-matchmaking.json';
+  import editaisData from '../data/editais_prosas.json';
   import { calculateMatches } from '../lib/matcher';
 
-  // Mock data matching the requested schema
-  const mockEditais = [
-    {
-      "id": "123",
-      "attributes": {
-        "nome": "Edital de Apoio a Mulheres e Empreendedorismo",
-        "e_central?": true,
-        "inscricoes_ate": "30/12/2026"
-      },
-      "public_url": "https://prosas.com.br/editais/123",
-      "deep_metadata": {
-        "edital_id": "123",
-        "resumo_objetivo": "Apoio a mulheres e empreendedorismo.",
-        "temas_principais": ["mulheres", "geração de renda"],
-        "criterios_eliminatorios": {
-          "idade_minima_cnpj_anos": 2,
-          "abrangencia_nacional": false,
-          "estados_permitidos": ["PB", "PE"],
-          "municipios_permitidos": [],
-          "natureza_juridica_excluida": ["igreja"]
-        },
-        "financeiro": {
-          "valor_maximo_reais": 50000,
-          "exige_contrapartida": false
-        },
-        "burocracia_e_documentos": {
-          "exige_cnd": true,
-          "exige_balanco_patrimonial": true,
-          "exige_cebas": false,
-          "exigencias_especificas_adicionais": []
-        },
-        "fonte_dados": "pdf"
-      }
-    },
-    {
-      "id": "456",
-      "attributes": {
-        "nome": "Programa Juventude Sustentável 2026",
-        "e_central?": true,
-        "inscricoes_ate": "15/11/2026"
-      },
-      "public_url": "https://prosas.com.br/editais/456",
-      "deep_metadata": {
-        "edital_id": "456",
-        "resumo_objetivo": "Fomento a projetos focados na juventude e sustentabilidade nas escolas públicas.",
-        "temas_principais": ["juventude", "meio ambiente", "educação"],
-        "criterios_eliminatorios": {
-          "idade_minima_cnpj_anos": 1,
-          "abrangencia_nacional": true,
-          "estados_permitidos": [],
-          "municipios_permitidos": [],
-          "natureza_juridica_excluida": []
-        },
-        "financeiro": {
-          "valor_maximo_reais": 120000,
-          "exige_contrapartida": true
-        },
-        "burocracia_e_documentos": {
-          "exige_cnd": true,
-          "exige_balanco_patrimonial": true,
-          "exige_cebas": false,
-          "exigencias_especificas_adicionais": ["Carta de anuência da escola"]
-        },
-        "fonte_dados": "pdf"
-      }
-    }
-  ];
-
+  let availableEditais = $derived(editaisData.filter((edital: any) => edital.deep_metadata));
   let selectedEditalIndex = $state(0);
-  let selectedEdital = $derived(mockEditais[selectedEditalIndex]);
+  let selectedEdital = $derived(availableEditais[selectedEditalIndex]);
   let matchResults = $state<any[] | null>(null);
 
   $effect(() => {
@@ -81,7 +15,7 @@
     matchResults = null;
   });
 
-  function formatCurrency(value: number | undefined) {
+  function formatCurrency(value: number | null | undefined) {
     if (value === undefined || value === null) return 'Não especificado';
     return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);
   }
@@ -102,7 +36,7 @@
 
     <div class="flex-1 overflow-y-auto p-4 bg-gray-50/50">
       <div class="space-y-4">
-        {#each mockEditais as edital, i}
+        {#each availableEditais as edital, i}
           <EditalCard
             {edital}
             selected={selectedEditalIndex === i}
@@ -137,7 +71,7 @@
 
             <div class="bg-orange-50 px-4 py-3 rounded-lg flex-1 min-w-[200px] border border-orange-100">
               <span class="block text-sm font-medium text-orange-800 mb-1">Inscrições até</span>
-              <span class="block text-xl font-bold text-orange-900">{selectedEdital.attributes.inscricoes_ate || 'Não especificado'}</span>
+              <span class="block text-xl font-bold text-orange-900">{(selectedEdital.attributes as any).inscricoes_ate || 'Não especificado'}</span>
             </div>
 
             <div class="bg-purple-50 px-4 py-3 rounded-lg flex-1 min-w-[200px] border border-purple-100">
