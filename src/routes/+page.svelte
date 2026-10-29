@@ -6,7 +6,7 @@
 
   let availableEditais = $derived(editaisData.filter((edital: any) => edital.deep_metadata));
   let selectedEditalIndex = $state(0);
-  let selectedEdital = $derived(availableEditais[selectedEditalIndex]);
+  let selectedEdital: any = $derived(availableEditais[selectedEditalIndex]);
   let matchResults = $state<any[] | null>(null);
 
   $effect(() => {
