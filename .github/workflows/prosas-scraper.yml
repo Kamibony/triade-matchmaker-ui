@@ -4,9 +4,16 @@ on:
   schedule:
     - cron: '0 2 * * *'
   workflow_dispatch:
+    inputs:
+      max_scrape:
+        description: 'Max items to deep scrape (for fast testing)'
+        default: '15'
+        type: string
 
 jobs:
   scrape:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -27,6 +34,7 @@ jobs:
         env:
           PROSAS_USERNAME: ${{ secrets.PROSAS_USERNAME }}
           PROSAS_PASSWORD: ${{ secrets.PROSAS_PASSWORD }}
+          MAX_DEEP_SCRAPE: ${{ github.event.inputs.max_scrape || '450' }}
         run: npm run scrape-prosas
 
       - name: Commit and push changes
