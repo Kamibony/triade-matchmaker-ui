@@ -28,11 +28,14 @@ async function captureExternalUrl(page: any) {
   };
 
   try {
+    await page.waitForSelector('prosas-listagem-editais', { state: 'attached', timeout: 5000 }).catch(() => {});
+    await page.waitForTimeout(1000).catch(() => {});
+
     const targetButton = page.getByText(/(acessar|inscreva-se)/i)
       .filter({ hasNotText: /acessar perfil/i })
       .first();
 
-    if (!(await targetButton.isVisible({ timeout: 3000 }).catch(() => false))) {
+    if (!(await targetButton.isVisible({ timeout: 8000 }).catch(() => false))) {
       return null;
     }
 
@@ -366,7 +369,9 @@ async function runStandaloneScraper() {
                                                 const btnText = (a.textContent || '').toLowerCase().trim();
                                                 const href = a.href || a.getAttribute('href') || '';
 
-                                                if (href && href.startsWith('http') && !href.includes('prosas.com.br') && !href.includes('wa.me') && !href.includes('linkedin.com')) {
+                                                if (!btnText) continue;
+
+                                                if (href && href.startsWith('http') && !href.includes('prosas.com.br') && !href.includes('wa.me') && !href.includes('linkedin.com') && !href.includes('facebook.com') && !href.includes('instagram.com') && !href.includes('twitter.com') && !href.includes('youtube.com')) {
                                                     if (btnText.includes('acessar') || btnText.includes('inscreva-se') || btnText.includes('edital')) {
                                                         fallback = href;
                                                         break;
