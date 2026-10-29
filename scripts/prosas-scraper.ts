@@ -3,78 +3,6 @@ import * as path from 'path';
 import { chromium } from 'playwright-extra';
 import stealth from 'puppeteer-extra-plugin-stealth';
 
-async function captureExternalUrl(page: any) {
-  let finalUrl: string | null = null;
-  let navigationIntercepted = false;
-
-  const routeHandler = async (route: any, request: any) => {
-    try {
-      if (request.isNavigationRequest()) {
-        const url = request.url();
-        if (!url.includes('prosas.com.br') && !url.includes('linkedin.com') && !url.includes('wa.me') && url !== 'about:blank') {
-          finalUrl = url;
-          navigationIntercepted = true;
-          await route.abort('aborted').catch(() => {});
-          return;
-        }
-      }
-      await route.continue().catch(() => {});
-    } catch (e) {}
-  };
-
-  let capturedPopup: any = null;
-  const pageListener = (newPage: any) => {
-    capturedPopup = newPage;
-  };
-
-  try {
-    await page.waitForSelector('prosas-listagem-editais', { state: 'attached', timeout: 5000 }).catch(() => {});
-    await page.waitForTimeout(1000).catch(() => {});
-
-    const targetButton = page.getByText(/(acessar|inscreva-se)/i)
-      .filter({ hasNotText: /acessar perfil/i })
-      .first();
-
-    if (!(await targetButton.isVisible({ timeout: 8000 }).catch(() => false))) {
-      return null;
-    }
-
-    page.on('popup', pageListener);
-    await page.route('**/*', routeHandler);
-
-    await targetButton.click({ force: true, timeout: 3000 }).catch(() => {});
-
-    for (let i = 0; i < 10; i++) {
-      if (navigationIntercepted) break;
-      if (capturedPopup) {
-        try {
-          let u = capturedPopup.url();
-          if (u === 'about:blank') {
-            await capturedPopup.waitForLoadState('domcontentloaded', { timeout: 2000 }).catch(() => {});
-            u = capturedPopup.url();
-          }
-          if (u && !u.includes('prosas.com.br') && !u.includes('linkedin.com') && !u.includes('wa.me')) {
-            finalUrl = u;
-          }
-        } catch (e) {}
-        break;
-      }
-      await page.waitForTimeout(300).catch(() => {});
-    }
-
-    return finalUrl;
-  } catch (error: any) {
-    console.warn(`[captureExternalUrl] Failed: ${error.message}`);
-    return null;
-  } finally {
-    try { page.off('popup', pageListener); } catch (e) {}
-    try { await page.unroute('**/*', routeHandler); } catch (e) {}
-    if (capturedPopup) {
-      try { await capturedPopup.close(); } catch (e) {}
-    }
-  }
-}
-
 async function runStandaloneScraper() {
     const username = process.env.PROSAS_USERNAME;
     const password = process.env.PROSAS_PASSWORD;
@@ -227,7 +155,6 @@ async function runStandaloneScraper() {
                 pdf_error: existing.pdf_error,
                 pdf_skipped: existing.pdf_skipped,
                 pdf_link: existing.pdf_link || item.pdf_link,
-                external_link: existing.external_link || item.external_link,
                 full_text: existing.full_text || item.full_text,
                 retry_count: existing.retry_count,
                 last_error: existing.last_error
@@ -242,7 +169,6 @@ async function runStandaloneScraper() {
                 attributes: merged.attributes,
                 public_url: merged.public_url,
                 pdf_link: merged.pdf_link,
-                external_link: merged.external_link,
                 full_text: merged.full_text,
                 deep_metadata: merged.deep_metadata,
                 retry_count: merged.retry_count,
@@ -347,46 +273,6 @@ async function runStandaloneScraper() {
 
                                 if (pdfLink) {
                                     item.pdf_link = pdfLink;
-                                } else {
-                                    let externalLink = await captureExternalUrl(workerPage);
-
-                                    if (!externalLink) {
-                                        externalLink = await workerPage.evaluate(() => {
-                                            let fallback = '';
-                                            const allElements = document.querySelectorAll('*');
-                                            const allLinks: HTMLAnchorElement[] = [];
-
-                                            for (let i = 0; i < allElements.length; i++) {
-                                                if (allElements[i].tagName === 'A') allLinks.push(allElements[i] as HTMLAnchorElement);
-                                                if (allElements[i].shadowRoot) {
-                                                    const shadowLinks = allElements[i].shadowRoot!.querySelectorAll('a');
-                                                    for(let j=0; j<shadowLinks.length; j++) allLinks.push(shadowLinks[j]);
-                                                }
-                                            }
-
-                                            for (let i = 0; i < allLinks.length; i++) {
-                                                const a = allLinks[i];
-                                                const btnText = (a.textContent || '').toLowerCase().trim();
-                                                const href = a.href || a.getAttribute('href') || '';
-
-                                                if (!btnText) continue;
-
-                                                if (href && href.startsWith('http') && !href.includes('prosas.com.br') && !href.includes('wa.me') && !href.includes('linkedin.com') && !href.includes('facebook.com') && !href.includes('instagram.com') && !href.includes('twitter.com') && !href.includes('youtube.com')) {
-                                                    if (btnText.includes('acessar') || btnText.includes('inscreva-se') || btnText.includes('edital')) {
-                                                        fallback = href;
-                                                        break;
-                                                    }
-                                                    if (!fallback) fallback = href;
-                                                }
-                                            }
-                                            return fallback;
-                                        });
-                                    }
-
-                                    if (externalLink) {
-                                        item.external_link = externalLink;
-                                        pageText += `\n\nEXTERNAL_EDITAL_LINK: ${externalLink}`;
-                                    }
                                 }
 
                                 if (pageText.length > 15000) pageText = pageText.substring(0, 15000);
@@ -402,7 +288,7 @@ async function runStandaloneScraper() {
                             }
 
                             processedCount++;
-                            console.log(`[Scraper] (${processedCount}/${itemsToDeepScrape.length}) ${detailUrl} -> PDF: ${item.pdf_link || 'None'} | Ext: ${item.external_link || 'None'}`);
+                            console.log(`[Scraper] (${processedCount}/${itemsToDeepScrape.length}) ${detailUrl} -> PDF: ${item.pdf_link || 'None'}`);
                             if (processedCount % 20 === 0) {
                                 fs.writeFileSync(outPath, JSON.stringify(deduplicatedItems, null, 2));
                             }
