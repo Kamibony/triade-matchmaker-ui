@@ -203,18 +203,50 @@ async function runStandaloneScraper() {
         // Merge with existing data
         deduplicatedItems = deduplicatedItems.map(item => {
             const existing = existingDataMap.get(String(item.id));
-            if (existing) {
-                return {
-                    ...item,
-                    deep_metadata: existing.deep_metadata,
-                    pdf_error: existing.pdf_error,
-                    pdf_skipped: existing.pdf_skipped,
-                    pdf_link: existing.pdf_link || item.pdf_link,
-                    external_link: existing.external_link || item.external_link,
-                    full_text: existing.full_text || item.full_text
-                };
-            }
-            return item;
+
+            // Clean attributes
+            const attrs = item.attributes || {};
+            const cleanAttributes = {
+                nome: attrs.nome,
+                data_fim: attrs.data_fim,
+                data_inicio: attrs.data_inicio,
+                valor_total: attrs.valor_total,
+                patrocinador: attrs.patrocinador,
+                locais: attrs.locais,
+                areas_interesse: attrs.areas_interesse,
+                'e_central?': attrs['e_central?']
+            };
+
+            const merged = existing ? {
+                ...item,
+                attributes: cleanAttributes,
+                deep_metadata: existing.deep_metadata,
+                pdf_error: existing.pdf_error,
+                pdf_skipped: existing.pdf_skipped,
+                pdf_link: existing.pdf_link || item.pdf_link,
+                external_link: existing.external_link || item.external_link,
+                full_text: existing.full_text || item.full_text,
+                retry_count: existing.retry_count,
+                last_error: existing.last_error
+            } : {
+                ...item,
+                attributes: cleanAttributes
+            };
+
+            // Return only the specified fields to prevent bloat
+            return {
+                id: merged.id,
+                attributes: merged.attributes,
+                public_url: merged.public_url,
+                pdf_link: merged.pdf_link,
+                external_link: merged.external_link,
+                full_text: merged.full_text,
+                deep_metadata: merged.deep_metadata,
+                retry_count: merged.retry_count,
+                last_error: merged.last_error,
+                pdf_error: merged.pdf_error,
+                pdf_skipped: merged.pdf_skipped
+            };
         });
 
         const maxDeepScrape = process.env.MAX_DEEP_SCRAPE ? parseInt(process.env.MAX_DEEP_SCRAPE, 10) : 450;
@@ -239,10 +271,10 @@ async function runStandaloneScraper() {
                             if (!item) break;
 
                             const hasDeepMetadata = !!item.deep_metadata;
-                            const hasFullTextAndPdf = !!(item.full_text && item.pdf_link);
                             const forceRescrape = process.env.FORCE_RESCRAPE === 'true';
+                            const retryCount = item.retry_count || 0;
 
-                            if ((hasDeepMetadata || hasFullTextAndPdf) && !forceRescrape) {
+                            if ((hasDeepMetadata || retryCount >= 3) && !forceRescrape) {
                                 // Skip deep scrape for this item
                                 continue;
                             }
