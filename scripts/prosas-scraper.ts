@@ -241,19 +241,20 @@ async function runStandaloneScraper() {
                 'e_central?': attrs['e_central?']
             };
 
+            const forceRescrape = process.env.FORCE_RESCRAPE === 'true';
+
             if (existing) {
-                // Update existing record but strictly protect metadata fields
+                // Update existing record but strictly protect state and metadata fields
                 const merged = {
                     ...item,
                     attributes: cleanAttributes,
-                    deep_metadata: existing.deep_metadata,
-                    pdf_error: existing.pdf_error,
-                    pdf_skipped: existing.pdf_skipped,
-                    pdf_link: existing.pdf_link || item.pdf_link,
-                    full_text: existing.full_text || item.full_text,
-                    retry_count: existing.retry_count,
-                    last_error: existing.last_error,
-                    public_url: existing.public_url || item.public_url
+                    deep_metadata: forceRescrape ? undefined : existing.deep_metadata,
+                    pdf_link: forceRescrape ? undefined : existing.pdf_link,
+                    full_text: forceRescrape ? undefined : existing.full_text,
+                    retry_count: forceRescrape ? undefined : existing.retry_count,
+                    last_error: forceRescrape ? undefined : existing.last_error,
+                    public_url: existing.public_url || item.public_url,
+                    pipeline_status: forceRescrape ? 'NEW_FROM_API' : existing.pipeline_status || 'NEW_FROM_API'
                 };
 
                 // Prevent bloat
@@ -266,8 +267,7 @@ async function runStandaloneScraper() {
                     deep_metadata: merged.deep_metadata,
                     retry_count: merged.retry_count,
                     last_error: merged.last_error,
-                    pdf_error: merged.pdf_error,
-                    pdf_skipped: merged.pdf_skipped
+                    pipeline_status: merged.pipeline_status
                 });
             } else {
                 // Insert new record
@@ -280,8 +280,7 @@ async function runStandaloneScraper() {
                     deep_metadata: item.deep_metadata,
                     retry_count: item.retry_count,
                     last_error: item.last_error,
-                    pdf_error: item.pdf_error,
-                    pdf_skipped: item.pdf_skipped
+                    pipeline_status: 'NEW_FROM_API'
                 });
             }
         });
@@ -309,13 +308,12 @@ async function runStandaloneScraper() {
 
                             if (!item) break;
 
-                            const hasDeepMetadata = !!item.deep_metadata;
                             const forceRescrape = process.env.FORCE_RESCRAPE === 'true';
-                            const retryCount = item.retry_count || 0;
 
-                            if ((hasDeepMetadata || retryCount >= 3) && !forceRescrape) {
-                                // Skip deep scrape for this item
-                                continue;
+                            if (item.pipeline_status === 'COMPLETED' || item.pipeline_status === 'FAILED_PERMANENTLY' || item.pipeline_status === 'PENDING_EXTRACTION') {
+                                if (!forceRescrape) {
+                                     continue; // Skip items unless forced
+                                }
                             }
 
                             const isCentral = item.attributes && item.attributes['e_central?'] === true;
@@ -394,8 +392,16 @@ async function runStandaloneScraper() {
                                 item.full_text = pageText;
                                 item.public_url = detailUrl;
 
+                                if (!item.pdf_link && (!item.full_text || item.full_text.length < 300)) {
+                                     item.pipeline_status = 'FAILED_PERMANENTLY';
+                                     item.last_error = "No PDF found and insufficient text";
+                                } else {
+                                     item.pipeline_status = 'PENDING_EXTRACTION';
+                                }
+
                             } catch (err: any) {
                                 console.error(`[StandaloneProsasScraper] Failed to deep scrape ${detailUrl}: ${err.message}`);
+                                item.last_error = err.message;
                             } finally {
                                 if (workerPage) {
                                     try { await workerPage.close(); } catch (e) {}
@@ -403,7 +409,7 @@ async function runStandaloneScraper() {
                             }
 
                             processedCount++;
-                            console.log(`[Scraper] (${processedCount}/${itemsToDeepScrape.length}) ${detailUrl} -> PDF: ${item.pdf_link || 'None'}`);
+                            console.log(`[Scraper] (${processedCount}/${itemsToDeepScrape.length}) ${detailUrl} -> Status: ${item.pipeline_status} | PDF: ${item.pdf_link || 'None'}`);
                             if (processedCount % 20 === 0) {
                                 fs.writeFileSync(outPath, JSON.stringify(deduplicatedItems, null, 2));
                             }

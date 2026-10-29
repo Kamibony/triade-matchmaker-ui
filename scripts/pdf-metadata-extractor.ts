@@ -218,7 +218,7 @@ export async function processEditais() {
     for (let i = 0; i < editais.length; i++) {
         const edital = editais[i];
 
-        if (edital.deep_metadata || edital.pdf_skipped === true || (edital.retry_count || 0) >= 3) {
+        if (edital.pipeline_status !== 'PENDING_EXTRACTION') {
             continue;
         }
 
@@ -260,25 +260,26 @@ export async function processEditais() {
                     metadata.fonte_dados = "texto_pagina";
 
                     edital.deep_metadata = metadata;
+                    edital.pipeline_status = 'COMPLETED';
                     if (edital.full_text) {
                         edital.full_text = edital.full_text.substring(0, 2500); // Data Slimming
                     }
-                    delete edital.pdf_error; // Cleanup legacy field
                     modified = true;
                     console.log(`Successfully extracted metadata for edital ${edital.id || i} via text fallback`);
                 } catch (err: any) {
                     console.error(`Failed to extract metadata via text fallback for edital ${edital.id || i}: ${err.message}`);
                     edital.retry_count = (edital.retry_count || 0) + 1;
                     edital.last_error = err.message;
-                    delete edital.pdf_error;
+                    if (edital.retry_count >= 3) {
+                         edital.pipeline_status = 'FAILED_PERMANENTLY';
+                    }
                     modified = true;
                 }
                 processedCount++;
             } else {
                 console.log(`Text fallback not possible for edital ${edital.id || i} (full_text missing or too short).`);
-                edital.retry_count = (edital.retry_count || 0) + 1;
+                edital.pipeline_status = 'FAILED_PERMANENTLY';
                 edital.last_error = downloadResult.error || "No valid PDF or full_text available";
-                delete edital.pdf_error;
                 modified = true;
                 // We still count this as an attempt
                 processedCount++;
@@ -291,6 +292,10 @@ export async function processEditais() {
                 const fileName = `${editalId}_edital.pdf`;
                 const driveLink = await uploadPdfToDrive(downloadResult.data, fileName);
 
+                if (process.env.GCP_DRIVE_CREDENTIALS && !driveLink) {
+                    throw new Error("Failed to upload to Google Drive");
+                }
+
                 const metadata = await extractMetadataFromPdf(downloadResult.data);
                 metadata.edital_id = editalId;
                 metadata.fonte_dados = "pdf";
@@ -300,17 +305,19 @@ export async function processEditais() {
                 }
 
                 edital.deep_metadata = metadata;
+                edital.pipeline_status = 'COMPLETED';
                 if (edital.full_text) {
                     edital.full_text = edital.full_text.substring(0, 2500); // Data Slimming
                 }
-                delete edital.pdf_error; // Cleanup legacy field
                 modified = true;
                 console.log(`Successfully extracted metadata for edital ${edital.id || i}`);
             } catch (err: any) {
-                console.error(`Failed to extract metadata for edital ${edital.id || i}: ${err.message}`);
+                console.error(`Failed to extract metadata (or Drive upload failed) for edital ${edital.id || i}: ${err.message}`);
                 edital.retry_count = (edital.retry_count || 0) + 1;
                 edital.last_error = err.message;
-                delete edital.pdf_error;
+                if (edital.retry_count >= 3) {
+                     edital.pipeline_status = 'FAILED_PERMANENTLY';
+                }
                 modified = true;
             }
             processedCount++;
@@ -318,9 +325,39 @@ export async function processEditais() {
             // General download failure (e.g. timeout, 404)
             edital.retry_count = (edital.retry_count || 0) + 1;
             edital.last_error = downloadResult.error || "Unknown download error";
-            delete edital.pdf_error;
+            if (edital.retry_count >= 3) {
+                 edital.pipeline_status = 'FAILED_PERMANENTLY';
+            }
             modified = true;
             processedCount++;
+        } else if (downloadResult.skip) {
+             // Handle skipped files (like too large) - fallback to text or fail
+             if (edital.full_text && edital.full_text.length > 300) {
+                 try {
+                     const metadata = await extractMetadataFromText(edital.full_text);
+                     metadata.edital_id = edital.id ? edital.id.toString() : String(i);
+                     metadata.fonte_dados = "texto_pagina";
+
+                     edital.deep_metadata = metadata;
+                     edital.pipeline_status = 'COMPLETED';
+                     if (edital.full_text) {
+                         edital.full_text = edital.full_text.substring(0, 2500);
+                     }
+                     modified = true;
+                 } catch (err: any) {
+                     edital.retry_count = (edital.retry_count || 0) + 1;
+                     edital.last_error = err.message;
+                     if (edital.retry_count >= 3) {
+                          edital.pipeline_status = 'FAILED_PERMANENTLY';
+                     }
+                     modified = true;
+                 }
+             } else {
+                 edital.pipeline_status = 'FAILED_PERMANENTLY';
+                 edital.last_error = downloadResult.error || "Skipped, and no text fallback available";
+                 modified = true;
+             }
+             processedCount++;
         }
 
         // Save progress after each item (or you could do it at the end)

@@ -5,7 +5,8 @@
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - REDE DE ACESSO E DESENVOLVIMENTO RURAL (EDITAL MDA SEAB 02/2026) - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19545"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19545",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19345",
@@ -13,7 +14,8 @@
       "nome": "ROLIM DE MOURA  RO - CHAMAMENTO PÚBLICO - PONTOS DE CULTURA - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19345"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19345",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19344",
@@ -21,7 +23,8 @@
       "nome": "ROLIM DE MOURA  RO - PREMIAÇÃO - PONTOS DE CULTURA - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19344"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19344",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19343",
@@ -29,7 +32,8 @@
       "nome": "ROLIM DE MOURA  RO - PREMIAÇÃO - TRAJETÓRIA CULTURAL - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19343"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19343",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19342",
@@ -37,7 +41,8 @@
       "nome": "ROLIM DE MOURA/RO - FOMENTO - PUBLICAÇÕES LITERÁRIAS - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19342"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19342",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19341",
@@ -45,7 +50,8 @@
       "nome": "ROLIM DE MOURA/RO - FOMENTO - PROJETOS CULTURAIS - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19341"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19341",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19169",
@@ -53,7 +59,8 @@
       "nome": "JOINVILLE  SC - CHAMAMENTO PÚBLICO - PATRIMÔNIO CULTURAL E AÇÕES CULTURAIS - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19169"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19169",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18918",
@@ -61,7 +68,8 @@
       "nome": "EDITAL SMCT N° 23/2026 - CONCESSÃO DE AUXÍLIO FINANCEIRO AOS BLOCOS DE RUA PARA O CARNAVAL DE UBERLÂNDIA – ANO 2027",
       "e_central?": false
     },
-    "public_url": "https://prosas.com.br/editais/18918"
+    "public_url": "https://prosas.com.br/editais/18918",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15180",
@@ -69,7 +77,8 @@
       "nome": "Edital 002/2024 de Cadastro de Projetos da Lei Federal de Incentivo à Cultura",
       "e_central?": false
     },
-    "public_url": "https://prosas.com.br/editais/15180"
+    "public_url": "https://prosas.com.br/editais/15180",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18676",
@@ -77,7 +86,8 @@
       "nome": "Seleção de Projetos",
       "e_central?": false
     },
-    "public_url": "https://prosas.com.br/editais/18676"
+    "public_url": "https://prosas.com.br/editais/18676",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14886",
@@ -85,7 +95,8 @@
       "nome": "Edital 001/2024 de Cadastro de Projetos do Programa de Incentivo à Cultura - PIC",
       "e_central?": false
     },
-    "public_url": "https://prosas.com.br/editais/14886"
+    "public_url": "https://prosas.com.br/editais/14886",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15181",
@@ -93,7 +104,8 @@
       "nome": "Edital 003/2024 Cadastro de Projetos da Lei Federal de Incentivo ao Esporte",
       "e_central?": false
     },
-    "public_url": "https://prosas.com.br/editais/15181"
+    "public_url": "https://prosas.com.br/editais/15181",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15182",
@@ -101,7 +113,8 @@
       "nome": "Edital 004/2024 Cadastro de Projetos do PRONON e PRONAS/PcD",
       "e_central?": false
     },
-    "public_url": "https://prosas.com.br/editais/15182"
+    "public_url": "https://prosas.com.br/editais/15182",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17235",
@@ -109,7 +122,8 @@
       "nome": "Banco de Projetos Incentivados Municipais 2026 - Santos Brasil ",
       "e_central?": false
     },
-    "public_url": "https://prosas.com.br/editais/17235"
+    "public_url": "https://prosas.com.br/editais/17235",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18659",
@@ -117,7 +131,8 @@
       "nome": "Edital - Rede Memória Viva - Iniciativa Viva Pequena África ",
       "e_central?": false
     },
-    "public_url": "https://prosas.com.br/editais/18659"
+    "public_url": "https://prosas.com.br/editais/18659",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19389",
@@ -125,7 +140,8 @@
       "nome": "BRASIL - FOMENTO - REDE DE PONTÕES CULTURA VIVA - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19389"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19389",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19406",
@@ -133,7 +149,8 @@
       "nome": "MARANHÃO - FOMENTO - PROJETOS SOCIAIS COM PRESTAÇÕES PECUNIÁRIAS (4ª VARA DE BALSAS) - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19406"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19406",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19299",
@@ -141,7 +158,8 @@
       "nome": "RIO GRANDE DO SUL - CHAMAMENTO PÚBLICO - PROJETOS SOCIAIS - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19299"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19299",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19385",
@@ -149,7 +167,8 @@
       "nome": "PARANÁ - CHAMAMENTO PÚBLICO - COOPERAÇÃO CIENTÍFICA E TECNOLÓGICA - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19385"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19385",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19347",
@@ -157,7 +176,8 @@
       "nome": "EDITAL INSTITUTO GENÉSIO A. MENDES 2026 - Não Incentivado",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19347"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19347",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19417",
@@ -165,7 +185,8 @@
       "nome": "BRASIL - CREDENCIAMENTO - PROJETOS DE EXTENSÃO - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19417"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19417",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19308",
@@ -173,7 +194,8 @@
       "nome": "BRASIL - FOMENTO - REDE DE PONTÕES CULTURA VIVA - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19308"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19308",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19333",
@@ -181,7 +203,8 @@
       "nome": "SERGIPE - PREMIAÇÃO - DIREITO AO LAZER E ACOLHIMENTO - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19333"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19333",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19429",
@@ -189,7 +212,8 @@
       "nome": "BALDIM MG - CHAMAMENTO PÚBLICO - FORMAÇÃO MUSICAL E SEMANA CULTURAL - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19429"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19429",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19430",
@@ -197,7 +221,8 @@
       "nome": "JUNDIAÍ SP - CHAMAMENTO PÚBLICO - PROESC FOMENTO CULTURAL - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19430"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19430",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19447",
@@ -205,7 +230,8 @@
       "nome": "SANTARÉM  PA - CHAMAMENTO PÚBLICO - FOMENTO MULTILINGUAGENS - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19447"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19447",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19448",
@@ -213,7 +239,8 @@
       "nome": "Edital Socioambiental de Incentivo Fiscal Ancar - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19448"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19448",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19452",
@@ -221,7 +248,8 @@
       "nome": "MURICI  AL - FOMENTO - PROJETOS CULTURAIS PNAB - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19452"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19452",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19179",
@@ -229,7 +257,8 @@
       "nome": "NITERÓI  RJ - CHAMAMENTO PÚBLICO - CULTURA GEEK - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19179"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19179",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18997",
@@ -237,7 +266,8 @@
       "nome": "FME Transforma 2026 - Chamada aberta de projetos",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=18997"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=18997",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18822",
@@ -245,7 +275,8 @@
       "nome": "BRASIL - PREMIAÇÃO - SELO NACIONAL COMPROMISSO COM A ALFABETIZAÇÃO - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=18822"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=18822",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16189",
@@ -253,7 +284,8 @@
       "nome": "EDITAL SOCIAL  PRONON e PRONAS-PCD/2025",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=16189"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=16189",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17831",
@@ -261,7 +293,8 @@
       "nome": "Edital 01/2026 do Fundo Nacional de Solidariedade (FNS)",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17831"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17831",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17532",
@@ -269,7 +302,8 @@
       "nome": "Clipe da Quebrada 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17532"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17532",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17914",
@@ -277,7 +311,8 @@
       "nome": "Edital Mecenas do Ceará 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17914"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17914",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17927",
@@ -285,7 +320,8 @@
       "nome": "Chamada para Projetos Esportivos pela Lei Paulista de Incentivo ao Esporte",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17927"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17927",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17991",
@@ -293,7 +329,8 @@
       "nome": "Edital Política de Patrocínio de 2026 ",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17991"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17991",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18157",
@@ -301,7 +338,8 @@
       "nome": "Programa Shell de Patrocínios Incentivados",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=18157"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=18157",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17348",
@@ -309,7 +347,8 @@
       "nome": "Mobilidades 2026 - Apresentações",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17348"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17348",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19480",
@@ -317,7 +356,8 @@
       "nome": "MORRETES  PR - CHAMAMENTO PÚBLICO - SELEÇÃO DE PROJETOS CULTURAIS - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19480"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19480",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19532",
@@ -325,7 +365,8 @@
       "nome": "SANTA ROSA  RS - PREMIAÇÃO - TRAJETÓRIAS CULTURAIS - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19532"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19532",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19512",
@@ -333,7 +374,8 @@
       "nome": "PRAIA GRANDE  SP - PREMIAÇÃO - PONTOS E PONTÕES DE CULTURA - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19512"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19512",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19513",
@@ -341,7 +383,8 @@
       "nome": "PRAIA GRANDE  SP - CHAMAMENTO PÚBLICO - FOMENTO A PROJETOS DE PONTOS DE CULTURA - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19513"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19513",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19514",
@@ -349,7 +392,8 @@
       "nome": "PRAIA GRANDE  SP - BOLSA - PESQUISA CULTURAL - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19514"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19514",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19530",
@@ -357,7 +401,8 @@
       "nome": "SANTA ROSA  RS - CHAMAMENTO PÚBLICO - AVANÇO CULTURAL - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19530"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19530",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19531",
@@ -365,7 +410,8 @@
       "nome": "SANTA ROSA  RS - PREMIAÇÃO - PONTOS E PONTÕES DE CULTURA - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19531"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19531",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19465",
@@ -373,7 +419,8 @@
       "nome": "Edital TotalPass Leis Federais 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19465"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19465",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19567",
@@ -381,7 +428,8 @@
       "nome": "Prêmio Jovens Visionários Prudential - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19567"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19567",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19464",
@@ -389,7 +437,8 @@
       "nome": "Edital Smart Fit LIC RIO 2027",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19464"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19464",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19361",
@@ -397,2554 +446,2919 @@
       "nome": "SÃO GONÇALO  RJ - CHAMAMENTO PÚBLICO - FESTIVAIS, MOSTRAS E CIRCUITOS CULTURAIS - 2026",
       "e_central?": true
     },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19361"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19361",
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19357",
     "attributes": {
       "nome": "SANTA CATARINA - FOMENTO - AÇÕES CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17394",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO para credenciamento de Parceiristas de arte e de Cultura",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19351",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 004/2026 - MAPEAMENTO, DIAGNÓSTICO E PAINEL DE DADOS CULTURAIS",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19302",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 002/2026 - PREMIAÇÃO DE PONTOS E PONTÕES - OURINHOS ",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19283",
     "attributes": {
       "nome": "EDITAL SMCT Nº 28/2026 PRÊMIO GRÃO MESTRE CORISCO ",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16452",
     "attributes": {
       "nome": "Edital Ambev Brasilidades 2026",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19458",
     "attributes": {
       "nome": "MINAS GERAIS - BOLSA - INICIAÇÃO CIENTÍFICA JÚNIOR BIC JR IFTM E FAPEMIG - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19457",
     "attributes": {
       "nome": "MINAS GERAIS - BOLSA - DESENVOLVIMENTO TECNOLÓGICO E INOVAÇÃO PIBITI IFTM (17/2026) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19456",
     "attributes": {
       "nome": "MINAS GERAIS - BOLSA - INICIAÇÃO CIENTÍFICA PIBIC E PIVIC IFTM (16/2026) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19434",
     "attributes": {
       "nome": "BETIM MG - CHAMAMENTO PÚBLICO - FESTIVAIS EM CENA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19423",
     "attributes": {
       "nome": "BAHIA - FOMENTO - POUSO DA PALAVRA: BIBLIOTECAS COMUNITÁRIAS (CHAMAMENTO 003/2026) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19416",
     "attributes": {
       "nome": "ITABIRA MG - PREMIAÇÃO - PONTOS E PONTÕES DE CULTURA  - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19231",
     "attributes": {
       "nome": "MINAS GERAIS - CHAMAMENTO PÚBLICO - FIXAÇÃO DE DOUTORES - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19280",
     "attributes": {
       "nome": "SÃO PAULO - CHAMAMENTO PÚBLICO - LONGA-METRAGEM E OBRA SERIADA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19047",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 025/2026 SELEÇÃO DE PROJETO PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL MEMÓRIA E PRESERVAÇÃO AUDIOVISUAL DO MUSEU DA IMAGEM E DO SOM DE MATO GROSSO DO SUL – MIS-MS MinC/FSA/BRDE/ARRANJOS REGIONAIS – 2026",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19048",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 26/2026 SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL PARA PRODUÇÃO AUDIOVISUAL - MATO GROSSO DO SUL - 2026 – MinC/FSA/BRDE/ARRANJOS REGIONAIS",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19356",
     "attributes": {
       "nome": "BRASIL - BOLSA - PESQUISA E PRODUÇÃO CIENTÍFICA E TÉCNICA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19526",
     "attributes": {
       "nome": "POMERODE  SC - CHAMAMENTO PÚBLICO - DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19535",
     "attributes": {
       "nome": "ARACAJU  SE - CHAMAMENTO PÚBLICO - AÇÕES CONTINUADAS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19536",
     "attributes": {
       "nome": "ARACAJU  SE - CHAMAMENTO PÚBLICO - LITERATURA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19537",
     "attributes": {
       "nome": "ARACAJU  SE - FOMENTO - AUDIOVISUAL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19544",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - BOLSAS DE EXTENSÃO UNIVERSITÁRIA PIBEX  - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19392",
     "attributes": {
       "nome": "NORDESTE - EDITAL - SOLUÇÕES PARA UM OCEANO SEM PLÁSTICO (SOMAR AZUL) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19459",
     "attributes": {
       "nome": "JUIZ DE FORA  MG - CHAMAMENTO PÚBLICO - AÇÃO CLIMÁTICA JUVENIL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18874",
     "attributes": {
       "nome": "Parcerias Sustentáveis 2027",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19336",
     "attributes": {
       "nome": "CHAMADA KINROSS CONECTA INCENTIVADOS 2026 2027",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18269",
     "attributes": {
       "nome": "CIRCULAÇÃO E PARTICIPAÇÃO AUDIOVISUAL NO EXTERIOR - EDITAL DE INTERCÂMBIO CULTURAL MINC Nº 1",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19338",
     "attributes": {
       "nome": "GUARAÍ  TO - CHAMAMENTO PÚBLICO - OFICINAS SOCIOEDUCATIVAS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19391",
     "attributes": {
       "nome": "Chamada Pública – Programa de Eficiência Energética 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19505",
     "attributes": {
       "nome": "Edital Doar de Coração 2027",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19515",
     "attributes": {
       "nome": "MORENO  PE - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19525",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - RESILIÊNCIA, RESPOSTA E RECUPERAÇÃO DE DESASTRES - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19543",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - PD&I MOBILIDADE VEICULAR INTELIGENTE (MVI) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19145",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - TRANSIÇÃO AGROECOLÓGICA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19180",
     "attributes": {
       "nome": "Edital Mulheres do Nosso Bairro 2026",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19234",
     "attributes": {
       "nome": "SÃO PAULO  SP - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19519",
     "attributes": {
       "nome": "LAGUNA  SC - CHAMAMENTO PÚBLICO - FIA DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19497",
     "attributes": {
       "nome": "RIO DE JANEIRO - FOMENTO - BIOTÉRIOS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19494",
     "attributes": {
       "nome": "PORTO SEGURO BA - CREDENCIAMENTO - MÚSICOS, BANDAS, GRUPOS ARTÍSTICOS E FILARMÔNICAS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19550",
     "attributes": {
       "nome": "SÃO GONÇALO DO AMARANTE CE - FOMENTO - PROJETOS SOCIAIS, CULTURAIS, AMBIENTAIS E ESPORTIVOS - 2026/2027",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19561",
     "attributes": {
       "nome": "ARMAÇÃO DOS BÚZIOS  RJ - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19565",
     "attributes": {
       "nome": "GUARARAPES  SP - FOMENTO - PROJETOS CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19309",
     "attributes": {
       "nome": "SÃO PAULO - FOMENTO - PESQUISA E INOVAÇÃO SOCIAL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19477",
     "attributes": {
       "nome": "PORTO SEGURO BA - SUBSÍDIO - ESPAÇOS CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19496",
     "attributes": {
       "nome": "RIO DE JANEIRO - FOMENTO - MANUTENÇÃO DE BIOTÉRIOS NB-3 - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18875",
     "attributes": {
       "nome": "EDITAL DE SELEÇÃO SIMPLIFICADA Nº 115/2026 -  CONTADORES ",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19533",
     "attributes": {
       "nome": "FLORIANÓPOLIS  SC - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19466",
     "attributes": {
       "nome": "PARAÍBA - BOLSA - MESTRADO E DOUTORADO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19548",
     "attributes": {
       "nome": "PERNAMBUCO - FOMENTO - PESQUISAS EM PLANEJAMENTO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19491",
     "attributes": {
       "nome": "CONSELHEIRO LAFAIETE MG - PREMIAÇÃO - AGENTES CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19490",
     "attributes": {
       "nome": "CONSELHEIRO LAFAIETE MG - CHAMAMENTO PÚBLICO - FOMENTO A PROJETOS CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19469",
     "attributes": {
       "nome": "PARAÍBA - BOLSA - PÓS-DOUTORADO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19275",
     "attributes": {
       "nome": "BRASIL - CREDENCIAMENTO - INCLUSÃO SOCIOECONÔMICA E EMPREENDEDORISMO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19367",
     "attributes": {
       "nome": "ROLÂNDIA  PR - CHAMAMENTO PÚBLICO - ATENDIMENTO À PESSOA IDOSA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19399",
     "attributes": {
       "nome": "CONSELHEIRO LAFAIETE  MG - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19400",
     "attributes": {
       "nome": "CONSELHEIRO LAFAIETE  MG - PREMIAÇÃO - AGENTES CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19401",
     "attributes": {
       "nome": "CONSELHEIRO LAFAIETE  MG - PREMIAÇÃO - PONTOS DE CULTURA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19468",
     "attributes": {
       "nome": "PARAÍBA - BOLSA - MESTRADO E DOUTORADO PROFISSIONAL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18383",
     "attributes": {
       "nome": "Edital de chamamento público FESPORTE/PIE 003/2026 - Apoio ao Esporte Educacional e à Formação Esportiva",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19387",
     "attributes": {
       "nome": "PARANÁ - CHAMAMENTO PÚBLICO - GESTÃO SUSTENTÁVEL DOS RECURSOS HÍDRICOS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19426",
     "attributes": {
       "nome": "REGIÃO DOS LAGOS RJ - PREMIAÇÃO - JORNALISMO AMBIENTAL (PROLAGOS 8ª EDIÇÃO) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19499",
     "attributes": {
       "nome": "PELOTAS  RS - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO DE ROTEIROS AUDIOVISUAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19500",
     "attributes": {
       "nome": "PELOTAS  RS - PREMIAÇÃO - POVOS E COMUNIDADES TRADICIONAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19516",
     "attributes": {
       "nome": "PELOTAS   RS - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO DE ROTEIROS AUDIOVISUAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19498",
     "attributes": {
       "nome": "RIO DE JANEIRO - FOMENTO - PROJETOS DE PESQUISA EM HUMANIDADES - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19386",
     "attributes": {
       "nome": "PARANÁ - CHAMAMENTO PÚBLICO - ECOSSISTEMAS EMERGENTES E BIODIVERSIDADE - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19555",
     "attributes": {
       "nome": "RIO GRANDE DO NORTE - SUBSÍDIO - AQUISIÇÃO DE BENS E INSUMOS PNAB (EDITAL 17/2026) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19556",
     "attributes": {
       "nome": "RIO GRANDE DO NORTE - SUBSÍDIO - MANUTENÇÃO DE ESPAÇOS CULTURAIS PNAB (EDITAL 18/2026) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19443",
     "attributes": {
       "nome": "PIAUÍ, MARANHÃO E BAHIA - FOMENTO - PAISAGENS PRIORITÁRIAS (50º EDITAL FUNDO ECOS) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19152",
     "attributes": {
       "nome": "PARAÍBA - CHAMAMENTO PÚBLICO - ATHIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19518",
     "attributes": {
       "nome": "NAVEGANTES  SC - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19557",
     "attributes": {
       "nome": "PARÁ - CHAMAMENTO PÚBLICO - RADIOGRAFIA CENSITÁRIA DA ECONOMIA CRIATIVA DE ANANINDEUA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18411",
     "attributes": {
       "nome": "CAMPINAS - Credenciamento nº 001/2022 - Guias de Turismo",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19390",
     "attributes": {
       "nome": "EDITAL FUNDO DE INCENTIVO - ACELERE O RELÓGIO DA IGUALDADE - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19521",
     "attributes": {
       "nome": "RIO GRANDE DO SUL - FOMENTO - CRIAÇÃO E MONTAGEM DE ESPETÁCULOS DE ARTES CÂNICAS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19564",
     "attributes": {
       "nome": "NAVEGANTES  SC - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19253",
     "attributes": {
       "nome": "PERNAMBUCO - CHAMAMENTO PÚBLICO - AUDIOVISUAL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19314",
     "attributes": {
       "nome": "PARANÁ - PREMIAÇÃO - GENTILEZA URBANA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19436",
     "attributes": {
       "nome": "SANTA CATARINA - FOLHA DE FOMENTO - AÇÕES AFIRMATIVAS E INCLUSÃO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19442",
     "attributes": {
       "nome": "BAURU  SP - CHAMAMENTO PÚBLICO - PROTEÇÃO SOCIAL BÁSICA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19568",
     "attributes": {
       "nome": "SÃO CARLOS  SP - BOLSA - CULTURAS TRADICIONAIS E POPULARES - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17215",
     "attributes": {
       "nome": "EDITAL Nº 4 - BOLSAS CULTURAIS DE PARTICIPAÇÃO EM MERCADOS, MOSTRAS E FESTIVAIS NACIONAIS E INTERNACIONAIS",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19425",
     "attributes": {
       "nome": "CEARÁ - PREMIAÇÃO - DESAFIO PREVINE: MINHA ESCOLA SEM VIOLÊNCIA (MPCE) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19413",
     "attributes": {
       "nome": "MINAS GERAIS - BOLSA - PESQUISADOR SET-A EM TECNOLOGIAS AMBIENTAIS (UNIFAL 15/2026) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18415",
     "attributes": {
       "nome": "RIO DE JANEIRO - INCENTIVO À ATRAÇÃO DE PRODUÇÕES AUDIOVISUAIS PARA O MUNICÍPIO DO RIO DE JANEIRO – “CASH REBATE”",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18416",
     "attributes": {
       "nome": "RIO DE JANEIRO - INVESTIMENTO EM PRODUÇÕES COM GRANDE POTENCIAL COMERCIAL – “RIOFILME INVEST”",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19324",
     "attributes": {
       "nome": "RIO DE JANEIRO  RJ - FOMENTO - AUDIOVISUAL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19325",
     "attributes": {
       "nome": "RIO DE JANEIRO  RJ - FOMENTO - AUDIOVISUAL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19326",
     "attributes": {
       "nome": "RIO DE JANEIRO  RJ - FOMENTO - AUDIOVISUAL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19384",
     "attributes": {
       "nome": "PARANÁ - CHAMAMENTO PÚBLICO - ECONOMIA AZUL SUSTENTÁVEL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19563",
     "attributes": {
       "nome": "ESPÍRITO SANTO - BOLSA - DOUTORADO PROCAP - 2027",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19562",
     "attributes": {
       "nome": "ESPÍRITO SANTO - BOLSA - MESTRADO - 2027",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19560",
     "attributes": {
       "nome": "RIO DAS OSTRAS  RJ - CHAMAMENTO PÚBLICO - FOMENTO À PRODUÇÃO DE CENÁRIOS, FIGURINOS E ELEMENTOS CÊNICOS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19460",
     "attributes": {
       "nome": "SÃO PAULO  SP - FOMENTO - VIDEOCAST E PODCAST - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19520",
     "attributes": {
       "nome": "EDITAL NEXA TRANSFORMA CONSTRUINDO LEGADOS 3a EDIÇÃO 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19445",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - CULTURAS TRADICIONAIS E POPULARES E DAS ARTES - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19558",
     "attributes": {
       "nome": "RIO GRANDE DO SUL - FOMENTO - TODOS NO JOGO 2 - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19155",
     "attributes": {
       "nome": "SALVADOR  BA - PREMIAÇÃO - ENTIDADES CARNAVALESCAS DE MATRIZ AFRICANA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19523",
     "attributes": {
       "nome": "Incubadora de IA em Escala Humana - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19346",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - MORADIA E INCLUSÃO SOCIAL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19501",
     "attributes": {
       "nome": "BREJO SANTO  CE - PREMIAÇÃO - PONTOS DE CULTURA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19420",
     "attributes": {
       "nome": "SÃO PAULO  SP - CHAMAMENTO PÚBLICO - TEATRO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19517",
     "attributes": {
       "nome": "COLATINA  ES - CHAMAMENTO PÚBLICO - DEFESA DOS DIREITOS DA PESSOA IDOSA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19488",
     "attributes": {
       "nome": "SÃO JOSÉ DO RIO PRETO SP - PREMIAÇÃO - PONTOS E PONTÕES DE CULTURA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19487",
     "attributes": {
       "nome": "SÃO JOSÉ DO RIO PRETO SP - CHAMAMENTO PÚBLICO - FOMENTO A PONTOS DE CULTURA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19450",
     "attributes": {
       "nome": "TUBARÃO  SC - CHAMAMENTO PÚBLICO - DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19421",
     "attributes": {
       "nome": "SÃO PAULO  SP - CHAMAMENTO PÚBLICO - FOMENTO À DANÇA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19419",
     "attributes": {
       "nome": "SÃO PAULO  SP - FOMENTO - TEATRO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19529",
     "attributes": {
       "nome": "ITARARÉ  SP - CHAMAMENTO PÚBLICO - SELEÇÃO DE PROJETOS DE MANIFESTAÇÃO CULTURAL (PNAB) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19541",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - PD&I EM INFRAESTRUTURA COMPUTACIONAL  - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17327",
     "attributes": {
       "nome": "  Projetos de Responsabilidade Social Corporativa CBMM - 2026 ",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17380",
     "attributes": {
       "nome": "EDITAL 009/2026 DE SOLICITAÇÃO DE PAUTA DO TEATRO MUNICIPAL DE ITAJAÍ - 2º SEMESTRE DE 2026",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17765",
     "attributes": {
       "nome": "Edital nº 2/2026 – Cadastramento de Entidades e Seleção de Projetos para Recursos de Prestações Pecuniárias",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19405",
     "attributes": {
       "nome": "PARÁ / BRASIL - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO REGIONAL SUSTENTÁVEL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19375",
     "attributes": {
       "nome": "BRASIL - SUBVENÇÃO - FINEP MAIS INOVAÇÃO TRANSFORMAÇÃO MINERAL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18090",
     "attributes": {
       "nome": "Programa Bolsa Atleta",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17307",
     "attributes": {
       "nome": "EDITAL Nº009/2026-EJs/DEX/PROEC/ UEMS EDITAL DE FLUXO CONTÍNUO PARA PROJETOS DE EXTENSÃO VINCULADOS À CRIAÇÃO DE EMPRESAS JUNIORES NO ÂMBITO DA UNIVERSIDADE ESTADUAL DE MATO GROSSO DO SUL – EJs/DEX/PROEC/UEMS",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18459",
     "attributes": {
       "nome": "Edital Conjunto 007/2026 PROPPI-DEX/PROEC-UEMS de Fluxo Contínuo Incubadora Fênix ",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18460",
     "attributes": {
       "nome": "Edital Conjunto 008/2026 PROPPI-DEX/PROEC-UEMS de Fluxo Contínuo Incubadora Elos",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17329",
     "attributes": {
       "nome": "EDITAL Nº 021/2026 – DCULT/PROEC/UEMS EDITAL DE FLUXO CONTÍNUO DOS EVENTOS DE CULTURA SEM ÔNUS PARA A UNIVERSIDADE  ESTADUAL DE MATO GROSSO DO SUL",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16593",
     "attributes": {
       "nome": "EDITAL Nº 020/2026 – DCULT/PROEC/UEMS EDITAL DE FLUXO CONTÍNUO DAS AÇÕES DE CULTURA SEM ÔNUS PARA A UNIVERSIDADE ESTADUAL DE MATO GROSSO DO SUL",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16597",
     "attributes": {
       "nome": "EDITAL Nº03/2026-EVENTOS DEX/PROEC/UEMS",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16582",
     "attributes": {
       "nome": "Edital de Fluxo Contínuo Nº 02/2026 DEX/PROEC/UEMS (Programas, Projetos e Cursos) ",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18810",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - EDUCAÇÃO AMBIENTAL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19559",
     "attributes": {
       "nome": "GOIÁS - CONCURSO - COMERCIALIZAÇÃO DE LONGA-METRAGEM FSA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19484",
     "attributes": {
       "nome": "BRASIL - PREMIAÇÃO - PRÊMIOS FUNDACIÓN MAPFRE À INOVAÇÃO SOCIAL (10ª EDIÇÃO) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19397",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - SOLUÇÕES TECNOLÓGICAS PARA AGRICULTURA FAMILIAR - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19362",
     "attributes": {
       "nome": "GOIÁS - CHAMAMENTO PÚBLICO - PRODUÇÃO AUDIOVISUAL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19282",
     "attributes": {
       "nome": "GOIÁS - FOMENTO - PRODUÇÃO AUDIOVISUAL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19027",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - SOCIOBIOECONOMIA NA AMAZÔNIA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19322",
     "attributes": {
       "nome": "RIO DE JANEIRO  RJ - FOMENTO - DESENVOLVIMENTO DE PROJETOS AUDIOVISUAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19331",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - RESTAURAÇÃO ECOLÓGICA E RECURSOS HÍDRICOS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19323",
     "attributes": {
       "nome": "RIO DE JANEIRO  RJ - FOMENTO - DISTRIBUIÇÃO DE LONGA-METRAGEM - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19171",
     "attributes": {
       "nome": "BRASIL - FOMENTO - PESQUISA E INOVAÇÃO FLORESTAL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19321",
     "attributes": {
       "nome": "RIO DE JANEIRO  RJ - FOMENTO - PRODUÇÃO DE SÉRIE - FICÇÃO OU ANIMAÇÃO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19320",
     "attributes": {
       "nome": "RIO DE JANEIRO  RJ - FOMENTO - PRODUÇÃO DE AUDIOVISUAL DOCUMENTÁRIO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19319",
     "attributes": {
       "nome": "RIO DE JANEIRO  RJ - FOMENTO - COPRODUÇÃO INTERNACIONAL DE LONGA-METRAGEM - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17331",
     "attributes": {
       "nome": "Credenciamento Nacional de Parceiristas FUNDARPE Edital 003/2024",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19566",
     "attributes": {
       "nome": "BAIANO - BOLSA - EXTENSÃO TECNOLÓGICA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19383",
     "attributes": {
       "nome": "PARANÁ - CHAMAMENTO PÚBLICO - FLORESTAS E SILVICULTURA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17019",
     "attributes": {
       "nome": "Edital 03/2026-DRI/UEMS. Edital de fluxo contínuo para propostas de ações de internacionalização, sem ônus para a UEMS.",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19201",
     "attributes": {
       "nome": "Prêmio Educação para Gentileza e Generosidade 2026 Escolas ",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17108",
     "attributes": {
       "nome": "Aqui tem Cultura",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19546",
     "attributes": {
       "nome": "BRASIL - AUXÍLIO - EVENTOS CIENTÍFICOS TECNOLÓGICOS E DE INOVAÇÃO (CHAMADA CNPQ 34/2026 - ARC) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19381",
     "attributes": {
       "nome": "MINAS GERAIS - CHAMAMENTO PÚBLICO - DESAFIOS PÚBLICOS POR INOVAÇÃO ABERTA (HUBMG GOV) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18391",
     "attributes": {
       "nome": "EDITAL Nº 003/2026 - RELATÓRIOS/EVENTOS-DEX/PROEC/UEMS",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19418",
     "attributes": {
       "nome": "SÃO JOSÉ DE RIBAMAR  MA - CHAMAMENTO PÚBLICO - PROJETOS SOCIAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19376",
     "attributes": {
       "nome": "BRASIL - BOLSA - ESTÁGIO DE PESQUISA NO EXTERIOR (BEPE MESTRADO FAPESP) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19364",
     "attributes": {
       "nome": "EDITAL GAM 2026 Lei de Incentivo Federal - IRPJ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19355",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - MESTRADO E DOUTORADO ACADÊMICO PARA INOVAÇÃO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19349",
     "attributes": {
       "nome": "EDITAL GAM 2026 Lei de Incentivo Estadual/SC - ICMS - PIE",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19348",
     "attributes": {
       "nome": "EDITAL GAM 2026 Lei de Incentivo Estadual/SC - ICMS - PIC ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19446",
     "attributes": {
       "nome": "BRASIL - BOLSA - PROFESSOR VISITANTE NO EXTERIOR - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19534",
     "attributes": {
       "nome": "BRASIL - BOLSA - PROJETO INSPIRAÇÃO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19461",
     "attributes": {
       "nome": "Edital Recaatingar - Segundo Ciclo - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19329",
     "attributes": {
       "nome": "RIO GRANDE DO SUL - CHAMAMENTO PÚBLICO - OCUPAÇÃO DE ESPAÇOS EXPOSITIVOS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18063",
     "attributes": {
       "nome": "Edital MAPFRE 2026 para Projetos Incentivados - PRONAS e PRONON",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16916",
     "attributes": {
       "nome": "Edital de Chamamento Público nº 19/2025",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18925",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - PESQUISA E DESENVOLVIMENTO (FINEP/NORUEGA) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19547",
     "attributes": {
       "nome": "BRASIL - BOLSA - PROGRAMA CÁTEDRA JORGE AMADO CAPES UNIVERSIDADE DE HAVANA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17931",
     "attributes": {
       "nome": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15419",
     "attributes": {
       "nome": "Edital de oficinas artístico-culturais para o Município de Chapecó",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17521",
     "attributes": {
       "nome": "Edital 001/2026 de Cadastro de Projetos do Programa de Incentivo ao Esporte - PIE",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17421",
     "attributes": {
       "nome": "ICMS CULTURAL - Edital Indução Cinematográfica 2026",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17526",
     "attributes": {
       "nome": "Edital Associação Paulista dos Amigos da arte 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17163",
     "attributes": {
       "nome": "EDITAL Nº 03/2026 - FAPDF MOVIMENTA",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18143",
     "attributes": {
       "nome": "Chamada Pública Rio Doce Participativo – Projetos Estruturantes para o Desenvolvimento Territorial",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18643",
     "attributes": {
       "nome": "BRASIL · CHAMAMENTO PÚBLICO · PAGAMENTO POR SERVIÇOS AMBIENTAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17322",
     "attributes": {
       "nome": "Certificação do Circo Itinerante Capixaba",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17164",
     "attributes": {
       "nome": "EDITAL 06/2026 – DEMANDA ESPONTÂNEA SELEÇÃO PÚBLICA DE PROPOSTAS DE PESQUISA CIENTÍFICA, TECNOLÓGICA E INOVAÇÃO",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17173",
     "attributes": {
       "nome": "EDITAL DE CREDENCIAMENTO Nº 001/2026 PARA SELEÇÃO DE GRUPOS E BANDAS DE MÚSICA DA CULTURA POPULAR PARA AS FESTIVIDADES DO MUNICÍPIO DE MARECHAL DEODORO DURANTE O ANO DE 2026.",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17439",
     "attributes": {
       "nome": "Edital de Chamamento Público para Credenciamento de Artistas",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19305",
     "attributes": {
       "nome": "Prêmio Isabel Salgado 3ª Edição - Categoria Raízes",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19306",
     "attributes": {
       "nome": "Prêmio Isabel Salgado 3ª Edição - Categoria Semente",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19304",
     "attributes": {
       "nome": "Prêmio Isabel Salgado 3ª Edição - Categoria Aurora",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19350",
     "attributes": {
       "nome": "BRASIL - BOLSA - BOLSAS DE PRODUTIVIDADE - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19289",
     "attributes": {
       "nome": "JOINVILLE  SC - CHAMAMENTO PÚBLICO - INFÂNCIA E ADOLESCÊNCIA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19197",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - TECNOLOGIAS E INOVAÇÃO SOCIAL EM ECONOMIA SOLIDÁRIA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19479",
     "attributes": {
       "nome": "RIO GRANDE DO SUL - CONCURSO - LONGA-METRAGEM - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19478",
     "attributes": {
       "nome": "RIO GRANDE DO SUL - CONCURSO - COMERCIALIZAÇÃO DE LONGA-METRAGEM - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19290",
     "attributes": {
       "nome": "JOINVILLE  SC - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19168",
     "attributes": {
       "nome": "JOINVILLE  SC - FMIC - PATRIMÔNIO MATERIAL E INCENTIVO À CULTURA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19162",
     "attributes": {
       "nome": "ESPÍRITO SANTO - PREMIAÇÃO - CULTURA OCEÂNICA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17495",
     "attributes": {
       "nome": "Edital de Chamamento Público para Credenciamento de serviços artísticos",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19424",
     "attributes": {
       "nome": "BRASIL - FOMENTO - PLATAFORMAS DIGITAIS LIVRES E ABERTAS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16363",
     "attributes": {
       "nome": "EDITAL DE CREDENCIAMENTO N002-2025 - OCUPAÇÃO GALERIAS DE ARTE",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19463",
     "attributes": {
       "nome": "SÃO PAULO - BOLSA - PESQUISA EM BIOMEDICINA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17332",
     "attributes": {
       "nome": "Credenciamento de parceiristas - Funcultura 2025",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19055",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - COOPERAÇÃO CIENTÍFICA E TECNOLÓGICA BRASIL-FRANÇA (SAÚDE E CONTINUO DIGITAL) - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18994",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - PAGAMENTO POR SERVIÇOS AMBIENTAIS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16848",
     "attributes": {
       "nome": "Chamada Pública Cine Brasília Exibição de Curtas-Metragens",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17667",
     "attributes": {
       "nome": "Programa Funarte Aberta 2026 - Livraria Mário de Andrade",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17666",
     "attributes": {
       "nome": "Programa Funarte Aberta 2026 -  Complexo Funarte SP",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17665",
     "attributes": {
       "nome": "Programa Funarte Aberta 2026 - Complexo Funarte MG",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17664",
     "attributes": {
       "nome": "Programa Funarte Aberta 2026 - Centro Técnico de Artes - RJ",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17663",
     "attributes": {
       "nome": "Programa Funarte Aberta 2026 - Centro de Teatro",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19528",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - TECNOLOGIAS PARA A AGRICULTURA FAMILIAR - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19542",
     "attributes": {
       "nome": "BRASIL - SUBVENÇÃO - FINEP COOPERAMAIS BRASIL TECNOLOGIAS EMPRESAS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19184",
     "attributes": {
       "nome": "EDITAL 016/2026 DE SOLICITAÇÃO DE PAUTA DO TEATRO MUNICIPAL DE ITAJAÍ - 1º SEMESTRE DE 2027",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18762",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - INSTITUIÇÃO ASSOCIADA PICT-UFSM - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19188",
     "attributes": {
       "nome": "Tubarão  SC - Chamamento Público - Direitos da Criança e do Adolescente - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19553",
     "attributes": {
       "nome": "AMAZONAS - CHAMAMENTO PÚBLICO - ECONOMIA CIRCULAR E INICIATIVAS PRODUTIVAS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19292",
     "attributes": {
       "nome": "JOINVILLE  SC - CHAMAMENTO PÚBLICO - DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19291",
     "attributes": {
       "nome": "JOINVILLE  SC - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16190",
     "attributes": {
       "nome": "EDITAL SOCIAL LEI DE INCENTIVO À RECICLAGEM - FAVORECICLE/2025",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17246",
     "attributes": {
       "nome": "Edital  de Credenciamento anual da Fundação Cultural Cidade  De Aracaju - FUNCAJU",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18731",
     "attributes": {
       "nome": "JUIZ DE FORA  MG - CREDENCIAMENTO - SOLUÇÕES TECNOLÓGICAS E MODELOS DE NEGÓCIO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17760",
     "attributes": {
       "nome": "Edital de Chamamento Público nº 06/FMCB/2026 – Credenciamento de Serviços Artísticos e Culturais",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17507",
     "attributes": {
       "nome": "Cadastro Municipal de Artista e Espaço Cultural - Selo da Cultura Local",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15005",
     "attributes": {
       "nome": "National Geographic Society está financiando indivíduos que trabalham em projetos em ciência, conservação, narrativa, educação e tecnologia",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15007",
     "attributes": {
       "nome": "Financiamento para Projetos Inovadores ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15004",
     "attributes": {
       "nome": "Apoio para Pequenos Projetos",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14989",
     "attributes": {
       "nome": "Edital de apoio de projetos que visam a conservação dos oceanos",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14991",
     "attributes": {
       "nome": "Edital de apoio à iniciativas de energias sustentáveis, economia solidária e empreendimentos sociais",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14944",
     "attributes": {
       "nome": "Patrocínios Claro",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "13648",
     "attributes": {
       "nome": "Programa  Shell Iniciativa Jovem ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "13773",
     "attributes": {
       "nome": "CHAMAMENTO PARA CREDENCIAMENTO DE INTERESSADAS EM VIAGENS DE INTERCÂMBIO",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14986",
     "attributes": {
       "nome": "Reforço imediato: Apoio Emergencial às Brigadas Voluntárias e Comunitárias",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15613",
     "attributes": {
       "nome": "Apoio para projetos sociais e culturais",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15489",
     "attributes": {
       "nome": "Oportunidade de financiamento para organizações sem fins lucrativos em estágio inicial",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15539",
     "attributes": {
       "nome": "Edital – Programa de Financiamento para Comunidades Técnicas Sustentáveis",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15540",
     "attributes": {
       "nome": "Edital para projetos dedicados a fornecer acesso a água potável e saneamento para comunidades carentes",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15552",
     "attributes": {
       "nome": "Programa Selo Social - Balneário Camboriú e Camboriú ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15829",
     "attributes": {
       "nome": "Edital para seleção de projeto de impacto social e sustentabilidade",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15850",
     "attributes": {
       "nome": "Subsídios globais para água limpa, saneamento e irrigação",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15488",
     "attributes": {
       "nome": "Edital Acelen Incentiva para apoio de projetos com impacto social, ambiental e educacional",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15469",
     "attributes": {
       "nome": "Edital Rainforest Trust para proteger ecossistemas e mitigação climática",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15472",
     "attributes": {
       "nome": " Edital para interessados em receber valores e bens oriundos de decisões judiciais em Mato Grosso",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15484",
     "attributes": {
       "nome": "Edital de apoio para projetos nas áreas social, ambiental, cultural e esportiva",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15085",
     "attributes": {
       "nome": "Seleção de projetos no setor audiovisual para receber apoio financeiro no Estado da Bahia",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15029",
     "attributes": {
       "nome": "Apoio a pequenos projetos iniciantes ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15155",
     "attributes": {
       "nome": "Fundação está buscando parcerias com organizações para financiamento anual de até US$ 1 milhão",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15217",
     "attributes": {
       "nome": "Edital Programa de Mobilidade Cultural ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15278",
     "attributes": {
       "nome": "Consultoria gratuita para OSCs de São Paulo",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15409",
     "attributes": {
       "nome": "Edital Fundo Regenerativo Brumadinho",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15022",
     "attributes": {
       "nome": "Programa de Assistência para Projetos Comunitários e de Segurança Humana",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15021",
     "attributes": {
       "nome": "Fundação comunitária que busca soluções sustentáveis ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15028",
     "attributes": {
       "nome": "Fundos de Ação Urgente",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16199",
     "attributes": {
       "nome": "Plataforma Inovação para a Indústria",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16294",
     "attributes": {
       "nome": "Girls Opportunity Alliance Fund",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16381",
     "attributes": {
       "nome": "Financiamento Rainforest Trust",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16668",
     "attributes": {
       "nome": "Programa de apoio ao Centro Franco-Brasileiro de Biodiversidade Amazônica",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16672",
     "attributes": {
       "nome": "Mapeamento de Organizações Fundo LAB",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16705",
     "attributes": {
       "nome": "Edital Pontos de Cultura",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16797",
     "attributes": {
       "nome": "Seleção de Propostas na Modalidade Chancela - Edital de Chamamento Público nº 001/2025",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17064",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 013 – SMT/2025 CAPTAÇÃO DE PATROCÍNIO PARA REALIZAÇÃO DO CARNAVAL 2026 DE POÇOS DE CALDAS",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17078",
     "attributes": {
       "nome": "Edital de Chamamento Público de Patrocínios nº 002/2025",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16112",
     "attributes": {
       "nome": "Fundo Regenerativo Lagoa Santa",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16111",
     "attributes": {
       "nome": "Fundo Regenerativo Grande Belo Horizonte",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16113",
     "attributes": {
       "nome": "Apoio Emergencial para Defensores de Direitos Humanos",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16153",
     "attributes": {
       "nome": "Energisa Cultural",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16194",
     "attributes": {
       "nome": "Capacitar para transformar futuros",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15977",
     "attributes": {
       "nome": "Seleção de negócios e instituições de ciência e tecnologia para residência no PCT Guamá do Pará",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15898",
     "attributes": {
       "nome": "Edital de subsídios para proteção e bem-estar animal ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15959",
     "attributes": {
       "nome": "Edital para parceria com OSCs que atuam na educação especial em Maceió ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15961",
     "attributes": {
       "nome": " Chamamento para qualificação de Entidades em Organizações Sociais no Distrito Federal ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15965",
     "attributes": {
       "nome": "Seleção da Havan para patrocínios, projetos e doações",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16087",
     "attributes": {
       "nome": "Edital Fundo Ifood Chega Junto",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17857",
     "attributes": {
       "nome": "Edital Programa de Incentivo à Inclusão e Promoção Social - Pró-Social/RS",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17689",
     "attributes": {
       "nome": "Edital de Convocação nº 01/2026 para credenciamento de instituições interessadas em receber recursos oriundos de Penas Pecuniárias",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17823",
     "attributes": {
       "nome": "Chamada Pública de Projetos Culturais 2026 da Equatorial Alagoas",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17571",
     "attributes": {
       "nome": "Edital de Credenciamento nº 003/2025",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18109",
     "attributes": {
       "nome": "Patrocínio Esportivo",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18265",
     "attributes": {
       "nome": "Edital Contínuo de Apoio a Projetos Sociais – Ciclo 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18427",
     "attributes": {
       "nome": "Edital de Chamamento Público MinC nº 6/2026 - Programa Rouanet nas Favelas 2",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18779",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - HUB DE INOVAÇÃO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17437",
     "attributes": {
       "nome": "Edital de Penas Pecuniárias nº 01/2026 – Epitaciolândia/AC",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17179",
     "attributes": {
       "nome": "Laboratório de ideias",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17265",
     "attributes": {
       "nome": "Credenciamento de Organizações da Sociedade Civil ou Instituições privadas sem  fins lucrativos que atuem na área  de interesse da secretaria municipal de Assistência  Social",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17279",
     "attributes": {
       "nome": "Projeto de Lei para Elaboração do Fundo Municipal para a Criança e o Adolescente ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17385",
     "attributes": {
       "nome": "Cultura Vicentina: Edital PNAB São Vicente 01/2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17401",
     "attributes": {
       "nome": "Culturas Pesqueiras Artesanais do Brasil - Edital de Chamamento Público nº 01/2026 ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17157",
     "attributes": {
       "nome": "Edital de Ocupação Instituto Energisa 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17459",
     "attributes": {
       "nome": "Ocupação da Biblioteca Pública Municipal Josué Guimarães",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17485",
     "attributes": {
       "nome": "Edital de Chamamento Público para financiamentos de projetos com o Fundo da Criança e do Adolescente ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17517",
     "attributes": {
       "nome": "Sexta Musical da ADUFPI - Cadastro de Artistas",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17535",
     "attributes": {
       "nome": "Edital para Implantação, Estruturação, Modernização, Manutenção e Expansão de Espaços Científico-Culturais ",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17542",
     "attributes": {
       "nome": "PNAB Goiás 2026 - Edital nº 09/2026: Circo",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19366",
     "attributes": {
       "nome": "TRÊS BARRAS  SC - FOMENTO - DIREITOS DA PESSOA IDOSA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19522",
     "attributes": {
       "nome": "ESPÍRITO SANTO - FOMENTO - SUBVENÇÃO ECONÔMICA À INOVAÇÃO - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19373",
     "attributes": {
       "nome": "PALMITOS  SC - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19372",
     "attributes": {
       "nome": "CANAÃ DOS CARAJÁS  PA - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19371",
     "attributes": {
       "nome": "BOTUVERÁ  SC - CHAMAMENTO PÚBLICO - PESSOA IDOSA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19216",
     "attributes": {
       "nome": "PERNAMBUCO - CHAMAMENTO PÚBLICO - DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2025",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19365",
     "attributes": {
       "nome": "TRÊS BARRAS  SC - FOMENTO - DIREITOS DA PESSOA IDOSA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19287",
     "attributes": {
       "nome": "PATROCÍNIOS CAIXA",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18912",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - BIBLIOTECAS COMUNITÁRIAS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17799",
     "attributes": {
       "nome": "EDITAL Nº 013/2026 - CREDENCIAMENTO DE PRESTADORES DE SERVIÇOS ARTÍSTICO-CULTURAIS PARA O MUNICÍPIO DE ITAJAÍ/SC",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18444",
     "attributes": {
       "nome": "EDITAL 01/2026/FGML - CREDENCIAMENTO DE PRESTADORES DE SERVIÇOS ARTÍSTICOS, LITERÁRIOS, FORMATIVOS, TÉCNICOS E DE ACESSIBILIDADE PARA A FGML",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18924",
     "attributes": {
       "nome": "CANOAS  RS - CREDENCIAMENTO - ACOLHIMENTO INSTITUCIONAL INFANTOJUVENIL - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19043",
     "attributes": {
       "nome": "APUCARANA  PR - CREDENCIAMENTO - PROGRAMA SANDBOX - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19105",
     "attributes": {
       "nome": "BRASIL - CHAMAMENTO PÚBLICO E CREDENCIAMENTO - ORGANIZAÇÕES INOVADORAS - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17081",
     "attributes": {
       "nome": "Banco de Projetos 2026 (ICMS SP, ES e GO)",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15633",
     "attributes": {
       "nome": "EDITAL Nº 07/2025  Chamamento Público para credenciamento de Intervenções Artísticas e compra de Espetáculos artísticos-culturais.",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16201",
     "attributes": {
       "nome": "EDITAL Nº 010/2025 - CREDENCIAMENTO DE PRESTADORES DE SERVIÇOS ARTÍSTICO-CULTURAIS PARA O MUNICÍPIO DE ITAJAÍ/SC ",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16505",
     "attributes": {
       "nome": " EDITAL 011/2025 - CREDENCIAMENTO DE EMPRESAS ESPECIALIZADAS NA PRESTAÇÃO DE SERVIÇOS DE CAPTAÇÃO DE RECURSOS POR MEIO DE INCENTIVOS FISCAIS E/OU RECURSOS PRÓPRIOS DAS EMPRESAS PATROCINADORAS ",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "12743",
     "attributes": {
       "nome": "Orientadores artisticos de Oficinas Culturais - Credenciamento 001_Edital 001_2023",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17097",
     "attributes": {
       "nome": "EDITAL  Nº 003/2026 DE CHAMAMENTO PÚBLICO PARA SELEÇÃO DE AÇÕES CULTURAIS NO PROGRAMA AQUI TEM ARTE",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17727",
     "attributes": {
       "nome": "Catalisar 2026 - FCCSA",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14962",
     "attributes": {
       "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO CORO SINFÔNICO DE SÃO JOSÉ DOS CAMPOS  – CREDENCIAMENTO Nº 007/EDITAL Nº 06/FCCR/2024",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16219",
     "attributes": {
       "nome": "BIP: Esporte",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16187",
     "attributes": {
       "nome": "BIP: Cultura",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16075",
     "attributes": {
       "nome": "BIP: Reciclagem",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16008",
     "attributes": {
       "nome": "Portal da Transparência dos Conselhos",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14964",
     "attributes": {
       "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO DE FORMAÇÃO LIVRE EM ARTES TAP DA LONGEVIDADE - CREDENCIAMENTO Nº 009/EDITAL Nº 08/FCCR/2024",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14963",
     "attributes": {
       "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO ORQUESTRA JOSEENSE - CREDENCIAMENTO Nº 008/EDITAL Nº 07/FCCR/2024",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "13702",
     "attributes": {
       "nome": "ESPETÁCULO INFANTIL - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14961",
     "attributes": {
       "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO COMPANHIA DE DANÇA DE SÃO JOSÉ DOS CAMPOS– CREDENCIAMENTO Nº 006/EDITAL Nº 05/FCCR/2024",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14958",
     "attributes": {
       "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO CENTRO DE ARTES CIRCENSES – CREDENCIAMENTO Nº 005/EDITAL Nº 04/FCCR/2024",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14639",
     "attributes": {
       "nome": "EDITAL 005/FCCR/2024 CREDENCIAMENTO DE PARECERISTAS DE PROJETOS CULTURAIS ",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14318",
     "attributes": {
       "nome": "PROJETO ARTE NAS RUAS - Intervenções Artísticas / Credenciamento 004_Edital 026_2023",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "13705",
     "attributes": {
       "nome": "ESPETÁCULO ADULTO OU LIVRE - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "13507",
     "attributes": {
       "nome": "PRESTAÇÃO DE SERVIÇOS TÉCNICOS E DE PRODUÇÃO PARA EVENTOS CULTURAIS E ARTÍSTICOS - Credenciameno nº 002/Edital nº 007/FCCR/2023",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "13701",
     "attributes": {
       "nome": "INTERVENÇÃO ARTÍSTICA - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "13693",
     "attributes": {
       "nome": "EXPOSIÇÃO ARTES /EXIBIÇÃO AUDIOVISUAL - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "13691",
     "attributes": {
       "nome": "MANIFESTAÇÕES DA CULTURA POPULAR - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "13686",
     "attributes": {
       "nome": "WORKSHOPS - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "13678",
     "attributes": {
       "nome": "VIVÊNCIAS - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16862",
     "attributes": {
       "nome": "EDITAL UEMS N° 05/2026–PROPPI/UEMS PROJETOS DE PESQUISA APROVADOS POR ÓRGÃO EXTERNO",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16073",
     "attributes": {
       "nome": "EDITAL DE CREDENCIAMENTO 001-2025 - MUSICOS ORQUESTRA MUNICIPAL DE UBERABA",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16243",
     "attributes": {
       "nome": "BIP: Fundo para Infância e Adolescência (FIA)",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16268",
     "attributes": {
       "nome": "BIP: Fundo da Pessoa Idosa",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16345",
     "attributes": {
       "nome": "Cem Cópias Sem Custo - Técnico-científico ",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16346",
     "attributes": {
       "nome": "Cem Cópias Sem Custo - Literatura",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16347",
     "attributes": {
       "nome": "Cem Cópias Sem Custo - Literatura infantil",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16859",
     "attributes": {
       "nome": "EDITAL UEMS N° 04/2026–PROPPI/UEMS PROJETOS DE PESQUISA FLUXO CONTÍNUO",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15706",
     "attributes": {
       "nome": "EDITAL CREDENCIAMENTO SMCT Nº 140/2025 - CREDENCIAMENTO DE PARECERISTAS DE PROJETOS DA SECRETARIA MUNICIPAL DE CULTURA E TURISMO.",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17087",
     "attributes": {
       "nome": "Edital nº 18/2026 Ligas Acadêmicas (LA) fluxo Contínuo -DEX/PROEC/UEMS",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17384",
     "attributes": {
       "nome": "EDITAL DE CREDENCIAMENTO DE PARECERISTAS N° 001/2026",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17753",
     "attributes": {
       "nome": "EDITAL DE CREDENCIAMENTO N° 002/2026 - CREDENCIAMENTO DE PROFESSORES/OFICINEIROS, PARA ATUAÇÃO NA ECAU – ESCOLA DE CULTURA E ARTE DE UBERABA",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18194",
     "attributes": {
       "nome": "EDITAL DE CREDENCIAMENTO N° 003/2026 CREDENCIAMENTO DE PROFESSORES/OFICINEIROS CIRCO DO POVO",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18788",
     "attributes": {
       "nome": "EDITAL DE CREDENCIAMENTO DE PARECERISTAS N° 102/2026",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15444",
     "attributes": {
       "nome": "Instituto John Deere - Banco de Projetos 2026",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14756",
     "attributes": {
       "nome": "Edital de Credenciamento Nº 242/2024 – CREDENCIAMENTO DE OFICINEIROS PARA O PROJETO “OFICINAS EXPERIMENTAIS DE ARTE E CULTURA”, DO PROGRAMA QUALIFICANDO SABERES",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15288",
     "attributes": {
       "nome": "CHAMADA PÚBLICA Nº 001/2025   SELEÇÃO DE PARCEIROS PARA DISPONIBILIZAÇÃO DE ESPAÇOS PARA INSTALAÇÃO DE ESTAÇÕES DE RECARGA DE VEÍCULOS ELÉTRICOS",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15392",
     "attributes": {
       "nome": "Edital de Credenciamento Nº 17/2025 SMCT – CREDENCIAMENTO DE OFICINEIROS PARA O PROJETO “OFICINAS EXPERIMENTAIS DE ARTE E CULTURA”, DO PROGRAMA QUALIFICANDO SABERES",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14475",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO PÚBLICO N 002-2024 - DIVERSOS SEGMENTOS CULTURAIS",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15705",
     "attributes": {
       "nome": "EDITAL CREDENCIAMENTO SMCT Nº 141/2025 - PARA ARTISTAS INDEPENDENTES, BANDAS, GRUPOS E/OU COLETIVO PARA REALIZAÇÃO DE APRESENTAÇÃO ARTÍSTICA NOS PROJETOS E/OU EVENTOS ANUAIS PEOMOVIDOS PELA SECRETARIA MUNICIPAL DE CULTURA E TURISMO",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16844",
     "attributes": {
       "nome": "Edital de Credenciamento de Arte-Educadores",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16277",
     "attributes": {
       "nome": "Chamamento para Chancela de Projetos - CMDPI",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16493",
     "attributes": {
       "nome": "Chamamento para Chancela de Projetos - CMDPI",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16811",
     "attributes": {
       "nome": "CMDCA Godofredo Viana - Registro de Entidades e Programas",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16830",
     "attributes": {
       "nome": "Chamamento para Chancela de Projetos - CMDPI Teofilândia",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15934",
     "attributes": {
       "nome": "Chamamento para Chancela de Projetos - CMDCA Santaluz",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16971",
     "attributes": {
       "nome": "Chamamento para Chancela de Projetos - CMDCA de Godofredo Viana/MA",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17059",
     "attributes": {
       "nome": "Chamamento para Chancela de Projetos - CMDPI Barrocas",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17794",
     "attributes": {
       "nome": "EDITAL DE CREDENCIAMENTO Nº 001/2026/FETEC – ARTISTAS MUSICAIS E GRUPOS CULTURAIS/ARTÍSTICOS",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19030",
     "attributes": {
       "nome": "Chamamento para Chancela de Projetos - CMDCA Barrocas",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19483",
     "attributes": {
       "nome": "Prestação de Contas - Programa de Incentivo ao Esporte",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15828",
     "attributes": {
       "nome": "AlimentaLAB - Laboratório de Inovação em Políticas Públicas para Sistemas Alimentares Saudáveis e Sustentáveis ",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15133",
     "attributes": {
       "nome": "CMDPI Santaluz - Registro de Entidades e Programas",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15254",
     "attributes": {
       "nome": "CMDPI Riacho dos Machados - Registro de Entidades e Programas",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15255",
     "attributes": {
       "nome": "CMDPI Teofilândia - Registro de Entidades e Programas",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15256",
     "attributes": {
       "nome": "CMDCA Riacho dos Machados/MG - Registro de Entidades e Programas",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15261",
     "attributes": {
       "nome": "CMDPI Barrocas - Registro de Entidades e Programas",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15262",
     "attributes": {
       "nome": "CMDCA Barrocas/BA - Registro de Entidades e Programas",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "14975",
     "attributes": {
       "nome": "CMDCA Santaluz/BA - Registro de Entidades e Programas",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "15926",
     "attributes": {
       "nome": "CMDPI Godofredo Viana - Registro de Entidades e Programas",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16909",
     "attributes": {
       "nome": "CMDCA de Luís Domingues - Registro de Entidades e Programas Governamentais",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17617",
     "attributes": {
       "nome": "CMDPI de Luís Domingues - Registro de Entidades e Programas Governamentais",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17722",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 012/2026 -  CREDENCIAMENTO DE ARTISTAS, GRUPOS ARTÍSTICOS E PROFISSIONAIS DE SERVIÇOS TÉCNICOS ESPECIALIZADOS  DE NATUREZA ARTÍSTICA E CULTURAL",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17739",
     "attributes": {
       "nome": "Edital de Credenciamento 011/2026 - CREDENCIAMENTO DE PARECERISTAS PARA A POLÍTICA NACIONAL ALDIR BLANC (PNAB)",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17918",
     "attributes": {
       "nome": "EDITAL DE CREDENCIAMENTO Nº 002/2026/FETEC PROFISSIONAIS CULTURAIS ESPECIALIZADOS",
       "e_central?": false
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19569",
     "attributes": {
       "nome": "NOVA LIMA  MG - CHAMAMENTO PÚBLICO - PONTOS DE CULTURA - 2026",
       "e_central?": true
-    }
+    },
+    "pipeline_status": "NEW_FROM_API"
   }
 ]
