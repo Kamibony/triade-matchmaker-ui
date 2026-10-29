@@ -1,1 +1,4406 @@
-[]
+[
+  {
+    "id": "19545",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - REDE DE ACESSO E DESENVOLVIMENTO RURAL (EDITAL MDA SEAB 02/2026) - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19545",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nSenha\nForgot your password?\nRemind me\nVocê precisa se logar ou registrar antes de prosseguir.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19545",
+      "resumo_objetivo": "Página de login da plataforma Prosas para acesso a editais e oportunidades.",
+      "temas_principais": [
+        "editais",
+        "oportunidades",
+        "captação de recursos"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro e login na plataforma Prosas para prosseguir."
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19345",
+    "attributes": {
+      "nome": "ROLIM DE MOURA  RO - CHAMAMENTO PÚBLICO - PONTOS DE CULTURA - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19345",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nSenha\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19345",
+      "resumo_objetivo": "Página de login da plataforma Prosas para acesso a editais e oportunidades.",
+      "temas_principais": [
+        "geral"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro e realizar login na plataforma Prosas"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19344",
+    "attributes": {
+      "nome": "ROLIM DE MOURA  RO - PREMIAÇÃO - PONTOS DE CULTURA - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19344",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nSenha\nForgot your password?\nRemind me\nVocê precisa se logar ou registrar antes de prosseguir.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19344",
+      "resumo_objetivo": "Página de login da plataforma Prosas exigindo autenticação para acessar os detalhes do edital.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário realizar login ou registro na plataforma Prosas para visualizar os detalhes."
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19343",
+    "attributes": {
+      "nome": "ROLIM DE MOURA  RO - PREMIAÇÃO - TRAJETÓRIA CULTURAL - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19343",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nSenha\nForgot your password?\nRemind me\nVocê precisa se logar ou registrar antes de prosseguir.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19343",
+      "resumo_objetivo": "Pagina de login da plataforma Prosas exigindo autenticacao para visualizar oportunidades.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessario realizar login ou registro na plataforma Prosas para prosseguir"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19342",
+    "attributes": {
+      "nome": "ROLIM DE MOURA/RO - FOMENTO - PUBLICAÇÕES LITERÁRIAS - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19342",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19342",
+      "resumo_objetivo": "Esta página representa a tela de login da plataforma Prosas para acesso a oportunidades e editais.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19341",
+    "attributes": {
+      "nome": "ROLIM DE MOURA/RO - FOMENTO - PROJETOS CULTURAIS - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19341",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19341",
+      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a oportunidades de editais e financiamentos.",
+      "temas_principais": [
+        "editais",
+        "financiamento",
+        "projetos sociais"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro e realizar login na plataforma Prosas para acessar as oportunidades."
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19169",
+    "attributes": {
+      "nome": "JOINVILLE  SC - CHAMAMENTO PÚBLICO - PATRIMÔNIO CULTURAL E AÇÕES CULTURAIS - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19169",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19169",
+      "resumo_objetivo": "Página de login da plataforma Prosas para acesso a oportunidades de editais e financiamentos.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "18918",
+    "attributes": {
+      "nome": "EDITAL SMCT N° 23/2026 - CONCESSÃO DE AUXÍLIO FINANCEIRO AOS BLOCOS DE RUA PARA O CARNAVAL DE UBERLÂNDIA – ANO 2027",
+      "e_central?": false
+    },
+    "public_url": "https://prosas.com.br/editais/18918",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/GD7u1Ls7bnMvbF7IJj6ZIeoffkr5PNk_GZIjnVqPMYSGiE4g3BM2AXpbJWU117Ui/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/040/349/original/EDITAL-SMCT-No-23-2026-CONCESSAO-DE-AUXILIO-FINANCEIRO-AOS-BLOCOS-DE-RUA-PARA-O-CARNAVAL-DE-UBERLANDIA-ANO-2027.pdf",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nEDITAL SMCT N° 23/2026 - CONCESSÃO DE AUXÍLIO FINANCEIRO AOS BLOCOS DE RUA PARA O CARNAVAL DE UBERLÂNDIA – ANO 2027\nApplication opens on:\n04/09/2026 15:00 to 30/10/2026 20:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nConstitui objeto do presente edital o chamamento público de Blocos de Rua para realização de comemorações do Carnaval de Rua de Uberlândia do ano de 2027, no período de 22 de janeiro a 27 de fevereiro de 2027. O valor mínimo por bloco habilitado e com pontuação mínima alcançada a ser concedido é de R$ 8.000,00 (oito mil reais) e no máximo de R$ 15.000,00 (quinze mil reais) de acordo com a categoria de inscrição de cada bloco.\nCaso haja qualquer dificuldade no uso da plataforma Prosas para envio da inscrição, clique no botão Ajuda localizado no canto inferior direito da tela - WhatsApp Suporte - (31) 9 9919-8781\nOs questionamentos referentes a este edital poderão ser enviados para o e-mail: diretoriadeigualdade@gmail.com\nTotal available\nR$ 76.000,00\nLimit per project\nR$ 8.000,00\nFunding Source\nRecursos próprios\nArea of practice\nArts and Culture\nSubarea\nPopular Music\nSECRETARIA MUNICIPAL DE CULTURA E TURISMO DE UBERLÂNDIA/MG\nAdditional Files\nEDITAL SMCT N°23/2026 - CONCESSÃO DE AUXÍLIO FINANCEIRO AOS BLOCOS DE RUA PARA O CARNAVAL DE UBERLÂNDIA – ANO 2027.\nANEXO I - FORMULÁRIO DE INSCRIÇÃO\nANEXO II - DESCRIÇÃO DO BLOCO\nANEXO III - PLANILHA DE ORÇAMENTO\nANEXO IV - DESCRIÇÃO DA PROPOSTA\nANEXO V - MODELO DE DECLARAÇÃO DOS REPRESENTANTES DO BLOCO\nANEXO VI - DADOS BANCÁRIOS\nMedia\nWebsites\nPortal da Prefeitura\ninsert_link\nHTTPS://WWW.UBERLANDIA.MG.GOV.BR/PREFEITUR...\nVideos\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "18918",
+      "resumo_objetivo": "Concessão de auxílio financeiro para blocos de rua para o Carnaval de Uberlândia - Ano 2027, visando apoiar a realização de desfiles carnavalescos e a preservação da cultura popular.",
+      "temas_principais": [
+        "cultura",
+        "carnaval",
+        "manifestações artísticas",
+        "ações afirmativas"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Uberlândia - MG"
+        ],
+        "natureza_juridica_excluida": [
+          "fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_reais": 60000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Pessoa física maior de 18 anos, residente e domiciliada em Uberlândia como representante do Bloco Carnavalesco de Rua",
+          "Pessoa jurídica sem fins lucrativos com sede em Uberlândia e que apresentem expressamente em seus atos constitutivos a finalidade ou atividade de cunho artístico ou cultural",
+          "Apresentação de documentos específicos de habilitação e portfólio"
+        ]
+      },
+      "fonte_dados": "pdf"
+    }
+  },
+  {
+    "id": "15180",
+    "attributes": {
+      "nome": "Edital 002/2024 de Cadastro de Projetos da Lei Federal de Incentivo à Cultura",
+      "e_central?": false
+    },
+    "public_url": "https://prosas.com.br/editais/15180",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/826/018/original/Edital_002-2024_Cultura_Federal.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261029%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261029T183351Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=68a306ad43f7e8d57ac6fa40e43588bef54b9003e3557e30969e31cb5328f768",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nEdital 002/2024 de Cadastro de Projetos da Lei Federal de Incentivo à Cultura\nApplication opens on:\n07/11/2024 15:00 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nEste Edital possui como objetivo o cadastro de Projetos Culturais aprovados pela Lei Federal nº 8.313 de 23 de dezembro de 1991 Lei de Incentivo à Cultura nas modalidades preconizadas no Art. 18, da referida lei, para destinação de incentivos fiscais, por meio da destinação de parte de impostos devidos pela Celesc via doação.\nOs projetos poderão ser inscritos até 30/10/2026 às 18h.\nDemais informações podem ser encontradas no documento do Edital 002/2024 disponível na seção \"Arquivos Complementares\".\nDúvidas sobre o Edital: investimentosocial@celesc.com.br\nDúvidas sobre a plataforma Prosas: acionar o botão de ajuda do canto inferior direito da tela.\nFunding Source\nLei Rouanet\nProject's operating locations\nState(s):\nlocation_on\nSanta Catarina\nCELESC\nAdditional Files\nLista de municípios por Agência Regional\nCódigo de Conduta Ética - Celesc\nManual de Marca - Celesc\nPolítica Anticorrupção\nPolítica de Relacionamento com Fornecedores\nEdital 002/2024 de Cadastro de Projetos da Lei Federal de Incentivo à Cultura\nComunidao 01 - Retificação 1\nMedia\nWebsites\nSite oficial da Celesc\ninsert_link\nHTTPS://WWW.CELESC.COM.BR/\nVideos\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "15180",
+      "resumo_objetivo": "Cadastro de projetos culturais aprovados pela Lei Federal de Incentivo à Cultura (Lei nº 8.313/1991, Art. 18) para destinação de recursos via doação de incentivos fiscais pela Celesc.",
+      "temas_principais": [
+        "cultura",
+        "artes cênicas",
+        "música",
+        "patrimônio cultural",
+        "incentivo à cultura"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SC"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": [
+          "órgãos ou entidades governamentais",
+          "organizações com diretoria vinculada a cargos eletivos",
+          "organização de caráter sindical",
+          "associação classista",
+          "fins lucrativos (se restrito)"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Somente serão elegíveis os projetos com aprovação publicada no Diário Oficial da União (DOU) com PRONAC e enquadrados no Art. 18 da Lei Federal 8.313/1991",
+          "Execução obrigatória no Estado de Santa Catarina",
+          "Apresentar questionário de análise de integridade preenchido e assinado"
+        ]
+      },
+      "fonte_dados": "pdf"
+    }
+  },
+  {
+    "id": "18676",
+    "attributes": {
+      "nome": "Seleção de Projetos",
+      "e_central?": false
+    },
+    "public_url": "https://prosas.com.br/editais/18676",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/6yy61K5l8vlr9aPOBkaRXnt-EnnQAaUFzCUy1CnkNQZcqzv6r2hYYnGol0ra5sps/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/980/616/original/Edital_Rede_Memoria_Viva.docx.pdf",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nSeleção de Projetos\nApplication opens on:\n03/08/2026 21:00 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nPara dúvidas relacionadas ao regulamento deste edital, envie e-mail para: vivapequenaafrica@diaspora.black\nCaso haja qualquer dificuldade no uso da plataforma Prosas para envio da inscrição, clique no botão Ajuda localizado no canto inferior direito da tela.\n- WhatsApp Suporte - (31) 9 9919-8781\nAtendimento de segunda a sexta-feira, das 9h às 18h.\nTypes of entrepreneurs who are eligible to apply\nperson\nFor-profit Corporation\nperson\nNonprofit Corporation\nperson\nGovernmental Organization or Agency\nProject's operating locations\nCountry(ies):\nlocation_on\nBrazil\nArea of practice\nSupport managing Third Sector organizations\nArts and Culture\nCommunity development\nEducation\nEntrepreneurship / Employment and Income Generation\nSubarea\nDance\nTheatre\nPopular Music\nAudiovisual\nPhotography\nVisual / Plastic Arts\nMuseum / Cultural Center\nHistoric Heritage\nAfro-brazilian Culture\nTarget Audience\nBlack Community\nSustainable Development Goals\nIniciativa Viva Pequena África - Rede Memoria Viva\nAdditional Files\nMODELO_DE_DECLARACAO_DE_CIENCIA__COMPROMISSO__AUTORIZACAO_E_PROTECAO_DE_DADOS (1).pdf attach_fileMODELO_DE_DECLARACAO_DE_CIENCIA__COMPROMISSO__AUTORIZACAO_E_PROTECAO_DE_DADOS\nEdital Rede Memória Viva\nFAQ\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "18676",
+      "resumo_objetivo": "Promover a adesão de territórios e organizações locais à Rede Memória Viva e selecionar ações para o desenvolvimento de projetos técnico-conceituais nas áreas de arquitetura, interpretação do patrimônio e museologia.",
+      "temas_principais": [
+        "cultura",
+        "memória afro-brasileira",
+        "patrimônio cultural",
+        "igualdade racial",
+        "turismo"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Comprovante de existência jurídica da organização (CNPJ)",
+          "Breve histórico de atuação no território",
+          "Identificação das principais referências de memória e patrimônio do território",
+          "Declaração de ciência e concordância com os objetivos e princípios da Rede Memória Viva"
+        ]
+      },
+      "fonte_dados": "pdf"
+    }
+  },
+  {
+    "id": "14886",
+    "attributes": {
+      "nome": "Edital 001/2024 de Cadastro de Projetos do Programa de Incentivo à Cultura - PIC",
+      "e_central?": false
+    },
+    "public_url": "https://prosas.com.br/editais/14886",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/PJ4-ZeuXur-qipwysYbOdblJa5EcadlmdrDuLz6eHnwuCeLI_lb3DXB6kMea2HRm/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/066/082/original/Edital_Celesc_PIC_2024.pdf",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nEdital 001/2024 de Cadastro de Projetos do Programa de Incentivo à Cultura - PIC\nApplication opens on:\n05/09/2024 18:30 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nEste Edital possui como objetivo o cadastro de Projetos Culturais aprovados pela Lei Estadual nº 17.762 (PIC) nas modalidades: Artes Cênicas, Artes Visuais, Audiovisual, Centros Culturais; Literatura; Música; Patrimônio Imaterial; Patrimônio Material, Pesquisa e Documentação e Artes Integradas, para destinação de incentivos fiscais.\nOs projetos poderão ser inscritos até 30/10/2026 às 18h.\nDemais informações podem ser encontradas no documento do Edital 001/2024 disponível na seção \"Arquivos Complementares\".\nDúvidas sobre o Edital: investimentosocial@celesc.com.br\nDúvidas sobre a plataforma Prosas: acionar o botão de ajuda do canto inferior direito da tela.\nFunding Source\nLei Estadual de Cultura Santa Catarina\nCELESC\nAdditional Files\nLista de municípios por Agência Regional\nCódigo de Conduta Ética - Celesc\nManual de Marca - Celesc\nPolítica Anticorrupção\nPolítica de Relacionamento com Fornecedores\nEdital 001/2024 de Cadastro de Projetos do Programa de Incentivo à Cultura - PIC\nMedia\nWebsites\nSite oficial da Celesc\ninsert_link\nHTTPS://WWW.CELESC.COM.BR/\nVideos\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "14886",
+      "resumo_objetivo": "Cadastro de projetos culturais aprovados pela Lei Estadual nº 17.762 (PIC) para destinação de incentivos fiscais pela Celesc, abrangendo diversas modalidades artísticas e culturais.",
+      "temas_principais": [
+        "cultura",
+        "artes cênicas",
+        "artes visuais",
+        "audiovisual",
+        "música",
+        "patrimônio"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SC"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": [
+          "órgãos ou entidades governamentais",
+          "organizações com diretoria vinculada a cargos eletivos",
+          "organização de caráter sindical",
+          "associação classista",
+          "fins lucrativos (quando restrito apenas a sem fins lucrativos, mas aqui aceita com ou sem)"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Somente serão elegíveis os projetos com Autorização de Captação emitida pela Fundação Catarinense de Cultura (FCC)"
+        ]
+      },
+      "fonte_dados": "pdf"
+    }
+  },
+  {
+    "id": "15181",
+    "attributes": {
+      "nome": "Edital 003/2024 Cadastro de Projetos da Lei Federal de Incentivo ao Esporte",
+      "e_central?": false
+    },
+    "public_url": "https://prosas.com.br/editais/15181",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/826/017/original/Edital_003-2024_Esporte_Federal.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261029%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261029T183357Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=b3c70e3af47af4523ae6823dff5493338479021e69d504dbeb40a8b4c5755ccd",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nEdital 003/2024 Cadastro de Projetos da Lei Federal de Incentivo ao Esporte\nApplication opens on:\n07/11/2024 15:00 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nEste Edital possui como objetivo o cadastro de Projetos Esportivos aprovados pela Lei Federal 11.438/2006 Lei de Incentivo ao Esporte, nas modalidades: desporto educacional, desporto de participação e desporto de rendimento, para destinação de incentivos fiscais, por meio da destinação de parte de impostos devidos pela Celesc via doação.\nOs projetos poderão ser inscritos até 30/10/2026 às 18h.\nDemais informações podem ser encontradas no documento do Edital 003/2024 disponível na seção \"Arquivos Complementares\".\nDúvidas sobre o Edital: investimentosocial@celesc.com.br\nDúvidas sobre a plataforma Prosas: acionar o botão de ajuda do canto inferior direito da tela.\nFunding Source\nLei Federal do Esporte\nProject's operating locations\nState(s):\nlocation_on\nSanta Catarina\nCELESC\nAdditional Files\nLista de municípios por Agência Regional\nCódigo de Conduta Ética - Celesc\nManual de Marca - Celesc\nPolítica Anticorrupção\nPolítica de Relacionamento com Fornecedores\nEdital 003/2024 Cadastro de Projetos da Lei Federal de Incentivo ao Esporte\nComunidao 02 - Retificação 1\nMedia\nWebsites\nSite oficial da Celesc\ninsert_link\nHTTPS://WWW.CELESC.COM.BR/\nVideos\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "15181",
+      "resumo_objetivo": "Cadastro de projetos esportivos aprovados pela Lei Federal de Incentivo ao Esporte nas modalidades de desporto educacional, de participação e de rendimento para destinação de recursos via doação por incentivo fiscal da Celesc.",
+      "temas_principais": [
+        "esporte",
+        "desporto educacional",
+        "desporto de participação",
+        "desporto de rendimento"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SC"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": [
+          "órgãos governamentais",
+          "instituições públicas ou mistas",
+          "organizações com diretoria vinculada a cargos eletivos",
+          "organização de caráter sindical",
+          "associação classista"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Projeto com aprovação publicada no Diário Oficial da União com SLI vigente",
+          "Garantir 100% de aproveitamento fiscal com o incentivo realizado",
+          "Questionário de Análise de Integridade preenchido e assinado"
+        ]
+      },
+      "fonte_dados": "pdf"
+    }
+  },
+  {
+    "id": "15182",
+    "attributes": {
+      "nome": "Edital 004/2024 Cadastro de Projetos do PRONON e PRONAS/PcD",
+      "e_central?": false
+    },
+    "public_url": "https://prosas.com.br/editais/15182",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/826/015/original/Edital_004-2024_PRONON_e_PRONAS.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261029%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261029T183400Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=e1f512751ef13cbf78efba5aff6bf8eb3c3035e5dc51b2569b1185bafbaff30c",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nEdital 004/2024 Cadastro de Projetos do PRONON e PRONAS/PcD\nApplication opens on:\n07/11/2024 15:00 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nEste Edital possui como objetivo o cadastro de Projetos de Saúde, aprovados pelo Programa Nacional de Apoio à Atenção Oncológica - PRONON e o Programa Nacional de Apoio à Atenção da Saúde da Pessoa com Deficiência - PRONAS/PCD aprovados pela Lei Federal nº 12.715/2012, regulamentados pelo Decreto nº 7.988/2013 com a vigência prorrogada até 2026 pela Lei nº 14.564/2023 PRONON e PRONAS/PCD, para destinação de incentivos fiscais, por meio da destinação de parte de impostos devidos pela CELESC, neste caso o IRPJ via doação.\nDemais informações podem ser encontradas no documento do Edital 004/2024 disponível na seção \"Arquivos Complementares\".\nDúvidas sobre o Edital: investimentosocial@celesc.com.br\nDúvidas sobre a plataforma Prosas: acionar o botão de ajuda do canto inferior direito da tela.\nFunding Source\nPRONAS/PCD\nPRONON\nProject's operating locations\nState(s):\nlocation_on\nSanta Catarina\nCELESC\nAdditional Files\nLista de municípios por Agência Regional\nCódigo de Conduta Ética - Celesc\nManual de Marca - Celesc\nPolítica Anticorrupção\nPolítica de Relacionamento com Fornecedores\nEdital 004/2024 Cadastro de Projetos do PRONON e PRONAS/PcD\nMedia\nWebsites\nSite oficial da Celesc\ninsert_link\nHTTPS://WWW.CELESC.COM.BR/\nVideos\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "15182",
+      "resumo_objetivo": "Cadastro de Projetos de Saúde aprovados pelo PRONON e PRONAS/PcD para destinação de incentivos fiscais de IRPJ pela Celesc.",
+      "temas_principais": [
+        "saúde",
+        "oncologia",
+        "pessoa com deficiência"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SC"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": [
+          "órgãos ou entidades governamentais",
+          "organizações com diretoria vinculada a cargos eletivos",
+          "organização de caráter sindical",
+          "associação classista"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Projeto com aprovação publicada no Diário Oficial da União (DOU) com respectivo registro no PRONON ou PRONAS/PCD",
+          "Garantir 100% de aproveitamento fiscal com o incentivo realizado",
+          "Questionário de Análise de Integridade preenchido e assinado"
+        ]
+      },
+      "fonte_dados": "pdf"
+    }
+  },
+  {
+    "id": "17235",
+    "attributes": {
+      "nome": "Banco de Projetos Incentivados Municipais 2026 - Santos Brasil ",
+      "e_central?": false
+    },
+    "public_url": "https://prosas.com.br/editais/17235",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/004/640/891/original/Regulamento_-_Banco_de_Projetos_Incentivados_Municipais_2026.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261029%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261029T183401Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=89fa7adb91d8e72cfeb595ad6bdcc3bc178c98593c5dda3df985a142d518ffa3",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nBanco de Projetos Incentivados Municipais 2026 - Santos Brasil\nApplication opens on:\n03/02/2026 12:00 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nA Santos Brasil tem o prazer de convidar as organizações da sociedade civil a inscreverem suas iniciativas no Banco de Projetos Municipais Incentivados 2026.\nA iniciativa tem como objetivo fortalecer a transparência e a governança da estratégia de investimento social privado da Companhia, além de tornar o processo de seleção e formalização mais ágil e acessível.\nAs inscrições estarão abertas de forma contínua entre os dias 03 de4 fevereiro a 30 de outubro de 2026, até às 18h (horário de Brasília).\nPodem se inscrever exclusivamente projetos já aprovados ou em fase de aprovação nas leis de incentivo fiscal municipais das cidades de Guarujá (SP), Santos (SP) e Imbituba (SC), onde a Santos Brasil possui operações, contribuindo para o desenvolvimento local das comunidades.\nRecomendamos a leitura atenta do Regulamento, que detalha todas as condições e requisitos para a inscrição das propostas.\nDúvidas sobre o conteúdo do edital devem ser encaminhadas ao time de Sustentabilidade Social pelo e-mail: projetosincentivados@santosbrasil.com.br\nJá questões técnicas sobre o uso da plataforma devem ser direcionadas ao suporte da Prosas por WhatsApp: +55 (31) 9919-8781\nContamos com a sua participação para sermos agentes de transformação!\nSee the full description\nTypes of entrepreneurs who are eligible to apply\nperson\nFor-profit Corporation\nperson\nNonprofit Corporation\nProject's operating locations\nCity(ies):\nlocation_on\nGuarujá - SP\nlocation_on\nImbituba - SC\nlocation_on\nSantos - SP\nSantos Brasil\nAdditional Files\nAnexo II - Oficio - Solicitação de patrocinio - modelo\nAnexo III - Procuração - ponto focal - modelo\nAnexo IV - Formulário - Identificação de Partes Relacionadas - modelo\nAnexo V - Formulário - Compromisso Anticorrupção - modelo\nRegulamento - Banco de Projetos Incentivados Municipais 2026\nAnexo I - Formulário de inscrição - modelo\nMedia\nWebsites\nSite Institucional\ninsert_link\nHTTPS://WWW.SANTOSBRASIL.COM.BR\nSite de Relação com Investidores\ninsert_link\nHTTPS://RI.SANTOSBRASIL.COM.BR/\nRelatório de Sustentabilidade\ninsert_link\nHTTPS://WWW.SANTOSBRASIL.COM.BR/V2021/SUST...\nVideos\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 214",
+    "deep_metadata": {
+      "edital_id": "17235",
+      "resumo_objetivo": "O edital tem como objetivo selecionar iniciativas culturais e esportivas por meio de recursos de incentivo fiscal municipal para promover o desenvolvimento social e comunitário nas localidades de atuação da Santos Brasil.",
+      "temas_principais": [
+        "esporte",
+        "cultura",
+        "cidadania",
+        "meio ambiente",
+        "saúde",
+        "educação complementar",
+        "diversidade e inclusão"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": 1,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP",
+          "SC",
+          "PA"
+        ],
+        "municipios_permitidos": [
+          "Guarujá - SP",
+          "Imbituba - SC",
+          "Santos - SP",
+          "Barcarena - PA",
+          "São Luís - MA"
+        ],
+        "natureza_juridica_excluida": [
+          "Pessoa Física",
+          "Microempreendedor Individual",
+          "MEI",
+          "coletivos e grupos informais",
+          "sindicatos",
+          "associações classistas",
+          "organizações religiosas",
+          "organizações político-partidárias"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Apresentar documento comprobatório de inscrição e/ou aprovação no mecanismo municipal de incentivo fiscal",
+          "Não serão aceitos intermediários",
+          "Proibido vínculos de diretores com acionistas ou funcionários da Santos Brasil",
+          "Proibido vínculos com ocupantes de cargos eletivos"
+        ]
+      },
+      "fonte_dados": "pdf"
+    }
+  },
+  {
+    "id": "18659",
+    "attributes": {
+      "nome": "Edital - Rede Memória Viva - Iniciativa Viva Pequena África ",
+      "e_central?": false
+    },
+    "public_url": "https://prosas.com.br/editais/18659",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/GzusdQDFypCWiDgwYtVCTel5dte93MFGhzpGzccf4tJvPEFi90WGDW-wyhlY33eQ/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/980/334/original/Edital_Rede_Memoria_Viva.docx.pdf",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nEdital - Rede Memória Viva - Iniciativa Viva Pequena África\nApplication opens on:\n03/08/2026 11:00 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\n A Rede Memória Viva é uma iniciativa do Viva Pequena África, apoiada pelo BNDES, que foi criada para identificar, conectar e fortalecer territórios e organizações que atuam na preservação, valorização e difusão da memória e da herança cultural africana e afro-brasileira no Brasil.\nA Rede reúne iniciativas comprometidas com a proteção do patrimônio cultural, a valorização das narrativas negras e o fortalecimento das comunidades que mantêm viva essa história em diferentes regiões do país. Ao promover a articulação entre organizações, pesquisadores, lideranças e agentes culturais, busca ampliar a troca de experiências, estimular a cooperação entre territórios e fortalecer estratégias de desenvolvimento baseadas na memória, na cultura e na identidade afro-brasileira.\nComo primeira ação da Rede, o Viva Pequena África lança um edital público para adesão de organizações e seleção de iniciativas nacionais que receberão apoio para o desenvolvimento de projetos técnicos e conceituais voltados à qualificação de seus territórios.\nNesta edição, poderão integrar a Rede organizações que atuem com memória, patrimônio e valorização da herança cultural africana e afro-brasileira. Além da adesão à Rede, o edital selecionará até quatro ações, em territórios distintos, que receberão apoio para o desenvolvimento técnico e conceitual de projetos nas áreas de arquitetura, interpretação do patrimônio e/ou museologia.\nMais do que um processo seletivo, a Rede Memória Viva é uma estratégia de articulação nacional que reconhece os territórios como espaços de produção de conhecimento e preservação da memória.\nSee the full description\nTypes of entrepreneurs who are eligible to apply\nperson\nFor-profit Corporation\nperson\nNonprofit Corporation\nperson\nGovernmental Organization or Agency\nArea of practice\nSupport managing Third Sector organizations\nArts and Culture\nCommunity development\nEducation\nEntrepreneurship / Employment and Income Generation\nSubarea\nDance\nTheatre\nPopular Music\nAudiovisual\nPhotography\nVisual / Plastic Arts\nMuseum / Cultural Center\nLiterature\nHistoric Heritage\nAfro-brazilian Culture\nTarget Audience\nBlack Community\nSustainable Development Goals\nIniciativa Viva Pequena África - Rede Memoria Viva\nAdditional Files\nRede Memória Viva\n",
+    "deep_metadata": {
+      "edital_id": "18659",
+      "resumo_objetivo": "O edital promove a adesão de territórios e organizações locais à Rede Memória Viva e seleciona ações para o desenvolvimento de projetos técnico-conceituais nas áreas de arquitetura, interpretação do patrimônio e/ou museologia.",
+      "temas_principais": [
+        "memória afro-brasileira",
+        "patrimônio cultural",
+        "cultura",
+        "turismo",
+        "economia criativa"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Comprovante de existência jurídica da organização (CNPJ)",
+          "Breve histórico de atuação no território",
+          "Identificação das principais referências de memória e patrimônio do território",
+          "Declaração de ciência e concordância com os objetivos e princípios da Rede Memória Viva",
+          "Cartas de anuência de cada uma das instituições envolvidas em caso de projeto coletivo"
+        ]
+      },
+      "fonte_dados": "pdf"
+    }
+  },
+  {
+    "id": "19389",
+    "attributes": {
+      "nome": "BRASIL - FOMENTO - REDE DE PONTÕES CULTURA VIVA - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19389",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19389",
+      "resumo_objetivo": "Esta página representa o portal de acesso e cadastro da plataforma Prosas para visualização de oportunidades e editais.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19406",
+    "attributes": {
+      "nome": "MARANHÃO - FOMENTO - PROJETOS SOCIAIS COM PRESTAÇÕES PECUNIÁRIAS (4ª VARA DE BALSAS) - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19406",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19406",
+      "resumo_objetivo": "Esta página requer login ou cadastro na plataforma Prosas para visualizar os detalhes do edital.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exige cadastro ou login na plataforma Prosas para continuar"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19299",
+    "attributes": {
+      "nome": "RIO GRANDE DO SUL - CHAMAMENTO PÚBLICO - PROJETOS SOCIAIS - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19299",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19299",
+      "resumo_objetivo": "Esta página representa a tela de login da plataforma Prosas para acesso a oportunidades de editais e patrocínios.",
+      "temas_principais": [
+        "editais",
+        "fomento",
+        "patrocínio"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro e login na plataforma Prosas para visualizar editais."
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19385",
+    "attributes": {
+      "nome": "PARANÁ - CHAMAMENTO PÚBLICO - COOPERAÇÃO CIENTÍFICA E TECNOLÓGICA - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19385",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19385",
+      "resumo_objetivo": "Pagina de login da plataforma Prosas sem informacoes detalhadas sobre um edital especifico.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19347",
+    "attributes": {
+      "nome": "EDITAL INSTITUTO GENÉSIO A. MENDES 2026 - Não Incentivado",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19347",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19347",
+      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
+      "temas_principais": [
+        "geral",
+        "editais",
+        "captação de recursos"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro e realizar login na plataforma Prosas"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19417",
+    "attributes": {
+      "nome": "BRASIL - CREDENCIAMENTO - PROJETOS DE EXTENSÃO - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19417",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19417",
+      "resumo_objetivo": "Página de login da plataforma Prosas para visualização e cadastro em oportunidades.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19308",
+    "attributes": {
+      "nome": "BRASIL - FOMENTO - REDE DE PONTÕES CULTURA VIVA - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19308",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19308",
+      "resumo_objetivo": "Página de login da plataforma Prosas para visualização de oportunidades.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19333",
+    "attributes": {
+      "nome": "SERGIPE - PREMIAÇÃO - DIREITO AO LAZER E ACOLHIMENTO - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19333",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19333",
+      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
+      "temas_principais": [
+        "geral"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro e login na plataforma Prosas."
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19429",
+    "attributes": {
+      "nome": "BALDIM MG - CHAMAMENTO PÚBLICO - FORMAÇÃO MUSICAL E SEMANA CULTURAL - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19429",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19429",
+      "resumo_objetivo": "Esta página representa o portal de acesso e cadastro da plataforma Prosas para visualização de oportunidades.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19430",
+    "attributes": {
+      "nome": "JUNDIAÍ SP - CHAMAMENTO PÚBLICO - PROESC FOMENTO CULTURAL - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19430",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19430",
+      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
+      "temas_principais": [
+        "geral",
+        "editais",
+        "oportunidades"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro na plataforma Prosas para prosseguir"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19447",
+    "attributes": {
+      "nome": "SANTARÉM  PA - CHAMAMENTO PÚBLICO - FOMENTO MULTILINGUAGENS - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19447",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19447",
+      "resumo_objetivo": "Página de login da plataforma Prosas para acesso a editais e oportunidades de financiamento.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19448",
+    "attributes": {
+      "nome": "Edital Socioambiental de Incentivo Fiscal Ancar - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19448",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19448",
+      "resumo_objetivo": "Esta página requer que o usuário faça o login ou crie um perfil na plataforma Prosas para acessar as oportunidades de editais.",
+      "temas_principais": [
+        "geral"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário criar conta ou fazer login na plataforma Prosas"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19452",
+    "attributes": {
+      "nome": "MURICI  AL - FOMENTO - PROJETOS CULTURAIS PNAB - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19452",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19452",
+      "resumo_objetivo": "Página de acesso e registro da plataforma Prosas para visualização de oportunidades e editais.",
+      "temas_principais": [
+        "editais",
+        "oportunidades",
+        "projetos sociais"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19179",
+    "attributes": {
+      "nome": "NITERÓI  RJ - CHAMAMENTO PÚBLICO - CULTURA GEEK - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19179",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19179",
+      "resumo_objetivo": "Página de login da plataforma Prosas para acesso a editais e oportunidades.",
+      "temas_principais": [
+        "geral"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "18997",
+    "attributes": {
+      "nome": "FME Transforma 2026 - Chamada aberta de projetos",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=18997",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "18997",
+      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para visualização de oportunidades.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "18822",
+    "attributes": {
+      "nome": "BRASIL - PREMIAÇÃO - SELO NACIONAL COMPROMISSO COM A ALFABETIZAÇÃO - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=18822",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "18822",
+      "resumo_objetivo": "Esta página requer o login ou cadastro na plataforma Prosas para acessar as oportunidades de editais e financiamentos disponíveis.",
+      "temas_principais": [
+        "editais",
+        "financiamentos",
+        "projetos sociais"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro e realizar login na plataforma Prosas para continuar"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "16189",
+    "attributes": {
+      "nome": "EDITAL SOCIAL  PRONON e PRONAS-PCD/2025",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=16189",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "16189",
+      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
+      "temas_principais": [
+        "geral",
+        "editais",
+        "captação de recursos"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "17831",
+    "attributes": {
+      "nome": "Edital 01/2026 do Fundo Nacional de Solidariedade (FNS)",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17831",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "17831",
+      "resumo_objetivo": "Esta página requer o login ou cadastro na plataforma Prosas para acessar as oportunidades de editais.",
+      "temas_principais": [
+        "geral"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro e realizar login na plataforma Prosas"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "17532",
+    "attributes": {
+      "nome": "Clipe da Quebrada 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17532",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "17532",
+      "resumo_objetivo": "Página de login da plataforma Prosas para visualização e cadastro de oportunidades.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "17914",
+    "attributes": {
+      "nome": "Edital Mecenas do Ceará 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17914",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "17914",
+      "resumo_objetivo": "Esta página representa o portal de acesso e cadastro da plataforma Prosas para visualização de oportunidades.",
+      "temas_principais": [
+        "geral"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro na plataforma Prosas para prosseguir"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "17927",
+    "attributes": {
+      "nome": "Chamada para Projetos Esportivos pela Lei Paulista de Incentivo ao Esporte",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17927",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "17927",
+      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
+      "temas_principais": [
+        "geral"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro na plataforma Prosas"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "17991",
+    "attributes": {
+      "nome": "Edital Política de Patrocínio de 2026 ",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17991",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "17991",
+      "resumo_objetivo": "Página de acesso e registro da plataforma Prosas para submissão de editais e oportunidades.",
+      "temas_principais": [
+        "geral"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro e realizar login na plataforma Prosas para continuar."
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "18157",
+    "attributes": {
+      "nome": "Programa Shell de Patrocínios Incentivados",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=18157",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "18157",
+      "resumo_objetivo": "Página de login da plataforma Prosas para acesso a editais e oportunidades.",
+      "temas_principais": [
+        "geral"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "17348",
+    "attributes": {
+      "nome": "Mobilidades 2026 - Apresentações",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17348",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "17348",
+      "resumo_objetivo": "Plataforma de cadastro e login do sistema Prosas para acesso a editais e oportunidades de financiamento.",
+      "temas_principais": [
+        "geral"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro e realizar login na plataforma Prosas"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19480",
+    "attributes": {
+      "nome": "MORRETES  PR - CHAMAMENTO PÚBLICO - SELEÇÃO DE PROJETOS CULTURAIS - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19480",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19480",
+      "resumo_objetivo": "Página de acesso e registro da plataforma Prosas para visualização de oportunidades.",
+      "temas_principais": [
+        "geral"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19532",
+    "attributes": {
+      "nome": "SANTA ROSA  RS - PREMIAÇÃO - TRAJETÓRIAS CULTURAIS - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19532",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19532",
+      "resumo_objetivo": "Documento genérico de login da plataforma Prosas sem informações detalhadas sobre editais específicos.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19512",
+    "attributes": {
+      "nome": "PRAIA GRANDE  SP - PREMIAÇÃO - PONTOS E PONTÕES DE CULTURA - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19512",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19512",
+      "resumo_objetivo": "Página de acesso e cadastro da plataforma Prosas para visualização de oportunidades e editais.",
+      "temas_principais": [
+        "geral",
+        "editais",
+        "captação de recursos"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro na plataforma Prosas para visualizar os editais."
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19513",
+    "attributes": {
+      "nome": "PRAIA GRANDE  SP - CHAMAMENTO PÚBLICO - FOMENTO A PROJETOS DE PONTOS DE CULTURA - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19513",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19513",
+      "resumo_objetivo": "Esta página representa a tela de login da plataforma Prosas para acesso a oportunidades e editais.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19514",
+    "attributes": {
+      "nome": "PRAIA GRANDE  SP - BOLSA - PESQUISA CULTURAL - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19514",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19514",
+      "resumo_objetivo": "Página de login da plataforma Prosas para visualização e cadastro de oportunidades.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19530",
+    "attributes": {
+      "nome": "SANTA ROSA  RS - CHAMAMENTO PÚBLICO - AVANÇO CULTURAL - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19530",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19530",
+      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
+      "temas_principais": [
+        "geral",
+        "editais",
+        "oportunidades"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19531",
+    "attributes": {
+      "nome": "SANTA ROSA  RS - PREMIAÇÃO - PONTOS E PONTÕES DE CULTURA - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19531",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19531",
+      "resumo_objetivo": "Página de login da plataforma Prosas exigindo autenticação para visualização de editais e oportunidades.",
+      "temas_principais": [
+        "geral"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exige cadastro e login prévio na plataforma Prosas"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19465",
+    "attributes": {
+      "nome": "Edital TotalPass Leis Federais 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19465",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19465",
+      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a oportunidades de editais e financiamentos.",
+      "temas_principais": [
+        "editais",
+        "fomento",
+        "projetos sociais"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro na plataforma Prosas"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19567",
+    "attributes": {
+      "nome": "Prêmio Jovens Visionários Prudential - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19567",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19567",
+      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
+      "temas_principais": [
+        "geral"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário criar uma conta ou fazer login na plataforma Prosas"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19464",
+    "attributes": {
+      "nome": "Edital Smart Fit LIC RIO 2027",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19464",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19464",
+      "resumo_objetivo": "Página de login da plataforma Prosas para visualização de oportunidades.",
+      "temas_principais": [],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19361",
+    "attributes": {
+      "nome": "SÃO GONÇALO  RJ - CHAMAMENTO PÚBLICO - FESTIVAIS, MOSTRAS E CIRCUITOS CULTURAIS - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19361",
+    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
+    "deep_metadata": {
+      "edital_id": "19361",
+      "resumo_objetivo": "Página de login da plataforma Prosas para acesso a editais e oportunidades de financiamento.",
+      "temas_principais": [
+        "editais",
+        "fomento",
+        "projetos"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Necessário possuir cadastro na plataforma Prosas"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
+  },
+  {
+    "id": "19357",
+    "attributes": {
+      "nome": "SANTA CATARINA - FOMENTO - AÇÕES CULTURAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17394",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO para credenciamento de Parceiristas de arte e de Cultura",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19351",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 004/2026 - MAPEAMENTO, DIAGNÓSTICO E PAINEL DE DADOS CULTURAIS",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19302",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 002/2026 - PREMIAÇÃO DE PONTOS E PONTÕES - OURINHOS ",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19283",
+    "attributes": {
+      "nome": "EDITAL SMCT Nº 28/2026 PRÊMIO GRÃO MESTRE CORISCO ",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16452",
+    "attributes": {
+      "nome": "Edital Ambev Brasilidades 2026",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19458",
+    "attributes": {
+      "nome": "MINAS GERAIS - BOLSA - INICIAÇÃO CIENTÍFICA JÚNIOR BIC JR IFTM E FAPEMIG - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19457",
+    "attributes": {
+      "nome": "MINAS GERAIS - BOLSA - DESENVOLVIMENTO TECNOLÓGICO E INOVAÇÃO PIBITI IFTM (17/2026) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19456",
+    "attributes": {
+      "nome": "MINAS GERAIS - BOLSA - INICIAÇÃO CIENTÍFICA PIBIC E PIVIC IFTM (16/2026) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19434",
+    "attributes": {
+      "nome": "BETIM MG - CHAMAMENTO PÚBLICO - FESTIVAIS EM CENA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19423",
+    "attributes": {
+      "nome": "BAHIA - FOMENTO - POUSO DA PALAVRA: BIBLIOTECAS COMUNITÁRIAS (CHAMAMENTO 003/2026) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19416",
+    "attributes": {
+      "nome": "ITABIRA MG - PREMIAÇÃO - PONTOS E PONTÕES DE CULTURA  - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19231",
+    "attributes": {
+      "nome": "MINAS GERAIS - CHAMAMENTO PÚBLICO - FIXAÇÃO DE DOUTORES - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19280",
+    "attributes": {
+      "nome": "SÃO PAULO - CHAMAMENTO PÚBLICO - LONGA-METRAGEM E OBRA SERIADA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19047",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 025/2026 SELEÇÃO DE PROJETO PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL MEMÓRIA E PRESERVAÇÃO AUDIOVISUAL DO MUSEU DA IMAGEM E DO SOM DE MATO GROSSO DO SUL – MIS-MS MinC/FSA/BRDE/ARRANJOS REGIONAIS – 2026",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19048",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 26/2026 SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL PARA PRODUÇÃO AUDIOVISUAL - MATO GROSSO DO SUL - 2026 – MinC/FSA/BRDE/ARRANJOS REGIONAIS",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19356",
+    "attributes": {
+      "nome": "BRASIL - BOLSA - PESQUISA E PRODUÇÃO CIENTÍFICA E TÉCNICA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19526",
+    "attributes": {
+      "nome": "POMERODE  SC - CHAMAMENTO PÚBLICO - DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19535",
+    "attributes": {
+      "nome": "ARACAJU  SE - CHAMAMENTO PÚBLICO - AÇÕES CONTINUADAS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19536",
+    "attributes": {
+      "nome": "ARACAJU  SE - CHAMAMENTO PÚBLICO - LITERATURA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19537",
+    "attributes": {
+      "nome": "ARACAJU  SE - FOMENTO - AUDIOVISUAL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19544",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - BOLSAS DE EXTENSÃO UNIVERSITÁRIA PIBEX  - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19392",
+    "attributes": {
+      "nome": "NORDESTE - EDITAL - SOLUÇÕES PARA UM OCEANO SEM PLÁSTICO (SOMAR AZUL) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19459",
+    "attributes": {
+      "nome": "JUIZ DE FORA  MG - CHAMAMENTO PÚBLICO - AÇÃO CLIMÁTICA JUVENIL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18874",
+    "attributes": {
+      "nome": "Parcerias Sustentáveis 2027",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19336",
+    "attributes": {
+      "nome": "CHAMADA KINROSS CONECTA INCENTIVADOS 2026 2027",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18269",
+    "attributes": {
+      "nome": "CIRCULAÇÃO E PARTICIPAÇÃO AUDIOVISUAL NO EXTERIOR - EDITAL DE INTERCÂMBIO CULTURAL MINC Nº 1",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19338",
+    "attributes": {
+      "nome": "GUARAÍ  TO - CHAMAMENTO PÚBLICO - OFICINAS SOCIOEDUCATIVAS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19391",
+    "attributes": {
+      "nome": "Chamada Pública – Programa de Eficiência Energética 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19505",
+    "attributes": {
+      "nome": "Edital Doar de Coração 2027",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19515",
+    "attributes": {
+      "nome": "MORENO  PE - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19525",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - RESILIÊNCIA, RESPOSTA E RECUPERAÇÃO DE DESASTRES - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19543",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - PD&I MOBILIDADE VEICULAR INTELIGENTE (MVI) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19145",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - TRANSIÇÃO AGROECOLÓGICA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19180",
+    "attributes": {
+      "nome": "Edital Mulheres do Nosso Bairro 2026",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19234",
+    "attributes": {
+      "nome": "SÃO PAULO  SP - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19519",
+    "attributes": {
+      "nome": "LAGUNA  SC - CHAMAMENTO PÚBLICO - FIA DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19497",
+    "attributes": {
+      "nome": "RIO DE JANEIRO - FOMENTO - BIOTÉRIOS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19494",
+    "attributes": {
+      "nome": "PORTO SEGURO BA - CREDENCIAMENTO - MÚSICOS, BANDAS, GRUPOS ARTÍSTICOS E FILARMÔNICAS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19550",
+    "attributes": {
+      "nome": "SÃO GONÇALO DO AMARANTE CE - FOMENTO - PROJETOS SOCIAIS, CULTURAIS, AMBIENTAIS E ESPORTIVOS - 2026/2027",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19561",
+    "attributes": {
+      "nome": "ARMAÇÃO DOS BÚZIOS  RJ - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19565",
+    "attributes": {
+      "nome": "GUARARAPES  SP - FOMENTO - PROJETOS CULTURAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19309",
+    "attributes": {
+      "nome": "SÃO PAULO - FOMENTO - PESQUISA E INOVAÇÃO SOCIAL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19477",
+    "attributes": {
+      "nome": "PORTO SEGURO BA - SUBSÍDIO - ESPAÇOS CULTURAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19496",
+    "attributes": {
+      "nome": "RIO DE JANEIRO - FOMENTO - MANUTENÇÃO DE BIOTÉRIOS NB-3 - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18875",
+    "attributes": {
+      "nome": "EDITAL DE SELEÇÃO SIMPLIFICADA Nº 115/2026 -  CONTADORES ",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19533",
+    "attributes": {
+      "nome": "FLORIANÓPOLIS  SC - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19466",
+    "attributes": {
+      "nome": "PARAÍBA - BOLSA - MESTRADO E DOUTORADO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19548",
+    "attributes": {
+      "nome": "PERNAMBUCO - FOMENTO - PESQUISAS EM PLANEJAMENTO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19491",
+    "attributes": {
+      "nome": "CONSELHEIRO LAFAIETE MG - PREMIAÇÃO - AGENTES CULTURAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19490",
+    "attributes": {
+      "nome": "CONSELHEIRO LAFAIETE MG - CHAMAMENTO PÚBLICO - FOMENTO A PROJETOS CULTURAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19469",
+    "attributes": {
+      "nome": "PARAÍBA - BOLSA - PÓS-DOUTORADO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19275",
+    "attributes": {
+      "nome": "BRASIL - CREDENCIAMENTO - INCLUSÃO SOCIOECONÔMICA E EMPREENDEDORISMO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19367",
+    "attributes": {
+      "nome": "ROLÂNDIA  PR - CHAMAMENTO PÚBLICO - ATENDIMENTO À PESSOA IDOSA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19399",
+    "attributes": {
+      "nome": "CONSELHEIRO LAFAIETE  MG - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19400",
+    "attributes": {
+      "nome": "CONSELHEIRO LAFAIETE  MG - PREMIAÇÃO - AGENTES CULTURAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19401",
+    "attributes": {
+      "nome": "CONSELHEIRO LAFAIETE  MG - PREMIAÇÃO - PONTOS DE CULTURA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19468",
+    "attributes": {
+      "nome": "PARAÍBA - BOLSA - MESTRADO E DOUTORADO PROFISSIONAL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18383",
+    "attributes": {
+      "nome": "Edital de chamamento público FESPORTE/PIE 003/2026 - Apoio ao Esporte Educacional e à Formação Esportiva",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19387",
+    "attributes": {
+      "nome": "PARANÁ - CHAMAMENTO PÚBLICO - GESTÃO SUSTENTÁVEL DOS RECURSOS HÍDRICOS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19426",
+    "attributes": {
+      "nome": "REGIÃO DOS LAGOS RJ - PREMIAÇÃO - JORNALISMO AMBIENTAL (PROLAGOS 8ª EDIÇÃO) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19499",
+    "attributes": {
+      "nome": "PELOTAS  RS - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO DE ROTEIROS AUDIOVISUAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19500",
+    "attributes": {
+      "nome": "PELOTAS  RS - PREMIAÇÃO - POVOS E COMUNIDADES TRADICIONAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19516",
+    "attributes": {
+      "nome": "PELOTAS   RS - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO DE ROTEIROS AUDIOVISUAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19498",
+    "attributes": {
+      "nome": "RIO DE JANEIRO - FOMENTO - PROJETOS DE PESQUISA EM HUMANIDADES - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19386",
+    "attributes": {
+      "nome": "PARANÁ - CHAMAMENTO PÚBLICO - ECOSSISTEMAS EMERGENTES E BIODIVERSIDADE - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19555",
+    "attributes": {
+      "nome": "RIO GRANDE DO NORTE - SUBSÍDIO - AQUISIÇÃO DE BENS E INSUMOS PNAB (EDITAL 17/2026) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19556",
+    "attributes": {
+      "nome": "RIO GRANDE DO NORTE - SUBSÍDIO - MANUTENÇÃO DE ESPAÇOS CULTURAIS PNAB (EDITAL 18/2026) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19443",
+    "attributes": {
+      "nome": "PIAUÍ, MARANHÃO E BAHIA - FOMENTO - PAISAGENS PRIORITÁRIAS (50º EDITAL FUNDO ECOS) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19152",
+    "attributes": {
+      "nome": "PARAÍBA - CHAMAMENTO PÚBLICO - ATHIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19518",
+    "attributes": {
+      "nome": "NAVEGANTES  SC - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19557",
+    "attributes": {
+      "nome": "PARÁ - CHAMAMENTO PÚBLICO - RADIOGRAFIA CENSITÁRIA DA ECONOMIA CRIATIVA DE ANANINDEUA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18411",
+    "attributes": {
+      "nome": "CAMPINAS - Credenciamento nº 001/2022 - Guias de Turismo",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19390",
+    "attributes": {
+      "nome": "EDITAL FUNDO DE INCENTIVO - ACELERE O RELÓGIO DA IGUALDADE - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19521",
+    "attributes": {
+      "nome": "RIO GRANDE DO SUL - FOMENTO - CRIAÇÃO E MONTAGEM DE ESPETÁCULOS DE ARTES CÂNICAS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19564",
+    "attributes": {
+      "nome": "NAVEGANTES  SC - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19253",
+    "attributes": {
+      "nome": "PERNAMBUCO - CHAMAMENTO PÚBLICO - AUDIOVISUAL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19314",
+    "attributes": {
+      "nome": "PARANÁ - PREMIAÇÃO - GENTILEZA URBANA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19436",
+    "attributes": {
+      "nome": "SANTA CATARINA - FOLHA DE FOMENTO - AÇÕES AFIRMATIVAS E INCLUSÃO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19442",
+    "attributes": {
+      "nome": "BAURU  SP - CHAMAMENTO PÚBLICO - PROTEÇÃO SOCIAL BÁSICA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19568",
+    "attributes": {
+      "nome": "SÃO CARLOS  SP - BOLSA - CULTURAS TRADICIONAIS E POPULARES - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17215",
+    "attributes": {
+      "nome": "EDITAL Nº 4 - BOLSAS CULTURAIS DE PARTICIPAÇÃO EM MERCADOS, MOSTRAS E FESTIVAIS NACIONAIS E INTERNACIONAIS",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19425",
+    "attributes": {
+      "nome": "CEARÁ - PREMIAÇÃO - DESAFIO PREVINE: MINHA ESCOLA SEM VIOLÊNCIA (MPCE) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19413",
+    "attributes": {
+      "nome": "MINAS GERAIS - BOLSA - PESQUISADOR SET-A EM TECNOLOGIAS AMBIENTAIS (UNIFAL 15/2026) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18415",
+    "attributes": {
+      "nome": "RIO DE JANEIRO - INCENTIVO À ATRAÇÃO DE PRODUÇÕES AUDIOVISUAIS PARA O MUNICÍPIO DO RIO DE JANEIRO – “CASH REBATE”",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18416",
+    "attributes": {
+      "nome": "RIO DE JANEIRO - INVESTIMENTO EM PRODUÇÕES COM GRANDE POTENCIAL COMERCIAL – “RIOFILME INVEST”",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19324",
+    "attributes": {
+      "nome": "RIO DE JANEIRO  RJ - FOMENTO - AUDIOVISUAL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19325",
+    "attributes": {
+      "nome": "RIO DE JANEIRO  RJ - FOMENTO - AUDIOVISUAL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19326",
+    "attributes": {
+      "nome": "RIO DE JANEIRO  RJ - FOMENTO - AUDIOVISUAL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19384",
+    "attributes": {
+      "nome": "PARANÁ - CHAMAMENTO PÚBLICO - ECONOMIA AZUL SUSTENTÁVEL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19563",
+    "attributes": {
+      "nome": "ESPÍRITO SANTO - BOLSA - DOUTORADO PROCAP - 2027",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19562",
+    "attributes": {
+      "nome": "ESPÍRITO SANTO - BOLSA - MESTRADO - 2027",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19560",
+    "attributes": {
+      "nome": "RIO DAS OSTRAS  RJ - CHAMAMENTO PÚBLICO - FOMENTO À PRODUÇÃO DE CENÁRIOS, FIGURINOS E ELEMENTOS CÊNICOS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19460",
+    "attributes": {
+      "nome": "SÃO PAULO  SP - FOMENTO - VIDEOCAST E PODCAST - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19520",
+    "attributes": {
+      "nome": "EDITAL NEXA TRANSFORMA CONSTRUINDO LEGADOS 3a EDIÇÃO 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19445",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - CULTURAS TRADICIONAIS E POPULARES E DAS ARTES - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19558",
+    "attributes": {
+      "nome": "RIO GRANDE DO SUL - FOMENTO - TODOS NO JOGO 2 - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19155",
+    "attributes": {
+      "nome": "SALVADOR  BA - PREMIAÇÃO - ENTIDADES CARNAVALESCAS DE MATRIZ AFRICANA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19523",
+    "attributes": {
+      "nome": "Incubadora de IA em Escala Humana - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19346",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - MORADIA E INCLUSÃO SOCIAL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19501",
+    "attributes": {
+      "nome": "BREJO SANTO  CE - PREMIAÇÃO - PONTOS DE CULTURA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19420",
+    "attributes": {
+      "nome": "SÃO PAULO  SP - CHAMAMENTO PÚBLICO - TEATRO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19517",
+    "attributes": {
+      "nome": "COLATINA  ES - CHAMAMENTO PÚBLICO - DEFESA DOS DIREITOS DA PESSOA IDOSA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19488",
+    "attributes": {
+      "nome": "SÃO JOSÉ DO RIO PRETO SP - PREMIAÇÃO - PONTOS E PONTÕES DE CULTURA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19487",
+    "attributes": {
+      "nome": "SÃO JOSÉ DO RIO PRETO SP - CHAMAMENTO PÚBLICO - FOMENTO A PONTOS DE CULTURA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19450",
+    "attributes": {
+      "nome": "TUBARÃO  SC - CHAMAMENTO PÚBLICO - DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19421",
+    "attributes": {
+      "nome": "SÃO PAULO  SP - CHAMAMENTO PÚBLICO - FOMENTO À DANÇA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19419",
+    "attributes": {
+      "nome": "SÃO PAULO  SP - FOMENTO - TEATRO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19529",
+    "attributes": {
+      "nome": "ITARARÉ  SP - CHAMAMENTO PÚBLICO - SELEÇÃO DE PROJETOS DE MANIFESTAÇÃO CULTURAL (PNAB) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19541",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - PD&I EM INFRAESTRUTURA COMPUTACIONAL  - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17327",
+    "attributes": {
+      "nome": "  Projetos de Responsabilidade Social Corporativa CBMM - 2026 ",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17380",
+    "attributes": {
+      "nome": "EDITAL 009/2026 DE SOLICITAÇÃO DE PAUTA DO TEATRO MUNICIPAL DE ITAJAÍ - 2º SEMESTRE DE 2026",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17765",
+    "attributes": {
+      "nome": "Edital nº 2/2026 – Cadastramento de Entidades e Seleção de Projetos para Recursos de Prestações Pecuniárias",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19405",
+    "attributes": {
+      "nome": "PARÁ / BRASIL - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO REGIONAL SUSTENTÁVEL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19375",
+    "attributes": {
+      "nome": "BRASIL - SUBVENÇÃO - FINEP MAIS INOVAÇÃO TRANSFORMAÇÃO MINERAL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18090",
+    "attributes": {
+      "nome": "Programa Bolsa Atleta",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17307",
+    "attributes": {
+      "nome": "EDITAL Nº009/2026-EJs/DEX/PROEC/ UEMS EDITAL DE FLUXO CONTÍNUO PARA PROJETOS DE EXTENSÃO VINCULADOS À CRIAÇÃO DE EMPRESAS JUNIORES NO ÂMBITO DA UNIVERSIDADE ESTADUAL DE MATO GROSSO DO SUL – EJs/DEX/PROEC/UEMS",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "18459",
+    "attributes": {
+      "nome": "Edital Conjunto 007/2026 PROPPI-DEX/PROEC-UEMS de Fluxo Contínuo Incubadora Fênix ",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "18460",
+    "attributes": {
+      "nome": "Edital Conjunto 008/2026 PROPPI-DEX/PROEC-UEMS de Fluxo Contínuo Incubadora Elos",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17329",
+    "attributes": {
+      "nome": "EDITAL Nº 021/2026 – DCULT/PROEC/UEMS EDITAL DE FLUXO CONTÍNUO DOS EVENTOS DE CULTURA SEM ÔNUS PARA A UNIVERSIDADE  ESTADUAL DE MATO GROSSO DO SUL",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16593",
+    "attributes": {
+      "nome": "EDITAL Nº 020/2026 – DCULT/PROEC/UEMS EDITAL DE FLUXO CONTÍNUO DAS AÇÕES DE CULTURA SEM ÔNUS PARA A UNIVERSIDADE ESTADUAL DE MATO GROSSO DO SUL",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16597",
+    "attributes": {
+      "nome": "EDITAL Nº03/2026-EVENTOS DEX/PROEC/UEMS",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16582",
+    "attributes": {
+      "nome": "Edital de Fluxo Contínuo Nº 02/2026 DEX/PROEC/UEMS (Programas, Projetos e Cursos) ",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "18810",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - EDUCAÇÃO AMBIENTAL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19559",
+    "attributes": {
+      "nome": "GOIÁS - CONCURSO - COMERCIALIZAÇÃO DE LONGA-METRAGEM FSA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19484",
+    "attributes": {
+      "nome": "BRASIL - PREMIAÇÃO - PRÊMIOS FUNDACIÓN MAPFRE À INOVAÇÃO SOCIAL (10ª EDIÇÃO) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19397",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - SOLUÇÕES TECNOLÓGICAS PARA AGRICULTURA FAMILIAR - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19362",
+    "attributes": {
+      "nome": "GOIÁS - CHAMAMENTO PÚBLICO - PRODUÇÃO AUDIOVISUAL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19282",
+    "attributes": {
+      "nome": "GOIÁS - FOMENTO - PRODUÇÃO AUDIOVISUAL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19027",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - SOCIOBIOECONOMIA NA AMAZÔNIA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19322",
+    "attributes": {
+      "nome": "RIO DE JANEIRO  RJ - FOMENTO - DESENVOLVIMENTO DE PROJETOS AUDIOVISUAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19331",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - RESTAURAÇÃO ECOLÓGICA E RECURSOS HÍDRICOS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19323",
+    "attributes": {
+      "nome": "RIO DE JANEIRO  RJ - FOMENTO - DISTRIBUIÇÃO DE LONGA-METRAGEM - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19171",
+    "attributes": {
+      "nome": "BRASIL - FOMENTO - PESQUISA E INOVAÇÃO FLORESTAL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19321",
+    "attributes": {
+      "nome": "RIO DE JANEIRO  RJ - FOMENTO - PRODUÇÃO DE SÉRIE - FICÇÃO OU ANIMAÇÃO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19320",
+    "attributes": {
+      "nome": "RIO DE JANEIRO  RJ - FOMENTO - PRODUÇÃO DE AUDIOVISUAL DOCUMENTÁRIO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19319",
+    "attributes": {
+      "nome": "RIO DE JANEIRO  RJ - FOMENTO - COPRODUÇÃO INTERNACIONAL DE LONGA-METRAGEM - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17331",
+    "attributes": {
+      "nome": "Credenciamento Nacional de Parceiristas FUNDARPE Edital 003/2024",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19566",
+    "attributes": {
+      "nome": "BAIANO - BOLSA - EXTENSÃO TECNOLÓGICA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19383",
+    "attributes": {
+      "nome": "PARANÁ - CHAMAMENTO PÚBLICO - FLORESTAS E SILVICULTURA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17019",
+    "attributes": {
+      "nome": "Edital 03/2026-DRI/UEMS. Edital de fluxo contínuo para propostas de ações de internacionalização, sem ônus para a UEMS.",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19201",
+    "attributes": {
+      "nome": "Prêmio Educação para Gentileza e Generosidade 2026 Escolas ",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17108",
+    "attributes": {
+      "nome": "Aqui tem Cultura",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19546",
+    "attributes": {
+      "nome": "BRASIL - AUXÍLIO - EVENTOS CIENTÍFICOS TECNOLÓGICOS E DE INOVAÇÃO (CHAMADA CNPQ 34/2026 - ARC) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19381",
+    "attributes": {
+      "nome": "MINAS GERAIS - CHAMAMENTO PÚBLICO - DESAFIOS PÚBLICOS POR INOVAÇÃO ABERTA (HUBMG GOV) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18391",
+    "attributes": {
+      "nome": "EDITAL Nº 003/2026 - RELATÓRIOS/EVENTOS-DEX/PROEC/UEMS",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19418",
+    "attributes": {
+      "nome": "SÃO JOSÉ DE RIBAMAR  MA - CHAMAMENTO PÚBLICO - PROJETOS SOCIAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19376",
+    "attributes": {
+      "nome": "BRASIL - BOLSA - ESTÁGIO DE PESQUISA NO EXTERIOR (BEPE MESTRADO FAPESP) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19364",
+    "attributes": {
+      "nome": "EDITAL GAM 2026 Lei de Incentivo Federal - IRPJ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19355",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - MESTRADO E DOUTORADO ACADÊMICO PARA INOVAÇÃO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19349",
+    "attributes": {
+      "nome": "EDITAL GAM 2026 Lei de Incentivo Estadual/SC - ICMS - PIE",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19348",
+    "attributes": {
+      "nome": "EDITAL GAM 2026 Lei de Incentivo Estadual/SC - ICMS - PIC ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19446",
+    "attributes": {
+      "nome": "BRASIL - BOLSA - PROFESSOR VISITANTE NO EXTERIOR - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19534",
+    "attributes": {
+      "nome": "BRASIL - BOLSA - PROJETO INSPIRAÇÃO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19461",
+    "attributes": {
+      "nome": "Edital Recaatingar - Segundo Ciclo - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19329",
+    "attributes": {
+      "nome": "RIO GRANDE DO SUL - CHAMAMENTO PÚBLICO - OCUPAÇÃO DE ESPAÇOS EXPOSITIVOS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18063",
+    "attributes": {
+      "nome": "Edital MAPFRE 2026 para Projetos Incentivados - PRONAS e PRONON",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16916",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 19/2025",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18925",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - PESQUISA E DESENVOLVIMENTO (FINEP/NORUEGA) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19547",
+    "attributes": {
+      "nome": "BRASIL - BOLSA - PROGRAMA CÁTEDRA JORGE AMADO CAPES UNIVERSIDADE DE HAVANA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17931",
+    "attributes": {
+      "nome": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15419",
+    "attributes": {
+      "nome": "Edital de oficinas artístico-culturais para o Município de Chapecó",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17521",
+    "attributes": {
+      "nome": "Edital 001/2026 de Cadastro de Projetos do Programa de Incentivo ao Esporte - PIE",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17421",
+    "attributes": {
+      "nome": "ICMS CULTURAL - Edital Indução Cinematográfica 2026",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17526",
+    "attributes": {
+      "nome": "Edital Associação Paulista dos Amigos da arte 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17163",
+    "attributes": {
+      "nome": "EDITAL Nº 03/2026 - FAPDF MOVIMENTA",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18143",
+    "attributes": {
+      "nome": "Chamada Pública Rio Doce Participativo – Projetos Estruturantes para o Desenvolvimento Territorial",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18643",
+    "attributes": {
+      "nome": "BRASIL · CHAMAMENTO PÚBLICO · PAGAMENTO POR SERVIÇOS AMBIENTAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17322",
+    "attributes": {
+      "nome": "Certificação do Circo Itinerante Capixaba",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17164",
+    "attributes": {
+      "nome": "EDITAL 06/2026 – DEMANDA ESPONTÂNEA SELEÇÃO PÚBLICA DE PROPOSTAS DE PESQUISA CIENTÍFICA, TECNOLÓGICA E INOVAÇÃO",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17173",
+    "attributes": {
+      "nome": "EDITAL DE CREDENCIAMENTO Nº 001/2026 PARA SELEÇÃO DE GRUPOS E BANDAS DE MÚSICA DA CULTURA POPULAR PARA AS FESTIVIDADES DO MUNICÍPIO DE MARECHAL DEODORO DURANTE O ANO DE 2026.",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17439",
+    "attributes": {
+      "nome": "Edital de Chamamento Público para Credenciamento de Artistas",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19305",
+    "attributes": {
+      "nome": "Prêmio Isabel Salgado 3ª Edição - Categoria Raízes",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19306",
+    "attributes": {
+      "nome": "Prêmio Isabel Salgado 3ª Edição - Categoria Semente",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19304",
+    "attributes": {
+      "nome": "Prêmio Isabel Salgado 3ª Edição - Categoria Aurora",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19350",
+    "attributes": {
+      "nome": "BRASIL - BOLSA - BOLSAS DE PRODUTIVIDADE - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19289",
+    "attributes": {
+      "nome": "JOINVILLE  SC - CHAMAMENTO PÚBLICO - INFÂNCIA E ADOLESCÊNCIA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19197",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - TECNOLOGIAS E INOVAÇÃO SOCIAL EM ECONOMIA SOLIDÁRIA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19479",
+    "attributes": {
+      "nome": "RIO GRANDE DO SUL - CONCURSO - LONGA-METRAGEM - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19478",
+    "attributes": {
+      "nome": "RIO GRANDE DO SUL - CONCURSO - COMERCIALIZAÇÃO DE LONGA-METRAGEM - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19290",
+    "attributes": {
+      "nome": "JOINVILLE  SC - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19168",
+    "attributes": {
+      "nome": "JOINVILLE  SC - FMIC - PATRIMÔNIO MATERIAL E INCENTIVO À CULTURA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19162",
+    "attributes": {
+      "nome": "ESPÍRITO SANTO - PREMIAÇÃO - CULTURA OCEÂNICA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17495",
+    "attributes": {
+      "nome": "Edital de Chamamento Público para Credenciamento de serviços artísticos",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19424",
+    "attributes": {
+      "nome": "BRASIL - FOMENTO - PLATAFORMAS DIGITAIS LIVRES E ABERTAS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16363",
+    "attributes": {
+      "nome": "EDITAL DE CREDENCIAMENTO N002-2025 - OCUPAÇÃO GALERIAS DE ARTE",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19463",
+    "attributes": {
+      "nome": "SÃO PAULO - BOLSA - PESQUISA EM BIOMEDICINA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17332",
+    "attributes": {
+      "nome": "Credenciamento de parceiristas - Funcultura 2025",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19055",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - COOPERAÇÃO CIENTÍFICA E TECNOLÓGICA BRASIL-FRANÇA (SAÚDE E CONTINUO DIGITAL) - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18994",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - PAGAMENTO POR SERVIÇOS AMBIENTAIS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16848",
+    "attributes": {
+      "nome": "Chamada Pública Cine Brasília Exibição de Curtas-Metragens",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17667",
+    "attributes": {
+      "nome": "Programa Funarte Aberta 2026 - Livraria Mário de Andrade",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17666",
+    "attributes": {
+      "nome": "Programa Funarte Aberta 2026 -  Complexo Funarte SP",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17665",
+    "attributes": {
+      "nome": "Programa Funarte Aberta 2026 - Complexo Funarte MG",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17664",
+    "attributes": {
+      "nome": "Programa Funarte Aberta 2026 - Centro Técnico de Artes - RJ",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17663",
+    "attributes": {
+      "nome": "Programa Funarte Aberta 2026 - Centro de Teatro",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19528",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - TECNOLOGIAS PARA A AGRICULTURA FAMILIAR - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19542",
+    "attributes": {
+      "nome": "BRASIL - SUBVENÇÃO - FINEP COOPERAMAIS BRASIL TECNOLOGIAS EMPRESAS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19184",
+    "attributes": {
+      "nome": "EDITAL 016/2026 DE SOLICITAÇÃO DE PAUTA DO TEATRO MUNICIPAL DE ITAJAÍ - 1º SEMESTRE DE 2027",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "18762",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - INSTITUIÇÃO ASSOCIADA PICT-UFSM - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19188",
+    "attributes": {
+      "nome": "Tubarão  SC - Chamamento Público - Direitos da Criança e do Adolescente - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19553",
+    "attributes": {
+      "nome": "AMAZONAS - CHAMAMENTO PÚBLICO - ECONOMIA CIRCULAR E INICIATIVAS PRODUTIVAS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19292",
+    "attributes": {
+      "nome": "JOINVILLE  SC - CHAMAMENTO PÚBLICO - DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19291",
+    "attributes": {
+      "nome": "JOINVILLE  SC - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16190",
+    "attributes": {
+      "nome": "EDITAL SOCIAL LEI DE INCENTIVO À RECICLAGEM - FAVORECICLE/2025",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17246",
+    "attributes": {
+      "nome": "Edital  de Credenciamento anual da Fundação Cultural Cidade  De Aracaju - FUNCAJU",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18731",
+    "attributes": {
+      "nome": "JUIZ DE FORA  MG - CREDENCIAMENTO - SOLUÇÕES TECNOLÓGICAS E MODELOS DE NEGÓCIO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17760",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 06/FMCB/2026 – Credenciamento de Serviços Artísticos e Culturais",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17507",
+    "attributes": {
+      "nome": "Cadastro Municipal de Artista e Espaço Cultural - Selo da Cultura Local",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15005",
+    "attributes": {
+      "nome": "National Geographic Society está financiando indivíduos que trabalham em projetos em ciência, conservação, narrativa, educação e tecnologia",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15007",
+    "attributes": {
+      "nome": "Financiamento para Projetos Inovadores ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15004",
+    "attributes": {
+      "nome": "Apoio para Pequenos Projetos",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "14989",
+    "attributes": {
+      "nome": "Edital de apoio de projetos que visam a conservação dos oceanos",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "14991",
+    "attributes": {
+      "nome": "Edital de apoio à iniciativas de energias sustentáveis, economia solidária e empreendimentos sociais",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "14944",
+    "attributes": {
+      "nome": "Patrocínios Claro",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "13648",
+    "attributes": {
+      "nome": "Programa  Shell Iniciativa Jovem ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "13773",
+    "attributes": {
+      "nome": "CHAMAMENTO PARA CREDENCIAMENTO DE INTERESSADAS EM VIAGENS DE INTERCÂMBIO",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "14986",
+    "attributes": {
+      "nome": "Reforço imediato: Apoio Emergencial às Brigadas Voluntárias e Comunitárias",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15613",
+    "attributes": {
+      "nome": "Apoio para projetos sociais e culturais",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15489",
+    "attributes": {
+      "nome": "Oportunidade de financiamento para organizações sem fins lucrativos em estágio inicial",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15539",
+    "attributes": {
+      "nome": "Edital – Programa de Financiamento para Comunidades Técnicas Sustentáveis",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15540",
+    "attributes": {
+      "nome": "Edital para projetos dedicados a fornecer acesso a água potável e saneamento para comunidades carentes",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15552",
+    "attributes": {
+      "nome": "Programa Selo Social - Balneário Camboriú e Camboriú ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15829",
+    "attributes": {
+      "nome": "Edital para seleção de projeto de impacto social e sustentabilidade",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15850",
+    "attributes": {
+      "nome": "Subsídios globais para água limpa, saneamento e irrigação",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15488",
+    "attributes": {
+      "nome": "Edital Acelen Incentiva para apoio de projetos com impacto social, ambiental e educacional",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15469",
+    "attributes": {
+      "nome": "Edital Rainforest Trust para proteger ecossistemas e mitigação climática",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15472",
+    "attributes": {
+      "nome": " Edital para interessados em receber valores e bens oriundos de decisões judiciais em Mato Grosso",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15484",
+    "attributes": {
+      "nome": "Edital de apoio para projetos nas áreas social, ambiental, cultural e esportiva",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15085",
+    "attributes": {
+      "nome": "Seleção de projetos no setor audiovisual para receber apoio financeiro no Estado da Bahia",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15029",
+    "attributes": {
+      "nome": "Apoio a pequenos projetos iniciantes ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15155",
+    "attributes": {
+      "nome": "Fundação está buscando parcerias com organizações para financiamento anual de até US$ 1 milhão",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15217",
+    "attributes": {
+      "nome": "Edital Programa de Mobilidade Cultural ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15278",
+    "attributes": {
+      "nome": "Consultoria gratuita para OSCs de São Paulo",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15409",
+    "attributes": {
+      "nome": "Edital Fundo Regenerativo Brumadinho",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15022",
+    "attributes": {
+      "nome": "Programa de Assistência para Projetos Comunitários e de Segurança Humana",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15021",
+    "attributes": {
+      "nome": "Fundação comunitária que busca soluções sustentáveis ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15028",
+    "attributes": {
+      "nome": "Fundos de Ação Urgente",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16199",
+    "attributes": {
+      "nome": "Plataforma Inovação para a Indústria",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16294",
+    "attributes": {
+      "nome": "Girls Opportunity Alliance Fund",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16381",
+    "attributes": {
+      "nome": "Financiamento Rainforest Trust",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16668",
+    "attributes": {
+      "nome": "Programa de apoio ao Centro Franco-Brasileiro de Biodiversidade Amazônica",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16672",
+    "attributes": {
+      "nome": "Mapeamento de Organizações Fundo LAB",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16705",
+    "attributes": {
+      "nome": "Edital Pontos de Cultura",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16797",
+    "attributes": {
+      "nome": "Seleção de Propostas na Modalidade Chancela - Edital de Chamamento Público nº 001/2025",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17064",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 013 – SMT/2025 CAPTAÇÃO DE PATROCÍNIO PARA REALIZAÇÃO DO CARNAVAL 2026 DE POÇOS DE CALDAS",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17078",
+    "attributes": {
+      "nome": "Edital de Chamamento Público de Patrocínios nº 002/2025",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16112",
+    "attributes": {
+      "nome": "Fundo Regenerativo Lagoa Santa",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16111",
+    "attributes": {
+      "nome": "Fundo Regenerativo Grande Belo Horizonte",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16113",
+    "attributes": {
+      "nome": "Apoio Emergencial para Defensores de Direitos Humanos",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16153",
+    "attributes": {
+      "nome": "Energisa Cultural",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16194",
+    "attributes": {
+      "nome": "Capacitar para transformar futuros",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15977",
+    "attributes": {
+      "nome": "Seleção de negócios e instituições de ciência e tecnologia para residência no PCT Guamá do Pará",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15898",
+    "attributes": {
+      "nome": "Edital de subsídios para proteção e bem-estar animal ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15959",
+    "attributes": {
+      "nome": "Edital para parceria com OSCs que atuam na educação especial em Maceió ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15961",
+    "attributes": {
+      "nome": " Chamamento para qualificação de Entidades em Organizações Sociais no Distrito Federal ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "15965",
+    "attributes": {
+      "nome": "Seleção da Havan para patrocínios, projetos e doações",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "16087",
+    "attributes": {
+      "nome": "Edital Fundo Ifood Chega Junto",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17857",
+    "attributes": {
+      "nome": "Edital Programa de Incentivo à Inclusão e Promoção Social - Pró-Social/RS",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17689",
+    "attributes": {
+      "nome": "Edital de Convocação nº 01/2026 para credenciamento de instituições interessadas em receber recursos oriundos de Penas Pecuniárias",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17823",
+    "attributes": {
+      "nome": "Chamada Pública de Projetos Culturais 2026 da Equatorial Alagoas",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17571",
+    "attributes": {
+      "nome": "Edital de Credenciamento nº 003/2025",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18109",
+    "attributes": {
+      "nome": "Patrocínio Esportivo",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18265",
+    "attributes": {
+      "nome": "Edital Contínuo de Apoio a Projetos Sociais – Ciclo 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18427",
+    "attributes": {
+      "nome": "Edital de Chamamento Público MinC nº 6/2026 - Programa Rouanet nas Favelas 2",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18779",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - HUB DE INOVAÇÃO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17437",
+    "attributes": {
+      "nome": "Edital de Penas Pecuniárias nº 01/2026 – Epitaciolândia/AC",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17179",
+    "attributes": {
+      "nome": "Laboratório de ideias",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17265",
+    "attributes": {
+      "nome": "Credenciamento de Organizações da Sociedade Civil ou Instituições privadas sem  fins lucrativos que atuem na área  de interesse da secretaria municipal de Assistência  Social",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17279",
+    "attributes": {
+      "nome": "Projeto de Lei para Elaboração do Fundo Municipal para a Criança e o Adolescente ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17385",
+    "attributes": {
+      "nome": "Cultura Vicentina: Edital PNAB São Vicente 01/2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17401",
+    "attributes": {
+      "nome": "Culturas Pesqueiras Artesanais do Brasil - Edital de Chamamento Público nº 01/2026 ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17157",
+    "attributes": {
+      "nome": "Edital de Ocupação Instituto Energisa 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17459",
+    "attributes": {
+      "nome": "Ocupação da Biblioteca Pública Municipal Josué Guimarães",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17485",
+    "attributes": {
+      "nome": "Edital de Chamamento Público para financiamentos de projetos com o Fundo da Criança e do Adolescente ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17517",
+    "attributes": {
+      "nome": "Sexta Musical da ADUFPI - Cadastro de Artistas",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17535",
+    "attributes": {
+      "nome": "Edital para Implantação, Estruturação, Modernização, Manutenção e Expansão de Espaços Científico-Culturais ",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17542",
+    "attributes": {
+      "nome": "PNAB Goiás 2026 - Edital nº 09/2026: Circo",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19366",
+    "attributes": {
+      "nome": "TRÊS BARRAS  SC - FOMENTO - DIREITOS DA PESSOA IDOSA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19522",
+    "attributes": {
+      "nome": "ESPÍRITO SANTO - FOMENTO - SUBVENÇÃO ECONÔMICA À INOVAÇÃO - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19373",
+    "attributes": {
+      "nome": "PALMITOS  SC - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19372",
+    "attributes": {
+      "nome": "CANAÃ DOS CARAJÁS  PA - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19371",
+    "attributes": {
+      "nome": "BOTUVERÁ  SC - CHAMAMENTO PÚBLICO - PESSOA IDOSA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19216",
+    "attributes": {
+      "nome": "PERNAMBUCO - CHAMAMENTO PÚBLICO - DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2025",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19365",
+    "attributes": {
+      "nome": "TRÊS BARRAS  SC - FOMENTO - DIREITOS DA PESSOA IDOSA - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19287",
+    "attributes": {
+      "nome": "PATROCÍNIOS CAIXA",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "18912",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - BIBLIOTECAS COMUNITÁRIAS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17799",
+    "attributes": {
+      "nome": "EDITAL Nº 013/2026 - CREDENCIAMENTO DE PRESTADORES DE SERVIÇOS ARTÍSTICO-CULTURAIS PARA O MUNICÍPIO DE ITAJAÍ/SC",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "18444",
+    "attributes": {
+      "nome": "EDITAL 01/2026/FGML - CREDENCIAMENTO DE PRESTADORES DE SERVIÇOS ARTÍSTICOS, LITERÁRIOS, FORMATIVOS, TÉCNICOS E DE ACESSIBILIDADE PARA A FGML",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "18924",
+    "attributes": {
+      "nome": "CANOAS  RS - CREDENCIAMENTO - ACOLHIMENTO INSTITUCIONAL INFANTOJUVENIL - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19043",
+    "attributes": {
+      "nome": "APUCARANA  PR - CREDENCIAMENTO - PROGRAMA SANDBOX - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "19105",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO E CREDENCIAMENTO - ORGANIZAÇÕES INOVADORAS - 2026",
+      "e_central?": true
+    }
+  },
+  {
+    "id": "17081",
+    "attributes": {
+      "nome": "Banco de Projetos 2026 (ICMS SP, ES e GO)",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15633",
+    "attributes": {
+      "nome": "EDITAL Nº 07/2025  Chamamento Público para credenciamento de Intervenções Artísticas e compra de Espetáculos artísticos-culturais.",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16201",
+    "attributes": {
+      "nome": "EDITAL Nº 010/2025 - CREDENCIAMENTO DE PRESTADORES DE SERVIÇOS ARTÍSTICO-CULTURAIS PARA O MUNICÍPIO DE ITAJAÍ/SC ",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16505",
+    "attributes": {
+      "nome": " EDITAL 011/2025 - CREDENCIAMENTO DE EMPRESAS ESPECIALIZADAS NA PRESTAÇÃO DE SERVIÇOS DE CAPTAÇÃO DE RECURSOS POR MEIO DE INCENTIVOS FISCAIS E/OU RECURSOS PRÓPRIOS DAS EMPRESAS PATROCINADORAS ",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "12743",
+    "attributes": {
+      "nome": "Orientadores artisticos de Oficinas Culturais - Credenciamento 001_Edital 001_2023",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17097",
+    "attributes": {
+      "nome": "EDITAL  Nº 003/2026 DE CHAMAMENTO PÚBLICO PARA SELEÇÃO DE AÇÕES CULTURAIS NO PROGRAMA AQUI TEM ARTE",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17727",
+    "attributes": {
+      "nome": "Catalisar 2026 - FCCSA",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "14962",
+    "attributes": {
+      "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO CORO SINFÔNICO DE SÃO JOSÉ DOS CAMPOS  – CREDENCIAMENTO Nº 007/EDITAL Nº 06/FCCR/2024",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16219",
+    "attributes": {
+      "nome": "BIP: Esporte",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16187",
+    "attributes": {
+      "nome": "BIP: Cultura",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16075",
+    "attributes": {
+      "nome": "BIP: Reciclagem",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16008",
+    "attributes": {
+      "nome": "Portal da Transparência dos Conselhos",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "14964",
+    "attributes": {
+      "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO DE FORMAÇÃO LIVRE EM ARTES TAP DA LONGEVIDADE - CREDENCIAMENTO Nº 009/EDITAL Nº 08/FCCR/2024",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "14963",
+    "attributes": {
+      "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO ORQUESTRA JOSEENSE - CREDENCIAMENTO Nº 008/EDITAL Nº 07/FCCR/2024",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "13702",
+    "attributes": {
+      "nome": "ESPETÁCULO INFANTIL - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "14961",
+    "attributes": {
+      "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO COMPANHIA DE DANÇA DE SÃO JOSÉ DOS CAMPOS– CREDENCIAMENTO Nº 006/EDITAL Nº 05/FCCR/2024",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "14958",
+    "attributes": {
+      "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO CENTRO DE ARTES CIRCENSES – CREDENCIAMENTO Nº 005/EDITAL Nº 04/FCCR/2024",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "14639",
+    "attributes": {
+      "nome": "EDITAL 005/FCCR/2024 CREDENCIAMENTO DE PARECERISTAS DE PROJETOS CULTURAIS ",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "14318",
+    "attributes": {
+      "nome": "PROJETO ARTE NAS RUAS - Intervenções Artísticas / Credenciamento 004_Edital 026_2023",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "13705",
+    "attributes": {
+      "nome": "ESPETÁCULO ADULTO OU LIVRE - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "13507",
+    "attributes": {
+      "nome": "PRESTAÇÃO DE SERVIÇOS TÉCNICOS E DE PRODUÇÃO PARA EVENTOS CULTURAIS E ARTÍSTICOS - Credenciameno nº 002/Edital nº 007/FCCR/2023",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "13701",
+    "attributes": {
+      "nome": "INTERVENÇÃO ARTÍSTICA - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "13693",
+    "attributes": {
+      "nome": "EXPOSIÇÃO ARTES /EXIBIÇÃO AUDIOVISUAL - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "13691",
+    "attributes": {
+      "nome": "MANIFESTAÇÕES DA CULTURA POPULAR - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "13686",
+    "attributes": {
+      "nome": "WORKSHOPS - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "13678",
+    "attributes": {
+      "nome": "VIVÊNCIAS - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16862",
+    "attributes": {
+      "nome": "EDITAL UEMS N° 05/2026–PROPPI/UEMS PROJETOS DE PESQUISA APROVADOS POR ÓRGÃO EXTERNO",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16073",
+    "attributes": {
+      "nome": "EDITAL DE CREDENCIAMENTO 001-2025 - MUSICOS ORQUESTRA MUNICIPAL DE UBERABA",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16243",
+    "attributes": {
+      "nome": "BIP: Fundo para Infância e Adolescência (FIA)",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16268",
+    "attributes": {
+      "nome": "BIP: Fundo da Pessoa Idosa",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16345",
+    "attributes": {
+      "nome": "Cem Cópias Sem Custo - Técnico-científico ",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16346",
+    "attributes": {
+      "nome": "Cem Cópias Sem Custo - Literatura",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16347",
+    "attributes": {
+      "nome": "Cem Cópias Sem Custo - Literatura infantil",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16859",
+    "attributes": {
+      "nome": "EDITAL UEMS N° 04/2026–PROPPI/UEMS PROJETOS DE PESQUISA FLUXO CONTÍNUO",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15706",
+    "attributes": {
+      "nome": "EDITAL CREDENCIAMENTO SMCT Nº 140/2025 - CREDENCIAMENTO DE PARECERISTAS DE PROJETOS DA SECRETARIA MUNICIPAL DE CULTURA E TURISMO.",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17087",
+    "attributes": {
+      "nome": "Edital nº 18/2026 Ligas Acadêmicas (LA) fluxo Contínuo -DEX/PROEC/UEMS",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17384",
+    "attributes": {
+      "nome": "EDITAL DE CREDENCIAMENTO DE PARECERISTAS N° 001/2026",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17753",
+    "attributes": {
+      "nome": "EDITAL DE CREDENCIAMENTO N° 002/2026 - CREDENCIAMENTO DE PROFESSORES/OFICINEIROS, PARA ATUAÇÃO NA ECAU – ESCOLA DE CULTURA E ARTE DE UBERABA",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "18194",
+    "attributes": {
+      "nome": "EDITAL DE CREDENCIAMENTO N° 003/2026 CREDENCIAMENTO DE PROFESSORES/OFICINEIROS CIRCO DO POVO",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "18788",
+    "attributes": {
+      "nome": "EDITAL DE CREDENCIAMENTO DE PARECERISTAS N° 102/2026",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15444",
+    "attributes": {
+      "nome": "Instituto John Deere - Banco de Projetos 2026",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "14756",
+    "attributes": {
+      "nome": "Edital de Credenciamento Nº 242/2024 – CREDENCIAMENTO DE OFICINEIROS PARA O PROJETO “OFICINAS EXPERIMENTAIS DE ARTE E CULTURA”, DO PROGRAMA QUALIFICANDO SABERES",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15288",
+    "attributes": {
+      "nome": "CHAMADA PÚBLICA Nº 001/2025   SELEÇÃO DE PARCEIROS PARA DISPONIBILIZAÇÃO DE ESPAÇOS PARA INSTALAÇÃO DE ESTAÇÕES DE RECARGA DE VEÍCULOS ELÉTRICOS",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15392",
+    "attributes": {
+      "nome": "Edital de Credenciamento Nº 17/2025 SMCT – CREDENCIAMENTO DE OFICINEIROS PARA O PROJETO “OFICINAS EXPERIMENTAIS DE ARTE E CULTURA”, DO PROGRAMA QUALIFICANDO SABERES",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "14475",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO N 002-2024 - DIVERSOS SEGMENTOS CULTURAIS",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15705",
+    "attributes": {
+      "nome": "EDITAL CREDENCIAMENTO SMCT Nº 141/2025 - PARA ARTISTAS INDEPENDENTES, BANDAS, GRUPOS E/OU COLETIVO PARA REALIZAÇÃO DE APRESENTAÇÃO ARTÍSTICA NOS PROJETOS E/OU EVENTOS ANUAIS PEOMOVIDOS PELA SECRETARIA MUNICIPAL DE CULTURA E TURISMO",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16844",
+    "attributes": {
+      "nome": "Edital de Credenciamento de Arte-Educadores",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16277",
+    "attributes": {
+      "nome": "Chamamento para Chancela de Projetos - CMDPI",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16493",
+    "attributes": {
+      "nome": "Chamamento para Chancela de Projetos - CMDPI",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16811",
+    "attributes": {
+      "nome": "CMDCA Godofredo Viana - Registro de Entidades e Programas",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16830",
+    "attributes": {
+      "nome": "Chamamento para Chancela de Projetos - CMDPI Teofilândia",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15934",
+    "attributes": {
+      "nome": "Chamamento para Chancela de Projetos - CMDCA Santaluz",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16971",
+    "attributes": {
+      "nome": "Chamamento para Chancela de Projetos - CMDCA de Godofredo Viana/MA",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17059",
+    "attributes": {
+      "nome": "Chamamento para Chancela de Projetos - CMDPI Barrocas",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17794",
+    "attributes": {
+      "nome": "EDITAL DE CREDENCIAMENTO Nº 001/2026/FETEC – ARTISTAS MUSICAIS E GRUPOS CULTURAIS/ARTÍSTICOS",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19030",
+    "attributes": {
+      "nome": "Chamamento para Chancela de Projetos - CMDCA Barrocas",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "19483",
+    "attributes": {
+      "nome": "Prestação de Contas - Programa de Incentivo ao Esporte",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15828",
+    "attributes": {
+      "nome": "AlimentaLAB - Laboratório de Inovação em Políticas Públicas para Sistemas Alimentares Saudáveis e Sustentáveis ",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15133",
+    "attributes": {
+      "nome": "CMDPI Santaluz - Registro de Entidades e Programas",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15254",
+    "attributes": {
+      "nome": "CMDPI Riacho dos Machados - Registro de Entidades e Programas",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15255",
+    "attributes": {
+      "nome": "CMDPI Teofilândia - Registro de Entidades e Programas",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15256",
+    "attributes": {
+      "nome": "CMDCA Riacho dos Machados/MG - Registro de Entidades e Programas",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15261",
+    "attributes": {
+      "nome": "CMDPI Barrocas - Registro de Entidades e Programas",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15262",
+    "attributes": {
+      "nome": "CMDCA Barrocas/BA - Registro de Entidades e Programas",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "14975",
+    "attributes": {
+      "nome": "CMDCA Santaluz/BA - Registro de Entidades e Programas",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "15926",
+    "attributes": {
+      "nome": "CMDPI Godofredo Viana - Registro de Entidades e Programas",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "16909",
+    "attributes": {
+      "nome": "CMDCA de Luís Domingues - Registro de Entidades e Programas Governamentais",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17617",
+    "attributes": {
+      "nome": "CMDPI de Luís Domingues - Registro de Entidades e Programas Governamentais",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17722",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 012/2026 -  CREDENCIAMENTO DE ARTISTAS, GRUPOS ARTÍSTICOS E PROFISSIONAIS DE SERVIÇOS TÉCNICOS ESPECIALIZADOS  DE NATUREZA ARTÍSTICA E CULTURAL",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17739",
+    "attributes": {
+      "nome": "Edital de Credenciamento 011/2026 - CREDENCIAMENTO DE PARECERISTAS PARA A POLÍTICA NACIONAL ALDIR BLANC (PNAB)",
+      "e_central?": false
+    }
+  },
+  {
+    "id": "17918",
+    "attributes": {
+      "nome": "EDITAL DE CREDENCIAMENTO Nº 002/2026/FETEC PROFISSIONAIS CULTURAIS ESPECIALIZADOS",
+      "e_central?": false
+    }
+  }
+]
