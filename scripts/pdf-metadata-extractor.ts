@@ -10,7 +10,7 @@ if (!apiKey) {
 
 const genAI = new GoogleGenerativeAI(apiKey);
 
-export async function downloadPdf(url: string): Promise<{ success: boolean, data?: ArrayBuffer, error?: string, skip?: boolean }> {
+export async function downloadPdf(url: string): Promise<{ success: boolean, data?: ArrayBuffer, error?: string, skip?: boolean, notPdf?: boolean }> {
     try {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 15000); // 15s timeout
@@ -22,12 +22,27 @@ export async function downloadPdf(url: string): Promise<{ success: boolean, data
             return { success: false, error: `HTTP Error: ${response.status}` };
         }
 
+        const contentType = response.headers.get('content-type') || '';
+        if (contentType.includes('text/html') || contentType.includes('application/xhtml+xml')) {
+            return { success: false, notPdf: true, error: 'URL did not return a valid PDF binary' };
+        }
+
         const contentLength = response.headers.get('content-length');
         if (contentLength && parseInt(contentLength, 10) > 15 * 1024 * 1024) {
             return { success: false, skip: true, error: 'File too large (> 15MB)' };
         }
 
         const data = await response.arrayBuffer();
+
+        // Check magic bytes
+        if (data.byteLength >= 4) {
+            const bytes = new Uint8Array(data, 0, 4);
+            if (bytes[0] !== 0x25 || bytes[1] !== 0x50 || bytes[2] !== 0x44 || bytes[3] !== 0x46) {
+                return { success: false, notPdf: true, error: 'URL did not return a valid PDF binary' };
+            }
+        } else {
+            return { success: false, notPdf: true, error: 'URL did not return a valid PDF binary' };
+        }
 
         // Double check size after download just in case content-length was missing/wrong
         if (data.byteLength > 15 * 1024 * 1024) {
@@ -47,50 +62,52 @@ const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 const DATA_FILE = path.join(process.cwd(), 'src', 'data', 'editais_prosas.json');
 
+const sharedGenerationConfig = {
+    responseMimeType: "application/json" as const,
+    responseSchema: {
+        type: "object" as const,
+        properties: {
+            edital_id: { type: "string" as const },
+            resumo_objetivo: { type: "string" as const, description: "1-2 sentences in pt-BR summarizing the grant's core goal" },
+            temas_principais: { type: "array" as const, items: { type: "string" as const }, description: "array of strings in pt-BR (e.g., 'mulheres', 'agricultura familiar', 'cultura', 'saúde')" },
+            criterios_eliminatorios: {
+                type: "object" as const,
+                properties: {
+                    idade_minima_cnpj_anos: { type: "number" as const, nullable: true },
+                    abrangencia_nacional: { type: "boolean" as const },
+                    estados_permitidos: { type: "array" as const, items: { type: "string" as const }, description: "array of 2-letter UF strings (e.g., 'PB', 'SC') - empty if national without state restrictions" },
+                    municipios_permitidos: { type: "array" as const, items: { type: "string" as const }, description: "array of strings (Format: 'Município - UF'). CRITICAL: Fill this if the PDF or its Annexes restrict participation to a specific list of municipalities. Leave empty if the entire state/country is eligible." },
+                    natureza_juridica_excluida: { type: "array" as const, items: { type: "string" as const }, description: "array of strings (e.g., 'igreja', 'sindicato', 'fins lucrativos')" }
+                },
+                required: ["idade_minima_cnpj_anos", "abrangencia_nacional", "estados_permitidos", "municipios_permitidos", "natureza_juridica_excluida"]
+            },
+            financeiro: {
+                type: "object" as const,
+                properties: {
+                    valor_maximo_reais: { type: "number" as const, nullable: true },
+                    exige_contrapartida: { type: "boolean" as const }
+                },
+                required: ["valor_maximo_reais", "exige_contrapartida"]
+            },
+            burocracia_e_documentos: {
+                type: "object" as const,
+                properties: {
+                    exige_cnd: { type: "boolean" as const },
+                    exige_balanco_patrimonial: { type: "boolean" as const },
+                    exige_cebas: { type: "boolean" as const },
+                    exigencias_especificas_adicionais: { type: "array" as const, items: { type: "string" as const }, description: "array of strings for strict K.O. rules, e.g., 'Exige projeto aprovado no DOU via PRONON/PRONAS', 'Benefício exclusivo para moradores de SC'" }
+                },
+                required: ["exige_cnd", "exige_balanco_patrimonial", "exige_cebas", "exigencias_especificas_adicionais"]
+            }
+        },
+        required: ["edital_id", "resumo_objetivo", "temas_principais", "criterios_eliminatorios", "financeiro", "burocracia_e_documentos"]
+    }
+};
+
 async function extractMetadataFromPdf(pdfData: ArrayBuffer): Promise<any> {
     const model = genAI.getGenerativeModel({
         model: "gemini-2.5-flash",
-        generationConfig: {
-            responseMimeType: "application/json",
-            responseSchema: {
-                type: "object",
-                properties: {
-                    edital_id: { type: "string" },
-                    resumo_objetivo: { type: "string", description: "1-2 sentences in pt-BR summarizing the grant's core goal" },
-                    temas_principais: { type: "array", items: { type: "string" }, description: "array of strings in pt-BR (e.g., 'mulheres', 'agricultura familiar', 'cultura', 'saúde')" },
-                    criterios_eliminatorios: {
-                        type: "object",
-                        properties: {
-                            idade_minima_cnpj_anos: { type: "number", nullable: true },
-                            abrangencia_nacional: { type: "boolean" },
-                            estados_permitidos: { type: "array", items: { type: "string" }, description: "array of 2-letter UF strings (e.g., 'PB', 'SC') - empty if national without state restrictions" },
-                            municipios_permitidos: { type: "array", items: { type: "string" }, description: "array of strings (Format: 'Município - UF'). CRITICAL: Fill this if the PDF or its Annexes restrict participation to a specific list of municipalities. Leave empty if the entire state/country is eligible." },
-                            natureza_juridica_excluida: { type: "array", items: { type: "string" }, description: "array of strings (e.g., 'igreja', 'sindicato', 'fins lucrativos')" }
-                        },
-                        required: ["idade_minima_cnpj_anos", "abrangencia_nacional", "estados_permitidos", "municipios_permitidos", "natureza_juridica_excluida"]
-                    },
-                    financeiro: {
-                        type: "object",
-                        properties: {
-                            valor_maximo_reais: { type: "number", nullable: true },
-                            exige_contrapartida: { type: "boolean" }
-                        },
-                        required: ["valor_maximo_reais", "exige_contrapartida"]
-                    },
-                    burocracia_e_documentos: {
-                        type: "object",
-                        properties: {
-                            exige_cnd: { type: "boolean" },
-                            exige_balanco_patrimonial: { type: "boolean" },
-                            exige_cebas: { type: "boolean" },
-                            exigencias_especificas_adicionais: { type: "array", items: { type: "string" }, description: "array of strings for strict K.O. rules, e.g., 'Exige projeto aprovado no DOU via PRONON/PRONAS', 'Benefício exclusivo para moradores de SC'" }
-                        },
-                        required: ["exige_cnd", "exige_balanco_patrimonial", "exige_cebas", "exigencias_especificas_adicionais"]
-                    }
-                },
-                required: ["edital_id", "resumo_objetivo", "temas_principais", "criterios_eliminatorios", "financeiro", "burocracia_e_documentos"]
-            }
-        }
+        generationConfig: sharedGenerationConfig
     });
 
     const prompt = "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.";
@@ -102,6 +119,22 @@ async function extractMetadataFromPdf(pdfData: ArrayBuffer): Promise<any> {
                 mimeType: "application/pdf"
             }
         },
+        prompt
+    ]);
+
+    const text = result.response.text();
+    return JSON.parse(text);
+}
+
+async function extractMetadataFromText(textContent: string): Promise<any> {
+    const model = genAI.getGenerativeModel({
+        model: "gemini-2.5-flash",
+        generationConfig: sharedGenerationConfig
+    });
+
+    const prompt = "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n" + textContent;
+
+    const result = await model.generateContent([
         prompt
     ]);
 
@@ -131,48 +164,105 @@ export async function processEditais() {
 
     let processedCount = 0;
     let modified = false;
+    const maxExtract = parseInt(process.env.MAX_EXTRACT || '15', 10);
 
     for (let i = 0; i < editais.length; i++) {
         const edital = editais[i];
 
-        if (edital.deep_metadata || edital.pdf_error) {
+        if (edital.deep_metadata || edital.pdf_skipped === true || (edital.retry_count || 0) >= 3) {
             continue;
+        }
+
+        if (processedCount >= maxExtract) {
+            console.log(`Reached MAX_EXTRACT limit of ${maxExtract}. Stopping.`);
+            break;
         }
 
         const pdfLink = edital.pdf_link || edital.external_link;
+        let useTextFallback = false;
+        let downloadResult: { success: boolean, data?: ArrayBuffer, error?: string, skip?: boolean, notPdf?: boolean } = { success: false, notPdf: true };
+
         if (!pdfLink) {
-            console.log(`Skipping edital ${edital.id || i}: No link provided.`);
-            continue;
+            console.log(`No PDF link provided for edital ${edital.id || i}. Will attempt text fallback.`);
+            useTextFallback = true;
+        } else {
+            console.log(`Processing edital ${edital.id || i} - ${pdfLink}`);
+            downloadResult = await downloadPdf(pdfLink);
+
+            if (!downloadResult.success) {
+                console.error(`Failed to download PDF for edital ${edital.id || i}: ${downloadResult.error}`);
+                if (downloadResult.skip) {
+                    edital.pdf_skipped = true;
+                    modified = true;
+                }
+                if (downloadResult.notPdf) {
+                    console.log(`URL for edital ${edital.id || i} was not a valid PDF. Will attempt text fallback.`);
+                    useTextFallback = true;
+                }
+            }
         }
 
-        console.log(`Processing edital ${edital.id || i} - ${pdfLink}`);
-        const downloadResult = await downloadPdf(pdfLink);
+        if (useTextFallback) {
+            if (edital.full_text && edital.full_text.length > 300) {
+                console.log(`Attempting text fallback extraction for edital ${edital.id || i}`);
+                try {
+                    const metadata = await extractMetadataFromText(edital.full_text);
+                    metadata.edital_id = edital.id ? edital.id.toString() : String(i);
+                    metadata.fonte_dados = "texto_pagina";
 
-        if (!downloadResult.success) {
-            console.error(`Failed to download PDF for edital ${edital.id || i}: ${downloadResult.error}`);
-            edital.pdf_error = true;
-            if (downloadResult.skip) {
-                edital.pdf_skipped = true;
+                    edital.deep_metadata = metadata;
+                    if (edital.full_text) {
+                        edital.full_text = edital.full_text.substring(0, 2500); // Data Slimming
+                    }
+                    delete edital.pdf_error; // Cleanup legacy field
+                    modified = true;
+                    console.log(`Successfully extracted metadata for edital ${edital.id || i} via text fallback`);
+                } catch (err: any) {
+                    console.error(`Failed to extract metadata via text fallback for edital ${edital.id || i}: ${err.message}`);
+                    edital.retry_count = (edital.retry_count || 0) + 1;
+                    edital.last_error = err.message;
+                    delete edital.pdf_error;
+                    modified = true;
+                }
+                processedCount++;
+            } else {
+                console.log(`Text fallback not possible for edital ${edital.id || i} (full_text missing or too short).`);
+                edital.retry_count = (edital.retry_count || 0) + 1;
+                edital.last_error = downloadResult.error || "No valid PDF or full_text available";
+                delete edital.pdf_error;
+                modified = true;
+                // We still count this as an attempt
+                processedCount++;
             }
-            modified = true;
-        } else if (downloadResult.data) {
+        } else if (downloadResult.success && downloadResult.data) {
             try {
                 const metadata = await extractMetadataFromPdf(downloadResult.data);
-
-                // Override the id just in case AI hallucinated it
                 metadata.edital_id = edital.id ? edital.id.toString() : String(i);
+                metadata.fonte_dados = "pdf";
 
                 edital.deep_metadata = metadata;
+                if (edital.full_text) {
+                    edital.full_text = edital.full_text.substring(0, 2500); // Data Slimming
+                }
+                delete edital.pdf_error; // Cleanup legacy field
                 modified = true;
                 console.log(`Successfully extracted metadata for edital ${edital.id || i}`);
             } catch (err: any) {
                 console.error(`Failed to extract metadata for edital ${edital.id || i}: ${err.message}`);
-                edital.pdf_error = true; // Mark as error so we don't retry endlessly
+                edital.retry_count = (edital.retry_count || 0) + 1;
+                edital.last_error = err.message;
+                delete edital.pdf_error;
                 modified = true;
             }
+            processedCount++;
+        } else if (!downloadResult.success && !downloadResult.notPdf && !downloadResult.skip) {
+            // General download failure (e.g. timeout, 404)
+            edital.retry_count = (edital.retry_count || 0) + 1;
+            edital.last_error = downloadResult.error || "Unknown download error";
+            delete edital.pdf_error;
+            modified = true;
+            processedCount++;
         }
-
-        processedCount++;
 
         // Save progress after each item (or you could do it at the end)
         if (modified) {
@@ -181,7 +271,7 @@ export async function processEditais() {
         }
 
         // Rate limit: pause for 65 seconds after every 10 PDFs processed
-        if (processedCount % 10 === 0) {
+        if (processedCount % 10 === 0 && processedCount > 0 && processedCount < maxExtract) {
             console.log(`Processed ${processedCount} items. Sleeping for 65 seconds to avoid rate limits...`);
             await sleep(65000);
         }
