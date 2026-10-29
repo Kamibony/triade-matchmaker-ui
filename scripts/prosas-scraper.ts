@@ -3,6 +3,102 @@ import * as path from 'path';
 import { chromium } from 'playwright-extra';
 import stealth from 'puppeteer-extra-plugin-stealth';
 
+async function capturePdfFromButton(page: any, context: any): Promise<string | null> {
+    let newPage: any = null;
+    let interceptedUrl: string | null = null;
+    let abortNavigation = false;
+
+    // Set up request interception on the main page to catch same-tab navigation
+    await page.route('**/*', (route: any, request: any) => {
+        if (request.isNavigationRequest() && request.frame() === page.mainFrame()) {
+            interceptedUrl = request.url();
+            abortNavigation = true;
+            route.abort(); // Prevent the main page from navigating away
+        } else {
+            route.continue();
+        }
+    });
+
+    try {
+        // Find the "Acessar" or "Inscreva-se" button
+        const button = page.locator('text="Acessar"').or(page.locator('text="Inscreva-se"')).first();
+        const count = await button.count();
+        if (count === 0) return null;
+
+        // Set up listener for a new tab/popup
+        const pagePromise = context.waitForEvent('page', { timeout: 5000 }).catch(() => null);
+
+        await button.click({ timeout: 5000 }).catch(() => null);
+
+        // Wait briefly to see if navigation or popup triggered
+        await page.waitForTimeout(2000);
+        newPage = await pagePromise;
+
+        let targetPage = page;
+        let resolvedUrl = interceptedUrl || page.url(); // Fallback to current URL if no navigation happened
+
+        if (newPage) {
+            targetPage = newPage;
+            await targetPage.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+            resolvedUrl = targetPage.url();
+        } else if (interceptedUrl) {
+            // We caught a same-tab navigation. Check if it's a PDF.
+            if (interceptedUrl.toLowerCase().endsWith('.pdf') || interceptedUrl.toLowerCase().includes('.pdf?')) {
+                 return interceptedUrl;
+            } else {
+                 // It's an HTML page but we aborted it on the main page.
+                 // We need to fetch it to evaluate it without navigating the main page.
+                 try {
+                     newPage = await context.newPage();
+                     await newPage.goto(interceptedUrl, { waitUntil: 'networkidle', timeout: 15000 });
+                     targetPage = newPage;
+                     resolvedUrl = targetPage.url();
+                 } catch (e) {
+                     return null; // Failed to load external page
+                 }
+            }
+        } else {
+           return null; // No navigation happened
+        }
+
+        // Scenario A: Direct PDF
+        if (resolvedUrl.toLowerCase().endsWith('.pdf') || resolvedUrl.toLowerCase().includes('.pdf?')) {
+            return resolvedUrl;
+        }
+
+        // Scenario B: HTML Landing Page -> Deep Hunter
+        const pdfLink = await targetPage.evaluate(() => {
+            const links = Array.from(document.querySelectorAll('a'));
+            let fallbackPdf = null;
+
+            for (const link of links) {
+                const href = link.href || link.getAttribute('href') || '';
+                if (href.toLowerCase().endsWith('.pdf') || href.toLowerCase().includes('.pdf?')) {
+                    const text = (link.textContent || '').toLowerCase();
+                    if (text.includes('edital') || text.includes('regulamento') || text.includes('chamada') || text.includes('retificação')) {
+                        return href;
+                    }
+                    if (!fallbackPdf) fallbackPdf = href;
+                }
+            }
+            return fallbackPdf;
+        });
+
+        return pdfLink;
+
+    } catch (e: any) {
+        console.warn("[capturePdfFromButton] Error capturing PDF:", e.message);
+        return null;
+    } finally {
+        // Clean up interception route
+        try { await page.unroute('**/*'); } catch(e) {}
+        if (newPage) {
+            try { await newPage.close(); } catch (e) {}
+        }
+    }
+}
+
+
 async function runStandaloneScraper() {
     const username = process.env.PROSAS_USERNAME;
     const password = process.env.PROSAS_PASSWORD;
@@ -245,6 +341,9 @@ async function runStandaloneScraper() {
                                     return text.replace(/\n\s*\n/g, '\n').trim();
                                 });
 
+                                // Smart Capture Strategy
+                                let smartPdf = await capturePdfFromButton(workerPage, chunkContext);
+
                                 let pdfLink = await workerPage.evaluate(() => {
                                     let foundPdf = '';
                                     let annexPdf = '';
@@ -284,8 +383,11 @@ async function runStandaloneScraper() {
                                     return foundPdf || annexPdf;
                                 });
 
-                                if (pdfLink) {
-                                    item.pdf_link = pdfLink;
+                                const finalPdfLink = smartPdf || pdfLink;
+                                if (finalPdfLink && (finalPdfLink.toLowerCase().endsWith('.pdf') || finalPdfLink.toLowerCase().includes('.pdf?'))) {
+                                    item.pdf_link = finalPdfLink;
+                                } else {
+                                    item.pdf_link = undefined; // Strict constraint: No Garbage URLs
                                 }
 
                                 if (pageText.length > 15000) pageText = pageText.substring(0, 15000);
