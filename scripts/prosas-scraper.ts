@@ -4,7 +4,7 @@ import { chromium } from 'playwright-extra';
 import stealth from 'puppeteer-extra-plugin-stealth';
 
 function formatGoogleDriveUrl(url: string) {
-    if (!url) return url;
+    if (!url || typeof url !== 'string') return url;
     const driveMatch = url.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
     if (driveMatch) {
         return `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
@@ -19,6 +19,7 @@ async function loginOnProdutosIfNeeded(workerPage: any, username: string, passwo
         let submitBtn: HTMLButtonElement | HTMLInputElement | null = null;
 
         const queue: (Document | ShadowRoot | Element)[] = [document];
+        const visited: any[] = [];
 
         while (queue.length > 0) {
             const root = queue.shift();
@@ -27,7 +28,8 @@ async function loginOnProdutosIfNeeded(workerPage: any, username: string, passwo
             const children = root.querySelectorAll('*');
             for (let i = 0; i < children.length; i++) {
                 const child = children[i];
-                if (child.shadowRoot) {
+                if (child.shadowRoot && !visited.includes(child.shadowRoot)) {
+                    visited.push(child.shadowRoot);
                     queue.push(child.shadowRoot);
                 }
 
@@ -90,6 +92,7 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
         // Find the "Acessar" or "Inscreva-se" button via DOM and Shadow DOM
         const buttonInfo = await page.evaluate(() => {
             const queue: (Document | ShadowRoot | Element)[] = [document];
+            const visited: any[] = [];
 
             while (queue.length > 0) {
                 const root = queue.shift();
@@ -98,7 +101,8 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
                 const els = root.querySelectorAll('*');
                 for (let i = 0; i < els.length; i++) {
                     const el = els[i];
-                    if (el.shadowRoot) {
+                    if (el.shadowRoot && !visited.includes(el.shadowRoot)) {
+                        visited.push(el.shadowRoot);
                         queue.push(el.shadowRoot);
                     }
                     if (el.tagName === 'BUTTON' || el.tagName === 'A') {
@@ -121,6 +125,7 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
 
         const btnSelector = await page.evaluateHandle(() => {
             const queue: (Document | ShadowRoot | Element)[] = [document];
+            const visited: any[] = [];
 
             while (queue.length > 0) {
                 const root = queue.shift();
@@ -129,7 +134,8 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
                 const els = root.querySelectorAll('*');
                 for (let i = 0; i < els.length; i++) {
                     const el = els[i];
-                    if (el.shadowRoot) {
+                    if (el.shadowRoot && !visited.includes(el.shadowRoot)) {
+                        visited.push(el.shadowRoot);
                         queue.push(el.shadowRoot);
                     }
                     if (el.tagName === 'BUTTON' || el.tagName === 'A') {
@@ -146,7 +152,7 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
         const isBtnFound = await page.evaluate(btn => btn !== null, btnSelector);
         if (buttonInfo?.isAnchor && buttonInfo.href) {
              const formatGoogleDriveUrl = (url: string) => {
-                if (!url) return url;
+                if (!url || typeof url !== 'string') return url;
                 const driveMatch = url.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
                 if (driveMatch) {
                     return `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
