@@ -14,33 +14,42 @@ function formatGoogleDriveUrl(url: string) {
 
 async function loginOnProdutosIfNeeded(workerPage: any, username: string, password: string) {
     return await workerPage.evaluate(async ({ u, p }: { u: string, p: string }) => {
-        const isLoginInput = (el: Element) => {
-            return (el.tagName === 'INPUT' && (
-                el.getAttribute('type') === 'email' ||
-                (el.getAttribute('name') && el.getAttribute('name')!.toLowerCase().includes('email')) ||
-                (el.getAttribute('placeholder') && el.getAttribute('placeholder')!.toLowerCase().includes('mail')) ||
-                el.getAttribute('type') === 'text'
-            ));
-        };
-        const isPasswordInput = (el: Element) => el.tagName === 'INPUT' && el.getAttribute('type') === 'password';
-        const isSubmitBtn = (el: Element) => (el.tagName === 'INPUT' || el.tagName === 'BUTTON') && el.getAttribute('type') === 'submit';
+        let emailInput: HTMLInputElement | null = null;
+        let passInput: HTMLInputElement | null = null;
+        let submitBtn: HTMLButtonElement | HTMLInputElement | null = null;
 
-        const findAllElements = (root: Document | ShadowRoot | Element): Element[] => {
-            let els: Element[] = [];
+        const queue: (Document | ShadowRoot | Element)[] = [document];
+
+        while (queue.length > 0) {
+            const root = queue.shift();
+            if (!root) continue;
+
             const children = root.querySelectorAll('*');
-            for (const child of children) {
-                els.push(child);
+            for (let i = 0; i < children.length; i++) {
+                const child = children[i];
                 if (child.shadowRoot) {
-                    els = els.concat(findAllElements(child.shadowRoot));
+                    queue.push(child.shadowRoot);
+                }
+
+                if (child.tagName === 'INPUT') {
+                    const type = child.getAttribute('type');
+                    const name = child.getAttribute('name');
+                    const placeholder = child.getAttribute('placeholder');
+
+                    if (!emailInput && (type === 'email' || (name && name.toLowerCase().includes('email')) || (placeholder && placeholder.toLowerCase().includes('mail')) || type === 'text')) {
+                        emailInput = child as HTMLInputElement;
+                    } else if (!passInput && type === 'password') {
+                        passInput = child as HTMLInputElement;
+                    } else if (!submitBtn && type === 'submit') {
+                        submitBtn = child as HTMLInputElement;
+                    }
+                } else if (!submitBtn && child.tagName === 'BUTTON') {
+                    if (child.getAttribute('type') === 'submit') {
+                        submitBtn = child as HTMLButtonElement;
+                    }
                 }
             }
-            return els;
-        };
-
-        const allElements = findAllElements(document);
-        let emailInput = allElements.find(isLoginInput) as HTMLInputElement;
-        let passInput = allElements.find(isPasswordInput) as HTMLInputElement;
-        let submitBtn = allElements.find(isSubmitBtn) as HTMLButtonElement | HTMLInputElement;
+        }
 
         if (emailInput && passInput && submitBtn) {
             emailInput.value = u;
@@ -80,12 +89,17 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
 
         // Find the "Acessar" or "Inscreva-se" button via DOM and Shadow DOM
         const buttonInfo = await page.evaluate(() => {
-            const getButtonInfo = (root: Document | ShadowRoot | Element): { found: boolean, isAnchor: boolean, href: string | null, html: string } | null => {
+            const queue: (Document | ShadowRoot | Element)[] = [document];
+
+            while (queue.length > 0) {
+                const root = queue.shift();
+                if (!root) continue;
+
                 const els = root.querySelectorAll('*');
-                for (const el of els) {
+                for (let i = 0; i < els.length; i++) {
+                    const el = els[i];
                     if (el.shadowRoot) {
-                        const res = getButtonInfo(el.shadowRoot);
-                        if (res) return res;
+                        queue.push(el.shadowRoot);
                     }
                     if (el.tagName === 'BUTTON' || el.tagName === 'A') {
                         const txt = (el.textContent || '').toLowerCase().trim();
@@ -101,18 +115,22 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
                         }
                     }
                 }
-                return null;
-            };
-            return getButtonInfo(document);
+            }
+            return null;
         });
 
         const btnSelector = await page.evaluateHandle(() => {
-            const getButton = (root: Document | ShadowRoot | Element): Element | null => {
+            const queue: (Document | ShadowRoot | Element)[] = [document];
+
+            while (queue.length > 0) {
+                const root = queue.shift();
+                if (!root) continue;
+
                 const els = root.querySelectorAll('*');
-                for (const el of els) {
+                for (let i = 0; i < els.length; i++) {
+                    const el = els[i];
                     if (el.shadowRoot) {
-                        const res = getButton(el.shadowRoot);
-                        if (res) return res;
+                        queue.push(el.shadowRoot);
                     }
                     if (el.tagName === 'BUTTON' || el.tagName === 'A') {
                         const txt = (el.textContent || '').toLowerCase().trim();
@@ -121,9 +139,8 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
                         }
                     }
                 }
-                return null;
-            };
-            return getButton(document);
+            }
+            return null;
         });
 
         const isBtnFound = await page.evaluate(btn => btn !== null, btnSelector);
@@ -225,34 +242,33 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
         }
 
         // Scenario B: HTML Landing Page -> Deep Hunter
-        const pdfLink = await targetPage.evaluate(() => {
-            const formatGoogleDriveUrl = (url: string) => {
-                if (!url) return url;
-                const driveMatch = url.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
-                if (driveMatch) {
-                    return `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
-                }
-                return url;
-            };
-
+        const rawLinks = await targetPage.evaluate(() => {
             const links = Array.from(document.querySelectorAll('a'));
-            let fallbackPdf = null;
-
-            for (const link of links) {
-                let href = link.href || link.getAttribute('href') || '';
-                href = formatGoogleDriveUrl(href);
-                if (href.toLowerCase().endsWith('.pdf') || href.toLowerCase().includes('.pdf?') || href.includes('drive.google.com/uc?export=download')) {
-                    const text = (link.textContent || '').toLowerCase();
-                    if (text.includes('edital') || text.includes('regulamento') || text.includes('chamada') || text.includes('retificação')) {
-                        return href;
-                    }
-                    if (!fallbackPdf) fallbackPdf = href;
-                }
+            const extractedLinks: { href: string, text: string }[] = [];
+            for (let i = 0; i < links.length; i++) {
+                const link = links[i];
+                extractedLinks.push({
+                    href: link.href || link.getAttribute('href') || '',
+                    text: (link.textContent || '').toLowerCase()
+                });
             }
-            return fallbackPdf;
+            return extractedLinks;
         });
 
-        return pdfLink;
+        let fallbackPdf = null;
+        for (let i = 0; i < rawLinks.length; i++) {
+            let href = rawLinks[i].href;
+            href = formatGoogleDriveUrl(href);
+            if (href.toLowerCase().endsWith('.pdf') || href.toLowerCase().includes('.pdf?') || href.includes('drive.google.com/uc?export=download')) {
+                const text = rawLinks[i].text;
+                if (text.includes('edital') || text.includes('regulamento') || text.includes('chamada') || text.includes('retificação')) {
+                    return href;
+                }
+                if (!fallbackPdf) fallbackPdf = href;
+            }
+        }
+
+        return fallbackPdf;
 
     } catch (e: any) {
         console.warn("[capturePdfFromButton] Error capturing PDF:", e.message);
@@ -370,11 +386,15 @@ async function runStandaloneScraper() {
                     const component = document.querySelector('prosas-listagem-editais');
                     if (component && component.shadowRoot) {
                         const buttons = component.shadowRoot.querySelectorAll('button');
-                        const matchingButtons = Array.from(buttons).filter((btn: any) => {
-                            return btn.querySelector('svg') &&
-                                   btn.innerHTML.includes('M.29.71a.996.996 0 0 0 0 1.41L4.17 6 .29 9.88') &&
-                                   !btn.disabled;
-                        });
+                        const matchingButtons = [];
+                        for (let i = 0; i < buttons.length; i++) {
+                            const btn = buttons[i];
+                            if (btn.querySelector('svg') &&
+                                btn.innerHTML.includes('M.29.71a.996.996 0 0 0 0 1.41L4.17 6 .29 9.88') &&
+                                !btn.disabled) {
+                                matchingButtons.push(btn);
+                            }
+                        }
 
                         if (matchingButtons.length > 0) {
                             const nextBtn = matchingButtons[matchingButtons.length - 1] as HTMLElement;
@@ -545,53 +565,57 @@ async function runStandaloneScraper() {
                                 // Smart Capture Strategy
                                 let smartPdf = await capturePdfFromButton(workerPage, context);
 
-                                let pdfLink = await workerPage.evaluate(() => {
-                                    const formatGoogleDriveUrl = (url: string) => {
-                                        if (!url) return url;
-                                        const driveMatch = url.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
-                                        if (driveMatch) {
-                                            return `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
-                                        }
-                                        return url;
-                                    };
-
-                                    let foundPdf = '';
-                                    let annexPdf = '';
+                                const rawWorkerLinks = await workerPage.evaluate(() => {
                                     const allElements = document.querySelectorAll('*');
-                                    const allLinks: HTMLAnchorElement[] = [];
+                                    const allLinks: { href: string, text: string }[] = [];
 
                                     for (let i = 0; i < allElements.length; i++) {
-                                        if (allElements[i].tagName === 'A') allLinks.push(allElements[i] as HTMLAnchorElement);
+                                        if (allElements[i].tagName === 'A') {
+                                            const a = allElements[i] as HTMLAnchorElement;
+                                            allLinks.push({
+                                                href: a.href || a.getAttribute('href') || '',
+                                                text: (a.textContent || '').toLowerCase().trim()
+                                            });
+                                        }
                                         if (allElements[i].shadowRoot) {
                                             const shadowLinks = allElements[i].shadowRoot!.querySelectorAll('a');
-                                            for(let j=0; j<shadowLinks.length; j++) allLinks.push(shadowLinks[j]);
+                                            for(let j=0; j<shadowLinks.length; j++) {
+                                                const a = shadowLinks[j] as HTMLAnchorElement;
+                                                allLinks.push({
+                                                    href: a.href || a.getAttribute('href') || '',
+                                                    text: (a.textContent || '').toLowerCase().trim()
+                                                });
+                                            }
                                         }
                                     }
-
-                                    // Priorities for finding PDF links
-                                    // 1. Direct PDF links with matching text (regulamento, edital, complementares, chamamento, documento, regras)
-                                    // 2. Deprioritize links with anexo, modelo, planilha, formulario
-                                    for (let i = 0; i < allLinks.length; i++) {
-                                        const a = allLinks[i];
-                                        const btnText = (a.textContent || '').toLowerCase().trim();
-                                        let href = a.href || a.getAttribute('href') || '';
-                                        href = formatGoogleDriveUrl(href);
-                                        if (href && (href.toLowerCase().endsWith('.pdf') || href.toLowerCase().includes('.pdf?') || href.includes('drive.google.com/uc?export=download'))) {
-                                            const isAnnex = btnText.includes('anexo') || btnText.includes('modelo') || btnText.includes('planilha') || btnText.includes('formulario') || href.toLowerCase().includes('anexo') || href.toLowerCase().includes('modelo') || href.toLowerCase().includes('planilha') || href.toLowerCase().includes('formulario');
-
-                                            if (isAnnex) {
-                                                if (!annexPdf) annexPdf = href;
-                                                continue;
-                                            }
-
-                                            if (btnText.includes('regulamento') || btnText.includes('edital') || btnText.includes('complementares') || btnText.includes('chamamento') || btnText.includes('documento') || btnText.includes('regras')) {
-                                                return href;
-                                            }
-                                            if (!foundPdf) foundPdf = href;
-                                        }
-                                    }
-                                    return foundPdf || annexPdf;
+                                    return allLinks;
                                 });
+
+                                let foundPdf = '';
+                                let annexPdf = '';
+                                for (let i = 0; i < rawWorkerLinks.length; i++) {
+                                    const link = rawWorkerLinks[i];
+                                    const btnText = link.text;
+                                    let href = link.href;
+                                    href = formatGoogleDriveUrl(href);
+
+                                    if (href && (href.toLowerCase().endsWith('.pdf') || href.toLowerCase().includes('.pdf?') || href.includes('drive.google.com/uc?export=download'))) {
+                                        const isAnnex = btnText.includes('anexo') || btnText.includes('modelo') || btnText.includes('planilha') || btnText.includes('formulario') || href.toLowerCase().includes('anexo') || href.toLowerCase().includes('modelo') || href.toLowerCase().includes('planilha') || href.toLowerCase().includes('formulario');
+
+                                        if (isAnnex) {
+                                            if (!annexPdf) annexPdf = href;
+                                            continue;
+                                        }
+
+                                        if (btnText.includes('regulamento') || btnText.includes('edital') || btnText.includes('complementares') || btnText.includes('chamamento') || btnText.includes('documento') || btnText.includes('regras')) {
+                                            foundPdf = href;
+                                            break;
+                                        }
+                                        if (!foundPdf) foundPdf = href;
+                                    }
+                                }
+
+                                let pdfLink = foundPdf || annexPdf;
 
                                 const finalPdfLink = smartPdf || pdfLink;
                                 if (finalPdfLink && (finalPdfLink.toLowerCase().endsWith('.pdf') || finalPdfLink.toLowerCase().includes('.pdf?') || finalPdfLink.includes('drive.google.com/uc?export=download'))) {
