@@ -2464,9 +2464,9 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19448",
     "pdf_link": "https://cms.ancar.com.br/sites/default/files/public/media/document/2026-10/Edital%20Socioambiental%20de%20Incentivo%20Fiscal%20Ancar_0.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nEdital Socioambiental de Incentivo Fiscal Ancar - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nEdital Socioambiental de Incentivo Fiscal Ancar - 2026Compartilhar editalInformaçõesInscrições de:15/10/26até30/10/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: esg@ancar.com.brTelefone: SobreSelecionar projetos sociais, culturais e esportivos aprovados em leis de incentivo fiscal que promovam o desenvolvimento humano e comunitário, integrando a operação dos shopping centers da rede Ancar a uma agenda ESG de impacto sustentável.Fonte de financiamentoFIA - Fundo para Infância e AdolescênciaFundo do IdosoLei de Incentivo à ReciclagemLei Federal do EsporteLei RouanetPRONAS/PCDPRONONLocais de AtuaçãoBrasília - DFFortaleza - CEMaracanaú - CEBelo Horizonte - MGCuiabá - MTRio de Janeiro - RJNova Iguaçu - RJNatal - RNPorto Alegre - RSPorto Velho - ROCampinas - SPSão Bernardo do Campo - SPSão José dos Campos - SPSão Paulo - SPÁreas de AtuaçãoAssistência SocialCultura e ArtesDesenvolvimento comunitárioEsportesMeio AmbienteObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: AncarMídiasVer menosSiteInscrição e anexosDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "retry_count": 2,
+    "retry_count": 3,
     "last_error": "HTTP Error: 403",
-    "pipeline_status": "PENDING_EXTRACTION"
+    "pipeline_status": "FAILED_PERMANENTLY"
   },
   {
     "id": "19452",
@@ -3802,9 +3802,9 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19361",
     "pdf_link": "https://www.pmsg.rj.gov.br/wp-content/uploads/2026/10/pnab_c2_chamamento_festivais_minuta_v6.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nSÃO GONÇALO RJ - CHAMAMENTO PÚBLICO - FESTIVAIS, MOSTRAS E CIRCUITOS CULTURAIS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nSÃO GONÇALO  RJ - CHAMAMENTO PÚBLICO - FESTIVAIS, MOSTRAS E CIRCUITOS CULTURAIS - 2026Compartilhar editalInformaçõesInscrições de:06/10/26até02/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: SobreSeleção de 07 (sete) projetos culturais apresentados por Pessoas Jurídicas para a realização de festivais, mostras, encontros, circuitos territoriais e ações afins no Município de São Gonçalo/RJ. O objetivo é fortalecer a cadeia produtiva das artes, promover a diversidade cultural, ampliar o acesso gratuito à programação artística e ocupar territórios municipais.Total DisponívelR$ 1.300.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoSão Gonçalo - RJÁreas de AtuaçãoCultura e ArtesObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura Municipal de São Gonçalo/RJDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "retry_count": 2,
+    "retry_count": 3,
     "last_error": "fetch failed",
-    "pipeline_status": "PENDING_EXTRACTION"
+    "pipeline_status": "FAILED_PERMANENTLY"
   },
   {
     "id": "19357",
@@ -3815,7 +3815,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19357",
     "pdf_link": "https://www.udesc.br/arquivos/udesc/id_cpmenu/24323/Edital_ProCult_2027_2028_Documento_UDESC_00028544_2026__assinado____Portaria_Reitoria_17913164555533_24323.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nSANTA CATARINA - FOMENTO - AÇÕES CULTURAIS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nSANTA CATARINA - FOMENTO - AÇÕES CULTURAIS - 2026Compartilhar editalInformaçõesInscrições de:08/10/26até02/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: SobreO edital visa apoiar e fomentar o desenvolvimento de projetos artístico-culturais elaborados por docentes e técnicos universitários da UDESC, promovendo a integração entre ensino, pesquisa e extensão e estimulando a formação cidadã e a pluralidade de linguagens artísticas.Total DisponívelR$ 3.250.000,00Fonte de financiamentoRecursos própriosLocais de AtuaçãoSanta Catarina - SCÁreas de AtuaçãoCultura e ArtesObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: undação Universidade do Estado de Santa Catarina (UDESC)MídiasVer menosSiteInscriçõesDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19357",
       "resumo_objetivo": "O Edital PROCULT 2027-2028 visa fomentar a arte e a cultura no âmbito da UDESC, apoiando projetos artístico-culturais integrados ao ensino, à pesquisa e à extensão, promovidos por docentes e técnicos universitários.",
@@ -3862,7 +3861,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "17394",
@@ -3873,7 +3873,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17394",
     "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/004/662/319/original/EDITAL_DE_CREDENCIAMENTO.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261030%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261030T152153Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a48641e10e661307dfd7fb7dfbfbcbb4888b1208a5500d33889a7da294f3a1c5",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nEDITAL DE CHAMAMENTO para credenciamento de Parceiristas de arte e de Cultura\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nEDITAL DE CHAMAMENTO para credenciamento de Parceiristas de arte e de CulturaCompartilhar editalInformaçõesInscrições de:03/11/25até02/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: SobreA Secretaria Municipal de Cultura e Economia Criativa de Arraial do Cabo, no Rio de Janeiro, torna público o Edital de Chamamento Público nº 003/2025. O objetivo central deste edital é o credenciamento de profissionais especializados (pareceristas) para a prestação de serviços de avaliação, emissão de pareceres técnicos e julgamento de recursos em propostas artísticas e culturais inscritas nos editais de fomento do município. A iniciativa busca garantir a transparência, a imparcialidade e a excelência técnica na seleção de projetos culturais, utilizando o mecanismo de credenciamento para formar um banco de avaliadores qualificados que atuarão conforme a demanda das políticas públicas locais de cultura.Para os especialistas do setor, o público-alvo compreende pessoas físicas e jurídicas (incluindo MEI) que possuam comprovada expertise e formação nas diversas áreas das artes e da cultura. Os candidatos devem estar cadastrados no Sistema de Cadastramento Unificado de Fornecedores (SICAF) e não possuir vínculos que gerem conflito de interesses com a administração municipal. É uma oportunidade estratégica para profissionais que desejam contribuir com o fortalecimento institucional da gestão cultural, aplicando seus conhecimentos técnicos para assegurar que os recursos de fomento alcancem os projetos de maior mérito e impacto para a cidade de Arraial do Cabo.Fonte de financiamentoRecursos própriosLocais de AtuaçãoArraial do Cabo - RJÁreas de AtuaçãoCultura e ArtesObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura de Arraial do CaboMídiasVer menosSitePrefeitura de Arraial do CaboComplementaresVer menosEditalDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, ",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17394",
       "resumo_objetivo": "Credenciamento de pareceristas de arte e cultura para prestação de serviços de avaliação e emissão de pareceres em editais de premiação e fomento promovidos pela Secretaria Municipal de Cultura e Economia Criativa de Arraial do Cabo.",
@@ -3909,7 +3908,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19351",
@@ -3920,7 +3920,6 @@
     "public_url": "https://prosas.com.br/editais/19351",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/oiKAdJJF_G-UWEBxEbfL9vw_UT1Xd3Y0xE6yhcM4Zp9tAWYF3ArW3pBAGshYkPPL/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/086/001/original/Edital_Mapeamento_Cultural_SSP_PNAB_2026_final.pdf",
     "full_text": "EDITAIS\nmenu_open\nPT\nEN\nES\nEDITAL DE CHAMAMENTO PÚBLICO Nº 004/2026 - MAPEAMENTO, DIAGNÓSTICO E PAINEL DE DADOS CULTURAIS\nInscrições a partir de:\n09/10/2026 03:00 até 03/11/2026 20:00\nGMT+00 (Horário Universal Coordenado)\nInscreva-se\nINFORMAÇÕES\nINFORMAÇÕES\nSobre\nSelecionar 1 (um) projeto cultural para conceber e realizar o Mapeamento e Diagnóstico Cultural Participativo de São Sebastião do Paraíso/MG, abrangendo todo o território municipal, mediante pesquisa de fontes existentes, cadastro aberto e assistido, busca ativa, trabalho de campo, escutas territoriais e setoriais, entrevistas, consulta sobre participação cultural, tratamento e análise de dados, cartografia digital, validação pública e transferência de conhecimento.\n***\nPara dúvidas relacionadas aos editais e regulamentos, entre em contato com o Serviço de Atendimento ao Proponente:\nWhat'sApp: (35) 9 9955-1544\nEmail: pnab.ame@gmail.com\n***\nCaso haja qualquer dificuldade no uso da plataforma Prosas para envio da inscrição, clique no botão Ajuda localizado no canto inferior direito da tela.\n- WhatsApp Suporte - (31) 9 9919-8781\nAtendimento de segunda a sexta-feira, das 9h às 18h.\nTotal disponível\nR$ 50.000,00\nFonte de Financiamento\nPolítica Nacional Aldir Blanc\nLocais de atuação dos projetos\nCidade(s):\nlocation_on\nSão Sebastião do Paraíso - MG\nSão Sebastião do Paraíso\nArquivos Complementares\nEDITAL Nº 004/2026\nCompartilhe esta página\nPRIVACIDADEFUNCIONALIDADESBLOGCONTATO\nAjuda\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19351",
       "resumo_objetivo": "Selecionar projeto cultural para conceber e realizar o Mapeamento e Diagnóstico Cultural Participativo de São Sebastião do Paraíso/MG, gerando uma base de dados estruturada e um painel público acessível.",
@@ -3962,7 +3961,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19302",
@@ -3973,7 +3973,6 @@
     "public_url": "https://prosas.com.br/editais/19302",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/bRBwu1EeMRXBFn-5YHaiOVv_eBX3Shgus9RUt8U1kycpggnFEQqLRzQkIBpxu5Zu/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/082/338/original/Edital_002.2026_-_PREMIACAO_CULTURA_VIVA_OURINHOS_-_MINUTA.pdf",
     "full_text": "EDITAIS\nmenu_open\nPT\nEN\nES\nEDITAL DE CHAMAMENTO PÚBLICO Nº 002/2026 - PREMIAÇÃO DE PONTOS E PONTÕES - OURINHOS\nInscrições a partir de:\n06/10/2026 03:00 até 27/10/2026 20:00\nInscrições prorrogadas até:\n03/11/2026 20:00\nGMT+00 (Horário Universal Coordenado)\nInscreva-se\nINFORMAÇÕES\nINFORMAÇÕES\nSobre\n. Este Edital tem por objeto a premiação de 6 (seis) iniciativas, atividades ou ações já realizadas por Pontos e Pontões de Cultura, reconhecendo a contribuição de entidades e coletivos para o desenvolvimento artístico, cultural e comunitário de Ourinhos/SP.\n***\nPara dúvidas relacionadas aos editais e regulamentos, entre em contato com o Serviço de Atendimento ao Proponente:\nWhat'sApp: (35) 9 9955-1544\nEmail: pnab.ame@gmail.com\n***\nCaso haja qualquer dificuldade no uso da plataforma Prosas para envio da inscrição, clique no botão Ajuda localizado no canto inferior direito da tela.\n- WhatsApp Suporte - (31) 9 9919-8781\nAtendimento de segunda a sexta-feira, das 9h às 18h.\nTotal disponível\nR$ 183.300,00\nFonte de Financiamento\nPolítica Nacional Aldir Blanc\nLocais de atuação dos projetos\nCidade(s):\nlocation_on\nOurinhos - SP\nMunicípio de Ourinhos\nArquivos Complementares\nEdital 002.2026 - PREMIACAO CULTURA VIVA OURINHOS\nAnexo_1_Categorias_e_Cotas\nAnexo_2_Criterios_de_Avaliacao\nAnexo_3_Formulario_de_Inscricao\nAnexo_4_Declaracao_de_Representacao\nAnexo_5_Autodeclaracao_Etnico_Racial\nAnexo_6_Autodeclaracao_PCD\nAnexo_7_Formulario_para_Pedido_de_Recurso\n04_Anexo_4_Declaracao_de_Representacao\n05_Anexo_5_Autodeclaracao_Etnico_Racial\n06_Anexo_6_Autodeclaracao_PCD\n07_Anexo_7_Formulario_para_Pedido_de_Recurso\n08_Anexo_8_Termo_de_Premiacao_Cultura_Viva\nCompartilhe esta página\nPRIVACIDADEFUNCIONALIDADESBLOGCONTATO\nAjuda\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19302",
       "resumo_objetivo": "Este Edital tem por objeto a premiação de 6 iniciativas, atividades ou ações já realizadas por Pontos e Pontões de Cultura, reconhecendo a contribuição de entidades e coletivos para o desenvolvimento artístico, cultural e comunitário de Ourinhos/SP.",
@@ -4016,7 +4015,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19283",
@@ -4027,7 +4027,6 @@
     "public_url": "https://prosas.com.br/editais/19283",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/T21UnOXX_f-6vGVdqlfiH7QNrxAR8FTrw08lTwBaNsV_HEDZfaVk9wm37t1YoJYC/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/075/469/original/Edital_SMCT_n_28_2026.pdf",
     "full_text": "EDITAIS\nmenu_open\nPT\nEN\nES\nEDITAL SMCT Nº 28/2026 PRÊMIO GRÃO MESTRE CORISCO\nInscrições a partir de:\n01/10/2026 15:00 até 03/11/2026 20:00\nGMT+00 (Horário Universal Coordenado)\nInscreva-se\nINFORMAÇÕES\nINFORMAÇÕES\nSobre\n1.1. O presente edital tem por objeto a concessão de 10 (dez) prêmios no valor individual de R$ 10.000,00 (dez mil reais), voltados ao reconhecimento de mestres e mestras dos saberes ou pessoas de notório saber cujas vidas e obras estejam dedicadas à proteção, desenvolvimento e transmissão das culturas afrobrasileiras, indígenas e outras culturas étnicas.\n1.2. São objetivos deste edital:\n1.2.1. Promover o reconhecimento de mestres e mestras dos saberes e/ou notório saber, que se expressam através de atividades artísticas-culturais, ritos sagrados, cuja vida e obra foram dedicadas à proteção e desenvolvimento das culturas afrobrasileiras, indígenas e outras culturas étnicas; de sabedoria notória, reconhecida entre seus pares e/ou por especialistas; e com longa permanência na atividade e capacidade de transmissão dos conhecimentos artísticos e culturais;\n1.2.2. Promover e estimular o reconhecimento e a preservação da memória das culturas afro-brasileiras, indígenas e outras culturas étnicas por meio da valorização das trajetórias artístico-culturais de Mestras e Mestres domiciliados em Uberlândia e do impacto coletivo de seus saberes e fazeres na comunidade local;\n1.2.3. Contribuir para a melhoria das condições sociais e materiais de transmissão e perpetuação dos saberes e fazeres de Mestras e Mestres dos saberes;\n1.2.4. Promover o reconhecimento, difusão e valorização da atuação das Mestras e Mestres dos saberes tendo em vista seu papel na transmissão das expressões artístico-culturais nos contextos em que se inserem;\n1.2.5. Valorizar a trajetória cultural, a preservação, a valorização, a transmissão, a continuidade e a difusão dos saberes e fazeres relacionados às culturas afro-brasileiras, indígenas e outras culturas étnicas, considerando sua relevância no contexto social, cultural, comunitário e territorial em que se inserem;\n1.2.6. Valorizar as formas de transmissão oral, comunitária e intergeracional dos saberes e fazeres tradicionais, respeitando a diversidade das culturas e suas formas próprias de reconhecimento e perpetuação.\nVer descrição completa\nTotal disponível\nR$ 100.000,00\nLimite por projeto\nR$ 10.000,00\nFonte de Financiamento\nOutros\nSECRETARIA MUNICIPAL DE CULTURA E TURISMO DE UBERLÂNDIA/MG\nArquivos Complementares\nEDITAL SMCT N",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19283",
       "resumo_objetivo": "Concessão de prêmios voltados ao reconhecimento de mestres e mestras dos saberes ou pessoas de notório saber dedicadas à proteção, desenvolvimento e transmissão das culturas afro-brasileiras, indígenas e outras culturas étnicas.",
@@ -4069,7 +4068,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "16452",
@@ -4080,7 +4080,6 @@
     "public_url": "https://prosas.com.br/editais/16452",
     "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/004/476/004/original/Ambev_Brasilidades2026_Regulamento.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261030%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261030T152222Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=322b7888b2fb4be8762b060c615f72a83636a5af96d015d930051e32108f6584",
     "full_text": "EDITAIS\nmenu_open\nPT\nEN\nES\nEdital Ambev Brasilidades 2026\nInscrições a partir de:\n11/11/2025 13:00 até 30/09/2026 20:59\nInscrições prorrogadas até:\n03/11/2026 20:59\nGMT+00 (Horário Universal Coordenado)\nInscreva-se\nINFORMAÇÕES\nINFORMAÇÕES\nSobre\nA AMBEV S.A., na qualidade de realizadora do Edital AMBEV Brasilidades 2026, comunica aos interessados a prorrogação de período adicional de inscrições, de 01 de outubro a 03 de novembro de 2026, exclusivamente para projetos cujo objeto esteja relacionado à temática de Carnaval.\n(i) Projetos relacionados à temática de Carnaval: poderão ser inscritos entre 01/10/2026 e 03/11/2026, observadas as demais condições e critérios de elegibilidade previstos no Regulamento;\nVEJA DETALHES no Comunicado e na Retificação 2 de Regulamento anexos.\n_ _ _ _ _ _\nA AMBEV S.A., na qualidade de realizadora do Edital AMBEV Brasilidades 2026, comunica aos interessados a abertura de período adicional de inscrições, de 01 de outubro a 31 de outubro de 2026, exclusivamente para projetos cujo objeto esteja relacionado à temática de Carnaval.\n(i) Projetos relacionados à temática de Carnaval: poderão ser inscritos entre 01/10/2026 e 31/10/2026, observadas as demais condições e critérios de elegibilidade previstos no Regulamento;\n(ii) Projetos relacionados a outras temáticas: o prazo de inscrições permanece encerrado em 30/09/2026;\n(iii) Projetos vinculados às Leis Estaduais de Incentivo Fiscal dos Estados de São Paulo, Alagoas e Pará: não poderão ser inscritos no período adicional, ainda que relacionados à temática de Carnaval, considerando a indisponibilidade de recursos incentivados para distribuição pela AMBEV por meio desses mecanismos, nos termos do item 2.1.5 do Regulamento.\nVEJA DETALHES no Comunicado e na Retificação de Regulamento anexos.\n_ _ _ _ _ _ _\nCom o objetivo de reforçar os investimentos, democratizar o acesso a seus recursos incentivados e gerar oportunidades de realização de projetos de cultura e esporte por todo Brasil, a AMBEV apresenta o regulamento geral do Edital Ambev Brasilidades 2026. \nSeguindo seu compromisso de investimento na cultura brasileira e promoção da prática desportiva - expressões de paixões nacionais, a AMBEV disponibilizará até 67 milhões de reais para a realização de projetos já aprovados (excepcionalmente, apenas inscritos) nas leis estaduais de incentivo à cultura e ao esporte de todas as regiões do Brasil. \nSerão selecionados projetos que celebrem as paixões nacionais, a brasilidade inerente ao nosso",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "16452",
       "resumo_objetivo": "O edital apoia projetos de cultura e esporte por meio de leis estaduais de incentivo fiscal, celebrando a brasilidade e as paixões nacionais com um aporte total de até R$ 67 milhões.",
@@ -4136,7 +4135,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19458",
@@ -4189,7 +4189,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19457",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nMINAS GERAIS - BOLSA - DESENVOLVIMENTO TECNOLÓGICO E INOVAÇÃO PIBITI IFTM (17/2026) - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nMINAS GERAIS - BOLSA - DESENVOLVIMENTO TECNOLÓGICO E INOVAÇÃO PIBITI IFTM (17/2026) - 2026Compartilhar editalInformaçõesInscrições de:02/10/26até03/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: editaispropi@iftm.edu.brTelefone: (34) 3326-1165_SobreO Instituto Federal do Triângulo Mineiro (IFTM), por meio da Pró-Reitoria de Pesquisa, Pós-Graduação e Inovação, seleciona projetos de graduação para o Programa Institucional de Bolsas de Iniciação em Desenvolvimento Tecnológico e Inovação (PIBITI/IFTM) e para o programa voluntário PIVITI/IFTM, pelo Edital nº 17/2026.A chamada é interna. As inscrições devem ser feitas por docentes/orientadores do IFTM, com indicação de estudantes da instituição. Os projetos devem desenvolver soluções, produtos, processos ou tecnologias e atender a pelo menos um dos eixos de inovação do edital, com indicação do nível de maturidade tecnológica (TRL).As bolsas institucionais são de R$ 700,00 mensais para 20 horas semanais, por nove ou dez meses, conforme o campus, a partir de março de 2027. A modalidade PIVITI é voluntária, sem bolsa, com dedicação de oito horas semanais. A seleção considera o projeto, o currículo do orientador e o desempenho acadêmico do estudante, observadas as cotas e condições do regulamento.Inscrições de 02/10 a 03/11/2026, até as 23h59, pelo sistema Virtual IF - Projetos de Pesquisa MPES. Os documentos, anexos e critérios completos estão na página oficial indicada no link.Contato para dúvidas: editaispropi@iftm.edu.br. Pró-Reitoria: propi@iftm.edu.br; (34) 3326-1165.Fonte de financiamentoParceria - GovernoRecursos própriosLocais de AtuaçãoMinas Gerais - MGÁreas de AtuaçãoCiência e TecnologiaEducaçãoMeio AmbientePúblico-AlvoJuventudeObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Instituto Federal do Triângulo Mineiro – IFTMMídiasVer menosSiteAnexosDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:h",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19457",
       "resumo_objetivo": "O edital seleciona projetos de graduação para o Programa Institucional de Bolsas de Iniciação em Desenvolvimento Tecnológico e Inovação (PIBITI/IFTM) e para o programa voluntário PIVITI/IFTM.",
@@ -4222,7 +4221,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19456",
@@ -4232,7 +4232,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19456",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nMINAS GERAIS - BOLSA - INICIAÇÃO CIENTÍFICA PIBIC E PIVIC IFTM (16/2026) - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nMINAS GERAIS - BOLSA - INICIAÇÃO CIENTÍFICA PIBIC E PIVIC IFTM (16/2026) - 2026Compartilhar editalInformaçõesInscrições de:07/10/26até03/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: editaispropi@iftm.edu.brTelefone: (34) 3326-1165_SobreO Instituto Federal do Triângulo Mineiro (IFTM), por meio da Pró-Reitoria de Pesquisa, Pós-Graduação e Inovação, seleciona projetos de pesquisa para bolsas de iniciação científica e vagas voluntárias na graduação, pelo Edital nº 16/2026.A chamada é interna: os projetos são submetidos por docentes/orientadores do IFTM e devem indicar estudantes da instituição. São previstas as modalidades PIBIC/IFTM e PIBIC-Af/IFTM, PIBIC/FAPEMIG e PIVIC/IFTM. Há cotas institucionais por campus e bolsas financiadas pela FAPEMIG, sujeitas às regras de concessão e disponibilidade orçamentária.As bolsas institucionais são de R$ 700,00 mensais, com dedicação de 20 horas semanais e duração de nove ou dez meses, conforme o campus. As bolsas FAPEMIG são de R$ 850,00 mensais por 12 meses, de março de 2027 a fevereiro de 2028. A modalidade PIVIC é voluntária, sem bolsa. O regulamento estabelece requisitos acadêmicos, documentação, critérios de seleção e ações afirmativas.Inscrições de 07/10 a 03/11/2026, até as 23h59, exclusivamente pelo orientador no sistema Virtual IF - Projetos de Pesquisa MPES. Os projetos iniciam em 01/03/2027. A íntegra do edital e os anexos estão disponíveis na página oficial indicada no link.Contato para dúvidas: editaispropi@iftm.edu.br. Pró-Reitoria: propi@iftm.edu.br; (34) 3326-1165.Fonte de financiamentoParceria - GovernoRecursos própriosLocais de AtuaçãoMinas Gerais - MGÁreas de AtuaçãoCiência e TecnologiaEducaçãoPúblico-AlvoJuventudeObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Instituto Federal do Triângulo Mineiro – IFTMMídiasVer menosSiteAnexosDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19456",
       "resumo_objetivo": "O Instituto Federal do Triângulo Mineiro seleciona projetos de pesquisa para concessão de bolsas de iniciação científica e vagas voluntárias na graduação.",
@@ -4264,7 +4263,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19434",
@@ -4320,7 +4320,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19423",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nBAHIA - FOMENTO - POUSO DA PALAVRA: BIBLIOTECAS COMUNITÁRIAS (CHAMAMENTO 003/2026) - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nBAHIA - FOMENTO - POUSO DA PALAVRA: BIBLIOTECAS COMUNITÁRIAS (CHAMAMENTO 003/2026) - 2026Compartilhar editalInformaçõesInscrições de:15/10/26até03/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: editalpousodapalavra@fpc.ba.gov.brTelefone: (71) 3116-6659_SobreChamamento Público nº 003/2026 - Pouso da Palavra, da Fundação Pedro Calmon (FPC/Secult-BA), integrante do Programa BiblioRede Bahia. Reconhece, moderniza e fortalece bibliotecas comunitárias, espaços e pontos de leitura da Bahia. Seleciona até 120 propostas: 12 vagas para Salvador e 108 distribuídas entre os 27 Territórios de Identidade do estado, com reserva mínima de 30% para pessoas negras, 10% para pessoas indígenas e 10% para pessoas com deficiência (representante legal da entidade). Cada espaço contemplado recebe o Kit Pouso da Palavra (Smart TV 50\", notebook, microfone, caixa de som com tripé e 100 livros literários) e placa oficial, com o compromisso de executar um Plano de Dinamização Cultural por 12 meses.Podem participar pessoas jurídicas de direito privado sem fins lucrativos, com CNPJ, que administrem diretamente biblioteca comunitária, espaço ou ponto de leitura na Bahia, com pelo menos 1 ano de funcionamento e cadastro na BiblioRede Bahia realizado até 14/10/2026.Inscrições gratuitas, exclusivamente por formulário eletrônico (Google Forms), de 15/10/2026 a 03/11/2026, até 23h59 (horário de Brasília), com envio de documentação, portfólio e Plano de Dinamização Cultural. Dúvidas: editalpousodapalavra@fpc.ba.gov.br | WhatsApp (71) 3116-6659.Total DisponívelR$ 1.624.113,10Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoBahia - BAÁreas de AtuaçãoCultura e ArtesApoio à gestão de organizações de Terceiro SetorDesenvolvimento comunitárioPublicado por: Central de EditaisPatrocinador: Fundação Pedro CalmonDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19423",
       "resumo_objetivo": "O edital seleciona propostas para reconhecer, modernizar e fortalecer bibliotecas comunitárias, espaços e pontos de leitura na Bahia através da entrega de kits de equipamentos e execução de plano de dinamização cultural.",
@@ -4356,7 +4355,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19416",
@@ -4367,7 +4367,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19416",
     "pdf_link": "https://irp.cdn-website.com/6c61047c/files/uploaded/CP006-cultura_viva_premiacao_2026.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nITABIRA MG - PREMIAÇÃO - PONTOS E PONTÕES DE CULTURA - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nITABIRA MG - PREMIAÇÃO - PONTOS E PONTÕES DE CULTURA  - 2026Compartilhar editalInformaçõesInscrições de:15/10/26até03/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: SobreA Fundação Cultural Carlos Drummond de Andrade (FCCDA) seleciona oito iniciativas, atividades ou ações já realizadas por Pontos e Pontões de Cultura em Itabira, pelo Chamamento Público nº 006/2026 - Rede Municipal de Pontos de Cultura. A premiação é financiada com recursos da Política Nacional Aldir Blanc (PNAB).O investimento total é de R$ 81.732,00, dividido em oito prêmios de R$ 10.216,50. O prêmio tem natureza de doação sem encargo, sem obrigações futuras, contrapartida ou prestação de contas, conforme o regulamento.Podem concorrer entidades culturais privadas sem fins lucrativos com CNPJ e coletivos culturais informais sem CNPJ, representados por pessoa maior de 18 anos. É necessário comprovar pelo menos dois anos de atividades culturais na comunidade local de Itabira. São admitidos Pontos e Pontões já certificados e também entidades e coletivos ainda não certificados, desde que cumpram os requisitos para certificação como Ponto de Cultura previstos no edital.Pessoas físicas individualmente, MEIs e instituições com fins lucrativos não podem concorrer. Há outras vedações institucionais e de vínculo com o poder público, detalhadas no edital.O edital foi publicado em 15 de outubro de 2026 e as inscrições gratuitas seguem até 3 de novembro de 2026, às 23h59. O canal online é o formulário eletrônico (Google Forms) divulgado pela FCCDA: https://docs.google.com/forms/d/e/1FAIpQLSdI9gN22YCvJiGxjldTWKE9Cburuxb8TWaPpXrw3IBkqh2gIQ/viewform. Também é possível protocolar presencialmente na sede da FCCDA, Av. Carlos Drummond de Andrade, 666, Centro, Itabira/MG, das 9h às 12h e das 15h às 17h, exceto sábados, domingos e feriados.A inscrição exige formulário, materiais que comprovem a trajetória cultural, declaração de representação para coletivos e autodeclarações quando houver candidatura às cotas. A seleção avalia o histórico de atuação segundo os critérios e reservas de vagas dos anexos. Consulte o regulamento completo para c",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19416",
       "resumo_objetivo": "Este edital tem por objeto a premiação de 08 iniciativas, atividades ou ações já realizadas por Pontos de Cultura, nos termos da Política Nacional de Cultura Viva.",
@@ -4408,7 +4407,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19231",
@@ -4419,7 +4419,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19231",
     "pdf_link": "https://fapemig.br/files/Chamada-17_2026-PROFIX-CB?title=Chamada+17_2026+PROFIX-CB&url=https://api.site.fapemig.br/wp-content/uploads/2026-09-14__193__12653__chamada-17_2026-profix-cb__DBbAVjRX.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nMINAS GERAIS - CHAMAMENTO PÚBLICO - FIXAÇÃO DE DOUTORES - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nMINAS GERAIS - CHAMAMENTO PÚBLICO - FIXAÇÃO DE DOUTORES - 2026Compartilhar editalInformaçõesInscrições de:15/09/26até03/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: SobreApoiar a fixação e/ou permanência de pesquisadores doutores no estado de Minas Gerais, por meio da concessão de bolsas e recursos de custeio/capital para o desenvolvimento de projetos de pesquisa científica, tecnológica e de inovação.Total DisponívelR$ 4.200.000,00Fonte de financiamentoRecursos própriosLocais de AtuaçãoMinas Gerais - MGÁreas de AtuaçãoCiência e TecnologiaEducaçãoObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Fundação de Amparo à Pesquisa do Estado de Minas Gerais (FAPEMIG) em parceria com CNPq e CAPESMídiasVer menosSiteAnexosDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19231",
       "resumo_objetivo": "Apoiar a fixação e permanência de pesquisadores doutores em Minas Gerais por meio de bolsas e recursos para projetos de pesquisa científica, tecnológica e inovação.",
@@ -4450,7 +4449,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19280",
@@ -4510,7 +4510,6 @@
     "public_url": "https://prosas.com.br/editais/19047",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/I1xya48mma9edyPmd_u0J4k3bWxsxUBwwpvgaOcH0RJFBfeoaI5wSXgMrqZaDrfW/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/038/542/original/EDITAL_25_PRESERVACAO_DO12272_04_09_2026.pdf",
     "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos, Organização Pública\"]\nEDITAIS\nmenu_open\nPT\nEN\nES\nEDITAL DE CHAMAMENTO PÚBLICO Nº 025/2026 SELEÇÃO DE PROJETO PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL MEMÓRIA E PRESERVAÇÃO AUDIOVISUAL DO MUSEU DA IMAGEM E DO SOM DE MATO GROSSO DO SUL – MIS-MS MinC/FSA/BRDE/ARRANJOS REGIONAIS – 2026\nInscrições a partir de:\n04/09/2026 12:00 até 04/11/2026 21:00\nGMT+00 (Horário Universal Coordenado)\nInscreva-se\nINFORMAÇÕES\nINFORMAÇÕES\nSobre\nA FCMS selecionará 1 (um) projeto destinado à memória e preservação audiovisual do Museu da Imagem e do Som de Mato Grosso do Sul MIS-MS, para celebração de Termo de Execução Cultural, no valor de até R$ 300.000,00 (trezentos mil reais).\nO projeto deverá compreender, no mínimo, 3 (três) dos seguintes serviços, observadas as definições e os requisitos técnicos do Anexo I:\nI Pesquisa e Inventário de Acervo Audiovisual;\nII Conservação;\nIII Restauração e Remasterização; e\nIV Digitalização.\n São obrigatórios os serviços de Pesquisa e Inventário e de Digitalização.\nCaso a coleção já se encontre inventariada, deverá ser realizada a atualização do inventário, mediante verificação, complementação e consolidação das informações.\nAs ações poderão incidir sobre acervos públicos e/ou privados que integrem o escopo técnico aprovado, desde que haja autorização formal do responsável ou proprietário, com definição das condições de acesso, manuseio, reprodução, digitalização, guarda, devolução e uso dos arquivos gerados.\nO Anexo I integra este Edital e estabelece o detalhamento técnico das ações, os produtos mínimos, os padrões de digitalização, a documentação de cadeia de custódia e os requisitos específicos de inscrição e execução.\nDúvidas sobre este chamamento deverão ser encaminhadas exclusivamente ao e-mail institucional do Museu da Imagem e do Som MIS-MS: mis@fcms.ms.gov.br.\nDúvidas relacionadas à Plataforma Prosas podem ser enviadas para o atendimento em WhatsApp por meio do botão \"Ajuda\", disponível em todas as páginas da plataforma, no canto inferior direito. A equipe de suporte está disponível de segunda-feira à sexta-feira, das 9h às 18h, horário de Brasília/DF\nVer descrição completa\nTipos de perfis que podem se inscrever\nperson\nPessoa física\nperson\nPessoa jurídica com fins lucrativos\nperson\nPessoa jurídica sem fins lucrativos\nperson\nGrupo informal ou coletivo\nT",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19047",
       "resumo_objetivo": "Seleção de um projeto destinado à memória e preservação audiovisual do Museu da Imagem e do Som de Mato Grosso do Sul (MIS-MS), contemplando serviços de pesquisa, inventário, conservação, restauração e digitalização.",
@@ -4543,7 +4542,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19048",
@@ -4554,7 +4554,6 @@
     "public_url": "https://prosas.com.br/editais/19048",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/7ouX_U2Tn-IukgDHqvtmZVi24m4JiYZW_zFaRxKQ3ivMpe7I_xAssv1RbmZTBaJE/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/038/545/original/EDITAL_26_PRODUCAO_DE_CURTAS_DO12272_04_09_2026.pdf",
     "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos, Organização Pública\"]\nEDITAIS\nmenu_open\nPT\nEN\nES\nEDITAL DE CHAMAMENTO PÚBLICO Nº 26/2026 SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL PARA PRODUÇÃO AUDIOVISUAL - MATO GROSSO DO SUL - 2026 – MinC/FSA/BRDE/ARRANJOS REGIONAIS\nInscrições a partir de:\n04/09/2026 12:00 até 04/11/2026 21:00\nGMT+00 (Horário Universal Coordenado)\nInscreva-se\nINFORMAÇÕES\nINFORMAÇÕES\nSobre\nA Fundação de Cultura de Mato Grosso do Sul FCMS selecionará projetos audiovisuais para celebração de Termo de Execução Cultural nas categorias de: I produção de curtas-metragens de ficção ou documentário; II produção de animação e conteúdo para a infância; III apoio a exibições de cineclubes; e IV oficinas ou cursos de formação em audiovisual, com carga horária de 40 (quarenta) horas, visando fomentar a criação, a produção, a difusão, a formação, a circulação e o acesso à cultura audiovisual no Estado de Mato Grosso do Sul.\nInformações poderão ser solicitadas pelo e-mail pantanalfilmcommission@gmail.com e pelo telefone/WhatsApp (67) 3316-9157.\nDúvidas relacionadas à Plataforma Prosas podem ser enviadas para o atendimento em WhatsApp por meio do botão \"Ajuda\", disponível em todas as páginas da plataforma, no canto inferior direito. A equipe de suporte está disponível de segunda-feira à sexta-feira, das 9h às 18h, horário de Brasília/DF\nTipos de perfis que podem se inscrever\nperson\nPessoa física\nperson\nPessoa jurídica com fins lucrativos\nperson\nPessoa jurídica sem fins lucrativos\nperson\nGrupo informal ou coletivo\nTotal disponível\nR$ 975.000,00\nFundação de Cultura de Mato Grosso do Sul\nArquivos Complementares\nEDITAL DE CHAMAMENTO PÚBLICO Nº 026/2026\nCompartilhe esta página\nPRIVACIDADEFUNCIONALIDADESBLOGCONTATO\nAjuda\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid ",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19048",
       "resumo_objetivo": "Seleção de projetos audiovisuais para celebração de Termo de Execução Cultural nas categorias de produção de curtas-metragens, animações/conteúdos infantis, cineclubes e oficinas ou cursos de formação em Mato Grosso do Sul.",
@@ -4590,7 +4589,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19356",
@@ -4601,7 +4601,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19356",
     "pdf_link": "https://www.gov.br/bn/pt-br/atuacao/pesquisa-e-editoracao/programa-nacional-de-apoio-a-pesquisa/PNAP%202026/pnap-2026-documentos/edital_pnap_2026_v2.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nBRASIL - BOLSA - PESQUISA E PRODUÇÃO CIENTÍFICA E TÉCNICA - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nBRASIL - BOLSA - PESQUISA E PRODUÇÃO CIENTÍFICA E TÉCNICA - 2026Compartilhar editalInformaçõesInscrições de:07/10/26até04/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: editaispesquisa@bn.gov.brTelefone: SobreSeleção de pesquisadores para a concessão de bolsas de pesquisa no âmbito do Programa Nacional de Apoio à Pesquisa e Produção de Conhecimento Científico e Técnico (PNAP), visando incentivar o desenvolvimento de projetos científicos, tecnológicos e culturais baseados nos acervos e atividades da instituição.Total DisponívelR$ 62.000,00Fonte de financiamentoRecursos própriosLocais de AtuaçãoBrasilÁreas de AtuaçãoCiência e TecnologiaCultura e ArtesObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Fundação Biblioteca Nacional (FBN)MídiasVer menosSiteInscriçõesDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19356",
       "resumo_objetivo": "Concessão de bolsas de pesquisa no âmbito do Programa Nacional de Apoio à Pesquisa e Produção de Conhecimento Científico e Técnico da Fundação Biblioteca Nacional para incentivar o desenvolvimento de projetos baseados em seus acervos.",
@@ -4637,7 +4636,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19526",
@@ -4647,7 +4647,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19526",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nPOMERODE SC - CHAMAMENTO PÚBLICO - DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nPOMERODE  SC - CHAMAMENTO PÚBLICO - DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026Compartilhar editalInformaçõesInscrições de:18/09/26até04/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: (47) 3380-2573_SobreSeleção de Organizações da Sociedade Civil (OSCs) para celebração de parceria via Termo de Colaboração, visando à execução de projetos voltados à garantia de direitos, convivência familiar, enfrentamento a violências, educação, cultura, esporte, lazer, saúde, profissionalização e proteção ao trabalho de crianças e adolescentes no município de Pomerode para o exercício de 2027.Total DisponívelR$ 90.000,00Fonte de financiamentoFIA - Fundo para Infância e AdolescênciaLocais de AtuaçãoPomerode - SCÁreas de AtuaçãoAssistência SocialCultura e ArtesDefesa de DireitosEducaçãoEsportesFormação para o trabalhoPúblico-AlvoInfância e AdolescênciaPessoas com DeficiênciaObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Conselho Municipal dos Direitos da Criança e do Adolescente de Pomerode (CMDCA)Desenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19526",
       "resumo_objetivo": "Seleção de Organizações da Sociedade Civil (OSCs) para celebração de parceria via Termo de Colaboração para execução de projetos voltados à garantia de direitos e proteção de crianças e adolescentes no município de Pomerode.",
@@ -4684,7 +4683,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19535",
@@ -4695,7 +4695,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19535",
     "pdf_link": "http://mapa.cultura.aracaju.se.gov.br/files/opportunity/130/edital_de_chamamento_p%C3%9Ablico_n_010_2026__a%C3%87%C3%95es_continuadas.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nARACAJU SE - CHAMAMENTO PÚBLICO - AÇÕES CONTINUADAS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nARACAJU  SE - CHAMAMENTO PÚBLICO - AÇÕES CONTINUADAS - 2026Compartilhar editalInformaçõesInscrições de:26/10/26até04/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: SobreSeleção de projetos culturais de ações continuadas, de caráter plurianual (24 meses), destinados à manutenção, planejamento, desenvolvimento, execução e consolidação de iniciativas artístico-culturais com atuação regular e permanente no município de Aracaju.Total DisponívelR$ 2.400.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoAracaju - SEÁreas de AtuaçãoCultura e ArtesObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Fundação Cultural Cidade de Aracaju - FUNCAJU / Prefeitura Municipal de AracajuMídiasVer menosSiteAnexosDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19535",
       "resumo_objetivo": "Seleção de projetos culturais de ações continuadas, de caráter plurianual, destinados à manutenção, planejamento, desenvolvimento, execução e consolidação de iniciativas artístico-culturais no Município de Aracaju.",
@@ -4730,7 +4729,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19536",
@@ -4741,7 +4741,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19536",
     "pdf_link": "http://mapa.cultura.aracaju.se.gov.br/files/opportunity/132/edital_012-2026_-_projetos_culturais_na_linguagem_literatura--.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nARACAJU SE - CHAMAMENTO PÚBLICO - LITERATURA - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nARACAJU  SE - CHAMAMENTO PÚBLICO - LITERATURA - 2026Compartilhar editalInformaçõesInscrições de:26/10/26até04/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: SobreSeleção de 08 (oito) projetos culturais na linguagem Literatura para concessão de apoio financeiro, visando ao desenvolvimento, fortalecimento, valorização, promoção e difusão da produção literária, bem como à formação de leitores e democratização do acesso no município de Aracaju/SE.Total DisponívelR$ 240.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoAracaju - SEÁreas de AtuaçãoCultura e ArtesObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura Municipal de Aracaju / Fundação Cultural Cidade de Aracaju (FUNCAJU)MídiasVer menosSiteAnexosDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19536",
       "resumo_objetivo": "Seleção de projetos culturais na linguagem Literatura com recursos da Política Nacional Aldir Blanc de Fomento à Cultura - PNAB no Município de Aracaju/SE.",
@@ -4776,7 +4775,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19537",
@@ -4787,7 +4787,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19537",
     "pdf_link": "http://mapa.cultura.aracaju.se.gov.br/files/opportunity/134/edital_014-2026_-_audiovisual--.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nARACAJU SE - FOMENTO - AUDIOVISUAL - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nARACAJU  SE - FOMENTO - AUDIOVISUAL - 2026Compartilhar editalInformaçõesInscrições de:26/10/26até04/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: SobreSeleção de 06 (seis) projetos culturais na linguagem Audiovisual, destinados ao desenvolvimento, fortalecimento, valorização, promoção e difusão da produção audiovisual no Município de Aracaju/SE, mediante concessão de apoio financeiro individual de R$ 30.000,00 por projeto.Total DisponívelR$ 180.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoAracaju - SEÁreas de AtuaçãoCultura e ArtesSubáreasAudiovisualObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura Municipal de Aracaju / Fundação Cultural Cidade de Aracaju (FUNCAJU)MídiasVer menosSiteAnexosDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19537",
       "resumo_objetivo": "Seleção de projetos culturais na linguagem audiovisual para concessão de apoio financeiro com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB) - Ciclo 2 no Município de Aracaju/SE.",
@@ -4821,7 +4820,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19544",
@@ -4832,7 +4832,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19544",
     "pdf_link": "https://www.ufsb.edu.br/proex/images/EDITAL_n_23_2026_-_PIBEX_PROGRAMA_INSTITUCIONAL_DE_BOLSAS_DE_EXTENSAO_Publicar.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nBRASIL - CHAMAMENTO PÚBLICO - BOLSAS DE EXTENSÃO UNIVERSITÁRIA PIBEX - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nBRASIL - CHAMAMENTO PÚBLICO - BOLSAS DE EXTENSÃO UNIVERSITÁRIA PIBEX  - 2026Compartilhar editalInformaçõesInscrições de:15/09/26até04/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: proex@ufsb.edu.brTelefone: (73) 2103-8422_SobreA Pró-Reitoria de Extensão e Cultura (PROEX) da Universidade Federal do Sul da Bahia (UFSB) publicou o Edital PROEX nº 23/2026 - PIBEX, que seleciona projetos de extensão universitária para concessão de bolsas a estudantes de graduação e auxílio financeiro aos projetos contemplados.ATENÇÃO - CHAMADA INTERNA: as propostas devem ser submetidas exclusivamente por docentes ou técnicos-administrativos em educação (TAE) com nível superior, em efetivo exercício na UFSB, por meio do SIGAA. As bolsas se destinam a estudantes de graduação da própria universidade.Recursos: 85 bolsas de extensão de R$ 700 mensais, por até 12 meses. Cada projeto contemplado com pelo menos uma bolsa pode receber auxílio financeiro de até R$ 1.000 para despesas de custeio.Cronograma: submissão de propostas de 15/09/2026 a 04/11/2026, pelo SIGAA.Imagem: aula de matemática na Universidade de Tecnologia de Helsinki, por Tungsten, domínio público, via Wikimedia Commons.Total DisponívelR$ 799.000,00Fonte de financiamentoRecursos própriosLocais de AtuaçãoBahia - BAÁreas de AtuaçãoEducaçãoPúblico-AlvoObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Universidade Federal do Sul da Bahia (UFSB) - Pró-Reitoria de Extensão e Cultura (PROEX)MídiasVer menosSiteAnexosDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19544",
       "resumo_objetivo": "O edital visa selecionar projetos de extensão universitária da UFSB para a concessão de bolsas de extensão a estudantes de graduação e auxílio financeiro aos projetos contemplados.",
@@ -4873,7 +4872,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19392",
@@ -4884,7 +4884,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19392",
     "pdf_link": "https://iabs.org.br/wp-content/uploads/2026/10/Edital-SoMar-Azul_06OUT.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nNORDESTE - EDITAL - SOLUÇÕES PARA UM OCEANO SEM PLÁSTICO (SOMAR AZUL) - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nNORDESTE - EDITAL - SOLUÇÕES PARA UM OCEANO SEM PLÁSTICO (SOMAR AZUL) - 2026Compartilhar editalInformaçõesInscrições de:06/10/26até05/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: oceanosemplastico@iabs.org.brTelefone: SobreO IABS abriu o Edital SoMar Azul - Soluções para um Oceano sem Plástico (Edital nº 001/2026 - IABS / GIZ / MMA), com apoio da Iniciativa Internacional para o Clima (IKI) e da cooperação Brasil-Alemanha. O edital seleciona soluções práticas para prevenir e reduzir a poluição por plástico nos ambientes costeiros e marinhos da Região Nordeste.Quem pode participar: organizações da sociedade civil (associações, fundações e entidades sem fins lucrativos) e empresas, incluindo startups, com CNPJ ativo e projetos desenvolvidos na Região Nordeste.Como funciona o apoio: Etapa I, de até 4 meses, com capacitação e mentoria técnica (sem repasse de recursos) para até 15 iniciativas selecionadas. Etapa II, de até 8 meses, com aporte de até R$ 50 mil por projeto para até 5 iniciativas de melhor desempenho, com acompanhamento técnico e de gestão.Temas aceitos: não geração e alternativas ao plástico de uso único; redução, reuso e circularidade; prevenção da chegada de plásticos aos mares (áreas urbanas, rios, estuários e manguezais); educação e mudança de comportamento. O edital não apoia projetos focados apenas em mutirões de limpeza ou em reciclagem e coleta tradicional.Inscrições gratuitas, de 06/10/2026 até 05/11/2026 às 23h59 (horário de Brasília), exclusivamente pela plataforma de inscrições no site do IABS. Documentos: formulário de inscrição, comprovante de CNPJ ativo, estatuto ou contrato social e currículo resumido da equipe. Dúvidas: oceanosemplastico@iabs.org.br.Total DisponívelR$ 250.000,00Limite por projetoR$ 50.000,00Fonte de financiamentoRecursos própriosOutrosLocais de AtuaçãoAlagoas - ALBahia - BACeará - CEMaranhão - MAParaíba - PBPernambuco - PEPiauí - PIRio Grande do Norte - RNSergipe - SEÁreas de AtuaçãoEducaçãoMeio AmbienteObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: IABS - Instituto Brasileiro de Desenvolv",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19392",
       "resumo_objetivo": "O Edital SoMar Azul apoia organizações sem fins lucrativos e empresas com soluções práticas para prevenir, reduzir e eliminar a poluição plástica em mares e costas da Região Nordeste.",
@@ -4931,7 +4930,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19459",
@@ -4941,7 +4941,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19459",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nJUIZ DE FORA MG - CHAMAMENTO PÚBLICO - AÇÃO CLIMÁTICA JUVENIL - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nJUIZ DE FORA  MG - CHAMAMENTO PÚBLICO - AÇÃO CLIMÁTICA JUVENIL - 2026Compartilhar editalInformaçõesInscrições de:19/10/26até05/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: assessoriameioambientepjf@gmail.comTelefone: SobreSelecionar e apoiar iniciativas de ação climática lideradas por jovens no Município de Juiz de Fora por meio de microfinanciamento para o desenvolvimento de soluções locais aos desafios climáticos.Total DisponívelR$ 225.000,00Fonte de financiamentoOutrosLocais de AtuaçãoJuiz de Fora - MGÁreas de AtuaçãoCiência e TecnologiaDesenvolvimento comunitárioMeio AmbientePúblico-AlvoJuventudeObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura de Juiz de Fora / Secretaria de Meio Ambiente e Mudanças ClimáticasDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19459",
       "resumo_objetivo": "Selecionar e apoiar iniciativas de ação climática lideradas por jovens no Município de Juiz de Fora por meio de microfinanciamento para o desenvolvimento de soluções locais.",
@@ -4976,7 +4975,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "18874",
@@ -4987,7 +4987,6 @@
     "public_url": "https://prosas.com.br/editais/18874",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/dh-d4jfmch9-uB_Ta0bnO9yiwEDU6pguj70Vy-HqF_2qb0lEsELwzGia_JPNtG3N/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/065/779/original/EDITAL_DE_PARTICIPACAO_2027.pdf",
     "full_text": "EDITAIS\nmenu_open\nPT\nEN\nES\nParcerias Sustentáveis 2027\nInscrições a partir de:\n28/09/2026 11:00 até 06/11/2026 20:00\nGMT+00 (Horário Universal Coordenado)\nInscreva-se\nINFORMAÇÕES\nINFORMAÇÕES\nSobre\nEste edital tem como objetivo selecionar propostas de desenvolvimento de negócios que solucionem problemas sociais, culturais e/ou ambientais com potencial para se tornarem empreendimentos financeiramente autossustentáveis, promovendo impacto positivo para a sociedade e população dos municípios onde a AngloGold Ashanti atua.\nOs empreendimentos selecionados receberão R$ 60.000,00, além de capacitação e consultoria para desenvolvimento dos negócios propostos.\nPara dúvidas de uso da plataforma Prosas, entrar em contato com o Canal de Suporte ao Empreendedor:\nWhatsApp: (31) 9 9919-8781 ou clique no botão \"Ajuda\" no canto inferior da página. (Segunda à Sexta-feira de 09:00 às 18:00.)\nDúvidas referentes ao Edital poderão ser esclarecidas pelo e-mail parcerias.sustentaveis@anglogoldashanti.com ou WhatsApp (31) 9 7181-7310, com a responsável pelo Programa, Maria Letícia Corrêa.\nTipos de perfis que podem se inscrever\nperson\nPessoa jurídica com fins lucrativos\nperson\nPessoa jurídica sem fins lucrativos\nLimite por projeto\nR$ 60.000,00\nFonte de Financiamento\nRecursos próprios\nLocais de atuação dos projetos\nCidade(s):\nlocation_on\nBarão de Cocais - MG\nlocation_on\nBelo Horizonte - MG\nlocation_on\nCaeté - MG\nlocation_on\nNova Lima - MG\nlocation_on\nRaposos - MG\nlocation_on\nSabará - MG\nlocation_on\nSanta Bárbara - MG\nObjetivos de Desenvolvimento Sustentável (ODS)\nANGLOGOLD ASHANTI\nArquivos Complementares\nEDITAL DE PARTICIPAÇÃO\nFORMULÁRIO DE COMPLIANCE\nMídia\nSites\nSite Institucional da AngloGold Ashanti\ninsert_link\nHTTPS://WWW.ANGLOGOLDASHANTI.COM.BR/\nConheça alguns empreendimentos que já participaram\ninsert_link\nHTTPS://WWW.ANGLOGOLDASHANTI.COM.BR/HISTOR...\nVídeos\nCompartilhe esta página\nPRIVACIDADEFUNCIONALIDADESBLOGCONTATO\nAjuda\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-f",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "18874",
       "resumo_objetivo": "O Programa Parcerias Sustentáveis apoia empreendedores de impacto com soluções transformadoras sociais, culturais ou ambientais nos territórios de atuação da AngloGold Ashanti, oferecendo recursos financeiros e capacitação.",
@@ -5035,7 +5034,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19336",
@@ -5045,7 +5045,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19336",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nCHAMADA KINROSS CONECTA INCENTIVADOS 2026 2027\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nCHAMADA KINROSS CONECTA INCENTIVADOS 2026 2027Compartilhar editalInformaçõesInscrições de:01/10/26até06/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: SobreSeleção de projetos aprovados e aptos à captação de recursos via leis de incentivo fiscal, alinhados aos eixos de Educação, Meio Ambiente e Cultura, com o objetivo de promover o desenvolvimento sustentável, gerar valor compartilhado e fortalecer iniciativas locais nos territórios de atuação da empresa.Fonte de financiamentoLei de Incentivo à ReciclagemLei do AudiovisualLei Federal do EsporteLei RouanetPRONAS/PCDPRONONLocais de AtuaçãoParacatu - MGCaçu - GOCachoeira Alta - GOÁreas de AtuaçãoCultura e ArtesDefesa de DireitosEducaçãoEmpreendedorismo / Geração de Emprego e RendaEsportesMeio AmbientePublicado por: Central de EditaisPatrocinador: KinrossDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19336",
       "resumo_objetivo": "Seleção de projetos aprovados e aptos à captação de recursos via leis de incentivo fiscal, alinhados aos eixos de Educação, Meio Ambiente e Cultura para promover o desenvolvimento sustentável em territórios de atuação.",
@@ -5083,7 +5082,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "18269",
@@ -5094,7 +5094,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=18269",
     "pdf_link": "https://www.gov.br/cultura/pt-br/assuntos/editais/inscricoes-em-andamento/edital-de-intercambio-cultural-circulacao-e-participacao-audiovisual-no-exterior/edital-de-intercambio-cultural-minc-no-1-de-8-de-junho-de-2026.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nCIRCULAÇÃO E PARTICIPAÇÃO AUDIOVISUAL NO EXTERIOR - EDITAL DE INTERCÂMBIO CULTURAL MINC Nº 1\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nCIRCULAÇÃO E PARTICIPAÇÃO AUDIOVISUAL NO EXTERIOR - EDITAL DE INTERCÂMBIO CULTURAL MINC Nº 1Compartilhar editalInformaçõesInscrições de:15/06/26até06/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: concurso.sav@cultura.gov.brTelefone: SobreA União, por intermédio do Ministério da Cultura - MinC, no uso de suas atribuições legais e nas condições e exigências estabelecidas neste Edital e em seus anexos, nos termos dos arts. 215, 216 e 216-A da Constituição da República Federativa do Brasil, da Lei nº 12.343, de 2 de dezembro de 2010, da Lei nº 14.903, de 27 junho de 2024, do Decreto nº 11.453, de 23 de março de 2023, da Portaria MinC nº 29, de 21 de maio de 2009, e nas condições e exigências estabelecidas neste Edital, torna pública a realização de processo seletivo de propostas aptas a receberem apoio financeiro para atividades de circulação e participação em eventos internacionais.Constitui objeto deste Edital a concessão de recursos financeiros, na modalidade de termo de execução cultural, para a participação e circulação deagentes do ecossistema do audiovisual em eventos do setor realizados no exterior, em regime de fluxo contínuo.Poderão ser beneficiados(as) Pessoas Físicas, estudantes ou profissionais, do segmento audiovisual.Total DisponívelR$ 1.000.000,00Fonte de financiamentoOutrosLocais de AtuaçãoBrasilÁreas de AtuaçãoCultura e ArtesSubáreasAudiovisualPublicado por: Central de EditaisPatrocinador: Ministério da Cultura - MinCMídiasVer menosSiteInscriçõesDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #f",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "18269",
       "resumo_objetivo": "O edital concede recursos financeiros na modalidade de termo de execução cultural para a participação e circulação de agentes do ecossistema do audiovisual em eventos internacionais realizados no exterior.",
@@ -5132,7 +5131,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19338",
@@ -5142,7 +5142,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19338",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nGUARAÍ TO - CHAMAMENTO PÚBLICO - OFICINAS SOCIOEDUCATIVAS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nGUARAÍ  TO - CHAMAMENTO PÚBLICO - OFICINAS SOCIOEDUCATIVAS - 2026Compartilhar editalInformaçõesInscrições de:05/10/26até06/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: SobreSeleção de Organização da Sociedade Civil (OSC) para celebração de Termo de Colaboração visando à execução continuada de oficinas socioeducativas do Serviço de Convivência e Fortalecimento de Vínculos (SCFV), no âmbito da Proteção Social Básica, para promoção da autonomia e dos vínculos familiares e comunitários dos usuários.Total DisponívelR$ 376.726,00Fonte de financiamentoRecursos própriosLocais de AtuaçãoGuaraí - TOÁreas de AtuaçãoAssistência SocialCultura e ArtesEsportesObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Fundo Municipal de Assistência Social de Guaraí / Prefeitura Municipal de Guaraí - TODesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19338",
       "resumo_objetivo": "Seleção de Organização da Sociedade Civil (OSC) para celebração de Termo de Colaboração visando à execução continuada de oficinas socioeducativas do Serviço de Convivência e Fortalecimento de Vínculos (SCFV) em Guaraí - TO.",
@@ -5178,7 +5177,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19391",
@@ -5234,7 +5234,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19505",
     "pdf_link": "https://media.starlightcms.io/workspaces/pague-menos/esg-dev/original/edital-doar-de-coracao-2027pdf-4ynsvtuezz.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nEdital Doar de Coração 2027\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nEdital Doar de Coração 2027Compartilhar editalInformaçõesInscrições de:19/10/26até06/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: sustentabilidade@pmenos.com.brTelefone: SobreSeleção de 06 Organizações da Sociedade Civil (OSCs) sem fins lucrativos que desenvolvam projetos de impacto social voltados à promoção da saúde integral e bem-estar de populações em situação de vulnerabilidade nas diferentes regiões do país.Fonte de financiamentoRecursos própriosLocais de AtuaçãoBrasilÁreas de AtuaçãoApoio à gestão de organizações de Terceiro SetorAssistência SocialDesenvolvimento comunitárioObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Pague Menos / ExtrafarmaDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19505",
       "resumo_objetivo": "O Edital Doar de Coração 2027 selecionará seis Organizações da Sociedade Civil (OSCs) sem fins lucrativos para receber apoio financeiro mensal durante 12 meses, voltado a projetos de saúde integral e bem-estar de populações vulneráveis.",
@@ -5276,7 +5275,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19515",
@@ -5286,7 +5286,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19515",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nMORENO PE - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nMORENO  PE - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026Compartilhar editalInformaçõesInscrições de:23/10/26até06/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: morenofomento@gmail.comTelefone: SobreSeleção de projetos culturais para receberem apoio financeiro com o objetivo de incentivar as diversas formas de manifestações culturais do Município de Moreno/PE, por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).Total DisponívelR$ 300.475,18Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoMoreno - PEÁreas de AtuaçãoCultura e ArtesSubáreasCircoDançaTeatroMúsica PopularAudiovisualFotografiaArtes Visuais / PlásticasLiteraturaDesignPatrimônio HistóricoCulturA índigenaCultura Afro BrasileiraObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura Municipal de Moreno/PE (Secretaria de Cultura, Turismo e Esportes)Desenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19515",
       "resumo_objetivo": "Seleção de projetos culturais para receber apoio financeiro por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB), com o objetivo de incentivar manifestações culturais no município de Moreno/PE.",
@@ -5323,7 +5322,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19525",
@@ -5334,7 +5334,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19525",
     "pdf_link": "http://download.finep.gov.br/ManuaisSubvencaoDireta/Manual_Cliente_Cadastro.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nBRASIL - CHAMAMENTO PÚBLICO - RESILIÊNCIA, RESPOSTA E RECUPERAÇÃO DE DESASTRES - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nBRASIL - CHAMAMENTO PÚBLICO - RESILIÊNCIA, RESPOSTA E RECUPERAÇÃO DE DESASTRES - 2026Compartilhar editalInformaçõesInscrições de:06/10/26até06/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: cp_projetos_eureka@finep.gov.brTelefone: (21) 2555-0330_SobreConceder recursos de subvenção econômica a empresas brasileiras para o desenvolvimento de produtos, processos e/ou serviços inovadores e de risco tecnológico. Os projetos devem ser voltados para resiliência, resposta ou recuperação de desastres, executados em parceria (consórcios internacionais) com empresas de países signatários da Rede EUREKA que tenham recebido o selo EUREKA na fase internacional.Total DisponívelR$ 7.000.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoBrasilÁreas de AtuaçãoCiência e TecnologiaObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Ministério da Ciência, Tecnologia e Inovação (MCTI) e Financiadora de Estudos e Projetos (Finep)MídiasVer menosSiteAnexos e mais informaçõesComplementaresVer menosEditalDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19525",
       "resumo_objetivo": "Manual de instruções para o cadastro de pessoas físicas e jurídicas na plataforma da Finep, etapa obrigatória para solicitação de financiamento e subvenção econômica.",
@@ -5364,7 +5363,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19543",
@@ -5375,7 +5375,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19543",
     "pdf_link": "https://mover.fundep.ufmg.br/wp-content/uploads/2026/10/Edital-MVI-Final-30.09.26.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nBRASIL - CHAMAMENTO PÚBLICO - PD&I MOBILIDADE VEICULAR INTELIGENTE (MVI) - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nBRASIL - CHAMAMENTO PÚBLICO - PD&I MOBILIDADE VEICULAR INTELIGENTE (MVI) - 2026Compartilhar editalInformaçõesInscrições de:01/10/26até06/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: chamadas@fundep.com.brTelefone: SobreA Fundação de Desenvolvimento da Pesquisa (Fundep), no âmbito do programa Mover, torna pública a Chamada PD&I 01/2026 - Mobilidade Veicular Inteligente (MVI), Linha VI - Conectividade Veicular, para seleção de projetos de pesquisa, desenvolvimento e inovação em parceria entre ICTs e empresas da cadeia automotiva.Objeto: projetos de PD&I em conectividade veicular, com maturidade tecnológica mínima TRL 5, a serem executados em 12 a 24 meses por instituições de ciência e tecnologia em cooperação com empresas do setor automotivo.Recursos: valor total de até R$ 15 milhões na chamada, com R$ 4 milhões a R$ 5 milhões por projeto e contrapartida mínima de 30% dos proponentes, nos termos do edital.Cronograma: publicação em 01/10/2026; pré-propostas até 06/11/2026; propostas completas, na 2ª etapa (restrita aos selecionados), até 26/02/2027.Submissão: pelo sistema indicado na página oficial da chamada.Imagem: veículo autônomo em testes, por Sonny doe, licença CC BY-SA 4.0, via Wikimedia Commons.Total DisponívelR$ 15.000.000,00Limite por projetoR$ 5.000.000,00Fonte de financiamentoParceria - GovernoLocais de AtuaçãoBrasilÁreas de AtuaçãoCiência e TecnologiaPúblico-AlvoObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Fundação de Desenvolvimento da Pesquisa (Fundep) - Programa MoverMídiasVer menosSiteInscrições, informações e anexosDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: ",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19543",
       "resumo_objetivo": "Apoiar projetos colaborativos entre ICTs e empresas para o desenvolvimento, validação, demonstração e escalonamento de tecnologias de Mobilidade Veicular Inteligente (MVI) no âmbito do Programa Mover.",
@@ -5412,7 +5411,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19145",
@@ -5422,7 +5422,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19145",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nBRASIL - CHAMAMENTO PÚBLICO - TRANSIÇÃO AGROECOLÓGICA - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nBRASIL - CHAMAMENTO PÚBLICO - TRANSIÇÃO AGROECOLÓGICA - 2026Compartilhar editalInformaçõesInscrições de:09/10/26até06/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: edital006.2026@anater.orgTelefone: SobreSeleção e contratação de entidades privadas executoras de Assistência Técnica e Extensão Rural (Ater), credenciadas na Anater, para prestação de serviços no âmbito do Programa de Ater para Transição Agroecológica, Juventude e Povos e Comunidades Tradicionais. O objetivo é promover a transição agroecológica, o fortalecimento de sistemas produtivos sustentáveis, a segurança alimentar, a conservação ambiental e a inclusão produtiva/social com geração de renda.Total DisponívelR$ 43.000.000,00Locais de AtuaçãoBrasilÁreas de AtuaçãoDesenvolvimento comunitárioEmpreendedorismo / Geração de Emprego e RendaMeio AmbientePúblico-AlvoJuventudeMulheresObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Nome: Agência Nacional de Assistência Técnica e Extensão Rural (Anater) / Ministério do Desenvolvimento Agrário e Agricultura Familiar (MDA)Desenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19145",
       "resumo_objetivo": "Seleção e contratação de entidades privadas executoras de Assistência Técnica e Extensão Rural (Ater) para promover a transição agroecológica, segurança alimentar e inclusão produtiva.",
@@ -5456,7 +5455,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19180",
@@ -5467,7 +5467,6 @@
     "public_url": "https://prosas.com.br/editais/19180",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/IzdX-wkjNDaEt5qHXOJsTtXYnUjuAE_Y7Zfvlaa2w4jJ_PjFZZTO8XdkimN4j3oE/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/106/811/original/Copia_de_ANEXO1_municipios.pdf",
     "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"]\nEDITAIS\nmenu_open\nPT\nEN\nES\nEdital Mulheres do Nosso Bairro 2026\nInscrições a partir de:\n20/10/2026 12:00 até 07/11/2026 02:59\nGMT+00 (Horário Universal Coordenado)\nInscreva-se\nINFORMAÇÕES\nINFORMAÇÕES\nSobre\nLançado pela ENGIE Brasil Energia em outubro de 2020, o projeto Mulheres do Nosso Bairro tem por objetivo apoiar mulheres das comunidades locais a superar os efeitos negativos da desigualdade de gênero através da geração de renda. Por meio de editais de fomento, oficinas, capacitações e rodas de conversa, o programa valoriza saberes locais, incentiva o empreendedorismo e promove a inclusão social de mulheres por todo brasil, estando presente em mais de 100 municípios do país. \nEste ano a ENGIE irá premiar até 100 empreendedoras de Norte a Sul do Brasil, com R$10.000,00 cada, além de no mínimo 5 empreendimentos liderados por grupos de 3 ou mais mulheres, com R$20.000,00 para cada (projeto). As inscrições da 7ª edital do Mulheres do Nosso Bairro, vão até dia 6 de novembro de 2026, então não esqueça de ler o regulamento ao lado e inscrever-se abaixo! \nA ENGIE e seu time desejam sucesso na carreira e trajetória de todas! \nVer descrição completa\nTipos de perfis que podem se inscrever\nperson\nPessoa física\nperson\nPessoa jurídica com fins lucrativos\nperson\nPessoa jurídica sem fins lucrativos\nperson\nGrupo informal ou coletivo\nFonte de Financiamento\nRecursos próprios\nLocais de atuação dos projetos\nCidade(s):\nlocation_on\nAbdon Batista - SC\nlocation_on\nAbre Campo - MG\nlocation_on\nAçu - RN\nlocation_on\nÁgua Doce - SC\nlocation_on\nAguiarnópolis - TO\nlocation_on\nAimorés - MG\nlocation_on\nAlmeirim - PA\nlocation_on\nAlto Bela Vista - SC\nlocation_on\nAnapu - PA\nlocation_on\nAngelina - SC\nlocation_on\nAnita Garibaldi - SC\nlocation_on\nAntônio Olinto - PR\nlocation_on\nAquiraz - CE\nlocation_on\nArabutã - SC\nlocation_on\nAraguaína - TO\nlocation_on\nArapoema - TO\nlocation_on\nAratiba - RS\nlocation_on\nAraxá - MG\nlocation_on\nAreia Branca - RN\nlocation_on\nAriranha do Ivaí - PR\nlocation_on\nArroio Trinta - SC\nlocation_on\nBabaçulândia - TO\nlocation_on\nBaixo Guandu - ES\nlocation_on\nBalsa Nova - PR\nlocation_on\nBarra do Ouro - TO\nlocation_on\nBarra do Rio Azul - RS\nlocation_on\nBarracão - RS\nlocation_on\nBarreiras - BA\nlocation_on\nBenjamin Constant do Sul - RS\nlocation_on\nBernardo Sayão - TO\nlocation_on\nBetim - MG",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19180",
       "resumo_objetivo": "Documento que lista os municípios elegíveis para participação no edital, abrangendo diversas localidades em vários estados do Brasil.",
@@ -5733,7 +5732,8 @@
         "exigencias_especificas_adicionais": []
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19234",
@@ -5743,7 +5743,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19234",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nSÃO PAULO SP - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nSÃO PAULO  SP - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026Compartilhar editalInformaçõesInscrições de:24/09/26até06/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: fmid@prefeitura.sp.gov.brTelefone: (11) 2833-4150_SobreSeleção de propostas de projetos destinados à promoção, proteção, defesa e atendimento dos direitos da pessoa idosa no município de São Paulo, apresentadas por Organizações da Sociedade Civil (OSCs) e financiadas com recursos do Fundo Municipal do Idoso (FMID).Total DisponívelR$ 12.800.000,00Fonte de financiamentoOutrosLocais de AtuaçãoSão Paulo - SPÁreas de AtuaçãoAssistência SocialCultura e ArtesDefesa de DireitosEducaçãoEmpreendedorismo / Geração de Emprego e RendaEsportesFormação para o trabalhoMeio AmbientePúblico-AlvoIdososObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura do Município de São Paulo / Secretaria Municipal de Direitos Humanos e Cidadania (SMDHC)MídiasVer menosSiteAnexos e formulário de inscriçãoDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19234",
       "resumo_objetivo": "Seleção de propostas de projetos destinados à promoção, proteção, defesa e atendimento dos direitos da pessoa idosa no município de São Paulo, financiadas com recursos do Fundo Municipal do Idoso (FMID).",
@@ -5779,7 +5778,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19519",
@@ -5790,7 +5790,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19519",
     "pdf_link": "https://laguna.sc.gov.br/uploads/sites/142/2026/10/1792781353_edital_do_fia_versao_final_extrato.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nLAGUNA SC - CHAMAMENTO PÚBLICO - FIA DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nLAGUNA  SC - CHAMAMENTO PÚBLICO - FIA DIREITOS DA CRIANÇA E DO ADOLESCENTE - 2026Compartilhar editalInformaçõesInscrições de:23/10/26até07/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: (48) 9841-57095SobreSeleção de propostas apresentadas por Organizações da Sociedade Civil (OSCs) para a celebração de Termos de Fomento voltados à execução de projetos de promoção, proteção e defesa dos direitos da criança e do adolescente no Município de Laguna/SC durante o exercício de 2027.Total DisponívelR$ 1.000.000,00Fonte de financiamentoFIA - Fundo para Infância e AdolescênciaLocais de AtuaçãoLaguna - SCÁreas de AtuaçãoAssistência SocialCultura e ArtesDefesa de DireitosDesenvolvimento comunitárioEducaçãoEsportesFormação para o trabalhoPúblico-AlvoInfância e AdolescênciaPessoas com DeficiênciaObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Conselho Municipal dos Direitos da Criança e do Adolescente (CMDCA) / Prefeitura Municipal de LagunaDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19519",
       "resumo_objetivo": "Seleção de propostas apresentadas por Organizações da Sociedade Civil (OSC) para celebração de Termo de Fomento visando à execução de projetos voltados à promoção, proteção e defesa dos direitos da criança e do adolescente no Município de Laguna/SC, financiados com recursos do FIA.",
@@ -5834,7 +5833,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19497",
@@ -5845,7 +5845,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19497",
     "pdf_link": "https://www.faperj.br/rp/downloads/Edital_FAPERJ_N%C2%BA_31_2026_%E2%80%93_Programa_de_Apoio_%C3%A0_Infraestrutura_de_Biot%C3%A9rios_em_Institui%C3%A7%C3%B5es_de_Ensino_e_Pesquisa_Sediadas_no_Estado_do_Rio_de_Janeiro.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nRIO DE JANEIRO - FOMENTO - BIOTÉRIOS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nRIO DE JANEIRO - FOMENTO - BIOTÉRIOS - 2026Compartilhar editalInformaçõesInscrições de:20/10/26até08/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: central.atendimento@faperj.brTelefone: SobreApoiar a melhoria, modernização, adequação, manutenção e funcionamento da infraestrutura de pesquisa científica e tecnológica em biotérios de Instituições de Ensino e Pesquisa no Estado do Rio de Janeiro, visando atender às normas do CONCEA e elevar os níveis de biossegurança.Limite por projetoR$ 200.000,00Fonte de financiamentoRecursos própriosLocais de AtuaçãoRio de Janeiro - RJÁreas de AtuaçãoCiência e TecnologiaObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro (FAPERJ)Desenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19497",
       "resumo_objetivo": "Apoiar a melhoria e manutenção da infraestrutura de pesquisa científica e tecnológica em Instituições de Ensino e Pesquisa sediadas no Estado do Rio de Janeiro, visando a modernização, adequação e o funcionamento de biotérios.",
@@ -5879,7 +5878,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19494",
@@ -5890,7 +5890,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19494",
     "pdf_link": "https://www.portosegurocultural.com.br/_files/ugd/ac1bd5_6042dd68504d48f2b4558133f13941f9.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nPORTO SEGURO BA - CREDENCIAMENTO - MÚSICOS, BANDAS, GRUPOS ARTÍSTICOS E FILARMÔNICAS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nPORTO SEGURO BA - CREDENCIAMENTO - MÚSICOS, BANDAS, GRUPOS ARTÍSTICOS E FILARMÔNICAS - 2026Compartilhar editalInformaçõesInscrições de:20/10/26até08/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: portosegurocultural@gmail.comTelefone: SobreEdital de Chamamento Público nº 05/2026 da Prefeitura de Porto Seguro (BA), Secretaria Municipal de Educação e Cultura, com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB) - Ciclo 2. Credencia 12 músicos e formações musicais para integrar a programação cultural do Município: A) grupos de até 4 integrantes (R$ 5.000 cada), B) grupos de até 6 integrantes (R$ 6.000 cada) e C) grupos acima de 12 integrantes, como bandas e filarmônicas (R$ 12.000 cada). Valor total de R$ 92.000. Cotas para pessoas negras, indígenas e com deficiência em todas as categorias. Inscrições de 20/10/2026 a 08/11/2026 pelo formulário oficial (link no edital) ou presencialmente na Superintendência de Cultura. Foto: Gen Fusho (CC0), via Wikimedia Commons.Total DisponívelR$ 92.000,00Limite por projetoR$ 12.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoPorto Seguro - BAÁreas de AtuaçãoCultura e ArtesSubáreasMúsica PopularMúsica Erudita e InstrumentalPúblico-AlvoPessoas com DeficiênciaPopulação NegraPovos originários e Comunidades TradicionaisObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura de Porto SeguroDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shad",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19494",
       "resumo_objetivo": "Seleção de músicos e formações musicais para integrar a programação cultural promovida ou apoiada pelo Município de Porto Seguro com recursos da Política Nacional Aldir Blanc (PNAB).",
@@ -5923,7 +5922,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19550",
@@ -5934,7 +5934,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19550",
     "pdf_link": "https://www.complexodopecem.com.br/wp-content/uploads/2026/10/Edital-Projetos-Esporte.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nSÃO GONÇALO DO AMARANTE CE - FOMENTO - PROJETOS SOCIAIS, CULTURAIS, AMBIENTAIS E ESPORTIVOS - 2026/2027\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nSÃO GONÇALO DO AMARANTE CE - FOMENTO - PROJETOS SOCIAIS, CULTURAIS, AMBIENTAIS E ESPORTIVOS - 2026/2027Compartilhar editalInformaçõesInscrições de:26/10/26até08/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: programaderesponsabilidade@complexodopecem.com.brTelefone: SobreSeleção pública do Programa CIPP de Responsabilidade Social para concessão de patrocínio a projetos nas áreas de cultura, educação, esporte, meio ambiente e saúde, com foco preferencial na área de influência direta do Complexo Industrial e Portuário do Pecém e com execução ao longo do ano de 2027.Fonte de financiamentoFIA - Fundo para Infância e AdolescênciaFundo do IdosoLei de Incentivo à ReciclagemLei Federal do EsporteLei RouanetPRONAS/PCDPRONONLocais de AtuaçãoCeará - CEÁreas de AtuaçãoAssistência SocialCultura e ArtesEducaçãoEsportesMeio AmbientePublicado por: Central de EditaisPatrocinador: Companhia de Desenvolvimento do Complexo Industrial e Portuário do Pecém (CIPP S/A)MídiasVer menosSiteInscrição e informaçõesDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19550",
       "resumo_objetivo": "O edital visa selecionar e patrocinar projetos nas áreas de cultura, educação, esporte, meio ambiente e saúde no Estado do Ceará, priorizando a área de influência do Complexo Industrial e Portuário do Pecém.",
@@ -5978,7 +5977,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19561",
@@ -5989,7 +5989,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19561",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/jTFeMOLMcF9PHypUpj3KOqgML0mRYLUavxMnyqQgn8uLFvDbS3xDqgwGNFte3Q55/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/114/816/original/EDITAL_%281%29.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nARMAÇÃO DOS BÚZIOS RJ - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nARMAÇÃO DOS BÚZIOS  RJ - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026Compartilhar editalInformaçõesInscrições de:27/10/26até08/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: seccultbuzios@gmail.comTelefone: SobreSeleção de projetos culturais para a celebração de Termo de Execução Cultural, visando incentivar, fomentar a produção, difusão, circulação e valorização das diversas manifestações e linguagens artísticas locais no município.Total DisponívelR$ 350.000,00Fonte de financiamentoEmendas ParlamentaresLocais de AtuaçãoArmação dos Búzios - RJÁreas de AtuaçãoCultura e ArtesObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura Municipal de Armação dos Búzios / Secretaria Municipal de Cultura e Patrimônio HistóricoComplementaresVer menosEditalDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19561",
       "resumo_objetivo": "Seleção de projetos culturais para celebração de Termo de Execução Cultural, com recursos provenientes de emenda impositiva destinada ao Fundo Municipal de Cultura de Armação dos Búzios/RJ.",
@@ -6024,7 +6023,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19565",
@@ -6079,7 +6079,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19309",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nSÃO PAULO - FOMENTO - PESQUISA E INOVAÇÃO SOCIAL - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nSÃO PAULO - FOMENTO - PESQUISA E INOVAÇÃO SOCIAL - 2026Compartilhar editalInformaçõesInscrições de:02/10/26até08/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: SobreApoiar projetos de pesquisas interdisciplinares e inovação social desenvolvidos no âmbito da USP, com especial atenção às Humanidades e às Artes, voltados à compreensão de desafios contemporâneos e à criação ou implementação de soluções de interesse social.Total DisponívelR$ 400.000,00Fonte de financiamentoRecursos própriosLocais de AtuaçãoSão Paulo - SPÁreas de AtuaçãoAssistência SocialCiência e TecnologiaCultura e ArtesDefesa de DireitosDesenvolvimento comunitárioEducaçãoMeio AmbienteObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Pró-Reitoria de Pesquisa e Inovação da Universidade de São Paulo (PRPI/USP)Desenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19309",
       "resumo_objetivo": "O edital apoia projetos de pesquisas interdisciplinares e inovação social desenvolvidos no âmbito da USP, com foco em Humanidades e Artes, para solucionar desafios contemporâneos e de interesse social.",
@@ -6116,7 +6115,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19477",
@@ -6127,7 +6127,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19477",
     "pdf_link": "https://www.portosegurocultural.com.br/_files/ugd/ac1bd5_e1475bcc65f347808439e14619ed62ca.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nPORTO SEGURO BA - SUBSÍDIO - ESPAÇOS CULTURAIS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nPORTO SEGURO BA - SUBSÍDIO - ESPAÇOS CULTURAIS - 2026Compartilhar editalInformaçõesInscrições de:20/10/26até08/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: portosegurocultural@gmail.comTelefone: SobreEdital 06/2026 da Prefeitura de Porto Seguro (Secretaria Municipal de Cultura), Ciclo 2 da PNAB (Lei Aldir Blanc), para subsídio a espaços culturais do município, com R$ 18.000,00 por espaço selecionado, totalizando R$ 180 mil. Inscrições de 20/10 a 08/11/2026 pelo site portosegurocultural.com.br. Resultado preliminar em 19/11/2026 e final em 24/11/2026.Total DisponívelR$ 180.000,00Limite por projetoR$ 18.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoPorto Seguro - BAÁreas de AtuaçãoCultura e ArtesSubáreasCircoDançaTeatroMúsica PopularMúsica Erudita e InstrumentalAudiovisualFotografiaArtes Visuais / PlásticasMuseu / Centro CulturalLiteraturaDesignPatrimônio HistóricoModaCulturA índigenaCultura Afro BrasileiraPúblico-AlvoInfância e AdolescênciaJuventudeIdososMulheresLGBTQIA+Pessoas com DeficiênciaPopulação NegraPovos originários e Comunidades TradicionaisObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura Municipal de Porto Seguro - Secretaria Municipal de CulturaDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19477",
       "resumo_objetivo": "Seleção de espaços, ambientes e iniciativas artístico-culturais para receber subsídio de manutenção, com o objetivo de incentivar as manifestações culturais no município de Porto Seguro.",
@@ -6167,7 +6166,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19496",
@@ -6178,7 +6178,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19496",
     "pdf_link": "https://www.faperj.br/rp/downloads/Edital_FAPERJ_N%C2%BA_30_2026_%E2%80%93_Programa_de_Apoio_a_Projetos_para_Manuten%C3%A7%C3%A3o_de_Biot%C3%A9rios_de_Pesquisa_NB-3.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nRIO DE JANEIRO - FOMENTO - MANUTENÇÃO DE BIOTÉRIOS NB-3 - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nRIO DE JANEIRO - FOMENTO - MANUTENÇÃO DE BIOTÉRIOS NB-3 - 2026Compartilhar editalInformaçõesInscrições de:20/10/26até08/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: central.atendimento@faperj.brTelefone: SobreApoiar a infraestrutura de pesquisa científica e tecnológica nas Instituições de Ensino e Pesquisa sediadas no Estado do Rio de Janeiro, garantindo a manutenção e adequação física de Biotérios Multiusuários de Nível de Biossegurança 3 (NB-3) destinados ao desenvolvimento de projetos nas áreas de doenças infecciosas, manejo de animais infectados e Organismos Geneticamente Modificados (OGM).Total DisponívelR$ 6.500.000,00Fonte de financiamentoRecursos própriosLocais de AtuaçãoRio de Janeiro - RJÁreas de AtuaçãoCiência e TecnologiaEducaçãoObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro (FAPERJ)Desenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19496",
       "resumo_objetivo": "Apoiar a manutenção e adequação física de Biotérios Multiusuários de Nível de Biossegurança 3 (NB-3) no Estado do Rio de Janeiro, voltados para projetos científicos em doenças infecciosas e OGM de classe de risco 3.",
@@ -6216,7 +6215,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "18875",
@@ -6227,7 +6227,6 @@
     "public_url": "https://prosas.com.br/editais/18875",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/o1spaRjbZEk48ZLvXvC_Jr2DI0mehZ4RUGLODbCfpNR9ZqYPuSTqB17rqJ_8kmvn/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/086/322/original/EDITAL_DE_PROCESSO_SELETIVO_SIMPLIFICADO_N_115__2026.pdf",
     "full_text": "EDITAIS\nmenu_open\nPT\nEN\nES\nEDITAL DE SELEÇÃO SIMPLIFICADA Nº 115/2026 - CONTADORES\nInscrições a partir de:\n13/10/2026 15:00 até 09/11/2026 15:00\nGMT+00 (Horário Universal Coordenado)\nInscreva-se\nINFORMAÇÕES\nINFORMAÇÕES\nSobre\nA Fundação Catarinense de Cultura torna pública a abertura de Processo Seletivo Simplificado para contratação temporária de profissionais, por prazo determinado, para atender necessidade de excepcional interesse público.\nContratação: contratos de 12 meses, prorrogáveis por mais 12 meses, conforme legislação aplicável.\nSeleção: a classificação será realizada mediante análise e contagem de títulos e/ou experiência profissional comprovada, conforme os critérios estabelecidos para cada função. O chamamento seguirá a ordem de classificação.\nRequisitos básicos:\nTer sido classificado no processo seletivo;\nTer no mínimo 18 anos na data da contratação;\nEstar quite com as obrigações eleitorais e militares;\nEstar no gozo dos direitos políticos;\nPossuir aptidão física e mental para o exercício da função;\nAtender às demais condições previstas no edital, inclusive quanto à inexistência de vínculo incompatível com a Administração Pública.\nVagas e remuneração: as funções, requisitos específicos, atribuições, número de vagas e remuneração estão detalhados no edital e em seus anexos.\nPara mais informações, acesse e leia atentamente o regulamento completo disponível na aba Complementares.\nEm caso de dúvidas sobre a utilização da plataforma, acesse o botão \"Ajuda\" no site da Prosas.\nPara demais esclarecimentos sobre o edital, consulte a Fundação Catarinense de Cultura através do e-mail processoseletivo@fcc.sc.gov.br\nVer descrição completa\nTipos de perfis que podem se inscrever\nperson\nPessoa física\nLocais de atuação dos projetos\nPaís(es):\nlocation_on\nBrasil\nFundação Catarinense de Cultura\nArquivos Complementares\nEDITAL DE PROCESSO SELETIVO SIMPLIFICADO N° 115_2026\nCompartilhe esta página\nPRIVACIDADEFUNCIONALIDADESBLOGCONTATO\nAjuda\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { ",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "18875",
       "resumo_objetivo": "Abre inscrições para processo seletivo simplificado visando à contratação temporária de pessoal para o cargo de Analista Técnico Administrativo II - Contador na Fundação Catarinense de Cultura.",
@@ -6260,7 +6259,8 @@
         ]
       },
       "fonte_dados": "pdf"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19533",
@@ -6270,7 +6270,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19533",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nFLORIANÓPOLIS SC - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nFLORIANÓPOLIS  SC - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026Compartilhar editalInformaçõesInscrições de:23/10/26até09/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: comunicacao.ffc@floripa.sc.gov.brTelefone: SobreSeleção de 56 projetos culturais de agentes culturais com atuação em Florianópolis para apoio financeiro mediante celebração de Termos de Execução Cultural, destinados à criação, produção, formação, circulação, difusão, pesquisa, memória, preservação, acesso e fruição cultural no município.Total DisponívelR$ 2.840.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoFlorianópolis - SCÁreas de AtuaçãoCultura e ArtesObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Fundação Cultural de Florianópolis Franklin Cascaes (FCFFC) / Prefeitura Municipal de FlorianópolisMídiasVer menosSiteAnexosDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19533",
       "resumo_objetivo": "Seleção de projetos culturais de agentes culturais com atuação em Florianópolis para apoio financeiro mediante celebração de Termos de Execução Cultural.",
@@ -6302,7 +6301,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19466",
@@ -6312,7 +6312,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19466",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nPARAÍBA - BOLSA - MESTRADO E DOUTORADO - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nPARAÍBA - BOLSA - MESTRADO E DOUTORADO - 2026Compartilhar editalInformaçõesInscrições de:13/07/26até09/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: programas-projetos@fapesq.rpp.brTelefone: SobreConcessão de quotas de bolsas de mestrado e doutorado a programas de pós-graduação stricto sensu acadêmicos recomendados pela CAPES e vinculados a Instituições de Ensino Superior (IES) sediadas no estado da Paraíba.Total DisponívelR$ 28.416.000,00Fonte de financiamentoRecursos própriosLocais de AtuaçãoParaíba - PBÁreas de AtuaçãoCiência e TecnologiaEducaçãoObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Fundação de Apoio à Pesquisa do Estado da Paraíba (FAPESQ-PB) / Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior (SECTIES)Desenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19466",
       "resumo_objetivo": "Concessão de quotas de bolsas de mestrado e doutorado a programas de pós-graduação stricto sensu acadêmicos recomendados pela CAPES e vinculados a Instituições de Ensino Superior (IES) sediadas no estado da Paraíba.",
@@ -6343,7 +6342,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19548",
@@ -6354,7 +6354,46 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19548",
     "pdf_link": "https://www2.facepe.br/wp-content/uploads/2026/10/2026.10.15-POM-SEPLAG-3.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nPERNAMBUCO - FOMENTO - PESQUISAS EM PLANEJAMENTO - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nPERNAMBUCO - FOMENTO - PESQUISAS EM PLANEJAMENTO - 2026Compartilhar editalInformaçõesInscrições de:15/10/26até09/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: inovacao@facepe.brTelefone: (81) 3181-4600_SobreFomentar projetos de pesquisa voltados ao desenvolvimento de soluções tecnológicas e metodológicas inovadoras que aprimorem o planejamento, o orçamento e a tomada de decisão baseada em evidências na gestão pública, mediante a cooperação entre o setor público e pesquisadores vinculados a Instituições de Ciência, Tecnologia e Inovação de Pernambuco (ICT-PE).Total DisponívelR$ 3.120.000,00Fonte de financiamentoRecursos própriosLocais de AtuaçãoPernambuco - PEÁreas de AtuaçãoCiência e TecnologiaObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Fundação de Amparo à Ciência e Tecnologia do Estado de Pernambuco (FACEPE)Desenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "PENDING_EXTRACTION"
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "19548",
+      "resumo_objetivo": "Fomentar projetos de pesquisa voltados ao desenvolvimento de soluções tecnológicas e metodológicas inovadoras que aprimorem o planejamento, o orçamento e a tomada de decisão baseada em evidências, mediante a cooperação entre o setor público e pesquisadores vinculados a ICTs de Pernambuco.",
+      "temas_principais": [
+        "pesquisa aplicada",
+        "gestão pública",
+        "planejamento",
+        "orçamento",
+        "inovação tecnológica"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": [
+          "com fins lucrativos (exceto ICTs privadas com CNAE Divisão 72)"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_reais": 624000,
+        "exige_contrapartida": true
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Instituição Executora com sede em Pernambuco e integrante da REPE",
+          "Coordenador com título de doutorado e vínculo efetivo ou aposentado com a Instituição Executora",
+          "Apresentação de proposta em PDF de até 20 páginas com link para vídeo de apresentação de até 3 minutos",
+          "Apresentação da Carta de Anuência da Instituição Executora"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1ctCMANUjFUWXcXbVvN0ItHbRSw-v7wm7/view?usp=drivesdk"
+    }
   },
   {
     "id": "19491",
@@ -6364,8 +6403,48 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19491",
     "pdf_link": "https://ecrie.com.br/sistema/conteudos/arquivo/a_228_2_1_14102026095437.pdf",
-    "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nCONSELHEIRO LAFAIETE MG - PREMIAÇÃO - AGENTES CULTURAIS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nCONSELHEIRO LAFAIETE MG - PREMIAÇÃO - AGENTES CULTURAIS - 2026Compartilhar editalInformaçõesInscrições de:06/10/26até09/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: cultura@conselheirolafaiete.mg.gov.brTelefone: SobreEdital de Chamamento Público nº 002/2026 da Prefeitura de Conselheiro Lafaiete (MG), com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). Premia 64 agentes culturais com R$ 5.000 cada (total de R$ 320.000), em reconhecimento à contribuição artística e cultural já realizada no município, sem exigência de contrapartida ou prestação de contas. Podem participar agentes culturais com atuação no município há pelo menos 2 anos. Cotas para pessoas negras, indígenas e com deficiência. Inscrições das 12h de 06/10/2026 às 17h de 09/11/2026. Edital completo no link (Diário Oficial do município).Total DisponívelR$ 320.000,00Limite por projetoR$ 5.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoConselheiro Lafaiete - MGÁreas de AtuaçãoCultura e ArtesSubáreasCircoDançaTeatroMúsica PopularMúsica Erudita e InstrumentalAudiovisualFotografiaArtes Visuais / PlásticasMuseu / Centro CulturalLiteraturaDesignPatrimônio HistóricoModaCulturA índigenaCultura Afro BrasileiraPúblico-AlvoPessoas com DeficiênciaPopulação NegraPovos originários e Comunidades TradicionaisObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura de Conselheiro LafaieteDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "PENDING_EXTRACTION"
+    "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nCONSELHEIRO LAFAIETE MG - PREMIAÇÃO - AGENTES CULTURAIS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nCONSELHEIRO LAFAIETE MG - PREMIAÇÃO - AGENTES CULTURAIS - 2026Compartilhar editalInformaçõesInscrições de:06/10/26até09/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: cultura@conselheirolafaiete.mg.gov.brTelefone: SobreEdital de Chamamento Público nº 002/2026 da Prefeitura de Conselheiro Lafaiete (MG), com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). Premia 64 agentes culturais com R$ 5.000 cada (total de R$ 320.000), em reconhecimento à contribuição artística e cultural já realizada no município, sem exigência de contrapartida ou prestação de contas. Podem participar agentes culturais com atuação no município há pelo menos 2 anos. Cotas para pessoas negras, indígenas e com deficiência. Inscrições das 12h de 06/10/2026 às 17h de 09/11/2026. Edital completo no link (Diário Oficial do município).Total DisponívelR$ 320.000,00Limite por projetoR$ 5.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoConselheiro Lafaiete - MGÁreas de AtuaçãoCultura e ArtesSubáreasCircoDançaTeatroMúsica PopularMúsica Erudita e InstrumentalAudiovisualFotografiaArtes Visuais / PlásticasMuseu / Centro CulturalLiteraturaDesignPatrimônio HistóricoModaCulturA índigenaCultura Afro BrasileiraPúblico-AlvoPessoas com DeficiênciaPopulação NegraPovos originários e Comunidades TradicionaisObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura de Conselheiro LafaieteDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px ",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "19491",
+      "resumo_objetivo": "Premiação de agentes culturais com relevante contribuição ao desenvolvimento artístico ou cultural do Município de Conselheiro Lafaiete/MG, por meio de recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "patrimônio cultural",
+        "culturas tradicionais e populares"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Conselheiro Lafaiete - MG"
+        ],
+        "natureza_juridica_excluida": [
+          "Pessoa Jurídica com fins lucrativos",
+          "Pessoa Jurídica sem fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_reais": 5000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Comprovação de residência e atuação cultural no Município de Conselheiro Lafaiete há pelo menos 2 anos",
+          "Apresentação de portfólio cultural ou materiais que comprovem a atuação artística",
+          "Proibição de participação de servidores públicos atuantes na elaboração ou julgamento do edital e parentes até o terceiro grau"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1Op5lGS0AT9JuFm0yvgmhHCCILOaCFbT1/view?usp=drivesdk"
+    }
   },
   {
     "id": "19490",
@@ -6375,8 +6454,46 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19490",
     "pdf_link": "https://ecrie.com.br/sistema/conteudos/arquivo/a_228_1_2_14102026095437.pdf",
-    "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nCONSELHEIRO LAFAIETE MG - CHAMAMENTO PÚBLICO - FOMENTO A PROJETOS CULTURAIS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nCONSELHEIRO LAFAIETE MG - CHAMAMENTO PÚBLICO - FOMENTO A PROJETOS CULTURAIS - 2026Compartilhar editalInformaçõesInscrições de:06/10/26até09/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: cultura@conselheirolafaiete.mg.gov.brTelefone: (31) 3764-9802_SobreEdital de Chamamento Público nº 001/2026 da Prefeitura de Conselheiro Lafaiete (MG), com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). Seleciona 20 projetos culturais de diversas linguagens e formatos: Categoria 1 com 10 projetos de R$ 10.000 (pequeno e médio porte) e Categoria 2 com 10 projetos de R$ 20.000 (maior porte e complexidade), totalizando R$ 300.000, via Termo de Execução Cultural. Cotas para pessoas negras, indígenas e com deficiência. Inscrições de 06/10 a 09/11/2026. Edital completo no link (Diário Oficial do município).Total DisponívelR$ 300.000,00Limite por projetoR$ 20.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoConselheiro Lafaiete - MGÁreas de AtuaçãoCultura e ArtesSubáreasCircoDançaTeatroMúsica PopularMúsica Erudita e InstrumentalAudiovisualFotografiaArtes Visuais / PlásticasMuseu / Centro CulturalLiteraturaDesignPatrimônio HistóricoModaCulturA índigenaCultura Afro BrasileiraPúblico-AlvoPessoas com DeficiênciaPopulação NegraPovos originários e Comunidades TradicionaisObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura de Conselheiro LafaieteDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "PENDING_EXTRACTION"
+    "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nCONSELHEIRO LAFAIETE MG - CHAMAMENTO PÚBLICO - FOMENTO A PROJETOS CULTURAIS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nCONSELHEIRO LAFAIETE MG - CHAMAMENTO PÚBLICO - FOMENTO A PROJETOS CULTURAIS - 2026Compartilhar editalInformaçõesInscrições de:06/10/26até09/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: cultura@conselheirolafaiete.mg.gov.brTelefone: (31) 3764-9802_SobreEdital de Chamamento Público nº 001/2026 da Prefeitura de Conselheiro Lafaiete (MG), com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). Seleciona 20 projetos culturais de diversas linguagens e formatos: Categoria 1 com 10 projetos de R$ 10.000 (pequeno e médio porte) e Categoria 2 com 10 projetos de R$ 20.000 (maior porte e complexidade), totalizando R$ 300.000, via Termo de Execução Cultural. Cotas para pessoas negras, indígenas e com deficiência. Inscrições de 06/10 a 09/11/2026. Edital completo no link (Diário Oficial do município).Total DisponívelR$ 300.000,00Limite por projetoR$ 20.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoConselheiro Lafaiete - MGÁreas de AtuaçãoCultura e ArtesSubáreasCircoDançaTeatroMúsica PopularMúsica Erudita e InstrumentalAudiovisualFotografiaArtes Visuais / PlásticasMuseu / Centro CulturalLiteraturaDesignPatrimônio HistóricoModaCulturA índigenaCultura Afro BrasileiraPúblico-AlvoPessoas com DeficiênciaPopulação NegraPovos originários e Comunidades TradicionaisObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura de Conselheiro LafaieteDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, ",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "19490",
+      "resumo_objetivo": "Seleção de projetos culturais para firmar termo de execução cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB) no município de Conselheiro Lafaiete/MG.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "diversidade cultural",
+        "patrimônio cultural"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Conselheiro Lafaiete - MG"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": 20000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Comprovação de residência ou atuação artística no município de Conselheiro Lafaiete/MG há pelo menos 1 ano",
+          "Apresentação de Certidão Negativa de Débitos Federais, Estaduais e Municipais",
+          "Apresentação de CNDT (Certidão Negativa de Débitos Trabalhistas)",
+          "Abertura de conta corrente exclusiva para o projeto"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1m4k7YMz4pb0sj3or3czoD-Aifo9qntZ9/view?usp=drivesdk"
+    }
   },
   {
     "id": "19469",
@@ -6386,7 +6503,39 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19469",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nPARAÍBA - BOLSA - PÓS-DOUTORADO - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nPARAÍBA - BOLSA - PÓS-DOUTORADO - 2026Compartilhar editalInformaçõesInscrições de:13/07/26até09/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: fapesq@fapesq.rpp.brTelefone: SobreConcessão de bolsas de Pós-Doutorado a Programas de Pós-Graduação (PPGs) vinculados a Instituições de Ensino Superior (IES) sediadas na Paraíba, visando apoiar a formação de recursos humanos qualificados em atividades de pesquisa, desenvolvimento e/ou inovação e aumentar o acesso de pesquisadores doutores à infraestrutura de pesquisa existente no estado.Total DisponívelR$ 6.240.000,00Fonte de financiamentoRecursos própriosLocais de AtuaçãoParaíba - PBÁreas de AtuaçãoCiência e TecnologiaEducaçãoObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Fundação de Apoio à Pesquisa do Estado da Paraíba (FAPESQ) / Secretaria de Estado da Ciência, Tecnologia,Desenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "PENDING_EXTRACTION"
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "19469",
+      "resumo_objetivo": "Concessão de bolsas de Pós-Doutorado a Programas de Pós-Graduação vinculados a Instituições de Ensino Superior sediadas na Paraíba para apoiar a formação de recursos humanos em pesquisa, desenvolvimento e inovação.",
+      "temas_principais": [
+        "ciência e tecnologia",
+        "educação",
+        "pesquisa",
+        "pós-doutorado"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PB"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": 6240000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para Programas de Pós-Graduação vinculados a Instituições de Ensino Superior sediadas na Paraíba"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    }
   },
   {
     "id": "19275",
@@ -6397,7 +6546,9 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19275",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/R7cd0AssE9nMRfrOBvilzS7bIuXq2dTOLq9jorKst7rqkiX7I7AJDuLZJTjIBUv9/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/080/899/original/0.Edital_e_Anexos__-_Credenciamento_de_Entidades_Publicas_e_Privadas.pdf__manifesto__%282%29.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nBRASIL - CREDENCIAMENTO - INCLUSÃO SOCIOECONÔMICA E EMPREENDEDORISMO - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nBRASIL - CREDENCIAMENTO - INCLUSÃO SOCIOECONÔMICA E EMPREENDEDORISMO - 2026Compartilhar editalInformaçõesInscrições de:24/09/26até09/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: fornecedor@portaldecompraspublicas.com.brTelefone: (08) 0073-05455SobreCredenciamento de entidades públicas e privadas sem fins lucrativos, com capacidade técnica comprovada, para a execução de projetos de inclusão socioeconômica, empreendedorismo e geração de renda no âmbito do Acordo de Cooperação Técnica nº 15/2023.Total DisponívelR$ 7.426.768,78Fonte de financiamentoRecursos própriosOutrosLocais de AtuaçãoBrasilÁreas de AtuaçãoAssistência SocialCultura e ArtesDesenvolvimento comunitárioEmpreendedorismo / Geração de Emprego e RendaFormação para o trabalhoObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Serviço Brasileiro de Apoio às Micro e Pequenas Empresas – SEBRAEMídiasVer menosSiteAnexosComplementaresVer menosEditalDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "PENDING_EXTRACTION"
+    "pipeline_status": "PENDING_EXTRACTION",
+    "retry_count": 1,
+    "last_error": "HTTP Error: 404"
   },
   {
     "id": "19367",
@@ -6408,7 +6559,45 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19367",
     "pdf_link": "https://rolandia.pr.gov.br/uploads/20261008101328_EDITAL%20DE%20CHAMAMENTO%20P%C3%9ABLICO%2003-2026.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nROLÂNDIA PR - CHAMAMENTO PÚBLICO - ATENDIMENTO À PESSOA IDOSA - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nROLÂNDIA  PR - CHAMAMENTO PÚBLICO - ATENDIMENTO À PESSOA IDOSA - 2026Compartilhar editalInformaçõesInscrições de:09/10/26até09/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: convenios@rolandia.pr.gov.brTelefone: (43) 3255-8600_SobreSeleção de Organização da Sociedade Civil (OSC) para execução de projeto voltado à estruturação e qualificação do atendimento à pessoa idosa, mediante aquisição de equipamentos, mobiliários e materiais permanentes para a melhoria do acolhimento, acessibilidade, segurança e convivência.Total DisponívelR$ 253.426,27Fonte de financiamentoOutrosLocais de AtuaçãoRolândia - PRÁreas de AtuaçãoAssistência SocialPúblico-AlvoIdososObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura Municipal de Rolândia / Secretaria Municipal de Assistência SocialMídiasVer menosSiteAnexosDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "PENDING_EXTRACTION"
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "19367",
+      "resumo_objetivo": "Seleção de Organizações da Sociedade Civil (OSCs) para celebração de Termo de Fomento voltado à estruturação e qualificação do atendimento à pessoa idosa, mediante aquisição de equipamentos, mobiliários e materiais permanentes.",
+      "temas_principais": [
+        "idosos",
+        "assistência social",
+        "estruturação"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PR"
+        ],
+        "municipios_permitidos": [
+          "Rolândia - PR"
+        ],
+        "natureza_juridica_excluida": [
+          "com fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_reais": 253426.27,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Apresentação de proposta de Plano de Trabalho preliminar por meio de gerador eletrônico",
+          "Comprovação de experiência prévia na área de atendimento à pessoa idosa",
+          "Regularidade perante o Conselho Municipal dos Direitos da Pessoa Idosa de Rolândia"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1Tvb6AiWqMoI-_koHO1iO5bXUtmu1hCPg/view?usp=drivesdk"
+    }
   },
   {
     "id": "19399",
@@ -6419,7 +6608,43 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19399",
     "pdf_link": "https://ecrie.com.br/sistema/conteudos/arquivo/a_228_1_2_14102026095437.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nCONSELHEIRO LAFAIETE MG - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nCONSELHEIRO LAFAIETE  MG - CHAMAMENTO PÚBLICO - PROJETOS CULTURAIS - 2026Compartilhar editalInformaçõesInscrições de:06/10/26até09/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: cultura@conselheirolafaiete.mg.gov.brTelefone: (31) 3764-9802_SobreSeleção de projetos culturais para receberem apoio financeiro com o objetivo de incentivar as diversas formas de manifestações culturais no município de Conselheiro Lafaiete/MG, com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).Total DisponívelR$ 300.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoConselheiro Lafaiete - MGÁreas de AtuaçãoCultura e ArtesObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura Municipal de Conselheiro Lafaiete / Secretaria Municipal de CulturaDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "PENDING_EXTRACTION"
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "19399",
+      "resumo_objetivo": "Seleção de projetos culturais para firmar termo de execução cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB) no município de Conselheiro Lafaiete/MG.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "manifestações culturais",
+        "diversidade cultural"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Conselheiro Lafaiete - MG"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_reais": 20000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Comprovação de residência ou atuação artística no município há pelo menos 1 ano",
+          "Projetos com valores detalhados na planilha financeira menores que 85% do valor máximo serão desclassificados"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1baW1EfWN5XwxYnrENtyxk9Xk-zqctbLs/view?usp=drivesdk"
+    }
   },
   {
     "id": "19400",
@@ -6430,7 +6655,44 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19400",
     "pdf_link": "https://ecrie.com.br/sistema/conteudos/arquivo/a_228_2_1_14102026095437.pdf",
     "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nCONSELHEIRO LAFAIETE MG - PREMIAÇÃO - AGENTES CULTURAIS - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nCONSELHEIRO LAFAIETE  MG - PREMIAÇÃO - AGENTES CULTURAIS - 2026Compartilhar editalInformaçõesInscrições de:06/10/26até09/11/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: cultura@conselheirolafaiete.mg.gov.brTelefone: (31) 3764-9802_SobrePremiação de agentes culturais (pessoas físicas, MEIs e coletivos/grupos sem CNPJ) que tenham prestado relevante contribuição ao desenvolvimento artístico ou cultural do Município de Conselheiro Lafaiete, funcionando como reconhecimento em formato de doação sem encargo e sem necessidade de prestação de contas.Total DisponívelR$ 320.000,00Fonte de financiamentoPolítica Nacional Aldir BlancLocais de AtuaçãoConselheiro Lafaiete - MGÁreas de AtuaçãoCultura e ArtesObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura Municipal de Conselheiro Lafaiete / Secretaria Municipal de CulturaDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "PENDING_EXTRACTION"
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "19400",
+      "resumo_objetivo": "Premiação de agentes culturais com relevante contribuição ao desenvolvimento artístico ou cultural do Município de Conselheiro Lafaiete/MG, utilizando recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "patrimônio cultural"
+      ],
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Conselheiro Lafaiete - MG"
+        ],
+        "natureza_juridica_excluida": [
+          "Pessoa Jurídica com ou sem fins lucrativos (exceto MEI)"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_reais": 5000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Contribuição artística ou cultural no Município de Conselheiro Lafaiete há pelo menos 2 (dois) anos",
+          "Comprovação de residência e atuação no Município de Conselheiro Lafaiete"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/17duuKPHRsrFOnGFo_Ea9nHAXlCFYO_81/view?usp=drivesdk"
+    }
   },
   {
     "id": "19401",
@@ -7379,8 +7641,11 @@
       "nome": "BRASIL - AUXÍLIO - EVENTOS CIENTÍFICOS TECNOLÓGICOS E DE INOVAÇÃO (CHAMADA CNPQ 34/2026 - ARC) - 2026",
       "e_central?": true
     },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19546",
+    "pdf_link": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-34-2026/Chamada_ARC_34_2026.pdf",
+    "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nBRASIL - AUXÍLIO - EVENTOS CIENTÍFICOS TECNOLÓGICOS E DE INOVAÇÃO (CHAMADA CNPQ 34/2026 - ARC) - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nBRASIL - AUXÍLIO - EVENTOS CIENTÍFICOS TECNOLÓGICOS E DE INOVAÇÃO (CHAMADA CNPQ 34/2026 - ARC) - 2026Compartilhar editalInformaçõesInscrições de:14/10/26até04/12/26GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: atendimento@cnpq.brTelefone: (61) 3211-4000_SobreApoiar a realização no Brasil de eventos de grande porte, de abrangência mundial, internacional ou nacional, relacionados a ciência, tecnologia e inovação (encontros, congressos e similares), nas Linhas: 1 - Eventos Mundiais (realização entre 01/07/2027 e 31/07/2028); 2 - Eventos Tradicionais nacionais ou internacionais (01/07/2027 a 30/06/2028); 3 - Eventos Não Tradicionais nacionais ou internacionais (01/07/2027 a 30/06/2028).</p><p>Valor global: R$ 20.000.000,00. Valor máximo por proposta: até R$ 200.000,00 (Linhas 1 e 2) ou R$ 150.000,00 (Linha 3). Uma única proposta por proponente, vinculada a uma faixa. Submissão pela Plataforma Integrada Carlos Chagas (CNPq), com currículo Lattes atualizado, até 04/12/2026. Resultado preliminar previsto para 15/03/2027. Atendimento: atendimento@cnpq.br / (61) 3211-4000.Total DisponívelR$ 20.000.000,00Limite por projetoR$ 200.000,00Fonte de financiamentoParceria - GovernoLocais de AtuaçãoBrasilÁreas de AtuaçãoCiência e TecnologiaPúblico-AlvoObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)MídiasVer menosSiteEdital e mais informaçõesDesenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
     "last_error": "page.evaluate: Target page, context or browser has been closed",
-    "pipeline_status": "NEW_FROM_API"
+    "pipeline_status": "PENDING_EXTRACTION"
   },
   {
     "id": "19381",
@@ -7866,8 +8131,11 @@
       "nome": "BRASIL - CHAMAMENTO PÚBLICO - COOPERAÇÃO CIENTÍFICA E TECNOLÓGICA BRASIL-FRANÇA (SAÚDE E CONTINUO DIGITAL) - 2026",
       "e_central?": true
     },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19055",
+    "pdf_link": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-32-2026/ChamadaPblicaANR322026_2766435.pdf",
+    "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nBRASIL - CHAMAMENTO PÚBLICO - COOPERAÇÃO CIENTÍFICA E TECNOLÓGICA BRASIL-FRANÇA (SAÚDE E CONTINUO DIGITAL) - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nBRASIL - CHAMAMENTO PÚBLICO - COOPERAÇÃO CIENTÍFICA E TECNOLÓGICA BRASIL-FRANÇA (SAÚDE E CONTINUO DIGITAL) - 2026Compartilhar editalInformaçõesInscrições de:03/09/26até31/03/27GMT-03 (Horário Padrão de Brasília) AcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: atendimento@cnpq.brTelefone: (61) 3211-4000_SobreSelecionar até 4 projetos conjuntos de pesquisa entre grupos brasileiros e franceses voltados ao desenvolvimento científico, tecnológico e à inovação nas áreas de Saúde/Uma Só Saúde (One Health) e Contínuo Digital (HPC, Inteligência Artificial e Computação Quântica).Total DisponívelR$ 6.000.000,00Fonte de financiamentoRecursos própriosLocais de AtuaçãoBrasilÁreas de AtuaçãoCiência e TecnologiaObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e Agência Nacional de Pesquisa (ANR)Desenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
     "last_error": "page.evaluate: Target page, context or browser has been closed",
-    "pipeline_status": "NEW_FROM_API"
+    "pipeline_status": "PENDING_EXTRACTION"
   },
   {
     "id": "18994",
@@ -8948,8 +9216,11 @@
       "nome": "APUCARANA  PR - CREDENCIAMENTO - PROGRAMA SANDBOX - 2026",
       "e_central?": true
     },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19043",
+    "pdf_link": "https://www.apucarana.pr.gov.br/site/wp-content/uploads/2026/08/Edital_32_2026_SANDBOX.pdf",
+    "full_text": "Ajuda\nInício\nPlataforma\nDados\nFormações\nBlog\nCentral de Editais\nACESSAR PERFIL\nAPUCARANA PR - CREDENCIAMENTO - PROGRAMA SANDBOX - 2026\n« VOLTAR\nProsas\nBlog\nTrabalhe Conosco\nSuporte\nContato\nTermos de Uso e Políticas de Privacidade\nFale com o nosso DPO\n© 2026 | Prosas\nAPUCARANA  PR - CREDENCIAMENTO - PROGRAMA SANDBOX - 2026Compartilhar editalInformaçõesInscrições contínuasAcessarEdital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com:E-mail: Telefone: (43) 3422-4000_SobreCredenciamento permanente sem ônus financeiro destinado à habilitação de startups e empresas inovadoras interessadas em participar do \"Programa Sandbox - Apucarana\", permitindo a realização de testes controlados e temporários de soluções inovadoras em órgãos públicos ou ambiente urbano do município.Fonte de financiamentoRecursos própriosLocais de AtuaçãoApucarana - PRÁreas de AtuaçãoApoio à gestão de organizações de Terceiro SetorCiência e TecnologiaComunicaçãoEducaçãoEmpreendedorismo / Geração de Emprego e RendaMeio AmbienteObjetivos de Desenvolvimento Sustentável (ODS)Publicado por: Central de EditaisPatrocinador: Prefeitura do Município de Apucarana / Instituto de Desenvolvimento, Pesquisa e Planejamento de Apucarana (IDEPPLAN)Desenvolvido por\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
     "last_error": "page.evaluate: Target page, context or browser has been closed",
-    "pipeline_status": "NEW_FROM_API"
+    "pipeline_status": "PENDING_EXTRACTION"
   },
   {
     "id": "19105",
