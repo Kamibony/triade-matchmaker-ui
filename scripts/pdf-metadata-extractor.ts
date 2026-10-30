@@ -2,6 +2,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { google } from 'googleapis';
+import { Readable } from 'node:stream';
 
 // Load environment variables if available or assume it's passed directly to the script
 const apiKey = process.env.GEMINI_API_KEY || '';
@@ -11,7 +12,7 @@ if (!apiKey) {
 
 const genAI = new GoogleGenerativeAI(apiKey);
 
-export async function downloadPdf(url: string): Promise<{ success: boolean, data?: ArrayBuffer, error?: string, skip?: boolean, notPdf?: boolean }> {
+export async function downloadPdf(url: string): Promise<{ success: boolean, data?: ArrayBuffer, error?: string, skip?: boolean, notPdf?: boolean, expiredPresigned?: boolean }> {
     try {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 15000); // 15s timeout
@@ -20,6 +21,9 @@ export async function downloadPdf(url: string): Promise<{ success: boolean, data
         clearTimeout(timeoutId);
 
         if (!response.ok) {
+            if ((response.status === 403 || response.status === 400) && (url.includes('amazonaws.com') || url.includes('oraclecloud.com'))) {
+                return { success: false, expiredPresigned: true, error: `HTTP Error: ${response.status} (Presigned URL expired)` };
+            }
             return { success: false, error: `HTTP Error: ${response.status}` };
         }
 
@@ -146,11 +150,8 @@ async function uploadPdfToDrive(pdfData: ArrayBuffer, fileName: string): Promise
         const drive = google.drive({ version: 'v3', auth });
 
         // Convert ArrayBuffer to Buffer, then to a Readable stream for Google APIs
-        const { Readable } = require('stream');
         const buffer = Buffer.from(pdfData);
-        const stream = new Readable();
-        stream.push(buffer);
-        stream.push(null);
+        const stream = Readable.from(buffer);
 
         const fileMetadata = {
             name: fileName,
@@ -235,7 +236,7 @@ export async function processEditais() {
             }
         }
         let useTextFallback = false;
-        let downloadResult: { success: boolean, data?: ArrayBuffer, error?: string, skip?: boolean, notPdf?: boolean } = { success: false, notPdf: true };
+        let downloadResult: { success: boolean, data?: ArrayBuffer, error?: string, skip?: boolean, notPdf?: boolean, expiredPresigned?: boolean } = { success: false, notPdf: true };
 
         if (!pdfLink) {
             console.log(`No PDF link provided for edital ${edital.id || i}. Will attempt text fallback.`);
@@ -246,6 +247,13 @@ export async function processEditais() {
 
             if (!downloadResult.success) {
                 console.error(`Failed to download PDF for edital ${edital.id || i}: ${downloadResult.error}`);
+                if (downloadResult.expiredPresigned) {
+                    console.log(`Presigned URL expired for edital ${edital.id || i}. Forcing rescrape.`);
+                    edital.pipeline_status = 'NEW_FROM_API';
+                    delete edital.pdf_link;
+                    modified = true;
+                    continue;
+                }
                 if (downloadResult.skip) {
                     edital.pdf_skipped = true;
                     modified = true;

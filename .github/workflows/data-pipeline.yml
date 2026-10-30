@@ -8,12 +8,12 @@ on:
       max_scrape:
         description: 'Max items to deep scrape'
         required: false
-        default: '15'
+        default: '25'
         type: string
       max_extract:
         description: 'Max items to extract via Gemini'
         required: false
-        default: '15'
+        default: '25'
         type: string
       force_rescrape:
         description: 'Force rescraping of all items'
@@ -46,7 +46,7 @@ jobs:
         env:
           PROSAS_USERNAME: ${{ secrets.PROSAS_USERNAME }}
           PROSAS_PASSWORD: ${{ secrets.PROSAS_PASSWORD }}
-          MAX_DEEP_SCRAPE: ${{ github.event.inputs.max_scrape || '15' }}
+          MAX_DEEP_SCRAPE: ${{ github.event.inputs.max_scrape || '25' }}
           FORCE_RESCRAPE: ${{ github.event.inputs.force_rescrape || 'false' }}
         run: npm run scrape-prosas
 
@@ -54,7 +54,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GCP_DRIVE_CREDENTIALS: ${{ secrets.GCP_DRIVE_CREDENTIALS }}
-          MAX_EXTRACT: ${{ github.event.inputs.max_extract || '15' }}
+          MAX_EXTRACT: ${{ github.event.inputs.max_extract || '25' }}
         run: npm run extract-metadata
 
       - name: Safe Git Commit & Push (Avoid Race Conditions)
