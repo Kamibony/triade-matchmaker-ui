@@ -142,10 +142,8 @@ async function uploadPdfToDrive(pdfData: ArrayBuffer, fileName: string): Promise
 
     try {
         const credentials = JSON.parse(credsEnv);
-        const auth = new google.auth.GoogleAuth({
-            credentials,
-            scopes: ['https://www.googleapis.com/auth/drive.file']
-        });
+        const auth = new google.auth.OAuth2(credentials.clientId, credentials.clientSecret);
+        auth.setCredentials({ refresh_token: credentials.refreshToken });
 
         const drive = google.drive({ version: 'v3', auth });
 
