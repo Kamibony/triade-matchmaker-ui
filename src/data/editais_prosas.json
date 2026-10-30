@@ -6,33 +6,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19545",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nSenha\nForgot your password?\nRemind me\nVocê precisa se logar ou registrar antes de prosseguir.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19545",
-      "resumo_objetivo": "Pagina de login da plataforma Prosas exigindo autenticacao para visualizacao do edital.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessario realizar login na plataforma Prosas para acessar o conteudo do edital."
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19345",
@@ -41,33 +15,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19345",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nSenha\nForgot your password?\nRemind me\nVocê precisa se logar ou registrar antes de prosseguir.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19345",
-      "resumo_objetivo": "Página de login da plataforma Prosas exigindo autenticação para visualização de editais.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Exige login ou registro prévio na plataforma Prosas para prosseguir."
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19344",
@@ -76,35 +24,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19344",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nSenha\nForgot your password?\nRemind me\nVocê precisa se logar ou registrar antes de prosseguir.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19344",
-      "resumo_objetivo": "Página de login e registro da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [
-        "geral"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Exige cadastro ou login prévio na plataforma Prosas"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19343",
@@ -113,33 +33,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19343",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nSenha\nForgot your password?\nRemind me\nVocê precisa se logar ou registrar antes de prosseguir.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19343",
-      "resumo_objetivo": "Pagina de login da plataforma Prosas exigindo autenticacao para visualizacao de editais.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Exige cadastro e login na plataforma Prosas para prosseguir"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19342",
@@ -148,31 +42,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19342",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19342",
-      "resumo_objetivo": "Página de login da plataforma Prosas para visualização de oportunidades.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19341",
@@ -181,37 +51,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19341",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19341",
-      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [
-        "geral",
-        "editais",
-        "captação de recursos"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro e realizar login na plataforma Prosas para visualizar os editais."
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19169",
@@ -220,37 +60,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19169",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19169",
-      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a oportunidades de editais e financiamentos.",
-      "temas_principais": [
-        "editais",
-        "financiamento",
-        "projetos sociais"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro e realizar login na plataforma Prosas para visualizar as oportunidades."
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18918",
@@ -261,44 +71,7 @@
     "public_url": "https://prosas.com.br/editais/18918",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/zGAybXQVVtU5RqxdFft5NQ_QX_l_Z8Hfrc54gK34SEJXy9dhBFjGnyE8t7ISSB1e/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/040/349/original/EDITAL-SMCT-No-23-2026-CONCESSAO-DE-AUXILIO-FINANCEIRO-AOS-BLOCOS-DE-RUA-PARA-O-CARNAVAL-DE-UBERLANDIA-ANO-2027.pdf",
     "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nEDITAL SMCT N° 23/2026 - CONCESSÃO DE AUXÍLIO FINANCEIRO AOS BLOCOS DE RUA PARA O CARNAVAL DE UBERLÂNDIA – ANO 2027\nApplication opens on:\n04/09/2026 15:00 to 30/10/2026 20:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nConstitui objeto do presente edital o chamamento público de Blocos de Rua para realização de comemorações do Carnaval de Rua de Uberlândia do ano de 2027, no período de 22 de janeiro a 27 de fevereiro de 2027. O valor mínimo por bloco habilitado e com pontuação mínima alcançada a ser concedido é de R$ 8.000,00 (oito mil reais) e no máximo de R$ 15.000,00 (quinze mil reais) de acordo com a categoria de inscrição de cada bloco.\nCaso haja qualquer dificuldade no uso da plataforma Prosas para envio da inscrição, clique no botão Ajuda localizado no canto inferior direito da tela - WhatsApp Suporte - (31) 9 9919-8781\nOs questionamentos referentes a este edital poderão ser enviados para o e-mail: diretoriadeigualdade@gmail.com\nTotal available\nR$ 76.000,00\nLimit per project\nR$ 8.000,00\nFunding Source\nRecursos próprios\nArea of practice\nArts and Culture\nSubarea\nPopular Music\nSECRETARIA MUNICIPAL DE CULTURA E TURISMO DE UBERLÂNDIA/MG\nAdditional Files\nEDITAL SMCT N°23/2026 - CONCESSÃO DE AUXÍLIO FINANCEIRO AOS BLOCOS DE RUA PARA O CARNAVAL DE UBERLÂNDIA – ANO 2027.\nANEXO I - FORMULÁRIO DE INSCRIÇÃO\nANEXO II - DESCRIÇÃO DO BLOCO\nANEXO III - PLANILHA DE ORÇAMENTO\nANEXO IV - DESCRIÇÃO DA PROPOSTA\nANEXO V - MODELO DE DECLARAÇÃO DOS REPRESENTANTES DO BLOCO\nANEXO VI - DADOS BANCÁRIOS\nMedia\nWebsites\nPortal da Prefeitura\ninsert_link\nHTTPS://WWW.UBERLANDIA.MG.GOV.BR/PREFEITUR...\nVideos\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "18918",
-      "resumo_objetivo": "Concessão de auxílio financeiro para blocos de rua para o Carnaval de Uberlândia - Ano 2027, visando a valorização e promoção da cultura carnavalesca local.",
-      "temas_principais": [
-        "cultura",
-        "carnaval",
-        "manifestações culturais",
-        "turismo"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "MG"
-        ],
-        "municipios_permitidos": [
-          "Uberlândia - MG"
-        ],
-        "natureza_juridica_excluida": [
-          "com fins lucrativos"
-        ]
-      },
-      "financeiro": {
-        "valor_maximo_reais": 60000,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": true,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Pessoa física maior de 18 anos, residente e domiciliada em Uberlândia como representante do Bloco Carnavalesco de Rua",
-          "Pessoa jurídica sem fins lucrativos com sede em Uberlândia"
-        ]
-      },
-      "fonte_dados": "pdf"
-    }
+    "pipeline_status": "PENDING_EXTRACTION"
   },
   {
     "id": "15180",
@@ -309,47 +82,7 @@
     "public_url": "https://prosas.com.br/editais/15180",
     "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/826/018/original/Edital_002-2024_Cultura_Federal.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261029%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261029T214157Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=f962cba0cc8dd0dcde70efb3ac657714848c24e3200fc77b2b598ed5892ddcaa",
     "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nEdital 002/2024 de Cadastro de Projetos da Lei Federal de Incentivo à Cultura\nApplication opens on:\n07/11/2024 15:00 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nEste Edital possui como objetivo o cadastro de Projetos Culturais aprovados pela Lei Federal nº 8.313 de 23 de dezembro de 1991 Lei de Incentivo à Cultura nas modalidades preconizadas no Art. 18, da referida lei, para destinação de incentivos fiscais, por meio da destinação de parte de impostos devidos pela Celesc via doação.\nOs projetos poderão ser inscritos até 30/10/2026 às 18h.\nDemais informações podem ser encontradas no documento do Edital 002/2024 disponível na seção \"Arquivos Complementares\".\nDúvidas sobre o Edital: investimentosocial@celesc.com.br\nDúvidas sobre a plataforma Prosas: acionar o botão de ajuda do canto inferior direito da tela.\nFunding Source\nLei Rouanet\nProject's operating locations\nState(s):\nlocation_on\nSanta Catarina\nCELESC\nAdditional Files\nLista de municípios por Agência Regional\nCódigo de Conduta Ética - Celesc\nManual de Marca - Celesc\nPolítica Anticorrupção\nPolítica de Relacionamento com Fornecedores\nEdital 002/2024 de Cadastro de Projetos da Lei Federal de Incentivo à Cultura\nComunidao 01 - Retificação 1\nMedia\nWebsites\nSite oficial da Celesc\ninsert_link\nHTTPS://WWW.CELESC.COM.BR/\nVideos\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "15180",
-      "resumo_objetivo": "Cadastro de projetos culturais aprovados pela Lei Federal de Incentivo à Cultura (Lei nº 8.313/1991, Art. 18) para a destinação de incentivos fiscais por meio de doação da Celesc.",
-      "temas_principais": [
-        "cultura",
-        "incentivo à cultura",
-        "arte",
-        "patrimônio"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "SC"
-        ],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": [
-          "órgãos ou entidades governamentais",
-          "organizações com diretoria vinculada a cargos eletivos",
-          "organização de caráter sindical",
-          "associação classista",
-          "com fins lucrativos"
-        ]
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Somente serão elegíveis os projetos com aprovação publicada no Diário Oficial da União (DOU) com o respectivo registro PRONAC pelo artigo 18 da Lei Federal 8.313/1991",
-          "A execução das atividades deve ocorrer em Santa Catarina",
-          "Apresentar questionário de análise de integridade preenchido e assinado"
-        ]
-      },
-      "fonte_dados": "pdf"
-    }
+    "pipeline_status": "PENDING_EXTRACTION"
   },
   {
     "id": "18676",
@@ -360,40 +93,7 @@
     "public_url": "https://prosas.com.br/editais/18676",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/M4TLLEq24kIeGGMM3WyLoccTcWRAeoX7t6VIPJkQiqBZcuaOKsLF8QaNMBd7TU4_/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/980/616/original/Edital_Rede_Memoria_Viva.docx.pdf",
     "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nSeleção de Projetos\nApplication opens on:\n03/08/2026 21:00 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nPara dúvidas relacionadas ao regulamento deste edital, envie e-mail para: vivapequenaafrica@diaspora.black\nCaso haja qualquer dificuldade no uso da plataforma Prosas para envio da inscrição, clique no botão Ajuda localizado no canto inferior direito da tela.\n- WhatsApp Suporte - (31) 9 9919-8781\nAtendimento de segunda a sexta-feira, das 9h às 18h.\nTypes of entrepreneurs who are eligible to apply\nperson\nFor-profit Corporation\nperson\nNonprofit Corporation\nperson\nGovernmental Organization or Agency\nProject's operating locations\nCountry(ies):\nlocation_on\nBrazil\nArea of practice\nSupport managing Third Sector organizations\nArts and Culture\nCommunity development\nEducation\nEntrepreneurship / Employment and Income Generation\nSubarea\nDance\nTheatre\nPopular Music\nAudiovisual\nPhotography\nVisual / Plastic Arts\nMuseum / Cultural Center\nHistoric Heritage\nAfro-brazilian Culture\nTarget Audience\nBlack Community\nSustainable Development Goals\nIniciativa Viva Pequena África - Rede Memoria Viva\nAdditional Files\nMODELO_DE_DECLARACAO_DE_CIENCIA__COMPROMISSO__AUTORIZACAO_E_PROTECAO_DE_DADOS (1).pdf attach_fileMODELO_DE_DECLARACAO_DE_CIENCIA__COMPROMISSO__AUTORIZACAO_E_PROTECAO_DE_DADOS\nEdital Rede Memória Viva\nFAQ\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "18676",
-      "resumo_objetivo": "Adesão de territórios e organizações locais à Rede Memória Viva e seleção de ações para o desenvolvimento de projetos técnico-conceituais nas áreas de arquitetura, interpretação do patrimônio e/ou museologia.",
-      "temas_principais": [
-        "memória afro-brasileira",
-        "patrimônio cultural",
-        "cultura",
-        "turismo",
-        "igualdade racial"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Comprovante de existência jurídica da organização (CNPJ)",
-          "Breve histórico de atuação no território",
-          "Apresentação de no mínimo três elementos característicos da memória afro-brasileira"
-        ]
-      },
-      "fonte_dados": "pdf"
-    }
+    "pipeline_status": "PENDING_EXTRACTION"
   },
   {
     "id": "14886",
@@ -404,46 +104,7 @@
     "public_url": "https://prosas.com.br/editais/14886",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/066ebjnQTExwHOWsqpsh6I9c-cpj-5_4ZjGc7ZuxAZOGKstDoWhcz2sferLy_4Xh/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/066/082/original/Edital_Celesc_PIC_2024.pdf",
     "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nEdital 001/2024 de Cadastro de Projetos do Programa de Incentivo à Cultura - PIC\nApplication opens on:\n05/09/2024 18:30 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nEste Edital possui como objetivo o cadastro de Projetos Culturais aprovados pela Lei Estadual nº 17.762 (PIC) nas modalidades: Artes Cênicas, Artes Visuais, Audiovisual, Centros Culturais; Literatura; Música; Patrimônio Imaterial; Patrimônio Material, Pesquisa e Documentação e Artes Integradas, para destinação de incentivos fiscais.\nOs projetos poderão ser inscritos até 30/10/2026 às 18h.\nDemais informações podem ser encontradas no documento do Edital 001/2024 disponível na seção \"Arquivos Complementares\".\nDúvidas sobre o Edital: investimentosocial@celesc.com.br\nDúvidas sobre a plataforma Prosas: acionar o botão de ajuda do canto inferior direito da tela.\nFunding Source\nLei Estadual de Cultura Santa Catarina\nCELESC\nAdditional Files\nLista de municípios por Agência Regional\nCódigo de Conduta Ética - Celesc\nManual de Marca - Celesc\nPolítica Anticorrupção\nPolítica de Relacionamento com Fornecedores\nEdital 001/2024 de Cadastro de Projetos do Programa de Incentivo à Cultura - PIC\nMedia\nWebsites\nSite oficial da Celesc\ninsert_link\nHTTPS://WWW.CELESC.COM.BR/\nVideos\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "14886",
-      "resumo_objetivo": "Cadastro de Projetos Culturais aprovados pela Lei Estadual nº 17.762 (PIC) para destinação de incentivos fiscais, por meio da destinação de parte de impostos devidos pela Celesc.",
-      "temas_principais": [
-        "cultura",
-        "artes cênicas",
-        "artes visuais",
-        "audiovisual",
-        "patrimônio"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "SC"
-        ],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": [
-          "órgãos ou entidades governamentais",
-          "organizações de caráter sindical/associação classista",
-          "fins lucrativos (se aplicável por restrição específica, mas aceita com ou sem fins lucrativos)"
-        ]
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Somente serão elegíveis os projetos com Autorização de Captação emitida pela Fundação Catarinense de Cultura (FCC) vigente",
-          "Questionário de Análise de Integridade preenchido e assinado",
-          "Projetos devem ter execução em Santa Catarina"
-        ]
-      },
-      "fonte_dados": "pdf"
-    }
+    "pipeline_status": "PENDING_EXTRACTION"
   },
   {
     "id": "15181",
@@ -454,48 +115,7 @@
     "public_url": "https://prosas.com.br/editais/15181",
     "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/826/017/original/Edital_003-2024_Esporte_Federal.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261029%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261029T214203Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=aeb12ac1e416e12cb35a8f08194176f46f044ee80724af515822741a7d8f7ab7",
     "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nEdital 003/2024 Cadastro de Projetos da Lei Federal de Incentivo ao Esporte\nApplication opens on:\n07/11/2024 15:00 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nEste Edital possui como objetivo o cadastro de Projetos Esportivos aprovados pela Lei Federal 11.438/2006 Lei de Incentivo ao Esporte, nas modalidades: desporto educacional, desporto de participação e desporto de rendimento, para destinação de incentivos fiscais, por meio da destinação de parte de impostos devidos pela Celesc via doação.\nOs projetos poderão ser inscritos até 30/10/2026 às 18h.\nDemais informações podem ser encontradas no documento do Edital 003/2024 disponível na seção \"Arquivos Complementares\".\nDúvidas sobre o Edital: investimentosocial@celesc.com.br\nDúvidas sobre a plataforma Prosas: acionar o botão de ajuda do canto inferior direito da tela.\nFunding Source\nLei Federal do Esporte\nProject's operating locations\nState(s):\nlocation_on\nSanta Catarina\nCELESC\nAdditional Files\nLista de municípios por Agência Regional\nCódigo de Conduta Ética - Celesc\nManual de Marca - Celesc\nPolítica Anticorrupção\nPolítica de Relacionamento com Fornecedores\nEdital 003/2024 Cadastro de Projetos da Lei Federal de Incentivo ao Esporte\nComunidao 02 - Retificação 1\nMedia\nWebsites\nSite oficial da Celesc\ninsert_link\nHTTPS://WWW.CELESC.COM.BR/\nVideos\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "15181",
-      "resumo_objetivo": "Cadastro de projetos esportivos aprovados pela Lei Federal de Incentivo ao Esporte nas modalidades educacional, de participação e de rendimento, para destinação de recursos via doação por incentivo fiscal da Celesc.",
-      "temas_principais": [
-        "esporte",
-        "desporto educacional",
-        "desporto de participação",
-        "desporto de rendimento"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "SC"
-        ],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": [
-          "órgãos ou entidades governamentais",
-          "organizações com diretoria vinculada a cargos eletivos",
-          "organização de caráter sindical",
-          "associação classista"
-        ]
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Projetos com aprovação publicada no Diário Oficial da União (DOU) com respectivo registro SLI",
-          "Questionário de Análise de Integridade preenchido e assinado",
-          "Garantir 100% de aproveitamento fiscal com o incentivo realizado",
-          "Não estar com 100% do valor aprovado para captação já alcançado na data de recebimento do recurso",
-          "Não estar em débito com a Celesc nem cumprindo penalidade administrativa junto a ela"
-        ]
-      },
-      "fonte_dados": "pdf"
-    }
+    "pipeline_status": "PENDING_EXTRACTION"
   },
   {
     "id": "15182",
@@ -506,47 +126,7 @@
     "public_url": "https://prosas.com.br/editais/15182",
     "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/826/015/original/Edital_004-2024_PRONON_e_PRONAS.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261029%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261029T214206Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=b2cbc884faf0ed06892a923b5a8e35e6bacba1eec0ee063688288048735f185f",
     "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nEdital 004/2024 Cadastro de Projetos do PRONON e PRONAS/PcD\nApplication opens on:\n07/11/2024 15:00 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nEste Edital possui como objetivo o cadastro de Projetos de Saúde, aprovados pelo Programa Nacional de Apoio à Atenção Oncológica - PRONON e o Programa Nacional de Apoio à Atenção da Saúde da Pessoa com Deficiência - PRONAS/PCD aprovados pela Lei Federal nº 12.715/2012, regulamentados pelo Decreto nº 7.988/2013 com a vigência prorrogada até 2026 pela Lei nº 14.564/2023 PRONON e PRONAS/PCD, para destinação de incentivos fiscais, por meio da destinação de parte de impostos devidos pela CELESC, neste caso o IRPJ via doação.\nDemais informações podem ser encontradas no documento do Edital 004/2024 disponível na seção \"Arquivos Complementares\".\nDúvidas sobre o Edital: investimentosocial@celesc.com.br\nDúvidas sobre a plataforma Prosas: acionar o botão de ajuda do canto inferior direito da tela.\nFunding Source\nPRONAS/PCD\nPRONON\nProject's operating locations\nState(s):\nlocation_on\nSanta Catarina\nCELESC\nAdditional Files\nLista de municípios por Agência Regional\nCódigo de Conduta Ética - Celesc\nManual de Marca - Celesc\nPolítica Anticorrupção\nPolítica de Relacionamento com Fornecedores\nEdital 004/2024 Cadastro de Projetos do PRONON e PRONAS/PcD\nMedia\nWebsites\nSite oficial da Celesc\ninsert_link\nHTTPS://WWW.CELESC.COM.BR/\nVideos\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "15182",
-      "resumo_objetivo": "Cadastro de projetos de saúde aprovados pelo PRONON e PRONAS/PcD para destinação de incentivos fiscais via IRPJ pela Celesc.",
-      "temas_principais": [
-        "saúde",
-        "oncologia",
-        "pessoa com deficiência",
-        "PRONON",
-        "PRONAS/PcD"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "SC"
-        ],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": [
-          "órgãos ou entidades governamentais",
-          "organizações com diretoria vinculada a cargos eletivos",
-          "organização de caráter sindical",
-          "associação classista"
-        ]
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Exige projeto aprovado no DOU via PRONON ou PRONAS/PcD",
-          "Que garantam 100% de aproveitamento fiscal com o incentivo realizado",
-          "Questionário de Análise de Integridade preenchido e assinado"
-        ]
-      },
-      "fonte_dados": "pdf"
-    }
+    "pipeline_status": "PENDING_EXTRACTION"
   },
   {
     "id": "17235",
@@ -557,60 +137,7 @@
     "public_url": "https://prosas.com.br/editais/17235",
     "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/004/640/891/original/Regulamento_-_Banco_de_Projetos_Incentivados_Municipais_2026.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261029%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261029T214208Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a4aa4183a13eb1883dad8045655eb0caf2c9d938da7db1958065eb8245e1362d",
     "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nBanco de Projetos Incentivados Municipais 2026 - Santos Brasil\nApplication opens on:\n03/02/2026 12:00 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\nA Santos Brasil tem o prazer de convidar as organizações da sociedade civil a inscreverem suas iniciativas no Banco de Projetos Municipais Incentivados 2026.\nA iniciativa tem como objetivo fortalecer a transparência e a governança da estratégia de investimento social privado da Companhia, além de tornar o processo de seleção e formalização mais ágil e acessível.\nAs inscrições estarão abertas de forma contínua entre os dias 03 de4 fevereiro a 30 de outubro de 2026, até às 18h (horário de Brasília).\nPodem se inscrever exclusivamente projetos já aprovados ou em fase de aprovação nas leis de incentivo fiscal municipais das cidades de Guarujá (SP), Santos (SP) e Imbituba (SC), onde a Santos Brasil possui operações, contribuindo para o desenvolvimento local das comunidades.\nRecomendamos a leitura atenta do Regulamento, que detalha todas as condições e requisitos para a inscrição das propostas.\nDúvidas sobre o conteúdo do edital devem ser encaminhadas ao time de Sustentabilidade Social pelo e-mail: projetosincentivados@santosbrasil.com.br\nJá questões técnicas sobre o uso da plataforma devem ser direcionadas ao suporte da Prosas por WhatsApp: +55 (31) 9919-8781\nContamos com a sua participação para sermos agentes de transformação!\nSee the full description\nTypes of entrepreneurs who are eligible to apply\nperson\nFor-profit Corporation\nperson\nNonprofit Corporation\nProject's operating locations\nCity(ies):\nlocation_on\nGuarujá - SP\nlocation_on\nImbituba - SC\nlocation_on\nSantos - SP\nSantos Brasil\nAdditional Files\nAnexo II - Oficio - Solicitação de patrocinio - modelo\nAnexo III - Procuração - ponto focal - modelo\nAnexo IV - Formulário - Identificação de Partes Relacionadas - modelo\nAnexo V - Formulário - Compromisso Anticorrupção - modelo\nRegulamento - Banco de Projetos Incentivados Municipais 2026\nAnexo I - Formulário de inscrição - modelo\nMedia\nWebsites\nSite Institucional\ninsert_link\nHTTPS://WWW.SANTOSBRASIL.COM.BR\nSite de Relação com Investidores\ninsert_link\nHTTPS://RI.SANTOSBRASIL.COM.BR/\nRelatório de Sustentabilidade\ninsert_link\nHTTPS://WWW.SANTOSBRASIL.COM.BR/V2021/SUST...\nVideos\nShare this page\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 214",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "17235",
-      "resumo_objetivo": "O edital tem como objetivo selecionar e viabilizar iniciativas socioambientais por meio de recursos de incentivo fiscal municipal nas áreas de atuação da Santos Brasil.",
-      "temas_principais": [
-        "esporte",
-        "cultura",
-        "cidadania",
-        "desenvolvimento territorial e comunitário",
-        "diversidade e inclusão",
-        "educação complementar",
-        "educação profissional",
-        "meio ambiente",
-        "saúde"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": 1,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "SP",
-          "SC"
-        ],
-        "municipios_permitidos": [
-          "Guarujá - SP",
-          "Imbituba - SC",
-          "Santos - SP"
-        ],
-        "natureza_juridica_excluida": [
-          "Pessoas Físicas",
-          "Microempreendedores Individuais (MEIs)",
-          "Coletivos",
-          "grupos informais",
-          "sindicato",
-          "associações classistas",
-          "religioso"
-        ]
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": true,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Apresentar documento comprobatório de inscrição e/ou aprovação no mecanismo municipal de incentivo fiscal",
-          "Proibido o uso de perfis de consultorias ou de outras organizações para a inscrição",
-          "Apresentação de certidões cíveis e criminais",
-          "Preenchimento e assinatura de formulários de partes relacionadas e compromisso anticorrupção"
-        ]
-      },
-      "fonte_dados": "pdf"
-    }
+    "pipeline_status": "PENDING_EXTRACTION"
   },
   {
     "id": "18659",
@@ -621,42 +148,7 @@
     "public_url": "https://prosas.com.br/editais/18659",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/RpaHHyN9Nw4PqP7I9qA3lCxgMKxu3tD03csAE8K0CWz-9p7drS04KXqI6usC9lUT/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/980/334/original/Edital_Rede_Memoria_Viva.docx.pdf",
     "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nEdital - Rede Memória Viva - Iniciativa Viva Pequena África\nApplication opens on:\n03/08/2026 11:00 to 30/10/2026 21:00\nGMT+00 (PM Coordinated Universal Time)\nApply\nINFORMATION\nINFORMATION\nAbout\n A Rede Memória Viva é uma iniciativa do Viva Pequena África, apoiada pelo BNDES, que foi criada para identificar, conectar e fortalecer territórios e organizações que atuam na preservação, valorização e difusão da memória e da herança cultural africana e afro-brasileira no Brasil.\nA Rede reúne iniciativas comprometidas com a proteção do patrimônio cultural, a valorização das narrativas negras e o fortalecimento das comunidades que mantêm viva essa história em diferentes regiões do país. Ao promover a articulação entre organizações, pesquisadores, lideranças e agentes culturais, busca ampliar a troca de experiências, estimular a cooperação entre territórios e fortalecer estratégias de desenvolvimento baseadas na memória, na cultura e na identidade afro-brasileira.\nComo primeira ação da Rede, o Viva Pequena África lança um edital público para adesão de organizações e seleção de iniciativas nacionais que receberão apoio para o desenvolvimento de projetos técnicos e conceituais voltados à qualificação de seus territórios.\nNesta edição, poderão integrar a Rede organizações que atuem com memória, patrimônio e valorização da herança cultural africana e afro-brasileira. Além da adesão à Rede, o edital selecionará até quatro ações, em territórios distintos, que receberão apoio para o desenvolvimento técnico e conceitual de projetos nas áreas de arquitetura, interpretação do patrimônio e/ou museologia.\nMais do que um processo seletivo, a Rede Memória Viva é uma estratégia de articulação nacional que reconhece os territórios como espaços de produção de conhecimento e preservação da memória.\nSee the full description\nTypes of entrepreneurs who are eligible to apply\nperson\nFor-profit Corporation\nperson\nNonprofit Corporation\nperson\nGovernmental Organization or Agency\nArea of practice\nSupport managing Third Sector organizations\nArts and Culture\nCommunity development\nEducation\nEntrepreneurship / Employment and Income Generation\nSubarea\nDance\nTheatre\nPopular Music\nAudiovisual\nPhotography\nVisual / Plastic Arts\nMuseum / Cultural Center\nLiterature\nHistoric Heritage\nAfro-brazilian Culture\nTarget Audience\nBlack Community\nSustainable Development Goals\nIniciativa Viva Pequena África - Rede Memoria Viva\nAdditional Files\nRede Memória Viva\n",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "18659",
-      "resumo_objetivo": "Promover a adesão de territórios e organizações locais à Rede Memória Viva e selecionar ações para o desenvolvimento de projetos técnico-conceituais em arquitetura, interpretação do patrimônio e museologia.",
-      "temas_principais": [
-        "cultura",
-        "patrimônio histórico",
-        "memória afro-brasileira",
-        "igualdade racial",
-        "turismo"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Apresentar comprovante de existência jurídica (CNPJ)",
-          "Breve histórico de atuação no território",
-          "Identificação das principais referências de memória e patrimônio do território",
-          "Declaração de ciência e concordância com os objetivos e princípios da Rede Memória Viva",
-          "Apresentar cartas de anuência em caso de projeto coletivo"
-        ]
-      },
-      "fonte_dados": "pdf"
-    }
+    "pipeline_status": "PENDING_EXTRACTION"
   },
   {
     "id": "19389",
@@ -665,37 +157,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19389",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19389",
-      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [
-        "geral",
-        "editais",
-        "captação de recursos"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro e login na plataforma Prosas para continuar"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19406",
@@ -704,31 +166,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19406",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19406",
-      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para visualização de oportunidades.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19299",
@@ -737,31 +175,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19299",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19299",
-      "resumo_objetivo": "A página apresentada é apenas a tela de login da plataforma Prosas e não contém informações sobre um edital ou financiamento específico.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19385",
@@ -770,31 +184,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19385",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19385",
-      "resumo_objetivo": "Esta página representa a tela de login da plataforma Prosas para acesso a oportunidades e editais.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19347",
@@ -803,35 +193,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19347",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19347",
-      "resumo_objetivo": "Esta é a página de login da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [
-        "geral",
-        "editais",
-        "oportunidades"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19417",
@@ -840,31 +202,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19417",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19417",
-      "resumo_objetivo": "Página de login da plataforma Prosas para visualização e cadastro de oportunidades.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19308",
@@ -873,35 +211,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19308",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19308",
-      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a oportunidades e editais.",
-      "temas_principais": [
-        "geral"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro na plataforma Prosas"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19333",
@@ -910,36 +220,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19333",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19333",
-      "resumo_objetivo": "Esta é a página de login da plataforma Prosas para acesso a oportunidades de editais e patrocínios.",
-      "temas_principais": [
-        "editais",
-        "captação de recursos"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "É necessário possuir cadastro na plataforma Prosas para acessar as oportunidades"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19429",
@@ -948,31 +229,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19429",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19429",
-      "resumo_objetivo": "Esta página representa o portal de acesso e cadastro da plataforma Prosas para visualização de oportunidades e editais.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19430",
@@ -981,37 +238,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19430",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19430",
-      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [
-        "geral",
-        "editais",
-        "oportunidades"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro na plataforma Prosas para continuar"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19447",
@@ -1020,35 +247,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19447",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19447",
-      "resumo_objetivo": "Esta página representa o portal de acesso e cadastro da plataforma Prosas para visualização de oportunidades.",
-      "temas_principais": [
-        "geral"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro na plataforma Prosas para continuar"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19448",
@@ -1057,37 +256,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19448",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19448",
-      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [
-        "geral",
-        "editais",
-        "captação de recursos"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro na plataforma Prosas"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19452",
@@ -1096,37 +265,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19452",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19452",
-      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [
-        "geral",
-        "editais",
-        "oportunidades"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro na plataforma Prosas"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19179",
@@ -1135,35 +274,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19179",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19179",
-      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a oportunidades de editais.",
-      "temas_principais": [
-        "geral"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Exige cadastro ou login prévio na plataforma Prosas"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18997",
@@ -1172,35 +283,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=18997",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "18997",
-      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [
-        "geral"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro na plataforma Prosas para continuar"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18822",
@@ -1209,37 +292,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=18822",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "18822",
-      "resumo_objetivo": "Página de login da plataforma Prosas para visualização e inscrição em editais e oportunidades.",
-      "temas_principais": [
-        "editais",
-        "oportunidades",
-        "projetos sociais"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro na plataforma Prosas para continuar"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "16189",
@@ -1248,31 +301,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=16189",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "16189",
-      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17831",
@@ -1281,31 +310,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17831",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "17831",
-      "resumo_objetivo": "Esta página representa o portal de acesso e cadastro da plataforma Prosas para visualização de oportunidades e editais.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17532",
@@ -1314,31 +319,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17532",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "17532",
-      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17914",
@@ -1347,35 +328,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17914",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "17914",
-      "resumo_objetivo": "Página de login e cadastro da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [
-        "geral"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro na plataforma Prosas para participar."
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17927",
@@ -1384,31 +337,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17927",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "17927",
-      "resumo_objetivo": "Página de login da plataforma Prosas para visualização e cadastro de oportunidades.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17991",
@@ -1417,31 +346,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17991",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "17991",
-      "resumo_objetivo": "Página de login da plataforma Prosas para visualização e cadastro de oportunidades.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "18157",
@@ -1450,37 +355,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=18157",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "18157",
-      "resumo_objetivo": "Esta é a página de login da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [
-        "geral",
-        "editais",
-        "oportunidades"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Exige cadastro e login na plataforma Prosas"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "17348",
@@ -1489,34 +364,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17348",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "17348",
-      "resumo_objetivo": "Página de login da plataforma Prosas para visualização de editais e oportunidades.",
-      "temas_principais": [
-        "editais",
-        "projetos sociais"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19480",
@@ -1525,35 +373,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19480",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19480",
-      "resumo_objetivo": "Esta página requer o login ou cadastro na plataforma Prosas para acessar as oportunidades de editais.",
-      "temas_principais": [
-        "geral"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro e fazer login na plataforma Prosas para visualizar os editais"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19532",
@@ -1562,31 +382,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19532",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19532",
-      "resumo_objetivo": "Página de login da plataforma Prosas para visualização e cadastro de oportunidades.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19512",
@@ -1595,37 +391,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19512",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19512",
-      "resumo_objetivo": "Esta página representa o portal de acesso e cadastro da plataforma Prosas para visualização de oportunidades.",
-      "temas_principais": [
-        "editais",
-        "fomento",
-        "projetos"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro na plataforma Prosas"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19513",
@@ -1634,31 +400,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19513",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19513",
-      "resumo_objetivo": "Página de login da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19514",
@@ -1667,33 +409,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19514",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19514",
-      "resumo_objetivo": "Página de login da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [
-        "geral"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19530",
@@ -1702,35 +418,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19530",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19530",
-      "resumo_objetivo": "Esta página requer que o usuário faça o login ou crie um perfil na plataforma Prosas para acessar as oportunidades de editais.",
-      "temas_principais": [
-        "geral"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Exige cadastro ou login prévio na plataforma Prosas"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19531",
@@ -1739,35 +427,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19531",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19531",
-      "resumo_objetivo": "Esta é a página de login da plataforma Prosas, onde os usuários devem se autenticar para acessar e visualizar editais e oportunidades.",
-      "temas_principais": [
-        "geral"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro e login na plataforma Prosas para continuar"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19465",
@@ -1776,35 +436,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19465",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19465",
-      "resumo_objetivo": "Esta página requer o login ou cadastro na plataforma Prosas para acessar as oportunidades de editais.",
-      "temas_principais": [
-        "geral"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro e realizar login na plataforma Prosas"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19567",
@@ -1813,33 +445,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19567",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19567",
-      "resumo_objetivo": "Página de login da plataforma Prosas para acesso a editais e oportunidades.",
-      "temas_principais": [
-        "geral"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19464",
@@ -1848,37 +454,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19464",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19464",
-      "resumo_objetivo": "Esta página representa o portal de acesso e cadastro da plataforma Prosas para visualização de editais e oportunidades.",
-      "temas_principais": [
-        "editais",
-        "fomento",
-        "projetos sociais"
-      ],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Necessário possuir cadastro na plataforma Prosas"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19361",
@@ -1887,31 +463,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19361",
-    "full_text": "OPPORTUNITIES\nmode_edit\nREGISTER\nlock\nLOGIN\nPT\nEN\nES\nProfile already registered on Prosas?\nEnter your e-mail and password\nE-mail\nForgot your e-mail?\nPassword\nForgot your password?\nRemind me\nYou need to sign in or sign up before continuing.\nYou don't have a profile yet?\nCreate an account for free\nREGISTER\nPRIVACYFUNCTIONALITIESBLOGCONTACT\nHelp\n       #vlibras-access { display: flex; align-items: center; position: fixed; z-index: 2147483639; right: 10px; flex-direction: row; top: calc(50vh - 20px); transition: all .5s ease; width: 40px; height: 40px; &:hover, &:has(#vlibras-button:focus-visible) { width: 200px; } } #vlibras-button, #vlibras-popup { border-radius: 8px; overflow: hidden; height: 40px; } #vlibras-button { right: 0; z-index: 1; position: absolute; width: 40px; border: none; padding: 0; cursor: pointer; outline: var(--vlibras-btn-outline); &:focus-visible { outline: var(--vlibras-btn-focus-visible-outline, 2px solid #fff); box-shadow: var(--vlibras-btn-focus-visible-shadow, 0 0 10px 4px #1351b4); } &:hover { filter: var(--vlibras-btn-hover-filter, brightness(1.1)); } }",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "19361",
-      "resumo_objetivo": "Pagina de login da plataforma Prosas para acesso a oportunidades e editais.",
-      "temas_principais": [],
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": []
-      },
-      "fonte_dados": "texto_pagina"
-    }
+    "pipeline_status": "NEW_FROM_API"
   },
   {
     "id": "19357",

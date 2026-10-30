@@ -3,6 +3,15 @@ import * as path from 'path';
 import { chromium } from 'playwright-extra';
 import stealth from 'puppeteer-extra-plugin-stealth';
 
+function formatGoogleDriveUrl(url: string) {
+    if (!url) return url;
+    const driveMatch = url.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+    if (driveMatch) {
+        return `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
+    }
+    return url;
+}
+
 async function capturePdfFromButton(page: any, context: any): Promise<string | null> {
     let newPage: any = null;
     let interceptedUrl: string | null = null;
@@ -20,19 +29,61 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
     });
 
     try {
-        // Find the "Acessar" or "Inscreva-se" button
-        const button = page.locator('text="Acessar"').or(page.locator('text="Inscreva-se"')).first();
-        const count = await button.count();
-        if (count === 0) return null;
+        // Wait slightly longer so SPA/Web Components finish rendering
+        await page.waitForTimeout(3500);
 
-        // Set up listener for a new tab/popup
-        const pagePromise = context.waitForEvent('page', { timeout: 5000 }).catch(() => null);
+        // Find the "Acessar" or "Inscreva-se" button via DOM and Shadow DOM
+        const btnSelector = await page.evaluateHandle(() => {
+            const getButton = (root) => {
+                const els = root.querySelectorAll('*');
+                for (const el of els) {
+                    if (el.shadowRoot) {
+                        const res = getButton(el.shadowRoot);
+                        if (res) return res;
+                    }
+                    if (el.tagName === 'BUTTON' || el.tagName === 'A') {
+                        const txt = (el.textContent || '').toLowerCase().trim();
+                        if (txt.includes('acessar') || txt.includes('inscreva-se') || txt.includes('edital') || txt.includes('regulamento') || txt.includes('abrir')) {
+                            return el;
+                        }
+                    }
+                }
+                return null;
+            };
+            return getButton(document);
+        });
 
-        await button.click({ timeout: 5000 }).catch(() => null);
+        const isBtnFound = await page.evaluate(btn => btn !== null, btnSelector);
+        if (!isBtnFound) {
+            // fallback to locator
+            const button = page.locator('text="Acessar"').or(page.locator('text="Inscreva-se"')).first();
+            const count = await button.count();
+            if (count === 0) return null;
 
-        // Wait briefly to see if navigation or popup triggered
-        await page.waitForTimeout(2000);
-        newPage = await pagePromise;
+            const pagePromise = context.waitForEvent('page', { timeout: 5000 }).catch(() => null);
+            const downloadPromise = page.waitForEvent('download', { timeout: 5000 }).catch(() => null);
+            await button.click({ timeout: 5000 }).catch(() => null);
+            await page.waitForTimeout(2000);
+
+            newPage = await pagePromise;
+
+            const download = await downloadPromise;
+            if (download) {
+                return download.url();
+            }
+        } else {
+            const pagePromise = context.waitForEvent('page', { timeout: 5000 }).catch(() => null);
+            const downloadPromise = page.waitForEvent('download', { timeout: 5000 }).catch(() => null);
+            await btnSelector.evaluate(btn => btn.click()).catch(() => null);
+            await page.waitForTimeout(2000);
+
+            newPage = await pagePromise;
+
+            const download = await downloadPromise;
+            if (download) {
+                return download.url();
+            }
+        }
 
         let targetPage = page;
         let resolvedUrl = interceptedUrl || page.url(); // Fallback to current URL if no navigation happened
@@ -43,7 +94,8 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
             resolvedUrl = targetPage.url();
         } else if (interceptedUrl) {
             // We caught a same-tab navigation. Check if it's a PDF.
-            if (interceptedUrl.toLowerCase().endsWith('.pdf') || interceptedUrl.toLowerCase().includes('.pdf?')) {
+            interceptedUrl = formatGoogleDriveUrl(interceptedUrl);
+            if (interceptedUrl.toLowerCase().endsWith('.pdf') || interceptedUrl.toLowerCase().includes('.pdf?') || interceptedUrl.includes('drive.google.com/uc?export=download')) {
                  return interceptedUrl;
             } else {
                  // It's an HTML page but we aborted it on the main page.
@@ -62,7 +114,8 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
         }
 
         // Scenario A: Direct PDF
-        if (resolvedUrl.toLowerCase().endsWith('.pdf') || resolvedUrl.toLowerCase().includes('.pdf?')) {
+        resolvedUrl = formatGoogleDriveUrl(resolvedUrl);
+        if (resolvedUrl.toLowerCase().endsWith('.pdf') || resolvedUrl.toLowerCase().includes('.pdf?') || resolvedUrl.includes('drive.google.com/uc?export=download')) {
             return resolvedUrl;
         }
 
@@ -72,8 +125,9 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
             let fallbackPdf = null;
 
             for (const link of links) {
-                const href = link.href || link.getAttribute('href') || '';
-                if (href.toLowerCase().endsWith('.pdf') || href.toLowerCase().includes('.pdf?')) {
+                let href = link.href || link.getAttribute('href') || '';
+                href = formatGoogleDriveUrl(href);
+                if (href.toLowerCase().endsWith('.pdf') || href.toLowerCase().includes('.pdf?') || href.includes('drive.google.com/uc?export=download')) {
                     const text = (link.textContent || '').toLowerCase();
                     if (text.includes('edital') || text.includes('regulamento') || text.includes('chamada') || text.includes('retificação')) {
                         return href;
@@ -128,6 +182,13 @@ async function runStandaloneScraper() {
         if (page.url().includes('/users/sign_in')) {
             throw new Error("[StandaloneProsasScraper] Failed to navigate past login page.");
         }
+
+        // Navigate to produtos.prosas.com.br to ensure SSO/cookie domain propagation
+        await page.goto('https://produtos.prosas.com.br/editais', { waitUntil: 'networkidle', timeout: 60000 }).catch(() => {});
+        await page.waitForTimeout(3000);
+
+        // Save authenticated session state
+        const storageState = await context.storageState();
 
 
         const allItems: any[] = [];
@@ -298,7 +359,7 @@ async function runStandaloneScraper() {
             let chunkContext: any = null;
 
             try {
-                chunkContext = await browser.newContext();
+                chunkContext = await browser.newContext({ storageState });
                 const queue = [...chunk];
 
                 await Promise.all(
@@ -339,6 +400,12 @@ async function runStandaloneScraper() {
                                     return text.replace(/\n\s*\n/g, '\n').trim();
                                 });
 
+                                // Login Wall Guard
+                                if (pageText.includes("Você precisa se logar") || pageText.includes("You need to sign in or sign up")) {
+                                    console.warn(`[StandaloneProsasScraper] Hit login wall on ${detailUrl}. Bailing out.`);
+                                    throw new Error("Hit login wall - skipping to prevent poisoning data.");
+                                }
+
                                 // Smart Capture Strategy
                                 let smartPdf = await capturePdfFromButton(workerPage, chunkContext);
 
@@ -362,9 +429,9 @@ async function runStandaloneScraper() {
                                     for (let i = 0; i < allLinks.length; i++) {
                                         const a = allLinks[i];
                                         const btnText = (a.textContent || '').toLowerCase().trim();
-                                        const href = a.href || a.getAttribute('href') || '';
-
-                                        if (href && (href.toLowerCase().endsWith('.pdf') || href.toLowerCase().includes('.pdf?'))) {
+                                        let href = a.href || a.getAttribute('href') || '';
+                                        href = formatGoogleDriveUrl(href);
+                                        if (href && (href.toLowerCase().endsWith('.pdf') || href.toLowerCase().includes('.pdf?') || href.includes('drive.google.com/uc?export=download'))) {
                                             const isAnnex = btnText.includes('anexo') || btnText.includes('modelo') || btnText.includes('planilha') || btnText.includes('formulario') || href.toLowerCase().includes('anexo') || href.toLowerCase().includes('modelo') || href.toLowerCase().includes('planilha') || href.toLowerCase().includes('formulario');
 
                                             if (isAnnex) {
@@ -382,7 +449,7 @@ async function runStandaloneScraper() {
                                 });
 
                                 const finalPdfLink = smartPdf || pdfLink;
-                                if (finalPdfLink && (finalPdfLink.toLowerCase().endsWith('.pdf') || finalPdfLink.toLowerCase().includes('.pdf?'))) {
+                                if (finalPdfLink && (finalPdfLink.toLowerCase().endsWith('.pdf') || finalPdfLink.toLowerCase().includes('.pdf?') || finalPdfLink.includes('drive.google.com/uc?export=download'))) {
                                     item.pdf_link = finalPdfLink;
                                 } else {
                                     item.pdf_link = undefined; // Strict constraint: No Garbage URLs

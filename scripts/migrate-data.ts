@@ -9,15 +9,21 @@ async function migrate() {
         let data = JSON.parse(rawData);
 
         data = data.map((item: any) => {
-            delete item.deep_metadata;
-            delete item.full_text;
-            delete item.pdf_link;
-            delete item.retry_count;
-            delete item.last_error;
-            delete item.pdf_error;
-            delete item.pdf_skipped;
+            const hasLoginWallFullText = item.full_text && (item.full_text.includes("Você precisa se logar") || item.full_text.includes("You need to sign in or sign up"));
+            const hasLoginWallResumo = item.deep_metadata && item.deep_metadata.resumo_objetivo && (item.deep_metadata.resumo_objetivo.includes("login") || item.deep_metadata.resumo_objetivo.includes("cadastro") || item.deep_metadata.resumo_objetivo.includes("Prosas"));
+            const isCompletedTextWithoutPdf = item.pipeline_status === 'COMPLETED' && item.deep_metadata && item.deep_metadata.fonte_dados === 'texto_pagina' && !item.pdf_link;
 
-            item.pipeline_status = 'NEW_FROM_API';
+            if (hasLoginWallFullText || hasLoginWallResumo || isCompletedTextWithoutPdf) {
+                delete item.deep_metadata;
+                delete item.full_text;
+                item.pipeline_status = 'NEW_FROM_API';
+                console.log(`Resetting item ${item.id} to NEW_FROM_API due to login wall or missing PDF for completed text`);
+            } else if (item.pdf_link && (!item.deep_metadata || !item.deep_metadata.drive_pdf_link)) {
+                delete item.deep_metadata;
+                item.pipeline_status = 'PENDING_EXTRACTION';
+                console.log(`Setting item ${item.id} to PENDING_EXTRACTION to upload PDF to Drive`);
+            }
+
             return item;
         });
 

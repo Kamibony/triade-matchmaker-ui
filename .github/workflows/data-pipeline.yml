@@ -53,6 +53,7 @@ jobs:
       - name: Run Extractor Immediately After
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_DRIVE_CREDENTIALS: ${{ secrets.GCP_DRIVE_CREDENTIALS }}
           MAX_EXTRACT: ${{ github.event.inputs.max_extract || '15' }}
         run: npm run extract-metadata
 

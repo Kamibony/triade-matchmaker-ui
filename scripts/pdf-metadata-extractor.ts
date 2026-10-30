@@ -227,7 +227,13 @@ export async function processEditais() {
             break;
         }
 
-        const pdfLink = edital.pdf_link || edital.external_link;
+        let pdfLink = edital.pdf_link || edital.external_link;
+        if (pdfLink && pdfLink.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/)) {
+            const driveMatch = pdfLink.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+            if (driveMatch) {
+                pdfLink = `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
+            }
+        }
         let useTextFallback = false;
         let downloadResult: { success: boolean, data?: ArrayBuffer, error?: string, skip?: boolean, notPdf?: boolean } = { success: false, notPdf: true };
 
