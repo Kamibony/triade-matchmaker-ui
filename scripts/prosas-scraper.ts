@@ -12,9 +12,55 @@ function formatGoogleDriveUrl(url: string) {
     return url;
 }
 
+async function loginOnProdutosIfNeeded(workerPage: any, username: string, password: string) {
+    return await workerPage.evaluate(async ({ u, p }: { u: string, p: string }) => {
+        const isLoginInput = (el: Element) => {
+            return (el.tagName === 'INPUT' && (
+                el.getAttribute('type') === 'email' ||
+                (el.getAttribute('name') && el.getAttribute('name')!.toLowerCase().includes('email')) ||
+                (el.getAttribute('placeholder') && el.getAttribute('placeholder')!.toLowerCase().includes('mail')) ||
+                el.getAttribute('type') === 'text'
+            ));
+        };
+        const isPasswordInput = (el: Element) => el.tagName === 'INPUT' && el.getAttribute('type') === 'password';
+        const isSubmitBtn = (el: Element) => (el.tagName === 'INPUT' || el.tagName === 'BUTTON') && el.getAttribute('type') === 'submit';
+
+        const findAllElements = (root: Document | ShadowRoot | Element): Element[] => {
+            let els: Element[] = [];
+            const children = root.querySelectorAll('*');
+            for (const child of children) {
+                els.push(child);
+                if (child.shadowRoot) {
+                    els = els.concat(findAllElements(child.shadowRoot));
+                }
+            }
+            return els;
+        };
+
+        const allElements = findAllElements(document);
+        let emailInput = allElements.find(isLoginInput) as HTMLInputElement;
+        let passInput = allElements.find(isPasswordInput) as HTMLInputElement;
+        let submitBtn = allElements.find(isSubmitBtn) as HTMLButtonElement | HTMLInputElement;
+
+        if (emailInput && passInput && submitBtn) {
+            emailInput.value = u;
+            passInput.value = p;
+            emailInput.dispatchEvent(new Event('input', { bubbles: true }));
+            emailInput.dispatchEvent(new Event('change', { bubbles: true }));
+            passInput.dispatchEvent(new Event('input', { bubbles: true }));
+            passInput.dispatchEvent(new Event('change', { bubbles: true }));
+            submitBtn.click();
+            return true;
+        }
+        return false;
+    }, { u: username, p: password });
+}
+
 async function capturePdfFromButton(page: any, context: any): Promise<string | null> {
     let newPage: any = null;
+    let targetPage: any = page;
     let interceptedUrl: string | null = null;
+    let resolvedUrl: string = '';
     let abortNavigation = false;
 
     // Set up request interception on the main page to catch same-tab navigation
@@ -102,9 +148,29 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
                      interceptedUrl = resolvedUrl;
                  } catch (e) {}
             }
-        }
+        } else if (isBtnFound) {
+            // Click using evaluate since we have the handle via DOM traversal
+            const pagePromise = context.waitForEvent('page', { timeout: 5000 }).catch(() => null);
+            const downloadPromise = page.waitForEvent('download', { timeout: 5000 }).catch(() => null);
 
-        if (!isBtnFound) {
+            try {
+                await Promise.all([
+                    page.waitForNavigation({ waitUntil: 'networkidle', timeout: 5000 }).catch(() => {}),
+                    btnSelector.evaluate((btn: any) => btn.click())
+                ]);
+            } catch (e) {}
+
+            await page.waitForTimeout(2000);
+
+            newPage = await pagePromise;
+
+            const download = await downloadPromise;
+            if (download) {
+                return download.url();
+            }
+
+            resolvedUrl = targetPage.url();
+        } else {
             // fallback to locator
             const button = page.locator('text="Acessar"').or(page.locator('text="Inscreva-se"')).first();
             const count = await button.count();
@@ -121,22 +187,11 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
             if (download) {
                 return download.url();
             }
-        } else {
-            const pagePromise = context.waitForEvent('page', { timeout: 5000 }).catch(() => null);
-            const downloadPromise = page.waitForEvent('download', { timeout: 5000 }).catch(() => null);
-            await btnSelector.evaluate(btn => btn.click()).catch(() => null);
-            await page.waitForTimeout(2000);
-
-            newPage = await pagePromise;
-
-            const download = await downloadPromise;
-            if (download) {
-                return download.url();
-            }
         }
 
-        let targetPage = page;
-        let resolvedUrl = interceptedUrl || page.url(); // Fallback to current URL if no navigation happened
+        if (!resolvedUrl) {
+            resolvedUrl = interceptedUrl || page.url(); // Fallback to current URL if no navigation happened
+        }
 
         if (newPage) {
             targetPage = newPage;
@@ -244,6 +299,9 @@ async function runStandaloneScraper() {
 
         // Navigate to produtos.prosas.com.br to ensure SSO/cookie domain propagation
         await page.goto('https://produtos.prosas.com.br/editais', { waitUntil: 'networkidle', timeout: 60000 }).catch(() => {});
+        await page.waitForTimeout(3000);
+
+        await loginOnProdutosIfNeeded(page, username, password);
         await page.waitForTimeout(3000);
 
         // Save authenticated session state
@@ -420,10 +478,8 @@ async function runStandaloneScraper() {
         const chunkSize = 50;
         for (let i = 0; i < itemsToDeepScrape.length; i += chunkSize) {
             const chunk = itemsToDeepScrape.slice(i, i + chunkSize);
-            let chunkContext: any = null;
 
             try {
-                chunkContext = await browser.newContext({ storageState });
                 const queue = [...chunk];
 
                 await Promise.all(
@@ -440,7 +496,7 @@ async function runStandaloneScraper() {
 
                             let workerPage: any = null;
                             try {
-                                workerPage = await chunkContext.newPage();
+                                workerPage = await context.newPage();
                                 workerPage.on('dialog', async (dialog: any) => { await dialog.dismiss().catch(() => {}); });
                                 await workerPage.goto(detailUrl, { waitUntil: 'networkidle', timeout: 60000 });
                                 await workerPage.waitForTimeout(2000).catch(() => {});
@@ -463,21 +519,7 @@ async function runStandaloneScraper() {
                                     const password = process.env.PROSAS_PASSWORD;
 
                                     if (username && password) {
-                                        const loginSuccess = await workerPage.evaluate(({u, p}: {u: string, p: string}) => {
-                                            const emailInput = document.querySelector('input[type="email"]') as HTMLInputElement;
-                                            const passInput = document.querySelector('input[type="password"]') as HTMLInputElement;
-                                            const submitBtn = document.querySelector('input[type="submit"], button[type="submit"]') as HTMLButtonElement | HTMLInputElement;
-
-                                            if (emailInput && passInput && submitBtn) {
-                                                emailInput.value = u;
-                                                passInput.value = p;
-                                                emailInput.dispatchEvent(new Event('input', { bubbles: true }));
-                                                passInput.dispatchEvent(new Event('input', { bubbles: true }));
-                                                submitBtn.click();
-                                                return true;
-                                            }
-                                            return false;
-                                        }, {u: username, p: password});
+                                        const loginSuccess = await loginOnProdutosIfNeeded(workerPage, username, password);
 
                                         if (loginSuccess) {
                                             await workerPage.waitForTimeout(5000).catch(() => {});
@@ -501,7 +543,7 @@ async function runStandaloneScraper() {
                                 }
 
                                 // Smart Capture Strategy
-                                let smartPdf = await capturePdfFromButton(workerPage, chunkContext);
+                                let smartPdf = await capturePdfFromButton(workerPage, context);
 
                                 let pdfLink = await workerPage.evaluate(() => {
                                     const formatGoogleDriveUrl = (url: string) => {
@@ -586,10 +628,8 @@ async function runStandaloneScraper() {
                         }
                     })
                 );
-            } finally {
-                if (chunkContext) {
-                    try { await chunkContext.close(); } catch (e) {}
-                }
+            } catch (err: any) {
+                console.error(`[StandaloneProsasScraper] Error processing chunk: ${err.message}`);
             }
         }
 
