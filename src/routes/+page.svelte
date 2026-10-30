@@ -113,10 +113,8 @@
                       <span class="ml-2 flex-shrink-0">
                         {#if !osc.eligibility.isEligible}
                           <span title={osc.eligibility.failedReason}>❌</span>
-                        {:else if osc.eligibility.score > 0}
-                          <span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded" title="Strong Match: Score {osc.eligibility.score}">✅</span>
                         {:else}
-                          <span title="Eligible but no theme match">⚠️</span>
+                          <span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded" title="Eligible for Phase 2">✅</span>
                         {/if}
                       </span>
                     </div>
