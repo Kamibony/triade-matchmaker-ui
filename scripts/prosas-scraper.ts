@@ -33,8 +33,35 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
         await page.waitForTimeout(3500);
 
         // Find the "Acessar" or "Inscreva-se" button via DOM and Shadow DOM
+        const buttonInfo = await page.evaluate(() => {
+            const getButtonInfo = (root: Document | ShadowRoot | Element): { found: boolean, isAnchor: boolean, href: string | null, html: string } | null => {
+                const els = root.querySelectorAll('*');
+                for (const el of els) {
+                    if (el.shadowRoot) {
+                        const res = getButtonInfo(el.shadowRoot);
+                        if (res) return res;
+                    }
+                    if (el.tagName === 'BUTTON' || el.tagName === 'A') {
+                        const txt = (el.textContent || '').toLowerCase().trim();
+                        if (['acessar', 'inscreva-se', 'acessar edital', 'baixar edital', 'ver edital', 'abrir edital'].includes(txt)) {
+                            if (el.tagName === 'A') {
+                                const a = el as HTMLAnchorElement;
+                                const href = a.href || a.getAttribute('href');
+                                if (href && !href.startsWith('javascript:') && !href.startsWith('#')) {
+                                     return { found: true, isAnchor: true, href: href, html: el.outerHTML };
+                                }
+                            }
+                            return { found: true, isAnchor: false, href: null, html: el.outerHTML };
+                        }
+                    }
+                }
+                return null;
+            };
+            return getButtonInfo(document);
+        });
+
         const btnSelector = await page.evaluateHandle(() => {
-            const getButton = (root) => {
+            const getButton = (root: Document | ShadowRoot | Element): Element | null => {
                 const els = root.querySelectorAll('*');
                 for (const el of els) {
                     if (el.shadowRoot) {
@@ -43,7 +70,7 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
                     }
                     if (el.tagName === 'BUTTON' || el.tagName === 'A') {
                         const txt = (el.textContent || '').toLowerCase().trim();
-                        if (txt.includes('acessar') || txt.includes('inscreva-se') || txt.includes('edital') || txt.includes('regulamento') || txt.includes('abrir')) {
+                        if (['acessar', 'inscreva-se', 'acessar edital', 'baixar edital', 'ver edital', 'abrir edital'].includes(txt)) {
                             return el;
                         }
                     }
@@ -54,6 +81,29 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
         });
 
         const isBtnFound = await page.evaluate(btn => btn !== null, btnSelector);
+        if (buttonInfo?.isAnchor && buttonInfo.href) {
+             const formatGoogleDriveUrl = (url: string) => {
+                if (!url) return url;
+                const driveMatch = url.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+                if (driveMatch) {
+                    return `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
+                }
+                return url;
+            };
+            let directHref = formatGoogleDriveUrl(buttonInfo.href);
+            if (directHref.toLowerCase().endsWith('.pdf') || directHref.toLowerCase().includes('.pdf?') || directHref.includes('drive.google.com/uc?export=download')) {
+                 return directHref;
+            } else {
+                 try {
+                     newPage = await context.newPage();
+                     await newPage.goto(directHref, { waitUntil: 'networkidle', timeout: 15000 });
+                     targetPage = newPage;
+                     resolvedUrl = targetPage.url();
+                     interceptedUrl = resolvedUrl;
+                 } catch (e) {}
+            }
+        }
+
         if (!isBtnFound) {
             // fallback to locator
             const button = page.locator('text="Acessar"').or(page.locator('text="Inscreva-se"')).first();
@@ -121,6 +171,15 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
 
         // Scenario B: HTML Landing Page -> Deep Hunter
         const pdfLink = await targetPage.evaluate(() => {
+            const formatGoogleDriveUrl = (url: string) => {
+                if (!url) return url;
+                const driveMatch = url.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+                if (driveMatch) {
+                    return `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
+                }
+                return url;
+            };
+
             const links = Array.from(document.querySelectorAll('a'));
             let fallbackPdf = null;
 
@@ -349,7 +408,12 @@ async function runStandaloneScraper() {
         let deduplicatedItems = Array.from(masterMap.values());
 
         const maxDeepScrape = process.env.MAX_DEEP_SCRAPE ? parseInt(process.env.MAX_DEEP_SCRAPE, 10) : 450;
-        const itemsToDeepScrape = deduplicatedItems.slice(0, maxDeepScrape);
+        const forceRescrape = process.env.FORCE_RESCRAPE === 'true';
+        const eligibleItems = deduplicatedItems.filter(item =>
+            forceRescrape || (item.pipeline_status !== 'COMPLETED' && item.pipeline_status !== 'FAILED_PERMANENTLY' && item.pipeline_status !== 'PENDING_EXTRACTION')
+        );
+        const itemsToDeepScrape = eligibleItems.slice(0, maxDeepScrape);
+
         const concurrency = 2;
         let processedCount = 0;
 
@@ -368,14 +432,6 @@ async function runStandaloneScraper() {
                             const item = queue.shift();
 
                             if (!item) break;
-
-                            const forceRescrape = process.env.FORCE_RESCRAPE === 'true';
-
-                            if (item.pipeline_status === 'COMPLETED' || item.pipeline_status === 'FAILED_PERMANENTLY' || item.pipeline_status === 'PENDING_EXTRACTION') {
-                                if (!forceRescrape) {
-                                     continue; // Skip items unless forced
-                                }
-                            }
 
                             const isCentral = item.attributes && item.attributes['e_central?'] === true;
                             const detailUrl = isCentral
@@ -402,14 +458,61 @@ async function runStandaloneScraper() {
 
                                 // Login Wall Guard
                                 if (pageText.includes("Você precisa se logar") || pageText.includes("You need to sign in or sign up")) {
-                                    console.warn(`[StandaloneProsasScraper] Hit login wall on ${detailUrl}. Bailing out.`);
-                                    throw new Error("Hit login wall - skipping to prevent poisoning data.");
+                                    console.warn(`[StandaloneProsasScraper] Hit login wall on ${detailUrl}. Attempting to login.`);
+                                    const username = process.env.PROSAS_USERNAME;
+                                    const password = process.env.PROSAS_PASSWORD;
+
+                                    if (username && password) {
+                                        const loginSuccess = await workerPage.evaluate(({u, p}: {u: string, p: string}) => {
+                                            const emailInput = document.querySelector('input[type="email"]') as HTMLInputElement;
+                                            const passInput = document.querySelector('input[type="password"]') as HTMLInputElement;
+                                            const submitBtn = document.querySelector('input[type="submit"], button[type="submit"]') as HTMLButtonElement | HTMLInputElement;
+
+                                            if (emailInput && passInput && submitBtn) {
+                                                emailInput.value = u;
+                                                passInput.value = p;
+                                                emailInput.dispatchEvent(new Event('input', { bubbles: true }));
+                                                passInput.dispatchEvent(new Event('input', { bubbles: true }));
+                                                submitBtn.click();
+                                                return true;
+                                            }
+                                            return false;
+                                        }, {u: username, p: password});
+
+                                        if (loginSuccess) {
+                                            await workerPage.waitForTimeout(5000).catch(() => {});
+                                            pageText = await workerPage.evaluate(() => {
+                                                let text = document.body.innerText || '';
+                                                const allElements = document.querySelectorAll('*');
+                                                for (let i = 0; i < allElements.length; i++) {
+                                                    if (allElements[i].shadowRoot) {
+                                                        text += '\n' + (allElements[i].shadowRoot.textContent || '');
+                                                    }
+                                                }
+                                                return text.replace(/\n\s*\n/g, '\n').trim();
+                                            });
+                                        }
+                                    }
+
+                                    if (pageText.includes("Você precisa se logar") || pageText.includes("You need to sign in or sign up")) {
+                                        console.warn(`[StandaloneProsasScraper] Hit login wall on ${detailUrl}. Bailing out.`);
+                                        throw new Error("Hit login wall - skipping to prevent poisoning data.");
+                                    }
                                 }
 
                                 // Smart Capture Strategy
                                 let smartPdf = await capturePdfFromButton(workerPage, chunkContext);
 
                                 let pdfLink = await workerPage.evaluate(() => {
+                                    const formatGoogleDriveUrl = (url: string) => {
+                                        if (!url) return url;
+                                        const driveMatch = url.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+                                        if (driveMatch) {
+                                            return `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
+                                        }
+                                        return url;
+                                    };
+
                                     let foundPdf = '';
                                     let annexPdf = '';
                                     const allElements = document.querySelectorAll('*');

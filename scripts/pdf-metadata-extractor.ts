@@ -299,7 +299,7 @@ export async function processEditais() {
                 const driveLink = await uploadPdfToDrive(downloadResult.data, fileName);
 
                 if (process.env.GCP_DRIVE_CREDENTIALS && !driveLink) {
-                    throw new Error("Failed to upload to Google Drive");
+                    console.warn("Warning: Failed to upload to Google Drive, proceeding with Gemini extraction anyway.");
                 }
 
                 const metadata = await extractMetadataFromPdf(downloadResult.data);
