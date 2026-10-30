@@ -6,7 +6,8 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19545",
-    "pipeline_status": "NEW_FROM_API"
+    "pipeline_status": "NEW_FROM_API",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
   },
   {
     "id": "19345",
@@ -15,7 +16,8 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19345",
-    "pipeline_status": "NEW_FROM_API"
+    "pipeline_status": "NEW_FROM_API",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
   },
   {
     "id": "19344",
@@ -24,7 +26,8 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19344",
-    "pipeline_status": "NEW_FROM_API"
+    "pipeline_status": "NEW_FROM_API",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
   },
   {
     "id": "19343",
@@ -33,7 +36,8 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19343",
-    "pipeline_status": "NEW_FROM_API"
+    "pipeline_status": "NEW_FROM_API",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
   },
   {
     "id": "19342",
@@ -42,7 +46,8 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19342",
-    "pipeline_status": "NEW_FROM_API"
+    "pipeline_status": "NEW_FROM_API",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
   },
   {
     "id": "19341",
@@ -51,7 +56,8 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19341",
-    "pipeline_status": "NEW_FROM_API"
+    "pipeline_status": "NEW_FROM_API",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
   },
   {
     "id": "19169",
@@ -60,7 +66,8 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19169",
-    "pipeline_status": "NEW_FROM_API"
+    "pipeline_status": "NEW_FROM_API",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
   },
   {
     "id": "18918",
@@ -149,6 +156,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19389",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
     "pipeline_status": "NEW_FROM_API"
   },
   {
@@ -158,6 +166,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19406",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
     "pipeline_status": "NEW_FROM_API"
   },
   {
@@ -167,6 +176,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19299",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
     "pipeline_status": "NEW_FROM_API"
   },
   {
@@ -176,7 +186,8 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19385",
-    "pipeline_status": "NEW_FROM_API"
+    "pipeline_status": "NEW_FROM_API",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
   },
   {
     "id": "19347",
@@ -185,6 +196,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19347",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
     "pipeline_status": "NEW_FROM_API"
   },
   {
@@ -194,6 +206,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19417",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
     "pipeline_status": "NEW_FROM_API"
   },
   {
@@ -203,6 +216,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19308",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
     "pipeline_status": "NEW_FROM_API"
   },
   {
@@ -212,7 +226,8 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19333",
-    "pipeline_status": "NEW_FROM_API"
+    "pipeline_status": "NEW_FROM_API",
+    "last_error": "page.evaluate: ReferenceError: __name is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
   },
   {
     "id": "19429",
@@ -3365,6 +3380,94 @@
     "id": "19569",
     "attributes": {
       "nome": "NOVA LIMA  MG - CHAMAMENTO PÚBLICO - PONTOS DE CULTURA - 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19486",
+    "attributes": {
+      "nome": "SANTARÉM PA - CHAMAMENTO PÚBLICO - FOMENTO MULTILINGUAGENS - 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19440",
+    "attributes": {
+      "nome": "PROGRAMA MÃOS DADAS  Doações Incentivadas - 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19441",
+    "attributes": {
+      "nome": "PROGRAMA MÃOS DADAS Lei da Reciclagem - 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "17350",
+    "attributes": {
+      "nome": "Modalidades 2026 - Residência Artística",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19193",
+    "attributes": {
+      "nome": "BRASIL - FOMENTO - INCENTIVO A PROJETOS CULTURAIS (PRONAC) - 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19301",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 001/2026 FOMENTO À EXECUÇÃO DE AÇÕES CULTURAIS  (APOIO DIRETO A PROJETOS)",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "18785",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - TERRITÓRIOS DA RESTAURAÇÃO - 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19482",
+    "attributes": {
+      "nome": "SELEÇÃO CRIANÇA ESPERANÇA   2027",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19475",
+    "attributes": {
+      "nome": "PORTO SEGURO BA - FOMENTO - PROJETOS CULTURAIS - 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19476",
+    "attributes": {
+      "nome": "PORTO SEGURO BA - FOMENTO - AUDIOVISUAL E CULTURA DIGITAL - 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19255",
+    "attributes": {
+      "nome": "GOIÁS - CHAMAMENTO PÚBLICO - RESIDÊNCIA EM SAÚDE - 2026",
       "e_central?": true
     },
     "pipeline_status": "NEW_FROM_API"
