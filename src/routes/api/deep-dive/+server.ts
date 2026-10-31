@@ -4,9 +4,6 @@ import { google } from 'googleapis';
 
 import editaisData from '../../../data/editais_prosas.json';
 
-// We removed pdf-parse as it breaks in Edge environments due to commonjs/esm conflicts.
-// It is recommended to use the fallback `full_text` for Serverless / Edge functions.
-
 async function fetchAndParseDrivePDF(driveUrl: string): Promise<string | null> {
   const credsEnv = process.env.GCP_DRIVE_CREDENTIALS;
   if (!credsEnv) {
@@ -30,12 +27,13 @@ async function fetchAndParseDrivePDF(driveUrl: string): Promise<string | null> {
 
     const response = await drive.files.get(
       { fileId: fileId, alt: 'media' },
-      { responseType: 'stream' }
+      { responseType: 'arraybuffer' }
     );
-    // Since pdf-parse is removed for edge compatibility, we cannot parse the PDF here.
-    // Returning null will trigger the fallback mechanism to use `full_text`.
-    console.warn('PDF parsing from Drive is disabled on edge functions, falling back to full_text');
-    return null;
+
+    const buffer = Buffer.from(response.data as ArrayBuffer);
+    const pdfParse = (await import('pdf-parse')).default;
+    const data = await pdfParse(buffer);
+    return data.text;
   } catch (error) {
     console.error('Error fetching/parsing PDF from Drive:', error);
     return null;
@@ -43,10 +41,21 @@ async function fetchAndParseDrivePDF(driveUrl: string): Promise<string | null> {
 }
 
 async function fetchAndParsePDF(pdfUrl: string): Promise<string | null> {
-  // Since pdf-parse is removed for edge compatibility, we cannot parse the PDF here.
-  // Returning null will trigger the fallback mechanism to use `full_text`.
-  console.warn('Direct PDF parsing is disabled on edge functions, falling back to full_text');
-  return null;
+  try {
+    const response = await fetch(pdfUrl);
+    if (!response.ok) {
+      console.warn(`Failed to fetch PDF from ${pdfUrl}: ${response.statusText}`);
+      return null;
+    }
+    const arrayBuffer = await response.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+    const pdfParse = (await import('pdf-parse')).default;
+    const data = await pdfParse(buffer);
+    return data.text;
+  } catch (error) {
+    console.error('Error fetching/parsing direct PDF:', error);
+    return null;
+  }
 }
 
 export async function POST({ request }: any) {
