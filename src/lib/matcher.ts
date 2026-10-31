@@ -15,20 +15,35 @@ export function calculateMatches(editalDeepMetadata: any, ngosArray: any[]) {
     // Rule 1 (National Coverage) & Rule 2 (String Matching)
     // If abrangencia_nacional is true, skip geography checks.
     if (!abrangencia_nacional) {
-      // (Assume all current NGOs in oscsData are from "PB" and "João Pessoa" if not specified).
       if (estados_permitidos && estados_permitidos.length > 0) {
-        const hasStateMatch = estados_permitidos.some((e: string) => e.toLowerCase().includes('pb'));
-        if (!hasStateMatch) {
+        if (!ngo.uf) {
           isEligible = false;
-          failedReason = 'Não atende restrição estadual';
+          failedReason = 'Não atende restrição estadual (UF não informada)';
+        } else {
+          const hasStateMatch = estados_permitidos.some((e: string) =>
+            e.toLowerCase().includes(ngo.uf.toLowerCase()) ||
+            ngo.uf.toLowerCase().includes(e.toLowerCase())
+          );
+          if (!hasStateMatch) {
+            isEligible = false;
+            failedReason = 'Não atende restrição estadual';
+          }
         }
       }
 
       if (isEligible && municipios_permitidos && municipios_permitidos.length > 0) {
-        const hasCityMatch = municipios_permitidos.some((m: string) => m.toLowerCase().includes('joão pessoa') || m.toLowerCase().includes('joao pessoa'));
-        if (!hasCityMatch) {
+        if (!ngo.municipio) {
           isEligible = false;
-          failedReason = 'Não atende restrição municipal';
+          failedReason = 'Não atende restrição municipal (Município não informado)';
+        } else {
+          const hasCityMatch = municipios_permitidos.some((m: string) =>
+            m.toLowerCase().includes(ngo.municipio.toLowerCase()) ||
+            ngo.municipio.toLowerCase().includes(m.toLowerCase())
+          );
+          if (!hasCityMatch) {
+            isEligible = false;
+            failedReason = 'Não atende restrição municipal';
+          }
         }
       }
     }
