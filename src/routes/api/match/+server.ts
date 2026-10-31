@@ -38,13 +38,11 @@ export async function POST({ request }: any) {
   }
 
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-3.5-flash-lite' });
 
   let allResults: any[] = [];
 
-  for (let i = 0; i < chunks.length; i++) {
-    const chunk = chunks[i];
-
+  const chunkPromises = chunks.map(async (chunk) => {
     const prompt = `
 You are a Third Sector consultant. Your job is to match a Non-Governmental Organization (NGO/OSC) with the most suitable grant opportunities (editais) based on their profile and the grant's objective and themes.
 
@@ -73,18 +71,20 @@ Do not include any other text or markdown formatting (like \`\`\`json). Just ret
       const parsedResults = JSON.parse(cleanedResponse);
 
       if (Array.isArray(parsedResults)) {
-        allResults = allResults.concat(parsedResults);
+        return parsedResults;
       } else {
         console.error('Model returned non-array JSON:', parsedResults);
+        return [];
       }
     } catch (error) {
-      console.error(`Error processing chunk ${i + 1}:`, error);
+      console.error('Error processing chunk:', error);
+      return [];
     }
+  });
 
-    // Simple sleep to avoid rate limiting
-    if (i < chunks.length - 1) {
-      await new Promise(r => setTimeout(r, 4000));
-    }
+  const chunkResults = await Promise.all(chunkPromises);
+  for (const results of chunkResults) {
+    allResults = allResults.concat(results);
   }
 
   allResults.sort((a, b) => (b.score || 0) - (a.score || 0));
