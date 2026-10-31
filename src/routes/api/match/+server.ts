@@ -49,13 +49,15 @@ export async function POST({ request }: any) {
           }
         }
 
-        if (cnaeDesc) {
-           oscProfile.foco_atividades = `${oscProfile.foco_atividades} Atividades registradas: ${cnaeDesc}.`.trim();
-        }
+        oscProfile.foco_atividades = `Descrição do usuário: ${foco_atividades || 'Não informada'}. Atividades oficiais registradas (CNAE): ${cnaeDesc || 'Não encontradas'}`;
 
+      } else {
+        console.error(`BrasilAPI request failed with status: ${response.status}`);
+        oscProfile.foco_atividades = `Descrição do usuário: ${foco_atividades || 'Não informada'}. Atividades oficiais registradas (CNAE): Não encontradas`;
       }
     } catch (err) {
       console.error('Error fetching CNPJ data:', err);
+      oscProfile.foco_atividades = `Descrição do usuário: ${foco_atividades || 'Não informada'}. Atividades oficiais registradas (CNAE): Não encontradas`;
     }
   }
 
