@@ -6,11 +6,9 @@ const require = createRequire(import.meta.url);
 const pdfParse = require('pdf-parse');
 
 import editaisData from '../../../data/editais_prosas.json';
-import { env } from '$env/dynamic/private';
-import type { RequestEvent } from './$types';
 
 async function fetchAndParseDrivePDF(driveUrl: string): Promise<string | null> {
-  const credsEnv = env.GCP_DRIVE_CREDENTIALS;
+  const credsEnv = process.env.GCP_DRIVE_CREDENTIALS;
   if (!credsEnv) {
     console.warn('GCP_DRIVE_CREDENTIALS is not set. Skipping Drive PDF fetch.');
     return null;
@@ -60,10 +58,10 @@ async function fetchAndParsePDF(pdfUrl: string): Promise<string | null> {
   }
 }
 
-export async function POST({ request }: RequestEvent) {
+export async function POST({ request }: any) {
   const { edital_id, oscProfile } = await request.json();
 
-  if (!env.GEMINI_API_KEY) {
+  if (!process.env.GEMINI_API_KEY) {
     return json({ error: 'Missing GEMINI_API_KEY' }, { status: 500 });
   }
 
@@ -104,7 +102,7 @@ export async function POST({ request }: RequestEvent) {
     }
   }
 
-  const genAI = new GoogleGenerativeAI(env.GEMINI_API_KEY);
+  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
   const model = genAI.getGenerativeModel({ model: 'gemini-3.5-flash-lite' });
 
   const prompt = `
