@@ -109,6 +109,25 @@ const sharedGenerationConfig = {
     }
 };
 
+
+async function generateContentWithRetry(model: any, promptData: any, maxRetries = 4) {
+    let delay = 5000;
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+        try {
+            return await model.generateContent(promptData);
+        } catch (error: any) {
+            const isRateLimitOrUnavailable = error.status === 429 || error.status === 503 || error.message?.includes('503') || error.message?.includes('429') || error.message?.includes('high demand');
+            if (isRateLimitOrUnavailable && attempt < maxRetries) {
+                console.warn(`[Gemini API] Error ${error.status || error.message}. Retrying in ${delay}ms (Attempt ${attempt} of ${maxRetries})...`);
+                await sleep(delay);
+                delay *= 2; // Exponential backoff: 5s, 10s, 20s
+            } else {
+                throw error;
+            }
+        }
+    }
+}
+
 async function extractMetadataFromPdf(pdfData: ArrayBuffer): Promise<any> {
     const model = genAI.getGenerativeModel({
         model: "gemini-3.5-flash-lite",
@@ -117,7 +136,7 @@ async function extractMetadataFromPdf(pdfData: ArrayBuffer): Promise<any> {
 
     const prompt = "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.";
 
-    const result = await model.generateContent([
+    const result = await generateContentWithRetry(model, [
         {
             inlineData: {
                 data: Buffer.from(pdfData).toString("base64"),
@@ -182,7 +201,7 @@ async function extractMetadataFromText(textContent: string): Promise<any> {
 
     const prompt = "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n" + textContent;
 
-    const result = await model.generateContent([
+    const result = await generateContentWithRetry(model, [
         prompt
     ]);
 

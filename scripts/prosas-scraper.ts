@@ -74,18 +74,18 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
     let resolvedUrl: string = '';
     let abortNavigation = false;
 
-    // Set up request interception on the main page to catch same-tab navigation
-    await page.route('**/*', (route: any, request: any) => {
-        if (request.isNavigationRequest() && request.frame() === page.mainFrame()) {
-            interceptedUrl = request.url();
-            abortNavigation = true;
-            route.abort(); // Prevent the main page from navigating away
-        } else {
-            route.continue();
-        }
-    });
-
     try {
+        // Set up request interception on the main page to catch same-tab navigation
+        await page.route('**/*', (route: any, request: any) => {
+            if (request.isNavigationRequest() && request.frame() === page.mainFrame()) {
+                interceptedUrl = request.url();
+                abortNavigation = true;
+                route.abort(); // Prevent the main page from navigating away
+            } else {
+                route.continue();
+            }
+        });
+
         // Wait slightly longer so SPA/Web Components finish rendering
         await page.waitForTimeout(3500);
 
@@ -302,7 +302,7 @@ async function runStandaloneScraper() {
     let context: any;
 
     try {
-        browser = await chromium.launch({ headless: true });
+        browser = await chromium.launch({ headless: true, args: ['--disable-dev-shm-usage'] });
         context = await browser.newContext();
         const page = await context.newPage();
 
