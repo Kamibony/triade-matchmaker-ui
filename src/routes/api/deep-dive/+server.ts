@@ -1,11 +1,11 @@
 import { json } from '@sveltejs/kit';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { google } from 'googleapis';
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-const pdfParse = require('pdf-parse');
 
 import editaisData from '../../../data/editais_prosas.json';
+
+// We removed pdf-parse as it breaks in Edge environments due to commonjs/esm conflicts.
+// It is recommended to use the fallback `full_text` for Serverless / Edge functions.
 
 async function fetchAndParseDrivePDF(driveUrl: string): Promise<string | null> {
   const credsEnv = process.env.GCP_DRIVE_CREDENTIALS;
@@ -30,12 +30,12 @@ async function fetchAndParseDrivePDF(driveUrl: string): Promise<string | null> {
 
     const response = await drive.files.get(
       { fileId: fileId, alt: 'media' },
-      { responseType: 'arraybuffer' }
+      { responseType: 'stream' }
     );
-
-    const buffer = Buffer.from(response.data as ArrayBuffer);
-    const pdfData = await pdfParse(buffer);
-    return pdfData.text;
+    // Since pdf-parse is removed for edge compatibility, we cannot parse the PDF here.
+    // Returning null will trigger the fallback mechanism to use `full_text`.
+    console.warn('PDF parsing from Drive is disabled on edge functions, falling back to full_text');
+    return null;
   } catch (error) {
     console.error('Error fetching/parsing PDF from Drive:', error);
     return null;
@@ -43,19 +43,10 @@ async function fetchAndParseDrivePDF(driveUrl: string): Promise<string | null> {
 }
 
 async function fetchAndParsePDF(pdfUrl: string): Promise<string | null> {
-  try {
-    const response = await fetch(pdfUrl);
-    if (!response.ok) {
-      throw new Error(`Failed to fetch PDF: ${response.status} ${response.statusText}`);
-    }
-    const arrayBuffer = await response.arrayBuffer();
-    const buffer = Buffer.from(arrayBuffer);
-    const pdfData = await pdfParse(buffer);
-    return pdfData.text;
-  } catch (error) {
-    console.error('Error fetching/parsing PDF:', error);
-    return null;
-  }
+  // Since pdf-parse is removed for edge compatibility, we cannot parse the PDF here.
+  // Returning null will trigger the fallback mechanism to use `full_text`.
+  console.warn('Direct PDF parsing is disabled on edge functions, falling back to full_text');
+  return null;
 }
 
 export async function POST({ request }: any) {
