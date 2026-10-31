@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import fs from 'fs/promises';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { google } from 'googleapis';
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 const pdfParse = require('pdf-parse');
@@ -15,6 +16,46 @@ const mockOSC = {
 };
 
 const TARGET_EDITAL_ID = '19545'; // Based on an item with a valid PDF link
+
+async function fetchAndParseDrivePDF(driveUrl: string): Promise<string | null> {
+  const credsEnv = process.env.GCP_DRIVE_CREDENTIALS;
+  if (!credsEnv) {
+    console.warn('GCP_DRIVE_CREDENTIALS is not set. Skipping Drive PDF fetch.');
+    return null;
+  }
+
+  // Extract File ID from webViewLink
+  // usually looks like: https://drive.google.com/file/d/1ABC-DEF/view?usp=drivesdk
+  const match = driveUrl.match(/\/d\/([a-zA-Z0-9_-]+)/);
+  if (!match || !match[1]) {
+    console.warn(`Could not extract Drive file ID from URL: ${driveUrl}`);
+    return null;
+  }
+  const fileId = match[1];
+
+  try {
+    console.log(`Downloading PDF from Google Drive (ID: ${fileId})...`);
+    const credentials = JSON.parse(credsEnv);
+    const auth = new google.auth.OAuth2(credentials.clientId, credentials.clientSecret);
+    auth.setCredentials({ refresh_token: credentials.refreshToken });
+
+    const drive = google.drive({ version: 'v3', auth });
+
+    const response = await drive.files.get(
+      { fileId: fileId, alt: 'media' },
+      { responseType: 'arraybuffer' }
+    );
+
+    const buffer = Buffer.from(response.data as ArrayBuffer);
+
+    console.log('Parsing PDF from Drive...');
+    const pdfData = await pdfParse(buffer);
+    return pdfData.text;
+  } catch (error) {
+    console.error('Error fetching/parsing PDF from Drive:', error);
+    return null;
+  }
+}
 
 async function fetchAndParsePDF(pdfUrl: string): Promise<string | null> {
   try {
@@ -54,27 +95,45 @@ async function main() {
 
   // 2. Fetch PDF or Fallback to text
   let fullGrantText = '';
-  let usedFallback = false;
+  let fetchedText: string | null = null;
+  let useFallback = false;
 
-  if (edital.pdf_link) {
-    const pdfText = await fetchAndParsePDF(edital.pdf_link);
-    if (pdfText && pdfText.trim().length > 0) {
-      fullGrantText = pdfText;
-    } else {
-      console.log('PDF extraction failed or empty, falling back to JSON full_text.');
-      usedFallback = true;
+  // Tier 1: Try Drive PDF first
+  if (edital.deep_metadata?.drive_pdf_link) {
+    console.log('Found Google Drive PDF link in deep_metadata. Attempting Tier 1 fetch...');
+    fetchedText = await fetchAndParseDrivePDF(edital.deep_metadata.drive_pdf_link);
+    if (!fetchedText || fetchedText.trim().length === 0) {
+      console.log('Tier 1 (Drive PDF) failed or empty. Falling back to Tier 2...');
+      fetchedText = null;
     }
   } else {
-    console.log('No PDF link available, falling back to JSON full_text.');
-    usedFallback = true;
+    console.log('No Google Drive PDF link found. Skipping Tier 1.');
   }
 
-  if (usedFallback) {
+  // Tier 2: Try Original PDF Link
+  if (!fetchedText && edital.pdf_link) {
+    console.log('Attempting Tier 2 fetch (Original PDF link)...');
+    fetchedText = await fetchAndParsePDF(edital.pdf_link);
+    if (!fetchedText || fetchedText.trim().length === 0) {
+      console.log('Tier 2 (Original PDF) failed or empty. Falling back to Tier 3 (full_text)...');
+      fetchedText = null;
+      useFallback = true;
+    }
+  } else if (!fetchedText) {
+    console.log('No original PDF link found. Falling back to Tier 3 (full_text)...');
+    useFallback = true;
+  }
+
+  // Set the resolved text
+  if (fetchedText) {
+    fullGrantText = fetchedText;
+  } else if (useFallback) {
     if (edital.full_text) {
       fullGrantText = edital.full_text;
+      console.log('Using Tier 3 (JSON full_text).');
     } else {
-       console.error('Both PDF extraction and JSON full_text fallback failed. Cannot proceed.');
-       process.exit(1);
+      console.error('All 3 tiers failed (Drive PDF, Original PDF, and full_text). Cannot proceed.');
+      process.exit(1);
     }
   }
 
