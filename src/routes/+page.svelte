@@ -4,6 +4,42 @@
   let loading = $state(false);
   let results = $state<any[] | null>(null);
   let errorMsg = $state<string | null>(null);
+  let deepDiveLoading = $state<Record<string, boolean>>({});
+  let deepDiveReports = $state<Record<string, any>>({});
+  let deepDiveErrors = $state<Record<string, string>>({});
+
+  async function handleDeepDive(editalId: string) {
+    deepDiveLoading[editalId] = true;
+    deepDiveErrors[editalId] = '';
+
+    try {
+      const response = await fetch('/api/deep-dive', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          edital_id: editalId,
+          oscProfile: {
+            cnpj,
+            foco_atividades: focoAtividades
+          }
+        })
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Falha ao analisar edital em profundidade.');
+      }
+
+      const report = await response.json();
+      deepDiveReports[editalId] = report;
+    } catch (err: any) {
+      deepDiveErrors[editalId] = err.message || 'Ocorreu um erro ao analisar o edital.';
+    } finally {
+      deepDiveLoading[editalId] = false;
+    }
+  }
 
   async function handleSearch(event: Event) {
     event.preventDefault();
@@ -66,7 +102,6 @@
             rows="4"
             placeholder="Ex: Trabalhamos com educação ambiental para jovens..."
             class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors resize-y"
-            required
           ></textarea>
         </div>
 
@@ -127,16 +162,81 @@
                     </div>
                   </div>
 
-                  <button class="shrink-0 inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
-                    <svg class="mr-2 -ml-1 w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
-                    Analyze in Depth
+                  <button
+                    onclick={() => handleDeepDive(match.edital_id)}
+                    disabled={deepDiveLoading[match.edital_id]}
+                    class="shrink-0 inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 transition-colors"
+                  >
+                    {#if deepDiveLoading[match.edital_id]}
+                      <svg class="animate-spin mr-2 -ml-1 h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Reading PDF...
+                    {:else}
+                      <svg class="mr-2 -ml-1 w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                      Analyze in Depth
+                    {/if}
                   </button>
                 </div>
 
-                <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                <div class="bg-gray-50 rounded-lg p-4 border border-gray-100 mb-4">
                   <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Por que este edital?</h4>
                   <p class="text-sm text-gray-700 italic">"{match.motivo_match}"</p>
                 </div>
+
+                {#if deepDiveErrors[match.edital_id]}
+                  <div class="mt-4 text-sm text-red-600 bg-red-50 p-3 rounded border border-red-100">
+                    {deepDiveErrors[match.edital_id]}
+                  </div>
+                {/if}
+
+                {#if deepDiveReports[match.edital_id]}
+                  <div class="mt-6 border-t border-gray-200 pt-6">
+                    <h4 class="text-lg font-bold text-gray-900 mb-4">Deep Dive Consulting Report</h4>
+
+                    <div class="space-y-6">
+                      <!-- Missing Documents -->
+                      <div>
+                        <h5 class="text-sm font-semibold text-gray-800 flex items-center mb-2">
+                          <span class="text-xl mr-2">📄</span> Documentos Faltantes/Requeridos
+                        </h5>
+                        <ul class="list-disc pl-8 space-y-1 text-sm text-gray-700">
+                          {#each deepDiveReports[match.edital_id].missing_documents as doc}
+                            <li>{doc}</li>
+                          {/each}
+                        </ul>
+                      </div>
+
+                      <!-- Statute Requirements -->
+                      <div>
+                        <h5 class="text-sm font-semibold text-gray-800 flex items-center mb-2">
+                          <span class="text-xl mr-2">⚖️</span> Requisitos Estatutários
+                        </h5>
+                        <ul class="list-disc pl-8 space-y-1 text-sm text-gray-700">
+                          {#each deepDiveReports[match.edital_id].statute_requirements as req}
+                            <li>{req}</li>
+                          {/each}
+                        </ul>
+                      </div>
+
+                      <!-- Project Ideas -->
+                      <div>
+                        <h5 class="text-sm font-semibold text-gray-800 flex items-center mb-3">
+                          <span class="text-xl mr-2">💡</span> Ideias de Projetos Customizadas
+                        </h5>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                          {#each deepDiveReports[match.edital_id].project_ideas as idea}
+                            <div class="bg-blue-50 rounded-lg p-4 border border-blue-100">
+                              <h6 class="font-bold text-blue-900 text-sm mb-2">{idea.title}</h6>
+                              <p class="text-sm text-blue-800">{idea.description}</p>
+                            </div>
+                          {/each}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                {/if}
               </div>
             {/each}
           </div>
