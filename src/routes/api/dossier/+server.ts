@@ -13,7 +13,8 @@ export async function POST({ request }: any) {
     model: 'gemini-3.5-flash-lite',
     tools: [
       {
-        googleSearchRetrieval: {}
+        // @ts-ignore - The type definitions in @google/generative-ai might be outdated, but googleSearch is correct for this API version
+        googleSearch: {}
       }
     ]
   });
@@ -26,6 +27,27 @@ export async function POST({ request }: any) {
     return json({ text: responseText });
   } catch (error: any) {
     console.error('Error generating dossier with Gemini:', error);
+
+    const isRateLimit = error.status === 429 ||
+                        error.message?.includes('429') ||
+                        error.message?.toLowerCase().includes('quota') ||
+                        error.message?.toLowerCase().includes('rate');
+
+    if (isRateLimit) {
+      console.log('Falling back to ungrounded model due to quota limit...');
+      try {
+        const fallbackModel = genAI.getGenerativeModel({
+          model: 'gemini-3.5-flash-lite'
+        });
+        const fallbackResult = await fallbackModel.generateContent(prompt);
+        const fallbackText = fallbackResult.response.text().trim();
+        return json({ text: fallbackText });
+      } catch (fallbackError: any) {
+        console.error('Error generating dossier with ungrounded model:', fallbackError);
+        return json({ error: fallbackError.message || 'Error generating dossier' }, { status: 500 });
+      }
+    }
+
     return json({ error: error.message || 'Error generating dossier' }, { status: 500 });
   }
 }
