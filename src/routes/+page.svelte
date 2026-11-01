@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { marked } from 'marked';
+
   let cnpj = $state('');
   let focoAtividades = $state('');
   let loading = $state(false);
@@ -7,6 +9,43 @@
   let deepDiveLoading = $state<Record<string, boolean>>({});
   let deepDiveReports = $state<Record<string, any>>({});
   let deepDiveErrors = $state<Record<string, string>>({});
+  let oscDetails = $state<any>(null);
+  let isDossierLoading = $state(false);
+  let dossierResult = $state<string | null>(null);
+  let dossierError = $state<string | null>(null);
+
+  async function handleGenerateDossier() {
+    if (!oscDetails) return;
+
+    isDossierLoading = true;
+    dossierError = null;
+    dossierResult = null;
+
+    try {
+      const response = await fetch('/api/dossier', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          cnpj: cnpj.replace(/[^\d]/g, ''),
+          nome: oscDetails.nome_fantasia || oscDetails.razao_social
+        })
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Falha ao gerar dossiê.');
+      }
+
+      const data = await response.json();
+      dossierResult = data.text;
+    } catch (err: any) {
+      dossierError = err.message || 'Ocorreu um erro ao gerar o dossiê.';
+    } finally {
+      isDossierLoading = false;
+    }
+  }
 
   async function handleDeepDive(editalId: string) {
     deepDiveLoading[editalId] = true;
@@ -60,6 +99,17 @@
           const brasilApiResponse = await fetch(`https://brasilapi.com.br/api/cnpj/v1/${cleanCnpj}`);
           if (brasilApiResponse.ok) {
             const cnpjData = await brasilApiResponse.json();
+
+            oscDetails = {
+              razao_social: cnpjData.razao_social,
+              nome_fantasia: cnpjData.nome_fantasia,
+              email: cnpjData.email,
+              telefone: cnpjData.ddd_telefone_1,
+              logradouro: cnpjData.logradouro,
+              bairro: cnpjData.bairro,
+              municipio: cnpjData.municipio,
+              uf: cnpjData.uf,
+            };
 
             uf = cnpjData.uf || '';
             municipio = cnpjData.municipio || '';
@@ -189,6 +239,62 @@
           </div>
         </div>
       </div>
+    {/if}
+
+    <!-- OSC Details Profile Section -->
+    {#if oscDetails}
+      <section class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-8">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-6">
+          <div>
+            <h2 class="text-xl font-bold text-gray-900 mb-2">Perfil da Organização</h2>
+            <h3 class="text-lg font-semibold text-gray-800">{oscDetails.nome_fantasia || oscDetails.razao_social}</h3>
+            <p class="text-sm text-gray-600">{oscDetails.razao_social}</p>
+          </div>
+          <button
+            onclick={handleGenerateDossier}
+            disabled={isDossierLoading}
+            class="shrink-0 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 disabled:opacity-50 transition-colors"
+          >
+            {#if isDossierLoading}
+              <svg class="animate-spin mr-2 -ml-1 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+              Gerando Dossiê...
+            {:else}
+              <span class="mr-2">✨</span>
+              Gerar Dossiê de IA (Busca na Web)
+            {/if}
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700 mb-6">
+          <div>
+            <span class="font-semibold">Email:</span> {oscDetails.email || 'Não informado'}
+          </div>
+          <div>
+            <span class="font-semibold">Telefone:</span> {oscDetails.telefone || 'Não informado'}
+          </div>
+          <div class="md:col-span-2">
+            <span class="font-semibold">Endereço:</span> {oscDetails.logradouro}, {oscDetails.bairro}, {oscDetails.municipio} - {oscDetails.uf}
+          </div>
+        </div>
+
+        {#if dossierError}
+          <div class="mt-4 text-sm text-red-600 bg-red-50 p-3 rounded border border-red-100">
+            {dossierError}
+          </div>
+        {/if}
+
+        {#if dossierResult}
+          <div class="mt-6 border-t border-gray-200 pt-6">
+            <h4 class="text-lg font-bold text-gray-900 mb-4">Dossiê da Organização</h4>
+            <div class="prose prose-sm max-w-none text-gray-700 prose-headings:text-gray-900 prose-a:text-blue-600">
+              {@html marked.parse(dossierResult)}
+            </div>
+          </div>
+        {/if}
+      </section>
     {/if}
 
     <!-- Results Section -->
