@@ -75,6 +75,7 @@ const sharedGenerationConfig = {
             edital_id: { type: "string" as const },
             resumo_objetivo: { type: "string" as const, description: "1-2 sentences in pt-BR summarizing the grant's core goal" },
             temas_principais: { type: "array" as const, items: { type: "string" as const }, description: "array of strings in pt-BR (e.g., 'mulheres', 'agricultura familiar', 'cultura', 'saúde')" },
+            prazo_de_inscricao: { type: "string" as const, nullable: true, description: "Strictly in YYYY-MM-DD format, or null if not found" },
             criterios_eliminatorios: {
                 type: "object" as const,
                 properties: {
@@ -105,7 +106,7 @@ const sharedGenerationConfig = {
                 required: ["exige_cnd", "exige_balanco_patrimonial", "exige_cebas", "exigencias_especificas_adicionais"]
             }
         },
-        required: ["edital_id", "resumo_objetivo", "temas_principais", "criterios_eliminatorios", "financeiro", "burocracia_e_documentos"]
+        required: ["edital_id", "resumo_objetivo", "temas_principais", "prazo_de_inscricao", "criterios_eliminatorios", "financeiro", "burocracia_e_documentos"]
     }
 };
 

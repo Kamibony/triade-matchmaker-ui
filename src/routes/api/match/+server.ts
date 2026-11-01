@@ -18,8 +18,19 @@ export async function POST({ request }: any) {
 
   const eligibleEditais: any[] = [];
 
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
   for (const edital of editaisData) {
     if (!(edital as any).deep_metadata || !(edital as any).deep_metadata.criterios_eliminatorios) continue;
+
+    const prazo = (edital as any).deep_metadata.prazo_de_inscricao;
+    if (prazo) {
+      const deadlineDate = new Date(prazo);
+      if (!isNaN(deadlineDate.getTime()) && deadlineDate < today) {
+        continue; // Skip because deadline has passed
+      }
+    }
 
     // The calculateMatches function expects an array of NGOs
     const matchResult = calculateMatches((edital as any).deep_metadata, [oscProfile]);
@@ -37,7 +48,8 @@ export async function POST({ request }: any) {
         edital_id: eligibleEditais[0]?.id || 'mock1',
         titulo: eligibleEditais[0]?.attributes?.nome || 'Mock Edital',
         score: 95,
-        motivo_match: 'O foco em educação ambiental alinha perfeitamente com os objetivos deste edital.'
+        motivo_match: 'O foco em educação ambiental alinha perfeitamente com os objetivos deste edital.',
+        pdf_url: (eligibleEditais[0] as any)?.deep_metadata?.drive_pdf_link || (eligibleEditais[0] as any)?.pdf_link || "https://example.com/mock-pdf.pdf"
       }
     ]);
   }
@@ -46,7 +58,8 @@ export async function POST({ request }: any) {
     edital_id: (e as any).id,
     titulo: (e as any).attributes?.nome || (e as any).id,
     resumo_objetivo: (e as any).deep_metadata.resumo_objetivo,
-    temas_principais: (e as any).deep_metadata.temas_principais
+    temas_principais: (e as any).deep_metadata.temas_principais,
+    pdf_url: (e as any).deep_metadata.drive_pdf_link || (e as any).pdf_link || null
   }));
 
   const CHUNK_SIZE = 15;
@@ -110,7 +123,8 @@ Do not include any other text or markdown formatting (like \`\`\`json). Just ret
     const editalInfo = lightweightEditais.find(e => e.edital_id === match.edital_id);
     return {
       ...match,
-      titulo: editalInfo ? editalInfo.titulo : match.edital_id
+      titulo: editalInfo ? editalInfo.titulo : match.edital_id,
+      pdf_url: editalInfo ? editalInfo.pdf_url : null
     };
   });
 
