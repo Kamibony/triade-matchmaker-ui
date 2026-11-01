@@ -13,7 +13,8 @@ export async function POST({ request }: any) {
     model: 'gemini-3.5-flash-lite',
     tools: [
       {
-        googleSearchRetrieval: {}
+        // @ts-ignore - The type definitions in @google/generative-ai might be outdated, but googleSearch is correct for this API version
+        googleSearch: {}
       }
     ]
   });
