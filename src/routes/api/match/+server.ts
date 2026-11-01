@@ -5,61 +5,16 @@ import editaisData from '../../../data/editais_prosas.json';
 
 export async function POST({ request }: any) {
   const requestBody = await request.json();
-  const { cnpj, foco_atividades } = requestBody;
+  const { cnpj, foco_atividades, cnae_data, uf, municipio, natureza_juridica, idade_anos } = requestBody;
 
   let oscProfile: any = {
     cnpj,
-    foco_atividades: foco_atividades || '',
-    uf: '',
-    municipio: '',
-    natureza_juridica: '',
-    idade_anos: 0,
+    foco_atividades: `Descrição do usuário: ${foco_atividades || 'Não informada'}. Atividades oficiais registradas (CNAE): ${cnae_data || 'Não encontradas'}`,
+    uf: uf || '',
+    municipio: municipio || '',
+    natureza_juridica: natureza_juridica || '',
+    idade_anos: idade_anos || 0,
   };
-
-  const cleanCnpj = cnpj?.replace(/[^\d]/g, '');
-
-  if (cleanCnpj) {
-    try {
-      const response = await fetch(`https://brasilapi.com.br/api/cnpj/v1/${cleanCnpj}`);
-      if (response.ok) {
-        const cnpjData = await response.json();
-
-        oscProfile.uf = cnpjData.uf || '';
-        oscProfile.municipio = cnpjData.municipio || '';
-        oscProfile.natureza_juridica = cnpjData.natureza_juridica || '';
-
-        if (cnpjData.data_inicio_atividade) {
-          const inicioAtividade = new Date(cnpjData.data_inicio_atividade);
-          const hoje = new Date();
-          let idade = hoje.getFullYear() - inicioAtividade.getFullYear();
-          const m = hoje.getMonth() - inicioAtividade.getMonth();
-          if (m < 0 || (m === 0 && hoje.getDate() < inicioAtividade.getDate())) {
-            idade--;
-          }
-          oscProfile.idade_anos = idade;
-        }
-
-        let cnaeDesc = '';
-        if (cnpjData.cnae_fiscal_descricao) {
-          cnaeDesc += cnpjData.cnae_fiscal_descricao;
-        }
-        if (cnpjData.cnaes_secundarios && Array.isArray(cnpjData.cnaes_secundarios)) {
-          for (const cnae of cnpjData.cnaes_secundarios) {
-             if (cnae.descricao) cnaeDesc += `, ${cnae.descricao}`;
-          }
-        }
-
-        oscProfile.foco_atividades = `Descrição do usuário: ${foco_atividades || 'Não informada'}. Atividades oficiais registradas (CNAE): ${cnaeDesc || 'Não encontradas'}`;
-
-      } else {
-        console.error(`BrasilAPI request failed with status: ${response.status}`);
-        oscProfile.foco_atividades = `Descrição do usuário: ${foco_atividades || 'Não informada'}. Atividades oficiais registradas (CNAE): Não encontradas`;
-      }
-    } catch (err) {
-      console.error('Error fetching CNPJ data:', err);
-      oscProfile.foco_atividades = `Descrição do usuário: ${foco_atividades || 'Não informada'}. Atividades oficiais registradas (CNAE): Não encontradas`;
-    }
-  }
 
   const eligibleEditais: any[] = [];
 
