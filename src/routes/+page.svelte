@@ -48,6 +48,52 @@
     results = null;
 
     try {
+      const cleanCnpj = cnpj.replace(/[^\d]/g, '');
+      let uf = '';
+      let municipio = '';
+      let natureza_juridica = '';
+      let idade_anos = 0;
+      let cnae_data = '';
+
+      if (cleanCnpj) {
+        try {
+          const brasilApiResponse = await fetch(`https://brasilapi.com.br/api/cnpj/v1/${cleanCnpj}`);
+          if (brasilApiResponse.ok) {
+            const cnpjData = await brasilApiResponse.json();
+
+            uf = cnpjData.uf || '';
+            municipio = cnpjData.municipio || '';
+            natureza_juridica = cnpjData.natureza_juridica || '';
+
+            if (cnpjData.data_inicio_atividade) {
+              const inicioAtividade = new Date(cnpjData.data_inicio_atividade);
+              const hoje = new Date();
+              let idade = hoje.getFullYear() - inicioAtividade.getFullYear();
+              const m = hoje.getMonth() - inicioAtividade.getMonth();
+              if (m < 0 || (m === 0 && hoje.getDate() < inicioAtividade.getDate())) {
+                idade--;
+              }
+              idade_anos = idade;
+            }
+
+            let cnaeDesc = '';
+            if (cnpjData.cnae_fiscal_descricao) {
+              cnaeDesc += cnpjData.cnae_fiscal_descricao;
+            }
+            if (cnpjData.cnaes_secundarios && Array.isArray(cnpjData.cnaes_secundarios)) {
+              for (const cnae of cnpjData.cnaes_secundarios) {
+                if (cnae.descricao) cnaeDesc += `, ${cnae.descricao}`;
+              }
+            }
+            cnae_data = cnaeDesc;
+          } else {
+            console.error(`BrasilAPI request failed with status: ${brasilApiResponse.status}`);
+          }
+        } catch (err) {
+          console.error('Error fetching CNPJ data from BrasilAPI:', err);
+        }
+      }
+
       const response = await fetch('/api/match', {
         method: 'POST',
         headers: {
@@ -55,7 +101,12 @@
         },
         body: JSON.stringify({
           cnpj,
-          foco_atividades: focoAtividades
+          foco_atividades: focoAtividades,
+          cnae_data,
+          uf,
+          municipio,
+          natureza_juridica,
+          idade_anos
         })
       });
 
