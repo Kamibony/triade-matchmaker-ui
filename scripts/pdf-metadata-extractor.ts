@@ -266,6 +266,14 @@ export async function processEditais() {
             if (!downloadResult.success) {
                 console.error(`Failed to download PDF for edital ${edital.id || i}: ${downloadResult.error}`);
                 if (downloadResult.expiredPresigned) {
+                    edital.retry_count = (edital.retry_count || 0) + 1;
+                    if (edital.retry_count >= 3) {
+                        console.error(`Presigned URL expired for edital ${edital.id || i}. Max retries reached. Failing permanently.`);
+                        edital.pipeline_status = 'FAILED_PERMANENTLY';
+                        edital.last_error = downloadResult.error || "Max retries reached for expired presigned URL";
+                        modified = true;
+                        continue;
+                    }
                     console.log(`Presigned URL expired for edital ${edital.id || i}. Forcing rescrape.`);
                     edital.pipeline_status = 'NEW_FROM_API';
                     delete edital.pdf_link;
