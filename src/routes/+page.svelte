@@ -272,10 +272,10 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700 mb-6">
           <div>
-            <span class="font-semibold">Email:</span> {oscDetails.email || 'Não informado'}
+            <span class="font-semibold">Email:</span> {#if oscDetails.email}<a href="mailto:{oscDetails.email}" class="text-blue-600 hover:underline">{oscDetails.email}</a>{:else}Não informado{/if}
           </div>
           <div>
-            <span class="font-semibold">Telefone:</span> {oscDetails.telefone || 'Não informado'}
+            <span class="font-semibold">Telefone:</span> {#if oscDetails.telefone}<span class="mr-2">{oscDetails.telefone}</span><a href="https://wa.me/55{oscDetails.telefone.replace(/[^\d]/g, '')}?text=Olá,%20temos%20um%20edital%20compatível%20com%20sua%20OSC!" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-2 py-1 text-xs font-medium rounded text-green-700 bg-green-100 hover:bg-green-200 transition-colors">💬 WhatsApp</a>{:else}Não informado{/if}
           </div>
           <div class="md:col-span-2">
             <span class="font-semibold">Endereço:</span> {oscDetails.logradouro}, {oscDetails.bairro}, {oscDetails.municipio} - {oscDetails.uf}
@@ -321,8 +321,18 @@
                   <div class="flex-1">
                     <h3 class="text-lg font-semibold text-gray-900 leading-snug mb-2">{match.titulo}</h3>
 
-                    <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-50 text-blue-700 mb-3 border border-blue-100">
-                      Match Score: {match.score}%
+                    <div class="inline-flex flex-wrap gap-2 mb-3">
+                      <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-50 text-blue-700 border border-blue-100">
+                        Match Score: {match.score}%
+                      </div>
+
+                      <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-50 text-green-700 border border-green-100">
+                        Valor Máximo: {match.valor_maximo_reais ? match.valor_maximo_reais.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) : 'Não informado'}
+                      </div>
+
+                      <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-50 text-yellow-700 border border-yellow-100">
+                        Prazo: {match.prazo_de_inscricao ? new Date(match.prazo_de_inscricao).toLocaleDateString('pt-BR') : 'Não informado'}
+                      </div>
                     </div>
                   </div>
 
