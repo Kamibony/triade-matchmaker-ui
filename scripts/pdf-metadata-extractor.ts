@@ -75,7 +75,7 @@ const sharedGenerationConfig = {
             edital_id: { type: "string" as const },
             resumo_objetivo: { type: "string" as const, description: "1-2 sentences in pt-BR summarizing the grant's core goal" },
             temas_principais: { type: "array" as const, items: { type: "string" as const }, description: "array of strings in pt-BR (e.g., 'mulheres', 'agricultura familiar', 'cultura', 'saúde')" },
-            prazo_de_inscricao: { type: "string" as const, nullable: true, description: "Strictly in YYYY-MM-DD format, or null if not found" },
+            prazo_de_inscricao: { type: "string" as const, nullable: true, description: "Strictly in YYYY-MM-DD format, or null if not found. Busque atentamente em todo o documento, frequentemente listado sob Cronograma ou Etapas." },
             criterios_eliminatorios: {
                 type: "object" as const,
                 properties: {
@@ -90,10 +90,10 @@ const sharedGenerationConfig = {
             financeiro: {
                 type: "object" as const,
                 properties: {
-                    valor_maximo_reais: { type: "number" as const, nullable: true },
+                    valor_maximo_ou_global_reais: { type: "number" as const, nullable: true, description: "Valor máximo por projeto. Se não houver, extraia o valor global/total do edital." },
                     exige_contrapartida: { type: "boolean" as const }
                 },
-                required: ["valor_maximo_reais", "exige_contrapartida"]
+                required: ["valor_maximo_ou_global_reais", "exige_contrapartida"]
             },
             burocracia_e_documentos: {
                 type: "object" as const,
