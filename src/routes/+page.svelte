@@ -14,6 +14,48 @@
   let dossierResult = $state<string | null>(null);
   let dossierError = $state<string | null>(null);
 
+  let ufState = $state('');
+  let municipioState = $state('');
+  let naturezaJuridicaState = $state('');
+  let idadeAnosState = $state(0);
+  let cnaeDataState = $state('');
+
+  async function handleFetchMatches() {
+    loading = true;
+    errorMsg = null;
+    results = null;
+
+    try {
+      const response = await fetch('/api/match', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          cnpj,
+          foco_atividades: focoAtividades,
+          cnae_data: cnaeDataState,
+          uf: ufState,
+          municipio: municipioState,
+          natureza_juridica: naturezaJuridicaState,
+          idade_anos: idadeAnosState,
+          dossier_text: dossierResult
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Falha ao buscar matches. Verifique os dados e tente novamente.');
+      }
+
+      const data = await response.json();
+      results = data;
+    } catch (err: any) {
+      errorMsg = err.message || 'Ocorreu um erro desconhecido.';
+    } finally {
+      loading = false;
+    }
+  }
+
   async function handleGenerateDossier() {
     if (!oscDetails) return;
 
@@ -40,6 +82,7 @@
 
       const data = await response.json();
       dossierResult = data.text;
+      await handleFetchMatches();
     } catch (err: any) {
       dossierError = err.message || 'Ocorreu um erro ao gerar o dossiê.';
     } finally {
@@ -86,15 +129,11 @@
     event.preventDefault();
     loading = true;
     errorMsg = null;
-    results = null;
+    oscDetails = null; // Reset profile
+    results = null; // Clear previous results when fetching new profile
 
     try {
       const cleanCnpj = cnpj.replace(/[^\d]/g, '');
-      let uf = '';
-      let municipio = '';
-      let natureza_juridica = '';
-      let idade_anos = 0;
-      let cnae_data = '';
 
       if (cleanCnpj) {
         try {
@@ -113,9 +152,9 @@
               uf: cnpjData.uf,
             };
 
-            uf = cnpjData.uf || '';
-            municipio = cnpjData.municipio || '';
-            natureza_juridica = cnpjData.natureza_juridica || '';
+            ufState = cnpjData.uf || '';
+            municipioState = cnpjData.municipio || '';
+            naturezaJuridicaState = cnpjData.natureza_juridica || '';
 
             if (cnpjData.data_inicio_atividade) {
               const inicioAtividade = new Date(cnpjData.data_inicio_atividade);
@@ -125,7 +164,9 @@
               if (m < 0 || (m === 0 && hoje.getDate() < inicioAtividade.getDate())) {
                 idade--;
               }
-              idade_anos = idade;
+              idadeAnosState = idade;
+            } else {
+                idadeAnosState = 0;
             }
 
             let cnaeDesc = '';
@@ -137,37 +178,15 @@
                 if (cnae.descricao) cnaeDesc += `, ${cnae.descricao}`;
               }
             }
-            cnae_data = cnaeDesc;
+            cnaeDataState = cnaeDesc;
           } else {
-            console.error(`BrasilAPI request failed with status: ${brasilApiResponse.status}`);
+             const errorData = await brasilApiResponse.json().catch(() => ({}));
+             throw new Error(errorData.message || `Falha ao buscar CNPJ (status ${brasilApiResponse.status}). Verifique o número e tente novamente.`);
           }
-        } catch (err) {
-          console.error('Error fetching CNPJ data from BrasilAPI:', err);
+        } catch (err: any) {
+             throw new Error(err.message || 'Erro de rede ao buscar dados do CNPJ.');
         }
       }
-
-      const response = await fetch('/api/match', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          cnpj,
-          foco_atividades: focoAtividades,
-          cnae_data,
-          uf,
-          municipio,
-          natureza_juridica,
-          idade_anos
-        })
-      });
-
-      if (!response.ok) {
-        throw new Error('Falha ao buscar matches. Verifique os dados e tente novamente.');
-      }
-
-      const data = await response.json();
-      results = data;
     } catch (err: any) {
       errorMsg = err.message || 'Ocorreu um erro desconhecido.';
     } finally {
@@ -221,7 +240,7 @@
             Analisando dezenas de editais...
           {:else}
             <svg class="mr-2 -ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-            Pesquisar Editais
+            Buscar Dados da Organização
           {/if}
         </button>
       </form>
@@ -252,22 +271,39 @@
             <h3 class="text-lg font-semibold text-gray-800">{oscDetails.nome_fantasia || oscDetails.razao_social}</h3>
             <p class="text-sm text-gray-600">{oscDetails.razao_social}</p>
           </div>
-          <button
-            onclick={handleGenerateDossier}
-            disabled={isDossierLoading}
-            class="shrink-0 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 disabled:opacity-50 transition-colors"
-          >
-            {#if isDossierLoading}
-              <svg class="animate-spin mr-2 -ml-1 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-              </svg>
-              Gerando Dossiê...
-            {:else}
-              <span class="mr-2">✨</span>
-              Gerar Dossiê de IA (Busca na Web)
-            {/if}
-          </button>
+          <div class="flex flex-col sm:flex-row gap-3 mt-4 md:mt-0">
+            <button
+              onclick={handleGenerateDossier}
+              disabled={isDossierLoading || loading}
+              class="shrink-0 inline-flex justify-center items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 disabled:opacity-50 transition-colors"
+            >
+              {#if isDossierLoading}
+                <svg class="animate-spin mr-2 -ml-1 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Gerando Dossiê...
+              {:else}
+                <span class="mr-2">✨</span>
+                Gerar Dossiê de IA
+              {/if}
+            </button>
+            <button
+              onclick={handleFetchMatches}
+              disabled={isDossierLoading || loading}
+              class="shrink-0 inline-flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 transition-colors"
+            >
+              {#if loading && !isDossierLoading}
+                <svg class="animate-spin mr-2 -ml-1 h-4 w-4 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Buscando...
+              {:else}
+                Buscar Editais (Pular Dossiê)
+              {/if}
+            </button>
+          </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700 mb-6">
@@ -275,7 +311,7 @@
             <span class="font-semibold">Email:</span> {#if oscDetails.email}<a href="mailto:{oscDetails.email}" class="text-blue-600 hover:underline">{oscDetails.email}</a>{:else}Não informado{/if}
           </div>
           <div>
-            <span class="font-semibold">Telefone:</span> {#if oscDetails.telefone}<span class="mr-2">{oscDetails.telefone}</span><a href="https://wa.me/55{oscDetails.telefone.replace(/[^\d]/g, '')}?text=Olá,%20temos%20um%20edital%20compatível%20com%20sua%20OSC!" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-2 py-1 text-xs font-medium rounded text-green-700 bg-green-100 hover:bg-green-200 transition-colors">💬 WhatsApp</a>{:else}Não informado{/if}
+            <span class="font-semibold">Telefone:</span> {#if oscDetails.telefone}<span class="mr-2">{oscDetails.telefone}</span><a href="https://wa.me/55{oscDetails.telefone.replace(/[^\d]/g, '')}?text=Olá,%20equipe%20da%20*{oscDetails.nome_fantasia || oscDetails.razao_social}*!%20Acompanhamos%20o%20impacto%20do%20trabalho%20de%20vocês.%20Nosso%20sistema%20mapeou%20um%20edital%20de%20fomento%20que%20tem%20tudo%20a%20ver%20com%20os%20projetos%20da%20instituição.%20Teriam%205%20minutinhos%20para%20eu%20apresentar%20essa%20oportunidade%20de%20captação?" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-2 py-1 text-xs font-medium rounded text-green-700 bg-green-100 hover:bg-green-200 transition-colors">💬 WhatsApp</a>{:else}Não informado{/if}
           </div>
           <div class="md:col-span-2">
             <span class="font-semibold">Endereço:</span> {oscDetails.logradouro}, {oscDetails.bairro}, {oscDetails.municipio} - {oscDetails.uf}
