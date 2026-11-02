@@ -311,7 +311,7 @@
             <span class="font-semibold">Email:</span> {#if oscDetails.email}<a href="mailto:{oscDetails.email}" class="text-blue-600 hover:underline">{oscDetails.email}</a>{:else}Não informado{/if}
           </div>
           <div>
-            <span class="font-semibold">Telefone:</span> {#if oscDetails.telefone}<span class="mr-2">{oscDetails.telefone}</span><a href="https://wa.me/55{oscDetails.telefone.replace(/[^\d]/g, '')}?text=Olá,%20equipe%20da%20*{oscDetails.nome_fantasia || oscDetails.razao_social}*!%20Acompanhamos%20o%20impacto%20do%20trabalho%20de%20vocês.%20Nosso%20sistema%20mapeou%20um%20edital%20de%20fomento%20que%20tem%20tudo%20a%20ver%20com%20os%20projetos%20da%20instituição.%20Teriam%205%20minutinhos%20para%20eu%20apresentar%20essa%20oportunidade%20de%20captação?" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-2 py-1 text-xs font-medium rounded text-green-700 bg-green-100 hover:bg-green-200 transition-colors">💬 WhatsApp</a>{:else}Não informado{/if}
+            <span class="font-semibold">Telefone:</span> {#if oscDetails.telefone}{oscDetails.telefone}{:else}Não informado{/if}
           </div>
           <div class="md:col-span-2">
             <span class="font-semibold">Endereço:</span> {oscDetails.logradouro}, {oscDetails.bairro}, {oscDetails.municipio} - {oscDetails.uf}
@@ -382,6 +382,17 @@
                       >
                         <span class="mr-2 text-lg">📄</span>
                         Ver Edital
+                      </a>
+                    {/if}
+                    {#if oscDetails?.telefone}
+                      <a
+                        href="https://wa.me/55{oscDetails.telefone.replace(/[^\d]/g, '')}?text=Olá,%20equipe%20da%20*{oscDetails.nome_fantasia || oscDetails.razao_social}*!%20Nosso%20sistema%20mapeou%20um%20edital%20perfeito%20para%20vocês:%20_{match.titulo}_.%20Teriam%205%20minutinhos%20para%20eu%20apresentar%20essa%20oportunidade?"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="shrink-0 inline-flex items-center px-4 py-2 border border-green-300 shadow-sm text-sm font-medium rounded-md text-green-700 bg-green-50 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors"
+                      >
+                        <span class="mr-2 text-lg">💬</span>
+                        WhatsApp
                       </a>
                     {/if}
                     <button
