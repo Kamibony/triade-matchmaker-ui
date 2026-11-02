@@ -59,7 +59,7 @@ async function fetchAndParsePDF(pdfUrl: string): Promise<string | null> {
 }
 
 export async function POST({ request }: any) {
-  const { edital_id, oscProfile } = await request.json();
+  const { edital_id, oscProfile, dossier_text } = await request.json();
 
   if (!process.env.GEMINI_API_KEY) {
     return json({ error: 'Missing GEMINI_API_KEY' }, { status: 500 });
@@ -111,6 +111,10 @@ Your task is to analyze the full text of a grant (Edital) and cross-reference it
 
 Here is the profile of the NGO (OSC):
 ${JSON.stringify(oscProfile, null, 2)}
+
+Here is the extended Web Dossier of the NGO (if available):
+${dossier_text || 'Not provided'}
+If provided, use these rich contextual details (recent projects, specific focus areas, partnerships) to make the 'project_ideas' highly tailored and specific to their actual real-world operations.
 
 Here is the ENTIRE text of the grant (Edital):
 --- START OF GRANT TEXT ---
