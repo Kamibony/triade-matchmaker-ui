@@ -5,7 +5,7 @@ import editaisData from '../../../data/editais_prosas.json';
 
 export async function POST({ request }: any) {
   const requestBody = await request.json();
-  const { cnpj, foco_atividades, cnae_data, uf, municipio, natureza_juridica, idade_anos } = requestBody;
+  const { cnpj, foco_atividades, cnae_data, uf, municipio, natureza_juridica, idade_anos, dossier_text } = requestBody;
 
   let oscProfile: any = {
     cnpj,
@@ -14,6 +14,7 @@ export async function POST({ request }: any) {
     municipio: municipio || '',
     natureza_juridica: natureza_juridica || '',
     idade_anos: idade_anos || 0,
+    dossier_web_context: dossier_text || '',
   };
 
   const eligibleEditais: any[] = [];
@@ -80,6 +81,7 @@ export async function POST({ request }: any) {
   const chunkPromises = chunks.map(async (chunk) => {
     const prompt = `
 You are a Third Sector consultant. Your job is to match a Non-Governmental Organization (NGO/OSC) with the most suitable grant opportunities (editais) based on their profile and the grant's objective and themes.
+Additionally, consider the 'dossier_web_context' (if provided) which contains a recent web analysis of the NGO's actual projects and activities. Prioritize grants that strongly align with this real-world context.
 
 Here is the profile of the OSC:
 ${JSON.stringify(oscProfile, null, 2)}
