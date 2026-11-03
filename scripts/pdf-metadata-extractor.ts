@@ -28,7 +28,7 @@ export async function downloadPdf(url: string): Promise<{ success: boolean, data
         }
 
         const contentType = response.headers.get('content-type') || '';
-        if (contentType.includes('text/html') || contentType.includes('application/xhtml+xml')) {
+        if (contentType.includes('text/html') || contentType.includes('application/xhtml+xml') || (!contentType.includes('application/pdf') && !contentType.includes('application/octet-stream'))) {
             return { success: false, notPdf: true, error: 'URL did not return a valid PDF binary' };
         }
 
