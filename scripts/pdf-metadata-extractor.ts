@@ -12,7 +12,7 @@ if (!apiKey) {
 
 const genAI = new GoogleGenerativeAI(apiKey);
 
-export async function downloadPdf(url: string): Promise<{ success: boolean, data?: ArrayBuffer, error?: string, skip?: boolean, notPdf?: boolean, expiredPresigned?: boolean }> {
+export async function downloadPdf(url: string): Promise<{ success: boolean, data?: ArrayBuffer, error?: string, skip?: boolean, notPdf?: boolean, expiredPresigned?: boolean, fallbackToText?: boolean }> {
     try {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 15000); // 15s timeout
@@ -21,8 +21,12 @@ export async function downloadPdf(url: string): Promise<{ success: boolean, data
         clearTimeout(timeoutId);
 
         if (!response.ok) {
-            if ((response.status === 403 || response.status === 400) && (url.includes('amazonaws.com') || url.includes('oraclecloud.com'))) {
-                return { success: false, expiredPresigned: true, error: `HTTP Error: ${response.status} (Presigned URL expired)` };
+            if (response.status === 403 || response.status === 401) {
+                if (url.includes('amazonaws.com')) {
+                    return { success: false, expiredPresigned: true, error: `HTTP Error: ${response.status} (Presigned URL expired)` };
+                } else {
+                    return { success: false, fallbackToText: true, error: `HTTP Error: ${response.status} (Access denied, falling back to text)` };
+                }
             }
             return { success: false, error: `HTTP Error: ${response.status}` };
         }
@@ -254,7 +258,7 @@ export async function processEditais() {
             }
         }
         let useTextFallback = false;
-        let downloadResult: { success: boolean, data?: ArrayBuffer, error?: string, skip?: boolean, notPdf?: boolean, expiredPresigned?: boolean } = { success: false, notPdf: true };
+        let downloadResult: { success: boolean, data?: ArrayBuffer, error?: string, skip?: boolean, notPdf?: boolean, expiredPresigned?: boolean, fallbackToText?: boolean } = { success: false, notPdf: true };
 
         if (!pdfLink) {
             console.log(`No PDF link provided for edital ${edital.id || i}. Will attempt text fallback.`);
@@ -286,6 +290,10 @@ export async function processEditais() {
                 }
                 if (downloadResult.notPdf) {
                     console.log(`URL for edital ${edital.id || i} was not a valid PDF. Will attempt text fallback.`);
+                    useTextFallback = true;
+                }
+                if (downloadResult.fallbackToText) {
+                    console.log(`Access denied to PDF for edital ${edital.id || i}. Will attempt text fallback.`);
                     useTextFallback = true;
                 }
             }
@@ -361,7 +369,7 @@ export async function processEditais() {
                 modified = true;
             }
             processedCount++;
-        } else if (!downloadResult.success && !downloadResult.notPdf && !downloadResult.skip) {
+        } else if (!downloadResult.success && !downloadResult.notPdf && !downloadResult.skip && !downloadResult.fallbackToText) {
             // General download failure (e.g. timeout, 404)
             edital.retry_count = (edital.retry_count || 0) + 1;
             edital.last_error = downloadResult.error || "Unknown download error";
