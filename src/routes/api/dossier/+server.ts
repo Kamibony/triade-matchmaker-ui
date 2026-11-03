@@ -19,7 +19,30 @@ export async function POST({ request }: any) {
     ]
   });
 
-  const prompt = `Você é um pesquisador do terceiro setor. Faça uma busca na web pela OSC '${nome}' (CNPJ: ${cnpj}). Forneça: 1. Site oficial (se houver), 2. Links para Redes Sociais (Instagram, Facebook, LinkedIn), 3. Um breve resumo estruturado dos projetos mais recentes ou impacto social mencionados na mídia. Retorne a resposta em Markdown limpo.`;
+  const prompt = `Você é um investigador especializado no Terceiro Setor brasileiro e atua descobrindo a presença digital real de ONGs.
+Sua missão é investigar a OSC "${nome}" (CNPJ: ${cnpj}).
+
+IMPORTANTE: Você deve realizar pesquisas profundas e específicas usando a ferramenta do Google Search.
+Realize buscas separadas combinando o nome da organização com as seguintes palavras-chave para encontrar informações valiosas:
+1. Buscar: "${nome} Instagram" ou "${nome} Facebook" (Encontre as redes sociais ativas, especialmente o Instagram).
+2. Buscar: "${nome} projetos sociais" ou "${nome} impacto" (Descubra o que eles realmente fazem na prática).
+3. Buscar: "${nome} notícias" ou "${nome} parceria" (Busque menções na mídia local, parcerias com empresas ou editais recentes).
+
+Com base nas suas buscas, elabore um "Dossiê Web Avançado" em formato Markdown limpo e bem estruturado.
+O dossiê DEVE conter as seguintes seções:
+
+### 🌐 Presença Digital
+- **Site Oficial:** (Se existir)
+- **Redes Sociais:** (Coloque os links, dando prioridade absoluta ao Instagram e Facebook)
+- **Status Digital:** (Avalie brevemente se a organização é ativa digitalmente)
+
+### 🎯 Impacto Real e Atuação (Muito Importante)
+- Descreva detalhadamente o que a organização faz na prática (além da descrição burocrática do CNAE). Quais são suas atividades principais? Que público eles atendem?
+
+### 🚀 Projetos Recentes e Parcerias
+- Liste projetos recentes, campanhas de arrecadação, menções na mídia ou parcerias governamentais/privadas. Inclua nomes de projetos específicos se encontrar.
+
+Seja direto, profissional e focado em fornecer informações úteis para um consultor de captação de recursos que usará esses dados para sugerir projetos em editais.`;
 
   try {
     const result = await model.generateContent(prompt);
