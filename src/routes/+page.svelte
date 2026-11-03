@@ -364,9 +364,9 @@
                   </div>
 
                   <div class="flex items-center gap-2">
-                    {#if match.pdf_url}
+                    {#if match.deep_metadata?.drive_link || match.pdf_url}
                       <a
-                        href={match.pdf_url}
+                        href={match.deep_metadata?.drive_link || match.pdf_url}
                         target="_blank"
                         rel="noopener noreferrer"
                         class="shrink-0 inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"

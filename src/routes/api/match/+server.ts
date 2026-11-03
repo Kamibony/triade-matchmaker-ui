@@ -50,7 +50,10 @@ export async function POST({ request }: any) {
         titulo: eligibleEditais[0]?.attributes?.nome || 'Mock Edital',
         score: 95,
         motivo_match: 'O foco em educação ambiental alinha perfeitamente com os objetivos deste edital.',
-        pdf_url: (eligibleEditais[0] as any)?.deep_metadata?.drive_pdf_link || (eligibleEditais[0] as any)?.pdf_link || "https://example.com/mock-pdf.pdf",
+        pdf_url: (eligibleEditais[0] as any)?.pdf_link || "https://example.com/mock-pdf.pdf",
+        deep_metadata: {
+          drive_link: (eligibleEditais[0] as any)?.deep_metadata?.drive_pdf_link
+        },
         valor_maximo_reais: (eligibleEditais[0] as any)?.deep_metadata?.financeiro?.valor_maximo_reais || 100000,
         prazo_de_inscricao: (eligibleEditais[0] as any)?.deep_metadata?.prazo_de_inscricao || '2024-12-31T23:59:59Z'
       }
@@ -62,7 +65,10 @@ export async function POST({ request }: any) {
     titulo: (e as any).attributes?.nome || (e as any).id,
     resumo_objetivo: (e as any).deep_metadata.resumo_objetivo,
     temas_principais: (e as any).deep_metadata.temas_principais,
-    pdf_url: (e as any).deep_metadata.drive_pdf_link || (e as any).pdf_link || null,
+    pdf_url: (e as any).pdf_link || null,
+    deep_metadata: {
+      drive_link: (e as any).deep_metadata?.drive_pdf_link
+    },
     valor_maximo_reais: (e as any).deep_metadata?.financeiro?.valor_maximo_reais,
     prazo_de_inscricao: (e as any).deep_metadata?.prazo_de_inscricao
   }));
@@ -131,6 +137,7 @@ Do not include any other text or markdown formatting (like \`\`\`json). Just ret
       ...match,
       titulo: editalInfo ? editalInfo.titulo : match.edital_id,
       pdf_url: editalInfo ? editalInfo.pdf_url : null,
+      deep_metadata: editalInfo ? editalInfo.deep_metadata : undefined,
       valor_maximo_reais: editalInfo ? editalInfo.valor_maximo_reais : null,
       prazo_de_inscricao: editalInfo ? editalInfo.prazo_de_inscricao : null
     };
