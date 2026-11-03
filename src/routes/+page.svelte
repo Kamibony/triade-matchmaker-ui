@@ -137,7 +137,7 @@
 
       if (cleanCnpj) {
         try {
-          const brasilApiResponse = await fetch(`https://brasilapi.com.br/api/cnpj/v1/${cleanCnpj}`);
+          const brasilApiResponse = await fetch(`/api/cnpj/${cleanCnpj}`);
           if (brasilApiResponse.ok) {
             const cnpjData = await brasilApiResponse.json();
 
