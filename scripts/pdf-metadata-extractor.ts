@@ -21,11 +21,11 @@ export async function downloadPdf(url: string): Promise<{ success: boolean, data
         clearTimeout(timeoutId);
 
         if (!response.ok) {
-            if (response.status === 403 || response.status === 401) {
-                if (url.includes('amazonaws.com')) {
+            if (response.status === 403 || response.status === 401 || response.status === 404) {
+                if (url.includes('amazonaws.com') && response.status !== 404) {
                     return { success: false, expiredPresigned: true, error: `HTTP Error: ${response.status} (Presigned URL expired)` };
                 } else {
-                    return { success: false, fallbackToText: true, error: `HTTP Error: ${response.status} (Access denied, falling back to text)` };
+                    return { success: false, fallbackToText: true, error: `HTTP Error: ${response.status} (Access denied/Not Found, falling back to text)` };
                 }
             }
             return { success: false, error: `HTTP Error: ${response.status}` };
@@ -276,12 +276,16 @@ export async function processEditais() {
                         edital.pipeline_status = 'FAILED_PERMANENTLY';
                         edital.last_error = downloadResult.error || "Max retries reached for expired presigned URL";
                         modified = true;
+                        // Save here before continue to prevent loop
+                        await fs.writeFile(DATA_FILE, JSON.stringify(editais, null, 2), 'utf-8');
                         continue;
                     }
                     console.log(`Presigned URL expired for edital ${edital.id || i}. Forcing rescrape.`);
                     edital.pipeline_status = 'NEW_FROM_API';
                     delete edital.pdf_link;
                     modified = true;
+                    // Save here before continue to prevent loop
+                    await fs.writeFile(DATA_FILE, JSON.stringify(editais, null, 2), 'utf-8');
                     continue;
                 }
                 if (downloadResult.skip) {
@@ -309,9 +313,8 @@ export async function processEditais() {
 
                     edital.deep_metadata = metadata;
                     edital.pipeline_status = 'COMPLETED';
-                    if (edital.full_text) {
-                        edital.full_text = edital.full_text.substring(0, 2500); // Data Slimming
-                    }
+                    // We don't slim edital.full_text here because the PDF wasn't saved.
+                    // We need the full text for Deep Dive phase.
                     modified = true;
                     console.log(`Successfully extracted metadata for edital ${edital.id || i} via text fallback`);
                 } catch (err: any) {
@@ -388,9 +391,7 @@ export async function processEditais() {
 
                      edital.deep_metadata = metadata;
                      edital.pipeline_status = 'COMPLETED';
-                     if (edital.full_text) {
-                         edital.full_text = edital.full_text.substring(0, 2500);
-                     }
+                     // We don't slim edital.full_text here because the PDF wasn't saved.
                      modified = true;
                  } catch (err: any) {
                      edital.retry_count = (edital.retry_count || 0) + 1;
@@ -419,6 +420,12 @@ export async function processEditais() {
             console.log(`Processed ${processedCount} items. Sleeping for 65 seconds to avoid rate limits...`);
             await sleep(65000);
         }
+    }
+
+    // Final save in case the last item wasn't saved or the loop broke due to MAX_EXTRACT limit
+    if (modified) {
+         await fs.writeFile(DATA_FILE, JSON.stringify(editais, null, 2), 'utf-8');
+         modified = false;
     }
 
     console.log(`Finished processing. Total new items processed: ${processedCount}`);

@@ -35,10 +35,11 @@ async function loginOnProdutosIfNeeded(workerPage: any, username: string, passwo
 
                 if (child.tagName === 'INPUT') {
                     const type = child.getAttribute('type');
-                    const name = child.getAttribute('name');
-                    const placeholder = child.getAttribute('placeholder');
+                    const name = (child.getAttribute('name') || '').toLowerCase();
+                    const id = (child.id || '').toLowerCase();
+                    const placeholder = (child.getAttribute('placeholder') || '').toLowerCase();
 
-                    if (!emailInput && (type === 'email' || (name && name.toLowerCase().includes('email')) || (placeholder && placeholder.toLowerCase().includes('mail')) || type === 'text')) {
+                    if (!emailInput && (type === 'email' || name.includes('email') || name.includes('login') || name.includes('username') || id.includes('email') || id.includes('login') || id.includes('username') || placeholder.includes('mail') || placeholder.includes('login') || placeholder.includes('usuário'))) {
                         emailInput = child as HTMLInputElement;
                     } else if (!passInput && type === 'password') {
                         passInput = child as HTMLInputElement;
@@ -528,14 +529,48 @@ async function runStandaloneScraper() {
                                 await workerPage.waitForTimeout(2000).catch(() => {});
 
                                 let pageText = await workerPage.evaluate(() => {
-                                    let text = document.body.innerText || '';
-                                    const allElements = document.querySelectorAll('*');
-                                    for (let i = 0; i < allElements.length; i++) {
-                                        if (allElements[i].shadowRoot) {
-                                            text += '\n' + (allElements[i].shadowRoot.textContent || '');
+                                    let text = '';
+                                    const queue: Node[] = [document.body];
+                                    const visited = new Set<Node>();
+
+                                    while (queue.length > 0) {
+                                        const node = queue.shift();
+                                        if (!node || visited.has(node)) continue;
+                                        visited.add(node);
+
+                                        if (node.nodeType === Node.TEXT_NODE) {
+                                            const content = (node.nodeValue || '').trim();
+                                            if (content) {
+                                                text += content + ' ';
+                                            }
+                                        } else if (node.nodeType === Node.ELEMENT_NODE) {
+                                            const el = node as Element;
+                                            const tag = el.tagName.toLowerCase();
+                                            // Skip scripts, styles, etc.
+                                            if (['script', 'style', 'noscript', 'svg'].includes(tag)) {
+                                                continue;
+                                            }
+
+                                            // Traverse Shadow DOM
+                                            if (el.shadowRoot) {
+                                                if (!visited.has(el.shadowRoot)) {
+                                                     queue.push(el.shadowRoot);
+                                                }
+                                            }
+
+                                            // Add children to queue
+                                            const childNodes = el.childNodes;
+                                            for (let i = 0; i < childNodes.length; i++) {
+                                                queue.push(childNodes[i]);
+                                            }
+                                        } else if (node.nodeType === Node.DOCUMENT_FRAGMENT_NODE) { // like shadow root
+                                             const childNodes = node.childNodes;
+                                             for (let i = 0; i < childNodes.length; i++) {
+                                                 queue.push(childNodes[i]);
+                                             }
                                         }
                                     }
-                                    return text.replace(/\n\s*\n/g, '\n').trim();
+                                    return text.replace(/\s+/g, ' ').trim();
                                 });
 
                                 // Login Wall Guard
@@ -550,14 +585,45 @@ async function runStandaloneScraper() {
                                         if (loginSuccess) {
                                             await workerPage.waitForTimeout(5000).catch(() => {});
                                             pageText = await workerPage.evaluate(() => {
-                                                let text = document.body.innerText || '';
-                                                const allElements = document.querySelectorAll('*');
-                                                for (let i = 0; i < allElements.length; i++) {
-                                                    if (allElements[i].shadowRoot) {
-                                                        text += '\n' + (allElements[i].shadowRoot.textContent || '');
+                                                let text = '';
+                                                const queue: Node[] = [document.body];
+                                                const visited = new Set<Node>();
+
+                                                while (queue.length > 0) {
+                                                    const node = queue.shift();
+                                                    if (!node || visited.has(node)) continue;
+                                                    visited.add(node);
+
+                                                    if (node.nodeType === Node.TEXT_NODE) {
+                                                        const content = (node.nodeValue || '').trim();
+                                                        if (content) {
+                                                            text += content + ' ';
+                                                        }
+                                                    } else if (node.nodeType === Node.ELEMENT_NODE) {
+                                                        const el = node as Element;
+                                                        const tag = el.tagName.toLowerCase();
+                                                        if (['script', 'style', 'noscript', 'svg'].includes(tag)) {
+                                                            continue;
+                                                        }
+
+                                                        if (el.shadowRoot) {
+                                                            if (!visited.has(el.shadowRoot)) {
+                                                                 queue.push(el.shadowRoot);
+                                                            }
+                                                        }
+
+                                                        const childNodes = el.childNodes;
+                                                        for (let i = 0; i < childNodes.length; i++) {
+                                                            queue.push(childNodes[i]);
+                                                        }
+                                                    } else if (node.nodeType === Node.DOCUMENT_FRAGMENT_NODE) {
+                                                         const childNodes = node.childNodes;
+                                                         for (let i = 0; i < childNodes.length; i++) {
+                                                             queue.push(childNodes[i]);
+                                                         }
                                                     }
                                                 }
-                                                return text.replace(/\n\s*\n/g, '\n').trim();
+                                                return text.replace(/\s+/g, ' ').trim();
                                             });
                                         }
                                     }
