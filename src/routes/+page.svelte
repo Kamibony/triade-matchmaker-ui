@@ -437,6 +437,16 @@
                     </div>
 
                     <div class="space-y-6">
+                      <!-- Executive Summary -->
+                      {#if deepDiveReports[match.edital_id].executive_summary}
+                        <div class="bg-gray-50 rounded-lg p-5 border-l-4 border-gray-400 shadow-sm mb-6">
+                          <h5 class="text-sm font-bold text-gray-700 uppercase tracking-wider mb-2">Resumo Executivo</h5>
+                          <p class="text-gray-800 text-sm italic leading-relaxed">
+                            {deepDiveReports[match.edital_id].executive_summary}
+                          </p>
+                        </div>
+                      {/if}
+
                       <!-- Missing Documents -->
                       <div>
                         <h5 class="text-sm font-semibold text-gray-800 flex items-center mb-2">
