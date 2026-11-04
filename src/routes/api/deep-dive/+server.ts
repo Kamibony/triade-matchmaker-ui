@@ -124,6 +124,7 @@ ${fullGrantText}
 Based strictly on the grant text provided above and the NGO's profile, generate a consulting report in valid JSON format.
 The JSON must have the following exact structure:
 {
+  "executive_summary": "A 2-3 sentence overview explaining what the edital is about and its core objective.",
   "missing_documents": [
     // Array of strings detailing specific compliance documents the OSC needs to prepare or check.
   ],
