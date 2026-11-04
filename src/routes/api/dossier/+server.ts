@@ -11,6 +11,7 @@ export async function POST({ request }: any) {
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
   const model = genAI.getGenerativeModel({
     model: 'gemini-3.5-flash-lite',
+    generationConfig: { temperature: 0 },
     tools: [
       {
         // @ts-ignore - The type definitions in @google/generative-ai might be outdated, but googleSearch is correct for this API version

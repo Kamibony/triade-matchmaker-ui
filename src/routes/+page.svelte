@@ -59,6 +59,11 @@
   async function handleGenerateDossier() {
     if (!oscDetails) return;
 
+    if (dossierResult) {
+      await handleFetchMatches();
+      return;
+    }
+
     isDossierLoading = true;
     dossierError = null;
     dossierResult = null;
@@ -289,6 +294,9 @@
                   <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
                 Buscando...
+              {:else if dossierResult}
+                <span class="mr-2">🔄</span>
+                Atualizar Resultados
               {:else}
                 <span class="mr-2">✨</span>
                 Gerar Dossiê de IA & Buscar Editais
@@ -357,9 +365,15 @@
                         Valor Máximo: {match.valor_maximo_reais ? match.valor_maximo_reais.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) : 'Não informado'}
                       </div>
 
-                      <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-50 text-yellow-700 border border-yellow-100">
-                        Prazo: {match.prazo_de_inscricao ? new Date(match.prazo_de_inscricao).toLocaleDateString('pt-BR') : 'Não informado'}
-                      </div>
+                      {#if match.prazo_de_inscricao && match.prazo_de_inscricao !== 'Não informado'}
+                        <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-50 text-yellow-700 border border-yellow-100">
+                          Prazo: {new Date(match.prazo_de_inscricao).toLocaleDateString('pt-BR')}
+                        </div>
+                      {:else}
+                        <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-50 text-gray-700 border border-gray-200">
+                          Fluxo Contínuo / Consulte o Edital
+                        </div>
+                      {/if}
                     </div>
                   </div>
 
