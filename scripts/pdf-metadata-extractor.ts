@@ -3,6 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { google } from 'googleapis';
 import { Readable } from 'node:stream';
+import pdfParse from 'pdf-parse';
 
 // Load environment variables if available or assume it's passed directly to the script
 const apiKey = process.env.GEMINI_API_KEY || '';
@@ -139,15 +140,19 @@ async function extractMetadataFromPdf(pdfData: ArrayBuffer): Promise<any> {
         generationConfig: sharedGenerationConfig
     });
 
-    const prompt = "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.";
+    // Extract raw text from the PDF to save on Gemini image token costs
+    const pdfBuffer = Buffer.from(pdfData);
+    let extractedText = "";
+    try {
+        const parsedPdf = await pdfParse(pdfBuffer);
+        extractedText = parsedPdf.text;
+    } catch (err: any) {
+        console.warn("pdf-parse failed to extract text, proceeding with empty text: " + err.message);
+    }
+
+    const prompt = "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n" + extractedText;
 
     const result = await generateContentWithRetry(model, [
-        {
-            inlineData: {
-                data: Buffer.from(pdfData).toString("base64"),
-                mimeType: "application/pdf"
-            }
-        },
         prompt
     ]);
 
