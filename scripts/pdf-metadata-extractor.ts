@@ -241,7 +241,12 @@ export async function processEditais() {
     for (let i = 0; i < editais.length; i++) {
         const edital = editais[i];
 
-        if (edital.pipeline_status !== 'PENDING_EXTRACTION') {
+        if (edital.pipeline_status === 'NEW_FROM_API' || edital.pipeline_status !== 'PENDING_EXTRACTION') {
+            continue;
+        }
+
+        if (!edital.pdf_link && (!edital.full_text || edital.full_text.length <= 300)) {
+            console.log(`Skipping edital ${edital.id || i} because it is not fully deep-scraped (no valid pdf_link or full_text)`);
             continue;
         }
 
