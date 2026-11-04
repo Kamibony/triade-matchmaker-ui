@@ -26,18 +26,14 @@ export async function POST({ request }: any) {
     if (!(edital as any).deep_metadata || !(edital as any).deep_metadata.criterios_eliminatorios) continue;
 
     const prazo = (edital as any).deep_metadata.prazo_de_inscricao;
-    const valor_maximo = (edital as any).deep_metadata.financeiro?.valor_maximo_reais;
-
-    if (!prazo || prazo.toLowerCase() === 'não informado') {
-      continue; // Skip because deadline is missing or not informed
-    }
+    const valor_maximo = (edital as any).deep_metadata.financeiro?.valor_maximo_ou_global_reais;
 
     if (valor_maximo === undefined || valor_maximo === null) {
       continue; // Skip because maximum value is missing
     }
 
     const deadlineDate = new Date(prazo);
-    if (!isNaN(deadlineDate.getTime()) && deadlineDate < today) {
+    if (prazo && prazo.toLowerCase() !== 'não informado' && !isNaN(deadlineDate.getTime()) && deadlineDate < today) {
       continue; // Skip because deadline has passed
     }
 
@@ -62,7 +58,7 @@ export async function POST({ request }: any) {
         deep_metadata: {
           drive_link: (eligibleEditais[0] as any)?.deep_metadata?.drive_pdf_link
         },
-        valor_maximo_reais: (eligibleEditais[0] as any)?.deep_metadata?.financeiro?.valor_maximo_reais || 100000,
+        valor_maximo_reais: (eligibleEditais[0] as any)?.deep_metadata?.financeiro?.valor_maximo_ou_global_reais || 100000,
         prazo_de_inscricao: (eligibleEditais[0] as any)?.deep_metadata?.prazo_de_inscricao || '2024-12-31T23:59:59Z'
       }
     ]);
@@ -77,7 +73,7 @@ export async function POST({ request }: any) {
     deep_metadata: {
       drive_link: (e as any).deep_metadata?.drive_pdf_link
     },
-    valor_maximo_reais: (e as any).deep_metadata?.financeiro?.valor_maximo_reais,
+    valor_maximo_reais: (e as any).deep_metadata?.financeiro?.valor_maximo_ou_global_reais,
     prazo_de_inscricao: (e as any).deep_metadata?.prazo_de_inscricao
   }));
 
