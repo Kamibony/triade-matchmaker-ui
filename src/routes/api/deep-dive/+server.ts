@@ -31,7 +31,7 @@ async function fetchAndParseDrivePDF(driveUrl: string): Promise<string | null> {
     );
 
     const buffer = Buffer.from(response.data as ArrayBuffer);
-    const pdfParse = (await import('pdf-parse')).default;
+    const pdfParse = (await import('pdf-parse/lib/pdf-parse.js')).default;
     const data = await pdfParse(buffer);
     return data.text;
   } catch (error) {
@@ -49,7 +49,7 @@ async function fetchAndParsePDF(pdfUrl: string): Promise<string | null> {
     }
     const arrayBuffer = await response.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
-    const pdfParse = (await import('pdf-parse')).default;
+    const pdfParse = (await import('pdf-parse/lib/pdf-parse.js')).default;
     const data = await pdfParse(buffer);
     return data.text;
   } catch (error) {
