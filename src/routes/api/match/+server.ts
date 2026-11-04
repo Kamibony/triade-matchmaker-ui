@@ -26,11 +26,19 @@ export async function POST({ request }: any) {
     if (!(edital as any).deep_metadata || !(edital as any).deep_metadata.criterios_eliminatorios) continue;
 
     const prazo = (edital as any).deep_metadata.prazo_de_inscricao;
-    if (prazo) {
-      const deadlineDate = new Date(prazo);
-      if (!isNaN(deadlineDate.getTime()) && deadlineDate < today) {
-        continue; // Skip because deadline has passed
-      }
+    const valor_maximo = (edital as any).deep_metadata.financeiro?.valor_maximo_reais;
+
+    if (!prazo || prazo.toLowerCase() === 'não informado') {
+      continue; // Skip because deadline is missing or not informed
+    }
+
+    if (valor_maximo === undefined || valor_maximo === null) {
+      continue; // Skip because maximum value is missing
+    }
+
+    const deadlineDate = new Date(prazo);
+    if (!isNaN(deadlineDate.getTime()) && deadlineDate < today) {
+      continue; // Skip because deadline has passed
     }
 
     // The calculateMatches function expects an array of NGOs
@@ -80,7 +88,10 @@ export async function POST({ request }: any) {
   }
 
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-  const model = genAI.getGenerativeModel({ model: 'gemini-3.5-flash-lite' });
+  const model = genAI.getGenerativeModel({
+    model: 'gemini-3.5-flash-lite',
+    generationConfig: { temperature: 0 }
+  });
 
   let allResults: any[] = [];
 
@@ -100,7 +111,7 @@ Evaluate how well the OSC's profile (especially its 'foco_atividades') matches e
 Return ONLY a valid JSON array of objects, where each object contains:
 - "edital_id": The ID of the grant.
 - "score": A number between 0 and 100 representing the thematic match quality (100 is a perfect match).
-- "motivo_match": A 1-sentence reasoning explaining why the score was given.
+- "motivo_match": A 1-sentence reasoning explaining why the score was given. For scores > 90, you MUST explicitly justify it with direct evidence from both the NGO profile/dossier and the grant text.
 
 Do not include any other text or markdown formatting (like \`\`\`json). Just return the raw JSON array.
 `;
