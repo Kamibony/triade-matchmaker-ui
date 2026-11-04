@@ -42,10 +42,14 @@
       {formatCurrency(edital.deep_metadata?.financeiro?.valor_maximo_reais)}
     </div>
 
-    {#if edital.attributes?.inscricoes_ate}
+    {#if edital.deep_metadata?.prazo_de_inscricao && edital.deep_metadata.prazo_de_inscricao !== 'Não informado'}
       <div class="flex items-center text-gray-500">
         <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-        {edital.attributes.inscricoes_ate}
+        {new Date(edital.deep_metadata.prazo_de_inscricao).toLocaleDateString('pt-BR')}
+      </div>
+    {:else}
+      <div class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-600 border border-gray-200">
+        Fluxo Contínuo / Consulte o Edital
       </div>
     {/if}
   </div>
