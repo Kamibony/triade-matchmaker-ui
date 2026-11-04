@@ -9,8 +9,7 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
     "extract-metadata": "tsx scripts/pdf-metadata-extractor.ts",
-    "scrape-prosas": "tsx scripts/prosas-scraper.ts",
-    "postinstall": "patch-package"
+    "scrape-prosas": "tsx scripts/prosas-scraper.ts"
   },
   "devDependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -22,7 +21,6 @@
     "@types/node": "^24.19.2",
     "@types/pdf-parse": "^1.1.5",
     "autoprefixer": "^10.6.2",
-    "patch-package": "^8.0.1",
     "playwright": "^1.64.1",
     "playwright-extra": "^4.3.6",
     "postcss": "^8.5.32",

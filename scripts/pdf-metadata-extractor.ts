@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { google } from 'googleapis';
 import { Readable } from 'node:stream';
-import pdfParse from 'pdf-parse';
+import pdfParse from 'pdf-parse/lib/pdf-parse.js';
 
 // Load environment variables if available or assume it's passed directly to the script
 const apiKey = process.env.GEMINI_API_KEY || '';
