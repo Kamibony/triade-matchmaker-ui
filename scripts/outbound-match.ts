@@ -22,6 +22,8 @@ interface CacheEntry {
 }
 
 interface MatchResult {
+  edital_id: string;
+  edital_titulo: string;
   osc: OSC;
   score: number;
   motivo_match: string;
@@ -30,34 +32,21 @@ interface MatchResult {
 
 // --- Configuration ---
 const CACHE_PATH = path.join(process.cwd(), 'src', 'data', 'cnpj_cache.json');
-const OUTPUT_FILE = path.join(process.cwd(), 'outbound_leads_edital_test.json');
+const OUTPUT_FILE = path.join(process.cwd(), 'src', 'data', 'daily_outbound_leads.json');
+const EDITAIS_PATH = path.join(process.cwd(), 'src', 'data', 'editais_prosas.json');
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-
-// if (!GEMINI_API_KEY || GEMINI_API_KEY === 'dummy') {
-//   console.error("Error: A valid GEMINI_API_KEY is required in the environment.");
-//   process.exit(1);
-// }
 
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY || 'dummy');
 const model = genAI.getGenerativeModel({
   model: 'gemini-3.5-flash-lite',
   generationConfig: { temperature: 0 },
+  tools: [
+    {
+      // @ts-ignore
+      googleSearch: {}
+    }
+  ]
 });
-
-// --- Target Configuration (Hardcoded for POC) ---
-const TARGET_UF = 'BA'; // Test with Bahia
-const TARGET_MUNICIPALITY_NAME = 'Salvador';
-
-const EDITAL_CRITERIA = {
-  id: 'edital_example_1',
-  titulo: 'Edital de Fomento à Cultura e Educação',
-  resumo_objetivo: 'Apoiar projetos que promovam a cultura e educação em comunidades vulneráveis, com foco em jovens e mulheres.',
-  temas_principais: ['Cultura', 'Educação', 'Juventude', 'Mulheres'],
-  ko_criteria: {
-    naturezas_juridicas_proibidas: ['Órgão Público', 'Empresa Privada'],
-    idade_minima_anos: 2
-  }
-};
 
 const currentYear = new Date().getFullYear();
 
@@ -98,11 +87,10 @@ async function fetchBrasilAPIWithBackoff(cnpj: string): Promise<any> {
 
 async function loadCache(): Promise<Record<string, CacheEntry>> {
     try {
-        await fs.access(CACHE_PATH);
         const data = await fs.readFile(CACHE_PATH, 'utf-8');
         return JSON.parse(data);
-    } catch {
-        return {}; // Return empty if doesn't exist
+    } catch (error) {
+        return {}; // empty if doesn't exist
     }
 }
 
@@ -111,161 +99,236 @@ async function saveCache(cache: Record<string, CacheEntry>) {
     await fs.writeFile(CACHE_PATH, JSON.stringify(cache, null, 2), 'utf-8');
 }
 
-async function runPipeline() {
-  console.log(`Starting JIT Outbound Matchmaking Pipeline for Edital: ${EDITAL_CRITERIA.titulo}`);
+async function getTopEditais() {
+    const editaisData = await fs.readFile(EDITAIS_PATH, 'utf-8');
+    const editais = JSON.parse(editaisData);
 
-  // 1. Fetch Municipality ID from IPEA
-  console.log(`\n--- Fetching IPEA Municipality ID for ${TARGET_MUNICIPALITY_NAME} ---`);
-  let edmu_cd_municipio;
-  try {
-      const muniData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/municipio/${TARGET_MUNICIPALITY_NAME}`);
-      if (!muniData || muniData.length === 0) {
-          throw new Error("Municipality not found in IPEA API");
-      }
-      edmu_cd_municipio = muniData[0].edmu_cd_municipio;
-      console.log(`Found Municipality ID: ${edmu_cd_municipio}`);
-  } catch(e: any) {
-      console.error(e.message);
-      process.exit(1);
-  }
+    const now = new Date();
+    const thirtyDaysFromNow = new Date();
+    thirtyDaysFromNow.setDate(now.getDate() + 30);
 
-  // 2. Fetch OSCs by Municipality
-  console.log(`\n--- Fetching OSCs for Municipality ID ${edmu_cd_municipio} ---`);
-  let ipeaOscs = [];
-  try {
-      ipeaOscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${edmu_cd_municipio}`);
-      console.log(`Found ${ipeaOscs.length} total OSCs in region.`);
-  } catch(e: any) {
-      console.error(e.message);
-      process.exit(1);
-  }
+    const validEditais = editais.filter((edital: any) => {
+        if (!edital.deep_metadata) return false;
 
-  // We don't want to process all of them for a POC, so we'll take a subset.
-  // Actually, we need their CNPJs first to use the cache. Getting the CNPJ requires one call per OSC.
-  // Let's cap the IPEA CNPJ fetches to 100 to save time.
-  const sampleSize = Math.min(100, ipeaOscs.length);
-  console.log(`\n--- Fetching CNPJs for up to ${sampleSize} OSCs ---`);
+        const valor = edital.deep_metadata.financeiro?.valor_maximo_ou_global_reais || 0;
+        if (valor <= 100000) return false;
 
-  const rawCnpjs = [];
-  for(let i = 0; i < sampleSize; i++) {
-      const osc = ipeaOscs[i];
-      try {
-          const headerData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/osc/cabecalho/${osc.id_osc}`);
-          if (headerData && headerData.cd_identificador_osc) {
-               // Ensure 14 digits padding if necessary, but it should be 14
-               let cnpj = String(headerData.cd_identificador_osc).padStart(14, '0');
-               rawCnpjs.push(cnpj);
-          }
-      } catch (e) {
-          // just ignore errors for single items
-      }
-  }
-  console.log(`Successfully retrieved ${rawCnpjs.length} CNPJs.`);
+        const prazo = edital.deep_metadata.prazo_de_inscricao;
+        if (!prazo || prazo === 'Não informado') return true; // Continuous flow
 
-  // 3. Load Cache
-  const cache = await loadCache();
-  const enrichedOscs: OSC[] = [];
-  let apiCalls = 0;
-
-  console.log(`\n--- Phase 1: JIT Enrichment & Filtering ---`);
-  for (const cnpj of rawCnpjs) {
-      const cached = cache[cnpj];
-      const now = new Date().toISOString();
-
-      let oscData: OSC | null = null;
-
-      if (cached) {
-          // Use cached data
-          oscData = cached.osc;
-      } else {
-          // Fetch from BrasilAPI
-          apiCalls++;
-          const bApiData = await fetchBrasilAPIWithBackoff(cnpj);
-          if (bApiData && bApiData.descricao_situacao_cadastral === 'ATIVA') {
-              const ano_fundacao = parseInt(bApiData.data_inicio_atividade.split('-')[0], 10);
-
-              oscData = {
-                  cnpj,
-                  nome: bApiData.razao_social,
-                  uf: bApiData.uf,
-                  municipio: bApiData.municipio,
-                  natureza_juridica: bApiData.natureza_juridica,
-                  ano_fundacao,
-                  cnae_primario_descricao: bApiData.cnae_fiscal_descricao || '',
-                  cnae_secundario_descricao: (bApiData.cnaes_secundarios || []).map((c: any) => c.descricao).join(' | '),
-                  situacao_cadastral: bApiData.descricao_situacao_cadastral
-              };
-
-              cache[cnpj] = {
-                  osc: oscData,
-                  last_checked_date: now
-              };
-          }
-      }
-
-      if (oscData && oscData.situacao_cadastral === 'ATIVA') {
-          // K.O. Checks
-          const age = currentYear - oscData.ano_fundacao;
-          const isNaturezaProibida = EDITAL_CRITERIA.ko_criteria.naturezas_juridicas_proibidas.some(n => oscData!.natureza_juridica.includes(n));
-
-          if (age >= EDITAL_CRITERIA.ko_criteria.idade_minima_anos && !isNaturezaProibida) {
-              enrichedOscs.push(oscData);
-          }
-      }
-  }
-
-  console.log(`Made ${apiCalls} calls to BrasilAPI.`);
-  console.log(`After JIT and KO Filters: ${enrichedOscs.length} OSCs eligible.`);
-
-  // Save Cache
-  await saveCache(cache);
-
-  if (enrichedOscs.length === 0) {
-      console.log("No valid OSCs found after filtering.");
-      process.exit(0);
-  }
-
-  // Phase 2: Zero-Cost Heuristic Pre-Ranking
-  console.log('\n--- Phase 2: Zero-Cost Heuristic Pre-Ranking ---');
-  const targetKeywords = ['cultura', 'educação', 'ensino', 'arte', 'mulher', 'jovem', 'juventude', 'social', 'desenvolvimento'];
-
-  const scoredOscs = enrichedOscs.map(osc => {
-    let heuristicScore = 0;
-    const combinedText = `${osc.cnae_primario_descricao} ${osc.cnae_secundario_descricao}`.toLowerCase();
-
-    targetKeywords.forEach(kw => {
-      if (combinedText.includes(kw)) {
-        heuristicScore += 10;
-      }
+        const prazoDate = new Date(prazo);
+        return prazoDate > thirtyDaysFromNow;
     });
 
-    const age = currentYear - osc.ano_fundacao;
-    heuristicScore += Math.min(age, 20);
+    validEditais.sort((a: any, b: any) => {
+        const valA = a.deep_metadata.financeiro?.valor_maximo_ou_global_reais || 0;
+        const valB = b.deep_metadata.financeiro?.valor_maximo_ou_global_reais || 0;
+        return valB - valA; // Descending
+    });
 
-    return { osc, heuristicScore };
-  });
+    return validEditais.slice(0, 5);
+}
 
-  scoredOscs.sort((a, b) => b.heuristicScore - a.heuristicScore);
-  const top50 = scoredOscs.slice(0, 50).map(item => item.osc);
-  console.log(`Pre-ranked down to ${top50.length} Top Candidates.`);
+async function getIpeaIdsForRegion(criterios: any) {
+    let rawCnpjs: string[] = [];
 
-  // Phase 3: Paid AI Processing (Dossier & Match)
-  console.log('\n--- Phase 3: Paid AI Processing (AI Match) ---');
-  const finalMatches: MatchResult[] = [];
+    if (criterios.municipios_permitidos && criterios.municipios_permitidos.length > 0) {
+        // Find cities IDs
+        for (const cityString of criterios.municipios_permitidos) {
+            // "Rolim de Moura - RO" -> "Rolim de Moura"
+            const cityPart = cityString.split('-')[0].trim();
+            try {
+                const muniData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/municipio/${encodeURIComponent(cityPart)}`);
+                if (muniData && muniData.length > 0) {
+                    const id = muniData[0].edmu_cd_municipio;
+                    const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${id}`);
+                    const sampleSize = Math.min(100, oscs.length);
+                    for (let i = 0; i < sampleSize; i++) {
+                        const headerData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/osc/cabecalho/${oscs[i].id_osc}`);
+                        if (headerData && headerData.cd_identificador_osc) {
+                             rawCnpjs.push(String(headerData.cd_identificador_osc).padStart(14, '0'));
+                        }
+                    }
+                }
+            } catch (e) {
+                console.warn(`Failed to fetch OSCs for municipality ${cityPart}`);
+            }
+            if (rawCnpjs.length >= 100) break; // limit to 100 total
+        }
+    } else if (criterios.estados_permitidos && criterios.estados_permitidos.length > 0) {
+         // Find state IDs
+         for (const state of criterios.estados_permitidos) {
+             try {
+                const stateData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/estado/${encodeURIComponent(state)}`);
+                if (stateData && stateData.length > 0) {
+                    const id = stateData[0].eduf_cd_uf;
+                    const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/estado/${id}`);
+                    const sampleSize = Math.min(100, oscs.length);
+                    for (let i = 0; i < sampleSize; i++) {
+                        const headerData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/osc/cabecalho/${oscs[i].id_osc}`);
+                        if (headerData && headerData.cd_identificador_osc) {
+                             rawCnpjs.push(String(headerData.cd_identificador_osc).padStart(14, '0'));
+                        }
+                    }
+                }
+             } catch (e) {
+                console.warn(`Failed to fetch OSCs for state ${state}`);
+             }
+             if (rawCnpjs.length >= 100) break;
+         }
+    } else if (criterios.abrangencia_nacional) {
+         // Use Joao Pessoa
+         try {
+            const muniData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/municipio/João Pessoa`);
+            if (muniData && muniData.length > 0) {
+                const id = muniData[0].edmu_cd_municipio;
+                const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${id}`);
+                const sampleSize = Math.min(100, oscs.length);
+                for (let i = 0; i < sampleSize; i++) {
+                    const headerData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/osc/cabecalho/${oscs[i].id_osc}`);
+                    if (headerData && headerData.cd_identificador_osc) {
+                         rawCnpjs.push(String(headerData.cd_identificador_osc).padStart(14, '0'));
+                    }
+                }
+            }
+         } catch (e) {
+            console.warn(`Failed to fetch OSCs for Joao Pessoa`);
+         }
+    }
 
-  for (let i = 0; i < top50.length; i++) {
-    const osc = top50[i];
-    console.log(`[${i + 1}/${top50.length}] AI Evaluating: ${osc.nome} (${osc.municipio}-${osc.uf})`);
+    return [...new Set(rawCnpjs)].slice(0, 100);
+}
 
-    const searchQuery = `${osc.nome} ${osc.municipio} ${osc.uf}`;
+async function runPipeline() {
+  console.log(`Starting Outbound Matchmaking Pipeline`);
 
-    const prompt = `
-You are a senior grant consultant ('captador de recursos'). Your task is to evaluate a specific Non-Governmental Organization (NGO/OSC) against a specific grant (Edital) and determine if they are a strong match.
+  const topEditais = await getTopEditais();
+  console.log(`Found ${topEditais.length} top editais.`);
+
+  const cache = await loadCache();
+  const allFinalMatches: MatchResult[] = [];
+
+  for (const edital of topEditais) {
+      console.log(`\n================================`);
+      console.log(`Processing Edital: ${edital.attributes.nome}`);
+      const criterios = edital.deep_metadata.criterios_eliminatorios || {};
+
+      console.log(`Fetching IPEA IDs for region...`);
+      const rawCnpjs = await getIpeaIdsForRegion(criterios);
+      console.log(`Retrieved ${rawCnpjs.length} CNPJs for this edital.`);
+
+      const enrichedOscs: OSC[] = [];
+      let apiCalls = 0;
+
+      for (const cnpj of rawCnpjs) {
+          const cached = cache[cnpj];
+          const now = new Date().toISOString();
+
+          let oscData: OSC | null = null;
+
+          if (cached) {
+              oscData = cached.osc;
+          } else {
+              apiCalls++;
+              const bApiData = await fetchBrasilAPIWithBackoff(cnpj);
+              if (bApiData && bApiData.descricao_situacao_cadastral === 'ATIVA') {
+                  const ano_fundacao = parseInt(bApiData.data_inicio_atividade.split('-')[0], 10);
+
+                  oscData = {
+                      cnpj,
+                      nome: bApiData.razao_social,
+                      uf: bApiData.uf,
+                      municipio: bApiData.municipio,
+                      natureza_juridica: bApiData.natureza_juridica,
+                      ano_fundacao,
+                      cnae_primario_descricao: bApiData.cnae_fiscal_descricao || '',
+                      cnae_secundario_descricao: (bApiData.cnaes_secundarios || []).map((c: any) => c.descricao).join(' | '),
+                      situacao_cadastral: bApiData.descricao_situacao_cadastral
+                  };
+
+                  cache[cnpj] = {
+                      osc: oscData,
+                      last_checked_date: now
+                  };
+              }
+          }
+
+          if (oscData && oscData.situacao_cadastral === 'ATIVA') {
+              const age = currentYear - oscData.ano_fundacao;
+              const excludedNatures = criterios.natureza_juridica_excluida || [];
+              const isNaturezaProibida = excludedNatures.some((n: string) => oscData!.natureza_juridica.toLowerCase().includes(n.toLowerCase()));
+
+              const minAge = criterios.idade_minima_cnpj_anos || 0;
+              if (age >= minAge && !isNaturezaProibida) {
+                  enrichedOscs.push(oscData);
+              }
+          }
+      }
+      console.log(`Made ${apiCalls} calls to BrasilAPI.`);
+      console.log(`Eligible OSCs after K.O. filters: ${enrichedOscs.length}`);
+
+      if (enrichedOscs.length === 0) continue;
+
+      const temas = edital.deep_metadata.temas_principais || [];
+      const scoredOscs = enrichedOscs.map(osc => {
+          let heuristicScore = 0;
+          const combinedText = `${osc.cnae_primario_descricao} ${osc.cnae_secundario_descricao}`.toLowerCase();
+
+          temas.forEach((kw: string) => {
+              if (combinedText.includes(kw.toLowerCase())) {
+                  heuristicScore += 10;
+              }
+          });
+          const age = currentYear - osc.ano_fundacao;
+          heuristicScore += Math.min(age, 20);
+          return { osc, heuristicScore };
+      });
+
+      scoredOscs.sort((a, b) => b.heuristicScore - a.heuristicScore);
+      const top10 = scoredOscs.slice(0, 10).map(item => item.osc);
+      console.log(`Pre-ranked down to ${top10.length} Top Candidates.`);
+
+      // AI Match
+      for (let i = 0; i < top10.length; i++) {
+          const osc = top10[i];
+          console.log(`[${i + 1}/${top10.length}] AI Evaluating: ${osc.nome}`);
+
+          let dossieText = '';
+          const dossiePrompt = `Você é um investigador especializado no Terceiro Setor brasileiro e atua descobrindo a presença digital real de ONGs.
+Sua missão é investigar a OSC "${osc.nome}" na cidade de ${osc.municipio} e estado de ${osc.uf}.
+
+IMPORTANTE: Você deve realizar pesquisas profundas e específicas usando a ferramenta do Google Search.
+Realize buscas separadas combinando o nome da organização com as seguintes palavras-chave para encontrar informações valiosas:
+1. Buscar: "${osc.nome} ${osc.municipio} ${osc.uf} Instagram" ou Facebook.
+2. Buscar: "${osc.nome} ${osc.municipio} ${osc.uf} projetos sociais".
+3. Buscar: "${osc.nome} ${osc.municipio} ${osc.uf} notícias".
+
+Com base nas suas buscas, elabore um "Dossiê Web Avançado" contendo Presença Digital, Impacto Real e Atuação, Projetos Recentes e Parcerias.`;
+
+          if (GEMINI_API_KEY && GEMINI_API_KEY !== 'dummy') {
+              try {
+                  const dossieResult = await model.generateContent({
+                      contents: [{ role: 'user', parts: [{ text: dossiePrompt }] }],
+                      tools: [{ googleSearch: {} } as any]
+                  });
+                  dossieText = dossieResult.response.text().trim();
+              } catch (e: any) {
+                  console.error(`Dossier generation failed: ${e.message}`);
+                  dossieText = "Dossiê indisponível devido a falha na busca.";
+              }
+          } else {
+              dossieText = "Dossiê mock para teste.";
+          }
+
+          await sleep(4000);
+
+          const matchPrompt = `
+You are a senior grant consultant. Your task is to evaluate a specific NGO against a specific grant and determine if they are a strong match.
 
 **The Grant (Edital) Context:**
-Title: ${EDITAL_CRITERIA.titulo}
-Objective: ${EDITAL_CRITERIA.resumo_objetivo}
-Themes: ${EDITAL_CRITERIA.temas_principais.join(', ')}
+Title: ${edital.attributes.nome}
+Objective: ${edital.deep_metadata.resumo_objetivo || ''}
+Themes: ${temas.join(', ')}
 
 **The NGO (OSC) Profile:**
 Name: ${osc.nome}
@@ -275,83 +338,53 @@ Founded: ${osc.ano_fundacao}
 Primary Activity (CNAE): ${osc.cnae_primario_descricao}
 Secondary Activity (CNAE): ${osc.cnae_secundario_descricao}
 
-Use the Google Search Grounding tool to search for: "${searchQuery}". This will help you find recent projects, social media presence, or website information to build a stronger context about what this NGO actually does.
-*Note: Make absolutely sure the search results you use belong to the NGO in ${osc.municipio}, ${osc.uf} and not a different NGO with a similar name.*
+**NGO Web Dossier (Research Context):**
+${dossieText}
 
-Based on the profile and the grounded search information, provide an evaluation.
+Based on the profile and the provided dossier, provide an evaluation.
 
 Return ONLY a valid JSON object containing:
 - "score": A number between 0 and 100 representing how well the NGO matches the grant's objective and themes.
-- "motivo_match": A brief 1-2 sentence justification for the score, citing specific evidence from their activities or grounded search.
-- "whatsapp_message": A short, professional, and personalized outreach message (in Portuguese) from 'Angela' (the captador) to the NGO, suggesting they might be a great fit for the "${EDITAL_CRITERIA.titulo}" grant and asking if they are open to a conversation. Keep it friendly and concise.
+- "motivo_match": A brief 1-2 sentence justification for the score, citing specific evidence from their activities or the dossier.
+- "whatsapp_message": A short, professional, and personalized outreach message (in Portuguese) from 'Angela' (the captador) to the NGO, suggesting they might be a great fit for the "${edital.attributes.nome}" grant and asking if they are open to a conversation. Keep it friendly and concise.
 
-Do not include markdown formatting (like \`\`\`json). Just return the raw JSON object.
-`;
+Do not include markdown formatting. Just return the raw JSON object.`;
 
-    let attempt = 0;
-    const maxAttempts = 3;
-    let success = false;
+          let aiResult: any = { score: 0, motivo_match: "Failed", whatsapp_message: "" };
+          if (GEMINI_API_KEY && GEMINI_API_KEY !== 'dummy') {
+               try {
+                   const result = await model.generateContent({
+                      contents: [{ role: 'user', parts: [{ text: matchPrompt }] }]
+                   });
+                   const responseText = result.response.text().trim();
+                   const cleanedResponse = responseText.replace(/^```json\s*/i, '').replace(/```\s*$/, '');
+                   aiResult = JSON.parse(cleanedResponse);
+               } catch (e: any) {
+                   console.error(`Match generation failed: ${e.message}`);
+               }
+          } else {
+               aiResult = { score: Math.floor(Math.random() * 100), motivo_match: "Mock reasoning.", whatsapp_message: "Mock message." };
+          }
 
-    while (attempt < maxAttempts && !success) {
-      try {
-        let aiResult: any;
-        if (GEMINI_API_KEY && GEMINI_API_KEY !== 'dummy') {
-            const result = await model.generateContent({
-               contents: [{ role: 'user', parts: [{ text: prompt }] }],
-               tools: [{ googleSearch: {} }]
-            });
+          allFinalMatches.push({
+              edital_id: edital.id,
+              edital_titulo: edital.attributes.nome,
+              osc,
+              score: aiResult.score || 0,
+              motivo_match: aiResult.motivo_match || 'Evaluation failed.',
+              whatsapp_message: aiResult.whatsapp_message || 'Outreach message failed.'
+          });
 
-            const responseText = result.response.text().trim();
-            const cleanedResponse = responseText.replace(/^```json\s*/i, '').replace(/```\s*$/, '');
-            aiResult = JSON.parse(cleanedResponse);
-        } else {
-            // Mock mode for testing
-            aiResult = {
-                score: Math.floor(Math.random() * 100),
-                motivo_match: "Mock reasoning for testing.",
-                whatsapp_message: "Olá! Este é um teste mock."
-            };
-        }
-
-        finalMatches.push({
-          osc,
-          score: aiResult.score || 0,
-          motivo_match: aiResult.motivo_match || 'Evaluation failed.',
-          whatsapp_message: aiResult.whatsapp_message || 'Outreach message failed.'
-        });
-
-        console.log(`   -> AI Score: ${aiResult.score}`);
-        success = true;
-      } catch (error: any) {
-        attempt++;
-        console.error(`   -> Attempt ${attempt} failed:`, error.message);
-        if (attempt >= maxAttempts) {
-           console.error(`   -> Max attempts reached for ${osc.nome}. Skipping.`);
-        } else {
-           const backoffDelay = Math.pow(2, attempt) * 1000;
-           console.log(`   -> Retrying in ${backoffDelay}ms...`);
-           await sleep(backoffDelay);
-        }
+          await sleep(4000);
       }
-    }
-
-    if (i < top50.length - 1) {
-      console.log(`   -> Sleeping 4000ms to respect rate limits...`);
-      await sleep(4000);
-    }
   }
 
-  // Phase 4: Delivery
-  console.log('\n--- Phase 4: Delivery ---');
-  finalMatches.sort((a, b) => b.score - a.score);
-  const top10 = finalMatches.slice(0, 10);
+  // Save Cache and Matches
+  await saveCache(cache);
 
-  try {
-      await fs.writeFile(OUTPUT_FILE, JSON.stringify(top10, null, 2), 'utf-8');
-      console.log(`Pipeline complete. Top ${top10.length} matches saved to ${OUTPUT_FILE}`);
-  } catch (error) {
-      console.error(`Failed to write output file:`, error);
-  }
+  await fs.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
+  await fs.writeFile(OUTPUT_FILE, JSON.stringify(allFinalMatches, null, 2), 'utf-8');
+  console.log(`Pipeline complete. Saved ${allFinalMatches.length} leads to ${OUTPUT_FILE}`);
 }
 
 runPipeline().catch(console.error);
