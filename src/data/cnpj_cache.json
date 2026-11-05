@@ -1286,5 +1286,1965 @@
       "situacao_cadastral": "ATIVA"
     },
     "last_checked_date": "2026-11-05T19:11:10.862Z"
+  },
+  "04546859000151": {
+    "osc": {
+      "cnpj": "04546859000151",
+      "nome": "ASSOCIACAO ATLETICA BANCO DO BRASIL",
+      "uf": "PA",
+      "municipio": "ORIXIMINA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1981,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:29.323Z"
+  },
+  "26906257000109": {
+    "osc": {
+      "cnpj": "26906257000109",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS MINISTERIO CASA DE ORACAO",
+      "uf": "PA",
+      "municipio": "CASTANHAL",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:30.145Z"
+  },
+  "26915381000122": {
+    "osc": {
+      "cnpj": "26915381000122",
+      "nome": "INSTITUTO MURERU ECO AMAZONIA",
+      "uf": "PA",
+      "municipio": "SANTAREM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:30.950Z"
+  },
+  "26926393000152": {
+    "osc": {
+      "cnpj": "26926393000152",
+      "nome": "ASSOCIACAO DOS MORADORES DA COMUNIDADE NOSSA SENHORA DE FATIMA",
+      "uf": "PA",
+      "municipio": "BARCARENA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:31.568Z"
+  },
+  "27254018000176": {
+    "osc": {
+      "cnpj": "27254018000176",
+      "nome": "IGREJA EVANGELICA JESUS CRISTO SALVADOR",
+      "uf": "PA",
+      "municipio": "REDENCAO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:32.221Z"
+  },
+  "27254178000115": {
+    "osc": {
+      "cnpj": "27254178000115",
+      "nome": "ASSOCIACAO DOS PRODUTORES E PRODUTORAS RURAIS ORGANIZADOS DO PA ESCALADA DO NORTE AREA DO JATOBA JULIANA",
+      "uf": "PA",
+      "municipio": "RIO MARIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:32.692Z"
+  },
+  "27359125000169": {
+    "osc": {
+      "cnpj": "27359125000169",
+      "nome": "IGREJA EL SHADAY MINISTERIO FOGO PARA NACOES",
+      "uf": "PA",
+      "municipio": "MARABA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:33.101Z"
+  },
+  "28379804000162": {
+    "osc": {
+      "cnpj": "28379804000162",
+      "nome": "ASSOCIACAO DE MORADORES(AS) DO BAIRRO JACANA, IRITUIA-PA",
+      "uf": "PA",
+      "municipio": "IRITUIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:33.955Z"
+  },
+  "28931666000182": {
+    "osc": {
+      "cnpj": "28931666000182",
+      "nome": "ASSOCIACAO INDIGENA ARAWETE DO MEDIO XINGU",
+      "uf": "PA",
+      "municipio": "ALTAMIRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Cultivo de arroz | Cultivo de milho | Cultivo de outros cereais não especificados anteriormente | Cultivo de abacaxi | Cultivo de batata-inglesa | Cultivo de feijão | Cultivo de mandioca | Cultivo de melancia | Cultivo de tomate rasteiro | Cultivo de outras plantas de lavoura temporária não especificadas anteriormente | Horticultura, exceto morango | Cultivo de laranja | Cultivo de açaí | Cultivo de banana | Cultivo de caju | Cultivo de cítricos, exceto laranja | Cultivo de coco-da-baía | Cultivo de mamão | Cultivo de maracujá | Cultivo de manga | Cultivo de frutas de lavoura permanente não especificadas anteriormente | Cultivo de café | Cultivo de cacau | Cultivo de pimenta-do-reino | Cultivo de plantas para condimento, exceto pimenta-do-reino | Cultivo de seringueira | Cultivo de outras plantas de lavoura permanente não especificadas anteriormente | Produção de sementes certificadas, exceto de forrageiras para pasto | Produção de mudas e outras formas de propagação vegetal, certificadas | Criação de bovinos para corte | Criação de bovinos para leite | Criação de bovinos, exceto para corte e leite | Criação de suínos | Criação de frangos para corte | Produção de pintos de um dia | Criação de outros galináceos, exceto para corte | Criação de aves, exceto galináceos | Produção de ovos | Apicultura | Criação de outros animais não especificados anteriormente | Serviço de poda de árvores para lavouras | Serviço de preparação de terreno, cultivo e colheita | Atividades de apoio à agricultura não especificadas anteriormente | Serviço de manejo de animais | Cultivo de mudas em viveiros florestais | Coleta de castanha-do-pará em florestas nativas | Coleta de látex em florestas nativas | Conservação de florestas nativas | Coleta de produtos não-madeireiros não especificados anteriormente em florestas nativas | Atividades de apoio à produção florestal | Pesca de peixes em água doce | Coleta de outros produtos aquáticos de água doce | Atividades de apoio à pesca em água doce | Criação de peixes em água doce | Criação de peixes ornamentais em água doce | Atividades de apoio à aqüicultura em água doce | Cultivos e semicultivos da aqüicultura em água doce não especificados anteriormente | Fabricação de sucos concentrados de frutas, hortaliças e legumes | Fabricação de sucos de frutas, hortaliças e legumes, exceto concentrados | Fabricação de farinha de mandioca e derivados | Fabricação de artefatos diversos de madeira, exceto móveis | Fabricação de artefatos diversos de cortiça, bambu, palha, vime e outros materiais trançados, exceto móveis | Construção de embarcações para uso comercial e para usos especiais, exceto de grande porte | Serviço de transporte de passageiros - locação de automóveis com motorista | Transporte aquaviário para passeios turísticos | Outros transportes aquaviários não especificados anteriormente | Fornecimento e gestão de recursos humanos para terceiros | Operadores turísticos | Serviços de reservas e outros serviços de turismo não especificados anteriormente | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:35.493Z"
+  },
+  "29513977000194": {
+    "osc": {
+      "cnpj": "29513977000194",
+      "nome": "ASSOCIACAO DOS RESERVISTAS DE SANTAREM-PA",
+      "uf": "PA",
+      "municipio": "SANTAREM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:36.854Z"
+  },
+  "29762552000119": {
+    "osc": {
+      "cnpj": "29762552000119",
+      "nome": "ASSOCIACAO DOS MORADORES DO CONDOMINIO DO EDIFICIO RUTH MARIA - ASDMCEDRM",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:37.170Z"
+  },
+  "29821227000180": {
+    "osc": {
+      "cnpj": "29821227000180",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS - MINISTERIO DE MADUREIRA EM NOVO PROGRESSO - PARA",
+      "uf": "PA",
+      "municipio": "NOVO PROGRESSO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:38.124Z"
+  },
+  "30270889000198": {
+    "osc": {
+      "cnpj": "30270889000198",
+      "nome": "ASSOCIACAO DOS PRODUTORES RURAIS DO TRAVESSAO DA FIRMA, MUNICIPIO DE SENADOR JOSE PORFIRIO APRUFIRMA",
+      "uf": "PA",
+      "municipio": "SENADOR JOSE PORFIRIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:40.217Z"
+  },
+  "30366963000174": {
+    "osc": {
+      "cnpj": "30366963000174",
+      "nome": "ASSOCIACAO AMAZONICA TAMBOR DA MATA",
+      "uf": "PA",
+      "municipio": "ORIXIMINA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:40.679Z"
+  },
+  "30530373000135": {
+    "osc": {
+      "cnpj": "30530373000135",
+      "nome": "ASSOCIACAO MUNICIPAL DOS AGENTES COMUNITARIOS DE SAUDE E AGENTES DE COMBATE AS ENDEMIAS DE VIGIA DE NAZARE - PARA",
+      "uf": "PA",
+      "municipio": "VIGIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de fiscalização profissional",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:41.765Z"
+  },
+  "30846263000187": {
+    "osc": {
+      "cnpj": "30846263000187",
+      "nome": "ASSOCIACAO COMUNITARIA DOS MORADORES E AGRICULTORES FAMILIARES E ASSENTADOS DO PDS IGARAPE DO ANTA - ASCOMAFA.PDS",
+      "uf": "PA",
+      "municipio": "MOJUI DOS CAMPOS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Extração de madeira em florestas nativas | Atividades de apoio à produção florestal | Comércio varejista de madeira e artefatos | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:43.563Z"
+  },
+  "08940832000108": {
+    "osc": {
+      "cnpj": "08940832000108",
+      "nome": "MINISTERIO INTERNACIONAL DA RESTAURACAO EM OBIDOS",
+      "uf": "PA",
+      "municipio": "OBIDOS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:44.062Z"
+  },
+  "30969502000196": {
+    "osc": {
+      "cnpj": "30969502000196",
+      "nome": "ASSOCIACAO INDIGENA MPAJA MAR KAXUWARI PARKATEJE",
+      "uf": "PA",
+      "municipio": "BOM JESUS DO TOCANTINS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:44.682Z"
+  },
+  "31427843000100": {
+    "osc": {
+      "cnpj": "31427843000100",
+      "nome": "SISTEMA DE ABASTECIMENTO DE AGUA DA VILA CURUAI",
+      "uf": "PA",
+      "municipio": "SANTAREM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:45.509Z"
+  },
+  "62955505451924": {
+    "osc": {
+      "cnpj": "62955505451924",
+      "nome": "IGREJA DO EVANGELHO QUADRANGULAR",
+      "uf": "PA",
+      "municipio": "BREVES",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:45.881Z"
+  },
+  "22921787000167": {
+    "osc": {
+      "cnpj": "22921787000167",
+      "nome": "ASSOCIACAO C RURAL DE SAO JORGE DO JABUTI",
+      "uf": "PA",
+      "municipio": "IGARAPE-ACU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Instituições de longa permanência para idosos",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:46.292Z"
+  },
+  "32172057000164": {
+    "osc": {
+      "cnpj": "32172057000164",
+      "nome": "COMUNIDADE EVANGELICA MINISTERIO DE RESTITUICAO",
+      "uf": "PA",
+      "municipio": "SALVATERRA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:46.935Z"
+  },
+  "34326792000100": {
+    "osc": {
+      "cnpj": "34326792000100",
+      "nome": "INSTITUTO SEMEAR",
+      "uf": "PA",
+      "municipio": "TERRA ALTA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:49.583Z"
+  },
+  "35615824000150": {
+    "osc": {
+      "cnpj": "35615824000150",
+      "nome": "IGREJA PENTECOSTAL FAMILIA DE CRISTO",
+      "uf": "PA",
+      "municipio": "SANTA MARIA DAS BARREIRAS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:49.886Z"
+  },
+  "35691249000175": {
+    "osc": {
+      "cnpj": "35691249000175",
+      "nome": "ASSOCIACAO FUNDO DE SUSTENTABILIDADE HYDRO",
+      "uf": "PA",
+      "municipio": "BARCARENA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:50.847Z"
+  },
+  "31082292000182": {
+    "osc": {
+      "cnpj": "31082292000182",
+      "nome": "ASSOCIACAO DESPORTIVA, SOCIAL, CULTURAL E RECREATIVA ROTA 010",
+      "uf": "PA",
+      "municipio": "PARAGOMINAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Produção e promoção de eventos esportivos",
+      "cnae_secundario_descricao": "Outras atividades esportivas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:51.490Z"
+  },
+  "36429618000119": {
+    "osc": {
+      "cnpj": "36429618000119",
+      "nome": "IGREJA PENTECOSTAL PORTA DA LIBERTACAO",
+      "uf": "PA",
+      "municipio": "PARAUAPEBAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:52.057Z"
+  },
+  "04546669000134": {
+    "osc": {
+      "cnpj": "04546669000134",
+      "nome": "PETROPOLIS ESPORTE CLUBE",
+      "uf": "PA",
+      "municipio": "ORIXIMINA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1979,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:52.528Z"
+  },
+  "37663158000151": {
+    "osc": {
+      "cnpj": "37663158000151",
+      "nome": "ASSOCIACAO PARAENSE DE PERITOS CONTADORES JUDICIAIS E EXTRAJUDICIAIS",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:53.253Z"
+  },
+  "06171491000110": {
+    "osc": {
+      "cnpj": "06171491000110",
+      "nome": "PROJETO BRUCUTU",
+      "uf": "PA",
+      "municipio": "URUARA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2001,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:53.574Z"
+  },
+  "39352942000174": {
+    "osc": {
+      "cnpj": "39352942000174",
+      "nome": "INSTITUTO DOLORES PEREIRA - IDP",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:53.944Z"
+  },
+  "39759242000107": {
+    "osc": {
+      "cnpj": "39759242000107",
+      "nome": "ASSOCIACAO DOS PRODUTORES RURAIS DA COMUNIDADE SAPUCAIA",
+      "uf": "PA",
+      "municipio": "ALENQUER",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:54.293Z"
+  },
+  "14620399000207": {
+    "osc": {
+      "cnpj": "14620399000207",
+      "nome": "COMUNIDADE DA IGREJA DE DEUS",
+      "uf": "PA",
+      "municipio": "BELTERRA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:54.677Z"
+  },
+  "40905720000110": {
+    "osc": {
+      "cnpj": "40905720000110",
+      "nome": "ASSOCIACAO DE MISERICORDIA REDENTORA SAO BENTO E SAO PADRE PIO",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações religiosas ou filosóficas | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:56.112Z"
+  },
+  "40843521000125": {
+    "osc": {
+      "cnpj": "40843521000125",
+      "nome": "EMPRESA JUNIOR DE ENGENHARIA CIVIL E ARQUITETURA E URBANISMO DA UNIVERSIDADE FEDERAL DO SUL E SUDESTE DO PARA",
+      "uf": "PA",
+      "municipio": "SANTANA DO ARAGUAIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de apoio à educação, exceto caixas escolares",
+      "cnae_secundario_descricao": "Outras atividades de ensino não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:56.473Z"
+  },
+  "40684848000100": {
+    "osc": {
+      "cnpj": "40684848000100",
+      "nome": "ASSOCIACAO DE MORADORES DO CURTUME SANTO ANTONIO",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Ensino de arte e cultura não especificado anteriormente | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:56.991Z"
+  },
+  "20419906000152": {
+    "osc": {
+      "cnpj": "20419906000152",
+      "nome": "ASSOCIACAO PARAENSE DE ARTES MARCIAIS E ESPORTES RADICAIS",
+      "uf": "PA",
+      "municipio": "CASTANHAL",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:58.837Z"
+  },
+  "34938554000156": {
+    "osc": {
+      "cnpj": "34938554000156",
+      "nome": "ASSOCIACAO DOS AGRICULTORES E AGRICULTORAS DA COMUNIDADE CASTANHAL (AAACC)",
+      "uf": "PA",
+      "municipio": "ITUPIRANGA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:59.243Z"
+  },
+  "42935935000100": {
+    "osc": {
+      "cnpj": "42935935000100",
+      "nome": "INSTITUTO SOCIAL - JAPA - JOVENS AGINDO E PORTAS SE ABRINDO",
+      "uf": "PA",
+      "municipio": "SANTANA DO ARAGUAIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:59.595Z"
+  },
+  "58106519001704": {
+    "osc": {
+      "cnpj": "58106519001704",
+      "nome": "APABB - ASSOCIACAO DE PAIS, AMIGOS E PESSOAS COM DEFICIENCIA DE FUNCIONARIOS DO BANCO DO BRASIL E DA COMUNIDADE",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Serviços de assistência social sem alojamento",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:16:59.884Z"
+  },
+  "42446983000134": {
+    "osc": {
+      "cnpj": "42446983000134",
+      "nome": "IGREJA DE DEUS NA AMAZONIA EM TRAIRAO",
+      "uf": "PA",
+      "municipio": "TRAIRAO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:00.293Z"
+  },
+  "43336436000169": {
+    "osc": {
+      "cnpj": "43336436000169",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS PENTENCOSTAL A FONTE DO QUE CLAMA",
+      "uf": "PA",
+      "municipio": "REDENCAO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:01.020Z"
+  },
+  "43926650000175": {
+    "osc": {
+      "cnpj": "43926650000175",
+      "nome": "INSTITUTO ARI GONCALVES",
+      "uf": "PA",
+      "municipio": "ANANINDEUA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de apoio à gestão de saúde",
+      "cnae_secundario_descricao": "Atividades de atendimento hospitalar, exceto pronto-socorro e unidades para atendimento a urgências | Atividades de atendimento em pronto-socorro e unidades hospitalares para atendimento a urgências | UTI móvel | Serviços móveis de atendimento a urgências, exceto por UTI móvel | Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos | Atividade médica ambulatorial com recursos para realização de exames complementares | Atividade médica ambulatorial restrita a consultas | Atividade odontológica | Serviços de vacinação e imunização humana | Laboratórios clínicos | Serviços de tomografia | Serviços de diagnóstico por imagem com uso de radiação ionizante, exceto tomografia | Serviços de ressonância magnética | Serviços de diagnóstico por registro gráfico - ECG, EEG e outros exames análogos | Serviços de diagnóstico por métodos ópticos - endoscopia e outros exames análogos | Atividades de enfermagem | Atividades de profissionais da nutrição | Atividades de psicologia e psicanálise | Atividades de fisioterapia | Atividades de terapia ocupacional | Atividades de fonoaudiologia | Atividades de profissionais da área de saúde não especificadas anteriormente | Atividades de práticas integrativas e complementares em saúde humana | Clínicas e residências geriátricas | Atividades de assistência a deficientes físicos, imunodeprimidos e convalescentes | Centros de apoio a pacientes com câncer e com AIDS | Atividades de centros de assistência psicossocial",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:01.656Z"
+  },
+  "45062655000122": {
+    "osc": {
+      "cnpj": "45062655000122",
+      "nome": "ASSOCIACAO PARAENSE DE TECNOLOGIA E INOVACAO ACAI VALLEY",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de organizações associativas patronais e empresariais",
+      "cnae_secundario_descricao": "Outras atividades associativas profissionais | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:01.994Z"
+  },
+  "02503836000134": {
+    "osc": {
+      "cnpj": "02503836000134",
+      "nome": "INSTITUTO DAS IRMAS MISSIONARIAS SAO JOAO DE DEUS",
+      "uf": "PA",
+      "municipio": "PARAGOMINAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1998,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:02.382Z"
+  },
+  "38213402000147": {
+    "osc": {
+      "cnpj": "38213402000147",
+      "nome": "IGREJA PRESBITERIANA RENOVADA DE MARABA-PA",
+      "uf": "PA",
+      "municipio": "MARABA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:02.932Z"
+  },
+  "46943813000116": {
+    "osc": {
+      "cnpj": "46943813000116",
+      "nome": "SECCMA - SOCIEDADE EDUCACIONAL CATOLICA CAVANIS DE MOARES ALMEIDA",
+      "uf": "PA",
+      "municipio": "ITAITUBA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de apoio à educação, exceto caixas escolares | Outras atividades de ensino não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:04.142Z"
+  },
+  "48142959000198": {
+    "osc": {
+      "cnpj": "48142959000198",
+      "nome": "ASSOCIACAO INDIGENA DE SAO PEDRO DO PALHAO - AISPP",
+      "uf": "PA",
+      "municipio": "SANTAREM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:04.690Z"
+  },
+  "60069834000185": {
+    "osc": {
+      "cnpj": "60069834000185",
+      "nome": "PARCAS FUTEBOL CLUBE",
+      "uf": "PA",
+      "municipio": "IGARAPE-ACU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:05.337Z"
+  },
+  "40171123000100": {
+    "osc": {
+      "cnpj": "40171123000100",
+      "nome": "ASSOCIACAO INDIGENA DA ALDEIA AWUSSEHE DO POVO AIKEWARA AIAAPA",
+      "uf": "PA",
+      "municipio": "SAO GERALDO DO ARAGUAIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:05.899Z"
+  },
+  "51166500000139": {
+    "osc": {
+      "cnpj": "51166500000139",
+      "nome": "IGREJA DE CRISTO LUZ DA PALAVRA",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:07.005Z"
+  },
+  "48070542000167": {
+    "osc": {
+      "cnpj": "48070542000167",
+      "nome": "FEDERACAO DE TAEKWONDO DESPORTIVO DO ESTADO DO PARA - FTDEPA",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:07.674Z"
+  },
+  "48713962000114": {
+    "osc": {
+      "cnpj": "48713962000114",
+      "nome": "ASSOCIACAO DOS MORADORES E AGRIGULTORES FAMILIARES DO ARIENGA ESTRADA",
+      "uf": "PA",
+      "municipio": "BARCARENA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Comércio atacadista de frutas, verduras, raízes, tubérculos, hortaliças e legumes frescos | Comércio atacadista de aves vivas e ovos | Comércio varejista de hortifrutigranjeiros | Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:08.048Z"
+  },
+  "04814851010191": {
+    "osc": {
+      "cnpj": "04814851010191",
+      "nome": "ARQUIDIOCESE DE BELEM",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:08.480Z"
+  },
+  "43164251000114": {
+    "osc": {
+      "cnpj": "43164251000114",
+      "nome": "ASSOCIACAO BENEFICIENTE SAO MIGUEL ARCANJO",
+      "uf": "PA",
+      "municipio": "AUGUSTO CORREA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de atendimento em pronto-socorro e unidades hospitalares para atendimento a urgências",
+      "cnae_secundario_descricao": "Laboratórios clínicos | Atividades de apoio à gestão de saúde | Outras atividades de atenção à saúde humana não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:08.922Z"
+  },
+  "48952973000157": {
+    "osc": {
+      "cnpj": "48952973000157",
+      "nome": "ASSOCIACAO DE BOMBEIROS CIVIS",
+      "uf": "PA",
+      "municipio": "ANAJAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:09.489Z"
+  },
+  "49334385000112": {
+    "osc": {
+      "cnpj": "49334385000112",
+      "nome": "GRUPO DE MULHERES DO CABELO SECO",
+      "uf": "PA",
+      "municipio": "MARABA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:10.609Z"
+  },
+  "49396618000101": {
+    "osc": {
+      "cnpj": "49396618000101",
+      "nome": "ASSOCIACAO ESPORTIVA SAO JOSE",
+      "uf": "PA",
+      "municipio": "SANTAREM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Produção e promoção de eventos esportivos",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:11.477Z"
+  },
+  "04254837000118": {
+    "osc": {
+      "cnpj": "04254837000118",
+      "nome": "INSTITUTO AMAZON MUNDI BEM VIVER - IAMBV",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2001,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:11.973Z"
+  },
+  "50708096000115": {
+    "osc": {
+      "cnpj": "50708096000115",
+      "nome": "ASSOCIACAO DOS MORADORES DA VILA ESCADA ALTA",
+      "uf": "PA",
+      "municipio": "MARABA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:13.000Z"
+  },
+  "02779337000840": {
+    "osc": {
+      "cnpj": "02779337000840",
+      "nome": "INSTITUTO HESED DOS IRMAOS E IRMAS DA SANTA CRUZ E DA BEM AVENTURADA VIRGEM MARIA DO MONTE CARMELO",
+      "uf": "PA",
+      "municipio": "ANANINDEUA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:13.480Z"
+  },
+  "50376613000104": {
+    "osc": {
+      "cnpj": "50376613000104",
+      "nome": "ASSEMBLEIA DE DEUS PAI DE MULTIDOES",
+      "uf": "PA",
+      "municipio": "ALTAMIRA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:13.892Z"
+  },
+  "51881551000142": {
+    "osc": {
+      "cnpj": "51881551000142",
+      "nome": "INSTITUTO DE ASSISTENCIA SOCIAL E DESENVOLVIMENTO DE ANANINDEUA",
+      "uf": "PA",
+      "municipio": "ANANINDEUA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Transporte escolar | Promoção de vendas | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Locação de mão-de-obra temporária | Serviços de organização de feiras, congressos, exposições e festas | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:15.337Z"
+  },
+  "05465871000102": {
+    "osc": {
+      "cnpj": "05465871000102",
+      "nome": "ASSOCIACAO DOS REMANESCENTES DE QUILOMBO DE BACABAL",
+      "uf": "PA",
+      "municipio": "SALVATERRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2002,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:16.064Z"
+  },
+  "52771701000128": {
+    "osc": {
+      "cnpj": "52771701000128",
+      "nome": "IGREJA MISSAO DE FOGO TEMPLO DO ESPIRITO SANTO",
+      "uf": "PA",
+      "municipio": "NOVA IPIXUNA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:17:16.460Z"
+  },
+  "13218204000145": {
+    "osc": {
+      "cnpj": "13218204000145",
+      "nome": "CENTRO DE CIDADANIA ESPORTE SAUDE E CULTURA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Outras atividades esportivas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Outras atividades de recreação e lazer não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:01.008Z"
+  },
+  "01916082000181": {
+    "osc": {
+      "cnpj": "01916082000181",
+      "nome": "ESCOLA MUNICIPAL PREFESSORA MARIA DE FATIMA REGUEIRA PACHECO",
+      "uf": "AL",
+      "municipio": "SAO SEBASTIAO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:02.934Z"
+  },
+  "09330200000187": {
+    "osc": {
+      "cnpj": "09330200000187",
+      "nome": "ASSOC COM DOS M MINI E PEQ PROD R DO POV ALEXANDRE",
+      "uf": "AL",
+      "municipio": "LAGOA DA CANOA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:04.156Z"
+  },
+  "01576286000110": {
+    "osc": {
+      "cnpj": "01576286000110",
+      "nome": "NUCLEO DE DESENVOLVIMENTO SOCIO-CULTURAL NACAO IMPERIAL ORGANIZACAO DA SOCIEDADE CIVIL DE INTERESSE PUBLICO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1996,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:04.957Z"
+  },
+  "28168166000130": {
+    "osc": {
+      "cnpj": "28168166000130",
+      "nome": "ASSOCIACAO COMUNITARIA DOS AMIGOS DO POVOADO MATA E REGIAO",
+      "uf": "AL",
+      "municipio": "SAO SEBASTIAO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:05.360Z"
+  },
+  "28547023000130": {
+    "osc": {
+      "cnpj": "28547023000130",
+      "nome": "ASSOCIACAO DOS ADQUIRENTES DE UNIDADES AUTONOMAS DO CONDOMINIO RESIDENCIAL ESTILO - AACRE",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:06.388Z"
+  },
+  "28914855000147": {
+    "osc": {
+      "cnpj": "28914855000147",
+      "nome": "IGREJA PRESBITERIANA DO ALTO DO CEU",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:06.911Z"
+  },
+  "29179889000106": {
+    "osc": {
+      "cnpj": "29179889000106",
+      "nome": "EM BUSCA DE SORRISOS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de apoio à educação, exceto caixas escolares | Atividade médica ambulatorial restrita a consultas | Atividades de profissionais da nutrição | Atividades de psicologia e psicanálise | Atividades de fisioterapia | Atividades de terapia ocupacional | Atividades de fonoaudiologia | Atividades de profissionais da área de saúde não especificadas anteriormente | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:07.741Z"
+  },
+  "29206907000193": {
+    "osc": {
+      "cnpj": "29206907000193",
+      "nome": "ASSOCIACAO DOS PROPRIETARIOS DOS APARTAMENTOS DO EDIFICIO RESIDENCIAL MAXIM'S",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:08.197Z"
+  },
+  "29494932000110": {
+    "osc": {
+      "cnpj": "29494932000110",
+      "nome": "ALEXSANDRO DE MELO MIRANDA",
+      "uf": "AL",
+      "municipio": "RIO LARGO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Ensino de esportes",
+      "cnae_secundario_descricao": "Produção e promoção de eventos esportivos",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:09.846Z"
+  },
+  "29602972000138": {
+    "osc": {
+      "cnpj": "29602972000138",
+      "nome": "ASSOCIACAO DOS AGRICULTORES DO POVOADO BOM DESPACHO",
+      "uf": "AL",
+      "municipio": "PASSO DE CAMARAGIBE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:10.535Z"
+  },
+  "30330382000182": {
+    "osc": {
+      "cnpj": "30330382000182",
+      "nome": "ASSOCIACAO DOS PROPRIETARIOS E MORADORES DO RESIDENCIAL PARQUE DO FUTURO",
+      "uf": "AL",
+      "municipio": "MARECHAL DEODORO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:11.803Z"
+  },
+  "30587116000130": {
+    "osc": {
+      "cnpj": "30587116000130",
+      "nome": "INSTITUTO MANDA VER",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Ensino de dança | Ensino de artes cênicas, exceto dança | Ensino de arte e cultura não especificado anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:12.209Z"
+  },
+  "38974190000110": {
+    "osc": {
+      "cnpj": "38974190000110",
+      "nome": "INSTITUTO RODRIGO LUZ",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Serviços de assistência social sem alojamento",
+      "cnae_secundario_descricao": "Atividades de apoio à educação, exceto caixas escolares | Ensino de dança | Ensino de arte e cultura não especificado anteriormente | Ensino de idiomas | Outras atividades de ensino não especificadas anteriormente | Atividade médica ambulatorial com recursos para realização de exames complementares | Atividade médica ambulatorial restrita a consultas | Atividades de fisioterapia | Produção e promoção de eventos esportivos | Outras atividades esportivas não especificadas anteriormente | Atividades de associações de defesa de direitos sociais | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:14.938Z"
+  },
+  "39735125000103": {
+    "osc": {
+      "cnpj": "39735125000103",
+      "nome": "ASSOCIACAO DOS ADQUIRENTES DE UNIDADES DO EMPREENDIMENTO DENOMINADO RESERVA DA GARCA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:15.351Z"
+  },
+  "59961698000316": {
+    "osc": {
+      "cnpj": "59961698000316",
+      "nome": "CONGREGACAO PIAS OPERARIAS DE SAO JOSE",
+      "uf": "AL",
+      "municipio": "QUEBRANGULO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:15.750Z"
+  },
+  "40302235000152": {
+    "osc": {
+      "cnpj": "40302235000152",
+      "nome": "ASSOCIACAO DOS ARTESOES VILELENSES",
+      "uf": "AL",
+      "municipio": "TEOTONIO VILELA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:16.205Z"
+  },
+  "41263152000164": {
+    "osc": {
+      "cnpj": "41263152000164",
+      "nome": "ASSOCIACAO DOS MORADORES E/OU PROPRIETARIOS DE CASAS E/OU LOTES DO RESIDENCIAL LORENZO BERNINI",
+      "uf": "AL",
+      "municipio": "ARAPIRACA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:17.173Z"
+  },
+  "41804749000179": {
+    "osc": {
+      "cnpj": "41804749000179",
+      "nome": "ASSOCIACAO DAS MULHERES AGRICULTORAS E EMPREENDEDORAS QUILOMBOLAS DO POVOADO MUQUEM",
+      "uf": "AL",
+      "municipio": "UNIAO DOS PALMARES",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:17.499Z"
+  },
+  "48707739000164": {
+    "osc": {
+      "cnpj": "48707739000164",
+      "nome": "ASSOCIACAO COMUNITARIA SANTA RITA DE CASSIA SITIO BARRA DO JOAO GOMES",
+      "uf": "AL",
+      "municipio": "SANTANA DO IPANEMA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:18.628Z"
+  },
+  "48565973000102": {
+    "osc": {
+      "cnpj": "48565973000102",
+      "nome": "CRECHE EMILIA MOREIRA DOS SANTOS",
+      "uf": "AL",
+      "municipio": "CRAIBAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Administração de caixas escolares",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:19.260Z"
+  },
+  "52420885000181": {
+    "osc": {
+      "cnpj": "52420885000181",
+      "nome": "PRIMEIRA IGREJA PRESBITERIANA INDEPENDENTE DE ARAPIRACA",
+      "uf": "AL",
+      "municipio": "ARAPIRACA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:20.116Z"
+  },
+  "52880730000128": {
+    "osc": {
+      "cnpj": "52880730000128",
+      "nome": "IGREJA EVANGELICA PORTA DO CEU",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:20.634Z"
+  },
+  "57562435000147": {
+    "osc": {
+      "cnpj": "57562435000147",
+      "nome": "INSTITUTO ANJO LUZ DO AMANHA",
+      "uf": "AL",
+      "municipio": "MARECHAL DEODORO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:20.963Z"
+  },
+  "55586045000181": {
+    "osc": {
+      "cnpj": "55586045000181",
+      "nome": "ASSOCIACAO TW PROTECAO VEICULAR",
+      "uf": "AL",
+      "municipio": "ARAPIRACA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:21.558Z"
+  },
+  "56228550000117": {
+    "osc": {
+      "cnpj": "56228550000117",
+      "nome": "IGREJA DA PAZ DELMIRO GOUVEIA",
+      "uf": "AL",
+      "municipio": "DELMIRO GOUVEIA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:22.298Z"
+  },
+  "56137465000143": {
+    "osc": {
+      "cnpj": "56137465000143",
+      "nome": "ASSOCIACAO DA TERCEIRA IDADE DO CONJUNTO EUSTAQUIO GOMES DE MELO - AMICEGOM",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:22.699Z"
+  },
+  "56005351000140": {
+    "osc": {
+      "cnpj": "56005351000140",
+      "nome": "LAR FREI JOSE SANTO ANTONIO DE PADUA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de fornecimento de infra-estrutura de apoio e assistência a paciente no domicílio",
+      "cnae_secundario_descricao": "Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química e grupos similares não | Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:23.107Z"
+  },
+  "57016799000121": {
+    "osc": {
+      "cnpj": "57016799000121",
+      "nome": "ASSOCIACAO CAIAQUE ALAGOAS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "Ensino de esportes | Produção e promoção de eventos esportivos | Outras atividades de recreação e lazer não especificadas anteriormente | Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:23.890Z"
+  },
+  "60540025000100": {
+    "osc": {
+      "cnpj": "60540025000100",
+      "nome": "ASSOCIACAO DOS AGRICULTORES FAMILIARES DO SITIO GALHO DO MEIO",
+      "uf": "AL",
+      "municipio": "JOAQUIM GOMES",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Produção e promoção de eventos esportivos | Outras atividades associativas profissionais | Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:24.580Z"
+  },
+  "60980599000107": {
+    "osc": {
+      "cnpj": "60980599000107",
+      "nome": "ASSOCIACAO DOS PROPRIETARIOS E AMIGOS DO ACQUA DEL MARE",
+      "uf": "AL",
+      "municipio": "CORURIPE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:25.189Z"
+  },
+  "61735435000179": {
+    "osc": {
+      "cnpj": "61735435000179",
+      "nome": "EJEFE - EMPRESA JUNIOR DE EDUCACAO FISICA E ESPORTE",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de apoio à educação, exceto caixas escolares",
+      "cnae_secundario_descricao": "Outras atividades de ensino não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:25.587Z"
+  },
+  "62809558000170": {
+    "osc": {
+      "cnpj": "62809558000170",
+      "nome": "INTIMIDADE CHURCH",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:25.988Z"
+  },
+  "62809562000138": {
+    "osc": {
+      "cnpj": "62809562000138",
+      "nome": "LAGOINHA FRANCES",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:26.288Z"
+  },
+  "63195576000171": {
+    "osc": {
+      "cnpj": "63195576000171",
+      "nome": "ASSOCIACAO CULTURAL A PAIXAO DE CRISTO",
+      "uf": "AL",
+      "municipio": "ATALAIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:26.622Z"
+  },
+  "63565986000167": {
+    "osc": {
+      "cnpj": "63565986000167",
+      "nome": "ASSOCIACAO DOS PEQUENOS PRODUTORES RURAIS DO SAPEL - ASPROSAPEL",
+      "uf": "AL",
+      "municipio": "CORURIPE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:27.636Z"
+  },
+  "64369112000105": {
+    "osc": {
+      "cnpj": "64369112000105",
+      "nome": "IGREJA EVANGELICA NACAO SANTA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:28.035Z"
+  },
+  "63797069000108": {
+    "osc": {
+      "cnpj": "63797069000108",
+      "nome": "IGREJA PENTECOSTAL",
+      "uf": "AL",
+      "municipio": "JOAQUIM GOMES",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:28.380Z"
+  },
+  "63830513000140": {
+    "osc": {
+      "cnpj": "63830513000140",
+      "nome": "IGREJA BATISTA BOAS NOVAS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:28.850Z"
+  },
+  "63848342000186": {
+    "osc": {
+      "cnpj": "63848342000186",
+      "nome": "ASSOCIACAO DOS ADQUIRENTES DE UNIDADES AUTONOMAS DO CONDOMINIO CONNECT IN",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:29.145Z"
+  },
+  "63711448000133": {
+    "osc": {
+      "cnpj": "63711448000133",
+      "nome": "PROJETO EDUCANDO NO ESPORTE PARA O FUTURO",
+      "uf": "AL",
+      "municipio": "SAO SEBASTIAO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Ensino de esportes",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:29.650Z"
+  },
+  "63726593000198": {
+    "osc": {
+      "cnpj": "63726593000198",
+      "nome": "ASSOCIACAO ROSA DE SARON",
+      "uf": "AL",
+      "municipio": "PARIPUEIRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:30.063Z"
+  },
+  "64259528000162": {
+    "osc": {
+      "cnpj": "64259528000162",
+      "nome": "ASSOCIACAO DO ASSENTAMENTO PRIMAVERA",
+      "uf": "AL",
+      "municipio": "PARIPUEIRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:30.447Z"
+  },
+  "12157467027671": {
+    "osc": {
+      "cnpj": "12157467027671",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS NO ESTADO DE AL",
+      "uf": "AL",
+      "municipio": "ARAPIRACA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:31.010Z"
+  },
+  "24178113000492": {
+    "osc": {
+      "cnpj": "24178113000492",
+      "nome": "ASSOCIACAO BIBLICA E CULTURAL DOS DEFENSORES DO REINO",
+      "uf": "AL",
+      "municipio": "PALMEIRA DOS INDIOS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:31.377Z"
+  },
+  "29744778470584": {
+    "osc": {
+      "cnpj": "29744778470584",
+      "nome": "IGREJA UNIVERSAL DO REINO DE DEUS",
+      "uf": "AL",
+      "municipio": "PAO DE ACUCAR",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:31.763Z"
+  },
+  "53754634000368": {
+    "osc": {
+      "cnpj": "53754634000368",
+      "nome": "CAMINHOS SUSTENTAVEIS - CASUS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de estudos geológicos | Pesquisa e desenvolvimento experimental em ciências físicas e naturais | Pesquisa e desenvolvimento experimental em ciências sociais e humanas | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Serviços de reservas e outros serviços de turismo não especificados anteriormente | Serviços combinados de escritório e apoio administrativo | Treinamento em desenvolvimento profissional e gerencial | Atividades de psicologia e psicanálise | Atividades de práticas integrativas e complementares em saúde humana | Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:32.229Z"
+  },
+  "65542939000123": {
+    "osc": {
+      "cnpj": "65542939000123",
+      "nome": "ASSOCIACAO TEKOKUABA OKA - OCA DO SABER",
+      "uf": "AL",
+      "municipio": "JOAQUIM GOMES",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:32.707Z"
+  },
+  "65930443000127": {
+    "osc": {
+      "cnpj": "65930443000127",
+      "nome": "INSTITUTO UNIRAROS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de profissionais da área de saúde não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:33.104Z"
+  },
+  "66336232000123": {
+    "osc": {
+      "cnpj": "66336232000123",
+      "nome": "CENTRO CULTURAL ALBATROZ NORDESTINO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:33.500Z"
+  },
+  "66368908000160": {
+    "osc": {
+      "cnpj": "66368908000160",
+      "nome": "ASSOCIACAO COMUNITARIA DOS MORADORES E AGRICULTORES FAMILIARES DO POVOADO SANTA ROSA",
+      "uf": "AL",
+      "municipio": "CRAIBAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de apoio à agricultura não especificadas anteriormente | Atividades de apoio à pecuária não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:33.905Z"
+  },
+  "64885980000130": {
+    "osc": {
+      "cnpj": "64885980000130",
+      "nome": "FUNDACAO CULTURAL LIBERDADE",
+      "uf": "AL",
+      "municipio": "UNIAO DOS PALMARES",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de rádio | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:34.369Z"
+  },
+  "64754694000135": {
+    "osc": {
+      "cnpj": "64754694000135",
+      "nome": "INSTITUTO DE TECNOLOGIA INOVACAO E CIENCIA - TIC",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Pesquisa e desenvolvimento experimental em ciências físicas e naturais",
+      "cnae_secundario_descricao": "Fabricação de produtos diversos não especificados anteriormente | Consultoria em tecnologia da informação | Serviços combinados de escritório e apoio administrativo | Atividades de apoio à educação, exceto caixas escolares",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:34.701Z"
+  },
+  "64812238000102": {
+    "osc": {
+      "cnpj": "64812238000102",
+      "nome": "ASSOCIACAO INDIGENA CULTURAL INTERACAO E FE XUKURU-KARIRI",
+      "uf": "AL",
+      "municipio": "PALMEIRA DOS INDIOS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:35.106Z"
+  },
+  "66587814000182": {
+    "osc": {
+      "cnpj": "66587814000182",
+      "nome": "ASSOCIACAO DOS ADQUIRENTES DE UNIDADES AUTONOMAS DO CONDOMINIO RESIDENCIAL 'AMARANTE'",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:35.582Z"
+  },
+  "66690990000145": {
+    "osc": {
+      "cnpj": "66690990000145",
+      "nome": "MODUPE INSTITUTO AFROSOCIAL AXE YALODE",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de apoio à educação, exceto caixas escolares | Ensino de dança | Ensino de arte e cultura não especificado anteriormente | Produção de espetáculos de dança | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:35.912Z"
+  },
+  "65610491000138": {
+    "osc": {
+      "cnpj": "65610491000138",
+      "nome": "ASSOCIACAO DOS PROPRIETARIOS DE IMOVEIS DO RESIDENCIAL SUECA",
+      "uf": "AL",
+      "municipio": "UNIAO DOS PALMARES",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Gestão e administração da propriedade imobiliária",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:36.514Z"
+  },
+  "65690792000119": {
+    "osc": {
+      "cnpj": "65690792000119",
+      "nome": "ASSOCIACAO DOS MORADORES E PROPRIETARIOS DO BLOCO 68 DO CONJUNTO JOSE TENORIO DE ALBUQUERQUE LINS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:36.875Z"
+  },
+  "66510416000168": {
+    "osc": {
+      "cnpj": "66510416000168",
+      "nome": "ASSOCIACAO DOS AGRICULTORES (AS) FAMILIARES, PESCADORES (AS) ARTESANAIS DO POVOADO CEDRO - OS CARLOS",
+      "uf": "AL",
+      "municipio": "IGREJA NOVA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:37.392Z"
+  },
+  "64870642000124": {
+    "osc": {
+      "cnpj": "64870642000124",
+      "nome": "ASSOCIACAO DE MORADORES DO BLOCO 5B DO CONJUNTO SENADOR RUI PALMEIRA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:37.713Z"
+  },
+  "64874931000100": {
+    "osc": {
+      "cnpj": "64874931000100",
+      "nome": "ASSOCIACAO DE MORADORES DO BLOCO 2C DO CONJUNTO SENADOR RUI PALMEIRA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:38.113Z"
+  },
+  "12157467027914": {
+    "osc": {
+      "cnpj": "12157467027914",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS NO ESTADO DE AL",
+      "uf": "AL",
+      "municipio": "RIO LARGO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:38.545Z"
+  },
+  "12155388010575": {
+    "osc": {
+      "cnpj": "12155388010575",
+      "nome": "ARQUIDIOCESE DE MACEIO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:38.841Z"
+  },
+  "12155388010494": {
+    "osc": {
+      "cnpj": "12155388010494",
+      "nome": "ARQUIDIOCESE DE MACEIO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:39.416Z"
+  },
+  "12155388010737": {
+    "osc": {
+      "cnpj": "12155388010737",
+      "nome": "ARQUIDIOCESE DE MACEIO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:39.738Z"
+  },
+  "29744778295480": {
+    "osc": {
+      "cnpj": "29744778295480",
+      "nome": "IGREJA UNIVERSAL DO REINO DE DEUS",
+      "uf": "AL",
+      "municipio": "RIO LARGO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:40.141Z"
+  },
+  "30382392000404": {
+    "osc": {
+      "cnpj": "30382392000404",
+      "nome": "IGREJA BATISTA KOINONIA",
+      "uf": "AL",
+      "municipio": "ARAPIRACA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:40.455Z"
+  },
+  "66790110000102": {
+    "osc": {
+      "cnpj": "66790110000102",
+      "nome": "IGREJA CRISTA APOSTOLICA FUNDAMENTO ETERNO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:40.832Z"
+  },
+  "67010337000150": {
+    "osc": {
+      "cnpj": "67010337000150",
+      "nome": "ASSOCIACAO DOS GERADORES DE ENERGIA SOLAR SJII",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:41.330Z"
+  },
+  "67094495000136": {
+    "osc": {
+      "cnpj": "67094495000136",
+      "nome": "INSTITUTO RAIZES QUILOMBOLAS",
+      "uf": "AL",
+      "municipio": "IGREJA NOVA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:41.644Z"
+  },
+  "66912399000195": {
+    "osc": {
+      "cnpj": "66912399000195",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS PENTECOSTAL ARCA DA ALIANCA DA PROMESSA",
+      "uf": "AL",
+      "municipio": "PILAR",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:42.047Z"
+  },
+  "67098506000156": {
+    "osc": {
+      "cnpj": "67098506000156",
+      "nome": "INSTITUTO BIAPINO MATIAS",
+      "uf": "AL",
+      "municipio": "DOIS RIACHOS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:42.455Z"
+  },
+  "67515835000155": {
+    "osc": {
+      "cnpj": "67515835000155",
+      "nome": "INSTITUTO MULHERES EMPODERADAS EM MOVIMENTO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Serviços de assistência social sem alojamento | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:42.888Z"
+  },
+  "67623947000120": {
+    "osc": {
+      "cnpj": "67623947000120",
+      "nome": "ASSOCIACAO ACOLHIDA ANIMAL",
+      "uf": "AL",
+      "municipio": "QUEBRANGULO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:43.257Z"
+  },
+  "10271915000438": {
+    "osc": {
+      "cnpj": "10271915000438",
+      "nome": "INSTITUTO TRAVESSIA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Serviços de assistência social sem alojamento",
+      "cnae_secundario_descricao": "Fabricação de artefatos têxteis para uso doméstico | Fabricação de tintas, vernizes, esmaltes e lacas | Preparação de massa de concreto e argamassa para construção | Fabricação de escovas, pincéis e vassouras | Fabricação de equipamentos e acessórios para segurança pessoal e profissional | Construção de edifícios | Comércio atacadista de artigos de cama, mesa e banho | Comércio atacadista de roupas e acessórios para uso profissional e de segurança do trabalho | Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, hospitalar e de laboratórios | Comércio atacadista de outros equipamentos e artigos de uso pessoal e doméstico não especificados anteriormente | Lojas de variedades, exceto lojas de departamentos ou magazines | Fornecimento de alimentos preparados preponderantemente para empresas | Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Serviços de engenharia | Seleção e agenciamento de mão-de-obra | Locação de mão-de-obra temporária | Fornecimento e gestão de recursos humanos para terceiros | Serviços de organização de feiras, congressos, exposições e festas | Educação infantil - creche | Ensino fundamental | Ensino médio | Educação profissional de nível tecnológico | Atividades de apoio à educação, exceto caixas escolares | Treinamento em desenvolvimento profissional e gerencial | Atividades de atenção ambulatorial não especificadas anteriormente | Atividades de apoio à gestão de saúde | Atividades de práticas integrativas e complementares em saúde humana | Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química e grupos similares não | Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente | Produção e promoção de eventos esportivos | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "last_checked_date": "2026-11-05T20:19:43.716Z"
   }
 }
