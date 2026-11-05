@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 .svelte-kit/
 .vercel
+
+# Outbound Matchmaker Output
+local_oscs.db
+outbound_leads_edital_*.json
