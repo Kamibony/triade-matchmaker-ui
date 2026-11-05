@@ -4,7 +4,11 @@ import vercel from '@sveltejs/adapter-vercel';
 
 export default defineConfig({
   plugins: [sveltekit({
-    adapter: vercel()
+    adapter: vercel(),
+    alias: {
+      '$lib': 'src/lib',
+      '$lib/*': 'src/lib/*'
+    }
   })],
   build: {
     rollupOptions: {

@@ -14,6 +14,11 @@ interface OSC {
   cnae_primario_descricao: string;
   cnae_secundario_descricao: string;
   situacao_cadastral: string;
+  official_contacts?: {
+    ddd_telefone_1?: string;
+    ddd_telefone_2?: string;
+    email?: string;
+  };
 }
 
 interface CacheEntry {
@@ -28,6 +33,12 @@ interface MatchResult {
   score: number;
   motivo_match: string;
   whatsapp_message: string;
+  contatos_encontrados?: {
+    whatsapp?: string;
+    email?: string;
+    instagram?: string;
+  };
+  dossieText: string;
 }
 
 // --- Configuration ---
@@ -246,7 +257,12 @@ async function runPipeline() {
                       ano_fundacao,
                       cnae_primario_descricao: bApiData.cnae_fiscal_descricao || '',
                       cnae_secundario_descricao: (bApiData.cnaes_secundarios || []).map((c: any) => c.descricao).join(' | '),
-                      situacao_cadastral: bApiData.descricao_situacao_cadastral
+                      situacao_cadastral: bApiData.descricao_situacao_cadastral,
+                      official_contacts: {
+                          ddd_telefone_1: bApiData.ddd_telefone_1 || undefined,
+                          ddd_telefone_2: bApiData.ddd_telefone_2 || undefined,
+                          email: bApiData.email || undefined
+                      }
                   };
 
                   cache[cnpj] = {
@@ -302,13 +318,13 @@ async function runPipeline() {
 
           let dossieText = '';
           const dossiePrompt = `Você é um investigador especializado no Terceiro Setor brasileiro e atua descobrindo a presença digital real de ONGs.
-Sua missão é investigar a OSC "${osc.nome}" (CNPJ: ${osc.cnpj}) na cidade de ${osc.municipio} e estado de ${osc.uf}.
+Sua missão é investigar a OSC "${osc.nome} ${osc.municipio} ${osc.uf}" (CNPJ: ${osc.cnpj}).
 
 IMPORTANTE: Você deve realizar pesquisas profundas e específicas usando a ferramenta do Google Search.
 Realize buscas separadas combinando o nome da organização com as seguintes palavras-chave para encontrar informações valiosas:
-1. Buscar: "${osc.nome} ${osc.municipio} ${osc.uf} Instagram" ou "${osc.nome} ${osc.municipio} ${osc.uf} Facebook" (Encontre as redes sociais ativas, especialmente o Instagram).
-2. Buscar: "${osc.nome} ${osc.municipio} ${osc.uf} projetos sociais" ou "${osc.nome} ${osc.municipio} ${osc.uf} impacto" (Descubra o que eles realmente fazem na prática).
-3. Buscar: "${osc.nome} ${osc.municipio} ${osc.uf} notícias" ou "${osc.nome} ${osc.municipio} ${osc.uf} parceria" (Busque menções na mídia local, parcerias com empresas ou editais recentes).
+1. Buscar: "${osc.nome} Instagram" ou "${osc.nome} Facebook" (Encontre as redes sociais ativas, especialmente o Instagram).
+2. Buscar: "${osc.nome} projetos sociais" ou "${osc.nome} impacto" (Descubra o que eles realmente fazem na prática).
+3. Buscar: "${osc.nome} notícias" ou "${osc.nome} parceria" (Busque menções na mídia local, parcerias com empresas ou editais recentes).
 
 Com base nas suas buscas, elabore um "Dossiê Web Avançado" em formato Markdown limpo e bem estruturado.
 O dossiê DEVE conter as seguintes seções:
@@ -368,10 +384,11 @@ Return ONLY a valid JSON object containing:
 - "score": A number between 0 and 100 representing how well the NGO matches the grant's objective and themes.
 - "motivo_match": A brief 1-2 sentence justification for the score, citing specific evidence from their activities or the dossier.
 - "whatsapp_message": A short, professional, and personalized outreach message (in Portuguese) from 'Angela' (the captador) to the NGO, suggesting they might be a great fit for the "${edital.attributes.nome}" grant and asking if they are open to a conversation. Keep it friendly and concise.
+- "contatos_encontrados": An object extracting any discovered contact info from the Dossiê text, with optional keys "whatsapp", "email", and "instagram" (urls or handles).
 
 Do not include markdown formatting. Just return the raw JSON object.`;
 
-          let aiResult: any = { score: 0, motivo_match: "Failed", whatsapp_message: "" };
+          let aiResult: any = { score: 0, motivo_match: "Failed", whatsapp_message: "", contatos_encontrados: {} };
           if (GEMINI_API_KEY && GEMINI_API_KEY !== 'dummy') {
                try {
                    const result = await model.generateContent({
@@ -393,7 +410,9 @@ Do not include markdown formatting. Just return the raw JSON object.`;
               osc,
               score: aiResult.score || 0,
               motivo_match: aiResult.motivo_match || 'Evaluation failed.',
-              whatsapp_message: aiResult.whatsapp_message || 'Outreach message failed.'
+              whatsapp_message: aiResult.whatsapp_message || 'Outreach message failed.',
+              contatos_encontrados: aiResult.contatos_encontrados || {},
+              dossieText: dossieText
           });
 
           await sleep(4000);
