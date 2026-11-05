@@ -1,12 +1,10 @@
 import 'dotenv/config';
 import fs from 'fs/promises';
 import path from 'path';
-import Database from 'better-sqlite3';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 // --- Types ---
 interface OSC {
-  id: number;
   cnpj: string;
   nome: string;
   uf: string;
@@ -15,7 +13,12 @@ interface OSC {
   ano_fundacao: number;
   cnae_primario_descricao: string;
   cnae_secundario_descricao: string;
-  [key: string]: any;
+  situacao_cadastral: string;
+}
+
+interface CacheEntry {
+  osc: OSC;
+  last_checked_date: string;
 }
 
 interface MatchResult {
@@ -26,30 +29,31 @@ interface MatchResult {
 }
 
 // --- Configuration ---
-const DB_PATH = process.env.DB_PATH || path.join(process.cwd(), 'local_oscs.db');
-const OUTPUT_FILE = path.join(process.cwd(), 'outbound_leads_edital_X.json');
+const CACHE_PATH = path.join(process.cwd(), 'src', 'data', 'cnpj_cache.json');
+const OUTPUT_FILE = path.join(process.cwd(), 'outbound_leads_edital_test.json');
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
-if (!GEMINI_API_KEY) {
-  console.error("Error: GEMINI_API_KEY is not set in the environment.");
-  process.exit(1);
-}
+// if (!GEMINI_API_KEY || GEMINI_API_KEY === 'dummy') {
+//   console.error("Error: A valid GEMINI_API_KEY is required in the environment.");
+//   process.exit(1);
+// }
 
-const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI(GEMINI_API_KEY || 'dummy');
 const model = genAI.getGenerativeModel({
   model: 'gemini-3.5-flash-lite',
   generationConfig: { temperature: 0 },
 });
 
-// --- Constants & Setup ---
-// In a real scenario, this edital criteria would be dynamic or loaded from a config
+// --- Target Configuration (Hardcoded for POC) ---
+const TARGET_UF = 'BA'; // Test with Bahia
+const TARGET_MUNICIPALITY_NAME = 'Salvador';
+
 const EDITAL_CRITERIA = {
   id: 'edital_example_1',
   titulo: 'Edital de Fomento à Cultura e Educação',
   resumo_objetivo: 'Apoiar projetos que promovam a cultura e educação em comunidades vulneráveis, com foco em jovens e mulheres.',
   temas_principais: ['Cultura', 'Educação', 'Juventude', 'Mulheres'],
   ko_criteria: {
-    uf_permitidas: ['SP', 'RJ', 'MG', 'BA'],
     naturezas_juridicas_proibidas: ['Órgão Público', 'Empresa Privada'],
     idade_minima_anos: 2
   }
@@ -57,53 +61,175 @@ const EDITAL_CRITERIA = {
 
 const currentYear = new Date().getFullYear();
 
-async function runPipeline() {
-  console.log(`Starting Outbound Matchmaking Pipeline for Edital: ${EDITAL_CRITERIA.titulo}`);
+// Helper: Sleep
+const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
-  // Phase 1: Zero-Cost Broad Filter (DB Query)
-  console.log('\n--- Phase 1: Zero-Cost Broad Filter ---');
-  let db: Database.Database;
+async function fetchFromIpea(url: string) {
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`IPEA API error: ${response.status} - ${url}`);
+    }
+    return await response.json();
+}
+
+async function fetchBrasilAPIWithBackoff(cnpj: string): Promise<any> {
+    const url = `https://brasilapi.com.br/api/cnpj/v1/${cnpj}`;
+    let attempt = 0;
+    const maxAttempts = 3;
+    while (attempt < maxAttempts) {
+        try {
+            const response = await fetch(url, {
+                headers: {
+                    'User-Agent': 'TriadeMatchmaker/1.0'
+                }
+            });
+            if (response.status === 404) return null; // Not found
+            if (!response.ok) throw new Error(`BrasilAPI error: ${response.status}`);
+            return await response.json();
+        } catch (error: any) {
+            attempt++;
+            console.warn(`BrasilAPI fetch failed for CNPJ ${cnpj} (Attempt ${attempt}): ${error.message}`);
+            if (attempt >= maxAttempts) return null;
+            await sleep(Math.pow(2, attempt) * 1000);
+        }
+    }
+    return null;
+}
+
+async function loadCache(): Promise<Record<string, CacheEntry>> {
+    try {
+        await fs.access(CACHE_PATH);
+        const data = await fs.readFile(CACHE_PATH, 'utf-8');
+        return JSON.parse(data);
+    } catch {
+        return {}; // Return empty if doesn't exist
+    }
+}
+
+async function saveCache(cache: Record<string, CacheEntry>) {
+    await fs.mkdir(path.dirname(CACHE_PATH), { recursive: true });
+    await fs.writeFile(CACHE_PATH, JSON.stringify(cache, null, 2), 'utf-8');
+}
+
+async function runPipeline() {
+  console.log(`Starting JIT Outbound Matchmaking Pipeline for Edital: ${EDITAL_CRITERIA.titulo}`);
+
+  // 1. Fetch Municipality ID from IPEA
+  console.log(`\n--- Fetching IPEA Municipality ID for ${TARGET_MUNICIPALITY_NAME} ---`);
+  let edmu_cd_municipio;
   try {
-    db = new Database(DB_PATH, { fileMustExist: true });
-    console.log(`Connected to SQLite database at ${DB_PATH}`);
-  } catch (err) {
-    console.error(`Failed to connect to database at ${DB_PATH}. Ensure the database file exists.`);
-    console.error(err);
-    process.exit(1);
+      const muniData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/municipio/${TARGET_MUNICIPALITY_NAME}`);
+      if (!muniData || muniData.length === 0) {
+          throw new Error("Municipality not found in IPEA API");
+      }
+      edmu_cd_municipio = muniData[0].edmu_cd_municipio;
+      console.log(`Found Municipality ID: ${edmu_cd_municipio}`);
+  } catch(e: any) {
+      console.error(e.message);
+      process.exit(1);
   }
 
-  // Construct query based on KO Criteria (using parameterized queries)
-  const ufPlaceholders = EDITAL_CRITERIA.ko_criteria.uf_permitidas.map(() => '?').join(',');
-  const naturezasProibidasPlaceholders = EDITAL_CRITERIA.ko_criteria.naturezas_juridicas_proibidas.map(() => '?').join(',');
+  // 2. Fetch OSCs by Municipality
+  console.log(`\n--- Fetching OSCs for Municipality ID ${edmu_cd_municipio} ---`);
+  let ipeaOscs = [];
+  try {
+      ipeaOscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${edmu_cd_municipio}`);
+      console.log(`Found ${ipeaOscs.length} total OSCs in region.`);
+  } catch(e: any) {
+      console.error(e.message);
+      process.exit(1);
+  }
 
-  const query = `
-    SELECT * FROM oscs
-    WHERE uf IN (${ufPlaceholders})
-    AND (cast(${currentYear} as integer) - ano_fundacao) >= ?
-    AND natureza_juridica NOT IN (${naturezasProibidasPlaceholders})
-    LIMIT 1000
-  `;
+  // We don't want to process all of them for a POC, so we'll take a subset.
+  // Actually, we need their CNPJs first to use the cache. Getting the CNPJ requires one call per OSC.
+  // Let's cap the IPEA CNPJ fetches to 100 to save time.
+  const sampleSize = Math.min(100, ipeaOscs.length);
+  console.log(`\n--- Fetching CNPJs for up to ${sampleSize} OSCs ---`);
 
-  console.log(`Executing broad filter query...`);
-  const stmt = db.prepare(query);
-  const broadFilterResults = stmt.all(
-    ...EDITAL_CRITERIA.ko_criteria.uf_permitidas,
-    EDITAL_CRITERIA.ko_criteria.idade_minima_anos,
-    ...EDITAL_CRITERIA.ko_criteria.naturezas_juridicas_proibidas
-  ) as OSC[];
-  console.log(`Phase 1 complete. Found ${broadFilterResults.length} initial matches.`);
+  const rawCnpjs = [];
+  for(let i = 0; i < sampleSize; i++) {
+      const osc = ipeaOscs[i];
+      try {
+          const headerData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/osc/cabecalho/${osc.id_osc}`);
+          if (headerData && headerData.cd_identificador_osc) {
+               // Ensure 14 digits padding if necessary, but it should be 14
+               let cnpj = String(headerData.cd_identificador_osc).padStart(14, '0');
+               rawCnpjs.push(cnpj);
+          }
+      } catch (e) {
+          // just ignore errors for single items
+      }
+  }
+  console.log(`Successfully retrieved ${rawCnpjs.length} CNPJs.`);
 
-  if (broadFilterResults.length === 0) {
-    console.log("No OSCs found matching the broad criteria. Exiting.");
-    process.exit(0);
+  // 3. Load Cache
+  const cache = await loadCache();
+  const enrichedOscs: OSC[] = [];
+  let apiCalls = 0;
+
+  console.log(`\n--- Phase 1: JIT Enrichment & Filtering ---`);
+  for (const cnpj of rawCnpjs) {
+      const cached = cache[cnpj];
+      const now = new Date().toISOString();
+
+      let oscData: OSC | null = null;
+
+      if (cached) {
+          // Use cached data
+          oscData = cached.osc;
+      } else {
+          // Fetch from BrasilAPI
+          apiCalls++;
+          const bApiData = await fetchBrasilAPIWithBackoff(cnpj);
+          if (bApiData && bApiData.descricao_situacao_cadastral === 'ATIVA') {
+              const ano_fundacao = parseInt(bApiData.data_inicio_atividade.split('-')[0], 10);
+
+              oscData = {
+                  cnpj,
+                  nome: bApiData.razao_social,
+                  uf: bApiData.uf,
+                  municipio: bApiData.municipio,
+                  natureza_juridica: bApiData.natureza_juridica,
+                  ano_fundacao,
+                  cnae_primario_descricao: bApiData.cnae_fiscal_descricao || '',
+                  cnae_secundario_descricao: (bApiData.cnaes_secundarios || []).map((c: any) => c.descricao).join(' | '),
+                  situacao_cadastral: bApiData.descricao_situacao_cadastral
+              };
+
+              cache[cnpj] = {
+                  osc: oscData,
+                  last_checked_date: now
+              };
+          }
+      }
+
+      if (oscData && oscData.situacao_cadastral === 'ATIVA') {
+          // K.O. Checks
+          const age = currentYear - oscData.ano_fundacao;
+          const isNaturezaProibida = EDITAL_CRITERIA.ko_criteria.naturezas_juridicas_proibidas.some(n => oscData!.natureza_juridica.includes(n));
+
+          if (age >= EDITAL_CRITERIA.ko_criteria.idade_minima_anos && !isNaturezaProibida) {
+              enrichedOscs.push(oscData);
+          }
+      }
+  }
+
+  console.log(`Made ${apiCalls} calls to BrasilAPI.`);
+  console.log(`After JIT and KO Filters: ${enrichedOscs.length} OSCs eligible.`);
+
+  // Save Cache
+  await saveCache(cache);
+
+  if (enrichedOscs.length === 0) {
+      console.log("No valid OSCs found after filtering.");
+      process.exit(0);
   }
 
   // Phase 2: Zero-Cost Heuristic Pre-Ranking
   console.log('\n--- Phase 2: Zero-Cost Heuristic Pre-Ranking ---');
   const targetKeywords = ['cultura', 'educação', 'ensino', 'arte', 'mulher', 'jovem', 'juventude', 'social', 'desenvolvimento'];
 
-  // Score OSCs based on keyword hits in CNAE descriptions
-  const scoredOscs = broadFilterResults.map(osc => {
+  const scoredOscs = enrichedOscs.map(osc => {
     let heuristicScore = 0;
     const combinedText = `${osc.cnae_primario_descricao} ${osc.cnae_secundario_descricao}`.toLowerCase();
 
@@ -113,30 +239,24 @@ async function runPipeline() {
       }
     });
 
-    // Slight bonus for older, potentially more established NGOs
     const age = currentYear - osc.ano_fundacao;
-    heuristicScore += Math.min(age, 20); // Cap age bonus
+    heuristicScore += Math.min(age, 20);
 
     return { osc, heuristicScore };
   });
 
-  // Sort by heuristic score descending and take Top 50
   scoredOscs.sort((a, b) => b.heuristicScore - a.heuristicScore);
   const top50 = scoredOscs.slice(0, 50).map(item => item.osc);
-  console.log(`Phase 2 complete. Pre-ranked down to ${top50.length} OSCs.`);
+  console.log(`Pre-ranked down to ${top50.length} Top Candidates.`);
 
   // Phase 3: Paid AI Processing (Dossier & Match)
   console.log('\n--- Phase 3: Paid AI Processing (AI Match) ---');
   const finalMatches: MatchResult[] = [];
 
-  // Function to add sleep delay
-  const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-
   for (let i = 0; i < top50.length; i++) {
     const osc = top50[i];
-    console.log(`[${i + 1}/${top50.length}] Evaluating OSC: ${osc.nome} (${osc.municipio}-${osc.uf})`);
+    console.log(`[${i + 1}/${top50.length}] AI Evaluating: ${osc.nome} (${osc.municipio}-${osc.uf})`);
 
-    // Construct search query forcefully appending municipio and UF to avoid generic name hallucination
     const searchQuery = `${osc.nome} ${osc.municipio} ${osc.uf}`;
 
     const prompt = `
@@ -168,22 +288,30 @@ Return ONLY a valid JSON object containing:
 Do not include markdown formatting (like \`\`\`json). Just return the raw JSON object.
 `;
 
-    // Exponential backoff retry loop for Gemini API calls
     let attempt = 0;
     const maxAttempts = 3;
     let success = false;
 
     while (attempt < maxAttempts && !success) {
       try {
-        // Prepare the request with search grounding
-        const result = await model.generateContent({
-           contents: [{ role: 'user', parts: [{ text: prompt }] }],
-           tools: [{ googleSearch: {} }] // Add Google Search Grounding
-        });
+        let aiResult: any;
+        if (GEMINI_API_KEY && GEMINI_API_KEY !== 'dummy') {
+            const result = await model.generateContent({
+               contents: [{ role: 'user', parts: [{ text: prompt }] }],
+               tools: [{ googleSearch: {} }]
+            });
 
-        const responseText = result.response.text().trim();
-        const cleanedResponse = responseText.replace(/^```json\s*/i, '').replace(/```\s*$/, '');
-        const aiResult = JSON.parse(cleanedResponse);
+            const responseText = result.response.text().trim();
+            const cleanedResponse = responseText.replace(/^```json\s*/i, '').replace(/```\s*$/, '');
+            aiResult = JSON.parse(cleanedResponse);
+        } else {
+            // Mock mode for testing
+            aiResult = {
+                score: Math.floor(Math.random() * 100),
+                motivo_match: "Mock reasoning for testing.",
+                whatsapp_message: "Olá! Este é um teste mock."
+            };
+        }
 
         finalMatches.push({
           osc,
@@ -207,14 +335,13 @@ Do not include markdown formatting (like \`\`\`json). Just return the raw JSON o
       }
     }
 
-    // Crucial: 4000ms delay between OSCs to respect the 15 RPM Free Tier limit
     if (i < top50.length - 1) {
       console.log(`   -> Sleeping 4000ms to respect rate limits...`);
       await sleep(4000);
     }
   }
 
-  // Phase 4: Delivery (Sort, Filter Top 10, and Save)
+  // Phase 4: Delivery
   console.log('\n--- Phase 4: Delivery ---');
   finalMatches.sort((a, b) => b.score - a.score);
   const top10 = finalMatches.slice(0, 10);
