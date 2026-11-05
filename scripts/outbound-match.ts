@@ -110,6 +110,9 @@ async function getTopEditais() {
     const validEditais = editais.filter((edital: any) => {
         if (!edital.deep_metadata) return false;
 
+        const criterios = edital.deep_metadata.criterios_eliminatorios;
+        if (!criterios || typeof criterios !== 'object' || Object.keys(criterios).length === 0) return false;
+
         const valor = edital.deep_metadata.financeiro?.valor_maximo_ou_global_reais || 0;
         if (valor <= 100000) return false;
 
@@ -270,12 +273,16 @@ async function runPipeline() {
       if (enrichedOscs.length === 0) continue;
 
       const temas = edital.deep_metadata.temas_principais || [];
+      const resumoObjetivo = edital.deep_metadata.resumo_objetivo || '';
+      const resumoWords = resumoObjetivo.toLowerCase().split(/[\s,.;]+/).filter((w: string) => w.length > 4);
+      const allTargetKeywords = [...new Set([...temas.map((t: string) => t.toLowerCase()), ...resumoWords])];
+
       const scoredOscs = enrichedOscs.map(osc => {
           let heuristicScore = 0;
           const combinedText = `${osc.cnae_primario_descricao} ${osc.cnae_secundario_descricao}`.toLowerCase();
 
-          temas.forEach((kw: string) => {
-              if (combinedText.includes(kw.toLowerCase())) {
+          allTargetKeywords.forEach((kw: string) => {
+              if (combinedText.includes(kw)) {
                   heuristicScore += 10;
               }
           });
@@ -285,25 +292,39 @@ async function runPipeline() {
       });
 
       scoredOscs.sort((a, b) => b.heuristicScore - a.heuristicScore);
-      const top10 = scoredOscs.slice(0, 10).map(item => item.osc);
-      console.log(`Pre-ranked down to ${top10.length} Top Candidates.`);
+      const top50 = scoredOscs.slice(0, 50).map(item => item.osc);
+      console.log(`Pre-ranked down to ${top50.length} Top Candidates.`);
 
       // AI Match
-      for (let i = 0; i < top10.length; i++) {
-          const osc = top10[i];
-          console.log(`[${i + 1}/${top10.length}] AI Evaluating: ${osc.nome}`);
+      for (let i = 0; i < top50.length; i++) {
+          const osc = top50[i];
+          console.log(`[${i + 1}/${top50.length}] AI Evaluating: ${osc.nome}`);
 
           let dossieText = '';
           const dossiePrompt = `Você é um investigador especializado no Terceiro Setor brasileiro e atua descobrindo a presença digital real de ONGs.
-Sua missão é investigar a OSC "${osc.nome}" na cidade de ${osc.municipio} e estado de ${osc.uf}.
+Sua missão é investigar a OSC "${osc.nome}" (CNPJ: ${osc.cnpj}) na cidade de ${osc.municipio} e estado de ${osc.uf}.
 
 IMPORTANTE: Você deve realizar pesquisas profundas e específicas usando a ferramenta do Google Search.
 Realize buscas separadas combinando o nome da organização com as seguintes palavras-chave para encontrar informações valiosas:
-1. Buscar: "${osc.nome} ${osc.municipio} ${osc.uf} Instagram" ou Facebook.
-2. Buscar: "${osc.nome} ${osc.municipio} ${osc.uf} projetos sociais".
-3. Buscar: "${osc.nome} ${osc.municipio} ${osc.uf} notícias".
+1. Buscar: "${osc.nome} ${osc.municipio} ${osc.uf} Instagram" ou "${osc.nome} ${osc.municipio} ${osc.uf} Facebook" (Encontre as redes sociais ativas, especialmente o Instagram).
+2. Buscar: "${osc.nome} ${osc.municipio} ${osc.uf} projetos sociais" ou "${osc.nome} ${osc.municipio} ${osc.uf} impacto" (Descubra o que eles realmente fazem na prática).
+3. Buscar: "${osc.nome} ${osc.municipio} ${osc.uf} notícias" ou "${osc.nome} ${osc.municipio} ${osc.uf} parceria" (Busque menções na mídia local, parcerias com empresas ou editais recentes).
 
-Com base nas suas buscas, elabore um "Dossiê Web Avançado" contendo Presença Digital, Impacto Real e Atuação, Projetos Recentes e Parcerias.`;
+Com base nas suas buscas, elabore um "Dossiê Web Avançado" em formato Markdown limpo e bem estruturado.
+O dossiê DEVE conter as seguintes seções:
+
+### 🌐 Presença Digital
+- **Site Oficial:** (Se existir)
+- **Redes Sociais:** (Coloque os links, dando prioridade absoluta ao Instagram e Facebook)
+- **Status Digital:** (Avalie brevemente se a organização é ativa digitalmente)
+
+### 🎯 Impacto Real e Atuação (Muito Importante)
+- Descreva detalhadamente o que a organização faz na prática (além da descrição burocrática do CNAE). Quais são suas atividades principais? Que público eles atendem?
+
+### 🚀 Projetos Recentes e Parcerias
+- Liste projetos recentes, campanhas de arrecadação, menções na mídia ou parcerias governamentais/privadas. Inclua nomes de projetos específicos se encontrar.
+
+Seja direto, profissional e focado em fornecer informações úteis para um consultor de captação de recursos que usará esses dados para sugerir projetos em editais.`;
 
           if (GEMINI_API_KEY && GEMINI_API_KEY !== 'dummy') {
               try {
