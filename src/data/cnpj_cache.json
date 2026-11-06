@@ -4159,5 +4159,749 @@
       }
     },
     "last_checked_date": "2026-11-06T00:30:37.454Z"
+  },
+  "14593144000103": {
+    "osc": {
+      "cnpj": "14593144000103",
+      "nome": "TEMPLO DA EVANGELIZACAO PRINCIPE DA PAZ",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9182354252"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:17.288Z"
+  },
+  "20723924000123": {
+    "osc": {
+      "cnpj": "20723924000123",
+      "nome": "ASSOCIACAO DOS PROD RURAIS DA COMUNIDADE MONTE SIAO",
+      "uf": "PA",
+      "municipio": "ITAITUBA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9335182115"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:17.956Z"
+  },
+  "11093134000110": {
+    "osc": {
+      "cnpj": "11093134000110",
+      "nome": "CONVENCAO DAS IGREJAS EVANGELICAS INDEPENDENTES",
+      "uf": "PA",
+      "municipio": "ANANINDEUA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9132631299",
+        "ddd_telefone_2": "9132631299"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:19.239Z"
+  },
+  "11156246000173": {
+    "osc": {
+      "cnpj": "11156246000173",
+      "nome": "IGREJA EVANGELICA CLINICA DA ALMA",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9191836915"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:19.593Z"
+  },
+  "20973497000131": {
+    "osc": {
+      "cnpj": "20973497000131",
+      "nome": "ASSOCIACAO DE MORADORES DA VILA CARIMAN",
+      "uf": "PA",
+      "municipio": "MARABA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9491366811"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:21.833Z"
+  },
+  "24436648000173": {
+    "osc": {
+      "cnpj": "24436648000173",
+      "nome": "IGREJA EVANGELICA SHALOM",
+      "uf": "PA",
+      "municipio": "RIO MARIA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2015,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9434281012",
+        "ddd_telefone_2": "9492354603"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:22.503Z"
+  },
+  "23730361000199": {
+    "osc": {
+      "cnpj": "23730361000199",
+      "nome": "CONVENCAO MUNDIAL RESPLANDECENTE ESTRELA DA MANHA - CMREM",
+      "uf": "PA",
+      "municipio": "CASTANHAL",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2015,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9130330949",
+        "ddd_telefone_2": "9198301776"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:22.733Z"
+  },
+  "22435665000160": {
+    "osc": {
+      "cnpj": "22435665000160",
+      "nome": "IGREJA DA VINHA DE PACAJA",
+      "uf": "PA",
+      "municipio": "PACAJA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2015,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9391352449"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:25.979Z"
+  },
+  "22571924000180": {
+    "osc": {
+      "cnpj": "22571924000180",
+      "nome": "ASSOCIACAO DE NUTRICAO DO ESTADO DO PARA",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2015,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9199880022"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:26.441Z"
+  },
+  "25108369000143": {
+    "osc": {
+      "cnpj": "25108369000143",
+      "nome": "ASSOCIACAO DE MORADORES DO RESIDENCIAL WIRLAND FREIRE",
+      "uf": "PA",
+      "municipio": "ITAITUBA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9391359113"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:27.394Z"
+  },
+  "26804494000150": {
+    "osc": {
+      "cnpj": "26804494000150",
+      "nome": "ASSOCIACAO CARNAVALESCA E CULTURAL DE ITAITUBA",
+      "uf": "PA",
+      "municipio": "ITAITUBA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9391001732"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:27.656Z"
+  },
+  "26480648000104": {
+    "osc": {
+      "cnpj": "26480648000104",
+      "nome": "CENTRO DE PREVENCAO, TRATAMENTO E RECUPERACAO DE DEPENDENTES QUIMICOS RENOVACAO",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades de centros de assistência psicossocial",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9182696937"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:28.422Z"
+  },
+  "00237864000202": {
+    "osc": {
+      "cnpj": "00237864000202",
+      "nome": "ASSOCIACAO BIBLICA E CULTURAL DE PORTADORES DE LUZ",
+      "uf": "PA",
+      "municipio": "ANANINDEUA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9181462222"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:28.744Z"
+  },
+  "00237864000393": {
+    "osc": {
+      "cnpj": "00237864000393",
+      "nome": "ASSOCIACAO BIBLICA E CULTURAL DE PORTADORES DE LUZ",
+      "uf": "PA",
+      "municipio": "ANANINDEUA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9181462222",
+        "ddd_telefone_2": "9180189763"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:29.093Z"
+  },
+  "02320971000144": {
+    "osc": {
+      "cnpj": "02320971000144",
+      "nome": "CENTRO COMUNITARIO DE ITAMOARI",
+      "uf": "PA",
+      "municipio": "CACHOEIRA DO PIRIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-06T14:09:29.377Z"
+  },
+  "01931670000194": {
+    "osc": {
+      "cnpj": "01931670000194",
+      "nome": "C E E JORGE SADALA",
+      "uf": "PA",
+      "municipio": "ALENQUER",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-06T14:09:29.691Z"
+  },
+  "01931680000120": {
+    "osc": {
+      "cnpj": "01931680000120",
+      "nome": "CONSELHO ESCOLAR DA ESCOLA MUNICIPAL DE EDUCACAO INFANTIL E ENSINO FUNDAMENTAL GOVERNADOR FERNANDO GUILHON.",
+      "uf": "PA",
+      "municipio": "OBIDOS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-06T14:09:29.962Z"
+  },
+  "01970865000658": {
+    "osc": {
+      "cnpj": "01970865000658",
+      "nome": "IGREJA COMUNIDADE EVANGELICA DE LIBERTACAO",
+      "uf": "PA",
+      "municipio": "DOM ELISEU",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4330243280"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:30.194Z"
+  },
+  "01928054000184": {
+    "osc": {
+      "cnpj": "01928054000184",
+      "nome": "ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL JULIA GONCALVES PASSARINHO",
+      "uf": "PA",
+      "municipio": "PACAJA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-06T14:09:30.489Z"
+  },
+  "08412675000150": {
+    "osc": {
+      "cnpj": "08412675000150",
+      "nome": "ASSOCIACAO DE MORADORES E TRABALHADORES AGROEXTRATIVISTAS DA COMUNIDADE DE ENSEADA SAO JORGE",
+      "uf": "PA",
+      "municipio": "SANTAREM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9335235579"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:31.610Z"
+  },
+  "24232886017647": {
+    "osc": {
+      "cnpj": "24232886017647",
+      "nome": "PRO-SAUDE ASSOCIACAO BENEFICENTE DE ASSISTENCIA SOCIAL E HOSPITALAR - EM RECUPERACAO JUDICIAL",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de atendimento hospitalar, exceto pronto-socorro e unidades para atendimento a urgências",
+      "cnae_secundario_descricao": "Atividades de atendimento em pronto-socorro e unidades hospitalares para atendimento a urgências",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "1122385566"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:32.496Z"
+  },
+  "15159154000106": {
+    "osc": {
+      "cnpj": "15159154000106",
+      "nome": "ESCRITORIO CONTABIL FACIMAB JUNIOR",
+      "uf": "PA",
+      "municipio": "MARABA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades de consultoria e auditoria contábil e tributária",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente | Atividades de apoio à educação, exceto caixas escolares | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente | Produção e promoção de eventos esportivos | Outras atividades esportivas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9433210411",
+        "ddd_telefone_2": "9491694647"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:33.069Z"
+  },
+  "27408695000100": {
+    "osc": {
+      "cnpj": "27408695000100",
+      "nome": "IGREJA BATISTA MANANCIAL DE VIDAS",
+      "uf": "PA",
+      "municipio": "CASTANHAL",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9137213296"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:33.664Z"
+  },
+  "05071010000131": {
+    "osc": {
+      "cnpj": "05071010000131",
+      "nome": "INSTITUTO EDUCACIONAL ESPIRITA",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2002,
+      "cnae_primario_descricao": "Ensino fundamental",
+      "cnae_secundario_descricao": "Educação infantil - pré-escola",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-06T14:09:33.954Z"
+  },
+  "27617762000198": {
+    "osc": {
+      "cnpj": "27617762000198",
+      "nome": "ASSOCIACAO DOS TRABALHADORES E TRABALHADORAS RURAIS NOVA VITORIA ATTRNV",
+      "uf": "PA",
+      "municipio": "PAU D'ARCO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9492884345"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:34.529Z"
+  },
+  "05961435000116": {
+    "osc": {
+      "cnpj": "05961435000116",
+      "nome": "ASSOCIACAO DOS MOTO-TAXISTA E MOTOQUEIROS DE CAPANEMA E REGIAO-ASMMOTIX",
+      "uf": "PA",
+      "municipio": "CAPANEMA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2003,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-06T14:09:34.820Z"
+  },
+  "34621482000119": {
+    "osc": {
+      "cnpj": "34621482000119",
+      "nome": "CENTRO COMUNITARIO DE SANTA LUZIA",
+      "uf": "PA",
+      "municipio": "BENEVIDES",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1989,
+      "cnae_primario_descricao": "Instituições de longa permanência para idosos",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9196253971"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:36.208Z"
+  },
+  "03651069000173": {
+    "osc": {
+      "cnpj": "03651069000173",
+      "nome": "ASSOCIACAO CULTURAL EXPLOSAO JOVEM",
+      "uf": "PA",
+      "municipio": "TRACUATEUA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2000,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9184287421"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:37.628Z"
+  },
+  "11376450000108": {
+    "osc": {
+      "cnpj": "11376450000108",
+      "nome": "ASSOCIACAO DE PESCADORES E PESCADORAS ARTESANAIS E AQUICULTORES DO RIO PARACAUARI DOS MUNICIPIOS DE SOURE E SALVATERRA",
+      "uf": "PA",
+      "municipio": "SOURE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9188934428"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:38.400Z"
+  },
+  "29411935000142": {
+    "osc": {
+      "cnpj": "29411935000142",
+      "nome": "ASSOCIACAO COMUNITARIA SAO JORGE",
+      "uf": "PA",
+      "municipio": "OBIDOS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9391231026",
+        "ddd_telefone_2": "9391106910"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:39.242Z"
+  },
+  "30126673000153": {
+    "osc": {
+      "cnpj": "30126673000153",
+      "nome": "ASSOCIACAO ESPORTIVA SAO JORGE FUTEBOL CLUB",
+      "uf": "PA",
+      "municipio": "CAPANEMA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9188112249"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:40.120Z"
+  },
+  "30329257000152": {
+    "osc": {
+      "cnpj": "30329257000152",
+      "nome": "IGREJA PENTECOSTAL MISSOES DE DEUS MINISTERIO DO PARA",
+      "uf": "PA",
+      "municipio": "MOCAJUBA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9184476924"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:40.509Z"
+  },
+  "30754554000145": {
+    "osc": {
+      "cnpj": "30754554000145",
+      "nome": "INSTITUTO JOSE GOMES DA SILVA DE AMPARO E PROTECAO A VIDA",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de apoio à gestão de saúde",
+      "cnae_secundario_descricao": "Estacionamento de veículos | Educação infantil - creche | Administração de caixas escolares | Ensino de esportes | Ensino de arte e cultura não especificado anteriormente | Atividades de atendimento em pronto-socorro e unidades hospitalares para atendimento a urgências | Instituições de longa permanência para idosos | Atividades de jardins botânicos, zoológicos, parques nacionais, reservas ecológicas e áreas de proteção ambiental | Gestão de instalações de esportes",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9192916363"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:40.880Z"
+  },
+  "29746425000126": {
+    "osc": {
+      "cnpj": "29746425000126",
+      "nome": "ASSOCIACAO DOS TRABALHADORES RURAIS, AGRICULTORES E AGRICULTORAS FAMILIARES E AGROEXTRATIVISTAS DA COMUNIDADE FRANCES - ASTAAFRAN.",
+      "uf": "PA",
+      "municipio": "SANTA CRUZ DO ARARI",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9184143881"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:09:42.604Z"
+  },
+  "33131068000169": {
+    "osc": {
+      "cnpj": "33131068000169",
+      "nome": "ASSOCIACAO DOS MORADORES PARQUE MIRAMAR - I",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288226968",
+        "ddd_telefone_2": "8288384584"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:11:05.377Z"
+  },
+  "34905816000186": {
+    "osc": {
+      "cnpj": "34905816000186",
+      "nome": "ASSOCIACAO DE AGRICULTORES FAMILIARES E APOIO AS MULHERES E A JUVENTUDE",
+      "uf": "AL",
+      "municipio": "TRAIPU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299404765"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:11:05.673Z"
+  },
+  "49385480000145": {
+    "osc": {
+      "cnpj": "49385480000145",
+      "nome": "CRECHE CRIA PROFESSORA NAILDE OLIVEIRA SANDES",
+      "uf": "AL",
+      "municipio": "OLHO D'AGUA DO CASADO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288939655"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:11:07.368Z"
+  },
+  "63424800000150": {
+    "osc": {
+      "cnpj": "63424800000150",
+      "nome": "ASSOCIACAO DE CATADORES DE MATERIAS RECICLAVEIS DE MURICI",
+      "uf": "AL",
+      "municipio": "MURICI",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Coleta de resíduos não-perigosos",
+      "cnae_secundario_descricao": "Recuperação de sucatas de alumínio | Recuperação de materiais metálicos, exceto alumínio | Recuperação de materiais plásticos | Recuperação de materiais não especificados anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8287210094"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:11:08.796Z"
+  },
+  "63405185000134": {
+    "osc": {
+      "cnpj": "63405185000134",
+      "nome": "ASSOCIACAO ESCOLA MENINOS DE ALAGOAS DE FUTSAL/AMALF",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Outras atividades esportivas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Produção e promoção de eventos esportivos",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299999999",
+        "ddd_telefone_2": "8298999999"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:11:09.093Z"
+  },
+  "63451968000154": {
+    "osc": {
+      "cnpj": "63451968000154",
+      "nome": "ASSOCIACAO PATA VOLUNTARIA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299869330"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:11:09.322Z"
+  },
+  "63931053000146": {
+    "osc": {
+      "cnpj": "63931053000146",
+      "nome": "ASSOCIACAO DOS APICULTORES DE PASSO DE CAMARAGIBE",
+      "uf": "AL",
+      "municipio": "PASSO DE CAMARAGIBE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288027055"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:11:09.364Z"
+  },
+  "63733079000180": {
+    "osc": {
+      "cnpj": "63733079000180",
+      "nome": "ASSOCIACAO DOS ARTESAOS DE SANTANA DO IPANEMA - AL",
+      "uf": "AL",
+      "municipio": "SANTANA DO IPANEMA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299482886"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:11:09.407Z"
+  },
+  "46240015000390": {
+    "osc": {
+      "cnpj": "46240015000390",
+      "nome": "ASSOCIACAO PARA VALORIZACAO E DESENVOLVIMENTO DO TRABALHADOR DA AREA DA SAUDE",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3492992251"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:11:09.443Z"
+  },
+  "65629021000116": {
+    "osc": {
+      "cnpj": "65629021000116",
+      "nome": "PRIMEIRA IGREJA BATISTA NOVA VIDA EM SANTOS DUMONT",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288374665"
+      }
+    },
+    "last_checked_date": "2026-11-06T14:11:09.684Z"
   }
 }
