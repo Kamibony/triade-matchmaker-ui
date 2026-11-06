@@ -39,11 +39,15 @@ async function fetchBrasilApiCnpj(cnpj: string) {
 
 export async function POST({ request }) {
   try {
-    const { editalId, customKeywords } = await request.json();
+    const { editalId, edital: providedEdital, customKeywords } = await request.json();
 
     // 1. Get Edital
-    const editaisData = JSON.parse(await fs.readFile(EDITAIS_PATH, 'utf-8'));
-    const edital = editaisData.find((e: any) => e.id === editalId || e.id?.toString() === editalId?.toString());
+    let edital = providedEdital;
+
+    if (!edital && editalId) {
+       const editaisData = JSON.parse(await fs.readFile(EDITAIS_PATH, 'utf-8'));
+       edital = editaisData.find((e: any) => e.id === editalId || e.id?.toString() === editalId?.toString());
+    }
 
     if (!edital) {
       return json({ error: 'Edital not found' }, { status: 404 });
