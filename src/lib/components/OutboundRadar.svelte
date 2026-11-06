@@ -28,6 +28,8 @@
 
   // Manual Search State
   let activeTab: 'daily' | 'manual' = 'daily';
+  let editalSource: 'banco' | 'link' = 'banco';
+  let manualSearchPdfUrl = '';
   let manualSearchKeywords = '';
   let manualSearchEditalId = '';
   let manualSearchLoading = false;
@@ -56,19 +58,37 @@
   }
 
   async function performManualSearch() {
-    if (!manualSearchEditalId || !manualSearchKeywords) return;
+    if ((editalSource === 'banco' && !manualSearchEditalId) || (editalSource === 'link' && !manualSearchPdfUrl) || !manualSearchKeywords) return;
 
     manualSearchLoading = true;
     manualSearchResults = [];
     manualEvaluationProgress = 'Iniciando busca (Fase 1 e 2)...';
 
     try {
+      let parsedEdital = null;
+
+      if (editalSource === 'link') {
+        manualEvaluationProgress = 'Analisando PDF do Edital...';
+        const parseRes = await fetch('/api/outbound/parse-edital', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ pdfUrl: manualSearchPdfUrl })
+        });
+
+        if (!parseRes.ok) {
+           throw new Error('Erro ao analisar o PDF do Edital. Verifique o link e tente novamente.');
+        }
+        parsedEdital = await parseRes.json();
+        manualEvaluationProgress = 'Iniciando busca (Fase 1 e 2)...';
+      }
+
       // Step A: Discover (Fetch top 10 OSCs)
       const discoverRes = await fetch('/api/outbound/discover', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          editalId: manualSearchEditalId,
+          editalId: editalSource === 'banco' ? manualSearchEditalId : undefined,
+          edital: parsedEdital,
           customKeywords: manualSearchKeywords
         })
       });
@@ -165,18 +185,41 @@
       {:else}
         <!-- Manual Search Form -->
         <div class="p-6 space-y-4">
-          <div>
-            <label class="block text-sm font-medium text-gray-700">Edital</label>
-            <select
-              bind:value={manualSearchEditalId}
-              class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md border"
-            >
-              <option value="" disabled>Selecione um Edital...</option>
-              {#each Object.entries(groupedLeads) as [id, data]}
-                <option value={id}>{data.titulo}</option>
-              {/each}
-            </select>
+          <div class="flex space-x-4 mb-4">
+            <label class="inline-flex items-center">
+              <input type="radio" bind:group={editalSource} value="banco" class="form-radio text-indigo-600 h-4 w-4" />
+              <span class="ml-2 text-sm text-gray-700">Selecionar Edital do Banco</span>
+            </label>
+            <label class="inline-flex items-center">
+              <input type="radio" bind:group={editalSource} value="link" class="form-radio text-indigo-600 h-4 w-4" />
+              <span class="ml-2 text-sm text-gray-700">Inserir Link de Novo Edital (PDF)</span>
+            </label>
           </div>
+
+          {#if editalSource === 'banco'}
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Edital</label>
+              <select
+                bind:value={manualSearchEditalId}
+                class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md border"
+              >
+                <option value="" disabled>Selecione um Edital...</option>
+                {#each Object.entries(groupedLeads) as [id, data]}
+                  <option value={id}>{data.titulo}</option>
+                {/each}
+              </select>
+            </div>
+          {:else}
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Link do PDF do Edital</label>
+              <input
+                type="url"
+                bind:value={manualSearchPdfUrl}
+                placeholder="https://exemplo.com/edital.pdf"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              />
+            </div>
+          {/if}
 
           <div>
             <label class="block text-sm font-medium text-gray-700">Palavras-chave Customizadas</label>
@@ -191,7 +234,7 @@
 
           <button
             onclick={performManualSearch}
-            disabled={manualSearchLoading || !manualSearchEditalId || !manualSearchKeywords}
+            disabled={manualSearchLoading || (editalSource === 'banco' ? !manualSearchEditalId : !manualSearchPdfUrl) || !manualSearchKeywords}
             class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:bg-indigo-400"
           >
             {manualSearchLoading ? 'Buscando...' : 'Buscar OSCs'}
