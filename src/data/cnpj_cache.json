@@ -3246,5 +3246,918 @@
       "situacao_cadastral": "ATIVA"
     },
     "last_checked_date": "2026-11-05T20:19:43.716Z"
+  },
+  "35206582000141": {
+    "osc": {
+      "cnpj": "35206582000141",
+      "nome": "ASSEMBLEIA DE DEUS MISSAO INTEGRAL",
+      "uf": "PA",
+      "municipio": "ITUPIRANGA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9492831480"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:29:55.309Z"
+  },
+  "07258455003923": {
+    "osc": {
+      "cnpj": "07258455003923",
+      "nome": "DIOCESE DE CASTANHAL",
+      "uf": "PA",
+      "municipio": "SALINOPOLIS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9191282688",
+        "ddd_telefone_2": "9188150140"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:29:55.812Z"
+  },
+  "42377289000102": {
+    "osc": {
+      "cnpj": "42377289000102",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS CAMPO NOVO PARAISO",
+      "uf": "PA",
+      "municipio": "IGARAPE-MIRI",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9132350375"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:29:56.150Z"
+  },
+  "44612163000109": {
+    "osc": {
+      "cnpj": "44612163000109",
+      "nome": "ASSOCIACAO CULTURAL TRADICAO MIRIENSE",
+      "uf": "PA",
+      "municipio": "IGARAPE-MIRI",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Ensino de arte e cultura não especificado anteriormente",
+      "cnae_secundario_descricao": "Ensino de dança | Ensino de artes cênicas, exceto dança | Ensino de música",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9188259575"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:29:56.523Z"
+  },
+  "44428124000148": {
+    "osc": {
+      "cnpj": "44428124000148",
+      "nome": "ALENQUER CLUBE DE TIRO ESPORTIVO",
+      "uf": "PA",
+      "municipio": "ALENQUER",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9391930343"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:29:57.633Z"
+  },
+  "46630872000134": {
+    "osc": {
+      "cnpj": "46630872000134",
+      "nome": "ASSOCIACAO DOS BOMBEIROS E SOCORRISTAS VOLUNTARIOS DA AMAZONIA",
+      "uf": "PA",
+      "municipio": "BREU BRANCO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9492288778"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:29:58.251Z"
+  },
+  "31207121000132": {
+    "osc": {
+      "cnpj": "31207121000132",
+      "nome": "ASSOCIACAO SONHO DE CRIANCA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299590058"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:20.883Z"
+  },
+  "28590519000196": {
+    "osc": {
+      "cnpj": "28590519000196",
+      "nome": "NUCLEO DE APOIO A VIDA DE MACEIO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299833752"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:20.949Z"
+  },
+  "29537954000110": {
+    "osc": {
+      "cnpj": "29537954000110",
+      "nome": "ASSOCIACAO PITUBA 2",
+      "uf": "AL",
+      "municipio": "CORURIPE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Captação, tratamento e distribuição de água | Coleta de resíduos não-perigosos | Instalação e manutenção elétrica | Atividades de vigilância e segurança privada | Atividades de limpeza não especificadas anteriormente | Atividades paisagísticas | Serviços combinados de escritório e apoio administrativo",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8232417305"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:21.061Z"
+  },
+  "38496616000178": {
+    "osc": {
+      "cnpj": "38496616000178",
+      "nome": "IGREJA CASA DE ADORACAO EBENEZER",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288111257"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:21.704Z"
+  },
+  "38561996000187": {
+    "osc": {
+      "cnpj": "38561996000187",
+      "nome": "ASSOCIACAO DOS MORADORES E/OU PROPRIETARIOS DE CASAS E/OU LOTES DO RESIDENCIAL JARDIM ALTO",
+      "uf": "AL",
+      "municipio": "ARAPIRACA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8298215040"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:21.989Z"
+  },
+  "39646002000198": {
+    "osc": {
+      "cnpj": "39646002000198",
+      "nome": "INSTITUTO DE PRESERVACAO DOS DIREITOS HUMANOS E PRESERVACAO AMBIENTAL-VALE DO SOL",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de apoio à agricultura não especificadas anteriormente | Atividades de apoio à produção florestal | Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias | Serviços de organização de feiras, congressos, exposições e festas | Outras atividades de ensino não especificadas anteriormente | Atividades de museus e de exploração de lugares e prédios históricos e atrações similares",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288878196",
+        "ddd_telefone_2": "7187554880"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:22.365Z"
+  },
+  "11196069000159": {
+    "osc": {
+      "cnpj": "11196069000159",
+      "nome": "UNIDADE ESCOLAR JOSE CARNEIRO DAMASCENO",
+      "uf": "AL",
+      "municipio": "MARAVILHA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299795716"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:22.777Z"
+  },
+  "41330927000177": {
+    "osc": {
+      "cnpj": "41330927000177",
+      "nome": "INSTITUTO SAO JOSE OPERARIO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Serviços de organização de feiras, congressos, exposições e festas | Ensino de dança | Ensino de artes cênicas, exceto dança | Ensino de música | Ensino de arte e cultura não especificado anteriormente | Atividade médica ambulatorial restrita a consultas | Serviços de assistência social sem alojamento | Produção teatral | Produção musical | Produção de espetáculos de dança | Atividades de sonorização e de iluminação | Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288945385"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:22.825Z"
+  },
+  "05025187000282": {
+    "osc": {
+      "cnpj": "05025187000282",
+      "nome": "INSTITUTO SOCIAL DE DESENVOLVIMENTO ALIANCA",
+      "uf": "AL",
+      "municipio": "SAO JOSE DA LAJE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7130346670"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:22.935Z"
+  },
+  "46601390000156": {
+    "osc": {
+      "cnpj": "46601390000156",
+      "nome": "INSTITUICAO DE COMUNICACAO OPERACIONAL DE RADIO FM EDUCATIVA DA CIDADE DE ARAPIRACA ESTADO DE ALAGOAS AL",
+      "uf": "AL",
+      "municipio": "ARAPIRACA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de rádio",
+      "cnae_secundario_descricao": "Atividades de televisão aberta",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8296561111",
+        "ddd_telefone_2": "8299287047"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:23.233Z"
+  },
+  "49995994000112": {
+    "osc": {
+      "cnpj": "49995994000112",
+      "nome": "IGREJA EVANGELICA PENTECOSTAL O BRASIL PARA CRISTO EM SAO MIGUEL DOS CAMPOS",
+      "uf": "AL",
+      "municipio": "SAO MIGUEL DOS CAMPOS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8298229986"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:24.184Z"
+  },
+  "44819934000125": {
+    "osc": {
+      "cnpj": "44819934000125",
+      "nome": "ASSOCIACAO 16 DE DEZEMBRO FUTEBOL CLUBE",
+      "uf": "AL",
+      "municipio": "PILAR",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Ensino de esportes",
+      "cnae_secundario_descricao": "Produção e promoção de eventos esportivos",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8230130331",
+        "ddd_telefone_2": "8299633223"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:24.863Z"
+  },
+  "49981875000100": {
+    "osc": {
+      "cnpj": "49981875000100",
+      "nome": "ASSOCIACAO DOS MORADORES DO COMPLEXO DA GROTA SANTA HELENA - AMCGSH",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8296463630",
+        "ddd_telefone_2": "8287119298"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:25.342Z"
+  },
+  "47106764000120": {
+    "osc": {
+      "cnpj": "47106764000120",
+      "nome": "INSTITUTO POR ONDE PASSEI PLANTEI",
+      "uf": "AL",
+      "municipio": "IGACI",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de organizações associativas patronais e empresariais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299428955"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:25.647Z"
+  },
+  "50923386000181": {
+    "osc": {
+      "cnpj": "50923386000181",
+      "nome": "ESCOLA MUNICIPAL DE EDUCACAO BASICA PROFESSOR WILTON LISBOA LUCENA",
+      "uf": "AL",
+      "municipio": "PENEDO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8235513033"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:25.715Z"
+  },
+  "51110874000132": {
+    "osc": {
+      "cnpj": "51110874000132",
+      "nome": "ASSOCIACAO COMUNITARIA SANTA ANA",
+      "uf": "AL",
+      "municipio": "PALMEIRA DOS INDIOS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8282378489"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:26.493Z"
+  },
+  "51431231000190": {
+    "osc": {
+      "cnpj": "51431231000190",
+      "nome": "ASSOCIACAO COMUNITARIA DOS AGRICULTORES FAMILIARES DO QUINTA DA SERRA II",
+      "uf": "AL",
+      "municipio": "VICOSA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8291526909"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:27.018Z"
+  },
+  "51206249000199": {
+    "osc": {
+      "cnpj": "51206249000199",
+      "nome": "INSTITUTO SOLUCOES PUBLICAS - ISP",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299916157",
+        "ddd_telefone_2": "8299616354"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:27.386Z"
+  },
+  "52954992000190": {
+    "osc": {
+      "cnpj": "52954992000190",
+      "nome": "CENTRO ESPIRITA MARIA DE NAZARE",
+      "uf": "AL",
+      "municipio": "MAJOR ISIDORO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8296897097"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:27.887Z"
+  },
+  "07977081000123": {
+    "osc": {
+      "cnpj": "07977081000123",
+      "nome": "INSTITUTO LUZ DA VIDA",
+      "uf": "AL",
+      "municipio": "PALMEIRA DOS INDIOS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química e grupos similares não",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8291111520"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:28.342Z"
+  },
+  "53192890000147": {
+    "osc": {
+      "cnpj": "53192890000147",
+      "nome": "ASSEMBLEIA DE DEUS - MINISTERIO VIDA NOVA EM JESUS CRISTO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8294292706",
+        "ddd_telefone_2": "8287282587"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:28.920Z"
+  },
+  "53273006000107": {
+    "osc": {
+      "cnpj": "53273006000107",
+      "nome": "ASSOCIACAO QUILOMBOLA DA CASA DE FARINHA DO POVOADO PAUS PRETO MUNICIPIO DE MONTEIROPOLIS-AL-AQCAF",
+      "uf": "AL",
+      "municipio": "MONTEIROPOLIS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299109006",
+        "ddd_telefone_2": "8296059150"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:29.320Z"
+  },
+  "54295907000154": {
+    "osc": {
+      "cnpj": "54295907000154",
+      "nome": "ASUS DO BRASIL ASSOCIACAO DE BENEFICIOS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8281301471"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:29.625Z"
+  },
+  "49583374000176": {
+    "osc": {
+      "cnpj": "49583374000176",
+      "nome": "INSTITUTO QUERUBIM - IQ",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288158274",
+        "ddd_telefone_2": "8287119298"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:30.128Z"
+  },
+  "28413401002640": {
+    "osc": {
+      "cnpj": "28413401002640",
+      "nome": "INSTITUTO DE GESTAO EDUCACIONAL E VALORIZACAO DO ENSINO - IGEVE",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de apoio à educação, exceto caixas escolares",
+      "cnae_secundario_descricao": "Pesquisas de mercado e de opinião pública | Educação infantil - creche | Ensino fundamental | Treinamento em desenvolvimento profissional e gerencial | Albergues assistenciais | Serviços de assistência social sem alojamento",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "1932621495"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:30.469Z"
+  },
+  "58302425000135": {
+    "osc": {
+      "cnpj": "58302425000135",
+      "nome": "ASSOCIACAO CULTURAL RADIO COMUNITARIA MANGUABA FM DE JUNDIA/AL",
+      "uf": "AL",
+      "municipio": "JUNDIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299118394"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:30.577Z"
+  },
+  "56003736000178": {
+    "osc": {
+      "cnpj": "56003736000178",
+      "nome": "ASSOCIACAO DOS AGRICULTORES FAMILIARES AGROPECUARISTAS - AMIGOS DA NATUREZA - AFAAN",
+      "uf": "AL",
+      "municipio": "IGREJA NOVA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8296708445"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:30.672Z"
+  },
+  "55157627000142": {
+    "osc": {
+      "cnpj": "55157627000142",
+      "nome": "ARLS MARECHAL FLORIANO PEIXOTO 12",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8296801701",
+        "ddd_telefone_2": "8299680170"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:31.093Z"
+  },
+  "50992279000377": {
+    "osc": {
+      "cnpj": "50992279000377",
+      "nome": "INOVA EDUCACAO ALAGOAS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Ensino fundamental",
+      "cnae_secundario_descricao": "Educação infantil - creche | Educação infantil - pré-escola | Ensino médio | Ensino de esportes | Outras atividades de ensino não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8291911954"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:31.513Z"
+  },
+  "58833360000154": {
+    "osc": {
+      "cnpj": "58833360000154",
+      "nome": "ASSOCIACAO DE DESENVOLVIMENTO COMUNITARIO RURAL DO SITIO LAGOA DO PEDRO",
+      "uf": "AL",
+      "municipio": "SANTANA DO IPANEMA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8282079228"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:31.787Z"
+  },
+  "62093689000101": {
+    "osc": {
+      "cnpj": "62093689000101",
+      "nome": "ASSOCIACAO DOS MORADORES E MORADORAS DO CONJUNTO HABITACIONAL JOAQUIM BELTRAO - CORACAO ABERTO",
+      "uf": "AL",
+      "municipio": "CORURIPE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8232746464",
+        "ddd_telefone_2": "8296852854"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:31.841Z"
+  },
+  "62265176000122": {
+    "osc": {
+      "cnpj": "62265176000122",
+      "nome": "INSTITUTO ALFREDO DE PAULA CAVALCANTE - IAPC",
+      "uf": "AL",
+      "municipio": "COLONIA LEOPOLDINA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Ensino de esportes | Atividades de atenção ambulatorial não especificadas anteriormente | Atividades de terapia ocupacional | Atividades de terapia de nutrição enteral e parenteral | Outras atividades de atenção à saúde humana não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8293948091"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:32.120Z"
+  },
+  "62265570000160": {
+    "osc": {
+      "cnpj": "62265570000160",
+      "nome": "IGREJA EVANGELICA PENTECOSTAL O BRASIL PARA CRISTO - DISTRITO LAGOA DO PERI PERI, BOCA DA MATA/AL",
+      "uf": "AL",
+      "municipio": "BOCA DA MATA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8293716598"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:32.460Z"
+  },
+  "62275047000115": {
+    "osc": {
+      "cnpj": "62275047000115",
+      "nome": "ASSOCIACAO DOS PRESTADORES DE SERVICOS TURISTICOS DA PISCINA DE PONTA VERDE",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Transporte aquaviário para passeios turísticos",
+      "cnae_secundario_descricao": "Bares e outros estabelecimentos especializados em servir bebidas, sem entretenimento | Atividades de produção de fotografias aéreas e submarinas",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8233225522"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:32.842Z"
+  },
+  "62319170000190": {
+    "osc": {
+      "cnpj": "62319170000190",
+      "nome": "IGREJA DE JESUS EM MACEIO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4588224299"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:33.119Z"
+  },
+  "62320597000109": {
+    "osc": {
+      "cnpj": "62320597000109",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS MONTE DAS OLIVEIRAS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288586874"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:33.488Z"
+  },
+  "62320598000153": {
+    "osc": {
+      "cnpj": "62320598000153",
+      "nome": "ASSOCIACAO COMUNITARIA AVANTE DO CONJUNTO RUI PALMEIRA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299999999",
+        "ddd_telefone_2": "8298888888"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:33.976Z"
+  },
+  "63347497000139": {
+    "osc": {
+      "cnpj": "63347497000139",
+      "nome": "INSTITUTO SOCIAL REINO INABALAVEL",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Ensino de arte e cultura não especificado anteriormente | Atividades de associações de defesa de direitos sociais | Atividades de organizações religiosas ou filosóficas",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8287314528"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:34.602Z"
+  },
+  "64389148000142": {
+    "osc": {
+      "cnpj": "64389148000142",
+      "nome": "ASSOCIACAO DE MORADORES DO BLOCO 1C DO CONJUNTO SENADOR RUI PALMEIRA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299978795"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:34.649Z"
+  },
+  "09553609000243": {
+    "osc": {
+      "cnpj": "09553609000243",
+      "nome": "ASSOCIACAO COMUNITARIA DE REABILITACAO E EQUOTERAPIA SANTA CLARA - ACRESC",
+      "uf": "AL",
+      "municipio": "SAO SEBASTIAO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações associativas patronais e empresariais",
+      "cnae_secundario_descricao": "Atividades de assistência a deficientes físicos, imunodeprimidos e convalescentes | Atividades de centros de assistência psicossocial",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8235515774"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:34.951Z"
+  },
+  "09412836000410": {
+    "osc": {
+      "cnpj": "09412836000410",
+      "nome": "FUNDACAO BRASIL DE APOIO AO IDOSO - FUNBRASIL",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de apoio à gestão de saúde",
+      "cnae_secundario_descricao": "Atividades de apoio à educação, exceto caixas escolares | Atividade médica ambulatorial com recursos para realização de exames complementares | Atividade médica ambulatorial restrita a consultas | Atividades de serviços de complementação diagnóstica e terapêutica não especificadas anteriormente | Atividades de enfermagem | Atividades de profissionais da nutrição | Atividades de psicologia e psicanálise | Atividades de fisioterapia | Atividades de fonoaudiologia | Atividades de práticas integrativas e complementares em saúde humana | Atividades de centros de assistência psicossocial | Serviços de assistência social sem alojamento | Atividades de condicionamento físico",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8230337841"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:35.324Z"
+  },
+  "09412836000500": {
+    "osc": {
+      "cnpj": "09412836000500",
+      "nome": "FUNDACAO BRASIL DE APOIO AO IDOSO - FUNBRASIL",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de apoio à gestão de saúde",
+      "cnae_secundario_descricao": "Atividades de apoio à educação, exceto caixas escolares | Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos | Atividade médica ambulatorial com recursos para realização de exames complementares | Atividade médica ambulatorial restrita a consultas | Atividades de serviços de complementação diagnóstica e terapêutica não especificadas anteriormente | Atividades de enfermagem | Atividades de profissionais da nutrição | Atividades de psicologia e psicanálise | Atividades de fisioterapia | Atividades de fonoaudiologia | Atividades de práticas integrativas e complementares em saúde humana | Atividades de centros de assistência psicossocial | Serviços de assistência social sem alojamento | Atividades de condicionamento físico",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8230337841"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:35.370Z"
+  },
+  "66527021000178": {
+    "osc": {
+      "cnpj": "66527021000178",
+      "nome": "INSTITUTO SEMENTE",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Suporte técnico, manutenção e outros serviços em tecnologia da informação | Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Serviços de engenharia | Pesquisas de mercado e de opinião pública | Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Educação profissional de nível tecnológico | Atividades de apoio à educação, exceto caixas escolares | Treinamento em desenvolvimento profissional e gerencial | Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos | Atividade médica ambulatorial com recursos para realização de exames complementares | Atividade médica ambulatorial restrita a consultas | Atividade odontológica | Laboratórios de anatomia patológica e citológica | Laboratórios clínicos | Serviços de diálise e nefrologia | Serviços de diagnóstico por imagem sem uso de radiação ionizante, exceto ressonância magnética | Serviços de diagnóstico por métodos ópticos - endoscopia e outros exames análogos | Serviços de hemoterapia | Atividades de enfermagem | Atividades de profissionais da nutrição | Atividades de psicologia e psicanálise | Atividades de fisioterapia | Atividades de apoio à gestão de saúde | Serviços de assistência social sem alojamento | Restauração e conservação de lugares e prédios históricos | Produção e promoção de eventos esportivos | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8287085110"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:35.727Z"
+  },
+  "65425552000197": {
+    "osc": {
+      "cnpj": "65425552000197",
+      "nome": "ASSOCIACAO DE CRIADORES DE JOGOS DE ALAGOAS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente | Produção musical | Outras atividades associativas profissionais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8296181081"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:36.061Z"
+  },
+  "66186470000108": {
+    "osc": {
+      "cnpj": "66186470000108",
+      "nome": "INSTITUTO MAE DAS FAVELAS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de apoio à educação, exceto caixas escolares | Serviços de assistência social sem alojamento | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8220015361"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:37.084Z"
+  },
+  "65960425000198": {
+    "osc": {
+      "cnpj": "65960425000198",
+      "nome": "ASSOCIACAO O AMANHA E AGORA - O AMA",
+      "uf": "AL",
+      "municipio": "SANTANA DO IPANEMA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299749266"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:37.149Z"
+  },
+  "67018919000183": {
+    "osc": {
+      "cnpj": "67018919000183",
+      "nome": "ASSOCIACAO ESPORTIVA FURIA FUTEBOL CLUBE",
+      "uf": "AL",
+      "municipio": "SAO JOSE DA LAJE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "Ensino de esportes | Produção e promoção de eventos esportivos | Outras atividades esportivas não especificadas anteriormente | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8291137031"
+      }
+    },
+    "last_checked_date": "2026-11-06T00:30:37.454Z"
   }
 }

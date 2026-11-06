@@ -1,0 +1,38 @@
+Starting Outbound Matchmaking Pipeline
+Found 5 top editais.
+
+================================
+Processing Edital: BRASIL - BOLSA - BOLSAS DE PRODUTIVIDADE - 2026
+Fetching IPEA IDs for region...
+Retrieved 0 CNPJs for this edital.
+Made 0 calls to BrasilAPI.
+Eligible OSCs after K.O. filters: 0
+
+================================
+Processing Edital: Chamada Pública – Programa de Eficiência Energética 2026
+Fetching IPEA IDs for region...
+Retrieved 0 CNPJs for this edital.
+Made 0 calls to BrasilAPI.
+Eligible OSCs after K.O. filters: 0
+
+================================
+Processing Edital: Seleção de Projetos - Fundo Estadual de Meio Ambiente
+Fetching IPEA IDs for region...
+Retrieved 100 CNPJs for this edital.
+Made 88 calls to BrasilAPI.
+Eligible OSCs after K.O. filters: 52
+Pre-ranked down to 3 Top Candidates.
+[1/3] AI Evaluating: INSTITUTO JOSE GOMES DA SILVA DE AMPARO E PROTECAO A VIDA
+[2/3] AI Evaluating: ESCRITORIO CONTABIL FACIMAB JUNIOR
+[3/3] AI Evaluating: ASSOCIACAO COMUNITARIA DOS MORADORES E AGRICULTORES FAMILIARES E ASSENTADOS DO PDS IGARAPE DO ANTA - ASCOMAFA.PDS
+
+================================
+Processing Edital: BRASIL - CHAMAMENTO PÚBLICO - MESTRADO E DOUTORADO ACADÊMICO PARA INOVAÇÃO - 2026
+Fetching IPEA IDs for region...
+Retrieved 0 CNPJs for this edital.
+Made 0 calls to BrasilAPI.
+Eligible OSCs after K.O. filters: 0
+
+================================
+Processing Edital: Edital Recaatingar - Segundo Ciclo - 2026
+Fetching IPEA IDs for region...
