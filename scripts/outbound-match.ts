@@ -293,10 +293,17 @@ async function runPipeline() {
           if (oscData && oscData.situacao_cadastral === 'ATIVA') {
               const age = currentYear - oscData.ano_fundacao;
               const excludedNatures = criterios.natureza_juridica_excluida || [];
+
+              const globalBlacklist = ['igreja', 'religiosa', 'templo', 'arquidiocese', 'diocese', 'loja maçônica', 'arls', 'sindicato', 'partido político', 'condomínio'];
+              const isGloballyBlacklisted = globalBlacklist.some(kw =>
+                  oscData!.natureza_juridica.toLowerCase().includes(kw) ||
+                  oscData!.nome.toLowerCase().includes(kw)
+              );
+
               const isNaturezaProibida = excludedNatures.some((n: string) => oscData!.natureza_juridica.toLowerCase().includes(n.toLowerCase()));
 
               const minAge = criterios.idade_minima_cnpj_anos || 0;
-              if (age >= minAge && !isNaturezaProibida) {
+              if (age >= minAge && !isNaturezaProibida && !isGloballyBlacklisted) {
                   enrichedOscs.push(oscData);
               }
           }
