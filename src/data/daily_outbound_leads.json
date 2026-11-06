@@ -1,327 +1,26 @@
 [
   {
-    "edital_id": "17931",
-    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "osc": {
-      "cnpj": "04546859000151",
-      "nome": "ASSOCIACAO ATLETICA BANCO DO BRASIL",
-      "uf": "PA",
-      "municipio": "ORIXIMINA",
+      "cnpj": "11196069000159",
+      "nome": "UNIDADE ESCOLAR JOSE CARNEIRO DAMASCENO",
+      "uf": "AL",
+      "municipio": "MARAVILHA",
       "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 1981,
-      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 49,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "17931",
-    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
-    "osc": {
-      "cnpj": "22921787000167",
-      "nome": "ASSOCIACAO C RURAL DE SAO JORGE DO JABUTI",
-      "uf": "PA",
-      "municipio": "IGARAPE-ACU",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 1988,
-      "cnae_primario_descricao": "Instituições de longa permanência para idosos",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 6,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "17931",
-    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
-    "osc": {
-      "cnpj": "04546669000134",
-      "nome": "PETROPOLIS ESPORTE CLUBE",
-      "uf": "PA",
-      "municipio": "ORIXIMINA",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 1979,
-      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 19,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "17931",
-    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
-    "osc": {
-      "cnpj": "06171491000110",
-      "nome": "PROJETO BRUCUTU",
-      "uf": "PA",
-      "municipio": "URUARA",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2001,
+      "ano_fundacao": 2009,
       "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 41,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "17931",
-    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
-    "osc": {
-      "cnpj": "02503836000134",
-      "nome": "INSTITUTO DAS IRMAS MISSIONARIAS SAO JOAO DE DEUS",
-      "uf": "PA",
-      "municipio": "PARAGOMINAS",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 1998,
-      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
       "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA"
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299795716"
+      }
     },
-    "score": 87,
+    "score": 7,
     "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "17931",
-    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
-    "osc": {
-      "cnpj": "04254837000118",
-      "nome": "INSTITUTO AMAZON MUNDI BEM VIVER - IAMBV",
-      "uf": "PA",
-      "municipio": "BELEM",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2001,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 13,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "17931",
-    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
-    "osc": {
-      "cnpj": "05465871000102",
-      "nome": "ASSOCIACAO DOS REMANESCENTES DE QUILOMBO DE BACABAL",
-      "uf": "PA",
-      "municipio": "SALVATERRA",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2002,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 24,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "17931",
-    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
-    "osc": {
-      "cnpj": "08940832000108",
-      "nome": "MINISTERIO INTERNACIONAL DA RESTAURACAO EM OBIDOS",
-      "uf": "PA",
-      "municipio": "OBIDOS",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2007,
-      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 87,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "17931",
-    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
-    "osc": {
-      "cnpj": "20419906000152",
-      "nome": "ASSOCIACAO PARAENSE DE ARTES MARCIAIS E ESPORTES RADICAIS",
-      "uf": "PA",
-      "municipio": "CASTANHAL",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2014,
-      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
-      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 82,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "17931",
-    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
-    "osc": {
-      "cnpj": "26906257000109",
-      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS MINISTERIO CASA DE ORACAO",
-      "uf": "PA",
-      "municipio": "CASTANHAL",
-      "natureza_juridica": "Organização Religiosa",
-      "ano_fundacao": 2016,
-      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 3,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "osc": {
-      "cnpj": "01916082000181",
-      "nome": "ESCOLA MUNICIPAL PREFESSORA MARIA DE FATIMA REGUEIRA PACHECO",
-      "uf": "AL",
-      "municipio": "SAO SEBASTIAO",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 1997,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 33,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "osc": {
-      "cnpj": "09330200000187",
-      "nome": "ASSOC COM DOS M MINI E PEQ PROD R DO POV ALEXANDRE",
-      "uf": "AL",
-      "municipio": "LAGOA DA CANOA",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 1987,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 64,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "osc": {
-      "cnpj": "01576286000110",
-      "nome": "NUCLEO DE DESENVOLVIMENTO SOCIO-CULTURAL NACAO IMPERIAL ORGANIZACAO DA SOCIEDADE CIVIL DE INTERESSE PUBLICO",
-      "uf": "AL",
-      "municipio": "MACEIO",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 1996,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 94,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "osc": {
-      "cnpj": "13218204000145",
-      "nome": "CENTRO DE CIDADANIA ESPORTE SAUDE E CULTURA",
-      "uf": "AL",
-      "municipio": "MACEIO",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2011,
-      "cnae_primario_descricao": "Outras atividades esportivas não especificadas anteriormente",
-      "cnae_secundario_descricao": "Outras atividades de recreação e lazer não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 27,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "osc": {
-      "cnpj": "29494932000110",
-      "nome": "ALEXSANDRO DE MELO MIRANDA",
-      "uf": "AL",
-      "municipio": "RIO LARGO",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2016,
-      "cnae_primario_descricao": "Ensino de esportes",
-      "cnae_secundario_descricao": "Produção e promoção de eventos esportivos",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 95,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "osc": {
-      "cnpj": "28168166000130",
-      "nome": "ASSOCIACAO COMUNITARIA DOS AMIGOS DO POVOADO MATA E REGIAO",
-      "uf": "AL",
-      "municipio": "SAO SEBASTIAO",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2017,
-      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 17,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "osc": {
-      "cnpj": "28547023000130",
-      "nome": "ASSOCIACAO DOS ADQUIRENTES DE UNIDADES AUTONOMAS DO CONDOMINIO RESIDENCIAL ESTILO - AACRE",
-      "uf": "AL",
-      "municipio": "MACEIO",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2017,
-      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 44,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "osc": {
-      "cnpj": "28914855000147",
-      "nome": "IGREJA PRESBITERIANA DO ALTO DO CEU",
-      "uf": "AL",
-      "municipio": "MACEIO",
-      "natureza_juridica": "Organização Religiosa",
-      "ano_fundacao": 2017,
-      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA"
-    },
-    "score": 82,
-    "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
   },
   {
     "edital_id": "19461",
@@ -337,26 +36,1069 @@
       "cnae_secundario_descricao": "Atividades de apoio à educação, exceto caixas escolares | Atividade médica ambulatorial restrita a consultas | Atividades de profissionais da nutrição | Atividades de psicologia e psicanálise | Atividades de fisioterapia | Atividades de terapia ocupacional | Atividades de fonoaudiologia | Atividades de profissionais da área de saúde não especificadas anteriormente | Atividades associativas não especificadas anteriormente",
       "situacao_cadastral": "ATIVA"
     },
-    "score": 36,
+    "score": 28,
     "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "osc": {
-      "cnpj": "29206907000193",
-      "nome": "ASSOCIACAO DOS PROPRIETARIOS DOS APARTAMENTOS DO EDIFICIO RESIDENCIAL MAXIM'S",
+      "cnpj": "28590519000196",
+      "nome": "NUCLEO DE APOIO A VIDA DE MACEIO",
       "uf": "AL",
       "municipio": "MACEIO",
       "natureza_juridica": "Associação Privada",
       "ano_fundacao": 2017,
-      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299833752"
+      }
+    },
+    "score": 91,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "31207121000132",
+      "nome": "ASSOCIACAO SONHO DE CRIANCA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299590058"
+      }
+    },
+    "score": 70,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "41330927000177",
+      "nome": "INSTITUTO SAO JOSE OPERARIO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Serviços de organização de feiras, congressos, exposições e festas | Ensino de dança | Ensino de artes cênicas, exceto dança | Ensino de música | Ensino de arte e cultura não especificado anteriormente | Atividade médica ambulatorial restrita a consultas | Serviços de assistência social sem alojamento | Produção teatral | Produção musical | Produção de espetáculos de dança | Atividades de sonorização e de iluminação | Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288945385"
+      }
+    },
+    "score": 35,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "38496616000178",
+      "nome": "IGREJA CASA DE ADORACAO EBENEZER",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
       "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288111257"
+      }
+    },
+    "score": 64,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "38561996000187",
+      "nome": "ASSOCIACAO DOS MORADORES E/OU PROPRIETARIOS DE CASAS E/OU LOTES DO RESIDENCIAL JARDIM ALTO",
+      "uf": "AL",
+      "municipio": "ARAPIRACA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8298215040"
+      }
+    },
+    "score": 49,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "39646002000198",
+      "nome": "INSTITUTO DE PRESERVACAO DOS DIREITOS HUMANOS E PRESERVACAO AMBIENTAL-VALE DO SOL",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de apoio à agricultura não especificadas anteriormente | Atividades de apoio à produção florestal | Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias | Serviços de organização de feiras, congressos, exposições e festas | Outras atividades de ensino não especificadas anteriormente | Atividades de museus e de exploração de lugares e prédios históricos e atrações similares",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288878196",
+        "ddd_telefone_2": "7187554880"
+      }
+    },
+    "score": 2,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "05025187000282",
+      "nome": "INSTITUTO SOCIAL DE DESENVOLVIMENTO ALIANCA",
+      "uf": "AL",
+      "municipio": "SAO JOSE DA LAJE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7130346670"
+      }
+    },
+    "score": 72,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "41804749000179",
+      "nome": "ASSOCIACAO DAS MULHERES AGRICULTORAS E EMPREENDEDORAS QUILOMBOLAS DO POVOADO MUQUEM",
+      "uf": "AL",
+      "municipio": "UNIAO DOS PALMARES",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 42,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "47106764000120",
+      "nome": "INSTITUTO POR ONDE PASSEI PLANTEI",
+      "uf": "AL",
+      "municipio": "IGACI",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de organizações associativas patronais e empresariais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299428955"
+      }
+    },
+    "score": 41,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "62093689000101",
+      "nome": "ASSOCIACAO DOS MORADORES E MORADORAS DO CONJUNTO HABITACIONAL JOAQUIM BELTRAO - CORACAO ABERTO",
+      "uf": "AL",
+      "municipio": "CORURIPE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8232746464",
+        "ddd_telefone_2": "8296852854"
+      }
+    },
+    "score": 80,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "49995994000112",
+      "nome": "IGREJA EVANGELICA PENTECOSTAL O BRASIL PARA CRISTO EM SAO MIGUEL DOS CAMPOS",
+      "uf": "AL",
+      "municipio": "SAO MIGUEL DOS CAMPOS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8298229986"
+      }
+    },
+    "score": 8,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "49981875000100",
+      "nome": "ASSOCIACAO DOS MORADORES DO COMPLEXO DA GROTA SANTA HELENA - AMCGSH",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8296463630",
+        "ddd_telefone_2": "8287119298"
+      }
+    },
+    "score": 90,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "50923386000181",
+      "nome": "ESCOLA MUNICIPAL DE EDUCACAO BASICA PROFESSOR WILTON LISBOA LUCENA",
+      "uf": "AL",
+      "municipio": "PENEDO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8235513033"
+      }
+    },
+    "score": 13,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "51110874000132",
+      "nome": "ASSOCIACAO COMUNITARIA SANTA ANA",
+      "uf": "AL",
+      "municipio": "PALMEIRA DOS INDIOS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8282378489"
+      }
+    },
+    "score": 61,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "51206249000199",
+      "nome": "INSTITUTO SOLUCOES PUBLICAS - ISP",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299916157",
+        "ddd_telefone_2": "8299616354"
+      }
+    },
+    "score": 53,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "52420885000181",
+      "nome": "PRIMEIRA IGREJA PRESBITERIANA INDEPENDENTE DE ARAPIRACA",
+      "uf": "AL",
+      "municipio": "ARAPIRACA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 6,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "52954992000190",
+      "nome": "CENTRO ESPIRITA MARIA DE NAZARE",
+      "uf": "AL",
+      "municipio": "MAJOR ISIDORO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8296897097"
+      }
+    },
+    "score": 74,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "53192890000147",
+      "nome": "ASSEMBLEIA DE DEUS - MINISTERIO VIDA NOVA EM JESUS CRISTO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8294292706",
+        "ddd_telefone_2": "8287282587"
+      }
+    },
+    "score": 54,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "53273006000107",
+      "nome": "ASSOCIACAO QUILOMBOLA DA CASA DE FARINHA DO POVOADO PAUS PRETO MUNICIPIO DE MONTEIROPOLIS-AL-AQCAF",
+      "uf": "AL",
+      "municipio": "MONTEIROPOLIS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299109006",
+        "ddd_telefone_2": "8296059150"
+      }
+    },
+    "score": 77,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "49583374000176",
+      "nome": "INSTITUTO QUERUBIM - IQ",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288158274",
+        "ddd_telefone_2": "8287119298"
+      }
+    },
+    "score": 24,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "58302425000135",
+      "nome": "ASSOCIACAO CULTURAL RADIO COMUNITARIA MANGUABA FM DE JUNDIA/AL",
+      "uf": "AL",
+      "municipio": "JUNDIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299118394"
+      }
+    },
+    "score": 27,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "55586045000181",
+      "nome": "ASSOCIACAO TW PROTECAO VEICULAR",
+      "uf": "AL",
+      "municipio": "ARAPIRACA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 4,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "56228550000117",
+      "nome": "IGREJA DA PAZ DELMIRO GOUVEIA",
+      "uf": "AL",
+      "municipio": "DELMIRO GOUVEIA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 46,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "56003736000178",
+      "nome": "ASSOCIACAO DOS AGRICULTORES FAMILIARES AGROPECUARISTAS - AMIGOS DA NATUREZA - AFAAN",
+      "uf": "AL",
+      "municipio": "IGREJA NOVA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8296708445"
+      }
+    },
+    "score": 1,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "55157627000142",
+      "nome": "ARLS MARECHAL FLORIANO PEIXOTO 12",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8296801701",
+        "ddd_telefone_2": "8299680170"
+      }
+    },
+    "score": 22,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "57016799000121",
+      "nome": "ASSOCIACAO CAIAQUE ALAGOAS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "Ensino de esportes | Produção e promoção de eventos esportivos | Outras atividades de recreação e lazer não especificadas anteriormente | Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 92,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "60980599000107",
+      "nome": "ASSOCIACAO DOS PROPRIETARIOS E AMIGOS DO ACQUA DEL MARE",
+      "uf": "AL",
+      "municipio": "CORURIPE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 76,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "62265176000122",
+      "nome": "INSTITUTO ALFREDO DE PAULA CAVALCANTE - IAPC",
+      "uf": "AL",
+      "municipio": "COLONIA LEOPOLDINA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Ensino de esportes | Atividades de atenção ambulatorial não especificadas anteriormente | Atividades de terapia ocupacional | Atividades de terapia de nutrição enteral e parenteral | Outras atividades de atenção à saúde humana não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8293948091"
+      }
+    },
+    "score": 73,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "62265570000160",
+      "nome": "IGREJA EVANGELICA PENTECOSTAL O BRASIL PARA CRISTO - DISTRITO LAGOA DO PERI PERI, BOCA DA MATA/AL",
+      "uf": "AL",
+      "municipio": "BOCA DA MATA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8293716598"
+      }
+    },
+    "score": 41,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "62319170000190",
+      "nome": "IGREJA DE JESUS EM MACEIO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4588224299"
+      }
+    },
+    "score": 29,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "62320597000109",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS MONTE DAS OLIVEIRAS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288586874"
+      }
+    },
+    "score": 89,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "62320598000153",
+      "nome": "ASSOCIACAO COMUNITARIA AVANTE DO CONJUNTO RUI PALMEIRA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299999999",
+        "ddd_telefone_2": "8298888888"
+      }
+    },
+    "score": 50,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "63195576000171",
+      "nome": "ASSOCIACAO CULTURAL A PAIXAO DE CRISTO",
+      "uf": "AL",
+      "municipio": "ATALAIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 52,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "63347497000139",
+      "nome": "INSTITUTO SOCIAL REINO INABALAVEL",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Ensino de arte e cultura não especificado anteriormente | Atividades de associações de defesa de direitos sociais | Atividades de organizações religiosas ou filosóficas",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8287314528"
+      }
+    },
+    "score": 88,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "64369112000105",
+      "nome": "IGREJA EVANGELICA NACAO SANTA",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 15,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "63797069000108",
+      "nome": "IGREJA PENTECOSTAL",
+      "uf": "AL",
+      "municipio": "JOAQUIM GOMES",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 39,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "63830513000140",
+      "nome": "IGREJA BATISTA BOAS NOVAS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 19,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "09553609000243",
+      "nome": "ASSOCIACAO COMUNITARIA DE REABILITACAO E EQUOTERAPIA SANTA CLARA - ACRESC",
+      "uf": "AL",
+      "municipio": "SAO SEBASTIAO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações associativas patronais e empresariais",
+      "cnae_secundario_descricao": "Atividades de assistência a deficientes físicos, imunodeprimidos e convalescentes | Atividades de centros de assistência psicossocial",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8235515774"
+      }
+    },
+    "score": 8,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "24178113000492",
+      "nome": "ASSOCIACAO BIBLICA E CULTURAL DOS DEFENSORES DO REINO",
+      "uf": "AL",
+      "municipio": "PALMEIRA DOS INDIOS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 21,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "66510416000168",
+      "nome": "ASSOCIACAO DOS AGRICULTORES (AS) FAMILIARES, PESCADORES (AS) ARTESANAIS DO POVOADO CEDRO - OS CARLOS",
+      "uf": "AL",
+      "municipio": "IGREJA NOVA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 31,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "65542939000123",
+      "nome": "ASSOCIACAO TEKOKUABA OKA - OCA DO SABER",
+      "uf": "AL",
+      "municipio": "JOAQUIM GOMES",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 66,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "66527021000178",
+      "nome": "INSTITUTO SEMENTE",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Suporte técnico, manutenção e outros serviços em tecnologia da informação | Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Serviços de engenharia | Pesquisas de mercado e de opinião pública | Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Educação profissional de nível tecnológico | Atividades de apoio à educação, exceto caixas escolares | Treinamento em desenvolvimento profissional e gerencial | Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos | Atividade médica ambulatorial com recursos para realização de exames complementares | Atividade médica ambulatorial restrita a consultas | Atividade odontológica | Laboratórios de anatomia patológica e citológica | Laboratórios clínicos | Serviços de diálise e nefrologia | Serviços de diagnóstico por imagem sem uso de radiação ionizante, exceto ressonância magnética | Serviços de diagnóstico por métodos ópticos - endoscopia e outros exames análogos | Serviços de hemoterapia | Atividades de enfermagem | Atividades de profissionais da nutrição | Atividades de psicologia e psicanálise | Atividades de fisioterapia | Atividades de apoio à gestão de saúde | Serviços de assistência social sem alojamento | Restauração e conservação de lugares e prédios históricos | Produção e promoção de eventos esportivos | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8287085110"
+      }
+    },
+    "score": 40,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "64885980000130",
+      "nome": "FUNDACAO CULTURAL LIBERDADE",
+      "uf": "AL",
+      "municipio": "UNIAO DOS PALMARES",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de rádio | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
       "situacao_cadastral": "ATIVA"
     },
     "score": 58,
     "motivo_match": "Mock reasoning.",
-    "whatsapp_message": "Mock message."
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "66690990000145",
+      "nome": "MODUPE INSTITUTO AFROSOCIAL AXE YALODE",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de apoio à educação, exceto caixas escolares | Ensino de dança | Ensino de arte e cultura não especificado anteriormente | Produção de espetáculos de dança | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 16,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "66186470000108",
+      "nome": "INSTITUTO MAE DAS FAVELAS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de apoio à educação, exceto caixas escolares | Serviços de assistência social sem alojamento | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8220015361"
+      }
+    },
+    "score": 44,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "12157467027914",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS NO ESTADO DE AL",
+      "uf": "AL",
+      "municipio": "RIO LARGO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 46,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "12155388010575",
+      "nome": "ARQUIDIOCESE DE MACEIO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 37,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "osc": {
+      "cnpj": "12155388010494",
+      "nome": "ARQUIDIOCESE DE MACEIO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA"
+    },
+    "score": 27,
+    "motivo_match": "Mock reasoning.",
+    "whatsapp_message": "Mock message.",
+    "contatos_encontrados": {},
+    "dossieText": "Dossiê mock para teste."
   }
 ]

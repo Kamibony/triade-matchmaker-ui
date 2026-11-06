@@ -208,6 +208,24 @@ async function getIpeaIdsForRegion(criterios: any) {
          } catch (e) {
             console.warn(`Failed to fetch OSCs for Joao Pessoa`);
          }
+    } else {
+         // Fallback to Joao Pessoa if no geographic data is present
+         try {
+            const muniData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/municipio/João Pessoa`);
+            if (muniData && muniData.length > 0) {
+                const id = muniData[0].edmu_cd_municipio;
+                const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${id}`);
+                const sampleSize = Math.min(100, oscs.length);
+                for (let i = 0; i < sampleSize; i++) {
+                    const headerData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/osc/cabecalho/${oscs[i].id_osc}`);
+                    if (headerData && headerData.cd_identificador_osc) {
+                         rawCnpjs.push(String(headerData.cd_identificador_osc).padStart(14, '0'));
+                    }
+                }
+            }
+         } catch (e) {
+            console.warn(`Failed to fetch OSCs for Joao Pessoa`);
+         }
     }
 
     return [...new Set(rawCnpjs)].slice(0, 100);
@@ -294,18 +312,23 @@ async function runPipeline() {
       const allTargetKeywords = [...new Set([...temas.map((t: string) => t.toLowerCase()), ...resumoWords])];
 
       const scoredOscs = enrichedOscs.map(osc => {
-          let heuristicScore = 0;
+          let keywordScore = 0;
           const combinedText = `${osc.cnae_primario_descricao} ${osc.cnae_secundario_descricao}`.toLowerCase();
 
           allTargetKeywords.forEach((kw: string) => {
               if (combinedText.includes(kw)) {
-                  heuristicScore += 10;
+                  keywordScore += 50;
               }
           });
+
+          if (keywordScore === 0) {
+              return null;
+          }
+
           const age = currentYear - osc.ano_fundacao;
-          heuristicScore += Math.min(age, 20);
+          const heuristicScore = keywordScore + Math.min(age, 20);
           return { osc, heuristicScore };
-      });
+      }).filter((item): item is { osc: OSC, heuristicScore: number } => item !== null);
 
       scoredOscs.sort((a, b) => b.heuristicScore - a.heuristicScore);
       const top50 = scoredOscs.slice(0, 50).map(item => item.osc);
