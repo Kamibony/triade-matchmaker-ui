@@ -90,17 +90,17 @@ export async function POST({ request }) {
              }
         });
         if (!response.ok) {
-            throw new Error(`Failed to fetch PDF. HTTP ${response.status}`);
+            throw new Error(`Falha ao baixar o PDF. HTTP ${response.status}`);
         }
 
         const arrayBuffer = await response.arrayBuffer();
         const bytes = new Uint8Array(arrayBuffer, 0, 4);
         if (bytes[0] !== 0x25 || bytes[1] !== 0x50 || bytes[2] !== 0x44 || bytes[3] !== 0x46) {
-           throw new Error('URL did not return a valid PDF binary');
+           throw new Error('A URL não retornou um arquivo PDF válido');
         }
         pdfData = Buffer.from(arrayBuffer);
     } catch (e: any) {
-        throw new Error(`PDF Download failed: ${e.message}`);
+        throw new Error(`Falha no download do PDF: ${e.message}`);
     }
 
     // 2. Parse PDF to text
@@ -110,7 +110,7 @@ export async function POST({ request }) {
         extractedText = parsedPdf.text;
     } catch (err: any) {
         console.warn("pdf-parse failed to extract text: " + err.message);
-        throw new Error(`Failed to extract text from PDF: ${err.message}`);
+        throw new Error(`Falha ao extrair texto do PDF: ${err.message}`);
     }
 
     // 3. Extract Metadata via Gemini

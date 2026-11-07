@@ -36,7 +36,7 @@ export async function POST({ request }) {
       const searchResult = await model.generateContent({ contents: [{ role: 'user', parts: [{ text: searchPrompt }] }], tools: tools as any });
       dossieText = searchResult.response.text();
     } catch (e) {
-      console.warn("Google Search failed, fallback to basic dossier.");
+      console.warn("A pesquisa no Google falhou, usando dossiê básico.");
       dossieText = `Dossiê básico: Organização focada em ${osc.cnae_primario_descricao}, localizada em ${osc.municipio}.`;
     }
 
