@@ -50,7 +50,7 @@ export async function POST({ request }) {
     }
 
     if (!edital) {
-      return json({ error: 'Edital not found' }, { status: 404 });
+      return json({ error: 'Edital não encontrado' }, { status: 404 });
     }
 
     // 2. Geocoding Simulation (Simplified for on-demand search)
