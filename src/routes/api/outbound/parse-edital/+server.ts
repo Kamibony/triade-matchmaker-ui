@@ -1,7 +1,7 @@
 import { SchemaType } from '@google/generative-ai';
 import { json } from '@sveltejs/kit';
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import { env } from '$env/dynamic/private';
+import { GEMINI_API_KEY } from '$env/static/private';
 import pdfParse from 'pdf-parse/lib/pdf-parse.js';
 
 const sharedGenerationConfig = {
@@ -50,36 +50,11 @@ const sharedGenerationConfig = {
 export async function POST({ request }) {
   try {
     const { pdfUrl } = await request.json();
-    const apiKey = env.GEMINI_API_KEY || 'dummy';
-    const genAI = new GoogleGenerativeAI(apiKey);
-
-    if (apiKey === 'dummy') {
-      return json({
-        id: "mock_edital_123",
-        titulo: "Mock Edital Extraído do PDF",
-        pdf_link: pdfUrl,
-        resumo_objetivo: "MOCK: Apoio a projetos de inovação social.",
-        temas_principais: ["inovação", "social", "educação"],
-        prazo_de_inscricao: "2025-12-31",
-        criterios_eliminatorios: {
-           idade_minima_cnpj_anos: 1,
-           abrangencia_nacional: true,
-           estados_permitidos: [],
-           municipios_permitidos: [],
-           natureza_juridica_excluida: ["igreja"]
-        },
-        financeiro: {
-           valor_maximo_ou_global_reais: 100000,
-           exige_contrapartida: false
-        },
-        burocracia_e_documentos: {
-           exige_cnd: true,
-           exige_balanco_patrimonial: false,
-           exige_cebas: false,
-           exigencias_especificas_adicionais: []
-        }
-      });
+    const apiKey = GEMINI_API_KEY || process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+      throw new Error('GEMINI_API_KEY is missing in Vercel environment');
     }
+    const genAI = new GoogleGenerativeAI(apiKey);
 
     // 1. Download PDF
     let pdfData;
