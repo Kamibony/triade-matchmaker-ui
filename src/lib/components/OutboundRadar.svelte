@@ -81,11 +81,8 @@
     if (onlyWhatsApp) {
       list = list.filter(lead => hasAnyPhone(lead));
     }
-    // Prioritize direct WhatsApp first, then official phone, then score
+    // Sort strictly by AI score (descending)
     return list.sort((a, b) => {
-      const aHasWa = hasDirectWhatsApp(a) ? 2 : (hasAnyPhone(a) ? 1 : 0);
-      const bHasWa = hasDirectWhatsApp(b) ? 2 : (hasAnyPhone(b) ? 1 : 0);
-      if (bHasWa !== aHasWa) return bHasWa - aHasWa;
       return (b.score || 0) - (a.score || 0);
     });
   }
