@@ -148,16 +148,22 @@ export async function POST({ request }) {
     // load verified active OSCs from local cache to guarantee high quality discovery
     if (enrichedOscs.length === 0 && Object.keys(cache).length > 0) {
       console.log('IPEA returned 0 OSCs. Using cached OSCs fallback.');
+      let cachedOscs = [];
       for (const entry of Object.values(cache) as any[]) {
         const osc = entry.osc;
         if (osc && (osc.situacao_cadastral === 'ATIVA' || !osc.situacao_cadastral)) {
           const nameAndNatureza = ((osc.nome || '') + " " + (osc.natureza_juridica || '')).toLowerCase();
           const isBlacklisted = blacklist.some(b => nameAndNatureza.includes(b));
           if (!isBlacklisted) {
-            enrichedOscs.push(osc);
+            cachedOscs.push(osc);
           }
         }
       }
+
+      // Shuffle and take up to 150
+      cachedOscs.sort(() => 0.5 - Math.random());
+      enrichedOscs.push(...cachedOscs.slice(0, 150));
+      console.log(`Selected ${enrichedOscs.length} OSCs from cache fallback.`);
     }
 
     // 4. Heuristic Pre-Ranking
@@ -179,9 +185,6 @@ export async function POST({ request }) {
         }
       }
 
-      // Zero-Tolerance rule: OSC must have at least one keyword overlap with the edital/themes
-      if (keywordScore === 0) return null;
-
       const age = currentYear - (osc.ano_fundacao || currentYear);
       const heuristicScore = keywordScore + Math.min(age, 20);
 
@@ -190,12 +193,7 @@ export async function POST({ request }) {
 
     scoredOscs.sort((a, b) => b.heuristicScore - a.heuristicScore);
 
-    // If zero tolerance filtered everything because the edital had very unique phrasing,
-    // fallback to top enriched OSCs with active status
     let top10 = scoredOscs.slice(0, 10).map(item => item.osc);
-    if (top10.length === 0 && enrichedOscs.length > 0) {
-      top10 = enrichedOscs.slice(0, 5);
-    }
 
     return json({ topOscs: top10, edital });
 

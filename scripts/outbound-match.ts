@@ -246,8 +246,21 @@ async function runPipeline() {
       const criterios = edital.deep_metadata.criterios_eliminatorios || {};
 
       console.log(`Fetching IPEA IDs for region...`);
-      const rawCnpjs = await getIpeaIdsForRegion(criterios);
-      console.log(`Retrieved ${rawCnpjs.length} CNPJs for this edital.`);
+      let rawCnpjs = await getIpeaIdsForRegion(criterios);
+      console.log(`Retrieved ${rawCnpjs.length} CNPJs for this edital from IPEA.`);
+
+      if (rawCnpjs.length === 0) {
+          console.log(`IPEA returned 0 CNPJs. Using cache as last resort fallback.`);
+          const cachedCnpjs = Object.keys(cache).filter(cnpj => {
+              const osc = cache[cnpj].osc;
+              return osc && osc.situacao_cadastral === 'ATIVA';
+          });
+
+          // Randomly select up to 150 from the cache
+          const shuffled = cachedCnpjs.sort(() => 0.5 - Math.random());
+          rawCnpjs = shuffled.slice(0, 150);
+          console.log(`Selected ${rawCnpjs.length} active CNPJs from cache fallback.`);
+      }
 
       const enrichedOscs: OSC[] = [];
       let apiCalls = 0;
@@ -327,10 +340,6 @@ async function runPipeline() {
                   keywordScore += 50;
               }
           });
-
-          if (keywordScore === 0) {
-              return null;
-          }
 
           const age = currentYear - osc.ano_fundacao;
           const heuristicScore = keywordScore + Math.min(age, 20);
