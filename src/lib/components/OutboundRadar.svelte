@@ -50,15 +50,48 @@
     }
   }
 
-  function getWhatsAppLink(lead: any, message: string) {
-    let phone = lead.contatos_encontrados?.whatsapp || lead.osc?.official_contacts?.ddd_telefone_1 || lead.osc?.official_contacts?.ddd_telefone_2;
-    if (!phone) return '#';
-    const cleanPhone = phone.toString().replace(/\D/g, '');
-    return `https://wa.me/55${cleanPhone}?text=${encodeURIComponent(message)}`;
+  // WhatsApp Filter and Lead Quality State
+  let onlyWhatsApp = false;
+
+  function getCleanPhoneNumber(lead: any): string | null {
+    const raw = lead.contatos_encontrados?.whatsapp || lead.osc?.official_contacts?.ddd_telefone_1 || lead.osc?.official_contacts?.ddd_telefone_2;
+    if (!raw) return null;
+    const digits = raw.toString().replace(/\D/g, '');
+    if (digits.length < 10) return null;
+    // Strip leading 55 if already present
+    return digits.startsWith('55') && digits.length >= 12 ? digits.slice(2) : digits;
+  }
+
+  function hasDirectWhatsApp(lead: any): boolean {
+    return !!lead.contatos_encontrados?.whatsapp;
+  }
+
+  function hasAnyPhone(lead: any): boolean {
+    return !!getCleanPhoneNumber(lead);
+  }
+
+  function getWhatsAppLink(lead: any, message: string): string | null {
+    const cleanPhone = getCleanPhoneNumber(lead);
+    if (!cleanPhone) return null;
+    return `https://wa.me/55${cleanPhone}?text=${encodeURIComponent(message || '')}`;
+  }
+
+  function sortAndFilterLeads(leadList: any[]): any[] {
+    let list = [...leadList];
+    if (onlyWhatsApp) {
+      list = list.filter(lead => hasAnyPhone(lead));
+    }
+    // Prioritize direct WhatsApp first, then official phone, then score
+    return list.sort((a, b) => {
+      const aHasWa = hasDirectWhatsApp(a) ? 2 : (hasAnyPhone(a) ? 1 : 0);
+      const bHasWa = hasDirectWhatsApp(b) ? 2 : (hasAnyPhone(b) ? 1 : 0);
+      if (bHasWa !== aHasWa) return bHasWa - aHasWa;
+      return (b.score || 0) - (a.score || 0);
+    });
   }
 
   async function performManualSearch() {
-    if ((editalSource === 'banco' && !manualSearchEditalId) || (editalSource === 'link' && !manualSearchPdfUrl) || !manualSearchKeywords) return;
+    if ((editalSource === 'banco' && !manualSearchEditalId) || (editalSource === 'link' && !manualSearchPdfUrl)) return;
 
     manualSearchLoading = true;
     manualSearchResults = [];
@@ -68,36 +101,46 @@
       let parsedEdital = null;
 
       if (editalSource === 'link') {
-        manualEvaluationProgress = 'Analisando PDF do Edital...';
+        manualEvaluationProgress = 'Baixando e analisando PDF do Edital...';
         const parseRes = await fetch('/api/outbound/parse-edital', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ pdfUrl: manualSearchPdfUrl })
         });
 
+        const parseData = await parseRes.json().catch(() => ({}));
         if (!parseRes.ok) {
-           throw new Error('Erro ao analisar o PDF do Edital. Verifique o link e tente novamente.');
+           throw new Error(parseData.error || 'Erro ao analisar o PDF do Edital. Verifique o link e tente novamente.');
         }
-        parsedEdital = await parseRes.json();
-        manualEvaluationProgress = 'Iniciando busca (Fase 1 e 2)...';
+        parsedEdital = parseData;
+        manualEvaluationProgress = `Edital extraído: "${parsedEdital.titulo}". Buscando OSCs compatíveis...`;
+      } else {
+        manualEvaluationProgress = 'Buscando OSCs compatíveis no banco de dados e IPEA...';
       }
 
-      // Step A: Discover (Fetch top 10 OSCs)
+      // Step A: Discover (Fetch top candidate OSCs)
       const discoverRes = await fetch('/api/outbound/discover', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           editalId: editalSource === 'banco' ? manualSearchEditalId : undefined,
           edital: parsedEdital,
-          customKeywords: manualSearchKeywords
+          customKeywords: manualSearchKeywords.trim() || undefined
         })
       });
 
+      const discoverData = await discoverRes.json().catch(() => ({}));
       if (!discoverRes.ok) {
-        throw new Error('Erro na fase de descoberta.');
+        throw new Error(discoverData.error || 'Erro na fase de descoberta de OSCs.');
       }
 
-      const { topOscs, edital } = await discoverRes.json();
+      const { topOscs, edital } = discoverData;
+
+      if (!topOscs || topOscs.length === 0) {
+        manualEvaluationProgress = 'Nenhuma OSC compatível encontrada para os critérios informados.';
+        manualSearchResults = [];
+        return;
+      }
 
       // Initialize results with loading state
       manualSearchResults = topOscs.map((osc: any) => ({
@@ -108,7 +151,7 @@
 
       // Step B & C: Evaluate sequentially
       for (let i = 0; i < topOscs.length; i++) {
-        manualEvaluationProgress = `Avaliando OSC ${i + 1} de ${topOscs.length}...`;
+        manualEvaluationProgress = `Avaliando OSC ${i + 1} de ${topOscs.length}: ${topOscs[i].nome}...`;
 
         try {
           const evalRes = await fetch('/api/outbound/evaluate', {
@@ -122,21 +165,21 @@
             manualSearchResults[i] = { ...matchResult, loading: false, evaluated: true };
           } else {
             manualSearchResults[i].loading = false;
-            manualSearchResults[i].error = 'Erro na avaliação';
+            manualSearchResults[i].error = 'Erro na avaliação da OSC';
           }
-        } catch (e) {
+        } catch (e: any) {
           manualSearchResults[i].loading = false;
-          manualSearchResults[i].error = 'Erro na requisição de avaliação';
+          manualSearchResults[i].error = e.message || 'Erro na requisição de avaliação';
         }
 
         // Force reactivity
         manualSearchResults = [...manualSearchResults];
       }
 
-      manualEvaluationProgress = 'Busca concluída!';
+      manualEvaluationProgress = `Busca concluída! ${manualSearchResults.filter(r => r.evaluated).length} OSCs avaliadas.`;
     } catch (e: any) {
-      alert(e.message);
-      manualEvaluationProgress = 'Erro na busca.';
+      alert(e.message || 'Ocorreu um erro durante a busca manual.');
+      manualEvaluationProgress = `Erro na busca: ${e.message}`;
     } finally {
       manualSearchLoading = false;
     }
@@ -147,7 +190,7 @@
   <!-- Left Pane: Editais List / Manual Search Form -->
   <div class="w-1/3 bg-white border-r border-gray-200 flex flex-col h-full">
     <div class="p-6 border-b border-gray-200">
-      <h1 class="text-2xl font-bold text-gray-900">Radar de Captação</h1>
+      <h1 class="text-2xl font-bold text-gray-900">Radar de Prospecção</h1>
 
       <!-- Tabs -->
       <div class="flex space-x-4 mt-4 border-b border-gray-200">
@@ -234,7 +277,7 @@
 
           <button
             onclick={performManualSearch}
-            disabled={manualSearchLoading || (editalSource === 'banco' ? !manualSearchEditalId : !manualSearchPdfUrl) || !manualSearchKeywords}
+            disabled={manualSearchLoading || (editalSource === 'banco' ? !manualSearchEditalId : !manualSearchPdfUrl)}
             class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:bg-indigo-400"
           >
             {manualSearchLoading ? 'Buscando...' : 'Buscar OSCs'}
@@ -254,14 +297,24 @@
   <div class="w-2/3 flex flex-col h-full bg-gray-100">
     {#if activeTab === 'daily'}
       {#if selectedEditalId && groupedLeads[selectedEditalId]}
-        <div class="p-6 bg-white border-b border-gray-200 shadow-sm z-10 shrink-0">
-          <h2 class="text-xl font-semibold text-gray-800">
-            Matches para: <span class="text-indigo-600">{groupedLeads[selectedEditalId].titulo}</span>
-          </h2>
+        <div class="p-6 bg-white border-b border-gray-200 shadow-sm z-10 shrink-0 flex justify-between items-center">
+          <div>
+            <h2 class="text-xl font-semibold text-gray-800">
+              Matches para: <span class="text-indigo-600">{groupedLeads[selectedEditalId].titulo}</span>
+            </h2>
+            <p class="text-xs text-gray-500 mt-1">
+              Priorizando OSCs com contatos validados e prontos para abordagem via WhatsApp.
+            </p>
+          </div>
+          <!-- Filter toggle -->
+          <label class="inline-flex items-center cursor-pointer select-none bg-gray-50 px-3 py-2 rounded-lg border border-gray-200 hover:bg-gray-100 transition-colors">
+            <input type="checkbox" bind:checked={onlyWhatsApp} class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 mr-2" />
+            <span class="text-xs font-semibold text-gray-700">Apenas com Telefone/WhatsApp</span>
+          </label>
         </div>
 
         <div class="flex-1 overflow-y-auto p-6 space-y-6">
-          {#each groupedLeads[selectedEditalId].leads as lead, index}
+          {#each sortAndFilterLeads(groupedLeads[selectedEditalId].leads) as lead, index}
             <!-- Lead Card Component (extracted logically) -->
             <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
               <div class="p-6 border-b border-gray-100 flex justify-between items-start">
@@ -270,10 +323,23 @@
                   <p class="text-sm text-gray-500 mt-1">📍 {lead.osc.municipio}, {lead.osc.uf}</p>
                   <p class="text-xs text-gray-400 mt-1">CNPJ: {lead.osc.cnpj}</p>
                 </div>
-                <div class="flex flex-col items-end">
+                <div class="flex flex-col items-end space-y-2">
                   <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-bold {getScoreColor(lead.score)}">
                     Pontuação: {lead.score}
                   </span>
+                  {#if hasDirectWhatsApp(lead)}
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800 border border-green-200">
+                      ✓ WhatsApp Verificado
+                    </span>
+                  {:else if hasAnyPhone(lead)}
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">
+                      📞 Telefone Oficial (CNPJ)
+                    </span>
+                  {:else}
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-500 border border-gray-200">
+                      ⚠️ Sem Telefone Cadastrado
+                    </span>
+                  {/if}
                 </div>
               </div>
               <div class="p-6 space-y-4">
@@ -289,8 +355,12 @@
                         <span class="mr-2">📱</span> WhatsApp: {lead.contatos_encontrados.whatsapp}
                       </div>
                     {:else if lead.osc?.official_contacts?.ddd_telefone_1}
-                      <div class="flex items-center text-gray-500">
-                        <span class="mr-2">📱</span> Oficial: {lead.osc.official_contacts.ddd_telefone_1}
+                      <div class="flex items-center text-gray-700">
+                        <span class="mr-2">📱</span> Telefone (Oficial): {lead.osc.official_contacts.ddd_telefone_1}
+                      </div>
+                    {:else}
+                      <div class="flex items-center text-gray-400">
+                        <span class="mr-2">📱</span> Telefone: Não disponível
                       </div>
                     {/if}
 
@@ -299,8 +369,12 @@
                         <span class="mr-2">📧</span> {lead.contatos_encontrados.email}
                       </div>
                     {:else if lead.osc?.official_contacts?.email}
-                       <div class="flex items-center text-gray-500">
+                       <div class="flex items-center text-gray-700">
                         <span class="mr-2">📧</span> Oficial: {lead.osc.official_contacts.email}
+                      </div>
+                    {:else}
+                      <div class="flex items-center text-gray-400">
+                        <span class="mr-2">📧</span> Email: Não disponível
                       </div>
                     {/if}
                   </div>
@@ -321,13 +395,24 @@
                     {openDossierIndex === index ? '▲ Ocultar Dossiê' : '▼ Ver Dossiê Completo'}
                   </button>
                   <div class="flex space-x-3">
-                    <a
-                      href={getWhatsAppLink(lead, lead.whatsapp_message)}
-                      target="_blank"
-                      class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700"
-                    >
-                      <span class="mr-2">💬</span> Enviar WhatsApp
-                    </a>
+                    {#if getWhatsAppLink(lead, lead.whatsapp_message)}
+                      <a
+                        href={getWhatsAppLink(lead, lead.whatsapp_message)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                      >
+                        <span class="mr-2">💬</span> Enviar WhatsApp
+                      </a>
+                    {:else}
+                      <button
+                        disabled
+                        title="Sem número de WhatsApp ou telefone registrado"
+                        class="inline-flex items-center px-4 py-2 border border-gray-200 shadow-sm text-sm font-medium rounded-md text-gray-400 bg-gray-100 cursor-not-allowed"
+                      >
+                        <span class="mr-2">💬</span> WhatsApp Indisponível
+                      </button>
+                    {/if}
                   </div>
                 </div>
                 {#if openDossierIndex === index}
@@ -381,10 +466,23 @@
                     <p class="text-sm text-gray-500 mt-1">📍 {lead.osc.municipio}, {lead.osc.uf}</p>
                     <p class="text-xs text-gray-400 mt-1">CNPJ: {lead.osc.cnpj}</p>
                   </div>
-                  <div class="flex flex-col items-end">
+                  <div class="flex flex-col items-end space-y-2">
                     <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-bold {getScoreColor(lead.score)}">
                       Pontuação: {lead.score}
                     </span>
+                    {#if hasDirectWhatsApp(lead)}
+                      <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800 border border-green-200">
+                        ✓ WhatsApp Verificado
+                      </span>
+                    {:else if hasAnyPhone(lead)}
+                      <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">
+                        📞 Telefone Oficial (CNPJ)
+                      </span>
+                    {:else}
+                      <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-500 border border-gray-200">
+                        ⚠️ Sem Telefone Cadastrado
+                      </span>
+                    {/if}
                   </div>
                 </div>
                 <div class="p-6 space-y-4">
@@ -400,8 +498,12 @@
                           <span class="mr-2">📱</span> WhatsApp: {lead.contatos_encontrados.whatsapp}
                         </div>
                       {:else if lead.osc?.official_contacts?.ddd_telefone_1}
-                        <div class="flex items-center text-gray-500">
-                          <span class="mr-2">📱</span> Oficial: {lead.osc.official_contacts.ddd_telefone_1}
+                        <div class="flex items-center text-gray-700">
+                          <span class="mr-2">📱</span> Telefone (Oficial): {lead.osc.official_contacts.ddd_telefone_1}
+                        </div>
+                      {:else}
+                        <div class="flex items-center text-gray-400">
+                          <span class="mr-2">📱</span> Telefone: Não disponível
                         </div>
                       {/if}
 
@@ -410,8 +512,12 @@
                           <span class="mr-2">📧</span> {lead.contatos_encontrados.email}
                         </div>
                       {:else if lead.osc?.official_contacts?.email}
-                         <div class="flex items-center text-gray-500">
+                         <div class="flex items-center text-gray-700">
                           <span class="mr-2">📧</span> Oficial: {lead.osc.official_contacts.email}
+                        </div>
+                      {:else}
+                        <div class="flex items-center text-gray-400">
+                          <span class="mr-2">📧</span> Email: Não disponível
                         </div>
                       {/if}
                     </div>
@@ -432,13 +538,24 @@
                       {openDossierIndex === (index + 1000) ? '▲ Ocultar Dossiê' : '▼ Ver Dossiê Completo'}
                     </button>
                     <div class="flex space-x-3">
-                      <a
-                        href={getWhatsAppLink(lead, lead.whatsapp_message)}
-                        target="_blank"
-                        class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700"
-                      >
-                        <span class="mr-2">💬</span> Enviar WhatsApp
-                      </a>
+                      {#if getWhatsAppLink(lead, lead.whatsapp_message)}
+                        <a
+                          href={getWhatsAppLink(lead, lead.whatsapp_message)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                        >
+                          <span class="mr-2">💬</span> Enviar WhatsApp
+                        </a>
+                      {:else}
+                        <button
+                          disabled
+                          title="Sem número de WhatsApp ou telefone registrado"
+                          class="inline-flex items-center px-4 py-2 border border-gray-200 shadow-sm text-sm font-medium rounded-md text-gray-400 bg-gray-100 cursor-not-allowed"
+                        >
+                          <span class="mr-2">💬</span> WhatsApp Indisponível
+                        </button>
+                      {/if}
                     </div>
                   </div>
                   {#if openDossierIndex === (index + 1000)}
