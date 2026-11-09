@@ -43,7 +43,7 @@
   </div>
 
   <!-- Main Content -->
-  <main class="flex-1 flex flex-col overflow-hidden">
+  <main class="flex-1 flex flex-col overflow-y-auto">
     <slot />
   </main>
 </div>

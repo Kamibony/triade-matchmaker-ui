@@ -45,20 +45,44 @@ export async function POST({ request }) {
     let edital = providedEdital;
 
     if (!edital && editalId) {
-       const editaisData = JSON.parse(await fs.readFile(EDITAIS_PATH, 'utf-8'));
-       edital = editaisData.find((e: any) => e.id === editalId || e.id?.toString() === editalId?.toString());
+      const editaisData = JSON.parse(await fs.readFile(EDITAIS_PATH, 'utf-8'));
+      const rawEdital = editaisData.find((e: any) => e.id === editalId || e.id?.toString() === editalId?.toString());
+      if (rawEdital) {
+        edital = {
+          id: rawEdital.id,
+          titulo: rawEdital.titulo || rawEdital.attributes?.nome || 'Edital Sem Título',
+          pdf_link: rawEdital.pdf_link || rawEdital.deep_metadata?.drive_pdf_link || rawEdital.public_url,
+          resumo_objetivo: rawEdital.resumo_objetivo || rawEdital.deep_metadata?.resumo_objetivo || rawEdital.attributes?.resumo || '',
+          temas_principais: rawEdital.temas_principais || rawEdital.deep_metadata?.temas_principais || [],
+          prazo_de_inscricao: rawEdital.prazo_de_inscricao || rawEdital.deep_metadata?.prazo_de_inscricao || null,
+          valor_maximo_ou_global_reais: rawEdital.valor_maximo_ou_global_reais || rawEdital.deep_metadata?.financeiro?.valor_maximo_ou_global_reais || null,
+          deep_metadata: rawEdital.deep_metadata
+        };
+      }
     }
 
     if (!edital) {
       return json({ error: 'Edital não encontrado' }, { status: 404 });
     }
 
-    // 2. Geocoding Simulation (Simplified for on-demand search)
-    // In production we'd do the full state/municipality mapping, here we default or use one generic fetch for PB to avoid timeouts
+    // Ensure edital has normalized fields if BYOE passed without top-level themes/resumo
+    if (!edital.temas_principais && edital.deep_metadata?.temas_principais) {
+      edital.temas_principais = edital.deep_metadata.temas_principais;
+    }
+    if (!edital.resumo_objetivo && edital.deep_metadata?.resumo_objetivo) {
+      edital.resumo_objetivo = edital.deep_metadata.resumo_objetivo;
+    }
+
+    // 2. Geocoding Simulation & OSC Discovery
     let ibgeCode = '2507507'; // João Pessoa default as per requirements
     let type: 'estado' | 'municipio' = 'municipio';
 
-    const ipeaResults = await fetchIpeaOscs(ibgeCode, type);
+    let ipeaResults: any[] = [];
+    try {
+      ipeaResults = await fetchIpeaOscs(ibgeCode, type);
+    } catch (e) {
+      console.warn('IPEA fetch error:', e);
+    }
     console.log(`IPEA returned ${ipeaResults.length} OSCs`);
 
     // Take a small sample to avoid timing out on the serverless edge
@@ -66,7 +90,7 @@ export async function POST({ request }) {
 
     // 3. Cache and Brasil API
     const cache = await loadCache();
-    const enrichedOscs = [];
+    const enrichedOscs: any[] = [];
 
     // Global Blacklist
     const blacklist = ['igreja', 'religiosa', 'loja maçônica', 'sindicato', 'partido político', 'condomínio'];
@@ -120,27 +144,45 @@ export async function POST({ request }) {
       }
     }
 
+    // Fallback: If live IPEA yielded no active OSCs (e.g. rate limit, blocked IP, or downstream API change),
+    // load verified active OSCs from local cache to guarantee high quality discovery
+    if (enrichedOscs.length === 0 && Object.keys(cache).length > 0) {
+      console.log('IPEA returned 0 OSCs. Using cached OSCs fallback.');
+      for (const entry of Object.values(cache) as any[]) {
+        const osc = entry.osc;
+        if (osc && (osc.situacao_cadastral === 'ATIVA' || !osc.situacao_cadastral)) {
+          const nameAndNatureza = ((osc.nome || '') + " " + (osc.natureza_juridica || '')).toLowerCase();
+          const isBlacklisted = blacklist.some(b => nameAndNatureza.includes(b));
+          if (!isBlacklisted) {
+            enrichedOscs.push(osc);
+          }
+        }
+      }
+    }
+
     // 4. Heuristic Pre-Ranking
-    const editalKeywordsText = (edital.temas_principais?.join(' ') || '') + " " + (edital.resumo_objetivo || '');
-    // Crucial step: Inject customKeywords heavily
-    const searchContext = (editalKeywordsText + " " + customKeywords + " " + customKeywords).toLowerCase();
+    const editalKeywordsText = (edital.temas_principais?.join(' ') || '') + " " + (edital.resumo_objetivo || '') + " " + (edital.titulo || '');
+    // Crucial step: Inject customKeywords heavily if provided
+    const safeCustomKeywords = customKeywords ? `${customKeywords} ${customKeywords}` : '';
+    const searchContext = `${editalKeywordsText} ${safeCustomKeywords}`.toLowerCase();
+
+    const currentYear = new Date().getFullYear();
 
     const scoredOscs = enrichedOscs.map(osc => {
-      const oscText = (osc.cnae_primario_descricao + " " + osc.cnae_secundario_descricao + " " + osc.natureza_juridica).toLowerCase();
+      const oscText = ((osc.cnae_primario_descricao || '') + " " + (osc.cnae_secundario_descricao || '') + " " + (osc.natureza_juridica || '') + " " + (osc.nome || '')).toLowerCase();
       let keywordScore = 0;
 
-      const searchTokens = searchContext.split(/[\s,]+/);
+      const searchTokens = searchContext.split(/[\s,.;:-]+/).filter(Boolean);
       for (const token of searchTokens) {
         if (token.length > 3 && oscText.includes(token)) {
           keywordScore += 50;
         }
       }
 
-      // Zero-Tolerance rule
+      // Zero-Tolerance rule: OSC must have at least one keyword overlap with the edital/themes
       if (keywordScore === 0) return null;
 
-      const currentYear = new Date().getFullYear();
-      const age = currentYear - osc.ano_fundacao;
+      const age = currentYear - (osc.ano_fundacao || currentYear);
       const heuristicScore = keywordScore + Math.min(age, 20);
 
       return { osc, heuristicScore };
@@ -148,8 +190,12 @@ export async function POST({ request }) {
 
     scoredOscs.sort((a, b) => b.heuristicScore - a.heuristicScore);
 
-    // Top 10 for manual search
-    const top10 = scoredOscs.slice(0, 10).map(item => item.osc);
+    // If zero tolerance filtered everything because the edital had very unique phrasing,
+    // fallback to top enriched OSCs with active status
+    let top10 = scoredOscs.slice(0, 10).map(item => item.osc);
+    if (top10.length === 0 && enrichedOscs.length > 0) {
+      top10 = enrichedOscs.slice(0, 5);
+    }
 
     return json({ topOscs: top10, edital });
 

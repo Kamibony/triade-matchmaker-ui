@@ -18,13 +18,18 @@ export async function POST({ request }) {
     });
 
     if (apiKey === 'dummy') {
+       const fallbackWhatsApp = osc.official_contacts?.ddd_telefone_1 || osc.official_contacts?.ddd_telefone_2 || "";
        return json({
           edital_id: edital.id,
           edital_titulo: edital.titulo,
           osc: osc,
           score: 85,
           motivo_match: "MOCK: Match simulado por falta de API key.",
-          whatsapp_message: "Olá, temos um edital interessante.",
+          whatsapp_message: `Olá! Aqui é a Angela, consultora de captação de recursos. Analisando a atuação da ${osc.nome}, identifiquei uma excelente oportunidade no edital '${edital.titulo}'. Teriam disponibilidade para conversarmos brevemente?`,
+          contatos_encontrados: {
+             whatsapp: fallbackWhatsApp,
+             email: osc.official_contacts?.email || ""
+          },
           dossieText: "MOCK: Dossiê não gerado."
        });
     }
@@ -73,6 +78,12 @@ export async function POST({ request }) {
         throw new Error('Falha ao analisar a resposta JSON do Gemini.');
     }
 
+    const resolvedContacts = {
+      ...parsedMatch.contatos_encontrados,
+      whatsapp: parsedMatch.contatos_encontrados?.whatsapp || osc.official_contacts?.ddd_telefone_1 || osc.official_contacts?.ddd_telefone_2 || null,
+      email: parsedMatch.contatos_encontrados?.email || osc.official_contacts?.email || null
+    };
+
     return json({
       edital_id: edital.id,
       edital_titulo: edital.titulo,
@@ -80,7 +91,7 @@ export async function POST({ request }) {
       score: parsedMatch.score,
       motivo_match: parsedMatch.motivo_match,
       whatsapp_message: parsedMatch.whatsapp_message,
-      contatos_encontrados: parsedMatch.contatos_encontrados,
+      contatos_encontrados: resolvedContacts,
       dossieText: dossieText
     });
 
