@@ -1,11 +1,14 @@
 import { json } from '@sveltejs/kit';
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import { env } from '$env/dynamic/private';
+import { GEMINI_API_KEY } from '$env/static/private';
 
 export async function POST({ request }) {
   try {
     const { edital, osc } = await request.json();
-    const apiKey = env.GEMINI_API_KEY || 'dummy';
+    const apiKey = GEMINI_API_KEY || process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+      throw new Error('GEMINI_API_KEY is missing in Vercel environment');
+    }
     const genAI = new GoogleGenerativeAI(apiKey);
 
     // AI Model configs
@@ -16,23 +19,6 @@ export async function POST({ request }) {
       model: "gemini-3.5-flash-lite",
       generationConfig: { temperature: 0, responseMimeType: "application/json" }
     });
-
-    if (apiKey === 'dummy') {
-       const fallbackWhatsApp = osc.official_contacts?.ddd_telefone_1 || osc.official_contacts?.ddd_telefone_2 || "";
-       return json({
-          edital_id: edital.id,
-          edital_titulo: edital.titulo,
-          osc: osc,
-          score: 85,
-          motivo_match: "MOCK: Match simulado por falta de API key.",
-          whatsapp_message: `Olá! Aqui é a Angela, consultora de captação de recursos. Analisando a atuação da ${osc.nome}, identifiquei uma excelente oportunidade no edital '${edital.titulo}'. Teriam disponibilidade para conversarmos brevemente?`,
-          contatos_encontrados: {
-             whatsapp: fallbackWhatsApp,
-             email: osc.official_contacts?.email || ""
-          },
-          dossieText: "MOCK: Dossiê não gerado."
-       });
-    }
 
     // --- Phase 3A: AI Web Dossiê ---
     let dossieText = "";
