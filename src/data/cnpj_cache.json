@@ -4903,5 +4903,813 @@
       }
     },
     "last_checked_date": "2026-11-06T14:11:09.684Z"
+  },
+  "09208552000164": {
+    "osc": {
+      "cnpj": "09208552000164",
+      "nome": "ENTIDADE DE APOIO A MORADIA E INCLUSAO SOCIAL",
+      "uf": "BA",
+      "municipio": "SAO FRANCISCO DO CONDE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7136015582",
+        "ddd_telefone_2": "7136015549"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:13.293Z"
+  },
+  "10434668000109": {
+    "osc": {
+      "cnpj": "10434668000109",
+      "nome": "ASSOCIACAO DOS AGENTES COMUNITARIO DE SAUDE E A GENTES DE COMBATE AS EDEMIAS DE INHAMBUPE",
+      "uf": "BA",
+      "municipio": "INHAMBUPE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações sindicais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7534312596"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:14.397Z"
+  },
+  "10661513000105": {
+    "osc": {
+      "cnpj": "10661513000105",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS EM BAIANOPOLIS-BAHIA",
+      "uf": "BA",
+      "municipio": "BAIANOPOLIS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7736172233"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:17.050Z"
+  },
+  "10861981000115": {
+    "osc": {
+      "cnpj": "10861981000115",
+      "nome": "ASSOCIACAO FAZENDA MORROS E URUBU",
+      "uf": "BA",
+      "municipio": "ITIUBA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7435461806"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:18.365Z"
+  },
+  "11202882000194": {
+    "osc": {
+      "cnpj": "11202882000194",
+      "nome": "ASSOCIACAO LIBERTADORA",
+      "uf": "BA",
+      "municipio": "ITANHEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7332952419"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:18.813Z"
+  },
+  "13084524000150": {
+    "osc": {
+      "cnpj": "13084524000150",
+      "nome": "A ASSOCIACAO MINHA FELIZ CIDADE",
+      "uf": "BA",
+      "municipio": "LAFAIETE COUTINHO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2010,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7399140114"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:19.696Z"
+  },
+  "15205625000167": {
+    "osc": {
+      "cnpj": "15205625000167",
+      "nome": "PROJETO ACAO SOCIAL RESTITUINDO CONQUISTA",
+      "uf": "BA",
+      "municipio": "VITORIA DA CONQUISTA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Ensino de esportes | Ensino de dança | Outras atividades de ensino não especificadas anteriormente | Serviços de assistência social sem alojamento | Gestão de instalações de esportes | Atividades de condicionamento físico",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7788166640"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:22.818Z"
+  },
+  "17087315000110": {
+    "osc": {
+      "cnpj": "17087315000110",
+      "nome": "ASSOCIACAO DOS ADVOGADOS EFETIVOS DO MUNICIPIO DE ITAPETINGA/BA - AEMI",
+      "uf": "BA",
+      "municipio": "ITAPETINGA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "Serviços advocatícios",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7788017335",
+        "ddd_telefone_2": "7788275710"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:24.089Z"
+  },
+  "08511844000290": {
+    "osc": {
+      "cnpj": "08511844000290",
+      "nome": "ASSOCIACAO DE DESENVOLVIMENTO SOCIO ECONOMICO E CULTURAL DA BAHIA",
+      "uf": "BA",
+      "municipio": "DIAS D'AVILA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7136057100"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:24.960Z"
+  },
+  "16925466000138": {
+    "osc": {
+      "cnpj": "16925466000138",
+      "nome": "IGREJA BATISTA MISSIONARIA JARDIM CASTELAO",
+      "uf": "BA",
+      "municipio": "LAURO DE FREITAS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7132412559",
+        "ddd_telefone_2": "7132427728"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:25.353Z"
+  },
+  "17016518000116": {
+    "osc": {
+      "cnpj": "17016518000116",
+      "nome": "MOVIMENTO NEGRO AFRO JAMAICA",
+      "uf": "BA",
+      "municipio": "SERRINHA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Outras atividades de recreação e lazer não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Produção e promoção de eventos esportivos | Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7581973970"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:25.758Z"
+  },
+  "19094305000138": {
+    "osc": {
+      "cnpj": "19094305000138",
+      "nome": "ASSOCIACAO DOS SERVIDORES PUBLICOS DO SUDOESTE DA BAHIA -ASSERP-SUDOESTE",
+      "uf": "BA",
+      "municipio": "VITORIA DA CONQUISTA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2013,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Outras atividades associativas profissionais | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7788187163",
+        "ddd_telefone_2": "7741412494"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:27.868Z"
+  },
+  "19812274000103": {
+    "osc": {
+      "cnpj": "19812274000103",
+      "nome": "ASSOCIACAO TERRITORIAL DE AGROECOLOGIA DOS POVOS DA CABRUCA E DA MATA ATLANTICA",
+      "uf": "BA",
+      "municipio": "ARATACA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7332831329",
+        "ddd_telefone_2": "7391372269"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:28.727Z"
+  },
+  "20331150000195": {
+    "osc": {
+      "cnpj": "20331150000195",
+      "nome": "ASSOCIACAO VIVENDA FELIZ DOS PEQUENOS PRODUTORES RURAIS DE BARRO PRETO",
+      "uf": "BA",
+      "municipio": "BARRO PRETO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de apoio à agricultura não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de apoio à pecuária não especificadas anteriormente | Atividades de pós-colheita",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7399095016",
+        "ddd_telefone_2": "7388735026"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:30.488Z"
+  },
+  "21016306000106": {
+    "osc": {
+      "cnpj": "21016306000106",
+      "nome": "IGREJA JESUS E A VITORIA ARCA DA ALIANCA COM DEUS",
+      "uf": "BA",
+      "municipio": "ITAGIBA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7332446039"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:30.946Z"
+  },
+  "01133188000885": {
+    "osc": {
+      "cnpj": "01133188000885",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS DE ANGRA DOS REIS",
+      "uf": "BA",
+      "municipio": "PE DE SERRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2433772147"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:31.445Z"
+  },
+  "21183080000138": {
+    "osc": {
+      "cnpj": "21183080000138",
+      "nome": "ASSOCIACAO DOS CRIADORES DO CAVALO MANGALARGA MARCHADOR DA CHAPADA NO ESTADO DA BAHIA - ACCMMC",
+      "uf": "BA",
+      "municipio": "IRECE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7488558597"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:32.062Z"
+  },
+  "02683489000330": {
+    "osc": {
+      "cnpj": "02683489000330",
+      "nome": "ASSOCIACAO BIBLICA E CULTURAL DE INTERESSES TEOCRATICOS",
+      "uf": "BA",
+      "municipio": "AMARGOSA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2015,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7588851004",
+        "ddd_telefone_2": "7591043786"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:33.862Z"
+  },
+  "23694283000114": {
+    "osc": {
+      "cnpj": "23694283000114",
+      "nome": "ASSOCIACAO NACIONAL DAS MICRO , PEQUENAS E MEDIAS EMPRESAS E EMPREENDEDORES INDIVIDUAIS - AMPEI",
+      "uf": "BA",
+      "municipio": "FEIRA DE SANTANA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2015,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7530222300"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:35.209Z"
+  },
+  "23751154000110": {
+    "osc": {
+      "cnpj": "23751154000110",
+      "nome": "ASSOCIACAO DOS AGRICULTORES E AGRICULTORAS FAMILIARES DA REGIAO DO JACUTINGA",
+      "uf": "BA",
+      "municipio": "ELISIO MEDRADO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2015,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7598069140"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:35.680Z"
+  },
+  "23752697000152": {
+    "osc": {
+      "cnpj": "23752697000152",
+      "nome": "IGREJA EVANGELICA PLENITUDE MISSIONARIA JESUS CRISTO E A LUZ DO MUNDO",
+      "uf": "BA",
+      "municipio": "BARRA DA ESTIVA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2015,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7799491000",
+        "ddd_telefone_2": "7734501941"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:36.150Z"
+  },
+  "24109869000137": {
+    "osc": {
+      "cnpj": "24109869000137",
+      "nome": "ASSOCIACAO DOS REMANESCENTES DE QUILOMBOLAS DA COMUNIDADE DE VOLTA GRANDE",
+      "uf": "BA",
+      "municipio": "BARRO ALTO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7491398105"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:36.559Z"
+  },
+  "25108299000123": {
+    "osc": {
+      "cnpj": "25108299000123",
+      "nome": "COMUNIDADE EVANGELICA OVELHAS DE CRISTO",
+      "uf": "BA",
+      "municipio": "JEQUIE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2015,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7388160832",
+        "ddd_telefone_2": "7335276496"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:37.281Z"
+  },
+  "25296457000116": {
+    "osc": {
+      "cnpj": "25296457000116",
+      "nome": "IGREJA EVANGELICA TABERNACULO DO SALVADOR",
+      "uf": "BA",
+      "municipio": "CRUZ DAS ALMAS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7588187959"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:38.569Z"
+  },
+  "25447374000180": {
+    "osc": {
+      "cnpj": "25447374000180",
+      "nome": "IGREJA PENTECOSTAL MONTE SINAI DEUS PROVERA",
+      "uf": "BA",
+      "municipio": "SAO FRANCISCO DO CONDE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7187440275"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:39.778Z"
+  },
+  "02516000000174": {
+    "osc": {
+      "cnpj": "02516000000174",
+      "nome": "COL. ESCOLAR ROQUE LEAO DOS SANTOS",
+      "uf": "BA",
+      "municipio": "IPIRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1998,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-09T17:57:40.165Z"
+  },
+  "26386737000188": {
+    "osc": {
+      "cnpj": "26386737000188",
+      "nome": "FEDERACAO BAIANA DE JIU-JITSU OLIMPICO",
+      "uf": "BA",
+      "municipio": "PORTO SEGURO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Produção e promoção de eventos esportivos | Ensino de esportes",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7398171003"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:40.475Z"
+  },
+  "26788953000150": {
+    "osc": {
+      "cnpj": "26788953000150",
+      "nome": "ASSOCIACAO NACIONAL DOS PROPRIETARIOS DE VEICULOS AUTOMOTORES -SEVEAUTO",
+      "uf": "BA",
+      "municipio": "FEIRA DE SANTANA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7598965727"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:41.212Z"
+  },
+  "01179702000147": {
+    "osc": {
+      "cnpj": "01179702000147",
+      "nome": "ASSOCIACAO COMUNITARIA E BENEF DOS PEQ AGRIC DO MASTRUZ",
+      "uf": "BA",
+      "municipio": "MACAUBAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1996,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-09T17:57:41.595Z"
+  },
+  "01916439000121": {
+    "osc": {
+      "cnpj": "01916439000121",
+      "nome": "ESCOLA MUNICIPAL ISMERINDO FRANCISCO DA SILVA",
+      "uf": "BA",
+      "municipio": "CAMPO ALEGRE DE LOURDES",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-09T17:57:42.001Z"
+  },
+  "01939334000198": {
+    "osc": {
+      "cnpj": "01939334000198",
+      "nome": "ESCOLA MUNICIPAL JOAO THIAGO DE QUEIROZ",
+      "uf": "BA",
+      "municipio": "SAO GONCALO DOS CAMPOS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de administração de fundos por contrato ou comissão",
+      "cnae_secundario_descricao": "Serviços de levantamento de fundos sob contrato",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-09T17:57:42.333Z"
+  },
+  "01970500000119": {
+    "osc": {
+      "cnpj": "01970500000119",
+      "nome": "ESCOLA INTEGRADA PROFESSOR CARLOS SANT'ANNA",
+      "uf": "BA",
+      "municipio": "ITANAGRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0754532113"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:42.653Z"
+  },
+  "01986912000147": {
+    "osc": {
+      "cnpj": "01986912000147",
+      "nome": "COLEGIO MUNICIPAL DR ANTONIO CARLOS MAGALHAES",
+      "uf": "BA",
+      "municipio": "ESPLANADA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0754271054"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:43.054Z"
+  },
+  "01987401000140": {
+    "osc": {
+      "cnpj": "01987401000140",
+      "nome": "COLEGIO ESTADUAL FELIX MENDONA",
+      "uf": "BA",
+      "municipio": "ITABUNA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-09T17:57:43.532Z"
+  },
+  "02543443000154": {
+    "osc": {
+      "cnpj": "02543443000154",
+      "nome": "ESCOLA MUNICIPAL PROFESSORA ELZA ALVES SILVA",
+      "uf": "BA",
+      "municipio": "NAZARE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1998,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-09T17:57:45.702Z"
+  },
+  "03168921000156": {
+    "osc": {
+      "cnpj": "03168921000156",
+      "nome": "ESCOLA MUNICIPAL OLIMPIO GONCALVES",
+      "uf": "BA",
+      "municipio": "PILAO ARCADO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1999,
+      "cnae_primario_descricao": "Ensino fundamental",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0748342141"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:46.424Z"
+  },
+  "03168936000114": {
+    "osc": {
+      "cnpj": "03168936000114",
+      "nome": "ESCOLA MUNICIPAL DE REDENCAO",
+      "uf": "BA",
+      "municipio": "PILAO ARCADO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1999,
+      "cnae_primario_descricao": "Ensino fundamental",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0748342141"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:46.874Z"
+  },
+  "03168948000149": {
+    "osc": {
+      "cnpj": "03168948000149",
+      "nome": "ESCOLA MUNICIPAL SALINAS DE SANTO ANTONIO",
+      "uf": "BA",
+      "municipio": "PILAO ARCADO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1999,
+      "cnae_primario_descricao": "Ensino fundamental",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0748342141"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:47.199Z"
+  },
+  "03267757000134": {
+    "osc": {
+      "cnpj": "03267757000134",
+      "nome": "COLEGIO MUNICIPAL PROFESSORA MARIA EULICE DE MENEZES PORTO",
+      "uf": "BA",
+      "municipio": "IBITIARA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1999,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-09T17:57:47.541Z"
+  },
+  "04493339000128": {
+    "osc": {
+      "cnpj": "04493339000128",
+      "nome": "ESCOLA MUNICIPAL DR EURICO MATA",
+      "uf": "BA",
+      "municipio": "MUNIZ FERREIRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2001,
+      "cnae_primario_descricao": "Ensino fundamental",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-09T17:57:48.247Z"
+  },
+  "16425647000103": {
+    "osc": {
+      "cnpj": "16425647000103",
+      "nome": "IGREJA CRISTA ROSA DE SAROM DE ITAPETINGA BA",
+      "uf": "BA",
+      "municipio": "ITAPETINGA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1990,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-09T17:57:48.990Z"
+  },
+  "05695066000167": {
+    "osc": {
+      "cnpj": "05695066000167",
+      "nome": "ESCOLA MUNICIPAL SAO ROQUE",
+      "uf": "BA",
+      "municipio": "ITABERABA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2003,
+      "cnae_primario_descricao": "Ensino fundamental",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7592684118"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:49.706Z"
+  },
+  "08272352000108": {
+    "osc": {
+      "cnpj": "08272352000108",
+      "nome": "ESCOLA MUNICIPAL DO CARRASCO",
+      "uf": "BA",
+      "municipio": "MIRANGABA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7436302113"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:50.723Z"
+  },
+  "31563813000113": {
+    "osc": {
+      "cnpj": "31563813000113",
+      "nome": "ASSOCIACAO DE APICULTORES E AGRICULTORES DE BELO CRUZEIRO",
+      "uf": "BA",
+      "municipio": "MUCURI",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7399466504"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:51.191Z"
+  },
+  "09327382000137": {
+    "osc": {
+      "cnpj": "09327382000137",
+      "nome": "ECOMPJR EMPRESA JUNIOR DE ENGENHARIA DE COMPUTACAO UEFS",
+      "uf": "BA",
+      "municipio": "FEIRA DE SANTANA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2008,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "Desenvolvimento de programas de computador sob encomenda | Web design | Desenvolvimento e licenciamento de programas de computador customizáveis | Desenvolvimento e licenciamento de programas de computador não-customizáveis | Consultoria em tecnologia da informação | Suporte técnico, manutenção e outros serviços em tecnologia da informação | Serviços de organização de feiras, congressos, exposições e festas | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7531618354"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:51.701Z"
+  },
+  "11131622000175": {
+    "osc": {
+      "cnpj": "11131622000175",
+      "nome": "CASA DO COMERCIO DE IRECE",
+      "uf": "BA",
+      "municipio": "IRECE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7436413344"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:52.717Z"
+  },
+  "13195771002924": {
+    "osc": {
+      "cnpj": "13195771002924",
+      "nome": "IGREJA CAMINHO AO DEUS VIVO",
+      "uf": "BA",
+      "municipio": "NAZARE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7588590840",
+        "ddd_telefone_2": "7536314126"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:53.214Z"
+  },
+  "13562038003387": {
+    "osc": {
+      "cnpj": "13562038003387",
+      "nome": "DIOCESE DE AMARGOSA",
+      "uf": "BA",
+      "municipio": "SANTO ANTONIO DE JESUS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7536341176"
+      }
+    },
+    "last_checked_date": "2026-11-09T17:57:53.853Z"
   }
 }
