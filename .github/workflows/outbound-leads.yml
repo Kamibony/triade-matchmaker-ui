@@ -39,6 +39,7 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "chore: update daily outbound leads and cnpj cache"
+            git pull --rebase origin main
             # Skipping git push in testing environment
             git push
           fi
