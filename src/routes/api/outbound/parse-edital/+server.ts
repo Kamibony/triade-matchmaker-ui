@@ -2,6 +2,7 @@ import { SchemaType } from '@google/generative-ai';
 import { json } from '@sveltejs/kit';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import pdfParse from 'pdf-parse/lib/pdf-parse.js';
+import { env } from '$env/dynamic/private';
 
 const sharedGenerationConfig = {
     responseMimeType: "application/json" as const,
@@ -49,7 +50,7 @@ const sharedGenerationConfig = {
 export async function POST({ request }) {
   try {
     const { pdfUrl } = await request.json();
-    const apiKey = process.env.GEMINI_API_KEY;
+    const apiKey = env.GEMINI_API_KEY;
     if (!apiKey) {
       throw new Error('GEMINI_API_KEY is missing in Vercel environment');
     }
