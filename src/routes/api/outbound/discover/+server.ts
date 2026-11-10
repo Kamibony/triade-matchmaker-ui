@@ -93,7 +93,7 @@ export async function POST({ request }) {
     const enrichedOscs: any[] = [];
 
     // Global Blacklist
-    const blacklist = ['igreja', 'religiosa', 'loja maçônica', 'sindicato', 'partido político', 'condomínio'];
+    const blacklist = ['igreja', 'religiosa', 'templo', 'arquidiocese', 'diocese', 'paróquia', 'loja maçônica', 'arls', 'sindicato', 'partido político', 'condomínio', 'escola municipal', 'escola estadual', 'colégio municipal', 'colégio estadual', 'conselho estadual', 'conselho municipal', 'conselho escolar', 'prefeitura', 'secretaria', 'advogados', 'escritório', 'contábil', 'comércio', 'esporte clube', 'futebol clube', 'servidores', 'câmara', 'ministério público', 'tribunal', 'polícia', 'bombeiros', 'crea', 'oab'];
 
     for (const osc of sample) {
       const cnpjId = osc.cd_identificador_osc;

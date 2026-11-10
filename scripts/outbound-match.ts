@@ -307,7 +307,7 @@ async function runPipeline() {
               const age = currentYear - oscData.ano_fundacao;
               const excludedNatures = criterios.natureza_juridica_excluida || [];
 
-              const globalBlacklist = ['igreja', 'religiosa', 'templo', 'arquidiocese', 'diocese', 'loja maçônica', 'arls', 'sindicato', 'partido político', 'condomínio'];
+              const globalBlacklist = ['igreja', 'religiosa', 'templo', 'arquidiocese', 'diocese', 'paróquia', 'loja maçônica', 'arls', 'sindicato', 'partido político', 'condomínio', 'escola municipal', 'escola estadual', 'colégio municipal', 'colégio estadual', 'conselho estadual', 'conselho municipal', 'conselho escolar', 'prefeitura', 'secretaria', 'advogados', 'escritório', 'contábil', 'comércio', 'esporte clube', 'futebol clube', 'servidores', 'câmara', 'ministério público', 'tribunal', 'polícia', 'bombeiros', 'crea', 'oab'];
               const isGloballyBlacklisted = globalBlacklist.some(kw =>
                   oscData!.natureza_juridica.toLowerCase().includes(kw) ||
                   oscData!.nome.toLowerCase().includes(kw)
@@ -347,7 +347,7 @@ async function runPipeline() {
       }).filter((item): item is { osc: OSC, heuristicScore: number } => item !== null);
 
       scoredOscs.sort((a, b) => b.heuristicScore - a.heuristicScore);
-      const top50 = scoredOscs.slice(0, 50).map(item => item.osc);
+      const top50 = scoredOscs.slice(0, 3).map(item => item.osc);
       console.log(`Pre-ranked down to ${top50.length} Top Candidates.`);
 
       // AI Match
