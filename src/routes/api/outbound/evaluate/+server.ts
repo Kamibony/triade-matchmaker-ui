@@ -50,7 +50,7 @@ export async function POST({ request }) {
       {
         "score": (0 a 100),
         "motivo_match": "Explique o porquê do match usando evidências do dossiê e do edital",
-        "whatsapp_message": "Mensagem curta para enviar no WhatsApp da ONG se apresentando e falando do edital",
+        "whatsapp_message": "Mensagem curta, humana e atrativa de WhatsApp (em pt-BR) escrita por 'Angela, consultora de captação de recursos' para a ONG. Elogie brevemente o trabalho da ONG usando algo do dossiê. Diga que você mapeou uma oportunidade de edital/financiamento no valor de até [INSERIR VALOR MÁXIMO DO EDITAL AQUI, se houver] voltado para [TEMA GERAL DA ONG/EDITAL]. REGRA CRÍTICA E ABSOLUTA: NUNCA, em hipótese alguma, escreva ou mencione o título, nome real ou a instituição do edital. Mantenha o nome do edital em total segredo. Termine perguntando se eles têm disponibilidade para uma breve conversa para apresentar os detalhes.",
         "contatos_encontrados": { "whatsapp": "número se achou no dossiê", "email": "email", "instagram": "url" }
       }
     `;
