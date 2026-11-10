@@ -347,7 +347,7 @@ async function runPipeline() {
       }).filter((item): item is { osc: OSC, heuristicScore: number } => item !== null);
 
       scoredOscs.sort((a, b) => b.heuristicScore - a.heuristicScore);
-      const top50 = scoredOscs.slice(0, 3).map(item => item.osc);
+      const top50 = scoredOscs.slice(0, 50).map(item => item.osc);
       console.log(`Pre-ranked down to ${top50.length} Top Candidates.`);
 
       // AI Match
