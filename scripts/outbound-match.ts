@@ -422,7 +422,7 @@ Based on the profile and the provided dossier, provide an evaluation.
 Return ONLY a valid JSON object containing:
 - "score": A number between 0 and 100 representing how well the NGO matches the grant's objective and themes.
 - "motivo_match": A brief 1-2 sentence justification for the score, citing specific evidence from their activities or the dossier.
-- "whatsapp_message": A short, professional, and personalized outreach message (in Portuguese) from 'Angela' (the captador) to the NGO, suggesting they might be a great fit for the "${edital.attributes.nome}" grant and asking if they are open to a conversation. Keep it friendly and concise.
+- "whatsapp_message": "Mensagem curta, humana e atrativa de WhatsApp (em pt-BR) escrita por 'Angela, consultora de captação de recursos' para a ONG. Elogie brevemente o trabalho da ONG usando algo do dossiê. Diga que você mapeou uma oportunidade de edital/financiamento no valor de até [INSERIR VALOR MÁXIMO DO EDITAL AQUI, se houver] voltado para [TEMA GERAL DA ONG/EDITAL]. REGRA CRÍTICA E ABSOLUTA: NUNCA, em hipótese alguma, escreva ou mencione o título, nome real ou a instituição do edital. Mantenha o nome do edital em total segredo. Termine perguntando se eles têm disponibilidade para uma breve conversa para apresentar os detalhes."
 - "contatos_encontrados": An object extracting any discovered contact info from the Dossiê text, with optional keys "whatsapp", "email", and "instagram" (urls or handles).
 
 Do not include markdown formatting. Just return the raw JSON object.`;
