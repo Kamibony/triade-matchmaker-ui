@@ -19,8 +19,14 @@ export async function POST({ request }: any) {
 
   const eligibleEditais: any[] = [];
 
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
+  const now = new Date();
+  now.setDate(now.getDate() + 10);
+  const options: Intl.DateTimeFormatOptions = { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit' };
+  const parts = new Intl.DateTimeFormat('pt-BR', options).formatToParts(now);
+  const year = parts.find(p => p.type === 'year')?.value;
+  const month = parts.find(p => p.type === 'month')?.value;
+  const day = parts.find(p => p.type === 'day')?.value;
+  const thresholdString = `${year}-${month}-${day}`;
 
   for (const edital of editaisData) {
     if (!(edital as any).deep_metadata || !(edital as any).deep_metadata.criterios_eliminatorios) continue;
@@ -32,9 +38,10 @@ export async function POST({ request }: any) {
       continue; // Skip because maximum value is missing
     }
 
-    const deadlineDate = new Date(prazo);
-    if (prazo && prazo.toLowerCase() !== 'não informado' && !isNaN(deadlineDate.getTime()) && deadlineDate < today) {
-      continue; // Skip because deadline has passed
+    if (prazo && prazo.toLowerCase() !== 'não informado') {
+      if (prazo < thresholdString) {
+        continue; // Skip because deadline is earlier than the 10-day buffer
+      }
     }
 
     // The calculateMatches function expects an array of NGOs
