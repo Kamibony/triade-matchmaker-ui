@@ -5711,5 +5711,126 @@
       }
     },
     "last_checked_date": "2026-11-09T17:57:53.853Z"
+  },
+  "27187083000126": {
+    "osc": {
+      "cnpj": "27187083000126",
+      "nome": "INSTITUTO DE DESENVOLVIMENTO HUMANO SOCIAL E AMBIENTAL DA AMAZONIA IDEHSAM",
+      "uf": "PA",
+      "municipio": "BREVES",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Serviços de assistência social sem alojamento | Produção e promoção de eventos esportivos | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9192721698"
+      }
+    },
+    "last_checked_date": "2026-11-10T19:58:27.241Z"
+  },
+  "32305618000156": {
+    "osc": {
+      "cnpj": "32305618000156",
+      "nome": "INSTITUTO MONTE SINAI SAUDE E ASSISTENCIA SOCIAL",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de apoio à gestão de saúde",
+      "cnae_secundario_descricao": "Treinamento em desenvolvimento profissional e gerencial | Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9194105624"
+      }
+    },
+    "last_checked_date": "2026-11-10T19:58:27.481Z"
+  },
+  "32710658000183": {
+    "osc": {
+      "cnpj": "32710658000183",
+      "nome": "ASSOCIACAO DOS MORADORES DO CONJUNTO RESIDENCIAL 'JARDIM EQUATORIAL'-AME",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de organizações associativas patronais e empresariais",
+      "cnae_secundario_descricao": "Outras atividades associativas profissionais | Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9181833180"
+      }
+    },
+    "last_checked_date": "2026-11-10T19:58:28.013Z"
+  },
+  "34264273000165": {
+    "osc": {
+      "cnpj": "34264273000165",
+      "nome": "MINISTERIO DA RESTAURACAO VISAO DE AGUIA",
+      "uf": "PA",
+      "municipio": "CURUCA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9191276288"
+      }
+    },
+    "last_checked_date": "2026-11-10T19:58:28.606Z"
+  },
+  "38136742000111": {
+    "osc": {
+      "cnpj": "38136742000111",
+      "nome": "ASSOCIACAO DOS MORADORES DA VILA NOVA ALIANCA",
+      "uf": "PA",
+      "municipio": "ANAPU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9199999999"
+      }
+    },
+    "last_checked_date": "2026-11-10T19:58:29.761Z"
+  },
+  "38707784000165": {
+    "osc": {
+      "cnpj": "38707784000165",
+      "nome": "IGREJA EVANGELICA SER",
+      "uf": "PA",
+      "municipio": "SAO FELIX DO XINGU",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9484118588",
+        "ddd_telefone_2": "9434351718"
+      }
+    },
+    "last_checked_date": "2026-11-10T19:58:29.869Z"
+  },
+  "39390782000158": {
+    "osc": {
+      "cnpj": "39390782000158",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS EM PLACAS-PA MINISTERIO DE MADUREIRA",
+      "uf": "PA",
+      "municipio": "PLACAS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9384171995",
+        "ddd_telefone_2": "9335321454"
+      }
+    },
+    "last_checked_date": "2026-11-10T19:58:30.614Z"
   }
 }
