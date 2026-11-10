@@ -1,10 +1,11 @@
 import { json } from '@sveltejs/kit';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { env } from '$env/dynamic/private';
 
 export async function POST({ request }) {
   try {
     const { edital, osc } = await request.json();
-    const apiKey = process.env.GEMINI_API_KEY;
+    const apiKey = env.GEMINI_API_KEY;
     if (!apiKey) {
       throw new Error('GEMINI_API_KEY is missing in Vercel environment');
     }
