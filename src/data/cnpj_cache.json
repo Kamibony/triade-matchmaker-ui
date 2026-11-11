@@ -6258,5 +6258,1211 @@
       }
     },
     "last_checked_date": "2026-11-11T09:50:52.755Z"
+  },
+  "30586683000171": {
+    "osc": {
+      "cnpj": "30586683000171",
+      "nome": "FEDERACAO DAS ASSOCIACOES DO MORENO",
+      "uf": "PE",
+      "municipio": "MORENO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1994,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8186055294"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:22.561Z"
+  },
+  "30630747000194": {
+    "osc": {
+      "cnpj": "30630747000194",
+      "nome": "ASSOCIACAO DE COMPOSSUIDORES DO EDIFICIO RESIDENCIAL GENERAL SAMPAIO",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Serviços combinados para apoio a edifícios, exceto condomínios prediais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8130490501",
+        "ddd_telefone_2": "8188280501"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:23.035Z"
+  },
+  "30902803250476": {
+    "osc": {
+      "cnpj": "30902803250476",
+      "nome": "IGREJA INTERNACIONAL DA GRACA DE DEUS",
+      "uf": "PE",
+      "municipio": "CARPINA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2133445634",
+        "ddd_telefone_2": "2133445959"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:23.367Z"
+  },
+  "31108421000164": {
+    "osc": {
+      "cnpj": "31108421000164",
+      "nome": "ASSOCIACAO DO BLOCO LIRICO FLOR DO TAMARINDO",
+      "uf": "PE",
+      "municipio": "CARPINA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8187859809"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:23.673Z"
+  },
+  "08253685000270": {
+    "osc": {
+      "cnpj": "08253685000270",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS MISSAO MONTE BELO",
+      "uf": "PE",
+      "municipio": "SERRA TALHADA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "1139161312"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:23.997Z"
+  },
+  "27080667000106": {
+    "osc": {
+      "cnpj": "27080667000106",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS MINISTERIO SANTISSIMO EM PERNAMBUCO",
+      "uf": "PE",
+      "municipio": "SAO LOURENCO DA MATA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8183679071"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:24.323Z"
+  },
+  "12433137000623": {
+    "osc": {
+      "cnpj": "12433137000623",
+      "nome": "INSTITUTO D'OR DE PESQUISA E ENSINO",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Pesquisa e desenvolvimento experimental em ciências físicas e naturais",
+      "cnae_secundario_descricao": "Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Educação superior - pós-graduação e extensão | Treinamento em desenvolvimento profissional e gerencial",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8131317800"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:25.124Z"
+  },
+  "21700184000172": {
+    "osc": {
+      "cnpj": "21700184000172",
+      "nome": "IGREJA EVANGELICA AMAR A DEUS NO BRASIL",
+      "uf": "PE",
+      "municipio": "BEZERROS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8193900526"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:25.260Z"
+  },
+  "32578386000100": {
+    "osc": {
+      "cnpj": "32578386000100",
+      "nome": "IGREJA PENTECOSTAL ASSEMBLEIA DE DEUS MINISTERIO PEDRA LINDA",
+      "uf": "PE",
+      "municipio": "PETROLINA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8799010754"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:25.592Z"
+  },
+  "26094419000143": {
+    "osc": {
+      "cnpj": "26094419000143",
+      "nome": "ASSOCIACAO DOS AGRICULTORES FAMILIARES DO DISTRITO DE TABOCAS E SITIOS VIZINHOS",
+      "uf": "PE",
+      "municipio": "EXU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8799711944"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:26.330Z"
+  },
+  "36441383000180": {
+    "osc": {
+      "cnpj": "36441383000180",
+      "nome": "GRUPO ESPIRITA ANJOS DO BEM - GEAB",
+      "uf": "PE",
+      "municipio": "CONDADO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8189231557"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:26.805Z"
+  },
+  "44097794000129": {
+    "osc": {
+      "cnpj": "44097794000129",
+      "nome": "ASSOCIACAO DOS FLORICULTORES E AGRICULTORES DA AGRICULTURA FAMILIAR DE GRAVATA DO ESTADO DE PERNAMBUCO",
+      "uf": "PE",
+      "municipio": "GRAVATA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8173075786"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:27.526Z"
+  },
+  "08260564000760": {
+    "osc": {
+      "cnpj": "08260564000760",
+      "nome": "IGREJA DO NAZARENO NO BRASIL DISTRITO NORDESTE CENTRAL",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8134420639"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:27.946Z"
+  },
+  "36696683000100": {
+    "osc": {
+      "cnpj": "36696683000100",
+      "nome": "ASSOCIACAO PLATAFORMA ITINERANTE",
+      "uf": "PE",
+      "municipio": "LIMOEIRO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8191163132"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:28.287Z"
+  },
+  "37143073000142": {
+    "osc": {
+      "cnpj": "37143073000142",
+      "nome": "CLUBE ORNITOLOGICO DO AGRESTE DE PERNAMBUCO",
+      "uf": "PE",
+      "municipio": "CARUARU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8788121630"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:28.663Z"
+  },
+  "43944034000147": {
+    "osc": {
+      "cnpj": "43944034000147",
+      "nome": "COMUNIDADE CRISTA PORTA FORMOSA",
+      "uf": "PE",
+      "municipio": "BOM JARDIM",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8181092661"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:29.206Z"
+  },
+  "38159573000135": {
+    "osc": {
+      "cnpj": "38159573000135",
+      "nome": "ASSOCIACAO COMUNITARIA DO PERI-PERI",
+      "uf": "PE",
+      "municipio": "ALAGOINHA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8791226040"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:29.525Z"
+  },
+  "02274331000145": {
+    "osc": {
+      "cnpj": "02274331000145",
+      "nome": "GRUPO DE MAES DO IPSEP",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0813392200"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:29.809Z"
+  },
+  "47938052000177": {
+    "osc": {
+      "cnpj": "47938052000177",
+      "nome": "ASSOCIACAO DEUS E FIEL",
+      "uf": "PE",
+      "municipio": "PAULISTA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos | Atividade médica ambulatorial com recursos para realização de exames complementares | Atividade médica ambulatorial restrita a consultas | Atividade odontológica | Atividades de atenção ambulatorial não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8183560445"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:30.132Z"
+  },
+  "45602378000101": {
+    "osc": {
+      "cnpj": "45602378000101",
+      "nome": "LIGA DESPORTIVA DE JOAQUIM NABUCO",
+      "uf": "PE",
+      "municipio": "JOAQUIM NABUCO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Produção e promoção de eventos esportivos",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8191891903"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:30.474Z"
+  },
+  "02404252000101": {
+    "osc": {
+      "cnpj": "02404252000101",
+      "nome": "ASSOCIACAO DOS APICULTORES DO MUNICIPIO DE JATOBA",
+      "uf": "PE",
+      "municipio": "JATOBA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-11T21:21:30.889Z"
+  },
+  "46142269000103": {
+    "osc": {
+      "cnpj": "46142269000103",
+      "nome": "COMUNIDADE MISSIONARIA SHEKNAH",
+      "uf": "PE",
+      "municipio": "ALTINHO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química e grupos similares não | Atividades de associações de defesa de direitos sociais | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8195033449"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:31.352Z"
+  },
+  "40189186000193": {
+    "osc": {
+      "cnpj": "40189186000193",
+      "nome": "IGREJA EVANGELICA LUGAR DE RESTAURACAO",
+      "uf": "PE",
+      "municipio": "BUENOS AIRES",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8136220346",
+        "ddd_telefone_2": "81"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:31.750Z"
+  },
+  "47334015000150": {
+    "osc": {
+      "cnpj": "47334015000150",
+      "nome": "CENTRO SOCIOCULTURAL E DESPORTIVO REAL PETROLINA",
+      "uf": "PE",
+      "municipio": "PETROLINA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8781484548"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:33.204Z"
+  },
+  "41384492000143": {
+    "osc": {
+      "cnpj": "41384492000143",
+      "nome": "ASSOCIACAO DE ASSISTENCIA E APOIO A MEDICINA HUMANA TRINDADE CABRAL",
+      "uf": "PE",
+      "municipio": "CARUARU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos",
+      "cnae_secundario_descricao": "Pesquisa e desenvolvimento experimental em ciências físicas e naturais | Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais | Outras atividades de ensino não especificadas anteriormente | Atividades de atendimento hospitalar, exceto pronto-socorro e unidades para atendimento a urgências | Atividade médica ambulatorial com recursos para realização de exames complementares | Atividades de atenção ambulatorial não especificadas anteriormente | Laboratórios de anatomia patológica e citológica | Laboratórios clínicos | Outras atividades de atenção à saúde humana não especificadas anteriormente | Atividades de fornecimento de infra-estrutura de apoio e assistência a paciente no domicílio | Serviços de assistência social sem alojamento | Atividades associativas não especificadas anteriormente | Atividades de estética e outros serviços de cuidados com a beleza",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8197790942"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:33.524Z"
+  },
+  "48132749000119": {
+    "osc": {
+      "cnpj": "48132749000119",
+      "nome": "ASSOCIACAO CULTURAL RAIZES DO AMANHA",
+      "uf": "PE",
+      "municipio": "PEDRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Atividades de produção de fotografias, exceto aérea e submarina | Filmagem de festas e eventos | Produção teatral | Produção musical | Produção de espetáculos de dança | Produção de espetáculos circenses, de marionetes e similares | Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente | Atividades de bibliotecas e arquivos | Outras atividades de recreação e lazer não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8738581082"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:33.652Z"
+  },
+  "47456778000173": {
+    "osc": {
+      "cnpj": "47456778000173",
+      "nome": "ASSOCIACAO DOS SULANQUEIROS E FEIRANTES DE CARUARU. ASFAC",
+      "uf": "PE",
+      "municipio": "CARUARU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8191497222"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:33.806Z"
+  },
+  "47387546000100": {
+    "osc": {
+      "cnpj": "47387546000100",
+      "nome": "ASSOCIACAO MACARAIPE ENERGIA SOLAR",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Geração de energia elétrica",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132906640"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:34.112Z"
+  },
+  "48158302000119": {
+    "osc": {
+      "cnpj": "48158302000119",
+      "nome": "CAPIBARIBE FUTSAL CLUBE",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Produção e promoção de eventos esportivos",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8192456060"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:34.491Z"
+  },
+  "49929036000143": {
+    "osc": {
+      "cnpj": "49929036000143",
+      "nome": "ASSOCIACAO DOS AGRICULTORES FAMILIARES DO PROJETO FULGENCIO",
+      "uf": "PE",
+      "municipio": "SANTA MARIA DA BOA VISTA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de apoio à agricultura não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8788734169"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:35.117Z"
+  },
+  "01203327000980": {
+    "osc": {
+      "cnpj": "01203327000980",
+      "nome": "CESAR CENTRO DE ESTUDOS E SISTEMAS AVANCADOS DO RECIFE",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Consultoria em tecnologia da informação",
+      "cnae_secundario_descricao": "Desenvolvimento de programas de computador sob encomenda | Desenvolvimento e licenciamento de programas de computador customizáveis | Desenvolvimento e licenciamento de programas de computador não-customizáveis | Pesquisa e desenvolvimento experimental em ciências físicas e naturais | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Educação superior - graduação e pós-graduação | Educação profissional de nível técnico | Educação profissional de nível tecnológico | Treinamento em informática | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente | Atividades de artistas plásticos, jornalistas independentes e escritores",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8134196700"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:35.515Z"
+  },
+  "50762127000116": {
+    "osc": {
+      "cnpj": "50762127000116",
+      "nome": "IGREJA BATISTA SALVACAO E FE",
+      "uf": "PE",
+      "municipio": "CONDADO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8136561030"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:35.841Z"
+  },
+  "07572538000381": {
+    "osc": {
+      "cnpj": "07572538000381",
+      "nome": "IGREJA EVANGELICA VERBO DA VIDA RECIFE - CASA AMARELA",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Comércio varejista de outros artigos de uso pessoal e doméstico não especificados anteriormente | Comércio varejista de livros | Comércio varejista de jornais e revistas | Comércio varejista de artigos de papelaria | Comércio varejista de artigos do vestuário e acessórios | Comércio varejista de suvenires, bijuterias e artesanatos",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8132211991"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:37.367Z"
+  },
+  "47193026000248": {
+    "osc": {
+      "cnpj": "47193026000248",
+      "nome": "ASSOCIACAO DE AMPARO A PESSOA COM O TRANSTORNO DO ESPECTRO AUTISTA",
+      "uf": "PE",
+      "municipio": "POMBOS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química e grupos similares não | Serviços de assistência social sem alojamento",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8194411898"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:37.725Z"
+  },
+  "03248845000199": {
+    "osc": {
+      "cnpj": "03248845000199",
+      "nome": "ESCOLA MINIMA MIZAEL PEREIRA DE LIRA",
+      "uf": "PE",
+      "municipio": "MACAPARANA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1999,
+      "cnae_primario_descricao": "Ensino fundamental",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-11T21:21:38.088Z"
+  },
+  "51741870000152": {
+    "osc": {
+      "cnpj": "51741870000152",
+      "nome": "CLUBE CARNAVALESCO MARACATU EBIJA-FLOR DA MATA NORTE DE PE",
+      "uf": "PE",
+      "municipio": "TRACUNHAEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8191449788"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:38.798Z"
+  },
+  "51948137000103": {
+    "osc": {
+      "cnpj": "51948137000103",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS MINISTERIO PENTECOSTAL ROSA DE SARON",
+      "uf": "PE",
+      "municipio": "PASSIRA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8135331707"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:39.113Z"
+  },
+  "52543387000126": {
+    "osc": {
+      "cnpj": "52543387000126",
+      "nome": "IGREJA EVANGELICA APOSTOLICA CRISTA VIDA - MINISTERIO VIDA CRISTA",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8183793287"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:39.520Z"
+  },
+  "52842979000149": {
+    "osc": {
+      "cnpj": "52842979000149",
+      "nome": "PAROQUIA ANGLICANA DO ESPIRITO SANTO NA LAGOA DO ARACA",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8171040587"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:39.911Z"
+  },
+  "53317592000136": {
+    "osc": {
+      "cnpj": "53317592000136",
+      "nome": "GRUPO ESPALHANDO AMOR",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Serviços de assistência social sem alojamento",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8187071250"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:40.252Z"
+  },
+  "54373772000106": {
+    "osc": {
+      "cnpj": "54373772000106",
+      "nome": "ASSOCIACAO DOS PEQUENOS PRODUTORES E AGRICULTORES DO ASSENTAMENTO DE ARRANCA",
+      "uf": "PE",
+      "municipio": "AGUA PRETA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8191617203"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:40.620Z"
+  },
+  "54377898000140": {
+    "osc": {
+      "cnpj": "54377898000140",
+      "nome": "ASSOCIACAO DOS AGRICULTORES (AS) FAMILIARES DO SITIO ENTRE MONTES MUNICIPIO DE EXU-PE",
+      "uf": "PE",
+      "municipio": "EXU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8799187193"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:41.053Z"
+  },
+  "54403958000152": {
+    "osc": {
+      "cnpj": "54403958000152",
+      "nome": "ASSOCIACAO DESPORTIVA SAO GONCALO",
+      "uf": "PE",
+      "municipio": "ARARIPINA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Outras atividades esportivas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8796334075"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:41.985Z"
+  },
+  "56035148000116": {
+    "osc": {
+      "cnpj": "56035148000116",
+      "nome": "GRUPO COMUNITARIO DE BRASILIA TEIMOSA",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8186829740"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:42.749Z"
+  },
+  "57226288000134": {
+    "osc": {
+      "cnpj": "57226288000134",
+      "nome": "SOCIEDADE ESPORTIVA PRIMEIRO DE MAIO",
+      "uf": "PE",
+      "municipio": "PETROLINA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8781484548"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:44.333Z"
+  },
+  "58149809000160": {
+    "osc": {
+      "cnpj": "58149809000160",
+      "nome": "ASSOCIACAO DOS/AS PRODUTORES/AS RURAIS E JOVENS DE QUIXABA-PE",
+      "uf": "PE",
+      "municipio": "QUIXABA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de apoio à agricultura não especificadas anteriormente | Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8398617308"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:44.795Z"
+  },
+  "49150352005262": {
+    "osc": {
+      "cnpj": "49150352005262",
+      "nome": "FUNDACAO PIO XII",
+      "uf": "PE",
+      "municipio": "GARANHUNS",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Preparação de documentos e serviços especializados de apoio administrativo não especificados anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "1733216600",
+        "ddd_telefone_2": "1733216603"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:45.516Z"
+  },
+  "57206352000115": {
+    "osc": {
+      "cnpj": "57206352000115",
+      "nome": "ASSOCIACAO DE MULHERES DONAS DE SI DO MUNICIPIO DE GRANITO-PE",
+      "uf": "PE",
+      "municipio": "GRANITO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8781651835"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:45.848Z"
+  },
+  "00096592000197": {
+    "osc": {
+      "cnpj": "00096592000197",
+      "nome": "IGREJA BATISTA MEMORIAL DO RECIFE",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1994,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-11T21:21:45.974Z"
+  },
+  "55243980000145": {
+    "osc": {
+      "cnpj": "55243980000145",
+      "nome": "MINISTERIO FAMINTOS",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Atividades de apoio à educação, exceto caixas escolares | Treinamento em desenvolvimento profissional e gerencial",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8199999999"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:46.401Z"
+  },
+  "54968382000170": {
+    "osc": {
+      "cnpj": "54968382000170",
+      "nome": "IGREJA EVANGELICA PENTECOSTAL VIDA SANTA",
+      "uf": "PE",
+      "municipio": "JABOATAO DOS GUARARAPES",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8100000001"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:47.274Z"
+  },
+  "55032549000150": {
+    "osc": {
+      "cnpj": "55032549000150",
+      "nome": "ASSOCIACAO DOS PRODUTORES RURAIS MAIS VIVER",
+      "uf": "PE",
+      "municipio": "OROCO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Cultivo de mandioca | Cultivo de outras plantas de lavoura temporária não especificadas anteriormente | Cultivo de banana | Cultivo de manga | Cultivo de frutas de lavoura permanente não especificadas anteriormente | Criação de caprinos | Criação de ovinos, inclusive para produção de lã",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8799710006"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:47.692Z"
+  },
+  "56322696001360": {
+    "osc": {
+      "cnpj": "56322696001360",
+      "nome": "ASSOCIACAO BENEFICENTE CISNE",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de apoio à gestão de saúde",
+      "cnae_secundario_descricao": "Educação infantil - creche | Educação infantil - pré-escola | Atividades de atendimento hospitalar, exceto pronto-socorro e unidades para atendimento a urgências | Atividades de atendimento em pronto-socorro e unidades hospitalares para atendimento a urgências | Atividades de assistência social prestadas em residências coletivas e particulares não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "1141697937"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:48.324Z"
+  },
+  "59082111000137": {
+    "osc": {
+      "cnpj": "59082111000137",
+      "nome": "ASSOCIACAO DAS ARTESAS DE MOREILANDIA, PERNAMBUCO",
+      "uf": "PE",
+      "municipio": "MOREILANDIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8132685979"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:48.438Z"
+  },
+  "59693186000154": {
+    "osc": {
+      "cnpj": "59693186000154",
+      "nome": "CASA DOS OITO BAIXOS - COB",
+      "uf": "PE",
+      "municipio": "CARUARU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Atividades de apoio à educação, exceto caixas escolares | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente | Atividades de associações de defesa de direitos sociais | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8154240644"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:48.846Z"
+  },
+  "59839500000164": {
+    "osc": {
+      "cnpj": "59839500000164",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS PALAVRA VIVA",
+      "uf": "PE",
+      "municipio": "CUSTODIA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8796454744"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:49.206Z"
+  },
+  "60048946000150": {
+    "osc": {
+      "cnpj": "60048946000150",
+      "nome": "ASSOCIACAO BENEFICENTE TANCREDO NEVES",
+      "uf": "PE",
+      "municipio": "OLINDA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8188304724"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:49.687Z"
+  },
+  "60049037000136": {
+    "osc": {
+      "cnpj": "60049037000136",
+      "nome": "ASSOCIACAO BRASILEIRA DE ENERGIA LIMPA - A.B.E.L",
+      "uf": "PE",
+      "municipio": "CABO DE SANTO AGOSTINHO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Aluguel de outras máquinas e equipamentos comerciais e industriais não especificados anteriormente, sem operador",
+      "cnae_secundario_descricao": "Geração de energia elétrica | Serviços combinados de escritório e apoio administrativo",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8182016145"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:50.072Z"
+  },
+  "60688254000176": {
+    "osc": {
+      "cnpj": "60688254000176",
+      "nome": "COMUNIDADE EVANGELICA ZOE",
+      "uf": "PE",
+      "municipio": "ILHA DE ITAMARACA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8187682748"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:50.391Z"
+  },
+  "60785922000183": {
+    "osc": {
+      "cnpj": "60785922000183",
+      "nome": "INSTITUTO CASA",
+      "uf": "PE",
+      "municipio": "JABOATAO DOS GUARARAPES",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8191542350"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:50.723Z"
+  },
+  "60809875000160": {
+    "osc": {
+      "cnpj": "60809875000160",
+      "nome": "ASSOCIACAO RURAL DE MORADORES DO PONTAL SUL AREA DE SEQUEIRO",
+      "uf": "PE",
+      "municipio": "PETROLINA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8781484548"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:51.055Z"
+  },
+  "61445952000103": {
+    "osc": {
+      "cnpj": "61445952000103",
+      "nome": "ASSOCIACAO GD VARZEA 1",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8132724444"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:51.368Z"
+  },
+  "61645098000129": {
+    "osc": {
+      "cnpj": "61645098000129",
+      "nome": "FIDELIBENS ASSOCIACAO DE PROTECAO PATRIMONIAL",
+      "uf": "PE",
+      "municipio": "CARUARU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8191216116"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:52.331Z"
+  },
+  "61869098000102": {
+    "osc": {
+      "cnpj": "61869098000102",
+      "nome": "KTHORROS LOCCOS MC",
+      "uf": "PE",
+      "municipio": "TORITAMA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8193530998"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:52.640Z"
+  },
+  "62350270000180": {
+    "osc": {
+      "cnpj": "62350270000180",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS PENTECOSTAL FONTE ETERNA ADPFE",
+      "uf": "PE",
+      "municipio": "PETROLINA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8799466963"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:52.969Z"
+  },
+  "56064477000195": {
+    "osc": {
+      "cnpj": "56064477000195",
+      "nome": "ADS ASSOCIACAO DESPORTIVA SOBERANAS",
+      "uf": "PE",
+      "municipio": "TRINDADE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Clubes sociais, esportivos e similares",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8738702938"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:21:53.352Z"
+  },
+  "12155388009801": {
+    "osc": {
+      "cnpj": "12155388009801",
+      "nome": "ARQUIDIOCESE DE MACEIO",
+      "uf": "AL",
+      "municipio": "RIO LARGO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8233162085"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:35:51.578Z"
+  },
+  "64471696000117": {
+    "osc": {
+      "cnpj": "64471696000117",
+      "nome": "ASSOCIACAO DOS CRIADORES DE PASSERIFORMES DE CORURIPE-ACPC",
+      "uf": "AL",
+      "municipio": "CORURIPE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8230350045",
+        "ddd_telefone_2": "82"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:35:52.547Z"
+  },
+  "64505643000170": {
+    "osc": {
+      "cnpj": "64505643000170",
+      "nome": "IGREJA NACIONAL DO NOVO NASCIMENTO",
+      "uf": "AL",
+      "municipio": "TAQUARANA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8281707261"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:35:52.878Z"
+  },
+  "64514685000177": {
+    "osc": {
+      "cnpj": "64514685000177",
+      "nome": "ASSOCIACAO DE AGRICULTORES FAMILIARES E PROTECAO DO MEIO AMBIENTE DO MUNICIPIO DE CRAIBAS-AL",
+      "uf": "AL",
+      "municipio": "CRAIBAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de apoio à agricultura não especificadas anteriormente | Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299858987"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:35:53.221Z"
+  },
+  "64486766000100": {
+    "osc": {
+      "cnpj": "64486766000100",
+      "nome": "ASSOCIACAO DE GERACAO COMPARTILHADA DE ENERGIA SOLAR UFV BARRAMAR",
+      "uf": "AL",
+      "municipio": "BARRA DE SAO MIGUEL",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Geração de energia elétrica",
+      "cnae_secundario_descricao": "Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários | Atividades de associações de defesa de direitos sociais | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8287709916"
+      }
+    },
+    "last_checked_date": "2026-11-11T21:35:53.520Z"
   }
 }
