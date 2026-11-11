@@ -73,7 +73,7 @@ export async function POST({ request }) {
     return json({
       edital_id: edital.id,
       edital_titulo: edital.titulo,
-      edital_url: edital.public_url || edital.url,
+      edital_url: edital.deep_metadata?.link_google_drive || edital.pdf_link || edital.public_url || edital.url || edital.attributes?.url || null,
       osc: osc,
       score: parsedMatch.score,
       motivo_match: parsedMatch.motivo_match,
