@@ -27,6 +27,7 @@ interface CacheEntry {
 }
 
 interface MatchResult {
+  edital_url?: string;
   edital_id: string;
   edital_titulo: string;
   osc: OSC;
@@ -125,7 +126,7 @@ async function getTopEditais() {
         if (!criterios || typeof criterios !== 'object' || Object.keys(criterios).length === 0) return false;
 
         const valor = edital.deep_metadata.financeiro?.valor_maximo_ou_global_reais || 0;
-        if (valor <= 100000) return false;
+        if (valor <= 500000) return false;
 
         const prazo = edital.deep_metadata.prazo_de_inscricao;
         if (!prazo || prazo === 'Não informado') return true; // Continuous flow
@@ -422,7 +423,7 @@ Based on the profile and the provided dossier, provide an evaluation.
 Return ONLY a valid JSON object containing:
 - "score": A number between 0 and 100 representing how well the NGO matches the grant's objective and themes.
 - "motivo_match": A brief 1-2 sentence justification for the score, citing specific evidence from their activities or the dossier.
-- "whatsapp_message": "Mensagem curta, humana e atrativa de WhatsApp (em pt-BR) escrita por 'Angela, consultora de captação de recursos' para a ONG. Elogie brevemente o trabalho da ONG usando algo do dossiê. Diga que você mapeou uma oportunidade de edital/financiamento no valor de até [INSERIR VALOR MÁXIMO DO EDITAL AQUI, se houver] voltado para [TEMA GERAL DA ONG/EDITAL]. REGRA CRÍTICA E ABSOLUTA: NUNCA, em hipótese alguma, escreva ou mencione o título, nome real ou a instituição do edital. Mantenha o nome do edital em total segredo. Termine perguntando se eles têm disponibilidade para uma breve conversa para apresentar os detalhes."
+- "whatsapp_message": "Mensagem curta, humana e atrativa de WhatsApp (em pt-BR) escrita por 'Maria Angela Bonifacio, Triade ACR' para a ONG. Elogie brevemente o trabalho da ONG usando algo do dossiê. Diga que você mapeou uma oportunidade de edital/financiamento no valor de até [INSERIR VALOR MÁXIMO DO EDITAL AQUI, se houver] voltado para [TEMA GERAL DA ONG/EDITAL]. REGRA CRÍTICA E ABSOLUTA: NUNCA, em hipótese alguma, escreva ou mencione o título, nome real ou a instituição do edital. Mantenha o nome do edital em total segredo. Termine perguntando se eles têm disponibilidade para uma breve conversa para apresentar os detalhes."
 - "contatos_encontrados": An object extracting any discovered contact info from the Dossiê text, with optional keys "whatsapp", "email", and "instagram" (urls or handles).
 
 Do not include markdown formatting. Just return the raw JSON object.`;
@@ -446,6 +447,7 @@ Do not include markdown formatting. Just return the raw JSON object.`;
           allFinalMatches.push({
               edital_id: edital.id,
               edital_titulo: edital.attributes.nome,
+              edital_url: edital.public_url,
               osc,
               score: aiResult.score || 0,
               motivo_match: aiResult.motivo_match || 'Evaluation failed.',
