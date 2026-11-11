@@ -447,7 +447,7 @@ Do not include markdown formatting. Just return the raw JSON object.`;
           allFinalMatches.push({
               edital_id: edital.id,
               edital_titulo: edital.attributes.nome,
-              edital_url: edital.public_url,
+              edital_url: edital.deep_metadata?.link_google_drive || edital.pdf_link || edital.public_url || edital.url || edital.attributes?.url || null,
               osc,
               score: aiResult.score || 0,
               motivo_match: aiResult.motivo_match || 'Evaluation failed.',
