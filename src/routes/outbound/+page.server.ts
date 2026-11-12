@@ -8,6 +8,28 @@ function normalizeText(text: string): string {
     .replace(/[\u0300-\u036f]/g, '');
 }
 
+function extractHeaderInfoFromFullText(fullText: string | undefined): { data_fim?: string; valor_total?: number } {
+  if (!fullText) return {};
+  const info: { data_fim?: string; valor_total?: number } = {};
+  const match2Digit = fullText.match(/(\d{2})\/(\d{2})\/(\d{2})\s+at[ée]\s+(\d{2})\/(\d{2})\/(\d{2})/i);
+  if (match2Digit) {
+    info.data_fim = `20${match2Digit[6]}-${match2Digit[5]}-${match2Digit[4]}`;
+  } else {
+    const match4Digit = fullText.match(/Inscri[çc][õo]es a partir de:\s*(\d{2})\/(\d{2})\/(\d{4})(?:\s+\d{2}:\d{2})?\s+(\d{2})\/(\d{2})\/(\d{4})/i);
+    if (match4Digit) {
+      info.data_fim = `${match4Digit[6]}-${match4Digit[5]}-${match4Digit[4]}`;
+    }
+  }
+  const valMatch = fullText.match(/Total Dispon[íi]vel\s+R\$\s*([\d\.]+,\d{2})/i);
+  if (valMatch) {
+    const parsedVal = parseFloat(valMatch[1].replace(/\./g, '').replace(',', '.'));
+    if (!isNaN(parsedVal) && parsedVal > 0) {
+      info.valor_total = parsedVal;
+    }
+  }
+  return info;
+}
+
 function isEditalSuitableForNgos(edital: any): boolean {
   const nomeNorm = normalizeText(edital.attributes?.nome || '');
   const resumoNorm = normalizeText(edital.deep_metadata?.resumo_objetivo || '');
@@ -54,7 +76,8 @@ export async function load() {
 
     for (const e of allEditais) {
       if (!e.deep_metadata) continue;
-      const prazo = e.deep_metadata.prazo_de_inscricao || e.attributes?.data_fim || null;
+      const headerInfo = extractHeaderInfoFromFullText(e.full_text);
+      const prazo = headerInfo.data_fim || e.deep_metadata.prazo_de_inscricao || e.attributes?.data_fim || null;
       let diasRestantes: number | null = null;
 
       if (prazo && prazo !== 'Não informado') {
@@ -63,7 +86,8 @@ export async function load() {
         diasRestantes = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
       }
 
-      const valor = e.deep_metadata.financeiro?.valor_maximo_ou_global_reais || e.attributes?.valor_total || null;
+      const rawVal = e.deep_metadata.financeiro?.valor_maximo_ou_global_reais;
+      const valor = (rawVal && rawVal >= 100 ? rawVal : null) || headerInfo.valor_total || e.attributes?.valor_total || null;
       const ufs = e.deep_metadata.criterios_eliminatorios?.estados_permitidos || [];
       const municipios = e.deep_metadata.criterios_eliminatorios?.municipios_permitidos || [];
       const nacional = !!e.deep_metadata.criterios_eliminatorios?.abrangencia_nacional;
