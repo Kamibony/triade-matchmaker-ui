@@ -101,6 +101,7 @@ export async function downloadPdf(url: string): Promise<{ success: boolean, data
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 const DATA_FILE = path.join(process.cwd(), 'src', 'data', 'editais_prosas.json');
+const ARCHIVE_FILE = path.join(process.cwd(), 'src', 'data', 'editais_historico.json');
 
 const sharedGenerationConfig = {
     responseMimeType: "application/json" as const,
@@ -585,7 +586,7 @@ export async function processEditais() {
         }
     }
 
-    // Retroactively enrich already-COMPLETED editais from Prosas header text before pruning
+    // Retroactively enrich already-COMPLETED editais from Prosas header text before archiving expired ones
     for (const e of editais) {
         if (e.deep_metadata && e.full_text) {
             if (applyAuthoritativeProsasMetadata(e, e.deep_metadata)) {
@@ -594,16 +595,47 @@ export async function processEditais() {
         }
     }
 
-    // Prune expired editais so editais_prosas.json remains clean and accurate
+    // Archive expired editais into editais_historico.json instead of deleting them
     const todayIso = new Date().toISOString().split('T')[0];
-    const beforeCount = editais.length;
-    editais = editais.filter(e => {
+    const activeEditais: any[] = [];
+    const newlyExpired: any[] = [];
+
+    for (const e of editais) {
         const prazo = e.deep_metadata?.prazo_de_inscricao || e.attributes?.data_fim;
-        if (!prazo || prazo === 'Não informado') return true;
-        return prazo >= todayIso;
-    });
-    if (editais.length !== beforeCount) {
-        console.log(`Pruned ${beforeCount - editais.length} expired editais from database.`);
+        if (prazo && prazo !== 'Não informado' && prazo < todayIso) {
+            newlyExpired.push(e);
+        } else {
+            activeEditais.push(e);
+        }
+    }
+
+    if (newlyExpired.length > 0) {
+        let historico: any[] = [];
+        try {
+            const rawHist = await fs.readFile(ARCHIVE_FILE, 'utf-8');
+            historico = JSON.parse(rawHist);
+        } catch {
+            historico = [];
+        }
+
+        const histMap = new Map<string, any>();
+        for (const h of historico) {
+            if (h && h.id) histMap.set(String(h.id), h);
+        }
+
+        for (const exp of newlyExpired) {
+            const slimmed = {
+                ...exp,
+                full_text: exp.full_text ? exp.full_text.substring(0, 600) : undefined,
+                archived_at: todayIso
+            };
+            histMap.set(String(exp.id), slimmed);
+        }
+
+        const updatedHistorico = Array.from(histMap.values());
+        await fs.writeFile(ARCHIVE_FILE, JSON.stringify(updatedHistorico, null, 2), 'utf-8');
+        console.log(`[Archive] Moved ${newlyExpired.length} expired editais to editais_historico.json (Total archived intelligence: ${updatedHistorico.length}).`);
+        editais = activeEditais;
         modified = true;
     }
 
