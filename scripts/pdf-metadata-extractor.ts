@@ -194,6 +194,7 @@ const FALLBACK_FOLDER_NAME = 'Triade_Editais_PDF';
 
 let cachedDriveClient: ReturnType<typeof google.drive> | null = null;
 let resolvedFolderId: string | null = null;
+let existingDriveFilesMap: Map<string, string> | null = null;
 
 function getDriveClient(): ReturnType<typeof google.drive> | null {
     if (cachedDriveClient) return cachedDriveClient;
@@ -272,12 +273,49 @@ async function getOrCreateTargetFolder(drive: ReturnType<typeof google.drive>): 
     }
 }
 
+async function getExistingDriveFilesMap(drive: ReturnType<typeof google.drive>, folderId: string): Promise<Map<string, string>> {
+    if (existingDriveFilesMap) return existingDriveFilesMap;
+    existingDriveFilesMap = new Map<string, string>();
+    try {
+        let pageToken: string | undefined = undefined;
+        do {
+            const res: any = await drive.files.list({
+                q: `'${folderId}' in parents and trashed = false`,
+                fields: 'nextPageToken, files(id, name, webViewLink)',
+                pageSize: 1000,
+                pageToken,
+                supportsAllDrives: true,
+                includeItemsFromAllDrives: true
+            });
+            for (const f of res.data.files || []) {
+                if (f.name && f.webViewLink && !existingDriveFilesMap.has(f.name)) {
+                    existingDriveFilesMap.set(f.name, f.webViewLink);
+                }
+            }
+            pageToken = res.data.nextPageToken || undefined;
+        } while (pageToken);
+        console.log(`[Drive Index] Indexed ${existingDriveFilesMap.size} unique PDFs in Google Drive folder.`);
+    } catch (err: any) {
+        console.warn(`[Drive Index] Could not index existing Drive files: ${err.message}`);
+    }
+    return existingDriveFilesMap;
+}
+
 async function uploadPdfToDrive(pdfData: ArrayBuffer, fileName: string): Promise<string | null> {
     try {
         const drive = getDriveClient();
         if (!drive) return null;
 
         const folderId = await getOrCreateTargetFolder(drive);
+        const filesMap = await getExistingDriveFilesMap(drive, folderId);
+
+        // Deduplicate: if this PDF already exists in the Drive folder, reuse its link instead of creating a duplicate
+        if (filesMap.has(fileName)) {
+            const existingLink = filesMap.get(fileName)!;
+            console.log(`Reusing existing Drive PDF for ${fileName}: ${existingLink}`);
+            return existingLink;
+        }
+
         const buffer = Buffer.from(pdfData);
         const stream = Readable.from(buffer);
 
@@ -293,6 +331,10 @@ async function uploadPdfToDrive(pdfData: ArrayBuffer, fileName: string): Promise
             fields: 'id, webViewLink',
             supportsAllDrives: true
         });
+
+        if (response.data.webViewLink) {
+            filesMap.set(fileName, response.data.webViewLink);
+        }
 
         console.log(`Successfully uploaded ${fileName} to Drive. Link: ${response.data.webViewLink}`);
         return response.data.webViewLink || null;
@@ -565,40 +607,63 @@ export async function processEditais() {
         modified = true;
     }
 
-    // Backfill Google Drive PDF uploads for already-COMPLETED active editais (Zero Gemini API calls, no rate-limit sleep)
+    // Re-link existing Drive PDFs and backfill missing ones for already-COMPLETED active editais (Zero Gemini API calls)
     if (process.env.GCP_DRIVE_CREDENTIALS) {
-        let driveBackfillCount = 0;
-        const maxBackfill = 35;
-        for (const e of editais) {
-            if (driveBackfillCount >= maxBackfill) break;
-            if (
-                e.pipeline_status === 'COMPLETED' &&
-                e.deep_metadata &&
-                !e.deep_metadata.drive_pdf_link &&
-                e.pdf_link &&
-                !e.pdf_link.includes('amazonaws.com') &&
-                !e.drive_backfill_attempted
-            ) {
-                let pdfUrl = e.pdf_link;
-                const driveMatch = pdfUrl.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
-                if (driveMatch) {
-                    pdfUrl = `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
-                }
-                console.log(`[Drive Backfill] Downloading & uploading missing PDF for completed edital ${e.id}...`);
-                const dl = await downloadPdf(pdfUrl);
-                e.drive_backfill_attempted = true;
-                modified = true;
-                if (dl.success && dl.data) {
-                    const driveLink = await uploadPdfToDrive(dl.data, `${e.id}_edital.pdf`);
-                    if (driveLink) {
-                        e.deep_metadata.drive_pdf_link = driveLink;
-                        driveBackfillCount++;
+        const drive = getDriveClient();
+        if (drive) {
+            const folderId = await getOrCreateTargetFolder(drive);
+            const filesMap = await getExistingDriveFilesMap(drive, folderId);
+
+            // Step A: Instant re-link for editais whose PDF is already in the Drive folder
+            let relinkedCount = 0;
+            for (const e of editais) {
+                if (e.deep_metadata && !e.deep_metadata.drive_pdf_link) {
+                    const expectedName = `${e.id}_edital.pdf`;
+                    if (filesMap.has(expectedName)) {
+                        e.deep_metadata.drive_pdf_link = filesMap.get(expectedName);
+                        relinkedCount++;
+                        modified = true;
                     }
                 }
             }
-        }
-        if (driveBackfillCount > 0) {
-            console.log(`[Drive Backfill] Uploaded ${driveBackfillCount} missing PDFs to Google Drive without calling Gemini.`);
+            if (relinkedCount > 0) {
+                console.log(`[Drive Index] Instantly re-linked ${relinkedCount} existing PDFs from Google Drive to editais_prosas.json.`);
+            }
+
+            // Step B: Download & upload genuinely missing PDFs (up to 35 per run)
+            let driveBackfillCount = 0;
+            const maxBackfill = 35;
+            for (const e of editais) {
+                if (driveBackfillCount >= maxBackfill) break;
+                if (
+                    e.pipeline_status === 'COMPLETED' &&
+                    e.deep_metadata &&
+                    !e.deep_metadata.drive_pdf_link &&
+                    e.pdf_link &&
+                    !e.pdf_link.includes('amazonaws.com') &&
+                    !e.drive_backfill_attempted
+                ) {
+                    let pdfUrl = e.pdf_link;
+                    const driveMatch = pdfUrl.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+                    if (driveMatch) {
+                        pdfUrl = `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
+                    }
+                    console.log(`[Drive Backfill] Downloading & uploading missing PDF for completed edital ${e.id}...`);
+                    const dl = await downloadPdf(pdfUrl);
+                    e.drive_backfill_attempted = true;
+                    modified = true;
+                    if (dl.success && dl.data) {
+                        const driveLink = await uploadPdfToDrive(dl.data, `${e.id}_edital.pdf`);
+                        if (driveLink) {
+                            e.deep_metadata.drive_pdf_link = driveLink;
+                            driveBackfillCount++;
+                        }
+                    }
+                }
+            }
+            if (driveBackfillCount > 0) {
+                console.log(`[Drive Backfill] Uploaded ${driveBackfillCount} missing PDFs to Google Drive without calling Gemini.`);
+            }
         }
     }
 
