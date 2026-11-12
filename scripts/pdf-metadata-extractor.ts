@@ -315,24 +315,38 @@ async function extractMetadataFromText(textContent: string): Promise<any> {
     return JSON.parse(text);
 }
 
-function applyAuthoritativeProsasMetadata(edital: any, metadata: any) {
+function applyAuthoritativeProsasMetadata(edital: any, metadata: any): boolean {
+    let changed = false;
     const headerInfo = extractProsasHeaderInfo(edital.full_text);
     if (headerInfo.data_fim) {
-        // Prosas platform header always reflects deadline extensions (Prorrogações) accurately
-        metadata.prazo_de_inscricao = headerInfo.data_fim;
+        if (metadata.prazo_de_inscricao !== headerInfo.data_fim) {
+            metadata.prazo_de_inscricao = headerInfo.data_fim;
+            changed = true;
+        }
         edital.attributes = edital.attributes || {};
-        edital.attributes.data_inicio = headerInfo.data_inicio;
-        edital.attributes.data_fim = headerInfo.data_fim;
+        if (edital.attributes.data_inicio !== headerInfo.data_inicio || edital.attributes.data_fim !== headerInfo.data_fim) {
+            edital.attributes.data_inicio = headerInfo.data_inicio;
+            edital.attributes.data_fim = headerInfo.data_fim;
+            changed = true;
+        }
     }
     if (headerInfo.valor_total) {
         edital.attributes = edital.attributes || {};
-        edital.attributes.valor_total = headerInfo.valor_total;
+        if (edital.attributes.valor_total !== headerInfo.valor_total) {
+            edital.attributes.valor_total = headerInfo.valor_total;
+            changed = true;
+        }
         metadata.financeiro = metadata.financeiro || {};
-        metadata.financeiro.valor_total_edital = headerInfo.valor_total;
+        if (metadata.financeiro.valor_total_edital !== headerInfo.valor_total) {
+            metadata.financeiro.valor_total_edital = headerInfo.valor_total;
+            changed = true;
+        }
         if (!metadata.financeiro.valor_maximo_ou_global_reais || metadata.financeiro.valor_maximo_ou_global_reais < 100) {
             metadata.financeiro.valor_maximo_ou_global_reais = headerInfo.valor_total;
+            changed = true;
         }
     }
+    return changed;
 }
 
 export async function processEditais() {
@@ -526,6 +540,15 @@ export async function processEditais() {
         if (processedCount % 10 === 0 && processedCount > 0 && processedCount < maxExtract) {
             console.log(`Processed ${processedCount} items. Sleeping for 65 seconds to avoid rate limits...`);
             await sleep(65000);
+        }
+    }
+
+    // Retroactively enrich already-COMPLETED editais from Prosas header text before pruning
+    for (const e of editais) {
+        if (e.deep_metadata && e.full_text) {
+            if (applyAuthoritativeProsasMetadata(e, e.deep_metadata)) {
+                modified = true;
+            }
         }
     }
 

@@ -3,13 +3,35 @@ import { calculateMatches } from '../../../lib/matcher';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import editaisData from '../../../data/editais_prosas.json';
 
+function extractHeaderInfoFromFullText(fullText: string | undefined): { data_fim?: string; valor_total?: number } {
+  if (!fullText) return {};
+  const info: { data_fim?: string; valor_total?: number } = {};
+  const match2Digit = fullText.match(/(\d{2})\/(\d{2})\/(\d{2})\s+at[ée]\s+(\d{2})\/(\d{2})\/(\d{2})/i);
+  if (match2Digit) {
+    info.data_fim = `20${match2Digit[6]}-${match2Digit[5]}-${match2Digit[4]}`;
+  } else {
+    const match4Digit = fullText.match(/Inscri[çc][õo]es a partir de:\s*(\d{2})\/(\d{2})\/(\d{4})(?:\s+\d{2}:\d{2})?\s+(\d{2})\/(\d{2})\/(\d{4})/i);
+    if (match4Digit) {
+      info.data_fim = `${match4Digit[6]}-${match4Digit[5]}-${match4Digit[4]}`;
+    }
+  }
+  const valMatch = fullText.match(/Total Dispon[íi]vel\s+R\$\s*([\d\.]+,\d{2})/i);
+  if (valMatch) {
+    const parsedVal = parseFloat(valMatch[1].replace(/\./g, '').replace(',', '.'));
+    if (!isNaN(parsedVal) && parsedVal > 0) {
+      info.valor_total = parsedVal;
+    }
+  }
+  return info;
+}
+
 const PORTUGUESE_STOPWORDS = new Set([
   'associacao', 'associacoes', 'direitos', 'sociais', 'social', 'atividades',
   'organizacoes', 'organizacao', 'defesa', 'desenvolvimento', 'projeto', 'projetos',
   'apoio', 'brasil', 'nacional', 'estadual', 'municipal', 'publico', 'publica',
   'selecao', 'chamamento', 'edital', 'fomento', 'recursos', 'execucao', 'acoes',
   'atraves', 'meio', 'forma', 'valor', 'instituicoes', 'entidades', 'civil',
-  'sociedade', 'servicos', 'outros', 'outras', 'especificados', 'anteriormente',
+  'sociedade', 'servicos', 'outros', 'outtras', 'especificados', 'anteriormente',
   'ligadas', 'privada', 'fundacao', 'instituto', 'comunitario', 'comunitaria'
 ]);
 
@@ -72,8 +94,10 @@ export async function POST({ request }: any) {
 
     if (!isEditalSuitableForNgos(edital)) continue;
 
-    const prazo = (edital as any).deep_metadata.prazo_de_inscricao;
-    const valor_maximo = (edital as any).deep_metadata.financeiro?.valor_maximo_ou_global_reais;
+    const headerInfo = extractHeaderInfoFromFullText((edital as any).full_text);
+    const prazo = headerInfo.data_fim || (edital as any).deep_metadata.prazo_de_inscricao || (edital as any).attributes?.data_fim;
+    const rawValor = (edital as any).deep_metadata.financeiro?.valor_maximo_ou_global_reais;
+    const valor_maximo = (rawValor && rawValor >= 100 ? rawValor : null) ?? headerInfo.valor_total ?? (edital as any).attributes?.valor_total;
 
     if (valor_maximo === undefined || valor_maximo === null) {
       continue;
@@ -88,7 +112,11 @@ export async function POST({ request }: any) {
     const matchResult = calculateMatches((edital as any).deep_metadata, [oscProfile]);
 
     if (matchResult.length > 0 && matchResult[0].eligibility.isEligible) {
-      eligibleEditais.push(edital);
+      eligibleEditais.push({
+        ...edital,
+        _resolved_prazo: prazo,
+        _resolved_valor: valor_maximo
+      });
     }
   }
 
@@ -124,8 +152,8 @@ export async function POST({ request }: any) {
 
   preRankedEditais.sort((a, b) => {
     if (b.localScore !== a.localScore) return b.localScore - a.localScore;
-    const valA = a.edital.deep_metadata?.financeiro?.valor_maximo_ou_global_reais || 0;
-    const valB = b.edital.deep_metadata?.financeiro?.valor_maximo_ou_global_reais || 0;
+    const valA = a.edital._resolved_valor || a.edital.deep_metadata?.financeiro?.valor_maximo_ou_global_reais || 0;
+    const valB = b.edital._resolved_valor || b.edital.deep_metadata?.financeiro?.valor_maximo_ou_global_reais || 0;
     return valB - valA;
   });
 
@@ -142,8 +170,8 @@ export async function POST({ request }: any) {
         deep_metadata: {
           drive_link: (topCandidateEditais[0] as any)?.deep_metadata?.drive_pdf_link
         },
-        valor_maximo_reais: (topCandidateEditais[0] as any)?.deep_metadata?.financeiro?.valor_maximo_ou_global_reais || 100000,
-        prazo_de_inscricao: (topCandidateEditais[0] as any)?.deep_metadata?.prazo_de_inscricao || '2026-12-31'
+        valor_maximo_reais: (topCandidateEditais[0] as any)?._resolved_valor || 100000,
+        prazo_de_inscricao: (topCandidateEditais[0] as any)?._resolved_prazo || '2026-12-31'
       }
     ]);
   }
@@ -157,8 +185,8 @@ export async function POST({ request }: any) {
     deep_metadata: {
       drive_link: e.deep_metadata?.drive_pdf_link
     },
-    valor_maximo_reais: e.deep_metadata?.financeiro?.valor_maximo_ou_global_reais,
-    prazo_de_inscricao: e.deep_metadata?.prazo_de_inscricao
+    valor_maximo_reais: e._resolved_valor ?? e.deep_metadata?.financeiro?.valor_maximo_ou_global_reais,
+    prazo_de_inscricao: e._resolved_prazo ?? e.deep_metadata?.prazo_de_inscricao
   }));
 
   const CHUNK_SIZE = 15;
