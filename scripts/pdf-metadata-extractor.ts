@@ -565,6 +565,43 @@ export async function processEditais() {
         modified = true;
     }
 
+    // Backfill Google Drive PDF uploads for already-COMPLETED active editais (Zero Gemini API calls, no rate-limit sleep)
+    if (process.env.GCP_DRIVE_CREDENTIALS) {
+        let driveBackfillCount = 0;
+        const maxBackfill = 35;
+        for (const e of editais) {
+            if (driveBackfillCount >= maxBackfill) break;
+            if (
+                e.pipeline_status === 'COMPLETED' &&
+                e.deep_metadata &&
+                !e.deep_metadata.drive_pdf_link &&
+                e.pdf_link &&
+                !e.pdf_link.includes('amazonaws.com') &&
+                !e.drive_backfill_attempted
+            ) {
+                let pdfUrl = e.pdf_link;
+                const driveMatch = pdfUrl.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+                if (driveMatch) {
+                    pdfUrl = `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
+                }
+                console.log(`[Drive Backfill] Downloading & uploading missing PDF for completed edital ${e.id}...`);
+                const dl = await downloadPdf(pdfUrl);
+                e.drive_backfill_attempted = true;
+                modified = true;
+                if (dl.success && dl.data) {
+                    const driveLink = await uploadPdfToDrive(dl.data, `${e.id}_edital.pdf`);
+                    if (driveLink) {
+                        e.deep_metadata.drive_pdf_link = driveLink;
+                        driveBackfillCount++;
+                    }
+                }
+            }
+        }
+        if (driveBackfillCount > 0) {
+            console.log(`[Drive Backfill] Uploaded ${driveBackfillCount} missing PDFs to Google Drive without calling Gemini.`);
+        }
+    }
+
     if (modified) {
          await fs.writeFile(DATA_FILE, JSON.stringify(editais, null, 2), 'utf-8');
          modified = false;
