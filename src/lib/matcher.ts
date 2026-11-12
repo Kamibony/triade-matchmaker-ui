@@ -1,3 +1,10 @@
+function normalizeText(text: string): string {
+  return (text || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+}
+
 export function calculateMatches(editalDeepMetadata: any, ngosArray: any[]) {
   const { criterios_eliminatorios } = editalDeepMetadata;
   const {
@@ -12,18 +19,18 @@ export function calculateMatches(editalDeepMetadata: any, ngosArray: any[]) {
     let isEligible = true;
     let failedReason = '';
 
-    // Rule 1 (National Coverage) & Rule 2 (String Matching)
-    // If abrangencia_nacional is true, skip geography checks.
+    // Rule 1 (National Coverage) & Rule 2 (Geography Matching)
     if (!abrangencia_nacional) {
       if (estados_permitidos && estados_permitidos.length > 0) {
         if (!ngo.uf) {
           isEligible = false;
           failedReason = 'Não atende restrição estadual (UF não informada)';
         } else {
-          const hasStateMatch = estados_permitidos.some((e: string) =>
-            e.toLowerCase().includes(ngo.uf.toLowerCase()) ||
-            ngo.uf.toLowerCase().includes(e.toLowerCase())
-          );
+          const ngoUf = normalizeText(ngo.uf);
+          const hasStateMatch = estados_permitidos.some((e: string) => {
+            const stateNorm = normalizeText(e);
+            return stateNorm === ngoUf || stateNorm.includes(ngoUf) || ngoUf.includes(stateNorm);
+          });
           if (!hasStateMatch) {
             isEligible = false;
             failedReason = 'Não atende restrição estadual';
@@ -36,10 +43,11 @@ export function calculateMatches(editalDeepMetadata: any, ngosArray: any[]) {
           isEligible = false;
           failedReason = 'Não atende restrição municipal (Município não informado)';
         } else {
-          const hasCityMatch = municipios_permitidos.some((m: string) =>
-            m.toLowerCase().includes(ngo.municipio.toLowerCase()) ||
-            ngo.municipio.toLowerCase().includes(m.toLowerCase())
-          );
+          const ngoMuni = normalizeText(ngo.municipio);
+          const hasCityMatch = municipios_permitidos.some((m: string) => {
+            const cityPart = normalizeText(m.split('-')[0].trim());
+            return cityPart === ngoMuni || cityPart.includes(ngoMuni) || ngoMuni.includes(cityPart);
+          });
           if (!hasCityMatch) {
             isEligible = false;
             failedReason = 'Não atende restrição municipal';
@@ -48,7 +56,7 @@ export function calculateMatches(editalDeepMetadata: any, ngosArray: any[]) {
       }
     }
 
-    // Rule 3 (Missing K.O. Rules)
+    // Rule 3 (Minimum CNPJ Age)
     if (isEligible && idade_minima_cnpj_anos !== null && idade_minima_cnpj_anos !== undefined) {
       if (ngo.idade_anos !== undefined && ngo.idade_anos < idade_minima_cnpj_anos) {
         isEligible = false;
@@ -56,20 +64,39 @@ export function calculateMatches(editalDeepMetadata: any, ngosArray: any[]) {
       }
     }
 
-    if (isEligible && natureza_juridica_excluida && natureza_juridica_excluida.length > 0) {
-      if (ngo.natureza_juridica) {
-        const isExcluded = natureza_juridica_excluida.some((excluded: string) =>
-          excluded.toLowerCase().includes(ngo.natureza_juridica.toLowerCase()) ||
-          ngo.natureza_juridica.toLowerCase().includes(excluded.toLowerCase())
-        );
-        if (isExcluded) {
-          isEligible = false;
-          failedReason = 'Natureza jurídica excluída pelo edital';
+    // Rule 4 (Legal Nature Exclusions - properly handling Portuguese 'sem fins lucrativos' vs 'fins lucrativos')
+    if (isEligible && Array.isArray(natureza_juridica_excluida) && natureza_juridica_excluida.length > 0) {
+      const ngoNatNorm = normalizeText(ngo.natureza_juridica || 'associacao privada');
+      const isNgo = ngoNatNorm.includes('associacao') || ngoNatNorm.includes('fundacao') || ngoNatNorm.includes('organizacao');
+
+      const isExcluded = natureza_juridica_excluida.some((excluded: string) => {
+        const exclNorm = normalizeText(excluded);
+
+        // If the grant explicitly excludes non-profits or legal entities (e.g. individual-only grants)
+        if (isNgo) {
+          if (
+            exclNorm.includes('sem fins lucrativos') ||
+            exclNorm.includes('exclusivo para pessoa fisica') ||
+            exclNorm.includes('pessoa juridica nao prevista') ||
+            exclNorm === 'pessoa juridica'
+          ) {
+            return true;
+          }
         }
+
+        // Ignore generic 'fins lucrativos' exclusions for non-profit NGOs
+        if (exclNorm.includes('fins lucrativos') && !exclNorm.includes('sem fins lucrativos')) {
+          return false;
+        }
+
+        return exclNorm.includes(ngoNatNorm) || ngoNatNorm.includes(exclNorm);
+      });
+
+      if (isExcluded) {
+        isEligible = false;
+        failedReason = 'Natureza jurídica excluída pelo edital';
       }
     }
-
-    // Rule 4 (Remove Themes): Thematic matching removed from Phase 1.
 
     return {
       ...ngo,
