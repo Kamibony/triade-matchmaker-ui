@@ -63,7 +63,7 @@ const modelWithoutSearch = genAI.getGenerativeModel({
   }
 });
 
-// Model WITH Google Search Grounding (used strictly for uncached Top Finalists)
+// Model WITH Google Search Grounding (disabled by default to protect billing; opt-in via MAX_SEARCH_CALLS)
 const modelWithSearch = genAI.getGenerativeModel({
   model: 'gemini-3.5-flash-lite',
   generationConfig: { temperature: 0 },
@@ -401,7 +401,8 @@ async function runPipeline() {
   const cache = await loadCache();
   const newMatches: MatchResult[] = [];
   let totalSearchCalls = 0;
-  const MAX_SEARCH_CALLS_PER_RUN = 25; // Hard circuit breaker to guarantee low billing
+  // Default to 0 paid Google Search calls ($0.00 search grounding cost) unless explicitly opted-in via MAX_SEARCH_CALLS
+  const MAX_SEARCH_CALLS_PER_RUN = parseInt(process.env.MAX_SEARCH_CALLS || '0', 10);
 
   for (const edital of topEditais) {
     console.log(`\n================================`);
@@ -581,7 +582,7 @@ async function runPipeline() {
     const topFinalists = await batchAiPreScreen(edital, top20Heuristic);
     console.log(`Batch AI selected ${topFinalists.length} high-probability finalists for Edital ${edital.id}.`);
 
-    // --- Stage 2: Dossier (Cached or Single-Query Search) + Final Evaluation ---
+    // --- Stage 2: Dossier + Final Evaluation ---
     for (let i = 0; i < topFinalists.length; i++) {
       const osc = topFinalists[i];
       console.log(`[${i + 1}/${topFinalists.length}] Evaluating Finalist: ${osc.nome} (${osc.municipio}/${osc.uf})`);
@@ -613,18 +614,16 @@ Resuma de forma enxuta e factual em Markdown:
           cacheEntry.dossie_updated_at = new Date().toISOString();
         } catch (e: any) {
           console.error(`  -> Dossier generation failed: ${e.message}`);
-          dossieText = `Organização ativa registrada em ${osc.municipio}/${osc.uf} sob CNAE: ${osc.cnae_primario_descricao}.`;
+          dossieText = '';
         }
         await sleep(2500);
-      } else {
-        dossieText = `Organização ativa registrada em ${osc.municipio}/${osc.uf}. Atividade principal: ${osc.cnae_primario_descricao}.`;
       }
 
       const valorEdital = edital.deep_metadata?.financeiro?.valor_maximo_ou_global_reais
         ? `R$ ${Number(edital.deep_metadata.financeiro.valor_maximo_ou_global_reais).toLocaleString('pt-BR')}`
         : 'valor atrativo';
 
-      const matchPrompt = `You are a senior grant consultant. Evaluate this NGO against the grant below.
+      const matchPrompt = `You are a senior grant consultant in Brazil. Evaluate this NGO against the grant below.
 
 **Grant (Edital):**
 Title: ${edital.attributes.nome}
@@ -641,15 +640,14 @@ Primary Activity (CNAE): ${osc.cnae_primario_descricao}
 Secondary Activity (CNAE): ${osc.cnae_secundario_descricao}
 Official Phone: ${osc.official_contacts?.ddd_telefone_1 || 'N/A'}
 Official Email: ${osc.official_contacts?.email || 'N/A'}
-
-**NGO Web Dossier:**
-${dossieText}
+${dossieText ? `\n**Existing Dossier:**\n${dossieText}` : ''}
 
 Return ONLY a valid JSON object containing:
 - "score": A number between 0 and 100 representing how well the NGO matches the grant's objective and themes.
-- "motivo_match": A brief 1-2 sentence justification in pt-BR citing specific evidence from their activities or dossier.
+- "motivo_match": A brief 1-2 sentence justification in pt-BR citing specific evidence from their name, location, and activities.
+- "dossie_resumo": A structured Markdown summary in pt-BR with two sections ("### 🏛️ Perfil Institucional" and "### 🎯 Alinhamento com o Edital") summarizing the NGO's profile, maturity (founded in ${osc.ano_fundacao}), official activities, and why it fits this grant.
 - "whatsapp_message": "Mensagem curta, humana e atrativa de WhatsApp (em pt-BR) escrita por 'Maria Angela Bonifacio, Triade ACR' para a ONG. Elogie brevemente o trabalho da ONG. Diga que você mapeou uma oportunidade de edital/financiamento no valor de até ${valorEdital} voltado para a área de atuação deles. REGRA CRÍTICA E ABSOLUTA: NUNCA mencione o título, nome real ou a instituição do edital. Termine perguntando se eles têm disponibilidade para uma breve conversa."
-- "contatos_encontrados": An object with optional keys "whatsapp", "email", and "instagram" extracted from the dossier.`;
+- "contatos_encontrados": An object with optional keys "whatsapp", "email", and "instagram".`;
 
       let aiResult: any = { score: 0, motivo_match: 'Failed', whatsapp_message: '', contatos_encontrados: {} };
       if (GEMINI_API_KEY && GEMINI_API_KEY !== 'dummy') {
@@ -663,6 +661,14 @@ Return ONLY a valid JSON object containing:
         }
       } else {
         aiResult = { score: 75, motivo_match: 'Mock reasoning.', whatsapp_message: 'Mock message.' };
+      }
+
+      if (!dossieText && aiResult.dossie_resumo) {
+        dossieText = aiResult.dossie_resumo;
+        cacheEntry.dossieText = dossieText;
+        cacheEntry.dossie_updated_at = new Date().toISOString();
+      } else if (!dossieText) {
+        dossieText = `Organização ativa registrada em ${osc.municipio}/${osc.uf} (fundada em ${osc.ano_fundacao}). Atividade principal: ${osc.cnae_primario_descricao}.`;
       }
 
       const finalScore = Number(aiResult.score) || 0;
