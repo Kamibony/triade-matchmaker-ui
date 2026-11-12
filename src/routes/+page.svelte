@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import { marked } from 'marked';
 
   let cnpj = $state('');
@@ -19,6 +20,18 @@
   let naturezaJuridicaState = $state('');
   let idadeAnosState = $state(0);
   let cnaeDataState = $state('');
+
+  onMount(async () => {
+    const params = new URLSearchParams(window.location.search);
+    const queryCnpj = params.get('cnpj');
+    if (queryCnpj) {
+      cnpj = queryCnpj;
+      await handleSearch(new Event('submit'));
+      if (oscDetails) {
+        await handleFetchMatches();
+      }
+    }
+  });
 
   async function handleFetchMatches() {
     loading = true;
@@ -140,7 +153,7 @@
   }
 
   async function handleSearch(event: Event) {
-    event.preventDefault();
+    if (event?.preventDefault) event.preventDefault();
     loading = true;
     errorMsg = null;
     oscDetails = null;
@@ -189,7 +202,7 @@
               cnaeDesc += cnpjData.cnae_fiscal_descricao;
             }
             if (cnpjData.cnaes_secundarios && Array.isArray(cnpjData.cnaes_secundarios)) {
-              for (const cnae of cnae.descricao ? cnpjData.cnaes_secundarios : cnpjData.cnaes_secundarios) {
+              for (const cnae of cnpjData.cnaes_secundarios) {
                 if (cnae.descricao) cnaeDesc += `, ${cnae.descricao}`;
               }
             }
@@ -478,7 +491,6 @@
                     </div>
 
                     <div class="space-y-6">
-                      <!-- Executive Summary -->
                       {#if deepDiveReports[match.edital_id].executive_summary}
                         <div class="bg-gray-50 rounded-lg p-5 border-l-4 border-gray-400 shadow-sm mb-6">
                           <h5 class="text-sm font-bold text-gray-700 uppercase tracking-wider mb-2">Resumo Executivo</h5>
@@ -488,7 +500,6 @@
                         </div>
                       {/if}
 
-                      <!-- Missing Documents -->
                       <div>
                         <h5 class="text-sm font-semibold text-gray-800 flex items-center mb-2">
                           <span class="text-xl mr-2">📄</span> Documentos Faltantes/Requeridos
@@ -500,7 +511,6 @@
                         </ul>
                       </div>
 
-                      <!-- Statute Requirements -->
                       <div>
                         <h5 class="text-sm font-semibold text-gray-800 flex items-center mb-2">
                           <span class="text-xl mr-2">⚖️</span> Requisitos Estatutários
@@ -512,7 +522,6 @@
                         </ul>
                       </div>
 
-                      <!-- Project Ideas -->
                       <div>
                         <h5 class="text-sm font-semibold text-gray-800 flex items-center mb-3">
                           <span class="text-xl mr-2">💡</span> Ideias de Projetos Customizadas
