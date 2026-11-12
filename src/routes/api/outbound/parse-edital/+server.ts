@@ -56,66 +56,69 @@ export async function POST({ request }) {
     }
     const genAI = new GoogleGenerativeAI(apiKey);
 
-    // 1. Download PDF
+    // Automatically convert Google Drive view links into direct download links
+    let resolvedUrl = pdfUrl;
+    const driveMatch = (pdfUrl || '').match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+    if (driveMatch && driveMatch[1]) {
+      resolvedUrl = `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
+    }
+
     let pdfData;
     try {
-        const response = await fetch(pdfUrl, {
-             headers: {
-                 'User-Agent': 'TriadeMatchmaker/1.0'
-             }
-        });
-        if (!response.ok) {
-            throw new Error(`Falha ao baixar o PDF. HTTP ${response.status}`);
+      const response = await fetch(resolvedUrl, {
+        headers: {
+          'User-Agent': 'TriadeMatchmaker/1.0'
         }
+      });
+      if (!response.ok) {
+        throw new Error(`Falha ao baixar o PDF. HTTP ${response.status}`);
+      }
 
-        const arrayBuffer = await response.arrayBuffer();
-        const bytes = new Uint8Array(arrayBuffer, 0, 4);
-        if (bytes[0] !== 0x25 || bytes[1] !== 0x50 || bytes[2] !== 0x44 || bytes[3] !== 0x46) {
-           throw new Error('A URL não retornou um arquivo PDF válido');
-        }
-        pdfData = Buffer.from(arrayBuffer);
+      const arrayBuffer = await response.arrayBuffer();
+      const bytes = new Uint8Array(arrayBuffer, 0, 4);
+      if (bytes[0] !== 0x25 || bytes[1] !== 0x50 || bytes[2] !== 0x44 || bytes[3] !== 0x46) {
+        throw new Error('A URL não retornou um arquivo PDF válido');
+      }
+      pdfData = Buffer.from(arrayBuffer);
     } catch (e: any) {
-        throw new Error(`Falha no download do PDF: ${e.message}`);
+      throw new Error(`Falha no download do PDF: ${e.message}`);
     }
 
-    // 2. Parse PDF to text
-    let extractedText = "";
+    let extractedText = '';
     try {
-        const parsedPdf = await pdfParse(pdfData);
-        extractedText = parsedPdf.text;
+      const parsedPdf = await pdfParse(pdfData);
+      extractedText = parsedPdf.text;
     } catch (err: any) {
-        console.warn("pdf-parse failed to extract text: " + err.message);
-        throw new Error(`Falha ao extrair texto do PDF: ${err.message}`);
+      console.warn('pdf-parse failed to extract text: ' + err.message);
+      throw new Error(`Falha ao extrair texto do PDF: ${err.message}`);
     }
 
-    // 3. Extract Metadata via Gemini
     const model = genAI.getGenerativeModel({
-        model: "gemini-3.5-flash-lite",
-        generationConfig: { ...sharedGenerationConfig, temperature: 0 }
+      model: 'gemini-3.5-flash-lite',
+      generationConfig: { ...sharedGenerationConfig, temperature: 0 }
     });
 
-    const prompt = "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n" + extractedText.substring(0, 100000); // Send reasonable chunk to prevent token limits
+    const prompt = 'Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n' + extractedText.substring(0, 100000);
 
     const result = await model.generateContent(prompt);
 
     let parsedMetadata;
     try {
-        parsedMetadata = JSON.parse(result.response.text());
-    } catch (e) {
-        throw new Error('Falha ao analisar a resposta JSON do Gemini para o edital.');
+      parsedMetadata = JSON.parse(result.response.text());
+    } catch {
+      throw new Error('Falha ao analisar a resposta JSON do Gemini para o edital.');
     }
 
-    // 4. Construct synthetic Edital object based on our known structure
     const syntheticEdital = {
-        id: `byoe_${Date.now()}`,
-        titulo: `Edital Importado - ${parsedMetadata.temas_principais[0] || 'Novo'}`,
-        external_link: pdfUrl,
-        pdf_link: pdfUrl,
-        resumo_objetivo: parsedMetadata.resumo_objetivo,
-        temas_principais: parsedMetadata.temas_principais,
-        prazo_de_inscricao: parsedMetadata.prazo_de_inscricao,
-        valor_maximo_ou_global_reais: parsedMetadata.financeiro?.valor_maximo_ou_global_reais || null,
-        deep_metadata: parsedMetadata // keep everything here for compatibility
+      id: `byoe_${Date.now()}`,
+      titulo: `Edital Importado - ${parsedMetadata.temas_principais?.[0] || 'Novo'}`,
+      external_link: pdfUrl,
+      pdf_link: pdfUrl,
+      resumo_objetivo: parsedMetadata.resumo_objetivo,
+      temas_principais: parsedMetadata.temas_principais,
+      prazo_de_inscricao: parsedMetadata.prazo_de_inscricao,
+      valor_maximo_ou_global_reais: parsedMetadata.financeiro?.valor_maximo_ou_global_reais || null,
+      deep_metadata: parsedMetadata
     };
 
     return json(syntheticEdital);

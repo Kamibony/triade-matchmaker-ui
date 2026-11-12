@@ -5,7 +5,6 @@ import { google } from 'googleapis';
 import { Readable } from 'node:stream';
 import pdfParse from 'pdf-parse/lib/pdf-parse.js';
 
-// Load environment variables if available or assume it's passed directly to the script
 const apiKey = process.env.GEMINI_API_KEY || '';
 if (!apiKey) {
     console.warn('GEMINI_API_KEY is not set. Execution will fail if API is called.');
@@ -13,10 +12,43 @@ if (!apiKey) {
 
 const genAI = new GoogleGenerativeAI(apiKey);
 
+export function extractProsasHeaderInfo(fullText: string | undefined): {
+    data_inicio?: string;
+    data_fim?: string;
+    valor_total?: number;
+} {
+    if (!fullText) return {};
+    const info: { data_inicio?: string; data_fim?: string; valor_total?: number } = {};
+
+    // Pattern 1: produtos.prosas.com.br ("21/09/26 até 29/10/26")
+    const match2Digit = fullText.match(/(\d{2})\/(\d{2})\/(\d{2})\s+at[ée]\s+(\d{2})\/(\d{2})\/(\d{2})/i);
+    if (match2Digit) {
+        info.data_inicio = `20${match2Digit[3]}-${match2Digit[2]}-${match2Digit[1]}`;
+        info.data_fim = `20${match2Digit[6]}-${match2Digit[5]}-${match2Digit[4]}`;
+    } else {
+        // Pattern 2: prosas.com.br ("Inscrições a partir de: 23/02/2026 12:00 01/12/2026 22:00")
+        const match4Digit = fullText.match(/Inscri[çc][õo]es a partir de:\s*(\d{2})\/(\d{2})\/(\d{4})(?:\s+\d{2}:\d{2})?\s+(\d{2})\/(\d{2})\/(\d{4})/i);
+        if (match4Digit) {
+            info.data_inicio = `${match4Digit[3]}-${match4Digit[2]}-${match4Digit[1]}`;
+            info.data_fim = `${match4Digit[6]}-${match4Digit[5]}-${match4Digit[4]}`;
+        }
+    }
+
+    const valMatch = fullText.match(/Total Dispon[íi]vel\s+R\$\s*([\d\.]+,\d{2})/i);
+    if (valMatch) {
+        const parsedVal = parseFloat(valMatch[1].replace(/\./g, '').replace(',', '.'));
+        if (!isNaN(parsedVal) && parsedVal > 0) {
+            info.valor_total = parsedVal;
+        }
+    }
+
+    return info;
+}
+
 export async function downloadPdf(url: string): Promise<{ success: boolean, data?: ArrayBuffer, error?: string, skip?: boolean, notPdf?: boolean, expiredPresigned?: boolean, fallbackToText?: boolean }> {
     try {
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 15000); // 15s timeout
+        const timeoutId = setTimeout(() => controller.abort(), 15000);
 
         const response = await fetch(url, { signal: controller.signal });
         clearTimeout(timeoutId);
@@ -44,7 +76,6 @@ export async function downloadPdf(url: string): Promise<{ success: boolean, data
 
         const data = await response.arrayBuffer();
 
-        // Check magic bytes
         if (data.byteLength >= 4) {
             const bytes = new Uint8Array(data, 0, 4);
             if (bytes[0] !== 0x25 || bytes[1] !== 0x50 || bytes[2] !== 0x44 || bytes[3] !== 0x46) {
@@ -54,7 +85,6 @@ export async function downloadPdf(url: string): Promise<{ success: boolean, data
             return { success: false, notPdf: true, error: 'URL did not return a valid PDF binary' };
         }
 
-        // Double check size after download just in case content-length was missing/wrong
         if (data.byteLength > 15 * 1024 * 1024) {
             return { success: false, skip: true, error: 'File too large (> 15MB) upon download' };
         }
@@ -80,7 +110,7 @@ const sharedGenerationConfig = {
             edital_id: { type: "string" as const },
             resumo_objetivo: { type: "string" as const, description: "1-2 sentences in pt-BR summarizing the grant's core goal" },
             temas_principais: { type: "array" as const, items: { type: "string" as const }, description: "array of strings in pt-BR (e.g., 'mulheres', 'agricultura familiar', 'cultura', 'saúde')" },
-            prazo_de_inscricao: { type: "string" as const, nullable: true, description: "Strictly in YYYY-MM-DD format, or null if not found. Busque atentamente em todo o documento, frequentemente listado sob Cronograma ou Etapas." },
+            prazo_de_inscricao: { type: "string" as const, nullable: true, description: "Strictly in YYYY-MM-DD format, or null if not found. Busque atentamente a data final de encerramento das inscrições/envio de propostas." },
             criterios_eliminatorios: {
                 type: "object" as const,
                 properties: {
@@ -115,7 +145,6 @@ const sharedGenerationConfig = {
     }
 };
 
-
 async function generateContentWithRetry(model: any, promptData: any, maxRetries = 4) {
     let delay = 5000;
     for (let attempt = 1; attempt <= maxRetries; attempt++) {
@@ -126,7 +155,7 @@ async function generateContentWithRetry(model: any, promptData: any, maxRetries 
             if (isRateLimitOrUnavailable && attempt < maxRetries) {
                 console.warn(`[Gemini API] Error ${error.status || error.message}. Retrying in ${delay}ms (Attempt ${attempt} of ${maxRetries})...`);
                 await sleep(delay);
-                delay *= 2; // Exponential backoff: 5s, 10s, 20s
+                delay *= 2;
             } else {
                 throw error;
             }
@@ -134,33 +163,31 @@ async function generateContentWithRetry(model: any, promptData: any, maxRetries 
     }
 }
 
-async function extractMetadataFromPdf(pdfData: ArrayBuffer): Promise<any> {
+async function extractMetadataFromPdf(pdfData: ArrayBuffer, prosasSummaryText?: string): Promise<any> {
     const model = genAI.getGenerativeModel({
         model: "gemini-3.5-flash-lite",
         generationConfig: sharedGenerationConfig
     });
 
-    // Extract raw text from the PDF to save on Gemini image token costs
     const pdfBuffer = Buffer.from(pdfData);
     let extractedText = "";
     try {
         const parsedPdf = await pdfParse(pdfBuffer);
         extractedText = parsedPdf.text;
     } catch (err: any) {
-        console.warn("pdf-parse failed to extract text, proceeding with empty text: " + err.message);
+        console.warn("pdf-parse failed to extract text, proceeding with Prosas summary text: " + err.message);
     }
 
-    const prompt = "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n" + extractedText;
+    const combinedContext = prosasSummaryText
+        ? `--- RESUMO DA PÁGINA PROSAS (FONTE OFICIAL ATUALIZADA DE PRAZOS E VALORES) ---\n${prosasSummaryText.substring(0, 2000)}\n\n--- TEXTO DO EDITAL (PDF) ---\n${extractedText}`
+        : extractedText;
 
-    const result = await generateContentWithRetry(model, [
-        prompt
-    ]);
+    const prompt = "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n" + combinedContext;
 
+    const result = await generateContentWithRetry(model, [prompt]);
     const text = result.response.text();
     return JSON.parse(text);
 }
-
-
 
 async function uploadPdfToDrive(pdfData: ArrayBuffer, fileName: string): Promise<string | null> {
     const credsEnv = process.env.GCP_DRIVE_CREDENTIALS;
@@ -176,7 +203,6 @@ async function uploadPdfToDrive(pdfData: ArrayBuffer, fileName: string): Promise
 
         const drive = google.drive({ version: 'v3', auth });
 
-        // Convert ArrayBuffer to Buffer, then to a Readable stream for Google APIs
         const buffer = Buffer.from(pdfData);
         const stream = Readable.from(buffer);
 
@@ -203,6 +229,7 @@ async function uploadPdfToDrive(pdfData: ArrayBuffer, fileName: string): Promise
         return null;
     }
 }
+
 async function extractMetadataFromText(textContent: string): Promise<any> {
     const model = genAI.getGenerativeModel({
         model: "gemini-3.5-flash-lite",
@@ -211,12 +238,29 @@ async function extractMetadataFromText(textContent: string): Promise<any> {
 
     const prompt = "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n" + textContent;
 
-    const result = await generateContentWithRetry(model, [
-        prompt
-    ]);
-
+    const result = await generateContentWithRetry(model, [prompt]);
     const text = result.response.text();
     return JSON.parse(text);
+}
+
+function applyAuthoritativeProsasMetadata(edital: any, metadata: any) {
+    const headerInfo = extractProsasHeaderInfo(edital.full_text);
+    if (headerInfo.data_fim) {
+        // Prosas platform header always reflects deadline extensions (Prorrogações) accurately
+        metadata.prazo_de_inscricao = headerInfo.data_fim;
+        edital.attributes = edital.attributes || {};
+        edital.attributes.data_inicio = headerInfo.data_inicio;
+        edital.attributes.data_fim = headerInfo.data_fim;
+    }
+    if (headerInfo.valor_total) {
+        edital.attributes = edital.attributes || {};
+        edital.attributes.valor_total = headerInfo.valor_total;
+        metadata.financeiro = metadata.financeiro || {};
+        metadata.financeiro.valor_total_edital = headerInfo.valor_total;
+        if (!metadata.financeiro.valor_maximo_ou_global_reais || metadata.financeiro.valor_maximo_ou_global_reais < 100) {
+            metadata.financeiro.valor_maximo_ou_global_reais = headerInfo.valor_total;
+        }
+    }
 }
 
 export async function processEditais() {
@@ -282,19 +326,15 @@ export async function processEditais() {
                 if (downloadResult.expiredPresigned) {
                     edital.retry_count = (edital.retry_count || 0) + 1;
                     if (edital.retry_count >= 3) {
-                        console.error(`Presigned URL expired for edital ${edital.id || i}. Max retries reached. Failing permanently.`);
                         edital.pipeline_status = 'FAILED_PERMANENTLY';
                         edital.last_error = downloadResult.error || "Max retries reached for expired presigned URL";
                         modified = true;
-                        // Save here before continue to prevent loop
                         await fs.writeFile(DATA_FILE, JSON.stringify(editais, null, 2), 'utf-8');
                         continue;
                     }
-                    console.log(`Presigned URL expired for edital ${edital.id || i}. Forcing rescrape.`);
                     edital.pipeline_status = 'NEW_FROM_API';
                     delete edital.pdf_link;
                     modified = true;
-                    // Save here before continue to prevent loop
                     await fs.writeFile(DATA_FILE, JSON.stringify(editais, null, 2), 'utf-8');
                     continue;
                 }
@@ -302,12 +342,7 @@ export async function processEditais() {
                     edital.pdf_skipped = true;
                     modified = true;
                 }
-                if (downloadResult.notPdf) {
-                    console.log(`URL for edital ${edital.id || i} was not a valid PDF. Will attempt text fallback.`);
-                    useTextFallback = true;
-                }
-                if (downloadResult.fallbackToText) {
-                    console.log(`Access denied to PDF for edital ${edital.id || i}. Will attempt text fallback.`);
+                if (downloadResult.notPdf || downloadResult.fallbackToText) {
                     useTextFallback = true;
                 }
             }
@@ -315,20 +350,18 @@ export async function processEditais() {
 
         if (useTextFallback) {
             if (edital.full_text && edital.full_text.length > 300) {
-                console.log(`Attempting text fallback extraction for edital ${edital.id || i}`);
                 try {
                     const metadata = await extractMetadataFromText(edital.full_text);
                     metadata.edital_id = edital.id ? edital.id.toString() : String(i);
                     metadata.fonte_dados = "texto_pagina";
+                    applyAuthoritativeProsasMetadata(edital, metadata);
 
                     edital.deep_metadata = metadata;
                     edital.pipeline_status = 'COMPLETED';
-                    // We don't slim edital.full_text here because the PDF wasn't saved.
-                    // We need the full text for Deep Dive phase.
+                    edital.last_error = undefined;
                     modified = true;
                     console.log(`Successfully extracted metadata for edital ${edital.id || i} via text fallback`);
                 } catch (err: any) {
-                    console.error(`Failed to extract metadata via text fallback for edital ${edital.id || i}: ${err.message}`);
                     edital.retry_count = (edital.retry_count || 0) + 1;
                     edital.last_error = err.message;
                     if (edital.retry_count >= 3) {
@@ -338,26 +371,19 @@ export async function processEditais() {
                 }
                 processedCount++;
             } else {
-                console.log(`Text fallback not possible for edital ${edital.id || i} (full_text missing or too short).`);
                 edital.pipeline_status = 'FAILED_PERMANENTLY';
                 edital.last_error = downloadResult.error || "No valid PDF or full_text available";
                 modified = true;
-                // We still count this as an attempt
                 processedCount++;
             }
         } else if (downloadResult.success && downloadResult.data) {
             try {
                 const editalId = edital.id ? edital.id.toString() : String(i);
 
-                // Upload to Google Drive
                 const fileName = `${editalId}_edital.pdf`;
                 const driveLink = await uploadPdfToDrive(downloadResult.data, fileName);
 
-                if (process.env.GCP_DRIVE_CREDENTIALS && !driveLink) {
-                    console.warn("Warning: Failed to upload to Google Drive, proceeding with Gemini extraction anyway.");
-                }
-
-                const metadata = await extractMetadataFromPdf(downloadResult.data);
+                const metadata = await extractMetadataFromPdf(downloadResult.data, edital.full_text);
                 metadata.edital_id = editalId;
                 metadata.fonte_dados = "pdf";
 
@@ -365,15 +391,17 @@ export async function processEditais() {
                     metadata.drive_pdf_link = driveLink;
                 }
 
+                applyAuthoritativeProsasMetadata(edital, metadata);
+
                 edital.deep_metadata = metadata;
                 edital.pipeline_status = 'COMPLETED';
+                edital.last_error = undefined;
                 if (edital.full_text) {
-                    edital.full_text = edital.full_text.substring(0, 2500); // Data Slimming
+                    edital.full_text = edital.full_text.substring(0, 2500);
                 }
                 modified = true;
                 console.log(`Successfully extracted metadata for edital ${edital.id || i}`);
             } catch (err: any) {
-                console.error(`Failed to extract metadata (or Drive upload failed) for edital ${edital.id || i}: ${err.message}`);
                 edital.retry_count = (edital.retry_count || 0) + 1;
                 edital.last_error = err.message;
                 if (edital.retry_count >= 3) {
@@ -383,7 +411,6 @@ export async function processEditais() {
             }
             processedCount++;
         } else if (!downloadResult.success && !downloadResult.notPdf && !downloadResult.skip && !downloadResult.fallbackToText) {
-            // General download failure (e.g. timeout, 404)
             edital.retry_count = (edital.retry_count || 0) + 1;
             edital.last_error = downloadResult.error || "Unknown download error";
             if (edital.retry_count >= 3) {
@@ -392,16 +419,16 @@ export async function processEditais() {
             modified = true;
             processedCount++;
         } else if (downloadResult.skip) {
-             // Handle skipped files (like too large) - fallback to text or fail
              if (edital.full_text && edital.full_text.length > 300) {
                  try {
                      const metadata = await extractMetadataFromText(edital.full_text);
                      metadata.edital_id = edital.id ? edital.id.toString() : String(i);
                      metadata.fonte_dados = "texto_pagina";
+                     applyAuthoritativeProsasMetadata(edital, metadata);
 
                      edital.deep_metadata = metadata;
                      edital.pipeline_status = 'COMPLETED';
-                     // We don't slim edital.full_text here because the PDF wasn't saved.
+                     edital.last_error = undefined;
                      modified = true;
                  } catch (err: any) {
                      edital.retry_count = (edital.retry_count || 0) + 1;
@@ -419,29 +446,38 @@ export async function processEditais() {
              processedCount++;
         }
 
-        // Save progress after each item (or you could do it at the end)
         if (modified) {
              await fs.writeFile(DATA_FILE, JSON.stringify(editais, null, 2), 'utf-8');
              modified = false;
         }
 
-        // Rate limit: pause for 65 seconds after every 10 PDFs processed
         if (processedCount % 10 === 0 && processedCount > 0 && processedCount < maxExtract) {
             console.log(`Processed ${processedCount} items. Sleeping for 65 seconds to avoid rate limits...`);
             await sleep(65000);
         }
     }
 
-    // Final save in case the last item wasn't saved or the loop broke due to MAX_EXTRACT limit
+    // Prune expired editais so editais_prosas.json remains clean and accurate
+    const todayIso = new Date().toISOString().split('T')[0];
+    const beforeCount = editais.length;
+    editais = editais.filter(e => {
+        const prazo = e.deep_metadata?.prazo_de_inscricao || e.attributes?.data_fim;
+        if (!prazo || prazo === 'Não informado') return true;
+        return prazo >= todayIso;
+    });
+    if (editais.length !== beforeCount) {
+        console.log(`Pruned ${beforeCount - editais.length} expired editais from database.`);
+        modified = true;
+    }
+
     if (modified) {
          await fs.writeFile(DATA_FILE, JSON.stringify(editais, null, 2), 'utf-8');
          modified = false;
     }
 
-    console.log(`Finished processing. Total new items processed: ${processedCount}`);
+    console.log(`Finished processing. Total new items processed: ${processedCount}. Active editais in DB: ${editais.length}`);
 }
 
-// Run the script if executed directly
 if (import.meta.url.startsWith('file:') && import.meta.url === `file://${process.argv[1]}`) {
     processEditais().catch(console.error);
 }

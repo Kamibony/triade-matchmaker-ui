@@ -3,4 +3,4 @@
   export let data;
 </script>
 
-<OutboundRadar leads={data.leads} />
+<OutboundRadar leads={data.leads} bancoEditais={data.bancoEditais || []} />
