@@ -7464,5 +7464,126 @@
       }
     },
     "last_checked_date": "2026-11-11T21:35:53.520Z"
+  },
+  "35517712000167": {
+    "osc": {
+      "cnpj": "35517712000167",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS PENTECOSTAL LABAREDA DE FOGO",
+      "uf": "PA",
+      "municipio": "CACHOEIRA DO ARARI",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9189116380"
+      }
+    },
+    "last_checked_date": "2026-11-12T09:56:52.589Z"
+  },
+  "42310504000158": {
+    "osc": {
+      "cnpj": "42310504000158",
+      "nome": "ASSOCIACAO DE MOTORISTAS DE TAXI LOTACAO DO ABADE",
+      "uf": "PA",
+      "municipio": "CURUCA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Serviço de táxi",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9185527842"
+      }
+    },
+    "last_checked_date": "2026-11-12T09:56:54.347Z"
+  },
+  "01991557000102": {
+    "osc": {
+      "cnpj": "01991557000102",
+      "nome": "CEAPAR - CENTRO DE ASSISTENCIA A POPULACAO CARENTE E AOS ANIMAIS DE RUA",
+      "uf": "AL",
+      "municipio": "ARAPIRACA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades veterinárias | Atividades de apoio à educação, exceto caixas escolares | Atividades de psicologia e psicanálise | Serviços de assistência social sem alojamento | Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte | Alojamento de animais domésticos | Higiene e embelezamento de animais domésticos",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299374927"
+      }
+    },
+    "last_checked_date": "2026-11-12T10:01:37.199Z"
+  },
+  "66585583000178": {
+    "osc": {
+      "cnpj": "66585583000178",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS MINISTERIO NOVA ALIANCA COM CRISTO",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8296672533"
+      }
+    },
+    "last_checked_date": "2026-11-12T10:01:37.423Z"
+  },
+  "65328105000110": {
+    "osc": {
+      "cnpj": "65328105000110",
+      "nome": "ASSOCIACAO ATLETICA CLUBE DO VOLEI",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "Ensino de esportes | Produção e promoção de eventos esportivos",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8291539292",
+        "ddd_telefone_2": "8299351352"
+      }
+    },
+    "last_checked_date": "2026-11-12T10:01:37.654Z"
+  },
+  "12398749006310": {
+    "osc": {
+      "cnpj": "12398749006310",
+      "nome": "DIOCESE DE PENEDO",
+      "uf": "AL",
+      "municipio": "OLHO D'AGUA GRANDE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8288087408"
+      }
+    },
+    "last_checked_date": "2026-11-12T10:01:37.916Z"
+  },
+  "28514667000202": {
+    "osc": {
+      "cnpj": "28514667000202",
+      "nome": "IGREJA COMUNIDADE DA CRUZ",
+      "uf": "AL",
+      "municipio": "PARIPUEIRA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2026,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8296298697",
+        "ddd_telefone_2": "8288567352"
+      }
+    },
+    "last_checked_date": "2026-11-12T10:01:38.195Z"
   }
 }
