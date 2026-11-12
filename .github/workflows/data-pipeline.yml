@@ -3,6 +3,11 @@ name: Data Ingestion Pipeline
 on:
   schedule:
     - cron: '0 2 * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/data-pipeline.yml'
   workflow_dispatch:
     inputs:
       max_scrape:
@@ -57,13 +62,29 @@ jobs:
           MAX_EXTRACT: ${{ github.event.inputs.max_extract || '25' }}
         run: npm run extract-metadata
 
-      - name: Safe Git Commit & Push (Avoid Race Conditions)
+      - name: Safe Git Commit & Push (Editais & Archive)
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add src/data/editais_prosas.json src/data/editais_historico.json 2>/dev/null || git add src/data/editais_prosas.json
           if ! git diff --staged --quiet; then
             git commit -m "chore(data): update editais_prosas.json & archive expired to editais_historico.json"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: Run Outbound Matchmaking Leads Generator Immediately After
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: npx tsx scripts/outbound-match.ts
+
+      - name: Safe Git Commit & Push (Outbound Leads & Cache)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add src/data/cnpj_cache.json src/data/daily_outbound_leads.json 2>/dev/null || true
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(data): update daily outbound leads and cnpj cache"
             git pull --rebase origin main
             git push
           fi
