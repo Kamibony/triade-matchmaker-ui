@@ -11,27 +11,31 @@ export async function POST({ request }) {
     }
     const genAI = new GoogleGenerativeAI(apiKey);
 
-    // AI Model configs
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" }, { apiVersion: 'v1beta' });
-    const tools = [{ googleSearch: {} }];
-
-    const fallbackModel = genAI.getGenerativeModel({
-      model: "gemini-3.5-flash-lite",
-      generationConfig: { temperature: 0, responseMimeType: "application/json" }
+    const searchModel = genAI.getGenerativeModel({
+      model: 'gemini-3.5-flash-lite',
+      generationConfig: { temperature: 0 },
+      tools: [{ googleSearch: {} } as any]
     });
 
-    // --- Phase 3A: AI Web Dossiê ---
-    let dossieText = "";
+    const evalModel = genAI.getGenerativeModel({
+      model: 'gemini-3.5-flash-lite',
+      generationConfig: { temperature: 0, responseMimeType: 'application/json' }
+    });
+
+    // --- Phase 3A: Concise Single-Query AI Web Dossiê ---
+    let dossieText = '';
     try {
-      const searchPrompt = `Gere um dossiê sobre a organização ${osc.nome} (CNPJ: ${osc.cnpj}) em ${osc.municipio}, ${osc.uf}. Pesquise no Google para descobrir seus projetos recentes, público-alvo, histórico de atuação e qualquer problema ou polêmica.`;
-      const searchResult = await model.generateContent({ contents: [{ role: 'user', parts: [{ text: searchPrompt }] }], tools: tools as any });
+      const searchPrompt = `Faça uma única busca rápida no Google sobre a ONG "${osc.nome}" (CNPJ: ${osc.cnpj}) em ${osc.municipio}, ${osc.uf}. Resuma de forma concisa: site/redes sociais, projetos recentes, público-alvo e contatos públicos.`;
+      const searchResult = await searchModel.generateContent({
+        contents: [{ role: 'user', parts: [{ text: searchPrompt }] }]
+      });
       dossieText = searchResult.response.text();
-    } catch (e) {
-      console.warn("A pesquisa no Google falhou, usando dossiê básico.");
+    } catch {
+      console.warn('A pesquisa no Google falhou, usando dossiê básico.');
       dossieText = `Dossiê básico: Organização focada em ${osc.cnae_primario_descricao}, localizada em ${osc.municipio}.`;
     }
 
-    // --- Phase 3B: AI Match Evaluation ---
+    // --- Phase 3B: AI Match Evaluation (No Search Tool) ---
     const evalPrompt = `
       Você é um especialista em captação de recursos. Avalie se a OSC tem fit com este Edital.
 
@@ -56,12 +60,12 @@ export async function POST({ request }) {
       }
     `;
 
-    const evalResult = await fallbackModel.generateContent(evalPrompt);
+    const evalResult = await evalModel.generateContent(evalPrompt);
     let parsedMatch;
     try {
-        parsedMatch = JSON.parse(evalResult.response.text());
-    } catch (e) {
-        throw new Error('Falha ao analisar a resposta JSON do Gemini.');
+      parsedMatch = JSON.parse(evalResult.response.text());
+    } catch {
+      throw new Error('Falha ao analisar a resposta JSON do Gemini.');
     }
 
     const resolvedContacts = {
@@ -73,13 +77,13 @@ export async function POST({ request }) {
     return json({
       edital_id: edital.id,
       edital_titulo: edital.titulo,
-      edital_url: edital.deep_metadata?.link_google_drive || edital.pdf_link || edital.public_url || edital.url || edital.attributes?.url || null,
-      osc: osc,
+      edital_url: edital.deep_metadata?.drive_pdf_link || edital.deep_metadata?.link_google_drive || edital.pdf_link || edital.public_url || edital.url || edital.attributes?.url || null,
+      osc,
       score: parsedMatch.score,
       motivo_match: parsedMatch.motivo_match,
       whatsapp_message: parsedMatch.whatsapp_message,
       contatos_encontrados: resolvedContacts,
-      dossieText: dossieText
+      dossieText
     });
 
   } catch (error: any) {
