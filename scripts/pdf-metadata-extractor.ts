@@ -189,37 +189,109 @@ async function extractMetadataFromPdf(pdfData: ArrayBuffer, prosasSummaryText?: 
     return JSON.parse(text);
 }
 
-async function uploadPdfToDrive(pdfData: ArrayBuffer, fileName: string): Promise<string | null> {
+const DEFAULT_DRIVE_FOLDER_ID = process.env.GCP_DRIVE_FOLDER_ID || '1FIbNfAzFS7uMSF0iMIgy64tRWIIWhYOZ';
+const FALLBACK_FOLDER_NAME = 'Triade_Editais_PDF';
+
+let cachedDriveClient: ReturnType<typeof google.drive> | null = null;
+let resolvedFolderId: string | null = null;
+
+function getDriveClient(): ReturnType<typeof google.drive> | null {
+    if (cachedDriveClient) return cachedDriveClient;
+
     const credsEnv = process.env.GCP_DRIVE_CREDENTIALS;
     if (!credsEnv) {
         console.warn('GCP_DRIVE_CREDENTIALS is not set. Skipping Drive upload.');
         return null;
     }
 
+    const credentials = JSON.parse(credsEnv);
+
+    // 1. OAuth 2.0 Refresh Token (Personal Drive / "In Production" mode)
+    const clientId = credentials.clientId || credentials.client_id;
+    const clientSecret = credentials.clientSecret || credentials.client_secret;
+    const refreshToken = credentials.refreshToken || credentials.refresh_token;
+
+    if (clientId && clientSecret && refreshToken) {
+        const auth = new google.auth.OAuth2(clientId, clientSecret);
+        auth.setCredentials({ refresh_token: refreshToken });
+        cachedDriveClient = google.drive({ version: 'v3', auth });
+        return cachedDriveClient;
+    }
+
+    // 2. Service Account (Requires Google Workspace Shared Drive due to 0-byte consumer quota)
+    if (credentials.client_email && credentials.private_key) {
+        const auth = new google.auth.GoogleAuth({
+            credentials,
+            scopes: ['https://www.googleapis.com/auth/drive']
+        });
+        cachedDriveClient = google.drive({ version: 'v3', auth });
+        return cachedDriveClient;
+    }
+
+    throw new Error('Invalid GCP_DRIVE_CREDENTIALS format: missing OAuth2 refreshToken or Service Account private_key.');
+}
+
+async function getOrCreateTargetFolder(drive: ReturnType<typeof google.drive>): Promise<string> {
+    if (resolvedFolderId) return resolvedFolderId;
+
     try {
-        const credentials = JSON.parse(credsEnv);
-        const auth = new google.auth.OAuth2(credentials.clientId, credentials.clientSecret);
-        auth.setCredentials({ refresh_token: credentials.refreshToken });
+        await drive.files.get({
+            fileId: DEFAULT_DRIVE_FOLDER_ID,
+            fields: 'id, name',
+            supportsAllDrives: true
+        });
+        resolvedFolderId = DEFAULT_DRIVE_FOLDER_ID;
+        return resolvedFolderId;
+    } catch {
+        // Folder not accessible (e.g. using non-sensitive drive.file scope).
+        // Search for or create an app-owned folder.
+        const searchRes = await drive.files.list({
+            q: `mimeType='application/vnd.google-apps.folder' and name='${FALLBACK_FOLDER_NAME}' and trashed=false`,
+            fields: 'files(id, name)',
+            spaces: 'drive',
+            supportsAllDrives: true,
+            includeItemsFromAllDrives: true
+        });
 
-        const drive = google.drive({ version: 'v3', auth });
+        if (searchRes.data.files && searchRes.data.files.length > 0 && searchRes.data.files[0].id) {
+            resolvedFolderId = searchRes.data.files[0].id;
+            return resolvedFolderId;
+        }
 
+        const createRes = await drive.files.create({
+            requestBody: {
+                name: FALLBACK_FOLDER_NAME,
+                mimeType: 'application/vnd.google-apps.folder'
+            },
+            fields: 'id',
+            supportsAllDrives: true
+        });
+
+        resolvedFolderId = createRes.data.id!;
+        return resolvedFolderId;
+    }
+}
+
+async function uploadPdfToDrive(pdfData: ArrayBuffer, fileName: string): Promise<string | null> {
+    try {
+        const drive = getDriveClient();
+        if (!drive) return null;
+
+        const folderId = await getOrCreateTargetFolder(drive);
         const buffer = Buffer.from(pdfData);
         const stream = Readable.from(buffer);
 
-        const fileMetadata = {
-            name: fileName,
-            parents: ['1FIbNfAzFS7uMSF0iMIgy64tRWIIWhYOZ']
-        };
-
-        const media = {
-            mimeType: 'application/pdf',
-            body: stream
-        };
-
         const response = await drive.files.create({
-            requestBody: fileMetadata,
-            media: media,
-            fields: 'id, webViewLink'
+            requestBody: {
+                name: fileName,
+                parents: [folderId]
+            },
+            media: {
+                mimeType: 'application/pdf',
+                body: stream
+            },
+            fields: 'id, webViewLink',
+            supportsAllDrives: true
         });
 
         console.log(`Successfully uploaded ${fileName} to Drive. Link: ${response.data.webViewLink}`);
