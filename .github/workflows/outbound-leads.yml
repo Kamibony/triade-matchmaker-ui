@@ -2,12 +2,15 @@ name: Outbound Matchmaking Leads Generator
 
 on:
   schedule:
-    - cron: '0 2 * * *'
+    # Runs at 03:00 UTC (1 hour after Data Ingestion Pipeline at 02:00 UTC to avoid race conditions)
+    - cron: '0 3 * * *'
   workflow_dispatch:
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout Repository
@@ -34,12 +37,10 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add src/data/cnpj_cache.json src/data/daily_outbound_leads.json
-          # Check if there are changes to commit
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
             git commit -m "chore: update daily outbound leads and cnpj cache"
             git pull --rebase origin main
-            # Skipping git push in testing environment
             git push
           fi

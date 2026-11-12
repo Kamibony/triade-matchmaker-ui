@@ -73,14 +73,12 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
     let targetPage: any = page;
     let interceptedUrl: string | null = null;
     let resolvedUrl: string = '';
-    let abortNavigation = false;
 
     try {
         // Set up request interception on the main page to catch same-tab navigation
         await page.route('**/*', (route: any, request: any) => {
             if (request.isNavigationRequest() && request.frame() === page.mainFrame()) {
                 interceptedUrl = request.url();
-                abortNavigation = true;
                 route.abort(); // Prevent the main page from navigating away
             } else {
                 route.continue();
@@ -150,16 +148,8 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
             return null;
         });
 
-        const isBtnFound = await page.evaluate(btn => btn !== null, btnSelector);
+        const isBtnFound = await page.evaluate((btn: any) => btn !== null, btnSelector);
         if (buttonInfo?.isAnchor && buttonInfo.href) {
-             const formatGoogleDriveUrl = (url: string) => {
-                if (!url || typeof url !== 'string') return url;
-                const driveMatch = url.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
-                if (driveMatch) {
-                    return `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
-                }
-                return url;
-            };
             let directHref = formatGoogleDriveUrl(buttonInfo.href);
             if (directHref.toLowerCase().endsWith('.pdf') || directHref.toLowerCase().includes('.pdf?') || directHref.includes('drive.google.com/uc?export=download')) {
                  return directHref;
@@ -173,7 +163,6 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
                  } catch (e) {}
             }
         } else if (isBtnFound) {
-            // Click using evaluate since we have the handle via DOM traversal
             const pagePromise = context.waitForEvent('page', { timeout: 5000 }).catch(() => null);
             const downloadPromise = page.waitForEvent('download', { timeout: 5000 }).catch(() => null);
 
@@ -195,7 +184,6 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
 
             resolvedUrl = targetPage.url();
         } else {
-            // fallback to locator
             const button = page.locator('text="Acessar"').or(page.locator('text="Inscreva-se"')).first();
             const count = await button.count();
             if (count === 0) return null;
@@ -214,7 +202,7 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
         }
 
         if (!resolvedUrl) {
-            resolvedUrl = interceptedUrl || page.url(); // Fallback to current URL if no navigation happened
+            resolvedUrl = interceptedUrl || page.url();
         }
 
         if (newPage) {
@@ -222,24 +210,21 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
             await targetPage.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
             resolvedUrl = targetPage.url();
         } else if (interceptedUrl) {
-            // We caught a same-tab navigation. Check if it's a PDF.
             interceptedUrl = formatGoogleDriveUrl(interceptedUrl);
             if (interceptedUrl.toLowerCase().endsWith('.pdf') || interceptedUrl.toLowerCase().includes('.pdf?') || interceptedUrl.includes('drive.google.com/uc?export=download')) {
                  return interceptedUrl;
             } else {
-                 // It's an HTML page but we aborted it on the main page.
-                 // We need to fetch it to evaluate it without navigating the main page.
                  try {
                      newPage = await context.newPage();
                      await newPage.goto(interceptedUrl, { waitUntil: 'networkidle', timeout: 15000 });
                      targetPage = newPage;
                      resolvedUrl = targetPage.url();
                  } catch (e) {
-                     return null; // Failed to load external page
+                     return null;
                  }
             }
         } else {
-           return null; // No navigation happened
+           return null;
         }
 
         // Scenario A: Direct PDF
@@ -281,7 +266,6 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
         console.warn("[capturePdfFromButton] Error capturing PDF:", e.message);
         return null;
     } finally {
-        // Clean up interception route
         try { await page.unroute('**/*'); } catch(e) {}
         if (newPage) {
             try { await newPage.close(); } catch (e) {}
@@ -320,16 +304,11 @@ async function runStandaloneScraper() {
             throw new Error("[StandaloneProsasScraper] Failed to navigate past login page.");
         }
 
-        // Navigate to produtos.prosas.com.br to ensure SSO/cookie domain propagation
         await page.goto('https://produtos.prosas.com.br/editais', { waitUntil: 'networkidle', timeout: 60000 }).catch(() => {});
         await page.waitForTimeout(3000);
 
         await loginOnProdutosIfNeeded(page, username, password);
         await page.waitForTimeout(3000);
-
-        // Save authenticated session state
-        const storageState = await context.storageState();
-
 
         const allItems: any[] = [];
         const existingDataMap = new Map<string, any>();
@@ -426,14 +405,11 @@ async function runStandaloneScraper() {
             }
         }
 
-
-        // Implement Upsert Pattern: Start with existing data, upsert new API data
         const masterMap = new Map<string, any>(existingDataMap);
 
         allItems.forEach(item => {
             const existing = masterMap.get(String(item.id));
 
-            // Clean attributes
             const attrs = item.attributes || {};
             const cleanAttributes = {
                 nome: attrs.nome,
@@ -449,7 +425,6 @@ async function runStandaloneScraper() {
             const forceRescrape = process.env.FORCE_RESCRAPE === 'true';
 
             if (existing) {
-                // Update existing record but strictly protect state and metadata fields
                 const merged = {
                     ...item,
                     attributes: cleanAttributes,
@@ -457,12 +432,11 @@ async function runStandaloneScraper() {
                     pdf_link: forceRescrape ? undefined : existing.pdf_link,
                     full_text: forceRescrape ? undefined : existing.full_text,
                     retry_count: forceRescrape ? undefined : existing.retry_count,
-                    last_error: forceRescrape ? undefined : existing.last_error,
+                    last_error: forceRescrape ? undefined : (existing.pipeline_status === 'COMPLETED' ? undefined : existing.last_error),
                     public_url: existing.public_url || item.public_url,
                     pipeline_status: forceRescrape ? 'NEW_FROM_API' : existing.pipeline_status || 'NEW_FROM_API'
                 };
 
-                // Prevent bloat
                 masterMap.set(String(item.id), {
                     id: merged.id,
                     attributes: merged.attributes,
@@ -475,7 +449,6 @@ async function runStandaloneScraper() {
                     pipeline_status: merged.pipeline_status
                 });
             } else {
-                // Insert new record
                 masterMap.set(String(item.id), {
                     id: item.id,
                     attributes: cleanAttributes,
@@ -546,25 +519,22 @@ async function runStandaloneScraper() {
                                         } else if (node.nodeType === Node.ELEMENT_NODE) {
                                             const el = node as Element;
                                             const tag = el.tagName.toLowerCase();
-                                            // Skip scripts, styles, etc.
                                             if (['script', 'style', 'noscript', 'svg'].includes(tag)) {
                                                 continue;
                                             }
 
-                                            // Traverse Shadow DOM
                                             if (el.shadowRoot) {
                                                 if (!visited.has(el.shadowRoot)) {
                                                      queue.push(el.shadowRoot);
                                                 }
                                             }
 
-                                            // Add children to queue
                                             const childNodes = el.childNodes;
                                             for (let i = 0; i < childNodes.length; i++) {
                                                 queue.push(childNodes[i]);
                                             }
-                                        } else if (node.nodeType === Node.DOCUMENT_FRAGMENT_NODE) { // like shadow root
-                                             const childNodes = node.childNodes;
+                                        } else if (node.nodeType === Node.DOCUMENT_FRAGMENT_NODE) {
+                                             const childNodes = el.childNodes;
                                              for (let i = 0; i < childNodes.length; i++) {
                                                  queue.push(childNodes[i]);
                                              }
@@ -573,7 +543,6 @@ async function runStandaloneScraper() {
                                     return text.replace(/\s+/g, ' ').trim();
                                 });
 
-                                // Login Wall Guard
                                 if (pageText.includes("Você precisa se logar") || pageText.includes("You need to sign in or sign up")) {
                                     console.warn(`[StandaloneProsasScraper] Hit login wall on ${detailUrl}. Attempting to login.`);
                                     const username = process.env.PROSAS_USERNAME;
@@ -617,7 +586,7 @@ async function runStandaloneScraper() {
                                                             queue.push(childNodes[i]);
                                                         }
                                                     } else if (node.nodeType === Node.DOCUMENT_FRAGMENT_NODE) {
-                                                         const childNodes = node.childNodes;
+                                                         const childNodes = el.childNodes;
                                                          for (let i = 0; i < childNodes.length; i++) {
                                                              queue.push(childNodes[i]);
                                                          }
@@ -634,7 +603,6 @@ async function runStandaloneScraper() {
                                     }
                                 }
 
-                                // Smart Capture Strategy
                                 let smartPdf = await capturePdfFromButton(workerPage, context);
 
                                 const rawWorkerLinks = await workerPage.evaluate(() => {
@@ -693,7 +661,7 @@ async function runStandaloneScraper() {
                                 if (finalPdfLink && (finalPdfLink.toLowerCase().endsWith('.pdf') || finalPdfLink.toLowerCase().includes('.pdf?') || finalPdfLink.includes('drive.google.com/uc?export=download'))) {
                                     item.pdf_link = finalPdfLink;
                                 } else {
-                                    item.pdf_link = undefined; // Strict constraint: No Garbage URLs
+                                    item.pdf_link = undefined;
                                 }
 
                                 if (pageText.length > 15000) pageText = pageText.substring(0, 15000);
@@ -705,6 +673,7 @@ async function runStandaloneScraper() {
                                      item.last_error = "No PDF found and insufficient text";
                                 } else {
                                      item.pipeline_status = 'PENDING_EXTRACTION';
+                                     item.last_error = undefined;
                                 }
 
                             } catch (err: any) {
