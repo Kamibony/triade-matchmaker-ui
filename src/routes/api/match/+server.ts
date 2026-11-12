@@ -3,18 +3,57 @@ import { calculateMatches } from '../../../lib/matcher';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import editaisData from '../../../data/editais_prosas.json';
 
+const PORTUGUESE_STOPWORDS = new Set([
+  'associacao', 'associacoes', 'direitos', 'sociais', 'social', 'atividades',
+  'organizacoes', 'organizacao', 'defesa', 'desenvolvimento', 'projeto', 'projetos',
+  'apoio', 'brasil', 'nacional', 'estadual', 'municipal', 'publico', 'publica',
+  'selecao', 'chamamento', 'edital', 'fomento', 'recursos', 'execucao', 'acoes',
+  'atraves', 'meio', 'forma', 'valor', 'instituicoes', 'entidades', 'civil',
+  'sociedade', 'servicos', 'outros', 'outras', 'especificados', 'anteriormente',
+  'ligadas', 'privada', 'fundacao', 'instituto', 'comunitario', 'comunitaria'
+]);
+
+function normalizeText(text: string): string {
+  return (text || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+}
+
+function isEditalSuitableForNgos(edital: any): boolean {
+  const nomeNorm = normalizeText(edital.attributes?.nome || '');
+  const resumoNorm = normalizeText(edital.deep_metadata?.resumo_objetivo || '');
+
+  const nonNgoPatterns = [
+    'bolsa ', 'bolsas ', 'pos-graduacao', 'iniciacao cientifica', 'pibex',
+    'produtividade em pesquisa', 'catedra', 'subvencao economica',
+    'inovacao para a industria', 'eficiencia energetica', 'pee/aneel',
+    'cpp 001/', 'cpp 002/'
+  ];
+  if (nonNgoPatterns.some(p => nomeNorm.includes(p))) {
+    return false;
+  }
+
+  if (resumoNorm.includes('exclusivamente para pessoas fisicas') || resumoNorm.includes('empresas juniores')) {
+    return false;
+  }
+
+  return true;
+}
+
 export async function POST({ request }: any) {
   const requestBody = await request.json();
-  const { cnpj, foco_atividades, cnae_data, uf, municipio, natureza_juridica, idade_anos, dossier_text } = requestBody;
+  const { cnpj, nome, foco_atividades, cnae_data, uf, municipio, natureza_juridica, idade_anos, dossier_text } = requestBody;
 
-  let oscProfile: any = {
+  const oscProfile: any = {
     cnpj,
+    nome: nome || '',
     foco_atividades: `Descrição do usuário: ${foco_atividades || 'Não informada'}. Atividades oficiais registradas (CNAE): ${cnae_data || 'Não encontradas'}`,
     uf: uf || '',
     municipio: municipio || '',
     natureza_juridica: natureza_juridica || '',
     idade_anos: idade_anos || 0,
-    dossier_web_context: dossier_text || '',
+    dossier_web_context: dossier_text || ''
   };
 
   const eligibleEditais: any[] = [];
@@ -31,20 +70,21 @@ export async function POST({ request }: any) {
   for (const edital of editaisData) {
     if (!(edital as any).deep_metadata || !(edital as any).deep_metadata.criterios_eliminatorios) continue;
 
+    if (!isEditalSuitableForNgos(edital)) continue;
+
     const prazo = (edital as any).deep_metadata.prazo_de_inscricao;
     const valor_maximo = (edital as any).deep_metadata.financeiro?.valor_maximo_ou_global_reais;
 
     if (valor_maximo === undefined || valor_maximo === null) {
-      continue; // Skip because maximum value is missing
+      continue;
     }
 
     if (prazo && prazo.toLowerCase() !== 'não informado') {
       if (prazo < thresholdString) {
-        continue; // Skip because deadline is earlier than the 10-day buffer
+        continue;
       }
     }
 
-    // The calculateMatches function expects an array of NGOs
     const matchResult = calculateMatches((edital as any).deep_metadata, [oscProfile]);
 
     if (matchResult.length > 0 && matchResult[0].eligibility.isEligible) {
@@ -52,36 +92,73 @@ export async function POST({ request }: any) {
     }
   }
 
-  // Phase 2: Semantic Reranking
+  // Phase 2: Local Heuristic Pre-Filter to select Top 30 candidates (prevents 15x parallel rate-limit spikes)
+  const oscContextTokens = [
+    ...new Set(
+      normalizeText(`${nome || ''} ${foco_atividades || ''} ${cnae_data || ''} ${dossier_text || ''}`)
+        .split(/[\s,.;:()/-]+/)
+        .filter(w => w.length > 3 && !PORTUGUESE_STOPWORDS.has(w))
+    )
+  ];
+
+  const preRankedEditais = eligibleEditais.map((e: any) => {
+    const temasNorm = normalizeText((e.deep_metadata?.temas_principais || []).join(' '));
+    const resumoNorm = normalizeText(`${e.attributes?.nome || ''} ${e.deep_metadata?.resumo_objetivo || ''}`);
+    let localScore = 0;
+
+    // Regional specificity bonus (state/municipal grants have less competition than national ones)
+    if (!e.deep_metadata?.criterios_eliminatorios?.abrangencia_nacional) {
+      localScore += 25;
+    }
+
+    for (const token of oscContextTokens) {
+      if (temasNorm.includes(token)) {
+        localScore += 40;
+      } else if (resumoNorm.includes(token)) {
+        localScore += 15;
+      }
+    }
+
+    return { edital: e, localScore };
+  });
+
+  preRankedEditais.sort((a, b) => {
+    if (b.localScore !== a.localScore) return b.localScore - a.localScore;
+    const valA = a.edital.deep_metadata?.financeiro?.valor_maximo_ou_global_reais || 0;
+    const valB = b.edital.deep_metadata?.financeiro?.valor_maximo_ou_global_reais || 0;
+    return valB - valA;
+  });
+
+  const topCandidateEditais = preRankedEditais.slice(0, 30).map(item => item.edital);
+
   if (!process.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY === 'dummy') {
-    // If no real API key, return mock data for verification
     return json([
       {
-        edital_id: eligibleEditais[0]?.id || 'mock1',
-        titulo: eligibleEditais[0]?.attributes?.nome || 'Mock Edital',
+        edital_id: topCandidateEditais[0]?.id || 'mock1',
+        titulo: topCandidateEditais[0]?.attributes?.nome || 'Mock Edital',
         score: 95,
         motivo_match: 'O foco em educação ambiental alinha perfeitamente com os objetivos deste edital.',
-        pdf_url: (eligibleEditais[0] as any)?.pdf_link || "https://example.com/mock-pdf.pdf",
+        pdf_url: (topCandidateEditais[0] as any)?.pdf_link || 'https://example.com/mock-pdf.pdf',
         deep_metadata: {
-          drive_link: (eligibleEditais[0] as any)?.deep_metadata?.drive_pdf_link
+          drive_link: (topCandidateEditais[0] as any)?.deep_metadata?.drive_pdf_link
         },
-        valor_maximo_reais: (eligibleEditais[0] as any)?.deep_metadata?.financeiro?.valor_maximo_ou_global_reais || 100000,
-        prazo_de_inscricao: (eligibleEditais[0] as any)?.deep_metadata?.prazo_de_inscricao || '2024-12-31T23:59:59Z'
+        valor_maximo_reais: (topCandidateEditais[0] as any)?.deep_metadata?.financeiro?.valor_maximo_ou_global_reais || 100000,
+        prazo_de_inscricao: (topCandidateEditais[0] as any)?.deep_metadata?.prazo_de_inscricao || '2026-12-31'
       }
     ]);
   }
 
-  const lightweightEditais = eligibleEditais.map(e => ({
-    edital_id: (e as any).id,
-    titulo: (e as any).attributes?.nome || (e as any).id,
-    resumo_objetivo: (e as any).deep_metadata.resumo_objetivo,
-    temas_principais: (e as any).deep_metadata.temas_principais,
-    pdf_url: (e as any).pdf_link || null,
+  const lightweightEditais = topCandidateEditais.map((e: any) => ({
+    edital_id: e.id,
+    titulo: e.attributes?.nome || e.id,
+    resumo_objetivo: e.deep_metadata.resumo_objetivo,
+    temas_principais: e.deep_metadata.temas_principais,
+    pdf_url: e.pdf_link || null,
     deep_metadata: {
-      drive_link: (e as any).deep_metadata?.drive_pdf_link
+      drive_link: e.deep_metadata?.drive_pdf_link
     },
-    valor_maximo_reais: (e as any).deep_metadata?.financeiro?.valor_maximo_ou_global_reais,
-    prazo_de_inscricao: (e as any).deep_metadata?.prazo_de_inscricao
+    valor_maximo_reais: e.deep_metadata?.financeiro?.valor_maximo_ou_global_reais,
+    prazo_de_inscricao: e.deep_metadata?.prazo_de_inscricao
   }));
 
   const CHUNK_SIZE = 15;
@@ -93,60 +170,48 @@ export async function POST({ request }: any) {
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
   const model = genAI.getGenerativeModel({
     model: 'gemini-3.5-flash-lite',
-    generationConfig: { temperature: 0 }
+    generationConfig: {
+      temperature: 0,
+      responseMimeType: 'application/json'
+    }
   });
 
   let allResults: any[] = [];
 
-  const chunkPromises = chunks.map(async (chunk) => {
-    const prompt = `
-You are a Third Sector consultant. Your job is to match a Non-Governmental Organization (NGO/OSC) with the most suitable grant opportunities (editais) based on their profile and the grant's objective and themes.
-Additionally, consider the 'dossier_web_context' (if provided) which contains a recent web analysis of the NGO's actual projects and activities. Prioritize grants that strongly align with this real-world context.
+  for (const chunk of chunks) {
+    const prompt = `You are a Senior Third Sector Grant Consultant in Brazil.
+Your job is to match a Non-Governmental Organization (NGO/OSC) with the most suitable grant opportunities (editais) based on their profile, activities, and Web Dossier.
 
 Here is the profile of the OSC:
 ${JSON.stringify(oscProfile, null, 2)}
 
 Here is a list of eligible grants:
-${JSON.stringify(chunk, null, 2)}
+${JSON.stringify(chunk.map(c => ({ edital_id: c.edital_id, titulo: c.titulo, resumo_objetivo: c.resumo_objetivo, temas_principais: c.temas_principais })), null, 2)}
 
-Evaluate how well the OSC's profile (especially its 'foco_atividades') matches each grant's 'resumo_objetivo' and 'temas_principais'.
+Evaluate how well the OSC's profile (name, 'foco_atividades', CNAE, and 'dossier_web_context') matches each grant's 'resumo_objetivo' and 'temas_principais'.
 
 Return ONLY a valid JSON array of objects, where each object contains:
 - "edital_id": The ID of the grant.
 - "score": A number between 0 and 100 representing the thematic match quality (100 is a perfect match).
-- "motivo_match": A 1-sentence reasoning explaining why the score was given. For scores > 90, you MUST explicitly justify it with direct evidence from both the NGO profile/dossier and the grant text.
-
-Do not include any other text or markdown formatting (like \`\`\`json). Just return the raw JSON array.
-`;
+- "motivo_match": A 1-2 sentence reasoning in Brazilian Portuguese (pt-BR) explaining why the score was given, citing specific evidence from the NGO's profile/dossier and the grant.`;
 
     try {
       const result = await model.generateContent(prompt);
       const responseText = result.response.text().trim();
-
-      // Attempt to clean the response in case the model returns markdown despite instructions
       const cleanedResponse = responseText.replace(/^```json\s*/i, '').replace(/```\s*$/, '');
       const parsedResults = JSON.parse(cleanedResponse);
 
       if (Array.isArray(parsedResults)) {
-        return parsedResults;
-      } else {
-        console.error('Model returned non-array JSON:', parsedResults);
-        return [];
+        allResults = allResults.concat(parsedResults);
       }
     } catch (error) {
       console.error('Error processing chunk:', error);
-      return [];
     }
-  });
-
-  const chunkResults = await Promise.all(chunkPromises);
-  for (const results of chunkResults) {
-    allResults = allResults.concat(results);
   }
 
   allResults.sort((a, b) => (b.score || 0) - (a.score || 0));
-  const top5 = allResults.slice(0, 5).map(match => {
-    const editalInfo = lightweightEditais.find(e => e.edital_id === match.edital_id);
+  const topMatches = allResults.slice(0, 8).map(match => {
+    const editalInfo = lightweightEditais.find(e => String(e.edital_id) === String(match.edital_id));
     return {
       ...match,
       titulo: editalInfo ? editalInfo.titulo : match.edital_id,
@@ -157,5 +222,5 @@ Do not include any other text or markdown formatting (like \`\`\`json). Just ret
     };
   });
 
-  return json(top5);
+  return json(topMatches);
 }

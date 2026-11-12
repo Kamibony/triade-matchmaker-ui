@@ -65,7 +65,7 @@ export async function POST({ request }: any) {
     return json({ error: 'Missing GEMINI_API_KEY' }, { status: 500 });
   }
 
-  const edital = (editaisData as any[]).find(e => e.id === edital_id);
+  const edital = (editaisData as any[]).find(e => String(e.id) === String(edital_id));
 
   if (!edital) {
     return json({ error: 'Edital not found' }, { status: 404 });
@@ -103,45 +103,46 @@ export async function POST({ request }: any) {
   }
 
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-  const model = genAI.getGenerativeModel({ model: 'gemini-3.5-flash-lite' });
+  const model = genAI.getGenerativeModel({
+    model: 'gemini-3.5-flash-lite',
+    generationConfig: {
+      temperature: 0,
+      responseMimeType: 'application/json'
+    }
+  });
 
   const prompt = `
 You are a Senior Grant Consultant specializing in the Brazilian Third Sector (ONGs/OSCs).
-Your task is to analyze the full text of a grant (Edital) and cross-reference it with the profile of a specific NGO to create a detailed action plan.
+Your task is to analyze the full text of a grant (Edital) and cross-reference it with the complete profile of a specific NGO to create a detailed action plan in Brazilian Portuguese (pt-BR).
 
-Here is the profile of the NGO (OSC):
+Here is the complete profile of the NGO (OSC):
 ${JSON.stringify(oscProfile, null, 2)}
 
 Here is the extended Web Dossier of the NGO (if available):
 ${dossier_text || 'Not provided'}
 If provided, use these rich contextual details (recent projects, specific focus areas, partnerships) to make the 'project_ideas' highly tailored and specific to their actual real-world operations.
 
-Here is the ENTIRE text of the grant (Edital):
+Here is the text of the grant (Edital):
 --- START OF GRANT TEXT ---
-${fullGrantText}
+${fullGrantText.slice(0, 60000)}
 --- END OF GRANT TEXT ---
 
-Based strictly on the grant text provided above and the NGO's profile, generate a consulting report in valid JSON format.
-The JSON must have the following exact structure:
+Based strictly on the grant text provided above and the NGO's profile, generate a consulting report in valid JSON format (in Brazilian Portuguese):
 {
-  "executive_summary": "A 2-3 sentence overview explaining what the edital is about and its core objective.",
+  "executive_summary": "A 2-3 sentence overview in pt-BR explaining what the edital is about, its value/deadline, and why it fits this NGO.",
   "missing_documents": [
-    // Array of strings detailing specific compliance documents the OSC needs to prepare or check.
+    "Specific compliance documents the OSC needs to prepare or check (in pt-BR)."
   ],
   "statute_requirements": [
-    // Array of strings detailing specific clauses, changes, or focus areas that must be present in their 'Estatuto' (Bylaws) according to the rules of this edital.
+    "Specific clauses, changes, or focus areas that must be present in their 'Estatuto' (Bylaws) according to the rules of this edital (in pt-BR)."
   ],
   "project_ideas": [
-    // Array of EXACTLY 3 objects containing project ideas highly tailored to the OSC's focus that have a strong chance of winning this specific edital.
     {
-      "title": "Short title of the project",
-      "description": "A brief description of how the project connects the OSC's profile with the edital's objectives."
+      "title": "Short title of the project (in pt-BR)",
+      "description": "A brief description of how the project connects the OSC's real activities/CNAE/Dossier with the edital's objectives (in pt-BR)."
     }
   ]
-}
-
-Return ONLY the raw JSON string. Do not include markdown blocks like \`\`\`json or any other text.
-`;
+}`;
 
   try {
     const result = await model.generateContent(prompt);

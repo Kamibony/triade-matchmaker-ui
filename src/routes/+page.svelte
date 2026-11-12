@@ -33,6 +33,7 @@
         },
         body: JSON.stringify({
           cnpj,
+          nome: oscDetails?.nome_fantasia || oscDetails?.razao_social || '',
           foco_atividades: focoAtividades,
           cnae_data: cnaeDataState,
           uf: ufState,
@@ -76,7 +77,9 @@
         },
         body: JSON.stringify({
           cnpj: cnpj.replace(/[^\d]/g, ''),
-          nome: oscDetails.nome_fantasia || oscDetails.razao_social
+          nome: oscDetails.nome_fantasia || oscDetails.razao_social,
+          municipio: municipioState,
+          uf: ufState
         })
       });
 
@@ -109,6 +112,12 @@
           edital_id: editalId,
           oscProfile: {
             cnpj,
+            nome: oscDetails?.nome_fantasia || oscDetails?.razao_social || '',
+            municipio: municipioState,
+            uf: ufState,
+            natureza_juridica: naturezaJuridicaState,
+            idade_anos: idadeAnosState,
+            cnae_data: cnaeDataState,
             foco_atividades: focoAtividades
           },
           dossier_text: dossierResult
@@ -134,8 +143,9 @@
     event.preventDefault();
     loading = true;
     errorMsg = null;
-    oscDetails = null; // Reset profile
-    results = null; // Clear previous results when fetching new profile
+    oscDetails = null;
+    results = null;
+    dossierResult = null;
 
     try {
       const cleanCnpj = cnpj.replace(/[^\d]/g, '');
@@ -171,7 +181,7 @@
               }
               idadeAnosState = idade;
             } else {
-                idadeAnosState = 0;
+              idadeAnosState = 0;
             }
 
             let cnaeDesc = '';
@@ -179,17 +189,17 @@
               cnaeDesc += cnpjData.cnae_fiscal_descricao;
             }
             if (cnpjData.cnaes_secundarios && Array.isArray(cnpjData.cnaes_secundarios)) {
-              for (const cnae of cnpjData.cnaes_secundarios) {
+              for (const cnae of cnae.descricao ? cnpjData.cnaes_secundarios : cnpjData.cnaes_secundarios) {
                 if (cnae.descricao) cnaeDesc += `, ${cnae.descricao}`;
               }
             }
             cnaeDataState = cnaeDesc;
           } else {
-             const errorData = await brasilApiResponse.json().catch(() => ({}));
-             throw new Error(errorData.message || `Falha ao buscar CNPJ (status ${brasilApiResponse.status}). Verifique o número e tente novamente.`);
+            const errorData = await brasilApiResponse.json().catch(() => ({}));
+            throw new Error(errorData.message || `Falha ao buscar CNPJ (status ${brasilApiResponse.status}). Verifique o número e tente novamente.`);
           }
         } catch (err: any) {
-             throw new Error(err.message || 'Erro de rede ao buscar dados do CNPJ.');
+          throw new Error(err.message || 'Erro de rede ao buscar dados do CNPJ.');
         }
       }
     } catch (err: any) {
@@ -222,7 +232,7 @@
 
         <div>
           <label for="foco" class="block text-sm font-medium text-gray-700 mb-1">Foco de Atividades</label>
-          <p class="text-xs text-gray-500 mb-2">Descreva os principais temas, áreas de atuação e objetivos da sua organização.</p>
+          <p class="text-xs text-gray-500 mb-2">Descreva os principais temas, áreas de atuação e objetivos da sua organização (opcional).</p>
           <textarea
             id="foco"
             bind:value={focoAtividades}
@@ -237,12 +247,12 @@
           disabled={loading}
           class="w-full md:w-auto inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         >
-          {#if loading}
+          {#if loading && !oscDetails}
             <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
               <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
               <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
             </svg>
-            Analisando dezenas de editais...
+            Consultando dados do CNPJ...
           {:else}
             <svg class="mr-2 -ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
             Buscar Dados da Organização
@@ -278,6 +288,23 @@
           </div>
           <div class="flex flex-col sm:flex-row gap-3 mt-4 md:mt-0">
             <button
+              onclick={handleFetchMatches}
+              disabled={isDossierLoading || loading}
+              class="shrink-0 inline-flex justify-center items-center px-4 py-2 border border-blue-200 shadow-sm text-sm font-medium rounded-md text-blue-700 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 transition-colors"
+            >
+              {#if loading && !isDossierLoading}
+                <svg class="animate-spin mr-2 -ml-1 h-4 w-4 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Buscando Editais...
+              {:else}
+                <span class="mr-2">⚡</span>
+                Buscar Editais (Sem Dossiê)
+              {/if}
+            </button>
+
+            <button
               onclick={handleGenerateDossier}
               disabled={isDossierLoading || loading}
               class="shrink-0 inline-flex justify-center items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 disabled:opacity-50 transition-colors"
@@ -288,15 +315,9 @@
                   <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
                 Gerando Dossiê e Buscando Editais...
-              {:else if loading}
-                <svg class="animate-spin mr-2 -ml-1 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-                Buscando...
               {:else if dossierResult}
                 <span class="mr-2">🔄</span>
-                Atualizar Resultados
+                Atualizar Matches com Dossiê
               {:else}
                 <span class="mr-2">✨</span>
                 Gerar Dossiê de IA & Buscar Editais
@@ -312,8 +333,14 @@
           <div>
             <span class="font-semibold">Telefone:</span> {#if oscDetails.telefone}{oscDetails.telefone}{:else}Não informado{/if}
           </div>
+          <div>
+            <span class="font-semibold">Idade do CNPJ:</span> {idadeAnosState} anos ({naturezaJuridicaState})
+          </div>
+          <div>
+            <span class="font-semibold">Localização:</span> {oscDetails.municipio} - {oscDetails.uf}
+          </div>
           <div class="md:col-span-2">
-            <span class="font-semibold">Endereço:</span> {oscDetails.logradouro}, {oscDetails.bairro}, {oscDetails.municipio} - {oscDetails.uf}
+            <span class="font-semibold">CNAE Registrado:</span> {cnaeDataState || 'Não informado'}
           </div>
         </div>
 
