@@ -60,6 +60,7 @@ jobs:
       - name: Run Matchmaking Pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
           TARGET_EDITAL_ID: ${{ inputs.target_edital_id }}
           TARGET_PDF_URL: ${{ inputs.target_pdf_url }}
           MAX_EDITAIS_PER_RUN: ${{ inputs.max_editais || '8' }}

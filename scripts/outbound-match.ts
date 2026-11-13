@@ -29,6 +29,8 @@ interface CacheEntry {
   dossieText?: string;
   dossie_updated_at?: string;
   evaluated_editais?: string[];
+  ipea_id?: number;
+  brave_enriched?: boolean;
 }
 
 interface MatchResult {
@@ -54,6 +56,8 @@ const OUTPUT_FILE = path.join(process.cwd(), 'src', 'data', 'daily_outbound_lead
 const EDITAIS_PATH = path.join(process.cwd(), 'src', 'data', 'editais_prosas.json');
 const SENT_LOG_PATH = path.join(process.cwd(), 'src', 'data', 'whatsapp_sent_log.json');
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const BRAVE_SEARCH_API_KEY = (process.env.BRAVE_SEARCH_API_KEY || '').trim();
+const ipeaIdByCnpj = new Map<string, number>();
 
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY || 'dummy');
 
@@ -114,6 +118,62 @@ function hasValidPhone(osc: OSC): boolean {
   const raw = osc.official_contacts?.ddd_telefone_1 || osc.official_contacts?.ddd_telefone_2 || '';
   const digits = raw.replace(/\D/g, '');
   return digits.length >= 10;
+}
+
+function isMobilePhone(osc: OSC): boolean {
+  const candidates = [osc.official_contacts?.ddd_telefone_1, osc.official_contacts?.ddd_telefone_2];
+  for (const raw of candidates) {
+    let digits = (raw || '').replace(/\D/g, '');
+    if (digits.startsWith('55') && digits.length >= 12) digits = digits.slice(2);
+    if (digits.length >= 10 && ['6', '7', '8', '9'].includes(digits[2])) return true;
+  }
+  return false;
+}
+
+async function fetchIpeaDadosGerais(ipeaId?: number): Promise<string> {
+  if (!ipeaId) return '';
+  try {
+    const res = await fetch(`https://mapaosc.ipea.gov.br/api/api/osc/dados_gerais/${ipeaId}`);
+    if (!res.ok) return '';
+    const d = await res.json();
+    const parts: string[] = [];
+    if (d?.tx_nome_fantasia_osc) parts.push(`Nome Fantasia: ${d.tx_nome_fantasia_osc}`);
+    if (d?.tx_resumo_osc) parts.push(`Resumo IPEA: ${String(d.tx_resumo_osc).slice(0, 500)}`);
+    if (d?.tx_site_osc) parts.push(`Site oficial (IPEA): ${d.tx_site_osc}`);
+    if (d?.tx_email_osc) parts.push(`E-mail (IPEA): ${d.tx_email_osc}`);
+    return parts.join('\n');
+  } catch {
+    return '';
+  }
+}
+
+async function fetchBraveWebContext(osc: OSC): Promise<string> {
+  if (!BRAVE_SEARCH_API_KEY) return '';
+  const query = `"${osc.nome}" ${osc.municipio} ${osc.uf}`;
+  const url = `https://api.search.brave.com/res/v1/web/search?q=${encodeURIComponent(query)}&count=5`;
+  try {
+    const res = await fetch(url, {
+      headers: {
+        Accept: 'application/json',
+        'Accept-Encoding': 'gzip',
+        'X-Subscription-Token': BRAVE_SEARCH_API_KEY
+      }
+    });
+    if (!res.ok) {
+      console.warn(`  -> Brave Search HTTP ${res.status} for ${osc.nome}`);
+      return '';
+    }
+    const data: any = await res.json();
+    const results: any[] = data?.web?.results || [];
+    if (results.length === 0) return '';
+    return results
+      .slice(0, 5)
+      .map((r: any, idx: number) => `${idx + 1}. ${r.title || ''} (${r.url || ''})\n   ${r.description || ''}`)
+      .join('\n');
+  } catch (e: any) {
+    console.warn(`  -> Brave Search failed for ${osc.nome}: ${e.message}`);
+    return '';
+  }
 }
 
 function normalizePhone(raw?: string | null): string | null {
@@ -414,6 +474,7 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
         const headerData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/osc/cabecalho/${item.id_osc}`);
         if (headerData && headerData.cd_identificador_osc) {
           const cnpj = String(headerData.cd_identificador_osc).padStart(14, '0');
+          if (item.id_osc) ipeaIdByCnpj.set(cnpj, Number(item.id_osc));
           if (cache[cnpj]?.evaluated_editais?.includes(String(editalId))) {
             continue;
           }
@@ -729,7 +790,7 @@ async function runPipeline() {
 
       const age = Math.max(0, currentYear - (osc.ano_fundacao || currentYear));
       const ageBonus = Math.min(age, 20);
-      const phoneBonus = hasValidPhone(osc) ? 30 : 0;
+      const phoneBonus = isMobilePhone(osc) ? 60 : hasValidPhone(osc) ? 15 : 0;
       const emailBonus = osc.official_contacts?.email ? 10 : 0;
 
       const heuristicScore = keywordScore + ageBonus + phoneBonus + emailBonus;
@@ -753,12 +814,31 @@ async function runPipeline() {
       console.log(`[${i + 1}/${topFinalists.length}] Evaluating Finalist: ${osc.nome} (${osc.municipio}/${osc.uf})`);
 
       const cacheEntry = cache[osc.cnpj] || { osc, last_checked_date: new Date().toISOString(), evaluated_editais: [] };
+      if (!cacheEntry.ipea_id && ipeaIdByCnpj.has(osc.cnpj)) {
+        cacheEntry.ipea_id = ipeaIdByCnpj.get(osc.cnpj);
+      }
       cache[osc.cnpj] = cacheEntry;
 
       let dossieText = cacheEntry.dossieText || '';
+      let webContext = '';
 
-      if (dossieText && dossieText.length > 80 && !dossieText.includes('indisponível')) {
-        console.log(`  -> Using cached Dossiê for CNPJ ${osc.cnpj} ($0 search cost)`);
+      if (cacheEntry.ipea_id) {
+        const ipeaInfo = await fetchIpeaDadosGerais(cacheEntry.ipea_id);
+        if (ipeaInfo) {
+          webContext += `**Dados Oficiais Mapa das OSCs (IPEA):**\n${ipeaInfo}\n\n`;
+        }
+      }
+
+      if (BRAVE_SEARCH_API_KEY && !cacheEntry.brave_enriched) {
+        const braveInfo = await fetchBraveWebContext(osc);
+        if (braveInfo) {
+          console.log(`  -> Brave Search enriched ${osc.nome} with web snippets.`);
+          webContext += `**Resultados Web (Brave Search):**\n${braveInfo}\n`;
+        }
+        cacheEntry.brave_enriched = true;
+        await sleep(1100); // Respect Brave Search 1 req/sec rate limit
+      } else if (dossieText && dossieText.length > 80 && !dossieText.includes('indisponível') && cacheEntry.brave_enriched) {
+        console.log(`  -> Using cached web-enriched Dossiê for CNPJ ${osc.cnpj} ($0 search cost)`);
       } else if (GEMINI_API_KEY && GEMINI_API_KEY !== 'dummy' && totalSearchCalls < MAX_SEARCH_CALLS_PER_RUN) {
         const dossiePrompt = `Você é um analista do Terceiro Setor brasileiro.
 Faça UMA ÚNICA busca objetiva no Google sobre a ONG "${osc.nome}" de ${osc.municipio} - ${osc.uf} (CNPJ: ${osc.cnpj}).
@@ -804,7 +884,7 @@ Primary Activity (CNAE): ${osc.cnae_primario_descricao}
 Secondary Activity (CNAE): ${osc.cnae_secundario_descricao}
 Official Phone: ${osc.official_contacts?.ddd_telefone_1 || 'N/A'}
 Official Email: ${osc.official_contacts?.email || 'N/A'}
-${dossieText ? `\n**Existing Dossier:**\n${dossieText}` : ''}
+${webContext ? `\n${webContext}` : ''}${dossieText ? `\n**Existing Dossier:**\n${dossieText}` : ''}
 
 Return ONLY a valid JSON object containing:
 - "score": A number between 0 and 100 representing how well the NGO matches the grant's objective and themes.
