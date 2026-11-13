@@ -2,6 +2,7 @@ import { json } from '@sveltejs/kit';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { env } from '$env/dynamic/private';
 import { normalizeBrazilPhone, sendWhatsAppText } from '$lib/server/whatsapp-gateway';
+import { logWhatsAppWebhookEvent } from '$lib/server/whatsapp-monitor';
 import dailyLeadsData from '../../../../data/daily_outbound_leads.json';
 import editaisData from '../../../../data/editais_prosas.json';
 
@@ -197,19 +198,37 @@ export async function POST({ request }) {
 
     const isSimulator = !!body.simulator;
     const matchedLead = findMatchingLeadByPhone(senderPhone, body.lead);
+    const normalizedSender = normalizeBrazilPhone(senderPhone);
 
     if (!isSimulator && !matchedLead) {
+      const reason = 'Remetente não está na lista de leads abordados (ex: contato pessoal, Claro/operadora ou número desconhecido).';
+      await logWhatsAppWebhookEvent({
+        eventType: 'ignored',
+        isSimulator,
+        phone: normalizedSender || senderPhone,
+        orgNome: senderName || null,
+        incomingText,
+        detail: reason
+      });
       return json({
         ok: true,
         ignored: true,
-        reason: 'Remetente não está na lista de leads abordados (ex: contato pessoal, Claro/operadora ou número desconhecido).'
+        reason
       });
     }
 
-    const normalizedSender = normalizeBrazilPhone(senderPhone);
     if (!isSimulator) {
       const rateCheck = isRateLimitedOrLooped(normalizedSender);
       if (rateCheck.blocked) {
+        await logWhatsAppWebhookEvent({
+          eventType: 'ignored',
+          isSimulator,
+          phone: normalizedSender || senderPhone,
+          orgNome: matchedLead?.osc?.nome || senderName || null,
+          editalId: matchedLead?.edital_id || null,
+          incomingText,
+          detail: rateCheck.reason
+        });
         return json({ ok: true, ignored: true, reason: rateCheck.reason });
       }
     }
@@ -319,6 +338,19 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
       });
     }
 
+    const monitor = await logWhatsAppWebhookEvent({
+      eventType: autoReplyDispatch?.ok ? 'auto_replied' : 'analyzed_only',
+      isSimulator,
+      phone: normalizedSender || senderPhone,
+      orgNome,
+      editalId: matchedLead?.edital_id || null,
+      intent: parsed?.intent || null,
+      crmStatus: parsed?.crm_status || null,
+      incomingText,
+      replyMessage: autoReplyDispatch?.ok ? parsed?.reply_message : parsed?.reply_message ? `[Não enviado] ${parsed.reply_message}` : '',
+      detail: autoReplyDispatch?.error || parsed?.analysis || null
+    });
+
     return json({
       ok: true,
       autoReplyEnabled: envAutoReplyEnabled,
@@ -330,10 +362,15 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
       incomingText,
       sdrResult: parsed,
       autoReplyDispatch,
-      angelaAlertDispatch
+      angelaAlertDispatch,
+      monitor
     });
   } catch (error: any) {
     console.error('Erro no Webhook WhatsApp IA SDR:', error);
+    await logWhatsAppWebhookEvent({
+      eventType: 'error',
+      detail: error?.message || 'Erro interno no Webhook WhatsApp.'
+    }).catch(() => {});
     return json({ ok: false, error: error.message || 'Erro interno no Webhook WhatsApp.' }, { status: 500 });
   }
 }
