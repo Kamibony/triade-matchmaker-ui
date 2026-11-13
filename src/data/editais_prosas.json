@@ -393,56 +393,6 @@
     "pipeline_status": "FAILED_PERMANENTLY"
   },
   {
-    "id": "19521",
-    "attributes": {
-      "nome": "RIO GRANDE DO SUL - FOMENTO - CRIAÇÃO E MONTAGEM DE ESPETÁCULOS DE ARTES CÂNICAS - 2026",
-      "e_central?": true,
-      "data_inicio": "2026-10-23",
-      "data_fim": "2026-11-12",
-      "valor_total": 600000
-    },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19521",
-    "full_text": "Ajuda RIO GRANDE DO SUL - FOMENTO - CRIAÇÃO E MONTAGEM DE ESPETÁCULOS DE ARTES CÂNICAS - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por RIO GRANDE DO SUL - FOMENTO - CRIAÇÃO E MONTAGEM DE ESPETÁCULOS DE ARTES CÂNICAS - 2026 Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Subáreas Objetivos de Desenvolvimento Sustentável (ODS) 23/10/26 até 12/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: (51) 3210-3708_ Financiamento de projetos culturais de criação, montagem e realização de espetáculos inéditos de Artes Cênicas (Circo, Dança e Teatro), produzidos por grupos do Rio Grande do Sul e adaptados/criados para uma arena de três lados, considerando a estrutura técnica e espacial do Teatro de Arena de Porto Alegre. Total Disponível R$ 600.000,00 Lei Estadual de Cultura Rio Grande do Sul - RS E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Secretaria de Estado da Cultura do Rio Grande do Sul (SEDAC/RS) Cultura e Artes Circo Dança Teatro",
-    "deep_metadata": {
-      "edital_id": "19521",
-      "resumo_objetivo": "Financiamento de projetos culturais de criação, montagem e realização de espetáculos inéditos de Artes Cênicas produzidos por grupos do Rio Grande do Sul.",
-      "temas_principais": [
-        "cultura",
-        "artes cênicas",
-        "circo",
-        "dança",
-        "teatro"
-      ],
-      "prazo_de_inscricao": "2026-11-12",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "RS"
-        ],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": 600000,
-        "exige_contrapartida": false,
-        "valor_total_edital": 600000
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Espetáculos inéditos de Artes Cênicas (Circo, Dança e Teatro)",
-          "Produzidos por grupos do Rio Grande do Sul",
-          "Adaptados/criados para uma arena de três lados, considerando a estrutura técnica e espacial do Teatro de Arena de Porto Alegre"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    },
-    "pipeline_status": "COMPLETED"
-  },
-  {
     "id": "19564",
     "attributes": {
       "nome": "NAVEGANTES  SC - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
@@ -13970,112 +13920,6 @@
     "pipeline_status": "COMPLETED"
   },
   {
-    "id": "19597",
-    "attributes": {
-      "nome": "SÃO PAULO - CHAMADA FAPESP PIPE JORNADA TECNOLÓGICA - TECNOLOGIAS EDUCACIONAIS - 2026",
-      "e_central?": true,
-      "data_inicio": "2026-10-13",
-      "data_fim": "2026-11-12",
-      "valor_total": 25000000
-    },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19597",
-    "full_text": "Ajuda SÃO PAULO - CHAMADA FAPESP PIPE JORNADA TECNOLÓGICA - TECNOLOGIAS EDUCACIONAIS - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por SÃO PAULO - CHAMADA FAPESP PIPE JORNADA TECNOLÓGICA - TECNOLOGIAS EDUCACIONAIS - 2026 Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Público-Alvo Objetivos de Desenvolvimento Sustentável (ODS) 13/10/26 até 12/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: pipe-jornada@fapesp.br Chamada de Propostas FAPESP para o Programa PIPE Jornada Tecnológica - Tecnologias Educacionais, Fase 1: apoio, com recursos não reembolsáveis, à execução de pesquisa científica e tecnológica inovadora, de qualquer grau de maturidade, em pequenas empresas do estado de São Paulo, no início do desenvolvimento de projeto de pesquisa para inovação em tecnologias educacionais (temas de interesse no Anexo 1 da Chamada). Modalidade: PIPE - Fase 1. Duração máxima: 12 meses. Valor máximo de financiamento por projeto: R$ 500.000,00, considerando os itens concedidos pela FAPESP, incluindo Bolsas de Treinamento Técnico e Bolsas de Pesquisa em Pequena Empresa, exceto Benefícios Complementares e Parcela para Custos de Infraestrutura Direta do Projeto. VALOR TOTAL DA CHAMADA - CAMPO DEIXADO EM BRANCO PROPOSITALMENTE: a página oficial informa \"Até R$ 25.000.000,00 (vinte milhões de reais)\" - divergência interna entre o valor numeral (R$ 25 milhões) e o valor por extenso (vinte milhões de reais), sem retificação publicada até 30/10/2026. A página foi atualizada em 13/10/2026 sem correção desse ponto. Ressalva para validação antes da publicação. Requisitos da Empresa Sede: até 250 empregados; sede ou unidade de P&D no estado de São Paulo com infraestrutura física adequada (endereço virtual não é aceito); objeto social compatível; organização econômica com personalidade jurídica própria e finalidade lucrativa, constituída sob as leis brasileiras (admitida empresa do Programa Inova Simples, LC 167/2019, e proposta sem empresa constituída, caso em que o PR deverá ser sócio da empresa a constituir). NÃO se considera empresa: empresário individual, microempreendedor individual (MEI), empresário rural, cooperativa, fundação, organização da sociedade civil e associação civil. Cada empresa pode ser sede de apenas um projeto nesta Chamada. Requisitos do Pesquisador Responsável: sócio pessoa natural da Empresa Sede, com poderes para representá-la perante a FAPESP (administradores n... ver mais Total Disponível R$ 25.000.000,00 Limite por projeto R$ 500.000,00 Recursos próprios São Paulo - SP E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Fundação de Amparo à Pesquisa do Estado de São Paulo - FAPESP Ciência e Tecnologia Educação",
-    "deep_metadata": {
-      "edital_id": "19597",
-      "resumo_objetivo": "Apoio, com recursos não reembolsáveis, à execução de pesquisa científica e tecnológica inovadora em tecnologias educacionais em pequenas empresas do estado de São Paulo.",
-      "temas_principais": [
-        "tecnologias educacionais",
-        "pesquisa científica",
-        "tecnologia e inovação"
-      ],
-      "prazo_de_inscricao": "2026-11-12",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "SP"
-        ],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": [
-          "empresário individual",
-          "microempreendedor individual",
-          "empresário rural",
-          "cooperativa",
-          "fundação",
-          "organização da sociedade civil",
-          "associação civil",
-          "fins lucrativos ausentes"
-        ]
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": 500000,
-        "exige_contrapartida": false,
-        "valor_total_edital": 25000000
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Sede ou unidade de P&D no estado de São Paulo com infraestrutura física adequada (endereço virtual não é aceito)",
-          "Até 250 empregados",
-          "Pesquisador Responsável deve ser sócio pessoa natural da Empresa Sede com poderes para representá-la"
-        ]
-      },
-      "fonte_dados": "texto_pagina",
-      "drive_pdf_link": "https://drive.google.com/file/d/1PE1afa4jr8oCIMFUPZ-GmMMT0_4gKKjh/view?usp=drivesdk"
-    },
-    "pipeline_status": "COMPLETED"
-  },
-  {
-    "id": "19585",
-    "attributes": {
-      "nome": "RIO DE JANEIRO - BOLSAS E FOMENTO - FIXAÇÃO DE DOUTORES - 2026",
-      "e_central?": true
-    },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19585",
-    "pdf_link": "https://faperj.br/rp/downloads/Edital_FAPERJ_N%C2%BA_34_2026_-_Programa_de_Apoio_%C3%A0_Fixa%C3%A7%C3%A3o_de_Doutores_no_RJ_%E2%80%93_Conhecimento_Brasil_PROFIX-RJ_%E2%80%93_FAPERJ_CNPq_CAPES.pdf",
-    "full_text": "Ajuda RIO DE JANEIRO - BOLSAS E FOMENTO - FIXAÇÃO DE DOUTORES - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por RIO DE JANEIRO - BOLSAS E FOMENTO - FIXAÇÃO DE DOUTORES - 2026 Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre A Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro (FAPERJ), o CNPq e a CAPES tornam público o Edital Nº 34/2026 - Programa de Apoio à Fixação de Doutores no Estado do Rio de Janeiro - Conhecimento Brasil/PROFIX-RJ, para atração e fixação de pesquisadores(as) doutores(as) em Instituições de Ensino Superior e Instituições Científicas e Tecnológicas (IES/ICT) sediadas no Estado do Rio de Janeiro. O(a) proponente será obrigatoriamente o(a) candidato(a) à Bolsa Conhecimento Brasil e coordenador(a) científico(a) do projeto, com título de doutor até a data limite do Edital, trajetória científica, tecnológica, artístico-cultural ou de inovação compatível com a proposta e Currículo Lattes atualizado. A FAPERJ concederá Auxílio à Pesquisa de até R$ 200.000,00 por proposta, com duração de até 48 meses; o CNPq concederá Bolsas Conhecimento Brasil (BCB-1) de R$ 13.000,00 mensais por até 48 meses aos pesquisadores responsáveis; e a CAPES poderá conceder uma bolsa de mestrado ou de doutorado por projeto. A seleção poderá contemplar até 80 propostas, com recursos da ordem de R$ 16.000.000,00. A execução de cada proposta será de até 51 meses (3 meses para indicação dos bolsistas CAPES + 48 meses de bolsas). Submissão de propostas on-line de 23/10/2026 a 12/11/2026, pelo SisFAPERJ. Resultado final (FAPERJ, CNPq e CAPES) a pa",
-    "deep_metadata": {
-      "edital_id": "19585",
-      "resumo_objetivo": "Selecionar e apoiar projetos de pesquisa, desenvolvimento científico, tecnológico e/ou inovação, associados à atração e fixação de pesquisadores doutores no Estado do Rio de Janeiro mediante concessão integrada de auxílio à pesquisa e bolsas.",
-      "temas_principais": [
-        "pesquisa científica",
-        "desenvolvimento tecnológico",
-        "inovação",
-        "fixação de doutores"
-      ],
-      "prazo_de_inscricao": "2026-11-12",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "RJ"
-        ],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": 200000,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": true,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Possuir título de Doutor",
-          "Apresentar projeto de pesquisa sob coordenação própria",
-          "Apresentar anuência formal da instituição executora",
-          "Apresentar anuência de Programa de Pós-Graduação reconhecido pela CAPES"
-        ]
-      },
-      "fonte_dados": "pdf",
-      "drive_pdf_link": "https://drive.google.com/file/d/15heGQZrv0FQn2T765ZirkB3eFvIXv84b/view?usp=drivesdk"
-    },
-    "pipeline_status": "COMPLETED"
-  },
-  {
     "id": "19583",
     "attributes": {
       "nome": "PARANÁ - CHAMADA PÚBLICA FUNDAÇÃO ARAUCÁRIA 20/2026 - PROFISSIONAIS TOP MANAGERS EM GESTÃO DE CT&I - 2026",
@@ -15107,8 +14951,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1gG_cuqxnXJ4CXpIzlNUkzu8aJxpjJel_/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19620",
@@ -15164,8 +15007,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1kIAPSchtXzWcYK5eUWdodHbBZT65nXqY/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19622",
@@ -15214,8 +15056,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1CEPVW-DyDDX9rD4owP8ScjBTOsEynVBM/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19623",
@@ -15376,8 +15217,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1SevQyR9S1ipNj0R_6Esah0yr_qGKYUus/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19628",
@@ -15425,8 +15265,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1J7nkR-48IxfOiDbjQKKpQbrFUZl3rNIy/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19631",
@@ -15485,8 +15324,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1lnR1z8KiPt2Bbpdmbj3FKq6isQ1nNxGF/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19625",
@@ -15536,8 +15374,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1JbIejrMM3BbTPB1py9fhzWFWylYNouYU/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19640",
@@ -15595,8 +15432,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1ojthS5a9RzvW6lLcRoUOWfql3ZrqIZ7f/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19637",
@@ -15929,50 +15765,6 @@
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
           "Unidades consumidoras devem pertencer às áreas de concessão das distribuidoras do Grupo Neoenergia"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    },
-    "pipeline_status": "COMPLETED"
-  },
-  {
-    "id": "19645",
-    "attributes": {
-      "nome": "Escuta Pública Ciclo da PNAB 2027 -  Maranhão",
-      "e_central?": false,
-      "data_inicio": "2026-11-06",
-      "data_fim": "2026-11-12"
-    },
-    "public_url": "https://prosas.com.br/editais/19645",
-    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços, você concorda com tal monitoramento. Pra mais informações, consulte a nossa . Início Meu cadastro Propostas Gerenciar Usuários nova política de privacidade start create Alternar perfil folder account_circle power_settings_new Sair Inscrições a partir de: 06/11/2026 19:30 12/11/2026 21:00 GMT+00 (Horário Universal Coordenado) Secretaria de Estado da Cultura do Maranhão account_box Escuta Pública Ciclo da PNAB 2027 - Maranhão até Inscreva-se INFORMAÇÕES INFORMAÇÕES Sobre Editar Ver descrição completa Diminuir Tipos de perfis que podem se inscrever Locais de atuação dos projetos Estado(s): kamil Usuário - ID: 381702 kamil vadovic Proponente - ID: 323127 mode_edit A convida artistas, produtores, fazedores de cultura, coletivos, grupos, instituições e demais agentes culturais maranhenses a participarem da . A iniciativa tem como objetivo ouvir o setor cultural, identificar suas necessidades, conhecer suas prioridades e reunir contribuições que possam subsidiar a elaboração de políticas públicas, programas e editais de fomento cultural, especialmente no âmbito da . Por meio do formulário, os agentes culturais poderão compartilhar suas experiências com os editais anteriores, indicar quais modalidades de apoio consideram prioritárias e contribuir com sugestões para o fortalecimento e a democratização das políticas culturais em todo o Maranhão. A escuta é aberta à participação dos agentes culturais, . Queremos conhecer diferentes realidades, experiências e perspectivas de quem faz a cultura acontecer nos municípios maranhenses. As contribuições recebidas servirão como subsídio para o planejamento das próximas ações da SECMA, buscando tornar as políticas de fomento cada vez mais participativas, acessíveis e alinhadas às necessidades do setor cultural. Acesse o formulário e registre sua contribuição! A construção de políticas culturais mais representativas depende da participação de quem vive, produz, preserva e transforma a cultura do nosso Estado. __________________ Caso o proponente não possua cadastro na plataforma Prosas, cadastre-se aqui. Dúvidas relacionadas à Plataforma Prosas podem ser enviadas para o atendimento em Whatsapp por meio do botão \"Ajuda\", disponível em todas as páginas da plataforma, no canto inferior direito. A equipe de suporte está disponível de segunda-feira à sexta-feira, das 9h às 18h. A convida artistas, produtores, fazedores de cultura, coletivos, grupos, instituições e demais agentes culturais maranhenses a participarem da . A iniciativa tem como objetivo ouvir o setor cultural, identificar suas necessidades, conhecer suas prioridades e reunir contribuições que possam subsidiar a elaboração de políticas públicas, programas e editais de fomento cultural, especialmente no âmbito da . Por meio do formulário, os agentes culturais poderão compartilhar suas experiências com os editais anteriores, indicar quais modalidades de apoio consideram prioritárias e contribuir com sugestões para o fortalecimento e a democratização das políticas culturais em todo o Maranhão. A escuta é aberta à participação dos agentes culturais, . Queremos conhecer diferentes realidades, experiências e perspectivas de quem faz a cultura acontecer nos municípios maranhenses. As contribuições recebidas servirão como subsídio para o planejamento das próximas ações da SECMA, buscando tornar as políticas de fomento cada vez mais participativas, acessíveis e alinhadas às necessidades do setor cultural. Acesse o formulário e registre sua contribuição! A construção de políticas culturais mais representativas depende da participação de quem vive, produz, preserva e transforma a cultura do nosso Estado. __________________ Caso o proponente não possua cadastro na plataforma Prosas, cadastre-se aqui. Dúvidas relacionadas à Plataforma Prosas podem ser enviadas para o atendimento em Whatsapp por meio do botão \"Ajuda\", disponível em todas as páginas da plataforma, no canto inferior direito. A equipe de suporte está disponível de segunda-feira à sexta-feira, das 9h às 18h. Fonte de Financiamento Maranhão # ESCUTA PÚBLICA SUA VOZ AJUDA A CONSTRUIR AS POLÍTICAS CULTURAIS DO MARANHÃO! Secretaria de Estado da Cultura do Maranhão (SECMA) Escuta Pública para o planejamento das próximas ações de fomento à cultura no Estado Política Nacional Aldir Blanc de Fomento à Cultura (PNAB) A participação de todos é fundamental! independentemente de terem sido ou não contemplados em editais anteriores PARTICIPE DA ESCUTA PÚBLICA! Sua experiência importa. Sua opinião faz a diferença. Participe! Secretaria de Estado da Cultura do Maranhão SECMA Governo do Estado do Maranhão # ESCUTA PÚBLICA SUA VOZ AJUDA A CONSTRUIR AS POLÍTICAS CULTURAIS DO MARANHÃO! Secretaria de Estado da Cultura do Maranhão (SECMA) Escuta Pública para o planejamento das próximas ações de fomento à cultura no Estado Política Nacional Aldir Blanc de Fomento à Cultura (PNAB) A participação de todos é fundamental! independentemente de terem sido ou não contemplados em editais anteriores PARTICIPE DA ESCUTA PÚBLICA! Sua experiência importa. Sua opinião faz a diferença. Participe! Secretaria de Estado da Cultura do Maranhão SECMA Governo do Estado do Maranhão person Pessoa física location_on Política Nacional Aldir Blanc",
-    "deep_metadata": {
-      "edital_id": "19645",
-      "resumo_objetivo": "Consulta pública realizada pela Secretaria de Estado da Cultura do Maranhão (SECMA) para ouvir o setor cultural e subsidiar a elaboração de políticas públicas, programas e editais de fomento cultural da PNAB 2027.",
-      "temas_principais": [
-        "cultura",
-        "políticas públicas",
-        "PNAB"
-      ],
-      "prazo_de_inscricao": "2026-11-12",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "MA"
-        ],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Exclusivo para agentes culturais maranhenses ou atuação no estado do Maranhão"
         ]
       },
       "fonte_dados": "texto_pagina"
@@ -16353,8 +16145,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1lEKgv_33fOn9WB-tQsmbin1vzrZIM5ZH/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19681",
@@ -16909,66 +16700,6 @@
     "drive_backfill_attempted": true
   },
   {
-    "id": "19691",
-    "attributes": {
-      "nome": "Edital de Chamamento Público Nº 006/2026 – Patrimônio Cultural e Memória: Fomento a Projetos de Pesquisa, Documentação e Registro das Manifestações Culturais de Várzea Alegre – Ceará.",
-      "e_central?": true,
-      "data_inicio": "2026-11-06",
-      "data_fim": "2026-11-12",
-      "valor_total": 24900
-    },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19691",
-    "pdf_link": "https://mapacultural.varzeaalegre.ce.gov.br/files/opportunity/8473/edital-fomento-006-salvaguarda-2.pdf",
-    "full_text": "Ajuda Edital de Chamamento Público Nº 006/2026 – Patrimônio Cultural e Memória: Fomento a Projetos de Pesquisa, Documentação e Registro das Manifestações Culturais de Várzea Alegre – Ceará. © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Chamamento Público Nº 006/2026 – Patrimônio Cultural e Memória: Fomento a Projetos de Pesquisa, Documentação e Registro das Manifestações Culturais de Várzea Alegre – Ceará. Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Subáreas Mídias 06/11/26 até 12/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: cultura@varzeaalegre.ce.gov.br Seleção de projetos culturais de agentes culturais (pessoas físicas) voltados para a realização de pesquisas, documentação e registro das manifestações culturais de Várzea Alegre CE. O objetivo é a identificação, reconhecimento, valorização, preservação e difusão do patrimônio cultural material e imaterial do município, abrangendo saberes, fazeres, tradições, memórias e histórias locais. Total Disponível R$ 24.900,00 Política Nacional Aldir Blanc Várzea Alegre - CE Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Prefeitura Municipal de Várzea Alegre - CE / Secretaria Municipal de Cultura e Turismo Cultura e Artes Audiovisual Fotografia Literatura Patrimônio Histórico Site Anexos",
-    "deep_metadata": {
-      "edital_id": "19691",
-      "resumo_objetivo": "Seleção de projetos culturais de agentes culturais (pessoas físicas) para realização de pesquisas, documentação e registro das manifestações culturais de Várzea Alegre - Ceará, com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
-      "temas_principais": [
-        "cultura",
-        "patrimônio cultural",
-        "memória",
-        "pesquisa",
-        "manifestações culturais"
-      ],
-      "prazo_de_inscricao": "2026-11-12",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "CE"
-        ],
-        "municipios_permitidos": [
-          "Várzea Alegre - CE"
-        ],
-        "natureza_juridica_excluida": [
-          "pessoa jurídica com fins lucrativos",
-          "pessoa jurídica sem fins lucrativos",
-          "MEI",
-          "coletivo sem CNPJ representado por pessoa física"
-        ]
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": 24900,
-        "exige_contrapartida": false,
-        "valor_total_edital": 24900
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": true,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Exclusivo para agentes culturais pessoa física",
-          "Exige atuação no município de Várzea Alegre há pelo menos 2 anos",
-          "Exige abertura de conta bancária específica"
-        ]
-      },
-      "fonte_dados": "pdf",
-      "drive_pdf_link": "https://drive.google.com/file/d/1JTbethowAyBWKcmFg2NO7Ak-1xDNmv5u/view?usp=drivesdk"
-    },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
-  },
-  {
     "id": "19648",
     "attributes": {
       "nome": "CHAMAMENTO PÚBLICO Nº 03/2026 – PREMIAÇÃO DE TRAJETÓRIAS ",
@@ -17314,8 +17045,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1h7MUEN5mGptaIZKe8GbJZovFxsMNypnb/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19685",
@@ -17371,8 +17101,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/146CXOlBh6OhJbZPD5aXpJBpsxbLglS_r/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19687",
@@ -17569,8 +17298,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1iEkDNrv452UImeKcH55oU5Pqa-z4YC45/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19699",
@@ -18204,8 +17932,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1zCaxD1gi7a9T_xQq-IlrsHX2Y_Gv0bt_/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19703",
@@ -18248,8 +17975,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1jlX4dkhBpm8YIkphUmDC8bVAcmTMuOLn/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19698",
@@ -18412,8 +18138,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1c7-gfWYLBebY6PD2k4sGsgAHXgi6JVDX/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19704",
@@ -18462,8 +18187,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1izPfAH-TNfVqnHzftueTTT3F0ndzIEh4/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19708",
@@ -18517,8 +18241,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/132C9WpNwYCrbfGHYB346XRKSlXa1_Ei5/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19709",
@@ -18572,8 +18295,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1olqaSEi8t_2vFzyCFJt4EXpeLyARklsu/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19713",
@@ -18586,8 +18308,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19713",
     "full_text": "Ajuda EDITAL DE CHAMAMENTO PÚBLICO Nº 008/2026 - PNAB - SECULT/AP - Seleção de Ações Continuadas para Firmar Termo de Execução Cultural com Recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº 14.399/2022) - Programa de Apoio a Ações Co © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por EDITAL DE CHAMAMENTO PÚBLICO Nº 008/2026 - PNAB - SECULT/AP - Seleção de Ações Continuadas para Firmar Termo de Execução Cultural com Recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº 14.399/2022) - Programa de Apoio a Ações Co Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Objetivos de Desenvolvimento Sustentável (ODS) 07/11/26 até 16/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: pnabamapa@gmail.com O Estado do Amapá, por meio da SECULT/AP, seleciona propostas no Programa de Apoio a Ações Continuadas, Edital de Chamamento Público nº 008/2026 PNAB, para fomentar grupos e coletivos artístico-culturais e eventos artístico-culturais de caráter continuado. O programa tem caráter plurianual e prevê apoio para dois ciclos anuais, com duração mínima de 10 meses de atividades em cada ciclo. As propostas devem apresentar um Plano Anual de Atividades para cada ciclo. O aporte financeiro inicial é de R$ 2.000.000,00 para o custeio do primeiro ciclo anual, ficando os repasses do segundo ciclo condicionados à dotação. São 20 vagas, sendo 10 para grupos e coletivos artístico-culturais independentes (R$ 1.000.000,00 no total da linha) e 10 para eventos artístico-culturais continuados (R$ 1.000.000,00), com valor de R$ 100.000,00 por projeto em cada linha. As inscrições são gratuitas e ocorrem das 18h do dia 07/11/2026 até as 23h59 do dia 16/11/2026, pelo Sistema Estadual de Informações e Incentivo à Cultura, conforme o item 11 do edital. O prazo pode ser prorrogado se a SECULT/AP julgar necessário. Total Disponível R$ 2.000.000,00 Limite por projeto R$ 100.000,00 Política Nacional Aldir Blanc Amapá - AP E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Governo do Estado do Amapá – Secretaria de Estado da Cultura (SECULT/AP) Cultura e Artes",
-    "retry_count": 1,
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19713",
       "resumo_objetivo": "Seleção de propostas de ações continuadas para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc (PNAB), fomentando grupos, coletivos e eventos artístico-culturais no Amapá.",
@@ -18619,7 +18339,9 @@
         "exigencias_especificas_adicionais": []
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19722",
@@ -18632,8 +18354,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19722",
     "full_text": "Ajuda Edital de Chamamento Público Nº 01/2026 - Premiação de Pontos e Pontões de Cultura (Política Nacional Aldir Blanc de Fomento à Cultura - PNAB, Ciclo 2) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Chamamento Público Nº 01/2026 - Premiação de Pontos e Pontões de Cultura (Política Nacional Aldir Blanc de Fomento à Cultura - PNAB, Ciclo 2) Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Objetivos de Desenvolvimento Sustentável (ODS) 10/11/26 até 17/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: biguacu@eloculturas.com.br Seleção e premiação de 3 (três) iniciativas, atividades ou ações culturais já realizadas por Pontos e Pontões de Cultura no município de Biguaçu/SC, nos termos da Política Nacional de Cultura Viva (Lei nº 13.018/2014), com repasse financeiro de natureza jurídica de doação sem encargo. Total Disponível R$ 50.661,72 Política Nacional Aldir Blanc Biguaçu - SC E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Prefeitura Municipal de Biguaçu / Secretaria Municipal de Cultura, Turismo e Lazer Cultura e Artes",
-    "retry_count": 1,
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19722",
       "resumo_objetivo": "Seleção e premiação de 3 iniciativas, atividades ou ações culturais já realizadas por Pontos e Pontões de Cultura no município de Biguaçu/SC, por meio da Política Nacional Aldir Blanc.",
@@ -18667,7 +18387,9 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19721",
@@ -18680,8 +18402,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19721",
     "full_text": "Ajuda EDITAL N° 02/2026 - FOMENTO A PROJETOS CONTINUADOS DE PONTOS DE CULTURA © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por EDITAL N° 02/2026 - FOMENTO A PROJETOS CONTINUADOS DE PONTOS DE CULTURA Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Objetivos de Desenvolvimento Sustentável (ODS) Mídias 10/11/26 até 17/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: biguacu@eloculturas.com.br Seleção de 2 (dois) projetos continuados de Pontos de Cultura que promovam o acesso da população aos bens e aos serviços culturais nos territórios e comunidades onde atuam, priorizando o apoio à cultura de base comunitária, a valorização da cidadania e a diversidade cultural. Total Disponível R$ 180.000,00 Política Nacional Aldir Blanc Biguaçu - SC Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Prefeitura Municipal de Biguaçu / Secretaria Municipal de Cultura, Turismo e Lazer (SECETUL) Cultura e Artes Site Inscrição Inscrição",
-    "retry_count": 1,
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19721",
       "resumo_objetivo": "Seleção de projetos continuados de Pontos de Cultura para promover o acesso da população aos bens e serviços culturais em Biguaçu - SC.",
@@ -18716,7 +18436,9 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19720",
@@ -18729,8 +18451,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19720",
     "full_text": "Ajuda Edital de Chamamento Público Nº 03/2026 - Fomento a Projetos Culturais (Política Nacional Aldir Blanc - PNAB) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Chamamento Público Nº 03/2026 - Fomento a Projetos Culturais (Política Nacional Aldir Blanc - PNAB) Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Objetivos de Desenvolvimento Sustentável (ODS) Mídias 10/11/26 até 17/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: biguacu@eloculturas.com.br Seleção de 18 projetos culturais de todas as linguagens e expressões culturais para receber apoio financeiro destinado à execução de ações culturais no município de Biguaçu/SC, promovendo o acesso aos recursos públicos, a diversidade e a desconcentração territorial. Total Disponível R$ 420.984,00 Política Nacional Aldir Blanc Biguaçu - SC Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Prefeitura Municipal de Biguaçu / Secretaria Municipal de Cultura, Turismo e Lazer (SECETUL) Cultura e Artes Site Inscrição",
-    "retry_count": 1,
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19720",
       "resumo_objetivo": "Seleção de 18 projetos culturais de todas as linguagens e expressões culturais para receber apoio financeiro destinado à execução de ações culturais no município de Biguaçu/SC.",
@@ -18764,7 +18484,9 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19646",
@@ -18777,8 +18499,6 @@
     "public_url": "https://prosas.com.br/editais/19646",
     "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/CzWC8h212BSwsCK7MUO1oTsbXH8ERsX2xoSEGeHZRIEV-imzjjHl-OpwOjDNfoh_/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/134/099/original/Edital_01.2026_Fomento_Grajau_assinado.pdf",
     "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços, você concorda com tal monitoramento. Pra mais informações, consulte a nossa . Início Meu cadastro Propostas Gerenciar Usuários nova política de privacidade start create Alternar perfil folder account_circle power_settings_new Sair Inscrições a partir de: 11/11/2026 17:00 18/11/2026 20:00 GMT+00 (Horário Universal Coordenado) Município de Grajaú/MA account_box CHAMAMENTO PÚBLICO Nº 01/2026 - FOMENTO À EXECUÇÃO DE AÇÕES CULTURAIS (APOIO DIRETO A PROJETOS) até Inscreva-se Edital 01.2026 Grajaú INFORMAÇÕES INFORMAÇÕES Sobre Editar O objeto deste Edital é a seleção de projetos culturais para receberem apoio financeiro nas categorias descritas no Anexo II, com o objetivo de incentivar as diversas formas de manifestações culturais do Município de Grajaú/MA. *** Para dúvidas relacionadas aos editais e regulamentos, entre em contato com o Serviço de Atendimento ao Proponente: What'sApp: (35) 9 9955-1544 Email: pnab.ame@gmail.com *** Caso haja qualquer dificuldade no uso da plataforma Prosas para envio da inscrição, clique no botão Ajuda localizado no canto inferior direito da tela. - WhatsApp Suporte - (31) 9 9919-8781 Atendimento de segunda a sexta-feira, das 9h às 18h. Locais de atuação dos projetos Cidade(s): kamil Usuário - ID: 381702 kamil vadovic Proponente - ID: 323127 mode_edit Total disponível Fonte de Financiamento R$ 170.000,00 location_on Grajaú - MA Política Nacional Aldir Blanc",
-    "retry_count": 1,
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19646",
       "resumo_objetivo": "O objeto deste Edital é a seleção de projetos culturais para receberem apoio financeiro com o objetivo de incentivar as diversas formas de manifestações culturais do Município de Grajaú/MA.",
@@ -18812,6 +18532,8 @@
       },
       "fonte_dados": "texto_pagina"
     },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED",
     "drive_backfill_attempted": true
   },
   {
@@ -18826,8 +18548,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19717",
     "pdf_link": "https://www.fiotec.fiocruz.br/images/06%20Selecao%20Simples%20-%20Articuladores_vf.pdf",
     "full_text": "Ajuda Processo Seletivo Simplificado para preenchimento de 20 vagas de Articulador (a) para atuação no projeto \"Qualificação do Processo de Trabalho da Atenção Primária à Saúde, com foco na Política Nacional de Saúde Integral das Populações do Campo, da Florest © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Processo Seletivo Simplificado para preenchimento de 20 vagas de Articulador (a) para atuação no projeto \"Qualificação do Processo de Trabalho da Atenção Primária à Saúde, com foco na Política Nacional de Saúde Integral das Populações do Campo, da Florest Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Objetivos de Desenvolvimento Sustentável (ODS) Complementares 10/11/26 até 20/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: (21) 4040-4418_ Seleção de 20 bolsistas para atuar como Articuladores(as) em apoio à qualificação do processo de trabalho da Atenção Primária à Saúde no âmbito da PNSIPCFA. As atribuições envolvem colaborar com facilitadores, apoiar a interlocução territorial, auxiliar nos registros e contribuir na organização e realização de formações de acordo com as especificidades locais. Total Disponível R$ 4.000,00 Recursos próprios Brasília - DF Alagoas - AL Bahia - BA Ceará - CE Espírito Santo - ES Goiás - GO Maranhão - MA Mato Grosso - MT Mato Grosso do Sul - MS Minas Gerais - MG Paraíba - PB Paraná - PR Pernambuco - PE Piauí - PI Rio de Janeiro - RJ Rio Grande do Sul - RS Rio Grande do Norte - RN Santa Catarina - SC Sergipe - SE S",
-    "retry_count": 1,
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19717",
       "resumo_objetivo": "Processo seletivo simplificado para preenchimento de 20 vagas de bolsistas na função de articulador(a) para atuar no projeto de qualificação da Atenção Primária à Saúde, com foco na PNSIPCFA.",
@@ -18888,7 +18608,9 @@
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1PEzMa4_kKVYeoG5VQShHC8Oi2tpN4kv8/view?usp=drivesdk"
-    }
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19716",
@@ -18902,8 +18624,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19716",
     "pdf_link": "https://dopaonlineupload.procempa.com.br/dopaonlineupload/6231_ce_635285_1.pdf",
     "full_text": "Ajuda EDITAL DE CHAMAMENTO PÚBLICO N° 016/2026 – SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL – EDITAL FOMENTO AO TEATRO DE RUA DE PORTO ALEGRE © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por EDITAL DE CHAMAMENTO PÚBLICO N° 016/2026 – SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL – EDITAL FOMENTO AO TEATRO DE RUA DE PORTO ALEGRE Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Subáreas Objetivos de Desenvolvimento Sustentável (ODS) Mídias 10/11/26 até 20/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: pnab@portoalegre.rs.gov.br Seleção de no mínimo 12 projetos culturais de agentes culturais atuantes na área de artes cênicas (com foco em grupos e coletivos que realizam espetáculos de rua) para celebração de Termos de Fomento Cultural junto ao Município de Porto Alegre. O edital contempla duas linhas: Linha 1 (Apresentações Artísticas de Espetáculos de Teatro de Rua) e Linha 2 (Realização de Atividades Formativas em Artes Cênicas), a serem executadas em agenda especial no mês de março de 2027 em diversas regiões de Porto Alegre. Total Disponível R$ 400.000,00 Política Nacional Aldir Blanc Porto Alegre - RS Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Prefeitura Municipal de Porto Alegre – Secretaria Municipal de Cultura (Coordenação de Artes Cênicas) Cultura e Artes Teatro Site Anexos",
-    "retry_count": 1,
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19716",
       "resumo_objetivo": "Seleção de projetos culturais para firmar termos de execução cultural com foco em grupos e coletivos que realizam espetáculos de teatro de rua e atividades formativas em artes cênicas em Porto Alegre.",
@@ -18941,7 +18661,9 @@
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1j-4sO5rb_ecWVXjO-hrfsTzVe8AYalG5/view?usp=drivesdk"
-    }
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19712",
@@ -18955,8 +18677,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19712",
     "pdf_link": "https://fapesp.br/publicacoes/2024/csc.pdf",
     "full_text": "Ajuda Chamada de Propostas Biota Síntese e Transformação (2026) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Chamada de Propostas Biota Síntese e Transformação (2026) Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Objetivos de Desenvolvimento Sustentável (ODS) 04/11/26 até 04/12/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: biota@fapesp.br Chamada de Propostas Biota Síntese e Transformação, do Programa BIOTA-FAPESP, na modalidade Auxílio à Pesquisa Regular. Cada proposta deve se vincular a somente um dos eixos (Síntese ou Transformação). O apoio financeiro total da FAPESP às propostas selecionadas é limitado a R$ 15.000.000,00. O valor máximo por projeto não é informado no documento oficial. Podem participar pesquisadores vinculados a Instituições de Ensino Superior e Pesquisa no estado de São Paulo. Cada pesquisador pode submeter apenas 1 proposta. A submissão ocorre em duas fases: o Pesquisador Responsável deve enviar consulta de elegibilidade e pré-proposta para biota@fapesp.br até 04/12/2026; as propostas completas das pré-propostas elegíveis devem ser submetidas no SAGe até 22/02/2027 (abertura da chamada no SAGe em 04/11/2026). O documento oficial não informa os horários desses prazos. Total Disponível R$ 15.000.000,00 Recursos próprios São Paulo - SP E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP) Ciência e Tecnologia Meio Ambiente",
-    "retry_count": 1,
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19712",
       "resumo_objetivo": "A chamada visa apoiar projetos de pesquisa científica e tecnológica vinculados aos eixos de Síntese ou Transformação do programa BIOTA-FAPESP no estado de São Paulo.",
@@ -18993,7 +18713,9 @@
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1fV-Wl4arhlFR-zJYwt3CTnxeTnccaRdv/view?usp=drivesdk"
-    }
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19715",
@@ -19007,8 +18729,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19715",
     "pdf_link": "https://clubenoticia.com.br/wp-content/uploads/2026/11/SEI_27703941_Edital_de_destinacao_de_Valores_Oriundos_de_Prestacao_Pecuniaria.pdf",
     "full_text": "Ajuda Edital de Seleção para Cadastramento de Entidades Públicas ou Privadas, sem Fins Lucrativos, com Finalidade Social e para Atividades de Caráter Essencial à Segurança Pública, Inclusive ao Sistema Prisionais e Socioeducativo, à Educação, Saúde e Cidadania, © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Seleção para Cadastramento de Entidades Públicas ou Privadas, sem Fins Lucrativos, com Finalidade Social e para Atividades de Caráter Essencial à Segurança Pública, Inclusive ao Sistema Prisionais e Socioeducativo, à Educação, Saúde e Cidadania, Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Objetivos de Desenvolvimento Sustentável (ODS) 03/11/26 até 12/12/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: pmsvec@tjmg.jus.br Seleção e cadastramento de entidades públicas ou privadas sem fins lucrativos interessadas no financiamento de projetos destinados ao atendimento de áreas vitais de relevante cunho social (segurança pública, sistema prisional/socioeducativo, educação, saúde, cidadania, meio ambiente, esporte, entre outros) na Comarca de Patos de Minas/MG, com recursos decorrentes de prestações pecuniárias da execução penal. Total Disponível R$ 1.500.000,00 Recursos próprios Patos de Minas - MG Lagoa Formosa - MG São Gonçalo do Abaeté - MG Varjão de Minas - MG E-mail: Telefone : Publicado por: Central de Editais Patrocinador: uízo da 2ª Vara Criminal e de Execuções Penais da Comarca de Patos de Minas/MG – Tribunal de Justiça do Estado de",
-    "retry_count": 1,
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19715",
       "resumo_objetivo": "Seleção e cadastramento de entidades públicas ou privadas sem fins lucrativos interessadas no financiamento de projetos destinados ao atendimento de áreas vitais de relevante cunho social, como segurança pública, sistema prisional, educação, saúde e cidadania, com recursos de prestações pecuniárias.",
@@ -19055,7 +18775,9 @@
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1_TzRcJdEDcDpFHXseQq0feHOWwXdaEyc/view?usp=drivesdk"
-    }
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19714",
@@ -19069,8 +18791,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19714",
     "pdf_link": "https://fapes.es.gov.br/media/Editais/edital_fapes_n_28-2026_-_elas_inovam_-lancamento.pdf?v=1794337738426",
     "full_text": "Ajuda Edital Fapes nº 28/2026 – Elas Inovam © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital Fapes nº 28/2026 – Elas Inovam Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Público-Alvo Objetivos de Desenvolvimento Sustentável (ODS) 13/11/26 até 22/12/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: duvidas.inovacao@fapes.es.gov.br (27) 3636-1850_ Apoiar o desenvolvimento de soluções inovadoras e a estruturação/consolidação de negócios liderados por mulheres no Estado do Espírito Santo, por meio de subvenção econômica, bolsas (modalidade BCO) e suporte técnico via oficinas e mentorias em parceria com o Sebrae-ES. O edital atua em dois ciclos sucessivos: Ciclo 1 (Ideação - desenvolvimento de MVP) e Ciclo 2 (Consolidação - aprimoramento e aplicação no mercado/setor público). Total Disponível R$ 3.204.000,00 Recursos próprios Espírito Santo - ES E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Fundação de Amparo à Pesquisa e Inovação do Espírito Santo (FAPES) Ciência e Tecnologia Educação Empreendedorismo / Geração de Emprego e Renda Meio Ambiente Mulheres",
-    "retry_count": 1,
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19714",
       "resumo_objetivo": "Apoiar o desenvolvimento de soluções inovadoras e a estruturação de negócios liderados por mulheres no Estado do Espírito Santo, por meio de subvenção econômica, bolsas e suporte técnico em parceria com o Sebrae-ES.",
@@ -19111,7 +18831,9 @@
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1wOfht5Cen9_SjcDCXjLUJzx-tM7SbG7C/view?usp=drivesdk"
-    }
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19718",
@@ -19124,8 +18846,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19718",
     "pdf_link": "https://cms-midia.tjmt.jus.br/dsaportaltjmt/biblioteca-midia/187a0000-0aa5-0a58-90ca-08df3f68f1e1/187a0000-0aa5-0a58-9267-08df3f68f1e1.pdf",
     "full_text": "Ajuda EDITAL N° 01/2026-2028/GAB – Credenciamento de Entidades Públicas ou Privadas com Finalidade Social e Seleção de Projetos para Destinação de Recursos Oriundos de Prestações Pecuniárias. © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por EDITAL N° 01/2026-2028/GAB – Credenciamento de Entidades Públicas ou Privadas com Finalidade Social e Seleção de Projetos para Destinação de Recursos Oriundos de Prestações Pecuniárias. Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Locais de Atuação Áreas de Atuação Público-Alvo Objetivos de Desenvolvimento Sustentável (ODS) 10/11/26 até 23/12/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: bga.veje@tjmt.jus.br Credenciamento de entidades públicas ou privadas sem fins lucrativos com finalidade social/socioambiental e seleção de projetos de relevante cunho social para eventual recebimento e financiamento por meio de recursos de prestações pecuniárias administrados pela Unidade Gestora. Barra do Garças - MT Araguaiana - MT General Carneiro - MT Pontal do Araguaia - MT Ribeirãozinho - MT Torixoréu - MT E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Juízo da Vara Especializada dos Juizados Especiais da Comarca de Barra do Garças/MT Assistência Social Defesa de Direitos Desenvolvimento comunitário Educação Empreendedorismo / Geração de Emprego e Renda Formação para o trabalho Meio Ambiente Infância e Adolescência Juventude",
-    "retry_count": 1,
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19718",
       "resumo_objetivo": "Credenciamento de entidades públicas ou privadas sem fins lucrativos com finalidade social e seleção de projetos para destinação de recursos de prestações pecuniárias.",
@@ -19164,7 +18884,9 @@
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1k4CFBDU8Xdb4F0pAk3He0xK6V0C7aqMJ/view?usp=drivesdk"
-    }
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19719",
@@ -19178,8 +18900,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19719",
     "pdf_link": "https://www.fundect.ms.gov.br/wp-content/uploads/2026/11/Chamada_Fundect_Semadesc_Seaf_08_2026-1.pdf",
     "full_text": "Ajuda Chamada Fundect/SEMADESC/SEAF 08/2026 – Extensão Tecnológica para Agricultores Familiares, Povos Originários e Comunidades Tradicionais. © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Chamada Fundect/SEMADESC/SEAF 08/2026 – Extensão Tecnológica para Agricultores Familiares, Povos Originários e Comunidades Tradicionais. Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Objetivos de Desenvolvimento Sustentável (ODS) 10/11/26 até 15/02/27 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: projetos@fundect.ms.gov.br Selecionar e apoiar projetos de Extensão Tecnológica executados por ICTs e Universidades sediadas em Mato Grosso do Sul para atender agricultores familiares, povos originários e comunidades tradicionais. O foco principal é o desenvolvimento, adaptação, aplicação, demonstração, difusão ou transferência de tecnologias, conhecimentos, processos, produtos e tecnologias sociais para promover a inclusão socioprodutiva, segurança alimentar e geração de renda. Total Disponível R$ 3.200.000,00 Limite por projeto R$ 80.000,00 Recursos próprios Mato Grosso do Sul - MS E-mail: Telefone : Publicado por: Central de Editais Patrocinador: undação de Apoio ao Desenvolvimento do Ensino, Ciência e Tecnologia do Estado de Mato Grosso do Sul (Fundect) Ciência e Tecnologia Desenvolvimento comunitário Empreendedorismo / Geração de Emprego e Renda Meio Ambiente",
-    "retry_count": 1,
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19719",
       "resumo_objetivo": "Selecionar e apoiar projetos de Extensão Tecnológica executados por ICTs e Universidades sediadas em Mato Grosso do Sul para atender agricultores familiares, povos originários e comunidades tradicionais, visando a inclusão socioprodutiva e a geração de renda.",
@@ -19296,7 +19016,9 @@
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1aLAWq9ph1xZ6v6SCm_bHxINHtMDWD7Ci/view?usp=drivesdk"
-    }
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19747",
@@ -19503,6 +19225,312 @@
       "e_central?": true
     },
     "last_error": "page.evaluate: ReferenceError: el is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:690)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19180",
+    "attributes": {
+      "nome": "Edital Mulheres do Nosso Bairro 2026",
+      "e_central?": false
+    },
+    "last_error": "page.evaluate: ReferenceError: el is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:690)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19516",
+    "attributes": {
+      "nome": "PELOTAS   RS - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO DE ROTEIROS AUDIOVISUAIS - 2026",
+      "e_central?": true
+    },
+    "last_error": "page.evaluate: ReferenceError: el is not defined\n    at eval (eval at evaluate (:370:30), <anonymous>:1:690)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19499",
+    "attributes": {
+      "nome": "PELOTAS  RS - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO DE ROTEIROS AUDIOVISUAIS - 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19500",
+    "attributes": {
+      "nome": "PELOTAS  RS - PREMIAÇÃO - POVOS E COMUNIDADES TRADICIONAIS - 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19727",
+    "attributes": {
+      "nome": "Edital Nº 05/2026 – Premiação Política Nacional Cultura Viva de Morada Nova Ceará",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "18383",
+    "attributes": {
+      "nome": "Edital de chamamento público FESPORTE/PIE 003/2026 - Apoio ao Esporte Educacional e à Formação Esportiva",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19391",
+    "attributes": {
+      "nome": "Chamada Pública – Programa de Eficiência Energética 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19548",
+    "attributes": {
+      "nome": "PERNAMBUCO - FOMENTO - PESQUISAS EM PLANEJAMENTO - 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19601",
+    "attributes": {
+      "nome": "PERNAMBUCO - FOMENTO - PESQUISAS EM PLANEJAMENTO E GESTÃO PÚBLICA - 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "17421",
+    "attributes": {
+      "nome": "ICMS CULTURAL - Edital Indução Cinematográfica 2026",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19594",
+    "attributes": {
+      "nome": "SÃO PAULO - BOLSA - PESQUISA E PÓS-DOUTORADO UNESCO-TWAS - 2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "17064",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 013 – SMT/2025 CAPTAÇÃO DE PATROCÍNIO PARA REALIZAÇÃO DO CARNAVAL 2026 DE POÇOS DE CALDAS",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "16705",
+    "attributes": {
+      "nome": "Edital Pontos de Cultura",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "17385",
+    "attributes": {
+      "nome": "Cultura Vicentina: Edital PNAB São Vicente 01/2026",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "17401",
+    "attributes": {
+      "nome": "Culturas Pesqueiras Artesanais do Brasil - Edital de Chamamento Público nº 01/2026 ",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "17459",
+    "attributes": {
+      "nome": "Ocupação da Biblioteca Pública Municipal Josué Guimarães",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "16668",
+    "attributes": {
+      "nome": "Programa de apoio ao Centro Franco-Brasileiro de Biodiversidade Amazônica",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "17535",
+    "attributes": {
+      "nome": "Edital para Implantação, Estruturação, Modernização, Manutenção e Expansão de Espaços Científico-Culturais ",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "17542",
+    "attributes": {
+      "nome": "PNAB Goiás 2026 - Edital nº 09/2026: Circo",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "17689",
+    "attributes": {
+      "nome": "Edital de Convocação nº 01/2026 para credenciamento de instituições interessadas em receber recursos oriundos de Penas Pecuniárias",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "13693",
+    "attributes": {
+      "nome": "EXPOSIÇÃO ARTES /EXIBIÇÃO AUDIOVISUAL - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "13507",
+    "attributes": {
+      "nome": "PRESTAÇÃO DE SERVIÇOS TÉCNICOS E DE PRODUÇÃO PARA EVENTOS CULTURAIS E ARTÍSTICOS - Credenciameno nº 002/Edital nº 007/FCCR/2023",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "13678",
+    "attributes": {
+      "nome": "VIVÊNCIAS - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "13686",
+    "attributes": {
+      "nome": "WORKSHOPS - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "13691",
+    "attributes": {
+      "nome": "MANIFESTAÇÕES DA CULTURA POPULAR - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "12743",
+    "attributes": {
+      "nome": "Orientadores artisticos de Oficinas Culturais - Credenciamento 001_Edital 001_2023",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "13701",
+    "attributes": {
+      "nome": "INTERVENÇÃO ARTÍSTICA - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "14964",
+    "attributes": {
+      "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO DE FORMAÇÃO LIVRE EM ARTES TAP DA LONGEVIDADE - CREDENCIAMENTO Nº 009/EDITAL Nº 08/FCCR/2024",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "13702",
+    "attributes": {
+      "nome": "ESPETÁCULO INFANTIL - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "14963",
+    "attributes": {
+      "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO ORQUESTRA JOSEENSE - CREDENCIAMENTO Nº 008/EDITAL Nº 07/FCCR/2024",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "14962",
+    "attributes": {
+      "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO CORO SINFÔNICO DE SÃO JOSÉ DOS CAMPOS  – CREDENCIAMENTO Nº 007/EDITAL Nº 06/FCCR/2024",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "14961",
+    "attributes": {
+      "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO COMPANHIA DE DANÇA DE SÃO JOSÉ DOS CAMPOS– CREDENCIAMENTO Nº 006/EDITAL Nº 05/FCCR/2024",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "14958",
+    "attributes": {
+      "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO CENTRO DE ARTES CIRCENSES – CREDENCIAMENTO Nº 005/EDITAL Nº 04/FCCR/2024",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "14639",
+    "attributes": {
+      "nome": "EDITAL 005/FCCR/2024 CREDENCIAMENTO DE PARECERISTAS DE PROJETOS CULTURAIS ",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "14318",
+    "attributes": {
+      "nome": "PROJETO ARTE NAS RUAS - Intervenções Artísticas / Credenciamento 004_Edital 026_2023",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "13705",
+    "attributes": {
+      "nome": "ESPETÁCULO ADULTO OU LIVRE - Circulação e difusão de propostas artísticas - credenciamento 003/Edital 009/FCCR/2023",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "18194",
+    "attributes": {
+      "nome": "EDITAL DE CREDENCIAMENTO N° 003/2026 CREDENCIAMENTO DE PROFESSORES/OFICINEIROS CIRCO DO POVO",
+      "e_central?": false
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "15288",
+    "attributes": {
+      "nome": "CHAMADA PÚBLICA Nº 001/2025   SELEÇÃO DE PARCEIROS PARA DISPONIBILIZAÇÃO DE ESPAÇOS PARA INSTALAÇÃO DE ESTAÇÕES DE RECARGA DE VEÍCULOS ELÉTRICOS",
+      "e_central?": false
+    },
     "pipeline_status": "NEW_FROM_API"
   }
 ]

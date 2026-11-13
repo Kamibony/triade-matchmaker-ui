@@ -10068,5 +10068,270 @@
     },
     "pipeline_status": "COMPLETED",
     "archived_at": "2026-11-12"
+  },
+  {
+    "id": "19521",
+    "attributes": {
+      "nome": "RIO GRANDE DO SUL - FOMENTO - CRIAÇÃO E MONTAGEM DE ESPETÁCULOS DE ARTES CÂNICAS - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-23",
+      "data_fim": "2026-11-12",
+      "valor_total": 600000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19521",
+    "full_text": "Ajuda RIO GRANDE DO SUL - FOMENTO - CRIAÇÃO E MONTAGEM DE ESPETÁCULOS DE ARTES CÂNICAS - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contat",
+    "deep_metadata": {
+      "edital_id": "19521",
+      "resumo_objetivo": "Financiamento de projetos culturais de criação, montagem e realização de espetáculos inéditos de Artes Cênicas produzidos por grupos do Rio Grande do Sul.",
+      "temas_principais": [
+        "cultura",
+        "artes cênicas",
+        "circo",
+        "dança",
+        "teatro"
+      ],
+      "prazo_de_inscricao": "2026-11-12",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RS"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 600000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 600000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Espetáculos inéditos de Artes Cênicas (Circo, Dança e Teatro)",
+          "Produzidos por grupos do Rio Grande do Sul",
+          "Adaptados/criados para uma arena de três lados, considerando a estrutura técnica e espacial do Teatro de Arena de Porto Alegre"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-13"
+  },
+  {
+    "id": "19597",
+    "attributes": {
+      "nome": "SÃO PAULO - CHAMADA FAPESP PIPE JORNADA TECNOLÓGICA - TECNOLOGIAS EDUCACIONAIS - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-13",
+      "data_fim": "2026-11-12",
+      "valor_total": 25000000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19597",
+    "full_text": "Ajuda SÃO PAULO - CHAMADA FAPESP PIPE JORNADA TECNOLÓGICA - TECNOLOGIAS EDUCACIONAIS - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato ",
+    "deep_metadata": {
+      "edital_id": "19597",
+      "resumo_objetivo": "Apoio, com recursos não reembolsáveis, à execução de pesquisa científica e tecnológica inovadora em tecnologias educacionais em pequenas empresas do estado de São Paulo.",
+      "temas_principais": [
+        "tecnologias educacionais",
+        "pesquisa científica",
+        "tecnologia e inovação"
+      ],
+      "prazo_de_inscricao": "2026-11-12",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": [
+          "empresário individual",
+          "microempreendedor individual",
+          "empresário rural",
+          "cooperativa",
+          "fundação",
+          "organização da sociedade civil",
+          "associação civil",
+          "fins lucrativos ausentes"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 500000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 25000000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Sede ou unidade de P&D no estado de São Paulo com infraestrutura física adequada (endereço virtual não é aceito)",
+          "Até 250 empregados",
+          "Pesquisador Responsável deve ser sócio pessoa natural da Empresa Sede com poderes para representá-la"
+        ]
+      },
+      "fonte_dados": "texto_pagina",
+      "drive_pdf_link": "https://drive.google.com/file/d/1PE1afa4jr8oCIMFUPZ-GmMMT0_4gKKjh/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-13"
+  },
+  {
+    "id": "19585",
+    "attributes": {
+      "nome": "RIO DE JANEIRO - BOLSAS E FOMENTO - FIXAÇÃO DE DOUTORES - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19585",
+    "pdf_link": "https://faperj.br/rp/downloads/Edital_FAPERJ_N%C2%BA_34_2026_-_Programa_de_Apoio_%C3%A0_Fixa%C3%A7%C3%A3o_de_Doutores_no_RJ_%E2%80%93_Conhecimento_Brasil_PROFIX-RJ_%E2%80%93_FAPERJ_CNPq_CAPES.pdf",
+    "full_text": "Ajuda RIO DE JANEIRO - BOLSAS E FOMENTO - FIXAÇÃO DE DOUTORES - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Polític",
+    "deep_metadata": {
+      "edital_id": "19585",
+      "resumo_objetivo": "Selecionar e apoiar projetos de pesquisa, desenvolvimento científico, tecnológico e/ou inovação, associados à atração e fixação de pesquisadores doutores no Estado do Rio de Janeiro mediante concessão integrada de auxílio à pesquisa e bolsas.",
+      "temas_principais": [
+        "pesquisa científica",
+        "desenvolvimento tecnológico",
+        "inovação",
+        "fixação de doutores"
+      ],
+      "prazo_de_inscricao": "2026-11-12",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RJ"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 200000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Possuir título de Doutor",
+          "Apresentar projeto de pesquisa sob coordenação própria",
+          "Apresentar anuência formal da instituição executora",
+          "Apresentar anuência de Programa de Pós-Graduação reconhecido pela CAPES"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/15heGQZrv0FQn2T765ZirkB3eFvIXv84b/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-13"
+  },
+  {
+    "id": "19645",
+    "attributes": {
+      "nome": "Escuta Pública Ciclo da PNAB 2027 -  Maranhão",
+      "e_central?": false,
+      "data_inicio": "2026-11-06",
+      "data_fim": "2026-11-12"
+    },
+    "public_url": "https://prosas.com.br/editais/19645",
+    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços, você concorda com",
+    "deep_metadata": {
+      "edital_id": "19645",
+      "resumo_objetivo": "Consulta pública realizada pela Secretaria de Estado da Cultura do Maranhão (SECMA) para ouvir o setor cultural e subsidiar a elaboração de políticas públicas, programas e editais de fomento cultural da PNAB 2027.",
+      "temas_principais": [
+        "cultura",
+        "políticas públicas",
+        "PNAB"
+      ],
+      "prazo_de_inscricao": "2026-11-12",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MA"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para agentes culturais maranhenses ou atuação no estado do Maranhão"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-13"
+  },
+  {
+    "id": "19691",
+    "attributes": {
+      "nome": "Edital de Chamamento Público Nº 006/2026 – Patrimônio Cultural e Memória: Fomento a Projetos de Pesquisa, Documentação e Registro das Manifestações Culturais de Várzea Alegre – Ceará.",
+      "e_central?": true,
+      "data_inicio": "2026-11-06",
+      "data_fim": "2026-11-12",
+      "valor_total": 24900
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19691",
+    "pdf_link": "https://mapacultural.varzeaalegre.ce.gov.br/files/opportunity/8473/edital-fomento-006-salvaguarda-2.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público Nº 006/2026 – Patrimônio Cultural e Memória: Fomento a Projetos de Pesquisa, Documentação e Registro das Manifestações Culturais de Várzea Alegre – Ceará. © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Ce",
+    "deep_metadata": {
+      "edital_id": "19691",
+      "resumo_objetivo": "Seleção de projetos culturais de agentes culturais (pessoas físicas) para realização de pesquisas, documentação e registro das manifestações culturais de Várzea Alegre - Ceará, com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+      "temas_principais": [
+        "cultura",
+        "patrimônio cultural",
+        "memória",
+        "pesquisa",
+        "manifestações culturais"
+      ],
+      "prazo_de_inscricao": "2026-11-12",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "CE"
+        ],
+        "municipios_permitidos": [
+          "Várzea Alegre - CE"
+        ],
+        "natureza_juridica_excluida": [
+          "pessoa jurídica com fins lucrativos",
+          "pessoa jurídica sem fins lucrativos",
+          "MEI",
+          "coletivo sem CNPJ representado por pessoa física"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 24900,
+        "exige_contrapartida": false,
+        "valor_total_edital": 24900
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para agentes culturais pessoa física",
+          "Exige atuação no município de Várzea Alegre há pelo menos 2 anos",
+          "Exige abertura de conta bancária específica"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1JTbethowAyBWKcmFg2NO7Ak-1xDNmv5u/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-13"
   }
 ]
