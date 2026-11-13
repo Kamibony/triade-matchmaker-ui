@@ -11,15 +11,25 @@ on:
       - 'scripts/outbound-match.ts'
   workflow_dispatch:
     inputs:
+      target_edital_id:
+        description: 'Sniper Mode: ID do Edital no Prosas (deixe vazio para modo automático)'
+        required: false
+        default: ''
+        type: string
+      target_pdf_url:
+        description: 'Sniper Mode: Link de PDF externo (se não estiver no Prosas)'
+        required: false
+        default: ''
+        type: string
       max_editais:
-        description: 'Max editais to process in this run'
+        description: 'Max editais to process (ignorado no Sniper Mode)'
         required: false
         default: '16'
         type: string
       max_per_edital:
-        description: 'Max candidate OSCs per edital'
+        description: 'Max OSCs por edital (vazio = 80 no Sniper Mode, 10 no normal)'
         required: false
-        default: '10'
+        default: ''
         type: string
 
 concurrency:
@@ -50,8 +60,10 @@ jobs:
       - name: Run Matchmaking Pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TARGET_EDITAL_ID: ${{ inputs.target_edital_id }}
+          TARGET_PDF_URL: ${{ inputs.target_pdf_url }}
           MAX_EDITAIS_PER_RUN: ${{ inputs.max_editais || '8' }}
-          MAX_CANDIDATES_PER_EDITAL: ${{ inputs.max_per_edital || '6' }}
+          MAX_CANDIDATES_PER_EDITAL: ${{ inputs.max_per_edital }}
         run: npx tsx scripts/outbound-match.ts
 
       - name: Commit Updated Leads and Cache

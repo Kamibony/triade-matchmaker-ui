@@ -1,6 +1,8 @@
 import 'dotenv/config';
+import crypto from 'crypto';
 import fs from 'fs/promises';
 import path from 'path';
+import pdfParse from 'pdf-parse/lib/pdf-parse.js';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 // --- Types ---
@@ -50,6 +52,7 @@ interface MatchResult {
 const CACHE_PATH = path.join(process.cwd(), 'src', 'data', 'cnpj_cache.json');
 const OUTPUT_FILE = path.join(process.cwd(), 'src', 'data', 'daily_outbound_leads.json');
 const EDITAIS_PATH = path.join(process.cwd(), 'src', 'data', 'editais_prosas.json');
+const SENT_LOG_PATH = path.join(process.cwd(), 'src', 'data', 'whatsapp_sent_log.json');
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY || 'dummy');
@@ -111,6 +114,111 @@ function hasValidPhone(osc: OSC): boolean {
   const raw = osc.official_contacts?.ddd_telefone_1 || osc.official_contacts?.ddd_telefone_2 || '';
   const digits = raw.replace(/\D/g, '');
   return digits.length >= 10;
+}
+
+function normalizePhone(raw?: string | null): string | null {
+  if (!raw) return null;
+  let digits = raw.replace(/\D/g, '');
+  if (!digits) return null;
+  if (digits.startsWith('0')) digits = digits.slice(1);
+  if (digits.length === 10 || digits.length === 11) {
+    digits = `55${digits}`;
+  }
+  return digits.length >= 12 ? digits : null;
+}
+
+async function loadSentPhonesAndKeys(): Promise<{ sentKeys: Set<string>; sentPhones: Set<string> }> {
+  const sentKeys = new Set<string>();
+  const sentPhones = new Set<string>();
+  try {
+    const raw = await fs.readFile(SENT_LOG_PATH, 'utf-8');
+    const parsed = JSON.parse(raw);
+    const entries = parsed?.sent_leads || {};
+    for (const [key, val] of Object.entries<any>(entries)) {
+      sentKeys.add(key);
+      if (val?.phone) {
+        const norm = normalizePhone(val.phone);
+        if (norm) sentPhones.add(norm);
+      }
+    }
+  } catch {
+    // No sent log yet
+  }
+  return { sentKeys, sentPhones };
+}
+
+async function parseCustomPdfEdital(pdfUrl: string): Promise<any> {
+  let resolvedUrl = pdfUrl.trim();
+  const driveMatch = resolvedUrl.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+  if (driveMatch && driveMatch[1]) {
+    resolvedUrl = `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
+  }
+
+  console.log(`📄 Downloading custom PDF edital from: ${resolvedUrl}`);
+  const response = await fetch(resolvedUrl, { headers: { 'User-Agent': 'TriadeMatchmaker/1.0' } });
+  if (!response.ok) {
+    throw new Error(`Falha ao baixar PDF (${response.status}): ${resolvedUrl}`);
+  }
+  const arrayBuffer = await response.arrayBuffer();
+  const bytes = new Uint8Array(arrayBuffer, 0, 4);
+  if (bytes[0] !== 0x25 || bytes[1] !== 0x50 || bytes[2] !== 0x44 || bytes[3] !== 0x46) {
+    throw new Error('A URL informada não retornou um arquivo PDF válido.');
+  }
+
+  const parsedPdf = await pdfParse(Buffer.from(arrayBuffer));
+  const textSlice = (parsedPdf.text || '').slice(0, 35000);
+  if (!textSlice.trim()) {
+    throw new Error('Não foi possível extrair texto do PDF informado.');
+  }
+
+  const prompt = `Analise o texto deste edital brasileiro e extraia as informações em JSON estrito:
+{
+  "titulo": "Título oficial do edital",
+  "resumo_objetivo": "Resumo objetivo em 1-2 frases (pt-BR)",
+  "temas_principais": ["tema1", "tema2", "tema3"],
+  "prazo_de_inscricao": "YYYY-MM-DD ou null",
+  "criterios_eliminatorios": {
+    "idade_minima_cnpj_anos": number ou 0,
+    "abrangencia_nacional": boolean,
+    "estados_permitidos": ["UF"],
+    "municipios_permitidos": ["Município - UF"],
+    "natureza_juridica_excluida": ["ex: igreja", "fins lucrativos"]
+  },
+  "financeiro": {
+    "valor_maximo_ou_global_reais": number ou null,
+    "exige_contrapartida": boolean
+  }
+}
+
+TEXTO DO EDITAL:
+${textSlice}`;
+
+  const result = await modelWithoutSearch.generateContent(prompt);
+  const cleaned = result.response.text().trim().replace(/^```json\s*/i, '').replace(/```\s*$/, '');
+  const meta = JSON.parse(cleaned);
+  const hashId = 'pdf_' + crypto.createHash('sha1').update(pdfUrl.trim()).digest('hex').slice(0, 10);
+
+  return {
+    id: hashId,
+    pdf_link: pdfUrl.trim(),
+    attributes: {
+      nome: meta.titulo || 'Edital Externo (PDF)'
+    },
+    deep_metadata: {
+      resumo_objetivo: meta.resumo_objetivo || '',
+      temas_principais: Array.isArray(meta.temas_principais) ? meta.temas_principais : [],
+      prazo_de_inscricao: meta.prazo_de_inscricao || null,
+      criterios_eliminatorios: meta.criterios_eliminatorios || {
+        idade_minima_cnpj_anos: 0,
+        abrangencia_nacional: true,
+        estados_permitidos: [],
+        municipios_permitidos: [],
+        natureza_juridica_excluida: []
+      },
+      financeiro: meta.financeiro || { valor_maximo_ou_global_reais: null, exige_contrapartida: false },
+      drive_pdf_link: pdfUrl.trim()
+    }
+  };
 }
 
 function isValidLeadRecord(m: any): boolean {
@@ -292,7 +400,7 @@ async function getTopEditais(existingLeads: MatchResult[]) {
   return combinedQueue.slice(0, maxEditais);
 }
 
-async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Record<string, CacheEntry>) {
+async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Record<string, CacheEntry>, poolTarget = 100) {
   let rawCnpjs: string[] = [];
   const seed = parseInt(String(editalId).replace(/\D/g, '') || '1', 10) + new Date().getDate();
 
@@ -314,7 +422,7 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
       } catch {
         // Ignore individual header errors
       }
-      if (rawCnpjs.length >= 100) break;
+      if (rawCnpjs.length >= poolTarget) break;
     }
   };
 
@@ -326,12 +434,12 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
         if (muniData && muniData.length > 0) {
           const id = muniData[0].edmu_cd_municipio;
           const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${id}`);
-          await collectFromOscList(oscs, 80);
+          await collectFromOscList(oscs, Math.max(80, poolTarget));
         }
       } catch {
         console.warn(`Failed to fetch OSCs for municipality ${cityPart}`);
       }
-      if (rawCnpjs.length >= 100) break;
+      if (rawCnpjs.length >= poolTarget) break;
     }
   } else if (criterios.estados_permitidos && criterios.estados_permitidos.length > 0) {
     for (const state of criterios.estados_permitidos) {
@@ -340,38 +448,40 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
         if (stateData && stateData.length > 0) {
           const id = stateData[0].eduf_cd_uf;
           const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/estado/${id}`);
-          await collectFromOscList(oscs, 80);
+          await collectFromOscList(oscs, Math.max(80, poolTarget));
         }
       } catch {
         console.warn(`Failed to fetch OSCs for state ${state}`);
       }
-      if (rawCnpjs.length >= 100) break;
+      if (rawCnpjs.length >= poolTarget) break;
     }
   } else {
-    const citiesToQuery = [
-      NATIONAL_ROTATION_CITIES[seed % NATIONAL_ROTATION_CITIES.length],
-      NATIONAL_ROTATION_CITIES[(seed + 4) % NATIONAL_ROTATION_CITIES.length]
-    ];
+    const numCities = poolTarget > 120 ? Math.min(8, NATIONAL_ROTATION_CITIES.length) : 2;
+    const perCityCap = Math.ceil(poolTarget / numCities) + 10;
+    const citiesToQuery: string[] = [];
+    for (let idx = 0; idx < numCities; idx++) {
+      citiesToQuery.push(NATIONAL_ROTATION_CITIES[(seed + idx * 3) % NATIONAL_ROTATION_CITIES.length]);
+    }
     for (const city of citiesToQuery) {
       try {
         const muniData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/municipio/${encodeURIComponent(city)}`);
         if (muniData && muniData.length > 0) {
           const id = muniData[0].edmu_cd_municipio;
           const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${id}`);
-          await collectFromOscList(oscs, 50);
+          await collectFromOscList(oscs, perCityCap);
         }
       } catch {
         console.warn(`Failed to fetch OSCs for national sample city ${city}`);
       }
-      if (rawCnpjs.length >= 100) break;
+      if (rawCnpjs.length >= poolTarget) break;
     }
   }
 
-  return [...new Set(rawCnpjs)].slice(0, 100);
+  return [...new Set(rawCnpjs)].slice(0, poolTarget);
 }
 
-async function batchAiPreScreen(edital: any, candidates: OSC[]): Promise<OSC[]> {
-  const maxPerEdital = Math.max(1, parseInt(process.env.MAX_CANDIDATES_PER_EDITAL || '6', 10));
+async function batchAiPreScreen(edital: any, candidates: OSC[], maxPerEditalOverride?: number): Promise<OSC[]> {
+  const maxPerEdital = maxPerEditalOverride || Math.max(1, parseInt(process.env.MAX_CANDIDATES_PER_EDITAL || '6', 10));
   if (!GEMINI_API_KEY || GEMINI_API_KEY === 'dummy' || candidates.length <= maxPerEdital) {
     return candidates.slice(0, maxPerEdital);
   }
@@ -423,10 +533,33 @@ Retorne APENAS um objeto JSON válido no formato:
 async function runPipeline() {
   console.log(`Starting Optimized Outbound Matchmaking Pipeline`);
 
+  const targetEditalId = (process.env.TARGET_EDITAL_ID || '').trim();
+  const targetPdfUrl = (process.env.TARGET_PDF_URL || '').trim();
+  const isSniperMode = Boolean(targetEditalId || targetPdfUrl);
+  const maxPerEdital = Math.max(1, parseInt(process.env.MAX_CANDIDATES_PER_EDITAL || (isSniperMode ? '80' : '6'), 10));
+  const replaceUnsent = (process.env.REPLACE_UNSENT_LEADS || (isSniperMode ? 'true' : 'false')).toLowerCase() === 'true';
+
   const cache = await loadCache();
   const existingLeads = await loadExistingLeads(cache);
-  const topEditais = await getTopEditais(existingLeads);
-  console.log(`Selected ${topEditais.length} NGO-suitable editais for today's run.`);
+  const { sentKeys, sentPhones } = await loadSentPhonesAndKeys();
+
+  let topEditais: any[] = [];
+  if (targetEditalId) {
+    const editaisRaw = JSON.parse(await fs.readFile(EDITAIS_PATH, 'utf-8'));
+    const found = editaisRaw.find((e: any) => String(e.id) === targetEditalId);
+    if (!found) {
+      throw new Error(`TARGET_EDITAL_ID=${targetEditalId} not found in ${EDITAIS_PATH}`);
+    }
+    topEditais = [found];
+    console.log(`🎯 Sniper Mode (Prosas ID): targeting single Edital [${found.id}] ${found.attributes?.nome}`);
+  } else if (targetPdfUrl) {
+    const parsedEdital = await parseCustomPdfEdital(targetPdfUrl);
+    topEditais = [parsedEdital];
+    console.log(`🎯 Sniper Mode (External PDF): targeting [${parsedEdital.id}] ${parsedEdital.attributes?.nome}`);
+  } else {
+    topEditais = await getTopEditais(existingLeads);
+    console.log(`Selected ${topEditais.length} NGO-suitable editais for today's run.`);
+  }
 
   const newMatches: MatchResult[] = [];
   let totalSearchCalls = 0;
@@ -437,11 +570,12 @@ async function runPipeline() {
     console.log(`Processing Edital [${edital.id}]: ${edital.attributes.nome}`);
     const criterios = edital.deep_metadata.criterios_eliminatorios || {};
 
-    console.log(`Fetching IPEA IDs for region...`);
-    let rawCnpjs = await getIpeaIdsForRegion(criterios, String(edital.id), cache);
+    const poolTarget = isSniperMode ? Math.min(500, Math.max(150, maxPerEdital * 5)) : 100;
+    console.log(`Fetching IPEA IDs for region (pool target: ${poolTarget})...`);
+    let rawCnpjs = await getIpeaIdsForRegion(criterios, String(edital.id), cache, poolTarget);
     console.log(`Retrieved ${rawCnpjs.length} fresh CNPJs for this edital from IPEA.`);
 
-    if (rawCnpjs.length < 30) {
+    if (rawCnpjs.length < (isSniperMode ? poolTarget : 30)) {
       const allowedStates: string[] = (criterios.estados_permitidos || []).map((s: string) => s.toUpperCase());
       const cachedCnpjs = Object.keys(cache).filter(cnpj => {
         const entry = cache[cnpj];
@@ -455,7 +589,7 @@ async function runPipeline() {
       });
 
       const shuffled = cachedCnpjs.sort(() => 0.5 - Math.random());
-      rawCnpjs = [...new Set([...rawCnpjs, ...shuffled])].slice(0, 150);
+      rawCnpjs = [...new Set([...rawCnpjs, ...shuffled])].slice(0, Math.max(150, poolTarget));
       console.log(`Total candidate pool after cache supplement: ${rawCnpjs.length} CNPJs.`);
     }
 
@@ -467,9 +601,11 @@ async function runPipeline() {
       'loja maçônica', 'maconica', 'arls', 'sindicato', 'partido político', 'partido politico',
       'condomínio', 'condominio', 'escola municipal', 'escola estadual', 'caixa escolar',
       'colégio municipal', 'colégio estadual', 'conselho estadual', 'conselho municipal',
-      'conselho escolar', 'prefeitura', 'secretaria', 'advogados', 'escritório', 'contábil',
-      'comércio', 'esporte clube', 'futebol clube', 'servidores', 'câmara', 'ministério público',
-      'tribunal', 'polícia', 'bombeiros', 'crea', 'oab', 'cartório', 'hospital municipal',
+      'conselho escolar', 'conselho regional', 'prefeitura', 'secretaria', 'advogados',
+      'escritório', 'contábil', 'contabilidade', 'assessoria contábil', 'assessoria contabil',
+      'comércio', 'associação comercial', 'associacao comercial', 'esporte clube', 'futebol clube',
+      'clube de', 'servidores', 'câmara', 'ministério público', 'tribunal', 'polícia',
+      'bombeiros', 'crea', 'oab', 'cartório', 'hospital municipal',
       'protecao veicular', 'moto - taxistas', 'motoristas de taxi'
     ];
 
@@ -530,7 +666,10 @@ async function runPipeline() {
         });
 
         const minAge = criterios.idade_minima_cnpj_anos || 0;
-        if (age >= minAge && !isNaturezaProibida && !isGloballyBlacklisted) {
+        const phoneNorm = normalizePhone(oscData.official_contacts?.ddd_telefone_1 || oscData.official_contacts?.ddd_telefone_2);
+        const alreadyContacted = phoneNorm ? sentPhones.has(phoneNorm) : false;
+        const phoneOk = !isSniperMode || hasValidPhone(oscData);
+        if (age >= minAge && !isNaturezaProibida && !isGloballyBlacklisted && !alreadyContacted && phoneOk) {
           enrichedOscs.push(oscData);
         }
       }
@@ -596,13 +735,14 @@ async function runPipeline() {
     }).filter(item => item.heuristicScore > 0);
 
     scoredOscs.sort((a, b) => b.heuristicScore - a.heuristicScore);
-    const top20Heuristic = scoredOscs.slice(0, 20).map(item => item.osc);
-    console.log(`Strict Pre-Ranking: ${scoredOscs.length} relevant OSCs found (filtered from ${enrichedOscs.length}). Sending top ${top20Heuristic.length} to Batch AI Pre-Screen.`);
+    const heuristicLimit = Math.max(20, maxPerEdital * 2);
+    const topHeuristic = scoredOscs.slice(0, heuristicLimit).map(item => item.osc);
+    console.log(`Strict Pre-Ranking: ${scoredOscs.length} relevant OSCs found (filtered from ${enrichedOscs.length}). Sending top ${topHeuristic.length} to Batch AI Pre-Screen.`);
 
-    if (top20Heuristic.length === 0) continue;
+    if (topHeuristic.length === 0) continue;
 
     // --- Stage 1B: Batch AI Pre-Screening WITHOUT Google Search ---
-    const topFinalists = await batchAiPreScreen(edital, top20Heuristic);
+    const topFinalists = await batchAiPreScreen(edital, topHeuristic, maxPerEdital);
     console.log(`Batch AI selected ${topFinalists.length} high-probability finalists for Edital ${edital.id}.`);
 
     // --- Stage 2: Dossier + Final Evaluation ---
@@ -728,9 +868,17 @@ Return ONLY a valid JSON object containing:
     }
   }
 
-  // Merge new matches with valid rolling history (deduplicate by edital_id + cnpj, keep top 120 valid leads)
+  // Merge new matches with valid rolling history (deduplicate by edital_id + cnpj, keep up to 250 valid leads)
+  const previousLeadsToKeep = replaceUnsent
+    ? existingLeads.filter(m => sentKeys.has(`${m.edital_id}_${m.osc?.cnpj}`))
+    : existingLeads;
+
+  if (replaceUnsent) {
+    console.log(`🎯 Sniper Mode merge: kept ${previousLeadsToKeep.length} previously sent leads (for webhook context) and dropped old unsent leads.`);
+  }
+
   const mergedMap = new Map<string, MatchResult>();
-  for (const m of [...newMatches, ...existingLeads]) {
+  for (const m of [...newMatches, ...previousLeadsToKeep]) {
     if (!isValidLeadRecord(m)) continue;
     const titleNorm = normalizeText(m.edital_titulo || '');
     if (
@@ -747,7 +895,7 @@ Return ONLY a valid JSON object containing:
     }
   }
 
-  const finalLeads = Array.from(mergedMap.values()).slice(0, 120);
+  const finalLeads = Array.from(mergedMap.values()).slice(0, 250);
 
   await saveCache(cache);
   await fs.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
