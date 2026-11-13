@@ -9,7 +9,8 @@ const SENT_LOG_PATH = path.resolve('src/data/whatsapp_sent_log.json');
 
 // For the 7-day experiment sending to ALL leads during business hours:
 // 4 runs/day (09:30, 11:30, 14:30, 16:30 BRT) x 12 leads/run = up to 48 leads/day safely!
-const MAX_MESSAGES_PER_RUN = parseInt(process.env.MAX_MESSAGES_PER_RUN || '12', 10);
+const MAX_MESSAGES_PER_RUN = parseInt(process.env.MAX_MESSAGES_PER_RUN || '8', 10);
+const MAX_DAILY_SENT = parseInt(process.env.MAX_DAILY_SENT || '35', 10);
 const MIN_SCORE = parseInt(process.env.MIN_SCORE || '0', 10); // Default 0 = send to ALL leads for 7-day data analysis
 const USE_TWO_STEP_OPENER = (process.env.USE_TWO_STEP_OPENER || 'true').toLowerCase() !== 'false';
 const FORCE_OUTSIDE_BUSINESS_HOURS = (process.env.FORCE_OUTSIDE_BUSINESS_HOURS || 'false').toLowerCase() === 'true';
@@ -96,7 +97,11 @@ async function sendViaGateway(phone: string, text: string) {
         no_link_preview: true
       })
     });
-    if (!res.ok) throw new Error(`Whapi.cloud HTTP ${res.status}`);
+    if (!res.ok) {
+      const errBody = await res.json().catch(() => ({}));
+      const detail = errBody?.error?.message || errBody?.message || '';
+      throw new Error(`Whapi.cloud HTTP ${res.status}${detail ? ` (${detail})` : ''}`);
+    }
     return { ok: true, simulated: false };
   }
 
@@ -151,6 +156,48 @@ async function sendViaGateway(phone: string, text: string) {
   return { ok: true, simulated: false };
 }
 
+async function checkHasWhatsAppViaWhapi(phone: string): Promise<boolean> {
+  const apiToken = (process.env.WHATSAPP_API_TOKEN || '').trim();
+  const provider = (process.env.WHATSAPP_PROVIDER || '').toLowerCase().trim();
+  let apiUrl = (process.env.WHATSAPP_API_URL || '').trim().replace(/\/+$/, '');
+  if (!apiToken) return true;
+  if (provider && provider !== 'whapi' && !apiUrl.includes('whapi.cloud')) return true;
+  apiUrl = apiUrl || 'https://gate.whapi.cloud';
+
+  try {
+    const res = await fetch(`${apiUrl}/contacts`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        Authorization: `Bearer ${apiToken}`
+      },
+      body: JSON.stringify({
+        blocking: 'wait',
+        contacts: [phone]
+      })
+    });
+    if (!res.ok) return true; // Fail open on API hiccup
+    const data = await res.json().catch(() => ({}));
+    const entry = Array.isArray(data?.contacts) ? data.contacts[0] : null;
+    if (entry && entry.status === 'invalid') {
+      return false;
+    }
+    return true;
+  } catch {
+    return true;
+  }
+}
+
+function getBrasiliaDateStr(date = new Date()): string {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/Sao_Paulo',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).format(date);
+}
+
 async function run() {
   const timeInfo = getBrasiliaTimeInfo();
   console.log(`🕒 Horário atual em Brasília: ${timeInfo.formattedTime}`);
@@ -170,6 +217,27 @@ async function run() {
     ? JSON.parse(fs.readFileSync(SENT_LOG_PATH, 'utf-8'))
     : { last_run_at: null, sent_leads: {} };
 
+  const todayBrt = getBrasiliaDateStr();
+  const sentEntries = Object.values(sentLog.sent_leads || {});
+  const sentTodayCount = sentEntries.filter((e: any) => {
+    if (e?.status === 'skipped_no_whatsapp') return false;
+    if (!e?.sent_at) return false;
+    return getBrasiliaDateStr(new Date(e.sent_at)) === todayBrt;
+  }).length;
+
+  const remainingDailyBudget = Math.max(0, MAX_DAILY_SENT - sentTodayCount);
+  console.log(`📊 Enviados hoje (${todayBrt} BRT): ${sentTodayCount}/${MAX_DAILY_SENT} (restante hoje: ${remainingDailyBudget}).`);
+  if (remainingDailyBudget <= 0) {
+    console.log('🛑 Limite diário de segurança atingido. Encerrando até amanhã.');
+    return;
+  }
+
+  const alreadyContactedPhones = new Set<string>(
+    sentEntries.map((e: any) => e?.phone).filter(Boolean)
+  );
+
+  const batchLimit = Math.min(MAX_MESSAGES_PER_RUN, remainingDailyBudget);
+
   const eligible = leads
     .filter(l => {
       const key = `${l.edital_id}_${l.osc?.cnpj}`;
@@ -180,7 +248,8 @@ async function run() {
           l.osc?.official_contacts?.ddd_telefone_1 ||
           l.osc?.official_contacts?.ddd_telefone_2
       );
-      return !!phone;
+      if (!phone || alreadyContactedPhones.has(phone)) return false;
+      return true;
     })
     // Prioritize mobile phones first, then higher scores
     .sort((a, b) => {
@@ -191,9 +260,9 @@ async function run() {
       if (typeA !== typeB) return typeB - typeA;
       return (b.score || 0) - (a.score || 0);
     })
-    .slice(0, MAX_MESSAGES_PER_RUN);
+    .slice(0, batchLimit);
 
-  console.log(`🚀 Encontrados ${eligible.length} leads inéditos (Score >= ${MIN_SCORE}) para envio cadenciado no Experimento.`);
+  console.log(`🚀 Encontrados ${eligible.length} leads inéditos (Score >= ${MIN_SCORE}) para envio cadenciado (limite lote: ${batchLimit}).`);
 
   for (let i = 0; i < eligible.length; i++) {
     const lead = eligible[i];
@@ -203,9 +272,29 @@ async function run() {
         lead.osc?.official_contacts?.ddd_telefone_1 ||
         lead.osc?.official_contacts?.ddd_telefone_2
     )!;
-    const phoneType = classifyPhoneType(phone);
-    const msg = USE_TWO_STEP_OPENER ? buildTwoStepOpener(lead) : lead.whatsapp_message;
 
+    if (alreadyContactedPhones.has(phone)) {
+      console.log(`[${i + 1}/${eligible.length}] ⏭️ Pulando ${lead.osc?.nome} (+${phone}) — telefone já contatado.`);
+      continue;
+    }
+
+    const phoneType = classifyPhoneType(phone);
+    const hasWa = await checkHasWhatsAppViaWhapi(phone);
+    if (!hasWa) {
+      console.log(`[${i + 1}/${eligible.length}] 📵 Sem WhatsApp ativo: ${lead.osc?.nome} (+${phone}, ${phoneType}) — pulando.`);
+      sentLog.sent_leads[key] = {
+        cnpj: lead.osc?.cnpj,
+        nome: lead.osc?.nome,
+        phone,
+        phone_type: phoneType,
+        status: 'skipped_no_whatsapp',
+        checked_at: new Date().toISOString()
+      };
+      alreadyContactedPhones.add(phone);
+      continue;
+    }
+
+    const msg = USE_TWO_STEP_OPENER ? buildTwoStepOpener(lead) : lead.whatsapp_message;
     console.log(`[${i + 1}/${eligible.length}] Enviando para ${lead.osc?.nome} (+${phone}, ${phoneType}) - Score ${lead.score}%...`);
     try {
       const res = await sendViaGateway(phone, msg);
@@ -223,15 +312,20 @@ async function run() {
           sent_at: new Date().toISOString(),
           mode: USE_TWO_STEP_OPENER ? 'two_step_opener' : 'full_pitch'
         };
+        alreadyContactedPhones.add(phone);
       }
 
       if (i < eligible.length - 1 && !res.simulated) {
-        const waitMs = 45000 + Math.floor(Math.random() * 35000);
+        const waitMs = 70000 + Math.floor(Math.random() * 50000);
         console.log(`   ⏳ Aguardando ${Math.round(waitMs / 1000)}s para simular cadência humana...`);
         await new Promise(r => setTimeout(r, waitMs));
       }
     } catch (err: any) {
       console.error(`   ❌ Falha ao enviar para ${lead.osc?.nome}:`, err.message);
+      if (/\b(401|403|429)\b/.test(err.message)) {
+        console.error('🛑 Erro de autenticação/restrição/rate-limit detectado. Interrompendo lote para proteger a conta.');
+        break;
+      }
     }
   }
 

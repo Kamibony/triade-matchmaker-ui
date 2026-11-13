@@ -1,15 +1,19 @@
 name: WhatsApp Business-Hours Auto-Dispatcher
 
 on:
-  # Runs Monday through Friday every 30 minutes during Brazilian Business Hours (09:00–17:30 BRT = 12:00–20:30 UTC)
+  # Runs Monday through Friday every hour during Brazilian Business Hours (09:00–17:00 BRT = 12:00–20:00 UTC)
   schedule:
-    - cron: '0,30 12-20 * * 1-5'
+    - cron: '0 12-20 * * 1-5'
   workflow_dispatch:
     inputs:
       max_messages:
         description: 'Quantidade máxima de ONGs para contatar neste lote'
         required: false
-        default: '12'
+        default: '8'
+      max_daily:
+        description: 'Limite diário máximo de novos chats (anti-ban)'
+        required: false
+        default: '35'
       min_score:
         description: 'Score mínimo (0 = Enviar para TODOS os leads no Experimento)'
         required: false
@@ -54,7 +58,8 @@ jobs:
           WHATSAPP_API_URL: ${{ secrets.WHATSAPP_API_URL }}
           WHATSAPP_API_TOKEN: ${{ secrets.WHATSAPP_API_TOKEN }}
           WHATSAPP_INSTANCE_ID: ${{ secrets.WHATSAPP_INSTANCE_ID }}
-          MAX_MESSAGES_PER_RUN: ${{ inputs.max_messages || '12' }}
+          MAX_MESSAGES_PER_RUN: ${{ inputs.max_messages || '8' }}
+          MAX_DAILY_SENT: ${{ inputs.max_daily || '35' }}
           MIN_SCORE: ${{ inputs.min_score || '0' }}
           USE_TWO_STEP_OPENER: ${{ inputs.use_two_step_opener || 'true' }}
           FORCE_OUTSIDE_BUSINESS_HOURS: ${{ inputs.force_outside_hours || 'false' }}
