@@ -427,6 +427,7 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
   };
 
   if (criterios.municipios_permitidos && criterios.municipios_permitidos.length > 0) {
+    const perMuniCap = Math.max(30, Math.ceil(poolTarget / criterios.municipios_permitidos.length) + 10);
     for (const cityString of criterios.municipios_permitidos) {
       const cityPart = cityString.split('-')[0].trim();
       try {
@@ -434,7 +435,7 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
         if (muniData && muniData.length > 0) {
           const id = muniData[0].edmu_cd_municipio;
           const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${id}`);
-          await collectFromOscList(oscs, Math.max(80, poolTarget));
+          await collectFromOscList(oscs, perMuniCap);
         }
       } catch {
         console.warn(`Failed to fetch OSCs for municipality ${cityPart}`);
@@ -442,13 +443,14 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
       if (rawCnpjs.length >= poolTarget) break;
     }
   } else if (criterios.estados_permitidos && criterios.estados_permitidos.length > 0) {
+    const perStateCap = Math.max(30, Math.ceil(poolTarget / criterios.estados_permitidos.length) + 10);
     for (const state of criterios.estados_permitidos) {
       try {
         const stateData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/estado/${encodeURIComponent(state)}`);
         if (stateData && stateData.length > 0) {
           const id = stateData[0].eduf_cd_uf;
           const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/estado/${id}`);
-          await collectFromOscList(oscs, Math.max(80, poolTarget));
+          await collectFromOscList(oscs, perStateCap);
         }
       } catch {
         console.warn(`Failed to fetch OSCs for state ${state}`);
@@ -721,7 +723,7 @@ async function runPipeline() {
         }
       }
 
-      if (keywordScore === 0) {
+      if (!isSniperMode && keywordScore === 0) {
         return { osc, heuristicScore: 0 };
       }
 
