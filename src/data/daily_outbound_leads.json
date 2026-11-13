@@ -1,5 +1,401 @@
 [
   {
+    "edital_id": "19171",
+    "edital_titulo": "BRASIL - FOMENTO - PESQUISA E INOVAÇÃO FLORESTAL - 2026",
+    "edital_url": "https://drive.google.com/file/d/1t0RCNqMoJxrSz27H4xUiJCUr06uHJSRa/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "34544346000172",
+      "nome": "FUNDACAO VITORIA AMAZONICA",
+      "uf": "AM",
+      "municipio": "MANAUS",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 1990,
+      "cnae_primario_descricao": "Pesquisa e desenvolvimento experimental em ciências físicas e naturais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9233027261",
+        "ddd_telefone_2": "9233027262"
+      }
+    },
+    "score": 95,
+    "motivo_match": "A Fundação Vitória Amazônica possui forte aderência devido à sua localização estratégica em Manaus e atuação consolidada em pesquisa científica em ciências físicas e naturais, alinhando-se perfeitamente aos temas de florestas, silvicultura e bioeconomia do edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Parabéns pelo belo trabalho que a Fundação Vitória Amazônica realiza na Amazônia! Mapeamos uma oportunidade de financiamento no valor de até R$ 213.840.000 que tem tudo a ver com a atuação de vocês em pesquisa e florestas. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "9233027261",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA **FUNDACAO VITORIA AMAZONICA** é uma fundação privada sediada em Manaus, AM, fundada em 1990. Com mais de três décadas de história, possui sólida maturidade institucional e atua principalmente na área de pesquisa e desenvolvimento experimental em ciências físicas e naturais.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra forte aderência ao edital MAI/DAI de inovação e pesquisa aplicada. Sua localização estratégica na Amazônia e sua natureza voltada à ciência e tecnologia a qualificam como uma ICT (Instituição Científica, Tecnológica e de Inovação) com potencial para liderar projetos de pós-graduação acadêmica em parceria com o setor produtivo.",
+    "created_at": "2026-11-13T01:08:25.211Z"
+  },
+  {
+    "edital_id": "19542",
+    "edital_titulo": "BRASIL - SUBVENÇÃO - FINEP COOPERAMAIS BRASIL TECNOLOGIAS EMPRESAS - 2026",
+    "edital_url": "https://drive.google.com/file/d/1ZUm1iEBekZd5-GK_qEnNXBx9rvH091Lw/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "07939922001260",
+      "nome": "INSTITUTO DE EDUCACAO E TECNOLOGIA VALE DO RIBEIRA",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2013,
+      "cnae_primario_descricao": "Educação profissional de nível tecnológico",
+      "cnae_secundario_descricao": "Outras atividades de ensino não especificadas anteriormente | Treinamento em desenvolvimento profissional e gerencial | Ensino médio | Ensino fundamental | Educação superior - pós-graduação e extensão | Educação profissional de nível técnico",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "1122947686",
+        "ddd_telefone_2": "1186120031"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A OSC possui forte alinhamento com os temas de tecnologia e inovação devido ao seu CNAE principal em educação profissional de nível tecnológico e secundários em treinamento e ensino, encaixando-se no perfil para captação de recursos via FINEP.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho o belo trabalho que o Instituto de Educação e Tecnologia Vale do Ribeira realiza na área de tecnologia e educação. Mapeamos uma oportunidade de financiamento incrível no valor de até R$ 120.000.000 que tem tudo a ver com a atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "1122947686",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nO INSTITUTO DE EDUCACAO E TECNOLOGIA VALE DO RIBEIRA, fundado em 2013, é uma Associação Privada sediada em Recife, PE (com histórico de atuação e registro também associado ao estado de São Paulo via DDD). Sua atividade principal é a educação profissional de nível tecnológico, complementada por atividades de ensino fundamental, médio, superior, pós-graduação e treinamentos em desenvolvimento profissional e gerencial.\n\n### 🎯 Alinhamento com o Edital\nA instituição demonstra alta maturidade institucional (mais de 10 anos de fundação) e forte capilaridade na área educacional e tecnológica. O edital da FINEP voltado à inovação e tecnologia (com teto de até R$ 120 milhões) representa uma excelente oportunidade para expandir suas iniciativas de capacitação tecnológica e desenvolvimento institucional.",
+    "created_at": "2026-11-13T01:09:41.739Z"
+  },
+  {
+    "edital_id": "19542",
+    "edital_titulo": "BRASIL - SUBVENÇÃO - FINEP COOPERAMAIS BRASIL TECNOLOGIAS EMPRESAS - 2026",
+    "edital_url": "https://drive.google.com/file/d/1ZUm1iEBekZd5-GK_qEnNXBx9rvH091Lw/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "07432348000105",
+      "nome": "IPSID - INSTITUTO DE PESQUISA EM SISTEMAS DE INFORMACAO E DECISAO",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2005,
+      "cnae_primario_descricao": "Outras atividades de ensino não especificadas anteriormente",
+      "cnae_secundario_descricao": "Desenvolvimento de programas de computador sob encomenda | Consultoria em tecnologia da informação",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8121234706"
+      }
+    },
+    "score": 95,
+    "motivo_match": "O IPSID possui forte alinhamento com o edital devido à sua atuação em desenvolvimento de software e tecnologia da informação, combinada com sua sólida experiência desde 2005 em Recife.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Conheço o belo trabalho do IPSID em Recife e mapeei uma excelente oportunidade de financiamento de até R$ 120.000.000 perfeitamente alinhada à atuação de vocês em tecnologia. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "8121234706",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nO IPSID - INSTITUTO DE PESQUISA EM SISTEMAS DE INFORMACAO E DECISAO, sediado em Recife, PE, é uma associação privada fundada em 2005. Atua principalmente com ensino e possui forte atuação técnica em desenvolvimento de programas de computador sob encomenda e consultoria em TI.\n\n### 🎯 Alinhamento com o Edital\nO instituto demonstra alta maturidade institucional e capacidade técnica compatível com as exigências de inovação e tecnologia da FINEP, sendo elegível para subvenção econômica e financiamentos voltados à transformação digital.",
+    "created_at": "2026-11-13T01:09:44.553Z"
+  },
+  {
+    "edital_id": "17931",
+    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
+    "edital_url": "https://drive.google.com/file/d/1Fv23E49-yumiz5HXtqbb__4HNYolRTde/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "12664705000192",
+      "nome": "INSTITUTO PLANALTO AMAZONIA DE ASSISTENCIA SOCIAL, PESQUISA E EDUCACAO PROFISSIONAL - IPA",
+      "uf": "PA",
+      "municipio": "PORTO DE MOZ",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2010,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente | Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Pesquisas de mercado e de opinião pública",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9384043546"
+      }
+    },
+    "score": 75,
+    "motivo_match": "O IPA está localizado no Pará (Porto de Moz), atendendo diretamente à restrição geográfica do edital, e possui atuação voltada para assistência social e pesquisa. No entanto, suas atividades principais focam em direitos sociais e cultura, exigindo alinhamento fino com as pautas de bioeconomia e restauração florestal.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que vocês desenvolvem no Pará. Mapeamos recentemente uma excelente oportunidade de financiamento de até R$ 110 milhões totalmente voltada para a área de atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "9384043546",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Instituto Planalto Amazonia de Assistencia Social, Pesquisa e Educacao Profissional - IPA\n- **Localização:** Porto de Moz, PA\n- **Natureza jurídica:** Associação Privada\n- **Maturidade:** Fundada em 2010 (14 anos de atuação)\n- **Atividades (CNAE):** Defesa de direitos sociais, atividades associativas culturais e pesquisa.\n\n### 🎯 Alinhamento com o Edital\nO instituto possui forte aderência territorial por estar sediado no Pará e contar com histórico em pesquisa e assistência social, o que facilita a execução de projetos de desenvolvimento socioeconômico sustentável, educação ambiental e bioeconomia previstos no fundo estadual.",
+    "created_at": "2026-11-13T01:10:44.657Z"
+  },
+  {
+    "edital_id": "17931",
+    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
+    "edital_url": "https://drive.google.com/file/d/1Fv23E49-yumiz5HXtqbb__4HNYolRTde/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "44044613000104",
+      "nome": "TEIA DE ENVOLVIMENTO HUMANO E AMBIENTAL - TEHA",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9191509742"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A TEHA está sediada em Belém, PA, o que atende perfeitamente à exigência geográfica do edital, e seu nome e foco em defesa de direitos sociais e ambientais alinham-se aos temas de bioeconomia e desenvolvimento sustentável.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito a atuação da TEHA em Belém. Mapeamos uma oportunidade excelente de financiamento de até R$ 110 milhões totalmente alinhada à atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "9191509742",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA TEIA DE ENVOLVIMENTO HUMANO E AMBIENTAL - TEHA, fundada em 2021 e sediada em Belém (PA), é uma associação privada voltada primariamente para atividades de associações de defesa de direitos sociais. Trata-se de uma organização relativamente jovem, com cerca de 3 anos de atuação na região amazônica.\n\n### 🎯 Alinhamento com o Edital\nA organização possui forte aderência geográfica ao Fundo Estadual de Meio Ambiente do Pará. Embora seu CNAE principal seja focado em direitos sociais, a forte ênfase no termo 'ambiental' em sua razão social e sua localização estratégica em Belém a posicionam bem para desenvolver iniciativas de base sustentável, educação ambiental e fortalecimento comunitário previstas no edital.",
+    "created_at": "2026-11-13T01:10:47.791Z"
+  },
+  {
+    "edital_id": "17931",
+    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
+    "edital_url": "https://drive.google.com/file/d/1Fv23E49-yumiz5HXtqbb__4HNYolRTde/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "07553026000106",
+      "nome": "ASSOCIACAO POLO PRODUTIVO PARA",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2005,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Serviços de pré-impressão | Manutenção e reparação de equipamentos e produtos não especificados anteriormente | Instalação de máquinas e equipamentos industriais | Serviços de montagem de móveis de qualquer material | Coleta de resíduos não-perigosos | Instalação e manutenção elétrica | Design de interiores | Serviços de tradução, interpretação e similares | Locação de mão-de-obra temporária | Atividades de limpeza não especificadas anteriormente | Atividades paisagísticas | Preparação de documentos e serviços especializados de apoio administrativo não especificados anteriormente | Educação profissional de nível técnico | Educação profissional de nível tecnológico | Ensino de esportes | Outras atividades de ensino não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente | Reparação de artigos do mobiliário | Lavanderias",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9185424582"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está sediada em Belém (PA), atendendo perfeitamente ao requisito geográfico do edital, e possui atividades secundárias voltadas à educação, coleta de resíduos e paisagismo, que dialogam com a bioeconomia e a restauração florestal.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Parabenizo a Associação Polo Produtivo Pará pelos quase 20 anos de forte atuação e impacto em Belém! Mapeamos uma oportunidade fantástica de financiamento de até R$ 110 milhões que se encaixa perfeitamente nas iniciativas socioambientais e produtivas de vocês. Vocês teriam disponibilidade esta semana para uma breve conversa sobre isso?",
+    "contatos_encontrados": {
+      "whatsapp": "9185424582",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Associação Polo Produtivo Pará\n- **Localização:** Belém, PA\n- **Ano de Fundação:** 2005 (19 anos de atuação)\n- **Natureza:** Associação Privada\n- **Atividades Principais/Secundárias:** Defesa de direitos sociais, educação profissional, coleta de resíduos não-perigosos, atividades paisagísticas e associativas.\n\n### 🎯 Alinhamento com o Edital\n- **Aderência Geográfica:** Localizada no Pará, estado-alvo do fundo estadual.\n- **Aderência Temática:** Possui sinergia com os eixos de educação ambiental, bioeconomia e desenvolvimento socioeconômico sustentável através de suas frentes de educação e manejo de resíduos/paisagismo.",
+    "created_at": "2026-11-13T01:10:53.998Z"
+  },
+  {
+    "edital_id": "17931",
+    "edital_titulo": "Seleção de Projetos - Fundo Estadual de Meio Ambiente",
+    "edital_url": "https://drive.google.com/file/d/1Fv23E49-yumiz5HXtqbb__4HNYolRTde/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "05073010000170",
+      "nome": "CENTRO SOCIAL AUXILIUM",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1974,
+      "cnae_primario_descricao": "Ensino fundamental",
+      "cnae_secundario_descricao": "Educação infantil - pré-escola | Ensino médio | Educação profissional de nível técnico | Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9132332446",
+        "ddd_telefone_2": "9183120550"
+      }
+    },
+    "score": 65,
+    "motivo_match": "A OSC está sediada em Belém (PA), atende à localização geográfica exigida pelo edital, e possui atuação em educação, o que dialoga com o tema de educação ambiental, embora seu foco principal seja o ensino formal.",
+    "whatsapp_message": "Olá, Centro Social Auxilium! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Parabenizo muito vocês pela linda trajetória e pelo trabalho educacional que realizam em Belém desde 1974. Mapeamos recentemente uma oportunidade de financiamento incrível no valor de até R$ 110 milhões que se alinha perfeitamente com iniciativas de educação e impacto socioambiental na nossa região. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos como viabilizar essa captação?",
+    "contatos_encontrados": {
+      "whatsapp": "(91) 93233-2446",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nO CENTRO SOCIAL AUXILIUM, fundado em 1974 e sediado em Belém, PA, é uma associação privada de longa trajetória. Suas atividades principais e secundárias concentram-se na área de educação (ensino fundamental, infantil, médio e profissionalizante), além de atividades de defesa de direitos sociais.\n\n### 🎯 Alinhamento com o Edital\nA instituição possui forte atuação educacional na região amazônica (Pará), o que facilita a inserção em projetos voltados para a educação ambiental e desenvolvimento socioeconômico sustentável, alinhando-se parcialmente aos temas do edital do Fundo Estadual de Meio Ambiente.",
+    "created_at": "2026-11-13T01:10:57.041Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "47482982000169",
+      "nome": "ASSOCIACAO DE DESENVOLVIMENTO COMUNITARIO DA COHAB I E II DE PAO DE ACUCAR",
+      "uf": "AL",
+      "municipio": "PAO DE ACUCAR",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8298225244"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A OSC está localizada em Pão de Açúcar (AL), em pleno bioma Caatinga, e possui foco em desenvolvimento comunitário, alinhando-se perfeitamente aos objetivos de recuperação socioprodutiva e combate à desertificação do edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho o belo trabalho que vocês realizam em Pão de Açúcar pelo desenvolvimento comunitário. Mapeei recentemente uma oportunidade de financiamento no valor de até R$ 55.200.000,00 que tem tudo a ver com a atuação de vocês na região. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "8298225244",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Associação de Desenvolvimento Comunitário da Cohab I e II de Pão de Açúcar\n- **Localização:** Pão de Açúcar, AL (Região semiárida / Caatinga)\n- **Natureza:** Associação Privada\n- **Ano de Fundação:** 2022 (Organização jovem, com 4 anos de atuação)\n- **Atividade Principal (CNAE):** Defesa de direitos sociais\n- **Atividades Secundárias:** Organizações associativas ligadas à cultura, arte e atividades associativas não especificadas.\n\n### 🎯 Alinhamento com o Edital\n- **Aderência Geográfica e Temática:** Situada no bioma Caatinga, a instituição possui o 'desenvolvimento comunitário' em seu nome e escopo, o que atende diretamente aos requisitos de ações socioprodutivas e geração de renda exigidos pelo edital.\n- **Maturidade:** Fundada em 2022, pode necessitar de parcerias técnicas para a gestão financeira de recursos de grande escala, mas possui o perfil comunitário ideal para a execução local das metas.",
+    "created_at": "2026-11-13T01:13:05.671Z"
+  },
+  {
+    "edital_id": "19405",
+    "edital_titulo": "PARÁ / BRASIL - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO REGIONAL SUSTENTÁVEL - 2026",
+    "edital_url": "https://drive.google.com/file/d/1D-k3uhdielUXcqXaxZ1BFAmS9fFYDY0E/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "21889603000328",
+      "nome": "INSTITUTO PERMANECER PARA SOBREVIVER - FLORESCER",
+      "uf": "PA",
+      "municipio": "ANAPU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Serviços de organização de feiras, congressos, exposições e festas",
+      "cnae_secundario_descricao": "Coleta de produtos não-madeireiros não especificados anteriormente em florestas nativas | Atividades de apoio à produção florestal | Atividades de apoio à pesca em água doce | Impressão de livros, revistas e outras publicações periódicas | Captação, tratamento e distribuição de água | Gestão de redes de esgoto | Tratamento e disposição de resíduos não-perigosos | Construção de edifícios | Construção de redes de abastecimento de água, coleta de esgoto e construções correlatas, exceto obras de irrigação | Albergues, exceto assistenciais | Restaurantes e similares | Fornecimento de alimentos preparados preponderantemente para empresas | Edição integrada à impressão de cadastros, listas e de outros produtos gráficos | Atividades de produção cinematográfica, de vídeos e de programas de televisão não especificadas anteriormente | Atividades de gravação de som e de edição de música | Desenvolvimento de programas de computador sob encomenda | Suporte técnico, manutenção e outros serviços em tecnologia da informação | Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Agências de publicidade | Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias | Aluguel de palcos, coberturas e outras estruturas de uso temporário, exceto andaimes | Operadores turísticos | Serviços de reservas e outros serviços de turismo não especificados anteriormente | Casas de festas e eventos | Administração pública em geral | Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais | Regulação das atividades econômicas | Educação profissional de nível técnico | Educação profissional de nível tecnológico | Atividades de apoio à educação, exceto caixas escolares | Ensino de esportes | Ensino de arte e cultura não especificado anteriormente | Treinamento em desenvolvimento profissional e gerencial | Atividades de psicologia e psicanálise | Outras atividades de atenção à saúde humana não especificadas anteriormente | Atividades de centros de assistência psicossocial | Atividades de assistência social prestadas em residências coletivas e particulares não especificadas anteriormente | Serviços de assistência social sem alojamento | Produção teatral | Produção musical | Produção de espetáculos de dança | Produção de espetáculos de rodeios, vaquejadas e similares | Gestão de espaços para artes cênicas, espetáculos e outras atividades artísticas | Restauração e conservação de lugares e prédios históricos | Produção e promoção de eventos esportivos | Atividades associativas não especificadas anteriormente | Outras atividades de serviços pessoais não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "6384922104"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A OSC está sediada em Anapu, PA (região do Xingu), e possui ampla compatibilidade temática com o edital em seu vasto leque de atividades secundárias, que incluem apoio à produção florestal, gestão ambiental e inclusão social.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito iniciativas que fortalecem a nossa região. Mapeei uma oportunidade de financiamento de até R$ 40.000.000 que tem tudo a ver com a atuação de vocês e o impacto que geram no Pará. Teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "6384922104",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nO **INSTITUTO PERMANECER PARA SOBREVIVER - FLORESCER**, localizado em Anapu, PA, é uma associação privada fundada em 2024. Embora sua atividade principal seja voltada para eventos, o instituto possui um leque extremamente diversificado de atividades secundárias nas áreas ambiental, florestal, de saneamento, construção, educação e assistência social.\n\n### 🎯 Alinhamento com o Edital\nA localização geográfica da OSC em Anapu atende perfeitamente ao foco regional do edital na região do Xingu. Além disso, suas CNAEs secundárias cobrem diversos temas exigidos pela chamada, como atividades de apoio à produção florestal, gestão de resíduos, saneamento e desenvolvimento sustentável, conferindo forte aderência aos objetivos de redução das desigualdades regionais e melhoria da qualidade de vida.",
+    "created_at": "2026-11-13T01:14:18.469Z"
+  },
+  {
+    "edital_id": "19405",
+    "edital_titulo": "PARÁ / BRASIL - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO REGIONAL SUSTENTÁVEL - 2026",
+    "edital_url": "https://drive.google.com/file/d/1D-k3uhdielUXcqXaxZ1BFAmS9fFYDY0E/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "05121802000173",
+      "nome": "ASSOCIACAO DOS POVOS INDIGENAS MORADORES DE ALTAMIRA - AIMA",
+      "uf": "PA",
+      "municipio": "ALTAMIRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2002,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9391572278"
+      }
+    },
+    "score": 95,
+    "motivo_match": "A AIMA possui forte aderência por estar localizada em Altamira/PA (região do Xingu), ter atuação histórica desde 2002 na defesa de direitos sociais e focar em povos indígenas, tema central e prioritário do edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho essencial que vocês realizam em Altamira na defesa dos direitos sociais e dos povos indígenas. Mapeamos recentemente uma excelente oportunidade de financiamento não reembolsável de até R$ 40 milhões que tem Altamira e a região do Xingu como foco total, alinhado perfeitamente com a atuação de vocês. Vocês teriam disponibilidade esta semana para uma breve conversa para explorarmos essa oportunidade?",
+    "contatos_encontrados": {
+      "whatsapp": "9391572278",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS POVOS INDIGENAS MORADORES DE ALTAMIRA - AIMA é uma associação privada fundada em 2002 na cidade de Altamira, Pará. Possui mais de duas décadas de atuação consolidada, com foco principal em atividades de associações de defesa de direitos sociais, além de iniciativas ligadas à cultura e arte.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra altíssima compatibilidade com o edital de Desenvolvimento Regional Sustentável na região do Xingu. Sua localização estratégica em Altamira e seu histórico de mais de 20 anos na defesa de povos indígenas atendem diretamente aos temas prioritários de inclusão social, povos indígenas e comunidades tradicionais, visando o desenvolvimento sustentável e a redução de desigualdades na região.",
+    "created_at": "2026-11-13T01:14:21.880Z"
+  },
+  {
+    "edital_id": "19405",
+    "edital_titulo": "PARÁ / BRASIL - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO REGIONAL SUSTENTÁVEL - 2026",
+    "edital_url": "https://drive.google.com/file/d/1D-k3uhdielUXcqXaxZ1BFAmS9fFYDY0E/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "04240901000101",
+      "nome": "ASSOCIACAO SOLIDARIA ECONOMICA E ECOLOGICA DE FRUTAS DA AMAZONIA - ASSEEFA",
+      "uf": "PA",
+      "municipio": "ANAPU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2001,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Horticultura, exceto morango | Produção de mudas e outras formas de propagação vegetal, certificadas | Serviço de preparação de terreno, cultivo e colheita | Atividades de apoio à agricultura não especificadas anteriormente | Atividades de pós-colheita | Produção de produtos não-madeireiros não especificados anteriormente em florestas plantadas | Fabricação de conservas de frutas | Fabricação de óleos vegetais em bruto, exceto óleo de milho | Fabricação de farinha de mandioca e derivados | Fabricação de especiarias, molhos, temperos e condimentos | Comércio atacadista de matérias-primas agrícolas com atividade de fracionamento e acondicionamento associada | Comércio atacadista de cereais e leguminosas beneficiados | Comércio varejista de laticínios e frios | Depósitos de mercadorias para terceiros, exceto armazéns gerais e guarda-móveis | Atividades auxiliares da justiça | Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Pesquisa e desenvolvimento experimental em ciências sociais e humanas | Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Envasamento e empacotamento sob contrato | Educação profissional de nível técnico | Atividades de apoio à educação, exceto caixas escolares | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente | Serviços de assistência social sem alojamento | Atividades de organizações associativas patronais e empresariais | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9191620098",
+        "ddd_telefone_2": "9193213855"
+      }
+    },
+    "score": 95,
+    "motivo_match": "A ASSEEFA possui forte alinhamento com o edital por estar sediada em Anapu (região do Xingu) e atuar fortemente em atividades produtivas sustentáveis, agricultura familiar e conservação ambiental desde 2001.",
+    "whatsapp_message": "Olá, pessoal da ASSEEFA! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho incrível que vocês realizam em Anapu com a economia ecológica e agricultura. Mapeei uma oportunidade fantástica de financiamento não reembolsável no valor de até R$ 40 milhões voltada exatamente para a área de atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana para alinharmos os detalhes?",
+    "contatos_encontrados": {
+      "whatsapp": "9191620098",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO SOLIDARIA ECONOMICA E ECOLOGICA DE FRUTAS DA AMAZONIA (ASSEEFA), fundada em 2001 e localizada em Anapu, Pará, é uma organização privada com vasta experiência em atividades ligadas à horticultura, produção sustentável, processamento de alimentos e apoio à agricultura.\n\n### 🎯 Alinhamento com o Edital\nA OSC atende perfeitamente aos temas de atividades produtivas sustentáveis e inclusão social exigidos pelo edital de desenvolvimento regional do Xingu. Sua atuação histórica na região e capilaridade técnica agrícola a tornam uma candidata altamente competitiva para absorver recursos não reembolsáveis de grande porte.",
+    "created_at": "2026-11-13T01:14:24.904Z"
+  },
+  {
+    "edital_id": "19405",
+    "edital_titulo": "PARÁ / BRASIL - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO REGIONAL SUSTENTÁVEL - 2026",
+    "edital_url": "https://drive.google.com/file/d/1D-k3uhdielUXcqXaxZ1BFAmS9fFYDY0E/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "20086786000119",
+      "nome": "ASSOCIACAO INSTITUTO BEPOTIRE XIKRIN",
+      "uf": "PA",
+      "municipio": "ANAPU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente | Cultivo de arroz | Cultivo de milho | Cultivo de outros cereais não especificados anteriormente | Cultivo de abacaxi | Cultivo de batata-inglesa | Cultivo de cebola | Cultivo de feijão | Cultivo de mandioca | Cultivo de melancia | Cultivo de tomate rasteiro | Cultivo de outras plantas de lavoura temporária não especificadas anteriormente | Horticultura, exceto morango | Cultivo de laranja | Cultivo de açaí | Cultivo de banana | Cultivo de caju | Cultivo de cítricos, exceto laranja | Cultivo de coco-da-baía | Cultivo de mamão | Cultivo de maracujá | Cultivo de manga | Cultivo de frutas de lavoura permanente não especificadas anteriormente | Cultivo de café | Cultivo de cacau | Criação de aves, exceto galináceos | Produção de ovos | Apicultura | Serviço de poda de árvores para lavouras | Serviço de preparação de terreno, cultivo e colheita | Atividades de apoio à agricultura não especificadas anteriormente | Coleta de castanha-do-pará em florestas nativas | Coleta de látex em florestas nativas | Conservação de florestas nativas | Coleta de produtos não-madeireiros não especificados anteriormente em florestas nativas | Atividades de apoio à produção florestal | Pesca de peixes em água doce | Atividades de apoio à pesca em água doce | Beneficiamento de arroz | Fabricação de farinha de mandioca e derivados | Fabricação de artefatos diversos de madeira, exceto móveis | Construção de embarcações para uso comercial e para usos especiais, exceto de grande porte | Manutenção e reparação de embarcações e estruturas flutuantes | Manutenção e reparação de embarcações para esporte e lazer | Serviço de transporte de passageiros - locação de automóveis com motorista | Transporte aquaviário para passeios turísticos | Fornecimento e gestão de recursos humanos para terceiros | Operadores turísticos | Serviços de reservas e outros serviços de turismo não especificados anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9391332014"
+      }
+    },
+    "score": 95,
+    "motivo_match": "A associacao esta localizada em Anapu, no Para, regiao do Xingu, e possui forte atuacao com povos indigenas (Xikrin) e atividades produtivas sustentaveis, alinhando-se perfeitamente aos objetivos do edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho lindo que vocês desenvolvem em Anapu e região. Mapeamos recentemente uma oportunidade de financiamento no valor de até R$ 40.000.000 que tem tudo a ver com a atuação e os projetos de vocês. Vocês teriam disponibilidade essa semana para uma breve conversa para explorarmos isso juntos?",
+    "contatos_encontrados": {
+      "whatsapp": "9391332014",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Associação Instituto Bepotire Xikrin\n- **Localização:** Anapu, PA (Região do Xingu)\n- **Natureza:** Associação Privada\n- **Fundação:** 2014 (Mais de 10 anos de maturidade institucional)\n- **Atividades Principais e Secundárias:** Defesa de direitos sociais, manejo sustentável, cultivo agrícola tradicional, conservação de florestas nativas e apoio à produção extrativista.\n\n### 🎯 Alinhamento com o Edital\n- **Localização Estratégica:** Está situada diretamente na região do Xingu, foco geográfico principal do edital.\n- **Temáticas Atendidas:** Encaixa-se nos temas de povos indígenas, comunidades tradicionais, atividades produtivas sustentáveis, gestão ambiental e inclusão social.\n- **Capacidade Técnica:** O vasto leque de atividades produtivas e de conservação demonstra capacidade operacional para executar projetos de grande escala na região.",
+    "created_at": "2026-11-13T01:14:28.195Z"
+  },
+  {
+    "edital_id": "19405",
+    "edital_titulo": "PARÁ / BRASIL - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO REGIONAL SUSTENTÁVEL - 2026",
+    "edital_url": "https://drive.google.com/file/d/1D-k3uhdielUXcqXaxZ1BFAmS9fFYDY0E/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "48687050000115",
+      "nome": "ASSOCIACAO INDIGENA KATAP-TI XIKRIN DA ALDEIA PRINDJAM",
+      "uf": "PA",
+      "municipio": "ANAPU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Cultivo de arroz | Cultivo de milho | Cultivo de outros cereais não especificados anteriormente | Cultivo de abacaxi | Cultivo de batata-inglesa | Cultivo de cebola | Cultivo de feijão | Cultivo de mandioca | Cultivo de melancia | Cultivo de tomate rasteiro | Cultivo de outras plantas de lavoura temporária não especificadas anteriormente | Horticultura, exceto morango | Cultivo de laranja | Cultivo de açaí | Cultivo de banana | Cultivo de caju | Cultivo de cítricos, exceto laranja | Cultivo de coco-da-baía | Cultivo de mamão | Cultivo de maracujá | Cultivo de manga | Cultivo de frutas de lavoura permanente não especificadas anteriormente | Cultivo de café | Cultivo de cacau | Criação de aves, exceto galináceos | Produção de ovos | Apicultura | Serviço de poda de árvores para lavouras | Serviço de preparação de terreno, cultivo e colheita | Atividades de apoio à agricultura não especificadas anteriormente | Coleta de castanha-do-pará em florestas nativas | Coleta de látex em florestas nativas | Conservação de florestas nativas | Coleta de produtos não-madeireiros não especificados anteriormente em florestas nativas | Atividades de apoio à produção florestal | Pesca de peixes em água doce | Atividades de apoio à pesca em água doce | Beneficiamento de arroz | Fabricação de farinha de mandioca e derivados | Fabricação de artefatos diversos de madeira, exceto móveis | Construção de embarcações para uso comercial e para usos especiais, exceto de grande porte | Manutenção e reparação de embarcações e estruturas flutuantes | Manutenção e reparação de embarcações para esporte e lazer | Serviço de transporte de passageiros - locação de automóveis com motorista | Transporte aquaviário para passeios turísticos | Fornecimento e gestão de recursos humanos para terceiros | Operadores turísticos | Serviços de reservas e outros serviços de turismo não especificados anteriormente | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9391953932"
+      }
+    },
+    "score": 95,
+    "motivo_match": "A OSC é uma associação indígena localizada em Anapu (PA), na região do Xingu, e possui atividades voltadas para povos indígenas, comunidades tradicionais, atividades produtivas sustentáveis e conservação de florestas, alinhando-se perfeitamente aos temas prioritários do edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito a atuação da Associação Indígena Katap-Ti Xikrín em Anapu e região. Mapeamos recentemente uma excelente oportunidade de financiamento não reembolsável de até R$ 40 milhões que tem tudo a ver com os projetos e causas que vocês defendem por aí. Vocês teriam disponibilidade para uma breve conversa esta semana para alinharmos os detalhes?",
+    "contatos_encontrados": {
+      "whatsapp": "9391953932",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO INDIGENA KATAP-TI XIKRIN DA ALDEIA PRINDJAM, localizada em Anapu/PA, é uma associação privada fundada em 2022. Seu CNAE principal foca na defesa de direitos sociais, contando com um extenso leque de atividades secundárias ligadas à agricultura familiar, extrativismo sustentável, manejo florestal, pesca e valorização dos saberes tradicionais.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra altíssimo alinhamento com o Chamamento Público para o Desenvolvimento Regional Sustentável do Xingu. Sua atuação direta com povos indígenas na região e o foco em atividades produtivas sustentáveis, conservação ambiental e inclusão social atendem diretamente aos eixos prioritários do edital, que destina recursos não reembolsáveis para reduzir desigualdades na região.",
+    "created_at": "2026-11-13T01:14:31.488Z"
+  },
+  {
+    "edital_id": "19405",
+    "edital_titulo": "PARÁ / BRASIL - CHAMAMENTO PÚBLICO - DESENVOLVIMENTO REGIONAL SUSTENTÁVEL - 2026",
+    "edital_url": "https://drive.google.com/file/d/1D-k3uhdielUXcqXaxZ1BFAmS9fFYDY0E/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "05762899000101",
+      "nome": "ASSOCIACAO ESPERANCA DO PROJETO DO DESENVOLVIMENTO SUSTENTAVEL DO ANAPU/PARA",
+      "uf": "PA",
+      "municipio": "ANAPU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2003,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9193579325"
+      }
+    },
+    "score": 95,
+    "motivo_match": "A associação está localizada estrategicamente em Anapu, PA, na região do Xingu, e possui forte atuação histórica (desde 2003) na defesa de direitos sociais e desenvolvimento sustentável, alinhando-se perfeitamente aos temas prioritários do edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho o belíssimo trabalho que vocês realizam em Anapu e decidi entrar em contato porque mapeamos uma excelente oportunidade de financiamento não reembolsável de até R$ 40 milhões, perfeitamente alinhada com a atuação da associação de vocês. Vocês teriam disponibilidade esta semana para uma breve conversa sobre isso?",
+    "contatos_encontrados": {
+      "whatsapp": "9193579325",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO ESPERANCA DO PROJETO DO DESENVOLVIMENTO SUSTENTAVEL DO ANAPU/PARA, fundada em 2003, é uma associação privada sediada em Anapu, Pará. Sua atividade principal é a defesa de direitos sociais, contando também com atuações secundárias ligadas à cultura, arte e outras atividades associativas.\n\n### 🎯 Alinhamento com o Edital\nCom mais de duas décadas de atuação na região de Anapu (Xingu), a OSC possui alta maturidade e capilaridade local. O perfil da instituição converge diretamente com os objetivos do edital de desenvolvimento regional sustentável, inclusão social e apoio a comunidades tradicionais e locais na Amazônia.",
+    "created_at": "2026-11-13T01:14:34.516Z"
+  },
+  {
     "edital_id": "19197",
     "edital_titulo": "BRASIL - CHAMAMENTO PÚBLICO - TECNOLOGIAS E INOVAÇÃO SOCIAL EM ECONOMIA SOLIDÁRIA - 2026",
     "edital_url": "https://drive.google.com/file/d/1rjnO7abj4ob3SOZfVZ28-FMuifoKOuJN/view?usp=drivesdk",
