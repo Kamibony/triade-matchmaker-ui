@@ -35,7 +35,7 @@ function isEditalSuitableForNgos(edital: any): boolean {
   const resumoNorm = normalizeText(edital.deep_metadata?.resumo_objetivo || '');
 
   const nonNgoPatterns = [
-    'bolsa ', 'bolsas ', 'pos-graduacao', 'iniciacao cientifica', 'pibex',
+    'bolsa ', 'bolsas ', 'pos-graduacao', 'mestrado', 'doutorado', 'iniciacao cientifica', 'pibex',
     'produtividade em pesquisa', 'catedra', 'subvencao economica',
     'inovacao para a industria'
   ];
@@ -81,7 +81,7 @@ export async function load() {
       let diasRestantes: number | null = null;
 
       if (prazo && prazo !== 'Não informado') {
-        if (prazo < todayIso) continue; // Skip expired editais completely
+        if (prazo < todayIso) continue;
         const diffMs = new Date(prazo + 'T23:59:59').getTime() - now.getTime();
         diasRestantes = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
       }
@@ -113,7 +113,6 @@ export async function load() {
       }
     }
 
-    // Sort Banco de Editais by value descending
     bancoEditais.sort((a, b) => (b.valor || 0) - (a.valor || 0));
   } catch (err) {
     console.warn('Could not load editais_prosas.json in /outbound:', err);
@@ -126,10 +125,18 @@ export async function load() {
 
     leads = (Array.isArray(rawLeads) ? rawLeads : [])
       .map(lead => {
+        // Hard guard: never let legacy failed or 0-score leads reach the UI
+        const score = Number(lead?.score) || 0;
+        const motivo = (lead?.motivo_match || '').trim().toLowerCase();
+        const msg = (lead?.whatsapp_message || '').trim().toLowerCase();
+        if (score <= 0 || motivo === 'failed' || msg.includes('outreach message failed')) {
+          return null;
+        }
+
         const meta = editalMap.get(String(lead.edital_id));
         const prazo = meta?.prazo || lead.edital_prazo || null;
         if (prazo && prazo !== 'Não informado' && prazo < todayIso) {
-          return null; // Hide leads for expired editais
+          return null;
         }
         return {
           ...lead,
