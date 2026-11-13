@@ -1,5 +1,61 @@
 [
   {
+    "edital_id": "16087",
+    "edital_titulo": "Edital Fundo Ifood Chega Junto",
+    "edital_url": "https://drive.google.com/file/d/1sqZ-UfoElLZb2wZvW55aognmPzDdtPLg/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "59408503000143",
+      "nome": "ASSOCIACAO ESPACO DIPSI",
+      "uf": "PR",
+      "municipio": "CURITIBA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Comércio varejista de outros artigos usados | Treinamento em desenvolvimento profissional e gerencial | Atividades de enfermagem | Atividades de profissionais da nutrição | Atividades de psicologia e psicanálise | Atividades de fisioterapia | Atividades de práticas integrativas e complementares em saúde humana | Atividades de artistas plásticos, jornalistas independentes e escritores | Outras atividades esportivas não especificadas anteriormente | Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4199524398"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação possui forte alinhamento com as temáticas de saúde, bem-estar e inclusão produtiva do edital, respaldada por CNAEs em psicologia, nutrição, enfermagem e desenvolvimento profissional, embora sua fundação recente em 2025 exija atenção quanto à capacidade operacional.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Parabenizo a equipe da Associação Espaço Dipsi pelo belo trabalho que realizam em Curitiba. Mapeamos recentemente uma oportunidade incrível de financiamento não reembolsável de até R$ 10.000.000, voltada exatamente para iniciativas na área de atuação de vocês. Vocês teriam disponibilidade esta semana para uma breve conversa sobre como captar esses recursos?",
+    "contatos_encontrados": {
+      "whatsapp": "4199524398",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIAÇÃO ESPACO DIPSI, sediada em Curitiba, PR, é uma associação privada fundada em 2025. Embora seja uma organização recente, seu rol de atividades secundárias é altamente multidisciplinar, englobando serviços de saúde (enfermagem, nutrição, psicologia, fisioterapia, práticas integrativas), treinamento profissional e defesa de direitos sociais.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra excelente aderência aos objetivos do Edital Fundo Ifood Chega Junto, especialmente no eixo de saúde, bem-estar e empoderamento. A gama de serviços de saúde e desenvolvimento profissional pode ser direcionada para o atendimento de entregadores e suas famílias, cumprindo os requisitos de inovação social e impacto comunitário exigidos pela chamada.",
+    "created_at": "2026-11-13T10:42:16.540Z"
+  },
+  {
+    "edital_id": "16087",
+    "edital_titulo": "Edital Fundo Ifood Chega Junto",
+    "edital_url": "https://drive.google.com/file/d/1sqZ-UfoElLZb2wZvW55aognmPzDdtPLg/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "49983623000110",
+      "nome": "ICENAF - INSTITUTO CENTRO DE APOIO AS FAMILIAS",
+      "uf": "AM",
+      "municipio": "MANAUS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9281979109"
+      }
+    },
+    "score": 65,
+    "motivo_match": "O ICENAF possui foco na defesa de direitos sociais e apoio a famílias em Manaus/AM, alinhando-se parcialmente aos temas de inclusão produtiva e bem-estar do edital Chega Junto, embora seja uma instituição jovem fundada em 2023.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Conheço o trabalho lindo que o ICENAF faz pelas famílias em Manaus e decidi entrar em contato. Mapeamos uma excelente oportunidade de financiamento no valor de até R$ 10.000.000 que se encaixa perfeitamente na área de atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "9281979109",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nO **ICENAF - INSTITUTO CENTRO DE APOIO AS FAMILIAS** é uma associação privada sediada em Manaus, AM, fundada recentemente em 2023. Sua atividade econômica principal (CNAE) é voltada para 'Atividades de associações de defesa de direitos sociais', atuando diretamente no suporte comunitário e familiar.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra potencial de alinhamento com o Edital Fundo Ifood Chega Junto devido ao seu foco em apoio às famílias e comunidades vulneráveis, o que conversa com os pilares de inclusão produtiva, saúde, bem-estar e desenvolvimento socioeconômico promovidos pelo edital, apesar da baixa maturidade institucional decorrente da fundação recente em 2023.",
+    "created_at": "2026-11-13T10:42:19.772Z"
+  },
+  {
     "edital_id": "19397",
     "edital_titulo": "BRASIL - CHAMAMENTO PÚBLICO - SOLUÇÕES TECNOLÓGICAS PARA AGRICULTURA FAMILIAR - 2026",
     "edital_url": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/tMDB3tu7ga3ejWrY6L3tp3qmUh0G_j4YaO79FwyYpEG1xSUphZ4jAth2lFrtPS4-/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/094/583/original/Edital_da_CHAMADA_PUBLICA_COOPERAMAIS_ICT.pdf",
