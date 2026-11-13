@@ -9,11 +9,11 @@ on:
       max_messages:
         description: 'Quantidade máxima de ONGs para contatar neste lote'
         required: false
-        default: '6'
+        default: '12'
       min_score:
-        description: 'Score mínimo do Match para envio automático'
+        description: 'Score mínimo (0 = Enviar para TODOS os leads no Experimento)'
         required: false
-        default: '80'
+        default: '0'
       use_two_step_opener:
         description: 'Usar abertura curta anti-ban (2 linhas sem link)?'
         required: false
@@ -50,8 +50,8 @@ jobs:
           WHATSAPP_API_URL: ${{ secrets.WHATSAPP_API_URL }}
           WHATSAPP_API_TOKEN: ${{ secrets.WHATSAPP_API_TOKEN }}
           WHATSAPP_INSTANCE_ID: ${{ secrets.WHATSAPP_INSTANCE_ID }}
-          MAX_MESSAGES_PER_RUN: ${{ inputs.max_messages || '6' }}
-          MIN_SCORE: ${{ inputs.min_score || '80' }}
+          MAX_MESSAGES_PER_RUN: ${{ inputs.max_messages || '12' }}
+          MIN_SCORE: ${{ inputs.min_score || '0' }}
           USE_TWO_STEP_OPENER: ${{ inputs.use_two_step_opener || 'true' }}
           FORCE_OUTSIDE_BUSINESS_HOURS: ${{ inputs.force_outside_hours || 'false' }}
         run: npx tsx scripts/whatsapp-business-sender.ts

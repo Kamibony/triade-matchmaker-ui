@@ -7,8 +7,10 @@ dotenv.config();
 const LEADS_PATH = path.resolve('src/data/daily_outbound_leads.json');
 const SENT_LOG_PATH = path.resolve('src/data/whatsapp_sent_log.json');
 
-const MAX_MESSAGES_PER_RUN = parseInt(process.env.MAX_MESSAGES_PER_RUN || '6', 10);
-const MIN_SCORE = parseInt(process.env.MIN_SCORE || '80', 10);
+// For the 7-day experiment sending to ALL leads during business hours:
+// 4 runs/day (09:30, 11:30, 14:30, 16:30 BRT) x 12 leads/run = up to 48 leads/day safely!
+const MAX_MESSAGES_PER_RUN = parseInt(process.env.MAX_MESSAGES_PER_RUN || '12', 10);
+const MIN_SCORE = parseInt(process.env.MIN_SCORE || '0', 10); // Default 0 = send to ALL leads for 7-day data analysis
 const USE_TWO_STEP_OPENER = (process.env.USE_TWO_STEP_OPENER || 'true').toLowerCase() !== 'false';
 const FORCE_OUTSIDE_BUSINESS_HOURS = (process.env.FORCE_OUTSIDE_BUSINESS_HOURS || 'false').toLowerCase() === 'true';
 
@@ -44,6 +46,13 @@ function normalizePhone(raw: string | null | undefined): string | null {
   return digits.startsWith('55') && digits.length >= 12 ? digits : `55${digits}`;
 }
 
+function classifyPhoneType(norm: string): 'mobile' | 'landline' {
+  const local = norm.slice(4);
+  if (local.length === 9 && local.startsWith('9')) return 'mobile';
+  if (local.length === 8 && (local.startsWith('8') || local.startsWith('9') || local.startsWith('7'))) return 'mobile';
+  return 'landline';
+}
+
 function buildTwoStepOpener(lead: any): string {
   const orgName = lead?.osc?.nome || 'equipe';
   const city = lead?.osc?.municipio ? ` em ${lead.osc.municipio}` : '';
@@ -60,23 +69,56 @@ function buildTwoStepOpener(lead: any): string {
 }
 
 async function sendViaGateway(phone: string, text: string) {
-  const apiUrl = (process.env.WHATSAPP_API_URL || '').replace(/\/+$/, '');
-  const apiToken = process.env.WHATSAPP_API_TOKEN || '';
-  const provider = (process.env.WHATSAPP_PROVIDER || 'evolution').toLowerCase();
-  const instanceId = process.env.WHATSAPP_INSTANCE_ID || 'triade';
+  let apiUrl = (process.env.WHATSAPP_API_URL || '').trim().replace(/\/+$/, '');
+  const apiToken = (process.env.WHATSAPP_API_TOKEN || '').trim();
+  const provider = (process.env.WHATSAPP_PROVIDER || '').toLowerCase().trim();
+  const instanceId = (process.env.WHATSAPP_INSTANCE_ID || 'triade').trim();
 
-  if (!apiUrl || !apiToken) {
-    console.log(`   🧪 [SIMULAÇÃO - Sem WHATSAPP_API_URL] Mensagem preparada para +${phone}: "${text.slice(0, 80)}..."`);
+  if (!apiToken) {
+    console.log(`   🧪 [SIMULAÇÃO - Sem WHATSAPP_API_TOKEN] Mensagem preparada para +${phone}: "${text.slice(0, 80)}..."`);
     return { ok: true, simulated: true };
   }
 
+  // Whapi.cloud support (only requires WHATSAPP_API_TOKEN)
+  if (provider === 'whapi' || apiUrl.includes('whapi.cloud') || !apiUrl) {
+    apiUrl = apiUrl || 'https://gate.whapi.cloud';
+    const res = await fetch(`${apiUrl}/messages/text`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        Authorization: `Bearer ${apiToken}`
+      },
+      body: JSON.stringify({
+        to: phone,
+        body: text,
+        typing_time: 4,
+        no_link_preview: true
+      })
+    });
+    if (!res.ok) throw new Error(`Whapi.cloud HTTP ${res.status}`);
+    return { ok: true, simulated: false };
+  }
+
   if (provider === 'zapi' || apiUrl.includes('z-api.io')) {
+    const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+    if (apiToken && !apiUrl.includes('/token/')) headers['Client-Token'] = apiToken;
     const res = await fetch(`${apiUrl}/send-text`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Client-Token': apiToken },
+      headers,
       body: JSON.stringify({ phone, message: text, delayTyping: 4 })
     });
     if (!res.ok) throw new Error(`Z-API HTTP ${res.status}`);
+    return { ok: true, simulated: false };
+  }
+
+  if (provider === 'greenapi' || apiUrl.includes('green-api.com')) {
+    const res = await fetch(`${apiUrl}/waInstance${instanceId}/sendMessage/${apiToken}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ chatId: `${phone}@c.us`, message: text })
+    });
+    if (!res.ok) throw new Error(`Green-API HTTP ${res.status}`);
     return { ok: true, simulated: false };
   }
 
@@ -133,7 +175,6 @@ async function run() {
       const key = `${l.edital_id}_${l.osc?.cnpj}`;
       if (sentLog.sent_leads[key]) return false;
       if ((l.score || 0) < MIN_SCORE) return false;
-      if (l.dias_restantes !== null && l.dias_restantes !== undefined && l.dias_restantes < 15) return false;
       const phone = normalizePhone(
         l.contatos_encontrados?.whatsapp ||
           l.osc?.official_contacts?.ddd_telefone_1 ||
@@ -141,10 +182,18 @@ async function run() {
       );
       return !!phone;
     })
-    .sort((a, b) => (b.score || 0) - (a.score || 0))
+    // Prioritize mobile phones first, then higher scores
+    .sort((a, b) => {
+      const phoneA = normalizePhone(a.contatos_encontrados?.whatsapp || a.osc?.official_contacts?.ddd_telefone_1 || '')!;
+      const phoneB = normalizePhone(b.contatos_encontrados?.whatsapp || b.osc?.official_contacts?.ddd_telefone_1 || '')!;
+      const typeA = classifyPhoneType(phoneA) === 'mobile' ? 1 : 0;
+      const typeB = classifyPhoneType(phoneB) === 'mobile' ? 1 : 0;
+      if (typeA !== typeB) return typeB - typeA;
+      return (b.score || 0) - (a.score || 0);
+    })
     .slice(0, MAX_MESSAGES_PER_RUN);
 
-  console.log(`🚀 Encontrados ${eligible.length} leads inéditos (Score >= ${MIN_SCORE}) para envio cadenciado.`);
+  console.log(`🚀 Encontrados ${eligible.length} leads inéditos (Score >= ${MIN_SCORE}) para envio cadenciado no Experimento.`);
 
   for (let i = 0; i < eligible.length; i++) {
     const lead = eligible[i];
@@ -154,25 +203,30 @@ async function run() {
         lead.osc?.official_contacts?.ddd_telefone_1 ||
         lead.osc?.official_contacts?.ddd_telefone_2
     )!;
+    const phoneType = classifyPhoneType(phone);
     const msg = USE_TWO_STEP_OPENER ? buildTwoStepOpener(lead) : lead.whatsapp_message;
 
-    console.log(`[${i + 1}/${eligible.length}] Enviando para ${lead.osc?.nome} (+${phone}) - Score ${lead.score}%...`);
+    console.log(`[${i + 1}/${eligible.length}] Enviando para ${lead.osc?.nome} (+${phone}, ${phoneType}) - Score ${lead.score}%...`);
     try {
       const res = await sendViaGateway(phone, msg);
       if (!res.simulated) {
         sentLog.sent_leads[key] = {
           cnpj: lead.osc?.cnpj,
           nome: lead.osc?.nome,
+          uf: lead.osc?.uf,
+          municipio: lead.osc?.municipio,
           edital_id: lead.edital_id,
+          edital_valor: lead.edital_valor,
+          score: lead.score,
           phone,
+          phone_type: phoneType,
           sent_at: new Date().toISOString(),
           mode: USE_TWO_STEP_OPENER ? 'two_step_opener' : 'full_pitch'
         };
       }
 
-      // Humanized delay between messages (45 to 75 seconds in CI)
       if (i < eligible.length - 1 && !res.simulated) {
-        const waitMs = 45000 + Math.floor(Math.random() * 30000);
+        const waitMs = 45000 + Math.floor(Math.random() * 35000);
         console.log(`   ⏳ Aguardando ${Math.round(waitMs / 1000)}s para simular cadência humana...`);
         await new Promise(r => setTimeout(r, waitMs));
       }
