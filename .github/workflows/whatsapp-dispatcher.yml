@@ -1,0 +1,64 @@
+name: WhatsApp Business-Hours Auto-Dispatcher
+
+on:
+  # Runs Monday through Friday during Brazilian Business Hours (09:30, 11:30, 14:30, 16:30 BRT = 12:30, 14:30, 17:30, 19:30 UTC)
+  schedule:
+    - cron: '30 12,14,17,19 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      max_messages:
+        description: 'Quantidade máxima de ONGs para contatar neste lote'
+        required: false
+        default: '6'
+      min_score:
+        description: 'Score mínimo do Match para envio automático'
+        required: false
+        default: '80'
+      use_two_step_opener:
+        description: 'Usar abertura curta anti-ban (2 linhas sem link)?'
+        required: false
+        type: boolean
+        default: true
+      force_outside_hours:
+        description: 'Forçar disparo mesmo fora do horário comercial (09h-17h30 BRT)?'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  dispatch-whatsapp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Business-Hours WhatsApp Dispatcher
+        env:
+          WHATSAPP_PROVIDER: ${{ secrets.WHATSAPP_PROVIDER }}
+          WHATSAPP_API_URL: ${{ secrets.WHATSAPP_API_URL }}
+          WHATSAPP_API_TOKEN: ${{ secrets.WHATSAPP_API_TOKEN }}
+          WHATSAPP_INSTANCE_ID: ${{ secrets.WHATSAPP_INSTANCE_ID }}
+          MAX_MESSAGES_PER_RUN: ${{ inputs.max_messages || '6' }}
+          MIN_SCORE: ${{ inputs.min_score || '80' }}
+          USE_TWO_STEP_OPENER: ${{ inputs.use_two_step_opener || 'true' }}
+          FORCE_OUTSIDE_BUSINESS_HOURS: ${{ inputs.force_outside_hours || 'false' }}
+        run: npx tsx scripts/whatsapp-business-sender.ts
+
+      - name: Commit updated WhatsApp Sent Log
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/whatsapp_sent_log.json
+          git diff --staged --quiet || (git commit -m "chore(whatsapp): update sent log [skip ci]" && git pull --rebase origin main && git push)

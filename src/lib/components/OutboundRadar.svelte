@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount, onDestroy } from 'svelte';
   import { marked } from 'marked';
   import DOMPurify from 'dompurify';
 
@@ -23,10 +23,71 @@
   let whatsappMode: 'web' | 'app' = 'web';
   let copiedFeedbackKey: string | null = null;
 
-  // Message Template Mode per card: 'initial' | 'followup' | 'audio'
-  let messageModeByCard: Record<string, 'initial' | 'followup' | 'audio'> = {};
+  // Message Template Mode per card: 'opener' | 'initial' | 'followup' | 'audio'
+  let messageModeByCard: Record<string, 'opener' | 'initial' | 'followup' | 'audio'> = {};
 
-  onMount(() => {
+  // --- Business-Hours Automation Queue & AI SDR State ---
+  interface QueuedLeadItem {
+    key: string;
+    lead: any;
+    phone: string;
+    message: string;
+    useTwoStepOpener: boolean;
+    status: 'waiting_hours' | 'queued' | 'sending' | 'sent' | 'error';
+    queuedAt: string;
+    sentAt?: string;
+    error?: string;
+  }
+
+  let autoQueue: QueuedLeadItem[] = [];
+  let queueRunning = false;
+  let useTwoStepAntiBan = true;
+  let forceSendOutsideBusinessHours = false;
+  let brtClockText = '';
+  let isCurrentlyBusinessHours = false;
+  let gatewayStatus: { provider: string; configured: boolean } = { provider: 'simulation', configured: false };
+  let queueTimer: any = null;
+  let clockTimer: any = null;
+
+  // AI SDR Simulator / Live Tester State
+  let sdrSelectedLeadKey = '';
+  let sdrIncomingInput = 'Olá! Pode mandar o resumo sim! Qual é o nome desse edital e como funciona a consultoria de vocês?';
+  let sdrLoading = false;
+  let sdrConversation: Array<{
+    role: 'ong' | 'ai';
+    text: string;
+    meta?: any;
+    timestamp: string;
+  }> = [];
+
+  function updateBrasiliaClock() {
+    try {
+      const formatter = new Intl.DateTimeFormat('pt-BR', {
+        timeZone: 'America/Sao_Paulo',
+        hour12: false,
+        weekday: 'short',
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+      const parts = formatter.formatToParts(new Date());
+      const map: Record<string, string> = {};
+      for (const p of parts) map[p.type] = p.value;
+      const hour = parseInt(map.hour || '0', 10);
+      const minute = parseInt(map.minute || '0', 10);
+      const wk = (map.weekday || '').toLowerCase();
+      const isWeekend = wk.includes('sáb') || wk.includes('sab') || wk.includes('dom');
+      const dec = hour + minute / 60;
+      isCurrentlyBusinessHours = !isWeekend && dec >= 9.0 && dec <= 17.5;
+      brtClockText = `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')} BRT (${map.weekday})`;
+    } catch {
+      brtClockText = 'Horário de Brasília';
+    }
+  }
+
+  onMount(async () => {
+    updateBrasiliaClock();
+    clockTimer = setInterval(updateBrasiliaClock, 20000);
+
     try {
       const saved = localStorage.getItem('triade_outbound_crm_v1');
       if (saved) {
@@ -36,10 +97,33 @@
       if (savedWaMode === 'app' || savedWaMode === 'web') {
         whatsappMode = savedWaMode;
       }
+      const savedQueue = localStorage.getItem('triade_whatsapp_queue_v1');
+      if (savedQueue) {
+        autoQueue = JSON.parse(savedQueue);
+      }
     } catch {
       crmState = {};
     }
+
+    try {
+      const res = await fetch('/api/whatsapp/send');
+      if (res.ok) {
+        const data = await res.json();
+        gatewayStatus = { provider: data.provider, configured: data.configured };
+      }
+    } catch {}
   });
+
+  onDestroy(() => {
+    if (queueTimer) clearTimeout(queueTimer);
+    if (clockTimer) clearInterval(clockTimer);
+  });
+
+  function saveQueue() {
+    try {
+      localStorage.setItem('triade_whatsapp_queue_v1', JSON.stringify(autoQueue));
+    } catch {}
+  }
 
   function setWhatsAppMode(mode: 'web' | 'app') {
     whatsappMode = mode;
@@ -127,10 +211,15 @@
     selectedEditalId = Object.keys(groupedLeads)[0];
   }
 
+  $: if (!sdrSelectedLeadKey && leads.length > 0) {
+    const firstLead = leads[0];
+    sdrSelectedLeadKey = getLeadKey(firstLead.edital_id, firstLead.osc?.cnpj);
+  }
+
   let openDossierIndex: number | null = null;
 
-  // Manual Search State
-  let activeTab: 'daily' | 'manual' = 'daily';
+  // Navigation Tabs: 'daily' | 'manual' | 'automation'
+  let activeTab: 'daily' | 'manual' | 'automation' = 'daily';
   let editalSource: 'banco' | 'link' = 'banco';
   let bancoSearchFilter = '';
   let bancoMinDays = 20;
@@ -183,12 +272,20 @@
     return !!getCleanPhoneNumber(lead);
   }
 
+  function buildAntiBanOpener(lead: any): string {
+    const valorStr = lead.edital_valor ? formatCurrency(lead.edital_valor) : 'valor expressivo';
+    return `Olá, pessoal da ${lead.osc?.nome}, tudo bem? Aqui é da equipe da Maria Angela, da Triade Captação de Recursos. Vimos a atuação de vocês em ${lead.osc?.municipio} e mapeamos um edital aberto de até ${valorStr} muito alinhado ao perfil da instituição. Posso enviar um resumo rápido por aqui?`;
+  }
+
   function getActiveMessage(lead: any): string {
     const key = getLeadKey(lead.edital_id, lead.osc?.cnpj);
     const mode = messageModeByCard[key] || 'initial';
     const valorStr = lead.edital_valor ? formatCurrency(lead.edital_valor) : 'valor expressivo';
     const prazoStr = lead.dias_restantes ? `faltam apenas ${lead.dias_restantes} dias para o encerramento` : 'as inscrições estão abertas';
 
+    if (mode === 'opener') {
+      return buildAntiBanOpener(lead);
+    }
     if (mode === 'followup') {
       return `Olá, equipe da ${lead.osc?.nome}! Tudo bem? Aqui é a Maria Angela Bonifacio, da Triade ACR. Enviei uma mensagem recentemente sobre uma oportunidade de edital de até ${valorStr} muito alinhada à atuação de vocês em ${lead.osc?.municipio}. Como ${prazoStr}, queria saber se vocês têm 5 minutinhos hoje ou amanhã para eu explicar como podemos estruturar esse projeto juntos?`;
     }
@@ -224,7 +321,6 @@
     const cleanPhone = getCleanPhoneNumber(lead);
     if (!cleanPhone) return;
 
-    // Always copy text to clipboard as a backup convenience
     try {
       navigator.clipboard?.writeText(message || '');
     } catch {}
@@ -235,15 +331,192 @@
 
     const encoded = encodeURIComponent(message || '');
     if (whatsappMode === 'app') {
-      // Opens directly inside WhatsApp Desktop / Mobile app with 0 browser tabs and 0 reload delay
       window.location.href = `whatsapp://send?phone=55${cleanPhone}&text=${encoded}`;
     } else {
-      // Reuses the single named browser tab 'whatsapp_triade' instead of spawning 6+ tabs
       const url = `https://web.whatsapp.com/send?phone=55${cleanPhone}&text=${encoded}`;
       const win = window.open(url, 'whatsapp_triade');
       if (win) {
         win.focus();
       }
+    }
+  }
+
+  // --- Business-Hours Queue Functions ---
+  function addLeadToAutoQueue(lead: any, customMsg?: string) {
+    const cleanPhone = getCleanPhoneNumber(lead);
+    if (!cleanPhone) return;
+    const key = getLeadKey(lead.edital_id, lead.osc?.cnpj);
+    if (autoQueue.some(item => item.key === key)) return;
+
+    const msg = useTwoStepAntiBan ? buildAntiBanOpener(lead) : customMsg || getActiveMessage(lead);
+    autoQueue = [
+      ...autoQueue,
+      {
+        key,
+        lead,
+        phone: `55${cleanPhone}`,
+        message: msg,
+        useTwoStepOpener: useTwoStepAntiBan,
+        status: isCurrentlyBusinessHours || forceSendOutsideBusinessHours ? 'queued' : 'waiting_hours',
+        queuedAt: new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
+      }
+    ];
+    saveQueue();
+  }
+
+  function enqueueAllTopLeads(minScore = 80) {
+    let added = 0;
+    for (const lead of leads) {
+      if ((lead.score || 0) < minScore) continue;
+      if (lead.dias_restantes !== null && lead.dias_restantes !== undefined && lead.dias_restantes < 15) continue;
+      const key = getLeadKey(lead.edital_id, lead.osc?.cnpj);
+      if (crmState[key]?.status === 'contacted' || crmState[key]?.status === 'archived') continue;
+      if (!hasAnyPhone(lead)) continue;
+      if (autoQueue.some(item => item.key === key)) continue;
+      addLeadToAutoQueue(lead);
+      added++;
+      if (added >= 20) break; // Safe daily anti-ban cap
+    }
+    activeTab = 'automation';
+  }
+
+  function removeQueueItem(key: string) {
+    autoQueue = autoQueue.filter(i => i.key !== key);
+    saveQueue();
+  }
+
+  function clearSentFromQueue() {
+    autoQueue = autoQueue.filter(i => i.status !== 'sent');
+    saveQueue();
+  }
+
+  async function processNextInQueue() {
+    if (!queueRunning) return;
+    updateBrasiliaClock();
+
+    if (!isCurrentlyBusinessHours && !forceSendOutsideBusinessHours) {
+      // Mark pending items as waiting for 09:00 BRT and re-check in 60s
+      autoQueue = autoQueue.map(i => (i.status === 'queued' ? { ...i, status: 'waiting_hours' } : i));
+      saveQueue();
+      queueTimer = setTimeout(processNextInQueue, 60000);
+      return;
+    }
+
+    const nextIdx = autoQueue.findIndex(i => i.status === 'queued' || i.status === 'waiting_hours');
+    if (nextIdx === -1) {
+      queueRunning = false;
+      return;
+    }
+
+    autoQueue[nextIdx].status = 'sending';
+    autoQueue = [...autoQueue];
+
+    const item = autoQueue[nextIdx];
+    try {
+      const res = await fetch('/api/whatsapp/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          phone: item.phone,
+          message: item.message,
+          lead: item.lead,
+          useTwoStepOpener: item.useTwoStepOpener,
+          enforceBusinessHours: !forceSendOutsideBusinessHours,
+          forceSendOutsideHours: forceSendOutsideBusinessHours
+        })
+      });
+
+      const data = await res.json();
+      if (res.ok && data.ok) {
+        autoQueue[nextIdx].status = 'sent';
+        autoQueue[nextIdx].sentAt = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+        setLeadStatus(item.lead.edital_id, item.lead.osc.cnpj, 'contacted');
+      } else {
+        autoQueue[nextIdx].status = data.queuedForBusinessHours ? 'waiting_hours' : 'error';
+        autoQueue[nextIdx].error = data.error || 'Falha no envio';
+      }
+    } catch (e: any) {
+      autoQueue[nextIdx].status = 'error';
+      autoQueue[nextIdx].error = e.message || 'Erro de rede';
+    }
+
+    autoQueue = [...autoQueue];
+    saveQueue();
+
+    if (queueRunning) {
+      // If simulated mode, wait 2.5s; if real WhatsApp API, wait humanized 180s–300s (3 to 5 min)
+      const delayMs = gatewayStatus.configured ? 180000 + Math.floor(Math.random() * 120000) : 2500;
+      queueTimer = setTimeout(processNextInQueue, delayMs);
+    }
+  }
+
+  function toggleQueueRunner() {
+    queueRunning = !queueRunning;
+    if (queueRunning) {
+      processNextInQueue();
+    } else if (queueTimer) {
+      clearTimeout(queueTimer);
+    }
+  }
+
+  // --- AI SDR Simulator / Webhook Tester ---
+  async function simulateIncomingOngReply(presetText?: string) {
+    const textToSend = (presetText ?? sdrIncomingInput).trim();
+    if (!textToSend) return;
+
+    const selectedLead =
+      leads.find(l => getLeadKey(l.edital_id, l.osc?.cnpj) === sdrSelectedLeadKey) || leads[0] || null;
+
+    const nowStr = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+    sdrConversation = [
+      ...sdrConversation,
+      { role: 'ong', text: textToSend, timestamp: nowStr }
+    ];
+    sdrIncomingInput = '';
+    sdrLoading = true;
+
+    try {
+      const res = await fetch('/api/whatsapp/webhook', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          simulator: true,
+          incomingText: textToSend,
+          lead: selectedLead,
+          history: sdrConversation.map(m => ({ role: m.role, text: m.text }))
+        })
+      });
+
+      const data = await res.json();
+      if (!res.ok || !data.ok) {
+        throw new Error(data.error || 'Falha ao analisar resposta com IA SDR.');
+      }
+
+      const sdr = data.sdrResult;
+      if (selectedLead && sdr.crm_status) {
+        setLeadStatus(selectedLead.edital_id, selectedLead.osc.cnpj, sdr.crm_status);
+      }
+
+      sdrConversation = [
+        ...sdrConversation,
+        {
+          role: 'ai',
+          text: sdr.reply_message,
+          meta: sdr,
+          timestamp: new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
+        }
+      ];
+    } catch (e: any) {
+      sdrConversation = [
+        ...sdrConversation,
+        {
+          role: 'ai',
+          text: `⚠️ Erro na análise: ${e.message}`,
+          timestamp: nowStr
+        }
+      ];
+    } finally {
+      sdrLoading = false;
     }
   }
 
@@ -261,7 +534,6 @@
         return st !== 'contacted' && st !== 'archived';
       });
     } else {
-      // Always hide archived unless unfiltered
       list = list.filter(lead => crmState[getLeadKey(lead.edital_id, lead.osc?.cnpj)]?.status !== 'archived');
     }
 
@@ -369,7 +641,7 @@
 </script>
 
 <div class="flex h-full font-sans overflow-hidden">
-  <!-- Left Pane: Editais List / Manual Search Form -->
+  <!-- Left Pane: Editais List / Manual Search Form / Automation Summary -->
   <div class="w-1/3 bg-white border-r border-gray-200 flex flex-col h-full">
     <div class="p-5 border-b border-gray-200">
       <div class="flex items-center justify-between">
@@ -380,18 +652,29 @@
       </div>
 
       <!-- Tabs -->
-      <div class="flex space-x-4 mt-4 border-b border-gray-200">
+      <div class="flex space-x-3 mt-4 border-b border-gray-200 text-xs sm:text-sm">
         <button
-          class="pb-2 text-sm font-medium {activeTab === 'daily' ? 'text-indigo-600 border-b-2 border-indigo-600' : 'text-gray-500 hover:text-gray-700'}"
+          class="pb-2 font-medium {activeTab === 'daily' ? 'text-indigo-600 border-b-2 border-indigo-600' : 'text-gray-500 hover:text-gray-700'}"
           onclick={() => { activeTab = 'daily'; }}
         >
           Pipeline Diário
         </button>
         <button
-          class="pb-2 text-sm font-medium {activeTab === 'manual' ? 'text-indigo-600 border-b-2 border-indigo-600' : 'text-gray-500 hover:text-gray-700'}"
+          class="pb-2 font-medium {activeTab === 'manual' ? 'text-indigo-600 border-b-2 border-indigo-600' : 'text-gray-500 hover:text-gray-700'}"
           onclick={() => { activeTab = 'manual'; }}
         >
-          Nova Busca Manual ({bancoEditais.length})
+          Busca Manual ({bancoEditais.length})
+        </button>
+        <button
+          class="pb-2 font-semibold flex items-center gap-1 {activeTab === 'automation' ? 'text-green-700 border-b-2 border-green-600' : 'text-gray-500 hover:text-gray-700'}"
+          onclick={() => { activeTab = 'automation'; }}
+        >
+          🤖 Automação WA
+          {#if autoQueue.filter(i => i.status !== 'sent').length > 0}
+            <span class="px-1.5 py-0.5 text-[10px] rounded-full bg-green-100 text-green-800 font-bold">
+              {autoQueue.filter(i => i.status !== 'sent').length}
+            </span>
+          {/if}
         </button>
       </div>
 
@@ -440,7 +723,7 @@
             </div>
           </button>
         {/each}
-      {:else}
+      {:else if activeTab === 'manual'}
         <!-- Manual Search Form -->
         <div class="p-5 space-y-4">
           <div class="flex space-x-4 mb-2">
@@ -571,11 +854,80 @@
             </div>
           {/if}
         </div>
+      {:else}
+        <!-- Left Pane for Automation Tab: Controls & Clock -->
+        <div class="p-5 space-y-4">
+          <div class="p-4 rounded-xl border {isCurrentlyBusinessHours ? 'bg-green-50 border-green-200' : 'bg-amber-50 border-amber-200'} space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider {isCurrentlyBusinessHours ? 'text-green-800' : 'text-amber-800'}">
+                {isCurrentlyBusinessHours ? '🟢 Horário Comercial Ativo' : '🌙 Aguardando Horário Comercial'}
+              </span>
+              <span class="text-xs font-semibold text-gray-700">{brtClockText}</span>
+            </div>
+            <p class="text-xs text-gray-600">
+              Janela segura de envio automático: <strong>Seg a Sex, 09:00 às 17:30 (Brasília)</strong> com intervalo humano (3–5 min) e simulação de <em>"digitando..."</em>.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-gray-50 border border-gray-200 space-y-3 text-xs">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-gray-800">Status do Gateway WhatsApp:</span>
+              <span class="px-2 py-0.5 rounded-full font-semibold {gatewayStatus.configured ? 'bg-green-100 text-green-800' : 'bg-blue-100 text-blue-800'}">
+                {gatewayStatus.configured ? `Conectado (${gatewayStatus.provider})` : 'Modo Simulação / Sandbox'}
+              </span>
+            </div>
+            <p class="text-gray-600">
+              {#if gatewayStatus.configured}
+                O servidor está conectado à sua API do WhatsApp e pronto para disparar e responder mensagens automaticamente.
+              {:else}
+                Para conectar um número real (Evolution API, Z-API ou Meta Cloud API), basta configurar <code class="bg-white px-1 py-0.5 rounded border">WHATSAPP_API_URL</code> e <code class="bg-white px-1 py-0.5 rounded border">WHATSAPP_API_TOKEN</code> no Vercel/GitHub.
+              {/if}
+            </p>
+            <div class="pt-1 border-t border-gray-200 text-[11px] text-gray-500">
+              Webhook p/ receber respostas de ONGs:<br />
+              <code class="text-indigo-700 font-semibold">POST /api/whatsapp/webhook</code>
+            </div>
+          </div>
+
+          <div class="space-y-2.5">
+            <label class="flex items-start gap-2 p-3 rounded-lg bg-indigo-50 border border-indigo-200 cursor-pointer text-xs">
+              <input type="checkbox" bind:checked={useTwoStepAntiBan} class="mt-0.5 rounded border-indigo-300 text-indigo-600" />
+              <div>
+                <span class="font-bold text-indigo-900">🛡️ Usar Abertura Anti-Ban (2 etapas)</span>
+                <p class="text-indigo-700 mt-0.5">
+                  Envia primeiro uma saudação curta sem links perguntando se pode mandar o resumo. Quando a ONG responde <em>"Pode sim!"</em>, a IA envia os detalhes completos!
+                </p>
+              </div>
+            </label>
+
+            <label class="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-50 border border-gray-200 cursor-pointer text-xs">
+              <input type="checkbox" bind:checked={forceSendOutsideBusinessHours} class="rounded border-gray-300 text-indigo-600" />
+              <span class="font-medium text-gray-700">Permitir disparo imediato mesmo fora das 09h–17h30 (Teste)</span>
+            </label>
+          </div>
+
+          <button
+            type="button"
+            onclick={() => enqueueAllTopLeads(80)}
+            class="w-full py-2.5 px-4 rounded-lg shadow-sm text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 transition-colors"
+          >
+            📥 Enfileirar Top Leads de Hoje (Score ≥ 80%)
+          </button>
+
+          <button
+            type="button"
+            onclick={toggleQueueRunner}
+            disabled={autoQueue.filter(i => i.status !== 'sent').length === 0}
+            class="w-full py-2.5 px-4 rounded-lg shadow-sm text-xs font-bold text-white transition-colors {queueRunning ? 'bg-amber-600 hover:bg-amber-700' : 'bg-green-600 hover:bg-green-700 disabled:bg-gray-300'}"
+          >
+            {queueRunning ? '⏸️ Pausar Disparo Automático' : '▶️ Iniciar Fila de Horário Comercial'}
+          </button>
+        </div>
       {/if}
     </div>
   </div>
 
-  <!-- Right Pane: Leads Feed -->
+  <!-- Right Pane: Leads Feed / Manual Results / Automation & AI SDR Console -->
   <div class="w-2/3 flex flex-col h-full bg-gray-100">
     {#if activeTab === 'daily'}
       {#if selectedEditalId && groupedLeads[selectedEditalId]}
@@ -596,6 +948,15 @@
                 </span>
               </div>
             </div>
+
+            <button
+              type="button"
+              onclick={() => enqueueAllTopLeads(80)}
+              class="shrink-0 inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border border-indigo-200"
+              title="Adiciona automaticamente todos os leads com Score >= 80% à fila do horário comercial"
+            >
+              🤖 Enfileirar Top Leads (09h–17h30)
+            </button>
           </div>
 
           <!-- CRM, Phone Filter & WhatsApp Mode Toggles -->
@@ -646,6 +1007,7 @@
             {@const crmInfo = crmState[leadKey]}
             {@const activeMode = messageModeByCard[leadKey] || 'initial'}
             {@const activeMsgText = getActiveMessage(lead)}
+            {@const inQueue = autoQueue.some(q => q.key === leadKey)}
 
             <div class="bg-white rounded-xl shadow-sm border {crmInfo?.status === 'negotiating' ? 'border-amber-400 ring-2 ring-amber-100' : crmInfo?.status === 'contacted' ? 'border-green-200 opacity-85' : 'border-gray-200'} overflow-hidden transition-all">
               <div class="p-5 border-b border-gray-100 flex justify-between items-start gap-4">
@@ -735,11 +1097,12 @@
 
                 <!-- Message Mode Switcher -->
                 <div>
-                  <div class="flex items-center justify-between mb-2">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
                     <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Abordagem WhatsApp</h4>
-                    <div class="flex space-x-1">
+                    <div class="flex flex-wrap gap-1">
                       {#each [
-                        { id: 'initial', label: '💬 1º Contato' },
+                        { id: 'opener', label: '🛡️ 1º Contato Curto (Anti-Ban)' },
+                        { id: 'initial', label: '💬 Pitch Completo' },
                         { id: 'followup', label: '⏰ Follow-up (Urgência)' },
                         { id: 'audio', label: '🎙️ Roteiro Áudio (25s)' }
                       ] as m}
@@ -791,7 +1154,7 @@
                     </button>
                   </div>
 
-                  <div class="flex space-x-2">
+                  <div class="flex flex-wrap items-center gap-2">
                     {#if lead.edital_url}
                       <a
                         href={lead.edital_url}
@@ -810,6 +1173,17 @@
                     >
                       {copiedFeedbackKey === leadKey ? '✓ Copiado!' : '📋 Copiar'}
                     </button>
+                    {#if hasAnyPhone(lead)}
+                      <button
+                        type="button"
+                        disabled={inQueue}
+                        onclick={() => addLeadToAutoQueue(lead, activeMsgText)}
+                        class="inline-flex items-center px-3 py-2 border text-xs font-semibold rounded-md transition-colors {inQueue ? 'bg-indigo-50 text-indigo-400 border-indigo-100 cursor-default' : 'border-indigo-200 text-indigo-700 bg-indigo-50 hover:bg-indigo-100'}"
+                        title="Enfileirar para envio automático no horário comercial (09h–17h30)"
+                      >
+                        {inQueue ? '🕒 Na Fila' : '🤖 + Fila'}
+                      </button>
+                    {/if}
                     {#if getWhatsAppLink(lead, activeMsgText)}
                       <a
                         href={getWhatsAppLink(lead, activeMsgText)}
@@ -848,7 +1222,7 @@
           Selecione um edital à esquerda.
         </div>
       {/if}
-    {:else}
+    {:else if activeTab === 'manual'}
       <!-- Manual Search Results -->
       <div class="p-5 bg-white border-b border-gray-200 shadow-sm z-10 shrink-0 flex flex-wrap justify-between items-center gap-3">
         <h2 class="text-lg font-bold text-gray-800">Resultados da Busca Manual</h2>
@@ -987,6 +1361,217 @@
             {/if}
           {/each}
         {/if}
+      </div>
+    {:else}
+      <!-- Right Pane for Automation Tab: Business-Hours Queue + Live AI SDR Reply Tester -->
+      <div class="flex-1 overflow-y-auto p-6 space-y-6">
+        <!-- Section 1: Business-Hours Queue -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+          <div class="p-4 border-b border-gray-100 flex flex-wrap justify-between items-center gap-2 bg-gray-50">
+            <div>
+              <h3 class="text-base font-bold text-gray-900">🕒 Fila de Envio em Horário Comercial ({autoQueue.length})</h3>
+              <p class="text-xs text-gray-500">
+                As mensagens aguardam automaticamente a janela das 09:00 às 17:30 BRT (Seg–Sex) e são enviadas uma a uma.
+              </p>
+            </div>
+            {#if autoQueue.some(i => i.status === 'sent')}
+              <button
+                type="button"
+                onclick={clearSentFromQueue}
+                class="px-2.5 py-1 rounded text-xs font-medium bg-white border border-gray-300 text-gray-600 hover:bg-gray-100"
+              >
+                Limpar Enviados
+              </button>
+            {/if}
+          </div>
+
+          <div class="divide-y divide-gray-100 max-h-72 overflow-y-auto">
+            {#if autoQueue.length === 0}
+              <div class="p-6 text-center text-xs text-gray-500">
+                Nenhuma ONG na fila no momento. Clique em <strong>"📥 Enfileirar Top Leads de Hoje (Score ≥ 80%)"</strong> à esquerda ou em <strong>"🤖 + Fila"</strong> em qualquer card.
+              </div>
+            {:else}
+              {#each autoQueue as item}
+                <div class="p-3.5 flex items-center justify-between gap-3 text-xs">
+                  <div class="min-w-0 flex-1">
+                    <div class="flex items-center gap-2">
+                      <span class="font-bold text-gray-900 truncate">{item.lead.osc?.nome}</span>
+                      <span class="text-gray-400">•</span>
+                      <span class="text-gray-600 font-mono">+{item.phone}</span>
+                      <span class="px-2 py-0.5 rounded-full text-[10px] font-bold {getScoreColor(item.lead.score)}">
+                        {item.lead.score}%
+                      </span>
+                    </div>
+                    <p class="text-gray-500 truncate mt-0.5">{item.message}</p>
+                  </div>
+
+                  <div class="flex items-center gap-2 shrink-0">
+                    {#if item.status === 'waiting_hours'}
+                      <span class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 font-semibold">
+                        🌙 Aguardando 09h00 BRT
+                      </span>
+                    {:else if item.status === 'queued'}
+                      <span class="px-2.5 py-1 rounded-full bg-blue-100 text-blue-800 font-semibold">
+                        ⏳ Na Fila
+                      </span>
+                    {:else if item.status === 'sending'}
+                      <span class="px-2.5 py-1 rounded-full bg-indigo-100 text-indigo-800 font-semibold animate-pulse">
+                        💬 Digitando e Enviando...
+                      </span>
+                    {:else if item.status === 'sent'}
+                      <span class="px-2.5 py-1 rounded-full bg-green-100 text-green-800 font-semibold">
+                        ✓ Enviado às {item.sentAt}
+                      </span>
+                    {:else if item.status === 'error'}
+                      <span class="px-2.5 py-1 rounded-full bg-red-100 text-red-800 font-semibold" title={item.error}>
+                        ⚠️ {item.error || 'Erro'}
+                      </span>
+                    {/if}
+                    <button
+                      type="button"
+                      onclick={() => removeQueueItem(item.key)}
+                      class="text-gray-400 hover:text-red-600 px-1"
+                      title="Remover da fila"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              {/each}
+            {/if}
+          </div>
+        </div>
+
+        <!-- Section 2: Interactive AI SDR Auto-Responder Simulator -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+          <div class="p-4 border-b border-gray-100 bg-gradient-to-r from-emerald-50 to-teal-50">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="text-base font-bold text-gray-900">🧠 Agente IA SDR — Analisador e Respondedor de WhatsApp</h3>
+                <p class="text-xs text-gray-600">
+                  Simule ou teste como o Assistente de IA da Maria Angela identifica a intenção da ONG, mantém o nome do edital em segredo, responde dúvidas e notifica a Angela!
+                </p>
+              </div>
+              <button
+                type="button"
+                onclick={() => { sdrConversation = []; }}
+                class="px-2.5 py-1 rounded text-xs font-medium bg-white border border-gray-300 text-gray-600 hover:bg-gray-100"
+              >
+                Limpar Chat
+              </button>
+            </div>
+
+            <div class="mt-3">
+              <label class="block text-xs font-semibold text-gray-700 mb-1">ONG em conversa (Contexto do Edital + Dossiê):</label>
+              <select
+                bind:value={sdrSelectedLeadKey}
+                class="w-full px-3 py-1.5 text-xs border border-gray-300 rounded-md bg-white"
+              >
+                {#each leads.slice(0, 40) as l}
+                  <option value={getLeadKey(l.edital_id, l.osc?.cnpj)}>
+                    [{l.score}%] {l.osc?.nome} ({l.osc?.municipio}/{l.osc?.uf}) — Edital: {formatCurrency(l.edital_valor)}
+                  </option>
+                {/each}
+              </select>
+            </div>
+
+            <!-- Preset Quick Replies from NGO -->
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="text-[11px] font-semibold text-gray-600 self-center mr-1">Testar resposta rápida da ONG:</span>
+              {#each [
+                'Olá! Pode enviar o resumo sim, temos interesse!',
+                'Qual é o nome desse edital e qual instituição está financiando?',
+                'Qual é o valor máximo, o prazo e como funciona a consultoria de vocês?',
+                'Não temos interesse no momento, obrigado.'
+              ] as preset}
+                <button
+                  type="button"
+                  disabled={sdrLoading}
+                  onclick={() => simulateIncomingOngReply(preset)}
+                  class="px-2.5 py-1 rounded-full text-[11px] font-medium bg-white border border-emerald-300 text-emerald-800 hover:bg-emerald-100 transition-colors"
+                >
+                  "{preset.slice(0, 45)}{preset.length > 45 ? '...' : ''}"
+                </button>
+              {/each}
+            </div>
+          </div>
+
+          <!-- Chat History Area -->
+          <div class="p-4 bg-gray-50 space-y-3 max-h-96 overflow-y-auto">
+            {#if sdrConversation.length === 0 && !sdrLoading}
+              <div class="text-center py-6 text-xs text-gray-500">
+                Clique em um dos botões de teste acima ou digite uma mensagem abaixo como se você fosse a ONG respondendo no WhatsApp.
+              </div>
+            {/if}
+
+            {#each sdrConversation as msg}
+              {#if msg.role === 'ong'}
+                <div class="flex justify-start">
+                  <div class="max-w-lg bg-white border border-gray-200 rounded-2xl rounded-tl-none px-4 py-2.5 shadow-sm text-xs">
+                    <div class="font-bold text-gray-700 mb-0.5">🏢 Resposta da ONG ({msg.timestamp})</div>
+                    <p class="text-gray-800 whitespace-pre-line">{msg.text}</p>
+                  </div>
+                </div>
+              {:else}
+                <div class="flex justify-end">
+                  <div class="max-w-xl bg-emerald-50 border border-emerald-200 rounded-2xl rounded-tr-none px-4 py-3 shadow-sm text-xs space-y-2">
+                    {#if msg.meta}
+                      <div class="flex flex-wrap items-center gap-1.5 pb-1.5 border-b border-emerald-200">
+                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-700 text-white">
+                          {msg.meta.intent_label || msg.meta.intent}
+                        </span>
+                        <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-white text-emerald-800 border border-emerald-300">
+                          CRM → {msg.meta.crm_status}
+                        </span>
+                        <span class="text-[11px] text-emerald-900 font-medium">
+                          {msg.meta.analysis}
+                        </span>
+                      </div>
+                    {/if}
+                    <div>
+                      <div class="font-bold text-emerald-900 mb-0.5">🤖 Resposta Automática IA Triade ({msg.timestamp}):</div>
+                      <p class="text-gray-800 whitespace-pre-line">{msg.text}</p>
+                    </div>
+                    {#if msg.meta?.should_notify_angela && msg.meta?.angela_alert}
+                      <div class="p-2 rounded bg-amber-50 border border-amber-200 text-[11px] text-amber-900">
+                        <strong>📲 Alerta enviado ao celular da Maria Angela:</strong><br />
+                        {msg.meta.angela_alert}
+                      </div>
+                    {/if}
+                  </div>
+                </div>
+              {/if}
+            {/each}
+
+            {#if sdrLoading}
+              <div class="flex justify-end">
+                <div class="bg-emerald-50 border border-emerald-200 rounded-2xl px-4 py-2.5 text-xs text-emerald-800 animate-pulse font-medium">
+                  🧠 Gemini 2.5 analisando intenção, consultando edital e redigindo resposta...
+                </div>
+              </div>
+            {/if}
+          </div>
+
+          <!-- Input Bar -->
+          <form
+            onsubmit={(e) => { e.preventDefault(); simulateIncomingOngReply(); }}
+            class="p-3 bg-white border-t border-gray-200 flex gap-2"
+          >
+            <input
+              type="text"
+              bind:value={sdrIncomingInput}
+              placeholder="Digite aqui uma resposta ou pergunta da ONG para testar a IA..."
+              class="flex-1 px-3 py-2 text-xs border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            />
+            <button
+              type="submit"
+              disabled={sdrLoading || !sdrIncomingInput.trim()}
+              class="px-4 py-2 rounded-lg text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 disabled:bg-gray-300"
+            >
+              Simular Resposta da ONG ➔
+            </button>
+          </form>
+        </div>
       </div>
     {/if}
   </div>
