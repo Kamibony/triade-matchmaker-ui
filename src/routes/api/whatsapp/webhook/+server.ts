@@ -5,8 +5,42 @@ import { normalizeBrazilPhone, sendWhatsAppText } from '$lib/server/whatsapp-gat
 import dailyLeadsData from '../../../../data/daily_outbound_leads.json';
 import editaisData from '../../../../data/editais_prosas.json';
 
+const REPLY_COOLDOWN_MS = 60_000;
+const MAX_REPLIES_WINDOW_MS = 30 * 60_000;
+const MAX_REPLIES_PER_WINDOW = 3;
+const recentRepliesByPhone = new Map<string, number[]>();
+
+function isRateLimitedOrLooped(normalizedPhone: string | null): { blocked: boolean; reason?: string } {
+  if (!normalizedPhone) return { blocked: true, reason: 'Telefone inválido.' };
+  const now = Date.now();
+  const timestamps = (recentRepliesByPhone.get(normalizedPhone) || []).filter(
+    (ts) => now - ts < MAX_REPLIES_WINDOW_MS
+  );
+  recentRepliesByPhone.set(normalizedPhone, timestamps);
+
+  const lastReply = timestamps[timestamps.length - 1];
+  if (lastReply && now - lastReply < REPLY_COOLDOWN_MS) {
+    return { blocked: true, reason: `Cooldown ativo (${Math.ceil((REPLY_COOLDOWN_MS - (now - lastReply)) / 1000)}s restantes).` };
+  }
+  if (timestamps.length >= MAX_REPLIES_PER_WINDOW) {
+    return { blocked: true, reason: `Limite anti-loop atingido (${MAX_REPLIES_PER_WINDOW} respostas nos últimos 30 min).` };
+  }
+  return { blocked: false };
+}
+
+function recordAutoReply(normalizedPhone: string | null) {
+  if (!normalizedPhone) return;
+  const now = Date.now();
+  const timestamps = (recentRepliesByPhone.get(normalizedPhone) || []).filter(
+    (ts) => now - ts < MAX_REPLIES_WINDOW_MS
+  );
+  timestamps.push(now);
+  recentRepliesByPhone.set(normalizedPhone, timestamps);
+}
+
 function extractIncomingPayload(body: any): {
   senderPhone: string | null;
+  rawChatId?: string | null;
   incomingText: string | null;
   fromMe: boolean;
   senderName?: string;
@@ -15,6 +49,7 @@ function extractIncomingPayload(body: any): {
   if (body?.simulator || body?.incomingText) {
     return {
       senderPhone: body.phone || body.lead?.contatos_encontrados?.whatsapp || body.lead?.osc?.official_contacts?.ddd_telefone_1 || '5511999999999',
+      rawChatId: null,
       incomingText: body.incomingText,
       fromMe: false,
       senderName: body.lead?.osc?.nome || body.senderName
@@ -24,9 +59,11 @@ function extractIncomingPayload(body: any): {
   // 2. Whapi.cloud webhook format (messages array)
   if (Array.isArray(body?.messages) && body.messages[0]) {
     const msg = body.messages[0];
+    const chatId = msg.chat_id || msg.from || '';
     return {
-      senderPhone: (msg.chat_id || msg.from || '').split('@')[0],
-      incomingText: msg.text?.body || msg.voice?.caption || '[Áudio/Mídia recebido no WhatsApp]',
+      senderPhone: chatId.split('@')[0],
+      rawChatId: chatId,
+      incomingText: msg.text?.body || msg.voice?.caption || null,
       fromMe: !!msg.from_me,
       senderName: msg.from_name
     };
@@ -46,6 +83,7 @@ function extractIncomingPayload(body: any): {
       null;
     return {
       senderPhone,
+      rawChatId: jid,
       incomingText: text,
       fromMe,
       senderName: body.data.pushName
@@ -56,7 +94,8 @@ function extractIncomingPayload(body: any): {
   if (body?.phone && (body?.text?.message || body?.audio?.audioUrl)) {
     return {
       senderPhone: body.phone,
-      incomingText: body.text?.message || '[Áudio recebido no WhatsApp]',
+      rawChatId: body.chatId || null,
+      incomingText: body.text?.message || null,
       fromMe: !!body.fromMe,
       senderName: body.senderName
     };
@@ -66,6 +105,7 @@ function extractIncomingPayload(body: any): {
   if (body?.senderData?.chatId && body?.messageData) {
     return {
       senderPhone: body.senderData.chatId.split('@')[0],
+      rawChatId: body.senderData.chatId,
       incomingText:
         body.messageData.textMessageData?.textMessage ||
         body.messageData.extendedTextMessageData?.text ||
@@ -81,13 +121,14 @@ function extractIncomingPayload(body: any): {
     const msg = metaChange.messages[0];
     return {
       senderPhone: msg.from,
-      incomingText: msg.text?.body || '[Mídia/Áudio recebido]',
+      rawChatId: msg.from,
+      incomingText: msg.text?.body || null,
       fromMe: false,
       senderName: metaChange.contacts?.[0]?.profile?.name
     };
   }
 
-  return { senderPhone: null, incomingText: null, fromMe: false };
+  return { senderPhone: null, rawChatId: null, incomingText: null, fromMe: false };
 }
 
 function findMatchingLeadByPhone(rawPhone: string | null, explicitLead?: any) {
@@ -134,17 +175,45 @@ export async function GET({ url }) {
 export async function POST({ request }) {
   try {
     const body = await request.json();
-    const { senderPhone, incomingText, fromMe, senderName } = extractIncomingPayload(body);
+    const { senderPhone, rawChatId, incomingText, fromMe, senderName } = extractIncomingPayload(body);
 
     if (fromMe) {
       return json({ ok: true, ignored: true, reason: 'Mensagem enviada pelo próprio número (fromMe).' });
+    }
+
+    if (
+      rawChatId &&
+      (rawChatId.includes('@g.us') ||
+        rawChatId.includes('@broadcast') ||
+        rawChatId.includes('@newsletter') ||
+        rawChatId.includes('status@'))
+    ) {
+      return json({ ok: true, ignored: true, reason: 'Mensagem de grupo, canal ou status ignorada.' });
     }
 
     if (!incomingText) {
       return json({ ok: true, ignored: true, reason: 'Nenhum texto de mensagem identificado no evento.' });
     }
 
+    const isSimulator = !!body.simulator;
     const matchedLead = findMatchingLeadByPhone(senderPhone, body.lead);
+
+    if (!isSimulator && !matchedLead) {
+      return json({
+        ok: true,
+        ignored: true,
+        reason: 'Remetente não está na lista de leads abordados (ex: contato pessoal, Claro/operadora ou número desconhecido).'
+      });
+    }
+
+    const normalizedSender = normalizeBrazilPhone(senderPhone);
+    if (!isSimulator) {
+      const rateCheck = isRateLimitedOrLooped(normalizedSender);
+      if (rateCheck.blocked) {
+        return json({ ok: true, ignored: true, reason: rateCheck.reason });
+      }
+    }
+
     const editaisArray = Array.isArray(editaisData) ? editaisData : [];
     const matchedEdital = matchedLead
       ? editaisArray.find((e: any) => String(e.id) === String(matchedLead.edital_id))
@@ -196,18 +265,19 @@ REGRAS DE OURO DA TRIADE ACR (OBRIGATÓRIAS):
 2. Se a ONG perguntar se pode receber o resumo (ex: respondeu "Pode sim!", "Manda aí", "Como funciona?"), envie os detalhes atrativos (valor até R$ ${editalValor}, prazo em ${editalPrazo}, foco do projeto compatível com a atuação deles em ${orgCidade}, e explique que a Triade ACR cuida de toda a elaboração técnica do projeto) e convide para um bate-papo rápido de 10 min com a Maria Angela hoje ou amanhã.
 3. Se a ONG demonstrar falta de interesse clara ("Não temos interesse", "Pare de mandar mensagem"), agradeça educadamente, deseje sucesso aos projetos da instituição e encerre.
 4. O tom deve ser humano, caloroso, profissional, curto (formato WhatsApp, máximo 3 parágrafos curtos) e em português brasileiro.
+5. DETECÇÃO DE BOT / URA / ASSUNTO NÃO RELACIONADO: Se a mensagem recebida parecer um robô/URA automático, menu numérico ("Digite 1 para...", "Opção inválida", "Protocolo", "Fatura", "Claro", "Vivo", "Banco", "Assistente virtual") ou qualquer assunto pessoal/administrativo sem relação com captação de recursos ou editais, classifique OBRIGATORIAMENTE como "unrelated_or_bot", defina "should_auto_reply": false, "should_notify_angela": false e "reply_message": "".
 
 Responda ESTRITAMENTE em JSON com esta estrutura:
 {
-  "intent": "interested" | "question" | "asking_grant_name" | "not_interested" | "human_handoff",
-  "intent_label": "Rótulo curto em português (ex: '🔥 Interesse Confirmado', '❓ Dúvida sobre Prazo/Como funciona', '🔒 Pediu Nome do Edital', '🛑 Sem Interesse')",
+  "intent": "interested" | "question" | "asking_grant_name" | "not_interested" | "human_handoff" | "unrelated_or_bot",
+  "intent_label": "Rótulo curto em português (ex: '🔥 Interesse Confirmado', '❓ Dúvida sobre Prazo/Como funciona', '🔒 Pediu Nome do Edital', '🛑 Sem Interesse', '🤖 Bot/Assunto Não Relacionado')",
   "confidence": (número de 0 a 100),
-  "analysis": "Explicação curta de 1 frase para a Maria Angela sobre o que a ONG quis dizer e qual o próximo passo",
+  "analysis": "Explicação curta de 1 frase para a Maria Angela sobre o que a mensagem diz e qual o próximo passo",
   "crm_status": "negotiating" | "contacted" | "archived",
   "should_auto_reply": true | false,
   "should_notify_angela": true | false,
-  "reply_message": "Texto exato da resposta para enviar à ONG no WhatsApp (respeitando 100% o segredo do nome do edital)",
-  "angela_alert": "Resumo curto para notificar o WhatsApp pessoal da Maria Angela (ex: '🔥 Angela! A ONG X respondeu com interesse no edital de R$ Y! Mensagem deles: ...')"
+  "reply_message": "Texto exato da resposta para enviar à ONG no WhatsApp (ou string vazia se should_auto_reply for false)",
+  "angela_alert": "Resumo curto para notificar o WhatsApp pessoal da Maria Angela (ou string vazia se should_notify_angela for false)"
 }
 `;
 
@@ -217,16 +287,32 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
     let autoReplyDispatch = null;
     let angelaAlertDispatch = null;
 
-    const allowAutoSend = body.autoSendReply !== false;
-    if (allowAutoSend && parsed.should_auto_reply && parsed.reply_message && senderPhone && !body.simulator) {
+    const envAutoReplyEnabled =
+      (env.WHATSAPP_AUTOREPLY_ENABLED || process.env.WHATSAPP_AUTOREPLY_ENABLED || '').toLowerCase() === 'true';
+    const allowAutoSend =
+      envAutoReplyEnabled &&
+      body.autoSendReply !== false &&
+      parsed.intent !== 'unrelated_or_bot';
+
+    if (allowAutoSend && parsed.should_auto_reply && parsed.reply_message && senderPhone && !isSimulator) {
       autoReplyDispatch = await sendWhatsAppText(senderPhone, parsed.reply_message, {
         simulateTypingMs: 4000,
         overrideConfig: body.overrideConfig
       });
+      if (autoReplyDispatch?.ok) {
+        recordAutoReply(normalizedSender);
+      }
     }
 
     const angelaPhone = env.ANGELA_NOTIFY_PHONE || process.env.ANGELA_NOTIFY_PHONE;
-    if (angelaPhone && parsed.should_notify_angela && parsed.angela_alert && !body.simulator) {
+    if (
+      envAutoReplyEnabled &&
+      angelaPhone &&
+      parsed.intent !== 'unrelated_or_bot' &&
+      parsed.should_notify_angela &&
+      parsed.angela_alert &&
+      !isSimulator
+    ) {
       angelaAlertDispatch = await sendWhatsAppText(angelaPhone, parsed.angela_alert, {
         simulateTypingMs: 1000,
         overrideConfig: body.overrideConfig
@@ -235,7 +321,8 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
 
     return json({
       ok: true,
-      senderPhone: normalizeBrazilPhone(senderPhone),
+      autoReplyEnabled: envAutoReplyEnabled,
+      senderPhone: normalizedSender,
       matchedOrg: orgNome,
       matchedScore: matchedLead?.score || null,
       matchedUf: matchedLead?.osc?.uf || null,
