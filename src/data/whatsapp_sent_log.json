@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-11-13T13:47:34.561Z",
+  "last_run_at": "2026-11-13T14:22:40.960Z",
   "sent_leads": {
     "19405_05121802000173": {
       "cnpj": "05121802000173",
@@ -155,6 +155,138 @@
       "phone": "556384922104",
       "phone_type": "mobile",
       "sent_at": "2026-11-13T13:47:34.561Z",
+      "mode": "two_step_opener"
+    },
+    "19197_66527021000178": {
+      "cnpj": "66527021000178",
+      "nome": "INSTITUTO SEMENTE",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "edital_id": "19197",
+      "score": 85,
+      "phone": "558287085110",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T14:12:05.966Z",
+      "mode": "two_step_opener"
+    },
+    "17931_12664705000192": {
+      "cnpj": "12664705000192",
+      "nome": "INSTITUTO PLANALTO AMAZONIA DE ASSISTENCIA SOCIAL, PESQUISA E EDUCACAO PROFISSIONAL - IPA",
+      "uf": "PA",
+      "municipio": "PORTO DE MOZ",
+      "edital_id": "17931",
+      "score": 75,
+      "phone": "559384043546",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T14:13:14.989Z",
+      "mode": "two_step_opener"
+    },
+    "16087_49983623000110": {
+      "cnpj": "49983623000110",
+      "nome": "ICENAF - INSTITUTO CENTRO DE APOIO AS FAMILIAS",
+      "uf": "AM",
+      "municipio": "MANAUS",
+      "edital_id": "16087",
+      "score": 65,
+      "phone": "559281979109",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T14:14:20.178Z",
+      "mode": "two_step_opener"
+    },
+    "17931_05073010000170": {
+      "cnpj": "05073010000170",
+      "nome": "CENTRO SOCIAL AUXILIUM",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "edital_id": "17931",
+      "score": 65,
+      "phone": "5591932332446",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T14:15:30.021Z",
+      "mode": "two_step_opener"
+    },
+    "19216_07701875000160": {
+      "cnpj": "07701875000160",
+      "nome": "ASSOCIACAO DE FAMILIAS PARA O BEM-ESTAR E TRATAMENTO DA PESSOA COM AUTISMO",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "edital_id": "19216",
+      "score": 95,
+      "phone": "558138771942",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T14:16:43.925Z",
+      "mode": "two_step_opener"
+    },
+    "19171_34544346000172": {
+      "cnpj": "34544346000172",
+      "nome": "FUNDACAO VITORIA AMAZONICA",
+      "uf": "AM",
+      "municipio": "MANAUS",
+      "edital_id": "19171",
+      "score": 95,
+      "phone": "559233027261",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T14:17:39.105Z",
+      "mode": "two_step_opener"
+    },
+    "19542_07432348000105": {
+      "cnpj": "07432348000105",
+      "nome": "IPSID - INSTITUTO DE PESQUISA EM SISTEMAS DE INFORMACAO E DECISAO",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "edital_id": "19542",
+      "score": 95,
+      "phone": "558121234706",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T14:18:35.754Z",
+      "mode": "two_step_opener"
+    },
+    "19688_06038906000181": {
+      "cnpj": "06038906000181",
+      "nome": "CENTRO DE EDUCACAO POPULAR MARIA MAE DA MISERICORDIA",
+      "uf": "PE",
+      "municipio": "CARUARU",
+      "edital_id": "19688",
+      "score": 85,
+      "phone": "558130453011",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T14:19:58.324Z",
+      "mode": "two_step_opener"
+    },
+    "19216_24262537000198": {
+      "cnpj": "24262537000198",
+      "nome": "INSTITUTO MEMORIAL DO AGRESTE - IMA",
+      "uf": "PE",
+      "municipio": "CARUARU",
+      "edital_id": "19216",
+      "score": 85,
+      "phone": "558137211506",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T14:20:52.913Z",
+      "mode": "two_step_opener"
+    },
+    "19542_07939922001260": {
+      "cnpj": "07939922001260",
+      "nome": "INSTITUTO DE EDUCACAO E TECNOLOGIA VALE DO RIBEIRA",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "edital_id": "19542",
+      "score": 85,
+      "phone": "551122947686",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T14:21:49.360Z",
+      "mode": "two_step_opener"
+    },
+    "19197_01203327000980": {
+      "cnpj": "01203327000980",
+      "nome": "CESAR CENTRO DE ESTUDOS E SISTEMAS AVANCADOS DO RECIFE",
+      "uf": "PE",
+      "municipio": "RECIFE",
+      "edital_id": "19197",
+      "score": 85,
+      "phone": "558134196700",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T14:22:40.960Z",
       "mode": "two_step_opener"
     }
   }
