@@ -77,7 +77,6 @@ const modelWithSearch = genAI.getGenerativeModel({
 
 const currentYear = new Date().getFullYear();
 
-// Bureaucratic & generic Portuguese stopwords that appear in almost every CNAE or grant summary
 const PORTUGUESE_STOPWORDS = new Set([
   'associação', 'associacao', 'associações', 'associacoes', 'direitos', 'sociais', 'social',
   'atividades', 'organizações', 'organizacoes', 'organização', 'organizacao', 'defesa',
@@ -99,7 +98,6 @@ const NATIONAL_ROTATION_CITIES = [
   'Belém', 'Goiânia', 'Manaus', 'Florianópolis', 'João Pessoa'
 ];
 
-// Helper: Sleep
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 function normalizeText(text: string): string {
@@ -113,6 +111,17 @@ function hasValidPhone(osc: OSC): boolean {
   const raw = osc.official_contacts?.ddd_telefone_1 || osc.official_contacts?.ddd_telefone_2 || '';
   const digits = raw.replace(/\D/g, '');
   return digits.length >= 10;
+}
+
+function isValidLeadRecord(m: any): boolean {
+  if (!m || !m.osc?.cnpj || !m.edital_id) return false;
+  const score = Number(m.score) || 0;
+  if (score < 50) return false;
+  const motivo = (m.motivo_match || '').trim().toLowerCase();
+  if (!motivo || motivo === 'failed' || motivo.includes('failed')) return false;
+  const msg = (m.whatsapp_message || '').trim().toLowerCase();
+  if (!msg || msg.includes('outreach message failed') || msg === 'failed') return false;
+  return true;
 }
 
 async function fetchFromIpea(url: string) {
@@ -161,11 +170,33 @@ async function saveCache(cache: Record<string, CacheEntry>) {
   await fs.writeFile(CACHE_PATH, JSON.stringify(cache, null, 2), 'utf-8');
 }
 
-async function loadExistingLeads(): Promise<MatchResult[]> {
+async function loadExistingLeads(cache: Record<string, CacheEntry>): Promise<MatchResult[]> {
   try {
     const data = await fs.readFile(OUTPUT_FILE, 'utf-8');
     const parsed = JSON.parse(data);
-    return Array.isArray(parsed) ? parsed : [];
+    if (!Array.isArray(parsed)) return [];
+
+    const valid: MatchResult[] = [];
+    let purgedCount = 0;
+
+    for (const item of parsed) {
+      if (isValidLeadRecord(item)) {
+        valid.push(item);
+      } else {
+        purgedCount++;
+        // If this lead previously failed, remove edital_id from cache.evaluated_editais so it can be re-evaluated!
+        const cnpj = item?.osc?.cnpj;
+        const edId = String(item?.edital_id || '');
+        if (cnpj && edId && cache[cnpj]?.evaluated_editais) {
+          cache[cnpj].evaluated_editais = cache[cnpj].evaluated_editais!.filter(id => String(id) !== edId);
+        }
+      }
+    }
+
+    if (purgedCount > 0) {
+      console.log(`🧹 Purged ${purgedCount} legacy failed/invalid lead records from daily_outbound_leads.json.`);
+    }
+    return valid;
   } catch {
     return [];
   }
@@ -175,9 +206,9 @@ function isEditalSuitableForNgos(edital: any): boolean {
   const nomeNorm = normalizeText(edital.attributes?.nome || '');
   const resumoNorm = normalizeText(edital.deep_metadata?.resumo_objetivo || '');
 
-  // Exclude individual scholarships (Bolsas), academic productivity grants, corporate subsidies, and utility engineering calls
+  // Exclude individual scholarships (Bolsas), graduate academic programs (Mestrado/Doutorado), corporate subsidies, and utility engineering calls
   const nonNgoTitlePatterns = [
-    'bolsa ', 'bolsas ', 'pos-graduacao', 'iniciacao cientifica', 'pibex',
+    'bolsa ', 'bolsas ', 'pos-graduacao', 'mestrado', 'doutorado', 'iniciacao cientifica', 'pibex',
     'produtividade em pesquisa', 'catedra', 'subvencao economica',
     'inovacao para a industria', 'eficiencia energetica', 'pee/aneel',
     'cpp 001/', 'cpp 002/', 'premio de fotografia', 'longa-metragem'
@@ -186,7 +217,6 @@ function isEditalSuitableForNgos(edital: any): boolean {
     return false;
   }
 
-  // Exclude if the grant explicitly forbids non-profits (OSCs / Associações sem fins lucrativos)
   const exclList: string[] = edital.deep_metadata?.criterios_eliminatorios?.natureza_juridica_excluida || [];
   const forbidsNonProfits = exclList.some(item => {
     const norm = normalizeText(item);
@@ -200,7 +230,6 @@ function isEditalSuitableForNgos(edital: any): boolean {
 
   if (forbidsNonProfits) return false;
 
-  // Exclude if summary explicitly states it is only for individuals or for-profit companies
   if (resumoNorm.includes('exclusivamente para pessoas fisicas') || resumoNorm.includes('empresas juniores')) {
     return false;
   }
@@ -213,8 +242,8 @@ async function getTopEditais(existingLeads: MatchResult[]) {
   const editais = JSON.parse(editaisData);
 
   const now = new Date();
-  const twentyDaysFromNow = new Date();
-  twentyDaysFromNow.setDate(now.getDate() + 20);
+  const fifteenDaysFromNow = new Date();
+  fifteenDaysFromNow.setDate(now.getDate() + 15);
 
   const validEditais = editais.filter((edital: any) => {
     if (!edital.deep_metadata) return false;
@@ -223,7 +252,7 @@ async function getTopEditais(existingLeads: MatchResult[]) {
     if (!criterios || typeof criterios !== 'object' || Object.keys(criterios).length === 0) return false;
 
     const valor = edital.deep_metadata.financeiro?.valor_maximo_ou_global_reais || 0;
-    if (valor < 300000) return false;
+    if (valor < 100000) return false;
 
     if (!isEditalSuitableForNgos(edital)) return false;
 
@@ -231,19 +260,20 @@ async function getTopEditais(existingLeads: MatchResult[]) {
     if (!prazo || prazo === 'Não informado') return true;
 
     const prazoDate = new Date(prazo);
-    return prazoDate > twentyDaysFromNow;
+    return prazoDate > fifteenDaysFromNow;
   });
 
   // Sort by value descending
   validEditais.sort((a: any, b: any) => {
     const valA = a.deep_metadata.financeiro?.valor_maximo_ou_global_reais || 0;
-    const valB = b.deep_metadata.financeiro?.financeiro?.valor_maximo_ou_global_reais || b.deep_metadata.financeiro?.valor_maximo_ou_global_reais || 0;
+    const valB = b.deep_metadata.financeiro?.valor_maximo_ou_global_reais || 0;
     return valB - valA;
   });
 
-  // Smart Rotation: Prioritize editais that do not yet have leads in daily_outbound_leads.json
+  // Smart Rotation: Prioritize editais that do not yet have valid leads in daily_outbound_leads.json
   const existingEditalCounts = new Map<string, number>();
   for (const lead of existingLeads) {
+    if (!isValidLeadRecord(lead)) continue;
     const id = String(lead.edital_id);
     existingEditalCounts.set(id, (existingEditalCounts.get(id) || 0) + 1);
   }
@@ -257,8 +287,9 @@ async function getTopEditais(existingLeads: MatchResult[]) {
     ...previouslyCoveredEditais.slice(0, (dayOfYear * 3) % Math.max(1, previouslyCoveredEditais.length))
   ];
 
+  const maxEditais = parseInt(process.env.MAX_EDITAIS_PER_RUN || '8', 10);
   const combinedQueue = [...freshEditais, ...rotatedPrevious];
-  return combinedQueue.slice(0, 5);
+  return combinedQueue.slice(0, maxEditais);
 }
 
 async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Record<string, CacheEntry>) {
@@ -267,7 +298,6 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
 
   const collectFromOscList = async (oscs: any[], maxToCollect: number) => {
     if (!Array.isArray(oscs) || oscs.length === 0) return;
-    // Use a deterministic rotating offset so we don't fetch the exact same first 100 OSCs every day
     const startOffset = oscs.length > maxToCollect ? (seed * 37) % (oscs.length - maxToCollect) : 0;
     const slice = oscs.slice(startOffset, startOffset + maxToCollect);
 
@@ -276,7 +306,6 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
         const headerData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/osc/cabecalho/${item.id_osc}`);
         if (headerData && headerData.cd_identificador_osc) {
           const cnpj = String(headerData.cd_identificador_osc).padStart(14, '0');
-          // Skip if already evaluated for this exact edital
           if (cache[cnpj]?.evaluated_editais?.includes(String(editalId))) {
             continue;
           }
@@ -319,7 +348,6 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
       if (rawCnpjs.length >= 100) break;
     }
   } else {
-    // National coverage: rotate across major Brazilian cities instead of hardcoding only João Pessoa
     const citiesToQuery = [
       NATIONAL_ROTATION_CITIES[seed % NATIONAL_ROTATION_CITIES.length],
       NATIONAL_ROTATION_CITIES[(seed + 4) % NATIONAL_ROTATION_CITIES.length]
@@ -394,14 +422,13 @@ Retorne APENAS um objeto JSON válido no formato:
 async function runPipeline() {
   console.log(`Starting Optimized Outbound Matchmaking Pipeline`);
 
-  const existingLeads = await loadExistingLeads();
+  const cache = await loadCache();
+  const existingLeads = await loadExistingLeads(cache);
   const topEditais = await getTopEditais(existingLeads);
   console.log(`Selected ${topEditais.length} NGO-suitable editais for today's run.`);
 
-  const cache = await loadCache();
   const newMatches: MatchResult[] = [];
   let totalSearchCalls = 0;
-  // Default to 0 paid Google Search calls ($0.00 search grounding cost) unless explicitly opted-in via MAX_SEARCH_CALLS
   const MAX_SEARCH_CALLS_PER_RUN = parseInt(process.env.MAX_SEARCH_CALLS || '0', 10);
 
   for (const edital of topEditais) {
@@ -413,7 +440,6 @@ async function runPipeline() {
     let rawCnpjs = await getIpeaIdsForRegion(criterios, String(edital.id), cache);
     console.log(`Retrieved ${rawCnpjs.length} fresh CNPJs for this edital from IPEA.`);
 
-    // Supplement with eligible cached OSCs from the right state/municipality if IPEA returned few results
     if (rawCnpjs.length < 30) {
       const allowedStates: string[] = (criterios.estados_permitidos || []).map((s: string) => s.toUpperCase());
       const cachedCnpjs = Object.keys(cache).filter(cnpj => {
@@ -442,7 +468,8 @@ async function runPipeline() {
       'colégio municipal', 'colégio estadual', 'conselho estadual', 'conselho municipal',
       'conselho escolar', 'prefeitura', 'secretaria', 'advogados', 'escritório', 'contábil',
       'comércio', 'esporte clube', 'futebol clube', 'servidores', 'câmara', 'ministério público',
-      'tribunal', 'polícia', 'bombeiros', 'crea', 'oab', 'cartório', 'hospital municipal'
+      'tribunal', 'polícia', 'bombeiros', 'crea', 'oab', 'cartório', 'hospital municipal',
+      'protecao veicular', 'moto - taxistas', 'motoristas de taxi'
     ];
 
     for (const cnpj of rawCnpjs) {
@@ -517,7 +544,6 @@ async function runPipeline() {
       .map((t: string) => normalizeText(t))
       .filter((t: string) => t.length > 2 && !PORTUGUESE_STOPWORDS.has(t));
 
-    // Also extract individual significant words from multi-word themes (e.g. "agricultura familiar" -> "agricultura")
     const themeTokens = [...new Set(
       normalizedThemes.flatMap(t => t.split(/[\s,.;/-]+/)).filter(w => w.length > 3 && !PORTUGUESE_STOPWORDS.has(w))
     )];
@@ -535,7 +561,6 @@ async function runPipeline() {
       const cnaeNorm = normalizeText(`${osc.cnae_primario_descricao} ${osc.cnae_secundario_descricao}`);
       const combinedText = `${nomeNorm} ${cnaeNorm}`;
 
-      // 1. Primary Theme phrase match (+100 pts, +40 bonus if in the NGO's actual name)
       for (const theme of normalizedThemes) {
         if (combinedText.includes(theme)) {
           keywordScore += 100;
@@ -543,7 +568,6 @@ async function runPipeline() {
         }
       }
 
-      // 2. Theme token match (+50 pts)
       for (const token of themeTokens) {
         if (combinedText.includes(token)) {
           keywordScore += 50;
@@ -551,14 +575,12 @@ async function runPipeline() {
         }
       }
 
-      // 3. Objective specific keyword match (+25 pts)
       for (const kw of resumoWords) {
         if (combinedText.includes(kw)) {
           keywordScore += 25;
         }
       }
 
-      // STRICT FILTER: If keywordScore is 0, heuristicScore MUST be 0 (no age bonus for irrelevant NGOs!)
       if (keywordScore === 0) {
         return { osc, heuristicScore: 0 };
       }
@@ -588,7 +610,6 @@ async function runPipeline() {
       console.log(`[${i + 1}/${topFinalists.length}] Evaluating Finalist: ${osc.nome} (${osc.municipio}/${osc.uf})`);
 
       const cacheEntry = cache[osc.cnpj] || { osc, last_checked_date: new Date().toISOString(), evaluated_editais: [] };
-      cacheEntry.evaluated_editais = Array.from(new Set([...(cacheEntry.evaluated_editais || []), String(edital.id)]));
       cache[osc.cnpj] = cacheEntry;
 
       let dossieText = cacheEntry.dossieText || '';
@@ -649,7 +670,7 @@ Return ONLY a valid JSON object containing:
 - "whatsapp_message": "Mensagem curta, humana e atrativa de WhatsApp (em pt-BR) escrita por 'Maria Angela Bonifacio, Triade ACR' para a ONG. Elogie brevemente o trabalho da ONG. Diga que você mapeou uma oportunidade de edital/financiamento no valor de até ${valorEdital} voltado para a área de atuação deles. REGRA CRÍTICA E ABSOLUTA: NUNCA mencione o título, nome real ou a instituição do edital. Termine perguntando se eles têm disponibilidade para uma breve conversa."
 - "contatos_encontrados": An object with optional keys "whatsapp", "email", and "instagram".`;
 
-      let aiResult: any = { score: 0, motivo_match: 'Failed', whatsapp_message: '', contatos_encontrados: {} };
+      let aiResult: any = null;
       if (GEMINI_API_KEY && GEMINI_API_KEY !== 'dummy') {
         try {
           const result = await modelWithoutSearch.generateContent(matchPrompt);
@@ -659,9 +680,16 @@ Return ONLY a valid JSON object containing:
         } catch (e: any) {
           console.error(`  -> Match evaluation failed: ${e.message}`);
         }
-      } else {
-        aiResult = { score: 75, motivo_match: 'Mock reasoning.', whatsapp_message: 'Mock message.' };
       }
+
+      if (!aiResult || !aiResult.score) {
+        console.log(`  -> Skipping ${osc.nome} due to empty/failed AI evaluation (not recording as evaluated).`);
+        await sleep(1500);
+        continue;
+      }
+
+      // Only mark as evaluated AFTER a successful AI evaluation!
+      cacheEntry.evaluated_editais = Array.from(new Set([...(cacheEntry.evaluated_editais || []), String(edital.id)]));
 
       if (!dossieText && aiResult.dossie_resumo) {
         dossieText = aiResult.dossie_resumo;
@@ -672,7 +700,7 @@ Return ONLY a valid JSON object containing:
       }
 
       const finalScore = Number(aiResult.score) || 0;
-      if (finalScore >= 55) {
+      if (finalScore >= 55 && aiResult.motivo_match && aiResult.whatsapp_message) {
         const resolvedContacts = {
           ...(aiResult.contatos_encontrados || {}),
           whatsapp: aiResult.contatos_encontrados?.whatsapp || osc.official_contacts?.ddd_telefone_1 || osc.official_contacts?.ddd_telefone_2 || undefined,
@@ -685,8 +713,8 @@ Return ONLY a valid JSON object containing:
           edital_url: edital.deep_metadata?.drive_pdf_link || edital.deep_metadata?.link_google_drive || edital.pdf_link || edital.public_url || null,
           osc,
           score: finalScore,
-          motivo_match: aiResult.motivo_match || 'Compatibilidade temática identificada.',
-          whatsapp_message: aiResult.whatsapp_message || '',
+          motivo_match: aiResult.motivo_match,
+          whatsapp_message: aiResult.whatsapp_message,
           contatos_encontrados: resolvedContacts,
           dossieText,
           created_at: new Date().toISOString()
@@ -695,17 +723,21 @@ Return ONLY a valid JSON object containing:
         console.log(`  -> Discarded low-score match (${finalScore} < 55) for ${osc.nome}`);
       }
 
-      await sleep(2000);
+      await sleep(1500);
     }
   }
 
-  // Merge new matches with rolling history (deduplicate by edital_id + cnpj, keep top 120 leads)
+  // Merge new matches with valid rolling history (deduplicate by edital_id + cnpj, keep top 120 valid leads)
   const mergedMap = new Map<string, MatchResult>();
   for (const m of [...newMatches, ...existingLeads]) {
-    if (!m?.osc?.cnpj || !m?.edital_id) continue;
-    // Also filter out any legacy non-NGO editais (like Bolsas de Produtividade) from existing leads
+    if (!isValidLeadRecord(m)) continue;
     const titleNorm = normalizeText(m.edital_titulo || '');
-    if (titleNorm.includes('bolsas de produtividade') || titleNorm.includes('eficiencia energetica')) {
+    if (
+      titleNorm.includes('bolsas de produtividade') ||
+      titleNorm.includes('eficiencia energetica') ||
+      titleNorm.includes('mestrado') ||
+      titleNorm.includes('doutorado')
+    ) {
       continue;
     }
     const key = `${m.edital_id}_${m.osc.cnpj}`;
@@ -720,7 +752,7 @@ Return ONLY a valid JSON object containing:
   await fs.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
   await fs.writeFile(OUTPUT_FILE, JSON.stringify(finalLeads, null, 2), 'utf-8');
   console.log(`\nPipeline complete! Google Search calls used: ${totalSearchCalls}/${MAX_SEARCH_CALLS_PER_RUN}.`);
-  console.log(`Added ${newMatches.length} new quality leads (Total active leads saved: ${finalLeads.length}).`);
+  console.log(`Added ${newMatches.length} new quality leads (Total active valid leads saved: ${finalLeads.length}).`);
 }
 
 runPipeline().catch(console.error);

@@ -19,18 +19,15 @@
   let onlyWhatsApp = false;
   let minDaysFilter = 15;
 
-  // WhatsApp Launch Mode:
-  // 'api' = Direct background API send (0 browser tabs, 0 reload!)
-  // 'app' = Native whatsapp:// protocol (WhatsApp Desktop app from Microsoft Store)
-  // 'web' = Browser web.whatsapp.com
+  // WhatsApp Launch Mode (configured inside Automação WA tab; defaults to 'web')
   let whatsappMode: 'api' | 'app' | 'web' = 'web';
   let copiedFeedbackKey: string | null = null;
   let directSendFeedbackKey: string | null = null;
 
-  // Message Template Mode per card: 'opener' | 'initial' | 'followup' | 'audio'
-  let messageModeByCard: Record<string, 'opener' | 'initial' | 'followup' | 'audio'> = {};
+  // Clean 3-tab Message Template Mode per card: 'opener' | 'initial' | 'followup'
+  let messageModeByCard: Record<string, 'opener' | 'initial' | 'followup'> = {};
 
-  // --- In-Browser Gateway Configuration (for instant 7-day experiment setup) ---
+  // --- In-Browser Gateway Configuration (for 7-day experiment setup) ---
   let customGatewayConfig = {
     provider: 'whapi' as 'whapi' | 'zapi' | 'greenapi' | 'evolution',
     apiUrl: 'https://gate.whapi.cloud',
@@ -221,32 +218,45 @@
     return { label: `⏳ ${dateFormatted}`, color: 'bg-gray-100 text-gray-700 border-gray-200' };
   }
 
-  // Group leads by Edital and apply minDaysFilter
+  // Group valid leads by Edital and sort explicitly by highest score & value (never rely on JS numeric object key order!)
   let groupedLeads: Record<string, any> = {};
+  let groupedEditaisList: Array<[string, any]> = [];
   $: {
-    groupedLeads = leads.reduce((acc, lead) => {
+    const map: Record<string, any> = {};
+    for (const lead of leads) {
+      if (!lead || !lead.score || lead.score <= 0 || lead.motivo_match === 'Failed') continue;
       const dias = lead.dias_restantes;
       if (minDaysFilter > 0 && dias !== null && dias !== undefined && dias < minDaysFilter) {
-        return acc;
+        continue;
       }
-      if (!acc[lead.edital_id]) {
-        acc[lead.edital_id] = {
+      const id = String(lead.edital_id);
+      if (!map[id]) {
+        map[id] = {
+          id,
           titulo: lead.edital_titulo,
           valor: lead.edital_valor,
           prazo: lead.edital_prazo,
           dias_restantes: lead.dias_restantes,
           ufs: lead.edital_ufs || [],
+          maxScore: 0,
           leads: []
         };
       }
-      acc[lead.edital_id].leads.push(lead);
-      return acc;
-    }, {});
+      map[id].leads.push(lead);
+      if ((lead.score || 0) > map[id].maxScore) {
+        map[id].maxScore = lead.score;
+      }
+    }
+    groupedLeads = map;
+    groupedEditaisList = Object.entries(map).sort((a, b) => {
+      if (b[1].maxScore !== a[1].maxScore) return b[1].maxScore - a[1].maxScore;
+      return (b[1].valor || 0) - (a[1].valor || 0);
+    });
   }
 
   let selectedEditalId: string | null = null;
-  $: if ((!selectedEditalId || !groupedLeads[selectedEditalId]) && Object.keys(groupedLeads).length > 0) {
-    selectedEditalId = Object.keys(groupedLeads)[0];
+  $: if ((!selectedEditalId || !groupedLeads[selectedEditalId]) && groupedEditaisList.length > 0) {
+    selectedEditalId = groupedEditaisList[0][0];
   }
 
   $: if (!sdrSelectedLeadKey && leads.length > 0) {
@@ -257,7 +267,6 @@
   // --- 7-Day Experiment Analytics Computed Metrics ---
   $: totalLeadsWithPhone = leads.filter(l => hasAnyPhone(l)).length;
   $: totalMobileLeads = leads.filter(l => getPhoneType(l) === 'mobile').length;
-  $: totalLandlineLeads = leads.filter(l => getPhoneType(l) === 'landline').length;
   $: sentQueueItems = autoQueue.filter(i => i.status === 'sent');
   $: repliedQueueItems = autoQueue.filter(i => !!i.replyIntent);
 
@@ -312,14 +321,10 @@
   function getPhoneType(lead: any): 'mobile' | 'landline' | null {
     const clean = getCleanPhoneNumber(lead);
     if (!clean || clean.length < 10) return null;
-    const local = clean.slice(2); // after 2-digit DDD
+    const local = clean.slice(2);
     if (local.length === 9 && local.startsWith('9')) return 'mobile';
     if (local.length === 8 && (local.startsWith('8') || local.startsWith('9') || local.startsWith('7'))) return 'mobile';
     return 'landline';
-  }
-
-  function hasDirectWhatsApp(lead: any): boolean {
-    return !!lead.contatos_encontrados?.whatsapp;
   }
 
   function hasAnyPhone(lead: any): boolean {
@@ -343,10 +348,11 @@
     if (mode === 'followup') {
       return `Olá, equipe da ${lead.osc?.nome}! Tudo bem? Aqui é a Maria Angela Bonifacio, da Triade ACR. Enviei uma mensagem recentemente sobre uma oportunidade de edital de até ${valorStr} muito alinhada à atuação de vocês em ${lead.osc?.municipio}. Como ${prazoStr}, queria saber se vocês têm 5 minutinhos hoje ou amanhã para eu explicar como podemos estruturar esse projeto juntos?`;
     }
-    if (mode === 'audio') {
-      return `🎙️ [ROTEIRO PARA GRAVAR ÁUDIO DE 25s NO WHATSAPP]:\n\n1. "Olá, pessoal da ${lead.osc?.nome}, tudo bem? Aqui quem fala é a Maria Angela, consultora de captação da Triade."\n2. "Estou entrando em contato porque mapeamos um edital aberto de até ${valorStr} que encaixa perfeitamente com o trabalho de vocês em ${lead.osc?.municipio}."\n3. "Como ${prazoStr}, me manda um 'oi' aqui se vocês tiverem interesse que eu explico rapidinho os detalhes sem compromisso. Um abraço!"`;
+    const rawMsg = (lead.whatsapp_message || '').trim();
+    if (!rawMsg || rawMsg.toLowerCase().includes('failed')) {
+      return buildAntiBanOpener(lead);
     }
-    return lead.whatsapp_message || '';
+    return rawMsg;
   }
 
   function getWhatsAppLink(lead: any, message: string): string | null {
@@ -384,7 +390,6 @@
       setLeadStatus(lead.edital_id, lead.osc.cnpj, 'contacted');
     }
 
-    // Mode 1: Direct Background API Send (0 tabs opened, 0 reload!)
     if (whatsappMode === 'api') {
       directSendFeedbackKey = key;
       try {
@@ -446,7 +451,6 @@
   }
 
   function enqueueAllLeadsForExperiment(minScore = 0, onlyMobile = false) {
-    // Sort so mobile phones and higher scores go first
     const sorted = [...leads].sort((a, b) => {
       const mA = getPhoneType(a) === 'mobile' ? 1 : 0;
       const mB = getPhoneType(b) === 'mobile' ? 1 : 0;
@@ -574,7 +578,6 @@
     saveQueue();
 
     if (queueRunning) {
-      // If real WhatsApp API connected, wait humanized 180s–300s (3 to 5 min); in simulation, 1.5s
       const delayMs = gatewayStatus.configured ? 180000 + Math.floor(Math.random() * 120000) : 1500;
       queueTimer = setTimeout(processNextInQueue, delayMs);
     }
@@ -789,8 +792,8 @@
         </span>
       </div>
 
-      <!-- Tabs -->
-      <div class="flex space-x-3 mt-4 border-b border-gray-200 text-xs sm:text-sm">
+      <!-- Clean 3 Tabs -->
+      <div class="flex space-x-4 mt-4 border-b border-gray-200 text-sm">
         <button
           class="pb-2 font-medium {activeTab === 'daily' ? 'text-indigo-600 border-b-2 border-indigo-600' : 'text-gray-500 hover:text-gray-700'}"
           onclick={() => { activeTab = 'daily'; }}
@@ -815,28 +818,11 @@
           {/if}
         </button>
       </div>
-
-      {#if activeTab === 'daily'}
-        <!-- Prazo Minimum Filter Bar -->
-        <div class="mt-3 flex items-center justify-between bg-gray-50 px-3 py-2 rounded-lg border border-gray-200 text-xs">
-          <span class="font-medium text-gray-600">Prazo mínimo p/ captar:</span>
-          <div class="flex space-x-1">
-            {#each [{ label: 'Todos', val: 0 }, { label: '≥ 15 dias', val: 15 }, { label: '≥ 30 dias', val: 30 }] as opt}
-              <button
-                class="px-2 py-1 rounded font-medium transition-colors {minDaysFilter === opt.val ? 'bg-indigo-600 text-white' : 'bg-white text-gray-600 border border-gray-200 hover:bg-gray-100'}"
-                onclick={() => { minDaysFilter = opt.val; }}
-              >
-                {opt.label}
-              </button>
-            {/each}
-          </div>
-        </div>
-      {/if}
     </div>
 
     <div class="flex-1 overflow-y-auto">
       {#if activeTab === 'daily'}
-        {#each Object.entries(groupedLeads) as [id, data]}
+        {#each groupedEditaisList as [id, data]}
           {@const badge = formatPrazoBadge(data.prazo, data.dias_restantes)}
           <button
             class="w-full text-left p-4 border-b border-gray-100 hover:bg-indigo-50 transition-colors {selectedEditalId === id ? 'bg-indigo-50 border-l-4 border-indigo-600' : 'border-l-4 border-transparent'}"
@@ -884,7 +870,6 @@
                   <option value={15}>Mínimo 15 dias restantes</option>
                   <option value={20}>Mínimo 20 dias restantes</option>
                   <option value={30}>Mínimo 30 dias restantes</option>
-                  <option value={45}>Mínimo 45 dias restantes</option>
                 </select>
               </div>
 
@@ -993,7 +978,7 @@
           {/if}
         </div>
       {:else}
-        <!-- Left Pane for Automation Tab: Controls, Gateway Setup & 7-Day Experiment Buttons -->
+        <!-- Left Pane for Automation Tab -->
         <div class="p-4 space-y-4">
           <div class="p-3.5 rounded-xl border {isCurrentlyBusinessHours ? 'bg-green-50 border-green-200' : 'bg-amber-50 border-amber-200'} space-y-1.5">
             <div class="flex items-center justify-between">
@@ -1003,14 +988,14 @@
               <span class="text-xs font-semibold text-gray-700">{brtClockText}</span>
             </div>
             <p class="text-[11px] text-gray-600">
-              Disparo cadenciado: <strong>Seg–Sex, 09:00 às 17:30 BRT</strong> com intervalo humano (3–5 min) e efeito <em>"digitando..."</em>.
+              Disparo cadenciado: <strong>Seg–Sex, 09:00 às 17:30 BRT</strong> com intervalo humano (3–5 min).
             </p>
           </div>
 
-          <!-- Instant Gateway Configurator (Connect Angela's WhatsApp via QR Code API) -->
+          <!-- Instant Gateway Configurator -->
           <div class="p-3.5 rounded-xl bg-gray-50 border border-gray-200 space-y-2.5 text-xs">
             <div class="flex items-center justify-between">
-              <span class="font-bold text-gray-800">🔌 Conectar Número da Angela (0 Abas):</span>
+              <span class="font-bold text-gray-800">🔌 Conectar WhatsApp via API (0 Abas):</span>
               <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold {gatewayStatus.configured ? 'bg-green-100 text-green-800' : 'bg-blue-100 text-blue-800'}">
                 {gatewayStatus.configured ? `Ativo (${gatewayStatus.provider})` : 'Modo Simulação'}
               </span>
@@ -1018,27 +1003,26 @@
 
             <div class="grid grid-cols-2 gap-2">
               <div>
-                <label class="block text-[11px] font-medium text-gray-600">Provedor API (QR Code):</label>
+                <label class="block text-[11px] font-medium text-gray-600">Provedor API:</label>
                 <select bind:value={customGatewayConfig.provider} class="mt-0.5 w-full px-2 py-1 text-xs border border-gray-300 rounded bg-white">
-                  <option value="whapi">Whapi.cloud (5 dias Grátis)</option>
-                  <option value="zapi">Z-API (Teste Grátis BR)</option>
-                  <option value="greenapi">Green-API (Grátis)</option>
+                  <option value="whapi">Whapi.cloud (5d Grátis)</option>
+                  <option value="zapi">Z-API (BR)</option>
+                  <option value="greenapi">Green-API</option>
                   <option value="evolution">Evolution API</option>
                 </select>
               </div>
               <div>
-                <label class="block text-[11px] font-medium text-gray-600">API URL:</label>
-                <input
-                  type="text"
-                  bind:value={customGatewayConfig.apiUrl}
-                  placeholder="https://gate.whapi.cloud"
-                  class="mt-0.5 w-full px-2 py-1 text-xs border border-gray-300 rounded bg-white"
-                />
+                <label class="block text-[11px] font-medium text-gray-600">Modo do Botão Manual:</label>
+                <select bind:value={whatsappMode} onchange={() => setWhatsAppMode(whatsappMode)} class="mt-0.5 w-full px-2 py-1 text-xs border border-gray-300 rounded bg-white">
+                  <option value="web">🌐 WhatsApp Web</option>
+                  <option value="app">⚡ App Windows</option>
+                  <option value="api">🚀 API Direto (0 Abas)</option>
+                </select>
               </div>
             </div>
 
             <div>
-              <label class="block text-[11px] font-medium text-gray-600">API Token (cole aqui após ler o QR Code):</label>
+              <label class="block text-[11px] font-medium text-gray-600">API Token (Whapi / Z-API):</label>
               <div class="flex gap-1.5 mt-0.5">
                 <input
                   type="password"
@@ -1066,7 +1050,7 @@
               <div>
                 <span class="font-bold text-indigo-900">🛡️ Abertura Anti-Ban (2 linhas s/ link)</span>
                 <p class="text-[11px] text-indigo-700">
-                  Pergunta primeiro se pode enviar o resumo. Protege o número da Angela e triplica a taxa de resposta!
+                  Pergunta primeiro se pode enviar o resumo. Protege o número da Angela e aumenta a taxa de resposta.
                 </p>
               </div>
             </label>
@@ -1077,9 +1061,7 @@
             </label>
           </div>
 
-          <!-- 7-Day Experiment Enqueue Buttons -->
           <div class="space-y-2 pt-1 border-t border-gray-200">
-            <span class="block text-[11px] font-bold uppercase text-gray-500">🧪 Experimento de 7 Dias (Coleta de Dados):</span>
             <button
               type="button"
               onclick={() => enqueueAllLeadsForExperiment(0, false)}
@@ -1088,116 +1070,57 @@
               🧪 Enfileirar TODOS os Leads ({totalLeadsWithPhone} ONGs)
             </button>
 
-            <div class="grid grid-cols-2 gap-2">
-              <button
-                type="button"
-                onclick={() => enqueueAllLeadsForExperiment(0, true)}
-                class="py-1.5 px-2 rounded-lg text-[11px] font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200"
-              >
-                📱 Só Celulares ({totalMobileLeads})
-              </button>
-              <button
-                type="button"
-                onclick={() => enqueueAllLeadsForExperiment(80, false)}
-                class="py-1.5 px-2 rounded-lg text-[11px] font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200"
-              >
-                ⭐ Só Score ≥ 80%
-              </button>
-            </div>
+            <button
+              type="button"
+              onclick={toggleQueueRunner}
+              disabled={autoQueue.filter(i => i.status !== 'sent').length === 0}
+              class="w-full py-2.5 px-4 rounded-lg shadow-sm text-xs font-bold text-white transition-colors {queueRunning ? 'bg-amber-600 hover:bg-amber-700' : 'bg-green-600 hover:bg-green-700 disabled:bg-gray-300'}"
+            >
+              {queueRunning ? '⏸️ Pausar Disparo Automático' : '▶️ Iniciar Disparo Automático'}
+            </button>
           </div>
-
-          <button
-            type="button"
-            onclick={toggleQueueRunner}
-            disabled={autoQueue.filter(i => i.status !== 'sent').length === 0}
-            class="w-full py-2.5 px-4 rounded-lg shadow-sm text-xs font-bold text-white transition-colors {queueRunning ? 'bg-amber-600 hover:bg-amber-700' : 'bg-green-600 hover:bg-green-700 disabled:bg-gray-300'}"
-          >
-            {queueRunning ? '⏸️ Pausar Disparo Automático' : '▶️ Iniciar Disparo Automático'}
-          </button>
         </div>
       {/if}
     </div>
   </div>
 
-  <!-- Right Pane: Leads Feed / Manual Results / Automation & AI SDR Console -->
+  <!-- Right Pane: Clean Leads Feed / Manual Results / Automation Console -->
   <div class="w-2/3 flex flex-col h-full bg-gray-100">
     {#if activeTab === 'daily'}
       {#if selectedEditalId && groupedLeads[selectedEditalId]}
         {@const currentGroup = groupedLeads[selectedEditalId]}
         {@const headerBadge = formatPrazoBadge(currentGroup.prazo, currentGroup.dias_restantes)}
-        <div class="p-5 bg-white border-b border-gray-200 shadow-sm z-10 shrink-0 space-y-3">
-          <div class="flex justify-between items-start gap-4">
-            <div>
-              <h2 class="text-lg font-bold text-gray-900">
-                <span class="text-indigo-600">{currentGroup.titulo}</span>
-              </h2>
-              <div class="flex flex-wrap items-center gap-2 mt-1.5">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-bold bg-green-50 text-green-700 border border-green-200">
-                  💰 Valor: {formatCurrency(currentGroup.valor)}
-                </span>
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-semibold border {headerBadge.color}">
-                  {headerBadge.label}
-                </span>
-              </div>
+        <div class="p-5 bg-white border-b border-gray-200 shadow-sm z-10 shrink-0 flex flex-wrap justify-between items-center gap-4">
+          <div>
+            <h2 class="text-lg font-bold text-gray-900">
+              <span class="text-indigo-600">{currentGroup.titulo}</span>
+            </h2>
+            <div class="flex flex-wrap items-center gap-2 mt-1.5">
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-bold bg-green-50 text-green-700 border border-green-200">
+                💰 Valor: {formatCurrency(currentGroup.valor)}
+              </span>
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-semibold border {headerBadge.color}">
+                {headerBadge.label}
+              </span>
             </div>
-
-            <button
-              type="button"
-              onclick={() => enqueueAllLeadsForExperiment(0, false)}
-              class="shrink-0 inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-purple-50 text-purple-700 hover:bg-purple-100 border border-purple-200"
-              title="Enfileira TODOS os leads com telefone para o Experimento de 7 dias"
-            >
-              🧪 Enfileirar Todos ({totalLeadsWithPhone} Leads)
-            </button>
           </div>
 
-          <!-- CRM, Phone Filter & WhatsApp Mode Toggles -->
-          <div class="flex flex-wrap items-center justify-between gap-3 pt-1 border-t border-gray-100 text-xs">
-            <div class="flex flex-wrap items-center gap-2">
-              <label class="inline-flex items-center cursor-pointer select-none bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 hover:bg-gray-100">
-                <input type="checkbox" bind:checked={onlyWhatsApp} class="rounded border-gray-300 text-indigo-600 mr-1.5" />
-                <span class="font-semibold text-gray-700">📱 Apenas com Telefone</span>
-              </label>
+          <!-- Simple, clean filter bar -->
+          <div class="flex flex-wrap items-center gap-2 text-xs">
+            <label class="inline-flex items-center cursor-pointer select-none bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 hover:bg-gray-100">
+              <input type="checkbox" bind:checked={onlyWhatsApp} class="rounded border-gray-300 text-indigo-600 mr-1.5" />
+              <span class="font-semibold text-gray-700">📱 Com Telefone</span>
+            </label>
 
-              <label class="inline-flex items-center cursor-pointer select-none bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 hover:bg-gray-100">
-                <input type="checkbox" bind:checked={hideContactedOrArchived} class="rounded border-gray-300 text-indigo-600 mr-1.5" />
-                <span class="font-semibold text-gray-700">🙈 Ocultar já Contatados</span>
-              </label>
+            <label class="inline-flex items-center cursor-pointer select-none bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 hover:bg-gray-100">
+              <input type="checkbox" bind:checked={hideContactedOrArchived} class="rounded border-gray-300 text-indigo-600 mr-1.5" />
+              <span class="font-semibold text-gray-700">🙈 Ocultar Contatados</span>
+            </label>
 
-              <label class="inline-flex items-center cursor-pointer select-none bg-amber-50 px-3 py-1.5 rounded-lg border border-amber-200 hover:bg-amber-100">
-                <input type="checkbox" bind:checked={onlyStarred} class="rounded border-amber-300 text-amber-600 mr-1.5" />
-                <span class="font-semibold text-amber-800">⭐ Apenas Em Negociação</span>
-              </label>
-            </div>
-
-            <!-- WhatsApp Mode Selector: API Background (0 Tabs) vs App vs Web -->
-            <div class="inline-flex items-center bg-green-50 p-1 rounded-lg border border-green-200">
-              <span class="text-[11px] font-semibold text-green-800 px-2">Modo WA:</span>
-              <button
-                type="button"
-                onclick={() => setWhatsAppMode('api')}
-                title="Envia em segundo plano via API sem abrir NENHUMA aba no navegador!"
-                class="px-2 py-1 rounded text-[11px] font-semibold transition-colors {whatsappMode === 'api' ? 'bg-green-600 text-white shadow-sm' : 'text-green-800 hover:bg-green-100'}"
-              >
-                🚀 API Direto (0 Abas)
-              </button>
-              <button
-                type="button"
-                onclick={() => setWhatsAppMode('app')}
-                title="Abre no aplicativo WhatsApp Desktop do Windows (se instalado)"
-                class="px-2 py-1 rounded text-[11px] font-semibold transition-colors {whatsappMode === 'app' ? 'bg-green-600 text-white shadow-sm' : 'text-green-800 hover:bg-green-100'}"
-              >
-                ⚡ App Windows
-              </button>
-              <button
-                type="button"
-                onclick={() => setWhatsAppMode('web')}
-                title="Abre no WhatsApp Web do navegador"
-                class="px-2 py-1 rounded text-[11px] font-semibold transition-colors {whatsappMode === 'web' ? 'bg-green-600 text-white shadow-sm' : 'text-green-800 hover:bg-green-100'}"
-              >
-                🌐 Web
-              </button>
-            </div>
+            <label class="inline-flex items-center cursor-pointer select-none bg-amber-50 px-3 py-1.5 rounded-lg border border-amber-200 hover:bg-amber-100">
+              <input type="checkbox" bind:checked={onlyStarred} class="rounded border-amber-300 text-amber-600 mr-1.5" />
+              <span class="font-semibold text-amber-800">⭐ Favoritos</span>
+            </label>
           </div>
         </div>
 
@@ -1207,7 +1130,6 @@
             {@const crmInfo = crmState[leadKey]}
             {@const activeMode = messageModeByCard[leadKey] || 'initial'}
             {@const activeMsgText = getActiveMessage(lead)}
-            {@const inQueue = autoQueue.some(q => q.key === leadKey)}
             {@const phoneKind = getPhoneType(lead)}
 
             <div class="bg-white rounded-xl shadow-sm border {crmInfo?.status === 'negotiating' ? 'border-amber-400 ring-2 ring-amber-100' : crmInfo?.status === 'contacted' ? 'border-green-200 opacity-85' : 'border-gray-200'} overflow-hidden transition-all">
@@ -1221,20 +1143,18 @@
                       </span>
                     {:else if crmInfo?.status === 'negotiating'}
                       <span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">
-                        ⭐ Em Negociação
+                        ⭐ Favorito
                       </span>
                     {/if}
                   </div>
                   <p class="text-sm text-gray-500 mt-1">📍 {lead.osc.municipio}, {lead.osc.uf} • CNPJ: {lead.osc.cnpj} • Fundada em {lead.osc.ano_fundacao || 'N/A'}</p>
 
-                  <!-- Quick Research & Cross-Sell Links -->
                   <div class="flex flex-wrap items-center gap-2 mt-2.5">
                     <a
                       href="/?cnpj={lead.osc.cnpj}"
                       target="_blank"
                       rel="noopener noreferrer"
                       class="inline-flex items-center px-2.5 py-1 rounded text-xs font-semibold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border border-indigo-200"
-                      title="Abrir todos os editais compatíveis com esta ONG no Match Receptivo"
                     >
                       🔍 Ver Todos os Editais p/ esta ONG ↗
                     </a>
@@ -1244,7 +1164,7 @@
                       rel="noopener noreferrer"
                       class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-pink-50 text-pink-700 hover:bg-pink-100 border border-pink-200"
                     >
-                      📸 Buscar Instagram / Web ↗
+                      📸 Buscar Web / Instagram ↗
                     </a>
                   </div>
                 </div>
@@ -1259,7 +1179,7 @@
                     </span>
                   {:else if phoneKind === 'landline'}
                     <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">
-                      ☎️ Fixo (Possível WA Business)
+                      ☎️ Telefone Fixo
                     </span>
                   {:else}
                     <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-500 border border-gray-200">
@@ -1275,18 +1195,18 @@
                   <p class="text-gray-700 text-sm">{lead.motivo_match}</p>
                 </div>
 
-                <div class="bg-gray-50 p-3.5 rounded-lg border border-gray-100 grid grid-cols-2 gap-4 text-sm">
+                <div class="bg-gray-50 p-3 rounded-lg border border-gray-100 grid grid-cols-2 gap-4 text-sm">
                   <div>
                     {#if lead.contatos_encontrados?.whatsapp}
-                      <span class="text-green-700 font-medium">📱 WhatsApp: {lead.contatos_encontrados.whatsapp}</span>
+                      <span class="text-green-700 font-medium">📱 Telefone: {lead.contatos_encontrados.whatsapp}</span>
                     {:else if lead.osc?.official_contacts?.ddd_telefone_1}
-                      <span class="text-gray-700">📱 Tel Oficial: {lead.osc.official_contacts.ddd_telefone_1}</span>
+                      <span class="text-gray-700">📱 Telefone: {lead.osc.official_contacts.ddd_telefone_1}</span>
                     {:else}
                       <span class="text-gray-400">📱 Telefone: Não disponível</span>
                     {/if}
                   </div>
                   <div>
-                    {#if lead.contatos_encontrados?.email}
+                    {#if lead.contatos_encontrados?.email && lead.contatos_encontrados.email !== 'N/A'}
                       <span class="text-blue-700">📧 {lead.contatos_encontrados.email}</span>
                     {:else if lead.osc?.official_contacts?.email}
                       <span class="text-gray-700">📧 {lead.osc.official_contacts.email}</span>
@@ -1296,16 +1216,15 @@
                   </div>
                 </div>
 
-                <!-- Message Mode Switcher -->
+                <!-- Clean Message Mode Switcher -->
                 <div>
-                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Abordagem WhatsApp</h4>
-                    <div class="flex flex-wrap gap-1">
+                  <div class="flex items-center justify-between mb-2">
+                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Mensagem WhatsApp</h4>
+                    <div class="flex space-x-1">
                       {#each [
-                        { id: 'opener', label: '🛡️ 1º Contato Curto (Anti-Ban)' },
-                        { id: 'initial', label: '💬 Pitch Completo' },
-                        { id: 'followup', label: '⏰ Follow-up (Urgência)' },
-                        { id: 'audio', label: '🎙️ Roteiro Áudio (25s)' }
+                        { id: 'initial', label: '💬 Mensagem Completa' },
+                        { id: 'opener', label: '🛡️ Saudação Curta (2 linhas)' },
+                        { id: 'followup', label: '⏰ Follow-up' }
                       ] as m}
                         <button
                           class="px-2.5 py-1 rounded text-xs font-medium transition-colors {activeMode === m.id ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}"
@@ -1318,33 +1237,27 @@
                   </div>
                   <textarea
                     class="w-full text-sm text-gray-700 p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm"
-                    rows="4"
+                    rows="3"
                     value={activeMsgText}
                     oninput={(e) => { lead.whatsapp_message = (e.target as HTMLTextAreaElement).value; }}
                   ></textarea>
                 </div>
 
-                <!-- Action Bar + CRM Status Controls -->
+                <!-- Clean Action Bar -->
                 <div class="flex flex-wrap justify-between items-center gap-3 pt-2 border-t border-gray-100">
                   <div class="flex items-center space-x-2">
                     <button
                       class="text-xs font-semibold text-indigo-600 hover:text-indigo-800"
                       onclick={() => toggleDossier(index)}
                     >
-                      {openDossierIndex === index ? '▲ Ocultar Dossiê' : '▼ Ver Dossiê Completo'}
+                      {openDossierIndex === index ? '▲ Ocultar Dossiê' : '▼ Ver Dossiê'}
                     </button>
                     <span class="text-gray-300">|</span>
                     <button
-                      class="px-2 py-1 rounded text-xs font-medium {crmInfo?.status === 'negotiating' ? 'bg-amber-200 text-amber-900' : 'bg-gray-100 text-gray-600 hover:bg-amber-50'}"
+                      class="px-2.5 py-1 rounded text-xs font-medium {crmInfo?.status === 'negotiating' ? 'bg-amber-200 text-amber-900' : 'bg-gray-100 text-gray-600 hover:bg-amber-50'}"
                       onclick={() => setLeadStatus(lead.edital_id, lead.osc.cnpj, crmInfo?.status === 'negotiating' ? 'pending' : 'negotiating')}
                     >
-                      ⭐ {crmInfo?.status === 'negotiating' ? 'Em Negociação' : 'Favoritar'}
-                    </button>
-                    <button
-                      class="px-2 py-1 rounded text-xs font-medium {crmInfo?.status === 'contacted' ? 'bg-green-200 text-green-900' : 'bg-gray-100 text-gray-600 hover:bg-green-50'}"
-                      onclick={() => setLeadStatus(lead.edital_id, lead.osc.cnpj, crmInfo?.status === 'contacted' ? 'pending' : 'contacted')}
-                    >
-                      ✅ {crmInfo?.status === 'contacted' ? 'Contatado' : 'Marcar Contatado'}
+                      ⭐ {crmInfo?.status === 'negotiating' ? 'Favorito' : 'Favoritar'}
                     </button>
                     <button
                       class="px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-500 hover:bg-red-50 hover:text-red-600"
@@ -1355,7 +1268,7 @@
                     </button>
                   </div>
 
-                  <div class="flex flex-wrap items-center gap-2">
+                  <div class="flex items-center gap-2">
                     {#if lead.edital_url}
                       <a
                         href={lead.edital_url}
@@ -1370,21 +1283,9 @@
                       type="button"
                       onclick={() => copyMessageOnly(lead, activeMsgText)}
                       class="inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-xs font-semibold rounded-md text-gray-700 bg-white hover:bg-gray-50"
-                      title="Copiar texto da mensagem para a área de transferência"
                     >
                       {copiedFeedbackKey === leadKey ? '✓ Copiado!' : '📋 Copiar'}
                     </button>
-                    {#if hasAnyPhone(lead)}
-                      <button
-                        type="button"
-                        disabled={inQueue}
-                        onclick={() => addLeadToAutoQueue(lead, activeMsgText)}
-                        class="inline-flex items-center px-3 py-2 border text-xs font-semibold rounded-md transition-colors {inQueue ? 'bg-indigo-50 text-indigo-400 border-indigo-100 cursor-default' : 'border-indigo-200 text-indigo-700 bg-indigo-50 hover:bg-indigo-100'}"
-                        title="Enfileirar para envio automático no horário comercial (09h–17h30)"
-                      >
-                        {inQueue ? '🕒 Na Fila' : '🤖 + Fila'}
-                      </button>
-                    {/if}
                     {#if getWhatsAppLink(lead, activeMsgText)}
                       <a
                         href={getWhatsAppLink(lead, activeMsgText)}
@@ -1393,10 +1294,9 @@
                         class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-xs font-semibold rounded-md text-white bg-green-600 hover:bg-green-700"
                       >
                         {#if directSendFeedbackKey === leadKey}
-                          ✓ Enviado s/ Abrir Aba!
+                          ✓ Enviado!
                         {:else}
-                          <span class="mr-1.5">{whatsappMode === 'api' ? '🚀' : whatsappMode === 'app' ? '⚡' : '💬'}</span>
-                          Enviar WhatsApp {whatsappMode === 'api' ? '(0 Abas)' : whatsappMode === 'app' ? '(App)' : '(Web)'}
+                          <span class="mr-1.5">💬</span> Enviar WhatsApp
                         {/if}
                       </a>
                     {:else}
@@ -1404,7 +1304,7 @@
                         disabled
                         class="inline-flex items-center px-3 py-2 border border-gray-200 text-xs font-medium rounded-md text-gray-400 bg-gray-100 cursor-not-allowed"
                       >
-                        WhatsApp Indisponível
+                        Sem Telefone
                       </button>
                     {/if}
                   </div>
@@ -1430,35 +1330,10 @@
       <!-- Manual Search Results -->
       <div class="p-5 bg-white border-b border-gray-200 shadow-sm z-10 shrink-0 flex flex-wrap justify-between items-center gap-3">
         <h2 class="text-lg font-bold text-gray-800">Resultados da Busca Manual</h2>
-        <div class="flex items-center gap-3">
-          <label class="inline-flex items-center cursor-pointer select-none bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 text-xs">
-            <input type="checkbox" bind:checked={onlyWhatsApp} class="rounded border-gray-300 text-indigo-600 mr-1.5" />
-            <span class="font-semibold text-gray-700">📱 Apenas com Telefone</span>
-          </label>
-          <div class="inline-flex items-center bg-green-50 p-1 rounded-lg border border-green-200 text-xs">
-            <button
-              type="button"
-              onclick={() => setWhatsAppMode('api')}
-              class="px-2 py-1 rounded text-[11px] font-semibold transition-colors {whatsappMode === 'api' ? 'bg-green-600 text-white shadow-sm' : 'text-green-800 hover:bg-green-100'}"
-            >
-              🚀 API (0 Abas)
-            </button>
-            <button
-              type="button"
-              onclick={() => setWhatsAppMode('app')}
-              class="px-2 py-1 rounded text-[11px] font-semibold transition-colors {whatsappMode === 'app' ? 'bg-green-600 text-white shadow-sm' : 'text-green-800 hover:bg-green-100'}"
-            >
-              ⚡ App
-            </button>
-            <button
-              type="button"
-              onclick={() => setWhatsAppMode('web')}
-              class="px-2 py-1 rounded text-[11px] font-semibold transition-colors {whatsappMode === 'web' ? 'bg-green-600 text-white shadow-sm' : 'text-green-800 hover:bg-green-100'}"
-            >
-              🌐 Web
-            </button>
-          </div>
-        </div>
+        <label class="inline-flex items-center cursor-pointer select-none bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 text-xs">
+          <input type="checkbox" bind:checked={onlyWhatsApp} class="rounded border-gray-300 text-indigo-600 mr-1.5" />
+          <span class="font-semibold text-gray-700">📱 Apenas com Telefone</span>
+        </label>
       </div>
       <div class="flex-1 overflow-y-auto p-6 space-y-6">
         {#if manualSearchResults.length === 0 && !manualSearchLoading}
@@ -1486,34 +1361,11 @@
                   <div>
                     <h3 class="text-lg font-bold text-gray-900">{lead.osc.nome}</h3>
                     <p class="text-sm text-gray-500 mt-1">📍 {lead.osc.municipio}, {lead.osc.uf} • CNPJ: {lead.osc.cnpj}</p>
-                    <div class="flex flex-wrap items-center gap-2 mt-2">
-                      <a
-                        href="/?cnpj={lead.osc.cnpj}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center px-2.5 py-1 rounded text-xs font-semibold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border border-indigo-200"
-                      >
-                        🔍 Ver Todos os Editais p/ esta ONG ↗
-                      </a>
-                      <a
-                        href="https://www.google.com/search?q={encodeURIComponent(`${lead.osc.nome} ${lead.osc.municipio} instagram`)}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-pink-50 text-pink-700 hover:bg-pink-100 border border-pink-200"
-                      >
-                        📸 Buscar Instagram / Web ↗
-                      </a>
-                    </div>
                   </div>
                   <div class="flex flex-col items-end space-y-2">
                     <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-bold {getScoreColor(lead.score)}">
                       Match: {lead.score}%
                     </span>
-                    {#if hasAnyPhone(lead)}
-                      <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800 border border-green-200">
-                        📱 Com Telefone
-                      </span>
-                    {/if}
                   </div>
                 </div>
                 <div class="p-5 space-y-4">
@@ -1525,7 +1377,7 @@
                     <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Mensagem Sugerida</h4>
                     <textarea
                       class="w-full text-sm text-gray-700 p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm"
-                      rows="4"
+                      rows="3"
                       bind:value={lead.whatsapp_message}
                     ></textarea>
                   </div>
@@ -1534,7 +1386,7 @@
                       class="text-xs font-semibold text-indigo-600 hover:text-indigo-800"
                       onclick={() => toggleDossier(index + 1000)}
                     >
-                      {openDossierIndex === (index + 1000) ? '▲ Ocultar Dossiê' : '▼ Ver Dossiê Completo'}
+                      {openDossierIndex === (index + 1000) ? '▲ Ocultar Dossiê' : '▼ Ver Dossiê'}
                     </button>
                     <div class="flex space-x-2">
                       {#if lead.edital_url}
@@ -1554,8 +1406,7 @@
                           onclick={(e) => openWhatsAppSmart(e, lead, lead.whatsapp_message, false)}
                           class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-xs font-semibold rounded-md text-white bg-green-600 hover:bg-green-700"
                         >
-                          <span class="mr-1.5">{whatsappMode === 'api' ? '🚀' : whatsappMode === 'app' ? '⚡' : '💬'}</span>
-                          Enviar WhatsApp {whatsappMode === 'api' ? '(0 Abas)' : whatsappMode === 'app' ? '(App)' : '(Web)'}
+                          💬 Enviar WhatsApp
                         </a>
                       {/if}
                     </div>
@@ -1576,13 +1427,12 @@
     {:else}
       <!-- Right Pane for Automation Tab: 7-Day Experiment Analytics + Queue + AI SDR Simulator -->
       <div class="flex-1 overflow-y-auto p-6 space-y-6">
-        <!-- Section 0: 7-Day Experiment Telemetry & CSV Export -->
         <div class="bg-white rounded-xl shadow-sm border border-purple-200 p-4 space-y-3">
           <div class="flex flex-wrap items-center justify-between gap-2">
             <div>
               <h3 class="text-sm font-bold text-purple-900">📊 Telemetria do Experimento de 7 Dias (Todos os Leads)</h3>
               <p class="text-xs text-gray-600">
-                Acompanhe quantos e quais perfis de OSCs recebem e respondem às mensagens da Angela para calibrar o funil.
+                Acompanhe quantos e quais perfis de OSCs recebem e respondem às mensagens da Angela.
               </p>
             </div>
             <button
@@ -1606,7 +1456,7 @@
             </div>
             <div class="p-2.5 rounded-lg bg-blue-50 border border-blue-200">
               <div class="text-lg font-extrabold text-blue-700">{autoQueue.filter(i => i.phoneType === 'landline').length}</div>
-              <div class="text-[11px] text-blue-800 font-medium">☎️ Fixos (WA Bus.)</div>
+              <div class="text-[11px] text-blue-800 font-medium">☎️ Fixos</div>
             </div>
             <div class="p-2.5 rounded-lg bg-indigo-50 border border-indigo-200">
               <div class="text-lg font-extrabold text-indigo-700">{sentQueueItems.length}</div>
@@ -1624,7 +1474,7 @@
           </div>
         </div>
 
-        <!-- Section 1: Business-Hours Queue -->
+        <!-- Business-Hours Queue -->
         <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
           <div class="p-4 border-b border-gray-100 flex flex-wrap justify-between items-center gap-2 bg-gray-50">
             <div>
@@ -1658,7 +1508,7 @@
           <div class="divide-y divide-gray-100 max-h-72 overflow-y-auto">
             {#if autoQueue.length === 0}
               <div class="p-6 text-center text-xs text-gray-500">
-                Nenhuma ONG na fila. Clique em <strong>"🧪 Enfileirar TODOS os Leads ({totalLeadsWithPhone} ONGs)"</strong> à esquerda para carregar todos os leads para o experimento!
+                Nenhuma ONG na fila. Clique em <strong>"🧪 Enfileirar TODOS os Leads"</strong> à esquerda para carregar todos os leads para o experimento!
               </div>
             {:else}
               {#each autoQueue as item}
@@ -1674,11 +1524,6 @@
                       <span class="px-2 py-0.5 rounded-full text-[10px] font-bold {getScoreColor(item.lead.score)}">
                         {item.lead.score}%
                       </span>
-                      {#if item.replyIntent}
-                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-purple-100 text-purple-800">
-                          Respondeu: {item.replyIntent}
-                        </span>
-                      {/if}
                     </div>
                     <p class="text-gray-500 truncate mt-0.5">{item.message}</p>
                   </div>
@@ -1694,7 +1539,7 @@
                       </span>
                     {:else if item.status === 'sending'}
                       <span class="px-2.5 py-1 rounded-full bg-indigo-100 text-indigo-800 font-semibold animate-pulse">
-                        💬 Digitando e Enviando...
+                        💬 Enviando...
                       </span>
                     {:else if item.status === 'sent'}
                       <span class="px-2.5 py-1 rounded-full bg-green-100 text-green-800 font-semibold">
@@ -1720,14 +1565,14 @@
           </div>
         </div>
 
-        <!-- Section 2: Interactive AI SDR Auto-Responder Simulator -->
+        <!-- Interactive AI SDR Simulator -->
         <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
           <div class="p-4 border-b border-gray-100 bg-gradient-to-r from-emerald-50 to-teal-50">
             <div class="flex flex-wrap items-center justify-between gap-2">
               <div>
-                <h3 class="text-base font-bold text-gray-900">🧠 Agente IA SDR — Analisador e Respondedor de WhatsApp</h3>
+                <h3 class="text-base font-bold text-gray-900">🧠 Agente IA SDR — Simulador de Respostas de WhatsApp</h3>
                 <p class="text-xs text-gray-600">
-                  Simule ou teste como o Assistente de IA da Maria Angela identifica a intenção da ONG, mantém o nome do edital em segredo, responde dúvidas e notifica a Angela!
+                  Teste como o Assistente de IA identifica a intenção da ONG, mantém o edital em segredo e notifica a Angela.
                 </p>
               </div>
               <button
@@ -1740,7 +1585,7 @@
             </div>
 
             <div class="mt-3">
-              <label class="block text-xs font-semibold text-gray-700 mb-1">ONG em conversa (Contexto do Edital + Dossiê):</label>
+              <label class="block text-xs font-semibold text-gray-700 mb-1">ONG em conversa:</label>
               <select
                 bind:value={sdrSelectedLeadKey}
                 class="w-full px-3 py-1.5 text-xs border border-gray-300 rounded-md bg-white"
@@ -1753,9 +1598,7 @@
               </select>
             </div>
 
-            <!-- Preset Quick Replies from NGO -->
             <div class="mt-3 flex flex-wrap gap-1.5">
-              <span class="text-[11px] font-semibold text-gray-600 self-center mr-1">Testar resposta rápida da ONG:</span>
               {#each [
                 'Olá! Pode enviar o resumo sim, temos interesse!',
                 'Qual é o nome desse edital e qual instituição está financiando?',
@@ -1774,11 +1617,10 @@
             </div>
           </div>
 
-          <!-- Chat History Area -->
           <div class="p-4 bg-gray-50 space-y-3 max-h-96 overflow-y-auto">
             {#if sdrConversation.length === 0 && !sdrLoading}
               <div class="text-center py-6 text-xs text-gray-500">
-                Clique em um dos botões de teste acima ou digite uma mensagem abaixo como se você fosse a ONG respondendo no WhatsApp.
+                Clique em um dos botões de teste acima ou digite uma mensagem abaixo.
               </div>
             {/if}
 
@@ -1830,7 +1672,6 @@
             {/if}
           </div>
 
-          <!-- Input Bar -->
           <form
             onsubmit={(e) => { e.preventDefault(); simulateIncomingOngReply(); }}
             class="p-3 bg-white border-t border-gray-200 flex gap-2"
@@ -1846,7 +1687,7 @@
               disabled={sdrLoading || !sdrIncomingInput.trim()}
               class="px-4 py-2 rounded-lg text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 disabled:bg-gray-300"
             >
-              Simular Resposta da ONG ➔
+              Simular Resposta ➔
             </button>
           </form>
         </div>
