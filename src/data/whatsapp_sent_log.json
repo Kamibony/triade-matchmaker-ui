@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-11-13T12:45:26.575Z",
+  "last_run_at": "2026-11-13T13:47:34.561Z",
   "sent_leads": {
     "19405_05121802000173": {
       "cnpj": "05121802000173",
@@ -11,6 +11,150 @@
       "phone": "559391572278",
       "phone_type": "mobile",
       "sent_at": "2026-11-13T12:44:27.916Z",
+      "mode": "two_step_opener"
+    },
+    "19405_04240901000101": {
+      "cnpj": "04240901000101",
+      "nome": "ASSOCIACAO SOLIDARIA ECONOMICA E ECOLOGICA DE FRUTAS DA AMAZONIA - ASSEEFA",
+      "uf": "PA",
+      "municipio": "ANAPU",
+      "edital_id": "19405",
+      "score": 95,
+      "phone": "559191620098",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T13:34:47.547Z",
+      "mode": "two_step_opener"
+    },
+    "19405_20086786000119": {
+      "cnpj": "20086786000119",
+      "nome": "ASSOCIACAO INSTITUTO BEPOTIRE XIKRIN",
+      "uf": "PA",
+      "municipio": "ANAPU",
+      "edital_id": "19405",
+      "score": 95,
+      "phone": "559391332014",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T13:35:56.212Z",
+      "mode": "two_step_opener"
+    },
+    "19405_48687050000115": {
+      "cnpj": "48687050000115",
+      "nome": "ASSOCIACAO INDIGENA KATAP-TI XIKRIN DA ALDEIA PRINDJAM",
+      "uf": "PA",
+      "municipio": "ANAPU",
+      "edital_id": "19405",
+      "score": 95,
+      "phone": "559391953932",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T13:37:19.222Z",
+      "mode": "two_step_opener"
+    },
+    "19405_05762899000101": {
+      "cnpj": "05762899000101",
+      "nome": "ASSOCIACAO ESPERANCA DO PROJETO DO DESENVOLVIMENTO SUSTENTAVEL DO ANAPU/PARA",
+      "uf": "PA",
+      "municipio": "ANAPU",
+      "edital_id": "19405",
+      "score": 95,
+      "phone": "559193579325",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T13:38:36.480Z",
+      "mode": "two_step_opener"
+    },
+    "19688_07012300000130": {
+      "cnpj": "07012300000130",
+      "nome": "CENTRO DE EXCELENCIA EM EDUCACAO, SAUDE E ASSISTENCIA SOCIAL",
+      "uf": "PE",
+      "municipio": "IPOJUCA",
+      "edital_id": "19688",
+      "score": 85,
+      "phone": "558183490545",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T13:39:32.323Z",
+      "mode": "two_step_opener"
+    },
+    "19688_06152319000119": {
+      "cnpj": "06152319000119",
+      "nome": "INSTITUTO ENTRE VIDAS - IEV",
+      "uf": "PE",
+      "municipio": "CARUARU",
+      "edital_id": "19688",
+      "score": 85,
+      "phone": "558781439170",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T13:40:55.548Z",
+      "mode": "two_step_opener"
+    },
+    "16087_59408503000143": {
+      "cnpj": "59408503000143",
+      "nome": "ASSOCIACAO ESPACO DIPSI",
+      "uf": "PR",
+      "municipio": "CURITIBA",
+      "edital_id": "16087",
+      "score": 85,
+      "phone": "554199524398",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T13:41:54.002Z",
+      "mode": "two_step_opener"
+    },
+    "19397_56082011000112": {
+      "cnpj": "56082011000112",
+      "nome": "ASSOCIACAO CENTRO DE PESQUISA E TECNOLOGIA DE AGROECOLOGIA INTEGRADA",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "edital_id": "19397",
+      "score": 85,
+      "phone": "552190149679",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T13:43:15.806Z",
+      "mode": "two_step_opener"
+    },
+    "17931_44044613000104": {
+      "cnpj": "44044613000104",
+      "nome": "TEIA DE ENVOLVIMENTO HUMANO E AMBIENTAL - TEHA",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "edital_id": "17931",
+      "score": 85,
+      "phone": "559191509742",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T13:44:27.818Z",
+      "mode": "two_step_opener"
+    },
+    "17931_07553026000106": {
+      "cnpj": "07553026000106",
+      "nome": "ASSOCIACAO POLO PRODUTIVO PARA",
+      "uf": "PA",
+      "municipio": "BELEM",
+      "edital_id": "17931",
+      "score": 85,
+      "phone": "559185424582",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T13:45:33.163Z",
+      "mode": "two_step_opener"
+    },
+    "19461_47482982000169": {
+      "cnpj": "47482982000169",
+      "nome": "ASSOCIACAO DE DESENVOLVIMENTO COMUNITARIO DA COHAB I E II DE PAO DE ACUCAR",
+      "uf": "AL",
+      "municipio": "PAO DE ACUCAR",
+      "edital_id": "19461",
+      "score": 85,
+      "phone": "558298225244",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T13:46:27.496Z",
+      "mode": "two_step_opener"
+    },
+    "19405_21889603000328": {
+      "cnpj": "21889603000328",
+      "nome": "INSTITUTO PERMANECER PARA SOBREVIVER - FLORESCER",
+      "uf": "PA",
+      "municipio": "ANAPU",
+      "edital_id": "19405",
+      "score": 85,
+      "phone": "556384922104",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T13:47:34.561Z",
       "mode": "two_step_opener"
     }
   }
