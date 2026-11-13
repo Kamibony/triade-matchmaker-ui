@@ -4,660 +4,1028 @@
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "09150378000146",
-      "nome": "ASSOCIACAO DE DESENVOLVIMENTO COMUNITARIO RURAL DA DATA CACHOEIRA",
-      "uf": "PI",
-      "municipio": "PAULISTANA",
+      "cnpj": "29888911000189",
+      "nome": "ASSOCIACAO DE DESENVOLVIMENTO COMUNITARIO DO SITIO MORRO DO CHAPEU",
+      "uf": "AL",
+      "municipio": "PAO DE ACUCAR",
       "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2007,
+      "ano_fundacao": 2017,
       "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
       "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
       "situacao_cadastral": "ATIVA",
       "official_contacts": {
-        "ddd_telefone_1": "8934871197"
+        "ddd_telefone_1": "8296968689",
+        "ddd_telefone_2": "8236241514"
       }
     },
-    "score": 85,
-    "motivo_match": "A associação está localizada em Paulistana, Piauí, no coração da Caatinga, e seu nome indica foco no desenvolvimento comunitário rural, alinhando-se perfeitamente com os temas de recuperação socioprodutiva e geração de renda do edital.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que vocês fazem pelo desenvolvimento rural em Paulistana. Mapeei recentemente uma oportunidade de financiamento no valor de até R$ 55.200.000 que tem tudo a ver com a atuação da associação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "score": 75,
+    "motivo_match": "A OSC está localizada em Pão de Açúcar, AL (região de Caatinga), e possui foco em desenvolvimento comunitário. Embora sua atividade principal seja voltada à defesa de direitos sociais, o nome e a atuação territorial permitem a adaptação para ações de recuperação socioprodutiva e combate à desertificação exigidas pelo edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Parabenizo muito pelo trabalho que vocês desenvolvem na comunidade de Pão de Açúcar! Mapeamos uma excelente oportunidade de financiamento de até R$ 55.200.000 voltada exatamente para fortalecer a atuação de organizações na sua área. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos como viabilizar essa captação?",
     "contatos_encontrados": {
-      "whatsapp": "8934871197",
+      "whatsapp": "8296968689",
       "instagram": null
     },
-    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Associação de Desenvolvimento Comunitário Rural da Data Cachoeira\n- **Localização:** Paulistana, PI (Bioma Caatinga)\n- **Natureza:** Associação Privada\n- **Ano de Fundação:** 2007 (Maturidade institucional sólida de quase 20 anos)\n- **Atividades Principais:** Foco em direitos sociais, organizações associativas e desenvolvimento comunitário.\n\n### 🎯 Alinhamento com o Edital\n- **Território:** Situada em região semiárida prioritária para o combate à desertificação.\n- **Vocação:** O nome e a natureza comunitária rural combinam com as exigências de recuperação socioprodutiva e envolvimento local exigidas pelo financiamento de até R$ 55,2 milhões.",
-    "created_at": "2026-11-13T19:34:41.440Z"
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** ASSOCIAÇÃO DE DESENVOLVIMENTO COMUNITÁRIO DO SÍTIO MORRO DO CHAPÉU\n- **Localização:** Pão de Açúcar, AL (Zona Rural - Sítio Morro do Chapéu)\n- **Natureza:** Associação Privada\n- **Ano de Fundação:** 2017 (Maturidade de ~7 anos)\n- **CNAE Principal:** Atividades de associações de defesa de direitos sociais\n\n### 🎯 Alinhamento com o Edital\n- **Localização Estratégica:** Situada no bioma Caatinga (Alagoas), atendendo diretamente aos critérios geográficos do Edital Recaatingar.\n- **Vocação Comunitária:** Por ser uma associação de desenvolvimento comunitário, possui forte capilaridade local para implementar ações socioprodutivas e geração de renda.\n- **Pontos de Atenção:** O estatuto social e o CNAE principal precisam contemplar explicitamente pautas ambientais ou sustentabilidade para garantir plena conformidade na fase de habilitação.",
+    "created_at": "2026-11-13T22:45:46.483Z"
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "10667698000157",
-      "nome": "ASSOCIACAO DE DESENVOLVIMENTO COMUNITARIO DA LOCALIDADE SERRA DOS INACIOS",
-      "uf": "PI",
-      "municipio": "PIRIPIRI",
+      "cnpj": "02885544000103",
+      "nome": "ASSOCIACAO CAATINGA",
+      "uf": "CE",
+      "municipio": "FORTALEZA",
       "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2009,
+      "ano_fundacao": 1998,
       "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Outras atividades de serviços pessoais não especificadas anteriormente",
+      "cnae_secundario_descricao": "Conservação de florestas nativas | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente",
       "situacao_cadastral": "ATIVA",
       "official_contacts": {
-        "ddd_telefone_1": "8699222152"
+        "ddd_telefone_1": "8599416997"
       }
     },
-    "score": 85,
-    "motivo_match": "A associação está localizada em Piripiri (PI), região de transição com forte influência do bioma Caatinga e histórico de vulnerabilidade climática. O foco explícito em 'desenvolvimento comunitário' no nome da OSC alinha-se perfeitamente com a recuperação socioprodutiva e geração de renda exigidas pelo edital.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho de base que vocês realizam na região de Piripiri. Mapeamos uma oportunidade incrível de financiamento não reembolsável de até R$ 55.200.000 que tem tudo a ver com a atuação e os projetos de vocês. Vocês teriam disponibilidade esta semana para uma breve conversa sobre isso?",
+    "score": 98,
+    "motivo_match": "A Associação Caatinga possui perfeita aderência ao edital, pois atua desde 1998 na conservação do bioma Caatinga, desenvolvimento local sustentável e resiliência de comunidades no semiárido, estando sediada em Fortaleza/CE, exatamente na região foco da chamada.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o belo trabalho que vocês realizam na preservação da Caatinga e no apoio às comunidades. Mapeamos recentemente uma excelente oportunidade de financiamento não reembolsável de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês na pauta ambiental e socioprodutiva. Vocês teriam disponibilidade para uma breve conversa esta semana para alinharmos os detalhes?",
     "contatos_encontrados": {
-      "whatsapp": "8699222152",
+      "whatsapp": "8599416997",
       "instagram": null
     },
-    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Associação de Desenvolvimento Comunitário da Localidade Serra dos Inácios\n- **Localização:** Piripiri - PI\n- **Natureza:** Associação Privada\n- **Fundação:** 2009 (15 anos de atuação, indicando boa maturidade institucional)\n- **Atividade Principal (CNAE):** Atividades de associações de defesa de direitos sociais\n\n### 🎯 Alinhamento com o Edital\nA OSC possui forte vocação comunitária, operando na zona rural/periférica de Piripiri (PI), área propícia para ações de combate à desertificação e recuperação de terras degradadas na Caatinga. Embora o CNAE principal seja voltado à defesa de direitos, o nome e a atuação de base permitem o enquadramento em projetos de desenvolvimento comunitário, empreendedorismo e geração de renda exigidos pelo Edital Recaatingar.",
-    "created_at": "2026-11-13T19:34:44.515Z"
+    "dossieText": "### 🏛️ Perfil Institucional\nA **Associação Caatinga** é uma organização da sociedade civil sem fins lucrativos, fundada em 21 de outubro de 1998, com sede em Fortaleza, Ceará. Possui CNPJ 02.885.544/0001-03 e atua fortemente na conservação de florestas nativas, educação ambiental, proteção do bioma Caatinga e fomento ao desenvolvimento local sustentável, demonstrando alta maturidade técnica e institucional.\n\n### 🎯 Alinhamento com o Edital\nA OSC atende com excelência aos requisitos do Edital Recaatingar, pois sua missão histórica é voltada à valorização e conservação da Caatinga e ao aumento da resiliência de comunidades rurais. Suas frentes de atuação dialogam diretamente com os temas de meio ambiente, desenvolvimento comunitário e mitigação dos efeitos das mudanças climáticas no semiárido brasileiro.",
+    "created_at": "2026-11-13T22:45:51.952Z"
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "20263203000188",
-      "nome": "ASSOCIAO DE DESENVOLVIMENTO COMUNITARIO DE MUNDO NOVO E REGIAO",
+      "cnpj": "01190281000155",
+      "nome": "ASSOC DE DESENV COMUNITARIO DA COMUNIDADE MURICI",
       "uf": "PI",
-      "municipio": "BELEM DO PIAUI",
+      "municipio": "MADEIRO",
       "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2014,
+      "ano_fundacao": 1996,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0863931198"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A ADECOREM está localizada em Madeiro, PI, uma região de forte influência da Caatinga, e possui histórico em desenvolvimento comunitário. Embora seu CNAE principal seja de defesa de direitos sociais, o nome e a localização rural no Povoado Murici demonstram forte alinhamento com o desenvolvimento comunitário e socioeconômico exigido pelo edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho e admiro muito a atuação da ADECOREM junto à comunidade em Madeiro. Mapeamos recentemente uma oportunidade de financiamento de até R$ 55,2 milhões voltada exatamente para fortalecer iniciativas na área de atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos como viabilizar essa captação?",
+    "contatos_encontrados": {
+      "whatsapp": "0863931198",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOC DE DESENV COMUNITARIO DA COMUNIDADE MURICI (ADECOREM), CNPJ 01.190.281/0001-55, foi fundada em 1996 e está sediada na zona rural (Povoado Murici) do município de Madeiro, no estado do Piauí. Trata-se de uma organização com ampla maturidade institucional e forte enraizamento comunitário.\n\n### 🎯 Alinhamento com o Edital\nA organização está localizada em uma zona propícia para ações no bioma Caatinga e tem como foco o desenvolvimento comunitário. Isso se alinha diretamente com o Edital Recaatingar, que busca projetos de recuperação socioprodutiva de terras degradadas, mitigação das mudanças climáticas, empreendedorismo e geração de emprego e renda.",
+    "created_at": "2026-11-13T22:45:57.546Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "74151341000102",
+      "nome": "ASSOCIACAO DE DESENVOLVIMENTO COM RUR DE SANTA MARIA",
+      "uf": "PI",
+      "municipio": "CANTO DO BURITI",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1994,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8988179354"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada na zona rural de Canto do Buriti (PI), bioma Caatinga, e possui histórico desde 1994 voltado ao desenvolvimento comunitário e rural. Embora seu CNAE principal seja de defesa de direitos sociais, sua atuação prática em comunidade rural se alinha diretamente às ações de recuperação socioprodutiva de terras degradadas e geração de renda exigidas pelo edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho e admiro muito a trajetória da ADCSM no desenvolvimento rural de Canto do Buriti desde 1994. Mapeamos recentemente uma oportunidade de financiamento não reembolsável de até R$ 55,2 milhões voltada exatamente para ações socioprodutivas, meio ambiente e geração de renda na região de vocês. Teria disponibilidade esta semana para uma breve conversa sobre como viabilizar essa captação?",
+    "contatos_encontrados": {
+      "whatsapp": "8999920422",
+      "email": "jurandibarros2015@hotmail.com"
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Associação de Desenvolvimento Comunitário Rural de Santa Maria (ADCSM)\n- **CNPJ:** 74.151.341/0001-02\n- **Localização:** Canto do Buriti, PI (Zona Rural)\n- **Fundação:** 1994 (Mais de 30 anos de atuação)\n- **Natureza:** Associação Privada\n- **Atividade Principal:** Atividades de associações de defesa de direitos sociais (CNAE 9430-8/00)\n\n### 🎯 Alinhamento com o Edital\n- **Relevância Territorial:** Situada no bioma Caatinga (Piauí), área diretamente visada para combate à desertificação.\n- **Foco Comunitário:** Histórico de atuação no desenvolvimento rural, o que facilita a implementação de ações socioprodutivas.\n- **Oportunidade de Crescimento:** A captação de recursos de grande porte pode alavancar a infraestrutura produtiva e ambiental da comunidade atendida.",
+    "created_at": "2026-11-13T22:46:03.203Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "08184544000162",
+      "nome": "ASSOCIACAO COMUNITARIA DOS PEQUENOS PRODUTORES RURAIS DO ASSENTAMENTO LAMA PRETA",
+      "uf": "PI",
+      "municipio": "PIRACURUCA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Outras atividades de recreação e lazer não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8633431800",
+        "ddd_telefone_2": "8688058113"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada em Piracuruca (PI), região de atuação compatível com o bioma, e seu perfil de produtores rurais em assentamento alinha-se perfeitamente com ações de recuperação socioprodutiva e desenvolvimento comunitário.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho da associação no Piauí em prol dos pequenos produtores. Mapeamos uma oportunidade excelente de captação de recursos de até R$ 55,2 milhões voltada exatamente para fortalecer iniciativas da área de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "8633431800",
+      "email": "aecbarreto@hotmail.com",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO COMUNITARIA DOS PEQUENOS PRODUTORES RURAIS DO ASSENTAMENTO LAMA PRETA, CNPJ 08.184.544/0001-62, foi fundada em 19/06/2006 e está sediada na zona rural de Piracuruca, Piauí. Possui situação cadastral ativa, com atuação voltada para a defesa de direitos sociais e apoio a pequenos produtores rurais em assentamento.\n\n### 🎯 Alinhamento com o Edital\nO perfil da organização se encaixa nos eixos de desenvolvimento comunitário, empreendedorismo e geração de emprego e renda do Edital Recaatingar, uma vez que representa uma comunidade rural que pode ser beneficiada por ações de recuperação de terras e mitigação de impactos climáticos.",
+    "created_at": "2026-11-13T22:46:15.596Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "10411724000181",
+      "nome": "ASSOCIACAO COMUNIITARIA VIDA NOVA",
+      "uf": "BA",
+      "municipio": "MALHADA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2008,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7799985128"
+      }
+    },
+    "score": 65,
+    "motivo_match": "A associação está localizada em Malhada, BA, na região da Caatinga, o que atende geograficamente ao edital, embora sua atividade principal seja voltada à defesa de direitos sociais e radiodifusão comunitária (Nova Vida FM), exigindo adaptação para ações socioprodutivas.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho o belo trabalho comunitário que vocês realizam em Malhada através da Nova Vida FM e admirem muito a trajetória da associação. Mapeamos uma excelente oportunidade de financiamento não reembolsável de até R$ 55.200.000 que se alinha perfeitamente com iniciativas de desenvolvimento comunitário e impacto regional na Caatinga. Vocês teriam disponibilidade esta semana para uma breve conversa sobre essa captação?",
+    "contatos_encontrados": {
+      "whatsapp": "7799985128",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA Associação Comunitária Vida Nova (CNPJ 10.411.724/0001-81), conhecida como Nova Vida FM, é uma organização privada sem fins lucrativos fundada em 12 de setembro de 2008 (17 anos de existência), sediada em Malhada, BA. Sua principal atividade econômica registrada é de associações de defesa de direitos sociais (CNAE 9430-8/00), atuando fortemente no âmbito da comunicação e desenvolvimento comunitário local.\n\n### 🎯 Alinhamento com o Edital\nO Edital Recaatingar busca projetos de recuperação socioprodutiva de terras degradadas na Caatinga, com foco em meio ambiente e desenvolvimento comunitário. Estando situada em Malhada/BA (região semiárida), a OSC possui forte inserção territorial e potencial para mobilização comunitária, alinhando-se aos temas de desenvolvimento local, embora precise detalhar parcerias técnicas para a execução de recuperação de solos e combate à desertificação.",
+    "created_at": "2026-11-13T22:46:20.894Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "10534060000148",
+      "nome": "ASSOCIACAO RURAL BENEFICENTE E CULTURAL DO ASSENTAMENTO POR DO SOL",
+      "uf": "BA",
+      "municipio": "MATA DE SAO JOAO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2008,
       "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
       "cnae_secundario_descricao": "",
       "situacao_cadastral": "ATIVA",
       "official_contacts": {
-        "ddd_telefone_1": "8994343533"
+        "ddd_telefone_1": "7199744010"
       }
     },
     "score": 85,
-    "motivo_match": "A associação está localizada em Belém do Piauí, no coração da Caatinga, e possui foco em desenvolvimento comunitário, o que se alinha perfeitamente com a recuperação socioprodutiva de terras degradadas e combate à desertificação exigidos pelo edital.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que vocês desenvolvem em Belém do Piauí e região. Mapeamos recentemente uma oportunidade fantástica de financiamento não reembolsável de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês na comunidade. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos como viabilizar essa captação?",
+    "motivo_match": "A OSC está localizada em Mata de São João (BA), na região nordeste, e possui histórico de atuação com comunidade rural (Assentamento Pôr do Sol), o que se alinha diretamente com o foco em desenvolvimento comunitário e recuperação socioprodutiva do Edital Recaatingar.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que vocês realizam na comunidade em Mata de São João. Mapeamos uma excelente oportunidade de financiamento de até R$ 55.200.000 voltada exatamente para fortalecer a atuação de vocês e gerar ainda mais renda e impacto local. Vocês teriam disponibilidade para uma breve conversa esta semana?",
     "contatos_encontrados": {
-      "whatsapp": "8994343533",
+      "whatsapp": "7199744010",
       "instagram": null
     },
-    "dossieText": "### 🏛️ Perfil Institucional\nA Associação de Desenvolvimento Comunitário de Mundo Novo e Região, sediada em Belém do Piauí (PI), foi fundada em 2014, ostentando maturidade institucional de mais de uma década. Atua com foco em atividades associativas voltadas para o fortalecimento local.\n\n### 🎯 Alinhamento com o Edital\nO perfil da organização é altamente aderente ao Edital Recaatingar, pois atua diretamente na região geográfica prioritária (Caatinga) e possui em sua essência a pauta do desenvolvimento comunitário, pré-requisito fundamental para ações de recuperação socioprodutiva e geração de renda.",
-    "created_at": "2026-11-13T19:34:47.387Z"
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO RURAL BENEFICENTE E CULTURAL DO ASSENTAMENTO POR DO SOL é uma associação privada sem fins lucrativos fundada em 30/07/2008 (cerca de 18 anos de existência), com sede no município de Mata de São João, Bahia. Sua atuação é voltada para o associativismo rural e atendimento a comunidades e famílias em situação de vulnerabilidade.\n\n### 🎯 Alinhamento com o Edital\nO perfil da associação atende aos critérios do Edital Recaatingar por estar situada na Bahia e ter forte vínculo com o contexto rural/assentamento. A iniciativa apoia o desenvolvimento comunitário, empreendedorismo e geração de emprego e renda, pilares fundamentais para ações de recuperação socioprodutiva de terras degradadas.",
+    "created_at": "2026-11-13T22:46:26.769Z"
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "58833360000154",
-      "nome": "ASSOCIACAO DE DESENVOLVIMENTO COMUNITARIO RURAL DO SITIO LAGOA DO PEDRO",
+      "cnpj": "10632051000190",
+      "nome": "ASSOCIACAO DOS MORADORES E AMIGOS DO BAIRRO ALTO DOS MALAQUIAS",
+      "uf": "BA",
+      "municipio": "UAUA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7499626056"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada em Uauá, BA, região central do bioma Caatinga, e sua atuação comunitária possui forte aderência com o combate à desertificação e desenvolvimento socioprodutivo local. Embora o CNAE principal seja de defesa de direitos sociais, o escopo geográfico e a natureza de associação de moradores viabilizam a execução de projetos ambientais no semiárido.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho comunitário que vocês realizam em Uauá. Mapeamos uma oportunidade de financiamento extraordinária, no valor de até R$ 55.200.000, perfeitamente alinhada com ações de desenvolvimento e impacto na região de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "7499626056",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS MORADORES E AMIGOS DO BAIRRO ALTO DOS MALAQUIAS (AMABAM), inscrita no CNPJ 10.632.051/0001-90, foi fundada em 02/02/2009 e possui 17 anos de existência. Está sediada no município de Uauá, na Bahia, atuando como uma associação privada voltada a atividades de defesa de direitos sociais e organizações associativas.\n\n### 🎯 Alinhamento com o Edital\nO Edital Recaatingar visa apoiar a recuperação socioprodutiva de terras degradadas na Caatinga, mitigando mudanças climáticas e combatendo a desertificação com foco em desenvolvimento comunitário e geração de renda. A localização da AMABAM em Uauá insere a organização diretamente no bioma Caatinga, tornando-a uma potencial executora de ações locais de base comunitária, desde que ajuste seu planejamento institucional para a pauta ambiental.",
+    "created_at": "2026-11-13T22:46:33.184Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "12714451000170",
+      "nome": "ASSOCIACAO MURMURIO DA NATUREZA",
+      "uf": "CE",
+      "municipio": "MERUOCA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2010,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Outros alojamentos não especificados anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8896060020"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada em Meruoca (CE), em plena região da Caatinga, e possui atuação voltada para a defesa de direitos sociais. Embora seu CNAE principal seja focado em direitos sociais, a localização geográfica e o nome sugerem forte vínculo com questões ambientais e comunitárias locais, alinhando-se aos temas de desenvolvimento comunitário e recuperação de terras do edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanhamos e admiramos o trabalho que vocês desenvolvem em Meruoca. Mapeamos uma oportunidade incrível de financiamento não reembolsável de até R$ 55,2 milhões que se alinha perfeitamente com a atuação e o impacto social da associação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos como viabilizar essa captação?",
+    "contatos_encontrados": {
+      "whatsapp": "8896060020",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Razão Social:** Associação Murmúrio da Natureza\n- **CNPJ:** 12.714.451/0001-70\n- **Fundação:** 2010 (16 anos de histórico)\n- **Localização:** Sítio Recife, Zona Rural, Meruoca - CE\n- **Atividade Principal (CNAE):** Atividades de associações de defesa de direitos sociais\n- **Maturidade:** Organização consolidada no interior cearense, com forte arraigamento comunitário na zona rural.\n\n### 🎯 Alinhamento com o Edital\n- **Aderência Geográfica:** Situada em Meruoca, Ceará, bioma Caatinga, atendendo perfeitamente ao recorte territorial exigido.\n- **Aderência Temática:** Enquadra-se no eixo de desenvolvimento comunitário e pode abranger ações socioambientais voltadas para a mitigação das mudanças climáticas na região semiárida.\n- **Capacidade Operacional:** Mais de uma década de existência confere a maturidade necessária para gerir recursos de grande monta, desde que ajuste seu escopo de atuação para as ações socioprodutivas.",
+    "created_at": "2026-11-13T22:46:44.808Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "20960378000144",
+      "nome": "ASSOCIACAO DOS PRODUTORES RURAIS DA COMUNIDADE VEREDA DO MEIO",
+      "uf": "PI",
+      "municipio": "LAGOA ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8699305335"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada no Piauí (Lagoa Alegre) e representa produtores rurais, estando geograficamente inserida em zona de atuação compatível com a Caatinga e com o desenvolvimento comunitário e socioprodutivo exigido pelo edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que a Associação dos Produtores Rurais da Comunidade Vereda do Meio realiza em Lagoa Alegre. Mapeei recentemente uma oportunidade excelente de financiamento não reembolsável de até R$ 55.200.000 que tem tudo a ver com o perfil e as ações comunitárias de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana para alinharmos os detalhes?",
+    "contatos_encontrados": {
+      "whatsapp": "8699305335",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Associação dos Produtores Rurais da Comunidade Vereda do Meio (APRCVM)\n- **Localização:** Lagoa Alegre, PI (Zona Rural)\n- **Natureza jurídica:** Associação Privada\n- **Fundação:** 2014 (12 anos de atuação, demonstrando maturidade institucional)\n- **Atividade Principal (CNAE):** Defesa de direitos sociais\n\n### 🎯 Alinhamento com o Edital\n- **Aderência Temática:** O perfil da instituição foca em produtores rurais comunitários, alinhando-se diretamente com o desenvolvimento comunitário, empreendedorismo e geração de emprego e renda exigidos pelo Edital Recaatingar.\n- **Território:** Situada no estado do Piauí, a organização possui potencial para atuar na recuperação socioprodutiva de terras degradadas e no combate à desertificação.",
+    "created_at": "2026-11-13T22:46:55.949Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "26094419000143",
+      "nome": "ASSOCIACAO DOS AGRICULTORES FAMILIARES DO DISTRITO DE TABOCAS E SITIOS VIZINHOS",
+      "uf": "PE",
+      "municipio": "EXU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8799711944"
+      }
+    },
+    "score": 90,
+    "motivo_match": "A OSC está localizada em Exu (PE), no coração da Caatinga, e sua atuação voltada para agricultores familiares encaixa-se perfeitamente na recuperação socioprodutiva de terras degradadas e no desenvolvimento comunitário exigidos pelo edital.",
+    "whatsapp_message": "Olá, tudo bem? Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho e admiro muito o trabalho lindo que vocês fazem com os agricultores familiares em Exu! Acabei de mapear uma oportunidade de financiamento incrível de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês na Caatinga, focada em fortalecer o trabalho comunitário e produtivo da região. Vocês teriam disponibilidade essa semana para uma breve conversa para eu te explicar como funciona?",
+    "contatos_encontrados": {
+      "whatsapp": "8799711944",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Associação dos Agricultores Familiares do Distrito de Tabocas e Sítios Vizinhos\n- **CNPJ:** 26.094.419/0001-43\n- **Fundação:** 11/02/2016 (Maturidade de 10 anos)\n- **Localização:** Exu, PE (Zona Rural - Distrito Tabocas)\n- **Natureza:** Associação Privada\n- **Atividade Principal (CNAE):** Atividades de associações de defesa de direitos sociais\n\n### 🎯 Alinhamento com o Edital\nA associação possui forte aderência territorial e temática com o Edital Recaatingar. Por atuar diretamente com agricultores familiares no bioma Caatinga (Exu/PE), a instituição tem o perfil ideal para implementar ações de recuperação socioprodutiva, geração de emprego e renda, e combate à desertificação, alinhando-se aos eixos de desenvolvimento comunitário e sustentabilidade ambiental.",
+    "created_at": "2026-11-13T22:47:07.008Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "29620270000187",
+      "nome": "ASSOCIACAO DE MULHERES DE IGACI - AMI",
       "uf": "AL",
-      "municipio": "SANTANA DO IPANEMA",
+      "municipio": "IGACI",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299577791"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada em Igaci (AL), em pleno bioma Caatinga, e foca na atuação comunitária com mulheres, alinhando-se perfeitamente aos temas de desenvolvimento comunitário, empreendedorismo e geração de renda exigidos pelo edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho transformador que vocês realizam com as mulheres em Igaci. Mapeamos uma excelente oportunidade de financiamento de até R$ 55.200.000 que tem tudo a ver com a atuação da AMI na região. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "8299577791",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DE MULHERES DE IGACI - AMI (CNPJ: 29.620.270/0001-87), fundada em 2017 e sediada na zona rural de Igaci, Alagoas, é uma organização privada sem fins lucrativos focada na defesa de direitos sociais e empoderamento de mulheres na região semiárida.\n\n### 🎯 Alinhamento com o Edital\nA OSC atua diretamente na base comunitária do semiárido nordestino (Caatinga), o que facilita a implementação de ações de recuperação socioprodutiva de terras degradadas. Seus eixos de atuação dialogam fortemente com os critérios de desenvolvimento comunitário, empreendedorismo e geração de emprego e renda previstos no Edital Recaatingar.",
+    "created_at": "2026-11-13T22:47:12.101Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "29853566000148",
+      "nome": "ASSOCIACAO DOS PRODUTORES RURAIS DOS POVOADOS SOBRADO, TAPERA DO ITIUBA E REGIAO - APROSTER",
+      "uf": "AL",
+      "municipio": "PORTO REAL DO COLEGIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299326382"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A APROSTER está localizada em Porto Real do Colégio (AL), região semiárida propícia à incidência da Caatinga, e atua diretamente com produtores rurais, o que se alinha perfeitamente com os objetivos de recuperação de terras degradadas e desenvolvimento comunitário do edital.",
+    "whatsapp_message": "Olá, tudo bem? Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho e admiro muito o trabalho que vocês desenvolvem com os produtores rurais em Porto Real do Colégio! Mapeamos recentemente uma oportunidade fantástica de financiamento não reembolsável no valor de até R$ 55,2 milhões que se encaixa perfeitamente na atuação da APROSTER. Vocês teriam disponibilidade esta semana para uma breve conversa sobre isso?",
+    "contatos_encontrados": {
+      "whatsapp": "8299326382",
+      "email": "SERCONTELIANA@GMAIL.COM",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS PRODUTORES RURAIS DOS POVOADOS SOBRADO, TAPERA DO ITIUBA E REGIAO - APROSTER, CNPJ 29.853.566/0001-48, foi fundada em 2018 e está sediada na zona rural de Porto Real do Colégio, Alagoas. Trata-se de uma associação privada voltada para a representação e apoio aos produtores rurais locais.\n\n### 🎯 Alinhamento com o Edital\nA organização possui forte aderência temática com o Edital Recaatingar. Por estar situada em uma área com características da Caatinga e trabalhar com produtores rurais, a associação tem grande potencial para executar ações de recuperação socioprodutiva de terras degradadas, mitigação de mudanças climáticas e geração de renda comunitária.",
+    "created_at": "2026-11-13T22:47:17.410Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "30013750000169",
+      "nome": "ASSOCIACAO DE MULHERES PRODUTORAS DA AGRICULTURA FAMILIAR",
+      "uf": "AL",
+      "municipio": "SANTANA DO MUNDAU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8291714921"
+      }
+    },
+    "score": 65,
+    "motivo_match": "A OSC está localizada em Santana do Mundaú, AL, e atua diretamente com mulheres produtoras da agricultura familiar, alinhando-se aos temas de desenvolvimento comunitário, empreendedorismo e geração de renda. No entanto, o desafio reside na compatibilidade geográfica estrita com o bioma Caatinga e na comprovação de capacidade técnica para projetos de grande escala em recuperação de terras.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho e admiro muito o trabalho lindo que vocês fazem com as mulheres produtoras em Santana do Mundaú. Mapeei recentemente uma oportunidade de financiamento não reembolsável de até R$ 55,2 milhões que tem tudo a ver com o perfil e o impacto da organização de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos os requisitos?",
+    "contatos_encontrados": {
+      "whatsapp": "8291714921",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA Associação de Mulheres Produtoras da Agricultura Familiar (AMPAFA), CNPJ 30.013.750/0001-69, foi fundada em 2018 e está sediada na zona rural (Sítio Ilha Grande) de Santana do Mundaú, Alagoas. Sua natureza jurídica é de Associação Privada e suas atividades estatutárias e cadastrais estão voltadas ao associativismo e à defesa de direitos sociais, com forte ligação com o público de mulheres agricultoras.\n\n### 🎯 Alinhamento com o Edital\nO Edital Recaatingar busca selecionar projetos de recuperação socioprodutiva de terras degradadas na Caatinga para mitigar mudanças climáticas. Embora a AMPAFA possua forte alinhamento com a vertente de desenvolvimento comunitário, empreendedorismo e agricultura familiar, será necessário avaliar se a sua área de atuação em Alagoas abrange o bioma Caatinga especificado no edital e se a instituição possui capacidade operacional para gerir recursos de grande magnitude.",
+    "created_at": "2026-11-13T22:47:23.682Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "30221887000109",
+      "nome": "ASSOCIACAO DE MULHERES DO SITIO CIGARRA DE SANTANA DO MUNDAU-AL",
+      "uf": "AL",
+      "municipio": "SANTANA DO MUNDAU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8281374889"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A OSC está localizada em Alagoas e possui foco em mulheres agricultoras e desenvolvimento comunitário, alinhando-se perfeitamente aos temas de empreendedorismo, geração de renda e desenvolvimento sustentável exigidos pelo edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho o belo trabalho que vocês realizam com as mulheres e famílias em Santana do Mundaú. Mapeamos uma oportunidade de financiamento de até R$ 55.200.000 que tem tudo a ver com a atuação e os projetos de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "8281374889",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DE MULHERES DO SITIO CIGARRA DE SANTANA DO MUNDAU-AL (AMSCI), fundada em 2018 na cidade de Santana do Mundaú (AL), é uma associação privada voltada à defesa de direitos sociais e apoio à agricultura familiar e comunitária.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra forte aderência aos objetivos do Edital Recaatingar, pois atua diretamente com o público-alvo de comunidades rurais e mulheres produtoras, o que facilita a implementação de ações socioprodutivas, geração de emprego e renda, e práticas sustentáveis.",
+    "created_at": "2026-11-13T22:47:34.195Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "30321171000183",
+      "nome": "ASSOCIACAO DOS PRODUTORES RURAIS E AGRICULTORES FAMILIARES DE SAO MIGUEL DOS CAMPOS - AL",
+      "uf": "AL",
+      "municipio": "SAO MIGUEL DOS CAMPOS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8296137755",
+        "ddd_telefone_2": "8296239784"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada em Alagoas e tem foco direto em produtores rurais e agricultura familiar, alinhando-se perfeitamente aos temas de desenvolvimento comunitário, empreendedorismo e geração de renda exigidos pelo Edital Recaatingar.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Trade ACR. Acompanho o belo trabalho que vocês realizam com os produtores rurais e agricultores familiares em São Miguel dos Campos. Mapeei uma oportunidade fantástica de financiamento não reembolsável de até R$ 55,2 milhões que se alinha perfeitamente com a atuação da ASPRAF. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "8296137755",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA **ASSOCIACAO DOS PRODUTORES RURAIS E AGRICULTORES FAMILIARES DE SAO MIGUEL DOS CAMPOS - AL** (ASPRAF), CNPJ 30.321.171/0001-83, foi fundada em 02/03/2018. Com sede em São Miguel dos Campos - AL, atua formalmente no apoio a produtores rurais, agricultores familiares e comunidades vulneráveis da região.\n\n### 🎯 Alinhamento com o Edital\nO perfil da OSC conversa diretamente com as diretrizes do Edital Recaatingar, que busca ações de recuperação socioprodutiva de terras, mitigação das mudanças climáticas e fomento ao empreendedorismo e geração de renda na região, encaixando-se na atuação voltada ao campo e à agricultura familiar.",
+    "created_at": "2026-11-13T22:47:50.225Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "30443835000187",
+      "nome": "ASSOCIACAO DE DESENVOLVIMENTO SUSTENTAVEL DE MESSIAS - ADESME",
+      "uf": "AL",
+      "municipio": "MESSIAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2018,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8282326562"
+      }
+    },
+    "score": 65,
+    "motivo_match": "A ADESME está localizada em Messias, AL, e foca no desenvolvimento sustentável comunitário, alinhando-se aos temas de geração de renda e desenvolvimento do edital. No entanto, o foco específico na Caatinga e recuperação de terras degradadas exige maior comprovação técnica em meio ambiente.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Conheço o trabalho da ADESME e admiro muito o impacto de vocês na comunidade. Mapeamos uma oportunidade incrível de financiamento de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "8282326562",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DE DESENVOLVIMENTO SUSTENTAVEL DE MESSIAS (ADESME), fundada em 2018 e sediada em Messias, Alagoas, atua como associação privada voltada para o desenvolvimento socioeconômico e atividades de defesa de direitos e cultura.\n\n### 🎯 Alinhamento com o Edital\nA organização possui sinergia com os eixos de desenvolvimento comunitário e empreendedorismo exigidos pelo Edital Recaatingar. Sua localização em Alagoas insere-se no bioma de atuação, embora seja necessário detalhar melhor a experiência prévia com recuperação de terras e combate à desertificação.",
+    "created_at": "2026-11-13T22:48:06.423Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "39831074000105",
+      "nome": "ASSOCIACAO COMUNITARIA BATISTA DE PROMOCAO SOCIAL - ABRACE",
+      "uf": "SE",
+      "municipio": "CANINDE DE SAO FRANCISCO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações religiosas ou filosóficas | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7999605111"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A ABRACE está localizada em Canindé de São Francisco (SE), no coração do bioma Caatinga, e possui atuação comunitária alinhada ao desenvolvimento socioeconômico. Embora seu CNAE principal seja de defesa de direitos sociais, o contexto geográfico e o foco comunitário atendem diretamente aos requisitos de recuperação socioprodutiva e combate à desertificação do edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho de impacto que a ABRACE realiza na comunidade. Mapeei recentemente uma excelente oportunidade de financiamento de até R$ 55.200.000 voltada exatamente para fortalecer a atuação de vocês na região. Vocês teriam disponibilidade esta semana para uma breve conversa para entendermos os detalhes?",
+    "contatos_encontrados": {
+      "whatsapp": "7999605111",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA Associação Comunitária Batista de Promoção Social - ABRACE (CNPJ 39.831.074/0001-05), fundada em janeiro de 2019 e com sede em Canindé de São Francisco (SE), é uma organização privada sem fins lucrativos focada em atividades associativas e comunitárias de promoção social.\n\n### 🎯 Alinhamento com o Edital\nSituada em uma região estratégica afetada pela desertificação na Caatinga, a instituição possui forte apelo territorial para executar projetos de recuperação socioprodutiva, geração de emprego e renda, e desenvolvimento comunitário previstos no Edital Recaatingar, alinhando-se perfeitamente aos critérios geográficos e temáticos da chamada.",
+    "created_at": "2026-11-13T22:48:27.822Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "37392072000131",
+      "nome": "AGENCIA DE DESENVOLVIMENTO LIDER DO ALTO SERTAO SERGIPANO - ADLASS",
+      "uf": "SE",
+      "municipio": "NOSSA SENHORA DA GLORIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7998080714"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A ADLASS está localizada no Alto Sertão Sergipano (região de Caatinga) e atua na promoção do desenvolvimento sustentável e comunitário, alinhando-se perfeitamente aos temas de recuperação de terras, geração de renda e meio ambiente do Edital Recaatingar.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho o belo trabalho que a ADLASS realiza pelo desenvolvimento sustentável no Alto Sertão Sergipano. Mapeei uma oportunidade de financiamento não reembolsável de até R$ 55.200.000 que tem total aderência às pautas socioambientais e comunitárias de vocês. Teriam disponibilidade esta semana para uma breve conversa sobre isso?",
+    "contatos_encontrados": {
+      "whatsapp": "7998080714",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA AGENCIA DE DESENVOLVIMENTO LIDER DO ALTO SERTAO SERGIPANO (ADLASS) é uma associação privada fundada em 2020, sediada em Nossa Senhora da Glória, SE. Possui como foco principal a defesa de direitos sociais e o fomento ao desenvolvimento sustentável regional em parceria com gestores municipais e instituições locais.\n\n### 🎯 Alinhamento com o Edital\nA organização está estrategicamente posicionada no bioma Caatinga (Alto Sertão Sergipano) e possui forte sinergia com os eixos de desenvolvimento comunitário, empreendedorismo e geração de emprego e renda exigidos pelo Edital Recaatingar, sendo uma potencial executora de ações socioprodutivas.",
+    "created_at": "2026-11-13T22:48:37.834Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "48755709000123",
+      "nome": "ASSOCIACAO DAS AGRICULTORAS E AGRICULTORES FAMILIAR TERRA FORTE",
+      "uf": "AL",
+      "municipio": "SAO SEBASTIAO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8298088323",
+        "ddd_telefone_2": "8296619596"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada em São Sebastião (AL), região de incidência da Caatinga, e seu nome e foco em agricultores familiares alinham-se perfeitamente com ações de recuperação socioprodutiva de terras degradadas e desenvolvimento comunitário.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que vocês desenvolvem com os agricultores familiares em São Sebastião. Mapeei uma oportunidade fantástica de financiamento de até R$ 55.200.000 voltada exatamente para a área de atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "8298088323",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DAS AGRICULTORAS E AGRICULTORES FAMILIAR TERRA FORTE é uma associação privada sem fins lucrativos fundada em 2022, sediada em São Sebastião, Alagoas. Possui como atividade econômica principal a defesa de direitos sociais e atua diretamente com o público da agricultura familiar na região semiárida.\n\n### 🎯 Alinhamento com o Edital\nO perfil da OSC é altamente compatível com o Edital Recaatingar, pois atua na base comunitária rural em área de Caatinga. Seu escopo focado em agricultores familiares viabiliza a execução de projetos de recuperação de terras degradadas, geração de emprego e renda e empreendedorismo comunitário.",
+    "created_at": "2026-11-13T22:49:52.910Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "46538175000158",
+      "nome": "ASSOCIACAO COMUNITARIA DOS MORADORES E AGRICULTORES FAMILIARES DO SITIO MANOEL GOMES",
+      "uf": "AL",
+      "municipio": "COITE DO NOIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8281076232"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada em Coité do Nóia, Alagoas, e tem foco na agricultura familiar, alinhando-se diretamente com os temas de desenvolvimento comunitário, empreendedorismo e recuperação socioprodutiva exigidos pelo edital.",
+    "whatsapp_message": "Olá, tudo bem? Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho o belo trabalho que vocês realizam com os agricultores familiares em Coité do Nóia. Mapeamos uma oportunidade incrível de financiamento não reembolsável de até R$ 55,2 milhões que se encaixa perfeitamente na atuação da associação. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos como podemos viabilizar essa captação?",
+    "contatos_encontrados": {
+      "whatsapp": "(82) 8107-6232",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO COMUNITARIA DOS MORADORES E AGRICULTORES FAMILIARES DO SITIO MANOEL GOMES, fundada em 2022 e sediada em Coité do Nóia (AL), atua na defesa de direitos sociais e no apoio a agricultores familiares e moradores locais, possuindo uma estrutura associativa jovem de base comunitária.\n\n### 🎯 Alinhamento com o Edital\nA organização possui forte aderência aos objetivos do Edital Recaatingar, pois sua atuação voltada para agricultores familiares em região semiárida conversa diretamente com a recuperação socioprodutiva de terras, geração de renda, empreendedorismo e desenvolvimento comunitário sustentável.",
+    "created_at": "2026-11-13T22:49:58.687Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "50010790000164",
+      "nome": "ASSOCIACAO DOS AGRICULTORES FAMILIARES DO BAIRRO TANQUE",
+      "uf": "PI",
+      "municipio": "SANTA ROSA DO PIAUI",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de apoio à agricultura não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8988029322"
+      }
+    },
+    "score": 90,
+    "motivo_match": "A OSC está localizada em Santa Rosa do Piauí (PI), bioma Caatinga, e tem como atividade apoio à agricultura familiar, alinhando-se perfeitamente aos temas de recuperação socioprodutiva de terras degradadas e desenvolvimento comunitário do edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho e admiro muito o trabalho que vocês desenvolvem com os agricultores familiares em Santa Rosa do Piauí. Mapeamos uma oportunidade excelente de financiamento de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês na região. Vocês teriam disponibilidade essa semana para uma breve conversa sobre isso?",
+    "contatos_encontrados": {
+      "whatsapp": "8988029322",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS AGRICULTORES FAMILIARES DO BAIRRO TANQUE, inscrita no CNPJ 50.010.790/0001-64, está sediada em Santa Rosa do Piauí (PI). Fundada em 2023, possui atuação voltada para o apoio à agricultura não especificada anteriormente, representando um coletivo de agricultores familiares locais na região semiárida.\n\n### 🎯 Alinhamento com o Edital\nO perfil da associação atende diretamente aos requisitos do Edital Recaatingar, pois atua na base da agricultura familiar no bioma Caatinga. Suas atividades convergem com os objetivos de recuperação socioprodutiva de terras degradadas, mitigação das mudanças climáticas, geração de emprego e renda e desenvolvimento comunitário.",
+    "created_at": "2026-11-13T22:50:26.605Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "49929036000143",
+      "nome": "ASSOCIACAO DOS AGRICULTORES FAMILIARES DO PROJETO FULGENCIO",
+      "uf": "PE",
+      "municipio": "SANTA MARIA DA BOA VISTA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de apoio à agricultura não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8788734169"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada em Santa Maria da Boa Vista, PE, no bioma Caatinga, e possui atuação voltada à agricultura familiar, alinhando-se perfeitamente aos objetivos de recuperação de terras e desenvolvimento socioprodutivo do edital.",
+    "whatsapp_message": "Olá, tudo bem? Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho e admiro muito o trabalho que vocês realizam com os agricultores familiares em Santa Maria da Boa Vista! Mapeei recentemente uma oportunidade de financiamento de até R$ 55,2 milhões que encaixa perfeitamente na atuação de vocês na região. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "(87) 8873-4169",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA **ASSOCIACAO DOS AGRICULTORES FAMILIARES DO PROJETO FULGENCIO** é uma associação privada fundada em 2023, com sede no município de Santa Maria da Boa Vista, PE. Sua atividade econômica principal é voltada para atividades de apoio à agricultura, e atua diretamente com produtores e agricultores familiares locais da região do Projeto Fulgêncio.\n\n### 🎯 Alinhamento com o Edital\nO perfil da OSC é altamente compatível com o *Edital Recaatingar*, pois sua atuação geográfica ocorre no coração da Caatinga e seu público-alvo são agricultores familiares. A instituição tem forte potencial para executar ações de recuperação socioprodutiva de terras degradadas, geração de renda e desenvolvimento comunitário sustentável.",
+    "created_at": "2026-11-13T22:50:41.829Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "55404715000100",
+      "nome": "ASSOCIACAO DAS MARISQUEIRAS DE SIRINHAEM",
+      "uf": "PE",
+      "municipio": "SIRINHAEM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8191422488"
+      }
+    },
+    "score": 65,
+    "motivo_match": "A associação atua fortemente na APA de Guadalupe em Sirinhaém/PE com comunidades tradicionais e marisqueiras, conectando-se ao desenvolvimento comunitário, mas sua localização costeira diverge do foco primordial do edital na Caatinga e combate à desertificação.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho lindo que vocês fazem em Sirinhaém com as marisqueiras e a comunidade local. Mapeei uma oportunidade excelente de financiamento de até R$ 55.200.000 que tem tudo a ver com o perfil e o impacto social de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana para alinharmos os detalhes?",
+    "contatos_encontrados": {
+      "whatsapp": "8191422488",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Associação das Marisqueiras de Sirinhaém (AMAS)\n- **Localização:** Sirinhaém - PE (Área de Proteção Ambiental Guadalupe)\n- **Natureza:** Associação Privada (Fundada em 2024)\n- **CNAE Principal:** Atividades de associações de defesa de direitos sociais\n\n### 🎯 Alinhamento com o Edital\n- **Pontos Fortes:** Forte atuação com comunidades tradicionais, geração de renda e desenvolvimento comunitário sustentável na região nordeste.\n- **Pontos Fracos:** Organização recém-fundada (2024) e atuação voltada para ecossistemas costeiros/manguezais, enquanto o edital foca especificamente na recuperação de terras degradadas na Caatinga.",
+    "created_at": "2026-11-13T22:51:14.041Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "56093176000190",
+      "nome": "INSTITUTO SOCIOAMBIENTAL ISA BRASIL",
+      "uf": "PE",
+      "municipio": "BUIQUE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de apoio à agricultura não especificadas anteriormente | Pesquisas de mercado e de opinião pública | Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias | Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8799621888"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A OSC está localizada em Buíque, PE (coração da Caatinga), possui CNAEs secundários focados em agricultura, consultoria agronômica e treinamento, alinhando-se diretamente com a recuperação socioprodutiva de terras degradadas.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho o trabalho incrível que vocês desenvolvem em Buíque e mapeei uma oportunidade de financiamento de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês na Caatinga. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "8799621888",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nO INSTITUTO SOCIOAMBIENTAL ISA BRASIL é uma associação privada fundada em 2024, sediada na zona rural de Buíque, PE (Sítio Aldeia Ponta da Varzea). Sua atividade principal está ligada a defesa de direitos sociais, mas conta com importantes CNAEs secundários de apoio à agricultura, agronomia, consultoria e treinamento gerencial.\n\n### 🎯 Alinhamento com o Edital\nO perfil da entidade é altamente sinérgico com o Edital Recaatingar devido à sua localização estratégica no bioma Caatinga e à versatilidade de suas atividades secundárias voltadas ao suporte agrícola e desenvolvimento comunitário, essenciais para ações de recuperação de terras e geração de renda.",
+    "created_at": "2026-11-13T22:51:19.166Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "55791093000101",
+      "nome": "ASSOCIACAO DO ASSENTAMENTO FAMILIAR DOS PRODUTORES E CRIADORES DA FAZENDA BARRO BRANCO NO MUNICIPIO DE CABROBO-PE",
+      "uf": "PE",
+      "municipio": "CABROBO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Comércio varejista de hortifrutigranjeiros",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8791453692"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada em Cabrobó, PE (bioma Caatinga) e atua com produtores e criadores rurais, alinhando-se perfeitamente aos temas de desenvolvimento comunitário, geração de renda e recuperação de terras degradadas exigidos pelo edital.",
+    "whatsapp_message": "Olá, tudo bem? Aqui é a Maria Angela Bonifacio, da Tríade ACR. Quero parabenizar pelo belo trabalho que vocês vêm realizando junto aos produtores e criadores em Cabrobó. Mapeamos uma excelente oportunidade de captação de recursos de até R$ 55,2 milhões que conversa diretamente com a atuação da associação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "8791453692",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DO ASSENTAMENTO FAMILIAR DOS PRODUTORES E CRIADORES DA FAZENDA BARRO BRANCO NO MUNICIPIO DE CABROBO-PE é uma entidade privada sem fins lucrativos sediada em Cabrobó (PE), fundada em 2024. Embora tenha baixa maturidade cronológica, sua natureza jurídica e localização em território de assentamento rural demonstram forte ancoragem comunitária na região semiárida.\n\n### 🎯 Alinhamento com o Edital\nA organização possui forte aderência geográfica (bioma Caatinga) e temática com o Edital Recaatingar. Suas atividades voltadas a produtores rurais convergem diretamente com os objetivos de recuperação socioprodutiva de terras, geração de emprego e renda e desenvolvimento comunitário sustentável.",
+    "created_at": "2026-11-13T22:51:24.556Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "57878617000121",
+      "nome": "ASSOCIACAO DOS CRIADORES DE RAJADA - ACRIRAJA",
+      "uf": "PE",
+      "municipio": "PETROLINA",
       "natureza_juridica": "Associação Privada",
       "ano_fundacao": 2024,
       "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
       "cnae_secundario_descricao": "",
       "situacao_cadastral": "ATIVA",
       "official_contacts": {
-        "ddd_telefone_1": "8282079228"
+        "ddd_telefone_1": "8282285406"
       }
     },
     "score": 85,
-    "motivo_match": "A OSC está localizada em Santana do Ipanema (AL), coração da Caatinga, e possui foco explícito em desenvolvimento comunitário rural. Embora tenha sido fundada recentemente (2024), sua atuação territorial é ideal para projetos de recuperação de terras degradadas e geração de renda na região semiárida.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho e admiro muito o trabalho que vocês desenvolvem no Sítio Lagoa do Pedro. Mapeei recentemente uma oportunidade excelente de financiamento de até R$ 55.200.000 que tem tudo a ver com a atuação e o impacto que vocês geram na comunidade. Vocês teriam disponibilidade esta semana para uma breve conversa sobre isso?",
+    "motivo_match": "A ACRIRAJA está localizada em Petrolina (PE), no coração da Caatinga, e atua diretamente com empreendedorismo rural e apoio a criadores locais, alinhando-se perfeitamente aos temas de desenvolvimento comunitário, geração de renda e recuperação de terras do edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho o belo trabalho que a ACRIRAJA vem realizando com o empreendedorismo rural em Petrolina e região. Mapeei recentemente uma excelente oportunidade de captação de recursos de até R$ 55,2 milhões que conversa diretamente com a atuação de vocês na Caatinga. Teria disponibilidade para uma breve conversa esta semana para alinharmos os detalhes?",
     "contatos_encontrados": {
-      "whatsapp": "8282079228",
+      "whatsapp": "8282285406",
       "instagram": null
     },
-    "dossieText": "### 🏛️ Perfil Institucional\nA Associação de Desenvolvimento Comunitário Rural do Sítio Lagoa do Pedro é uma associação privada sediada em Santana do Ipanema, Alagoas. Fundada em 2024, a instituição tem como foco principal o associativismo e o desenvolvimento comunitário rural, operando diretamente no bioma Caatinga.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra forte alinhamento com o Edital Recaatingar devido à sua localização estratégica no semiárido alagoano e seu foco em desenvolvimento comunitário. O edital busca iniciativas de recuperação socioprodutiva de terras degradadas e geração de emprego e renda, pautas perfeitamente aderentes à missão de associações rurais locais.",
-    "created_at": "2026-11-13T19:34:50.263Z"
+    "dossieText": "### 🏛️ Perfil Institucional\nA **ASSOCIACAO DOS CRIADORES DE RAJADA (ACRIRAJA)**, inscrita no CNPJ 57.878.617/0001-21, é uma associação privada sem fins lucrativos sediada em Petrolina, Pernambuco. Fundada em outubro de 2024, possui atividade econômica principal voltada para atividades associativas não especificadas anteriormente (CNAE S-9499-5/00). Apesar de ser uma instituição jovem, já demonstra forte atuação regional no fortalecimento do empreendedorismo rural e na organização de feiras locais que movimentam a economia da comunidade de Rajada.\n\n### 🎯 Alinhamento com o Edital\nO perfil da ACRIRAJA encaixa-se muito bem no *Edital Recaatingar*, pois sua atuação geográfica ocorre diretamente no bioma Caatinga e seu foco operacional envolve o desenvolvimento comunitário e o apoio a produtores rurais. Com o grande volume de recursos previstos no edital (até R$ 55,2 milhões), a associação tem potencial para estruturar projetos de recuperação socioprodutiva de terras degradadas e fomento à renda local, embora precise fortalecer sua governança e equipe técnica devido ao seu ano de fundação recente.",
+    "created_at": "2026-11-13T22:51:29.893Z"
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "07633590000139",
-      "nome": "INSTITUTO ZEFINHA CARTAXO",
-      "uf": "CE",
-      "municipio": "MAURITI",
+      "cnpj": "56002282000110",
+      "nome": "ASSOCIACAO DOS AGRICULTORES RURAIS DA BAIXA DA BELEZA AGRIBEL",
+      "uf": "PE",
+      "municipio": "PETROLINA",
       "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2005,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente | Atividades de apoio à gestão de saúde | Serviços de assistência social sem alojamento | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Cultivo de frutas de lavoura permanente não especificadas anteriormente",
+      "cnae_secundario_descricao": "Cultivo de outros cereais não especificados anteriormente",
       "situacao_cadastral": "ATIVA",
       "official_contacts": {
-        "ddd_telefone_1": "8835521662"
+        "ddd_telefone_1": "8796060166"
       }
     },
     "score": 85,
-    "motivo_match": "O Instituto Zefinha Cartaxo está localizado em Mauriti (CE), coração da Caatinga, e possui CNAEs secundários voltados para agronomia, consultoria agrícola e treinamento, alinhando-se perfeitamente à recuperação socioprodutiva de terras e geração de renda exigidas pelo edital.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho o belíssimo trabalho que o Instituto Zefinha Cartaxo realiza em Mauriti e região. Mapeamos recentemente uma oportunidade incrível de financiamento no valor de até R$ 55,2 milhões, perfeitamente alinhada com a atuação de vocês em desenvolvimento socioprodutivo e agrícola. Vocês teriam disponibilidade essa semana para uma breve conversa sobre isso?",
+    "motivo_match": "A associação está localizada em Petrolina-PE (coração da Caatinga) e tem como atividade o cultivo agrícola, alinhando-se perfeitamente aos temas de recuperação de terras degradadas, desenvolvimento comunitário e geração de renda do edital.",
+    "whatsapp_message": "Olá, tudo bem? Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro o trabalho incrível que vocês desenvolvem com os agricultores em Petrolina! Mapeamos recentemente uma excelente oportunidade de financiamento de até R$ 55,2 milhões que se encaixa perfeitamente na atuação de vocês com agricultura e desenvolvimento local. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos como viabilizar isso?",
     "contatos_encontrados": {
-      "whatsapp": "(88) 3552-1662",
+      "whatsapp": "8796060166",
       "instagram": null
     },
-    "dossieText": "### 🏛️ Perfil Institucional\nO INSTITUTO ZEFINHA CARTAXO, fundado em 2005 e sediado em Mauriti, Ceará, é uma associação privada de longa trajetória. Embora sua atividade principal seja voltada à defesa de direitos sociais, o instituto possui um leque robusto de atividades secundárias ligadas à agronomia, consultoria agrícola, treinamento profissional e assistência social, demonstrando maturidade e capacidade técnica para execução de projetos de campo.\n\n### 🎯 Alinhamento com o Edital\nA organização está estrategicamente localizada no bioma Caatinga e possui sinergia direta com os temas de desenvolvimento comunitário, empreendedorismo e geração de emprego e renda por meio de suas expertises em consultoria agropecuária e capacitação. Isso a torna uma candidata forte para projetos de recuperação de terras degradadas e mitigação das mudanças climáticas.",
-    "created_at": "2026-11-13T19:34:56.671Z"
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIAÇÃO DOS AGRICULTORES RURAIS DA BAIXA DA BELEZA AGRIBEL (CNPJ/Mapa das OSCs), com sede em Petrolina - PE, é uma associação privada fundada recentemente em 2024. Sua atividade econômica principal é o cultivo de frutas permanentes, com atuação focada no setor agrícola e rural.\n\n### 🎯 Alinhamento com o Edital\nA organização possui forte aderência geográfica e temática com o Edital Recaatingar, pois atua diretamente na região semiárida da Caatinga com agricultura. Suas atividades contemplam o desenvolvimento comunitário e o empreendedorismo rural, pilares essenciais para a captação de recursos voltados à recuperação socioprodutiva de terras degradadas.",
+    "created_at": "2026-11-13T22:51:45.493Z"
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "07657605000107",
-      "nome": "ASSOCIACAO COMUNITARIA DOS PEQUENOS AGRICULTORES DE CEDRO",
-      "uf": "CE",
-      "municipio": "ITAPIPOCA",
+      "cnpj": "57261053000183",
+      "nome": "AGENCIA LIDER DE DESENVOLVIMENTO DA REGIAO DO SERTAO DO ARARIPE PERNAMBUCANO",
+      "uf": "PE",
+      "municipio": "OURICURI",
       "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2005,
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8796175551"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A OSC está localizada em Ouricuri (PE), no coração do Sertão do Araripe na Caatinga, e seu foco em desenvolvimento regional alinha-se perfeitamente com a recuperação socioprodutiva de terras degradadas e combate à desertificação exigidos pelo edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho o belo trabalho que vocês realizam em Ouricuri e região. Mapeamos uma oportunidade excelente de captação de recursos no valor de até R$ 55.200.000, voltada exatamente para a área de atuação de vocês. Vocês teriam disponibilidade esta semana para uma breve conversa?",
+    "contatos_encontrados": {
+      "whatsapp": "8796175551",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA AGENCIA LIDER DE DESENVOLVIMENTO DA REGIAO DO SERTAO DO ARARIPE PERNAMBUCANO (AD-LIDER), sediada em Ouricuri, PE, é uma associação privada fundada em 2024. Atua na defesa de direitos sociais e fomento ao desenvolvimento regional no semiárido pernambucano, apresentando forte enraizamento local e capacidade operacional na região do Araripe.\n\n### 🎯 Alinhamento com o Edital\nA organização possui perfeita aderência temática e geográfica ao Edital Recaatingar. Estando situada no bioma Caatinga e focada em desenvolvimento comunitário e regional, possui alto potencial para executar ações de recuperação socioprodutiva de terras degradadas, mitigação das mudanças climáticas e geração de emprego e renda para comunidades locais.",
+    "created_at": "2026-11-13T22:51:50.417Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "57635227000120",
+      "nome": "ASSOCIACAO DOS MORADORES DA COMUNIDADE BELO HORIZONTE NO MUNICIPIO DE COLONIA DO GURGUEIA - PIAUI - ASMOCOBH",
+      "uf": "PI",
+      "municipio": "COLONIA DO GURGUEIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8994198897",
+        "ddd_telefone_2": "8994235958"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada em Colônia do Gurguéia (PI), uma zona de abrangência da Caatinga, e seu perfil comunitário alinha-se diretamente às ações de recuperação socioprodutiva de terras degradadas e desenvolvimento local exigidas pelo edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Trade ACR. Acompanho o belo trabalho comunitário que vocês realizam em Colônia do Gurguéia. Mapeei uma oportunidade de captação de recursos de até R$ 55,2 milhões que se encaixa perfeitamente na atuação da associação. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "8994198897",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS MORADORES DA COMUNIDADE BELO HORIZONTE NO MUNICIPIO DE COLONIA DO GURGUEIA - PIAUI (ASMOCOBH) está sediada na zona rural de Colônia do Gurguéia, Piauí. Fundada em 2024, atua primordialmente na defesa de direitos sociais e atividades associativas voltadas para o desenvolvimento comunitário local.\n\n### 🎯 Alinhamento com o Edital\nA OSC apresenta forte aderência temática e geográfica ao edital, pois atua diretamente na região da Caatinga piauiense. Sua natureza comunitária favorece a execução de projetos de recuperação socioprodutiva de terras, geração de renda e combate à desertificação, contemplando os principais eixos exigidos pela seleção.",
+    "created_at": "2026-11-13T22:51:55.381Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "55032549000150",
+      "nome": "ASSOCIACAO DOS PRODUTORES RURAIS MAIS VIVER",
+      "uf": "PE",
+      "municipio": "OROCO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Cultivo de mandioca | Cultivo de outras plantas de lavoura temporária não especificadas anteriormente | Cultivo de banana | Cultivo de manga | Cultivo de frutas de lavoura permanente não especificadas anteriormente | Criação de caprinos | Criação de ovinos, inclusive para produção de lã",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8799710006"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada em Orocó/PE, no bioma Caatinga, e possui atividades agrícolas compatíveis com a recuperação socioprodutiva de terras degradadas e geração de renda rural.",
+    "whatsapp_message": "Olá, tudo bem? Aqui é a Maria Angela Bonifacio, da Triade ACR. Parabenizo vocês pelo excelente trabalho junto aos produtores rurais em Orocó! Mapeamos uma oportunidade incrível de financiamento no valor de até R$ 55.200.000 que se encaixa perfeitamente na atuação da associação para impulsionar suas ações produtivas e ambientais. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "8799710006",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Associação dos Produtores Rurais Mais Viver\n- **Localização:** Orocó, PE\n- **Natureza jurídica:** Associação Privada\n- **Ano de fundação:** 2024\n- **Atividades principais/secundárias:** Defesa de direitos sociais, cultivo de mandioca, banana, manga e criação de caprinos e ovinos.\n\n### 🎯 Alinhamento com o Edital\nO perfil da OSC está altamente alinhado com o Edital Recaatingar por atuar diretamente na região da Caatinga e envolver pequenos produtores rurais em atividades agrícolas e pecuárias sustentáveis, contemplando os temas de desenvolvimento comunitário, meio ambiente e geração de emprego e renda, embora seja uma instituição recém-criada em 2024.",
+    "created_at": "2026-11-13T22:52:05.948Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "23444987000139",
+      "nome": "ASSOCIACAO ESCOLA ARTESANAL SERTAO CENTRAL",
+      "uf": "CE",
+      "municipio": "QUIXADA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1990,
+      "cnae_primario_descricao": "Treinamento em desenvolvimento profissional e gerencial",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8834128601"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada em Quixadá (CE), no coração da Caatinga, e possui longa experiência (desde 1990) em capacitação profissional e gerencial, alinhando-se perfeitamente aos temas de desenvolvimento comunitário, empreendedorismo e geração de emprego e renda exigidos pelo edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho e admiro muito a trajetória e a capilaridade da EASC no Ceará. Mapeamos recentemente uma grande oportunidade de financiamento não reembolsável de até R$ 55,2 milhões que conversa diretamente com o trabalho de capacitação e desenvolvimento comunitário que vocês realizam na região. Vocês teriam disponibilidade esta semana para uma breve conversa sobre essa oportunidade?",
+    "contatos_encontrados": {
+      "whatsapp": "8834128601",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO ESCOLA ARTESANAL SERTAO CENTRAL (EASC), fundada em 1990 e sediada em Quixadá, Ceará, é uma organização privada sem fins lucrativos com atuação consolidada na área de treinamento em desenvolvimento profissional e gerencial. Demonstra alta maturidade institucional com mais de três décadas de histórico de atuação na região do sertão cearense.\n\n### 🎯 Alinhamento com o Edital\nA organização está localizada em um bioma estratégico (Caatinga) e possui forte vocação para capacitação, empreendedorismo e geração de renda. Embora sua atividade principal seja educacional/profissionalizante, suas competências conversam diretamente com as ações de recuperação socioprodutiva de terras degradadas e desenvolvimento comunitário do edital Recaatingar, capacitando populações locais para a sustentabilidade.",
+    "created_at": "2026-11-13T22:52:33.593Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "07833925000162",
+      "nome": "ASSOC. COMUNITARIA DOS AGRICUT. FAMILIARES DO ASSENTAMENTO OLHO D'AGUA DO MUNICIPIO DE ALTOS -PI",
+      "uf": "PI",
+      "municipio": "ALTOS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8632621694"
+      }
+    },
+    "score": 85,
+    "motivo_match": "A associação está localizada no Piauí, bioma Caatinga, e atua diretamente com agricultura familiar em assentamento rural, alinhando-se perfeitamente aos temas de desenvolvimento comunitário e recuperação socioprodutiva.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho e admiro muito o trabalho de base que vocês realizam com a agricultura familiar em Altos-PI. Mapeei recentemente uma oportunidade de financiamento de até R$ 55.200.000 voltada exatamente para fortalecer iniciativas na área de atuação de vocês. Vocês teriam disponibilidade esta semana para uma breve conversa para entendermos como captar esses recursos?",
+    "contatos_encontrados": {
+      "whatsapp": "8632621694",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** ASSOC. COMUNITARIA DOS AGRICUT. FAMILIARES DO ASSentamento OLHO D'AGUA DO MUNICIPIO DE ALTOS -PI\n- **Localização:** Altos, PI (Zona Rural)\n- **Natureza:** Associação Privada\n- **Fundação:** 2006 (Instituição madurada com cerca de 18 anos de atuação)\n- **Atividade Principal:** Atividades associativas ligadas a agricultores familiares e defesa de direitos sociais.\n\n### 🎯 Alinhamento com o Edital\nA OSC possui forte aderência ao Edital Recaatingar por estar situada na região da Caatinga e focar suas atividades na agricultura familiar. Sua atuação em assentamento rural facilita a implementação de ações de recuperação de terras degradadas e geração de renda comunitária, contemplando os eixos centrais do fomento.",
+    "created_at": "2026-11-13T22:52:43.789Z"
+  },
+  {
+    "edital_id": "19461",
+    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
+    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
+    "osc": {
+      "cnpj": "08116396000149",
+      "nome": "ASSOCIACAO COMUNITARIA DO ASSENTAMENTO TOCAIA",
+      "uf": "PI",
+      "municipio": "PIRIPIRI",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
       "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
       "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
       "situacao_cadastral": "ATIVA",
       "official_contacts": {
-        "ddd_telefone_1": "8892510590"
+        "ddd_telefone_1": "8632762580"
       }
     },
     "score": 85,
-    "motivo_match": "A associação está localizada no Ceará (região semiárida) e tem foco em pequenos agricultores, alinhando-se perfeitamente com a recuperação socioprodutiva de terras degradadas e desenvolvimento comunitário na Caatinga, apesar de seu CNAE principal ser genérico.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que vocês realizam com os pequenos agricultores em Itapipoca. Mapeei recentemente uma oportunidade de financiamento no valor de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês na pauta de desenvolvimento comunitário e sustentabilidade. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "motivo_match": "A associação está localizada em Piripiri (PI), região de transição com forte influência do semiárido/Caatinga, e atua diretamente com agricultura familiar em assentamento rural, alinhando-se perfeitamente aos temas de desenvolvimento comunitário e recuperação de terras do edital.",
+    "whatsapp_message": "Olá, tudo bem? Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito a atuação da Associação Comunitária do Assentamento Tocaia junto à comunidade de Piripiri. Mapeamos recentemente uma oportunidade de capitação de recursos de até R$ 55,2 milhões que conversa diretamente com o trabalho de vocês na região. Vocês teriam disponibilidade esta semana para uma breve conversa sobre isso?",
     "contatos_encontrados": {
-      "whatsapp": "8892510590",
+      "whatsapp": "(86) 3276-2580",
+      "email": "sales-mendes@bol.com.br",
       "instagram": null
     },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO COMUNITARIA DOS PEQUENOS AGRICULTORES DE CEDRO, fundada em 2005 em Itapipoca, CE, é uma organização privada sem fins lucrativos com 21 anos de atuação consolidada. Seu foco principal é a representação e defesa de direitos sociais, complementada por atividades associativas diversas.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra forte potencial para o Edital Recaatingar devido à sua localização geográfica no Ceará e atuação direta com pequenos agricultores. A proposta de recuperação socioprodutiva e geração de renda na Caatinga conversa diretamente com a missão da associação de fortalecer a agricultura familiar e o desenvolvimento comunitário na região.",
-    "created_at": "2026-11-13T19:34:59.997Z"
+    "dossieText": "### 🏛️ Perfil Institucional\nA **Associação Comunitária do Assentamento Tocaia** (CNPJ: 08.116.396/0001-49) foi fundada em 07/07/2006 e está sediada na zona rural do município de Piripiri, Piauí. Possui natureza jurídica de Associação Privada e atua primordialmente na defesa de direitos sociais e apoio comunitário (CNAE Principal: Atividades de associações de defesa de direitos sociais). Com quase 20 anos de atuação, demonstra forte enraizamento local junto a produtores rurais assentados.\n\n### 🎯 Alinhamento com o Edital\nO *Edital Recaatingar - Segundo Ciclo - 2026* busca selecionar projetos de recuperação socioprodutiva de terras degradadas e combate à desertificação na Caatinga. O perfil da OSC em um assentamento rural no Piauí encaixa-se diretamente nos eixos de desenvolvimento comunitário, empreendedorismo e geração de renda previstos no edital, oferecendo capilaridade territorial ideal para a execução dos recursos.",
+    "created_at": "2026-11-13T22:52:49.113Z"
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "07668328000120",
-      "nome": "ASSOCIACAO DE APICULTORES DE CARIUS -AAPIC",
-      "uf": "CE",
-      "municipio": "CARIUS",
+      "cnpj": "32895690000180",
+      "nome": "ASSOCIACAO DE COOPERACAO AGRI. DO ASSENT.QUISSAMA-ACAQ.",
+      "uf": "SE",
+      "municipio": "NOSSA SENHORA DO SOCORRO",
       "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2005,
+      "ano_fundacao": 1994,
       "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Comércio varejista de hortifrutigranjeiros | Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
       "situacao_cadastral": "ATIVA",
       "official_contacts": {
-        "ddd_telefone_1": "8896014034"
+        "ddd_telefone_1": "7930278952"
       }
     },
     "score": 85,
-    "motivo_match": "A associação está sediada em Cariús, CE, em pleno bioma Caatinga, e sua atuação voltada para apicultores conecta-se diretamente ao desenvolvimento comunitário, geração de renda e práticas sustentáveis de recuperação de terras.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que vocês realizam em Cariús pela comunidade e pelos apicultores. Mapeamos recentemente uma excelente oportunidade de financiamento não reembolsável de até R$ 55.200.000, voltado exatamente para apoiar projetos na área de atuação de vocês. Vocês teriam disponibilidade esta semana para uma breve conversa sobre como captar esses recursos?",
+    "motivo_match": "A associação está localizada em Nossa Senhora do Socorro (SE), região de abrangência da Caatinga, e possui histórico em cooperação agrícola voltada para assentamentos. Embora seu CNAE principal seja de defesa de direitos, suas atividades secundárias e nome indicam forte atuação no setor agropecuário e comunitário, alinhando-se aos temas de desenvolvimento comunitário e recuperação socioprodutiva.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanhamos e admiramos muito o trabalho histórico que vocês realizam no Assentamento Quissamã em Nossa Senhora do Socorro. Mapeamos recentemente uma excelente oportunidade de financiamento não reembolsável de até R$ 55,2 milhões que se encaixa perfeitamente nas ações de desenvolvimento comunitário e apoio à produção que vocês desenvolvem. Vocês teriam disponibilidade esta semana para uma breve conversa sobre isso?",
     "contatos_encontrados": {
-      "whatsapp": "8896014034",
+      "whatsapp": "7930278952",
       "instagram": null
     },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DE APICULTORES DE CARIUS -AAPIC, fundada em 2005 e sediada em Cariús (CE), é uma associação privada de longa trajetória (mais de 18 anos de existência). Embora sua atividade principal registrada seja de defesa de direitos sociais, sua identidade institucional aponta para o fortalecimento da apicultura local.\n\n### 🎯 Alinhamento com o Edital\nA organização possui forte aderência aos temas de desenvolvimento comunitário, empreendedorismo e geração de emprego e renda exigidos pelo Edital Recaatingar. Estando localizada na Caatinga cearense, a apicultura atua como uma atividade de baixo impacto ambiental e fundamental para a recuperação socioprodutiva de terras degradadas e mitigação das mudanças climáticas.",
-    "created_at": "2026-11-13T19:35:03.130Z"
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** ASSOCIACAO DE COOPERACAO AGRI. DO ASSENT.QUISSAMA-ACAQ.\n- **CNPJ:** 32.895.690/0001-80\n- **Fundação:** 10/02/1994 (31 anos de atuação)\n- **Localização:** Nossa Senhora do Socorro - SE (Zona Rural)\n- **Natureza:** Associação Privada\n- **CNAE Principal:** Atividades de associações de defesa de direitos sociais\n- **CNAEs Secundários:** Comércio varejista de hortifrutigranjeiros, produtos alimentícios e organizações associativas.\n\n### 🎯 Alinhamento com o Edital\n- **Aderência Geográfica:** Situada em Sergipe, em área de incidência do bioma Caatinga.\n- **Aderência Temática:** Encaixa-se perfeitamente nos eixos de desenvolvimento comunitário, empreendedorismo e geração de emprego e renda por atuar diretamente com assentamento rural e agricultura familiar.\n- **Maturidade:** Mais de três décadas de histórico institucional, conferindo robustez técnica e administrativa para captação de recursos de grande vulto.",
+    "created_at": "2026-11-13T22:52:54.759Z"
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "07626109000188",
-      "nome": "ASSOCIACAO COMUNITARIA DOS TRABALHADORES RURAIS DAS COMUNIDADES MONTE ALEGRE I E II",
-      "uf": "CE",
-      "municipio": "NOVO ORIENTE",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2005,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8836291259",
-        "ddd_telefone_2": "8836291259"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A associação está localizada em Novo Oriente, Ceará, região central da Caatinga, e possui histórico de atuação comunitária rural desde 2005, o que se alinha perfeitamente com o foco do edital em recuperação socioprodutiva e desenvolvimento comunitário.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que vocês fazem com os trabalhadores rurais em Novo Oriente. Mapeamos uma oportunidade incrível de financiamento no valor de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês na região. Vocês teriam disponibilidade para uma breve conversa esta semana?",
-    "contatos_encontrados": {
-      "whatsapp": "(88) 3629-1259",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO COMUNITARIA DOS TRABALHADORES RURAIS DAS COMUNIDADES MONTE ALEGRE I E II, fundada em 2005, é uma entidade privada sem fins lucrativos sediada em Novo Oriente, CE. Com mais de 19 anos de atuação, possui forte enraizamento local voltado para a defesa de direitos sociais e organização comunitária de trabalhadores rurais.\n\n### 🎯 Alinhamento com o Edital\nO perfil da OSC é altamente compatível com o Edital Recaatingar. Por estar situada no bioma Caatinga e trabalhar diretamente com trabalhadores rurais, a associação possui a capilaridade necessária para implementar ações de recuperação de terras degradadas, geração de renda e desenvolvimento comunitário sustentável.",
-    "created_at": "2026-11-13T19:35:05.957Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "07649966000101",
-      "nome": "ASSOCIACAO COMUNITARIA DE BARRO VERMELHO II",
-      "uf": "CE",
-      "municipio": "NOVO ORIENTE",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2005,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8836911563"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A associação está localizada em Novo Oriente, CE, no coração da região semiárida e do bioma Caatinga, e sua atuação comunitária é altamente compatível com o foco em desenvolvimento comunitário e recuperação de áreas degradadas do edital.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Parabenizo a Associação Comunitária de Barro Vermelho II pela bela trajetória e trabalho comunitário em Novo Oriente. Mapeamos recentemente uma oportunidade de financiamento não reembolsável de até R$ 55.200.000,00 que se alinha perfeitamente com a atuação de vocês na região. Vocês teriam disponibilidade esta semana para uma breve conversa sobre essa oportunidade?",
-    "contatos_encontrados": {
-      "whatsapp": "8836911563",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA **Associação Comunitária de Barro Vermelho II**, fundada em 2005 e situada em Novo Oriente (CE), é uma associação privada de longa trajetória (mais de 18 anos de existência). Possui como atividade principal a defesa de direitos sociais e atua fortemente no associativismo comunitário e cultural.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra alto potencial para o *Edital Recaatingar* devido à sua localização geográfica estratégica na Caatinga cearense e sua capilaridade comunitária. Embora seu CNAE principal seja focado em direitos sociais, a natureza associativa de base é ideal para executar ações de recuperação socioprodutiva de terras degradadas, geração de renda e desenvolvimento comunitário previstos na chamada.",
-    "created_at": "2026-11-13T19:35:09.209Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "07621966000195",
-      "nome": "ASSOCIACAO COMUNITARIA DO ASSENTAMENTO MUNDO NOVO",
-      "uf": "CE",
-      "municipio": "INDEPENDENCIA",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2005,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8892040811"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A associação está localizada em Independência, CE, no coração da Caatinga, e sendo um assentamento rural, possui forte aderência com ações de recuperação de terras e desenvolvimento comunitário.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Conheço e admiro muito a trajetória da Associação Comunitária do Assentamento Mundo Novo em Independência. Mapeamos recentemente uma oportunidade incrível de financiamento não reembolsável de até R$ 55.200.000 que tem tudo a ver com o trabalho de vocês na região. Vocês teriam disponibilidade para uma breve conversa esta semana?",
-    "contatos_encontrados": {
-      "whatsapp": "8892040811",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO COMUNITARIA DO ASSENTAMENTO MUNDO NOVO é uma associação privada fundada em 2005, situada no município de Independência, Ceará. Com mais de 18 anos de atuação, atua na defesa de direitos sociais e organização comunitária.\n\n### 🎯 Alinhamento com o Edital\nEstando situada no bioma Caatinga e em uma área de assentamento rural, a instituição possui o perfil ideal para executar ações de recuperação socioprodutiva de terras degradadas, geração de renda e mitigação da desertificação, alinhando-se perfeitamente aos temas de meio ambiente e desenvolvimento comunitário do edital.",
-    "created_at": "2026-11-13T19:35:15.204Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "04500356000145",
-      "nome": "ASSOCIACAO DOS ARTESAOS DE CARIRIACU - ARTCU",
-      "uf": "CE",
-      "municipio": "CARIRIACU",
+      "cnpj": "04276400000185",
+      "nome": "ASSOCIACAO NACIONAL DA JUVENTUDE RURAL - TERRA LIVRE",
+      "uf": "PE",
+      "municipio": "RECIFE",
       "natureza_juridica": "Associação Privada",
       "ano_fundacao": 2001,
       "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
       "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
       "situacao_cadastral": "ATIVA",
       "official_contacts": {
-        "ddd_telefone_1": "8899795711"
-      }
-    },
-    "score": 65,
-    "motivo_match": "A ARTCU está localizada no Ceará (bioma Caatinga) e possui forte ligação comunitária com artesãos, o que se alinha ao tema de desenvolvimento comunitário e empreendedorismo. No entanto, suas atividades principais focam em direitos sociais, cultura e arte, exigindo uma adaptação para comprovar experiência prévia em recuperação de terras degradadas.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho lindo que vocês desenvolvem com os artesãos em Caririaçu. Passando para avisar que mapeamos uma excelente oportunidade de financiamento no valor de até R$ 55.200.000 que tem tudo a ver com o perfil e o potencial de impacto de vocês na região. Vocês teriam disponibilidade para uma breve conversa esta semana?",
-    "contatos_encontrados": {
-      "whatsapp": "8899795711"
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS ARTESAOS DE CARIRIACU - ARTCU, fundada em 2001 e situada em Caririaçu, CE, é uma associação privada de longa trajetória (mais de 20 anos de maturidade). Suas atividades principais e secundárias concentram-se na defesa de direitos sociais, associativismo cultural e artístico, desempenhando um papel relevante na articulação comunitária local.\n\n### 🎯 Alinhamento com o Edital\nA organização atua diretamente no bioma Caatinga e possui forte apelo comunitário, o que atende aos temas de desenvolvimento comunitário, empreendedorismo e geração de renda do Edital Recaatingar. O desafio para a aprovação será conectar a vocação artesanal e associativa da entidade com a exigência central do edital: a implementação de ações de recuperação socioprodutiva de terras degradadas.",
-    "created_at": "2026-11-13T19:35:21.708Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "05779127000174",
-      "nome": "SEMEAR - SERVICO DE MOBILIZACAO E ASSESSORIA PARA O DESENVOLVIMENTO SUSTENTAVEL REGIONAL",
-      "uf": "PI",
-      "municipio": "SAO RAIMUNDO NONATO",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2003,
-      "cnae_primario_descricao": "Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias",
-      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8935822150"
-      }
-    },
-    "score": 95,
-    "motivo_match": "A SEMear demonstra alto alinhamento devido à sua localização estratégica em São Raimundo Nonato (PI), no coração da Caatinga, e à sua especialização em agronomia, consultoria agrícola e desenvolvimento sustentável regional.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho o belo trabalho que vocês realizam em São Raimundo Nonato e região pelo desenvolvimento sustentável. Mapeamos uma oportunidade incrível de financiamento no valor de até R$ 55.200.000 que tem total aderência com a atuação de vocês na Caatinga. Vocês teriam disponibilidade para uma breve conversa esta semana?",
-    "contatos_encontrados": {
-      "whatsapp": "8935822150",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA SEMEAR - SERVICO DE MOBILIZACAO E ASSESSORIA PARA O DESENVOLVIMENTO SUSTENTAVEL REGIONAL é uma associação privada fundada em 2003, com sede em São Raimundo Nonato, Piauí. Possui mais de duas décadas de atuação sólida, tendo como atividade principal a prestação de serviços de agronomia e consultoria agrícola e pecuária, além de suporte a direitos sociais e associativismo.\n\n### 🎯 Alinhamento com o Edital\nA organização está perfeitamente posicionada para atender ao edital focado na Caatinga. Sua expertise técnica em agronomia combinada com o histórico em desenvolvimento sustentável regional atende diretamente aos objetivos de recuperação de terras degradadas, mitigação climática e geração de renda comunitária.",
-    "created_at": "2026-11-13T19:35:24.791Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "73815177000110",
-      "nome": "ASSOCIACAO DE PEQUENOS PRODUTORES DE PIO IX",
-      "uf": "PI",
-      "municipio": "SAO JOAO DA VARJOTA",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 1993,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8934621688",
-        "ddd_telefone_2": "8934621688"
+        "ddd_telefone_1": "8131270929"
       }
     },
     "score": 85,
-    "motivo_match": "A associação está localizada no Piauí, bioma Caatinga, e seu nome indica forte atuação junto a pequenos produtores rurais, alinhando-se diretamente ao objetivo de recuperação socioprodutiva de terras degradadas e desenvolvimento comunitário.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito a trajetória da Associação de Pequenos Produtores de Pio IX na defesa e apoio às comunidades locais. Mapeamos recentemente uma oportunidade de financiamento de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês no campo do desenvolvimento socioprodutivo. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "motivo_match": "A associação está sediada em Recife-PE, no coração da região semiárida, e possui histórico de atuação com juventude rural, o que se alinha perfeitamente com o desenvolvimento comunitário e a geração de renda exigidos pelo Edital Recaatingar.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho o belo trabalho da Terra Livre com a juventude rural e quis muito entrar em contato. Mapeamos uma oportunidade incrível de financiamento não reembolsável de até R$ 55.200.000 que tem total aderência às pautas de desenvolvimento comunitário e geração de renda que vocês defendem. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos se faz sentido aplicarem?",
     "contatos_encontrados": {
-      "whatsapp": "(89) 8934621688",
+      "whatsapp": "8131270929",
       "instagram": null
     },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DE PEQUENOS PRODUTORES DE PIO IX, sediada em São João da Varjota (PI), é uma associação privada fundada em 1993. Com mais de 30 anos de atuação, possui forte enraizamento comunitário voltado para a defesa de direitos sociais e apoio a produtores locais.\n\n### 🎯 Alinhamento com o Edital\nO perfil da OSC é altamente compatível com o edital de recuperação socioprodutiva na Caatinga. Sua localização no semiárido nordestino e o foco histórico em pequenos produtores atendem diretamente aos temas de desenvolvimento comunitário, geração de renda e combate à desertificação.",
-    "created_at": "2026-11-13T19:35:27.882Z"
+    "dossieText": "### 🏛️ Perfil Institucional\nA **ASSOCIAÇÃO NACIONAL DA JUVENTUDE RURAL - TERRA LIVRE** (CNPJ: 04.276.400/0001-85), fundada em 08/02/2001 e com sede em Recife (PE), é uma organização privada sem fins lucrativos. Sua principal atividade estatutária foca em associações de defesa de direitos sociais, com forte inserção em pautas voltadas ao desenvolvimento e protagonismo dos jovens do campo.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra alto potencial para o *Edital Recaatingar - Segundo Ciclo - 2026* por atuar diretamente com o público rural e comunitário no Nordeste brasileiro. Embora seu CNAE principal seja focado em direitos sociais, a capilaridade junto à juventude rural e o escopo de atuação criam sinergia direta com os temas de desenvolvimento comunitário, empreendedorismo e geração de emprego e renda previstos no edital para a recuperação socioprodutiva de terras na Caatinga.",
+    "created_at": "2026-11-13T22:52:59.942Z"
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "09128957000192",
-      "nome": "ASSOCIACAO DE PRODUTORES E PRODUTORAS DA COMUNIDADE MAE JOANA - APPCMJ",
-      "uf": "PI",
-      "municipio": "BARRAS",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2006,
-      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8633831386"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A APPCMJ está localizada no Piauí, estado que abrange o bioma Caatinga, e sua natureza como associação de produtores rurais alinha-se perfeitamente com o foco em recuperação socioprodutiva, desenvolvimento comunitário e geração de renda exigidos pelo edital.",
-    "whatsapp_message": "Olá, produtores e produtoras da APPCMJ! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho o belo trabalho que vocês realizam em Barras e mapeei uma oportunidade fantástica de captação de recursos no valor de até R$ 55.200.000 que tem tudo a ver com a atuação e o impacto social de vocês. Vocês teriam disponibilidade esta semana para uma breve conversa sobre esse financiamento?",
-    "contatos_encontrados": {
-      "whatsapp": "8633831386",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DE PRODUTORES E PRODUTORAS DA COMUNIDADE MAE JOANA - APPCMJ é uma associação privada sem fins lucrativos fundada em 2006, com sede no município de Barras, PI. Com quase duas décadas de atuação, a organização possui alta maturidade institucional e forte ligação com produtores rurais locais.\n\n### 🎯 Alinhamento com o Edital\nA entidade demonstra excelente fit com o Edital Recaatingar devido à sua atuação voltada para comunidades de produtores, o que facilita a implementação de ações de recuperação de terras, empreendedorismo e geração de emprego e renda na região nordestina.",
-    "created_at": "2026-11-13T19:35:30.820Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "05214717000150",
-      "nome": "ASSOCIACAO DOS PEQUENOS AGRICULTORES DO ESTADO DO PIAUI",
-      "uf": "PI",
-      "municipio": "PICOS",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2002,
-      "cnae_primario_descricao": "Outras atividades associativas profissionais",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8934210493"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A associação está localizada em Picos (PI), no coração da Caatinga, e sua natureza voltada para pequenos agricultores alinha-se perfeitamente com o desenvolvimento comunitário e a recuperação de terras degradadas exigidos pelo edital.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que vocês realizam com os pequenos agricultores em Picos e região. Mapeei recentemente uma oportunidade excelente de financiamento no valor de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês. Vocês teriam disponibilidade esta semana para uma breve conversa?",
-    "contatos_encontrados": {
-      "whatsapp": "8934210493",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS PEQUENOS AGRICULTORES DO ESTADO DO PIAUI, fundada em 2002 e sediada em Picos, PI, possui sólida maturidade institucional com mais de duas décadas de atuação. Sua natureza jurídica é de associação privada, focada no suporte a pequenos agricultores da região semiárida.\n\n### 🎯 Alinhamento com o Edital\nCom atuação direta no Piauí, a organização está geograficamente posicionada na Caatinga. Suas atividades voltadas para o setor agrícola comunitário convergem com os temas de desenvolvimento comunitário, empreendedorismo e geração de renda, tornando-a uma excelente candidata para ações de recuperação socioprodutiva de terras degradadas.",
-    "created_at": "2026-11-13T19:35:33.906Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "07815696000153",
-      "nome": "ASSOCIACAO DE PEQUENOS PRODUTORES RURAIS DA LOCALIDADE AGUA VERDE",
-      "uf": "PI",
-      "municipio": "ITAINOPOLIS",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2006,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8934225701"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A associação está localizada em Itainópolis (PI), no coração do bioma Caatinga, e sua natureza voltada a pequenos produtores rurais alinha-se perfeitamente com a recuperação socioprodutiva e geração de renda exigidas pelo edital.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito a trajetória da Associação de Pequenos Produtores Rurais da Agua Verde em Itainópolis. Mapeamos recentemente uma excelente oportunidade de financiamento de até R$ 55.200.000 que se encaixa perfeitamente nas iniciativas que vocês desenvolvem com a comunidade. Vocês teriam disponibilidade esta semana para uma breve conversa sobre esse recurso?",
-    "contatos_encontrados": {
-      "whatsapp": "8934225701",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DE PEQUENOS PRODUTORES RURAIS DA LOCALIDADE AGUA VERDE, sediada em Itainópolis (PI), é uma associação privada fundada em 2006. Com quase duas décadas de atuação, possui forte enraizamento comunitário voltado para a defesa de direitos sociais e apoio a pequenos produtores da região semiárida.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra alto potencial para o Edital Recaatingar devido à sua localização geográfica estratégica no semiárido piauiense e ao foco em pequenos produtores, pilares essenciais para a execução de ações de recuperação de terras degradadas, combate à desertificação e desenvolvimento comunitário sustentável.",
-    "created_at": "2026-11-13T19:35:36.903Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "08068658000147",
-      "nome": "ASSOCIACAO DE MORADORES DO ASSENTAMENTO SANTA TEREZA",
-      "uf": "PI",
-      "municipio": "PARNAGUA",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2006,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8935741792"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A associação está localizada em Parnaguá, PI, inserida no bioma Caatinga, e sua natureza comunitária é altamente compatível com o foco em desenvolvimento comunitário e recuperação socioprodutiva de terras degradadas.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho lindo que vocês fazem na região. Mapeei recentemente uma oportunidade de financiamento no valor de até R$ 55.200.000 que tem tudo a ver com a atuação e os projetos de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
-    "contatos_encontrados": {
-      "whatsapp": "8935741792",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DE MORADORES DO ASSENTAMENTO SANTA TEREZA, fundada em 2006 e com sede em Parnaguá (PI), é uma associação privada de base comunitária com vasta experiência institucional. Seu histórico de atuação engloba a defesa de direitos sociais e organização comunitária.\n\n### 🎯 Alinhamento com o Edital\nO perfil da OSC se alinha fortemente com o edital por estar situada na região da Caatinga e possuir vocação natural para projetos de desenvolvimento comunitário. Embora suas atividades principais sejam voltadas para direitos sociais, sua natureza de associação de assentamento rural a torna uma executora ideal para ações de recuperação socioprodutiva e geração de renda.",
-    "created_at": "2026-11-13T19:35:40.042Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "08250104000166",
-      "nome": "ASSOCIACAO DOS HORTICULTORES E PRODUTORES RURAIS DE UNIAO-PI",
-      "uf": "PI",
-      "municipio": "UNIAO",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2003,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "0832651835",
-        "ddd_telefone_2": "8632652448"
-      }
-    },
-    "score": 75,
-    "motivo_match": "A associação está localizada no Piauí, em área de abrangência da Caatinga, e seu foco em horticultores e produtores rurais alinha-se perfeitamente com a recuperação socioprodutiva de terras degradadas e geração de renda.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que vocês desenvolvem com os produtores rurais em União. Mapeamos uma excelente oportunidade de financiamento no valor de até R$ 55.200.000 que se alinha perfeitamente com a atuação de vocês na região. Vocês teriam disponibilidade para uma breve conversa esta semana?",
-    "contatos_encontrados": {
-      "whatsapp": "0832651835",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS HORTICULTORES E PRODUTORES RURAIS DE UNIAO-PI, fundada em 2003 (alta maturidade de 23 anos), atua na cidade de União (PI). Embora seu CNAE principal cite defesa de direitos sociais, o nome da entidade revela forte atuação voltada para o setor produtivo rural e agrícola.\n\n### 🎯 Alinhamento com o Edital\nA organização possui grande potencial para o Edital Recaatingar devido à sua localização geográfica na região nordestina e conexão direta com produtores rurais. Sua atuação pode viabilizar ações de desenvolvimento comunitário, empreendedorismo e geração de emprego e renda no bioma Caatinga.",
-    "created_at": "2026-11-13T19:35:43.109Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "09032777000102",
-      "nome": "ASSOCIACAO DE DESENVOLVIMENTO AGROPECUARIO DA COMUNIDADE PAU DE COLHER",
-      "uf": "BA",
-      "municipio": "PARIPIRANGA",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2007,
-      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "7598389569",
-        "ddd_telefone_2": "7532792009"
-      }
-    },
-    "score": 90,
-    "motivo_match": "A associação está localizada em Paripiranga, BA, no coração do bioma Caatinga, e seu nome indica forte atuação no desenvolvimento agropecuário comunitário, alinhando-se perfeitamente com a recuperação socioprodutiva de terras degradadas.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho o belo trabalho que vocês realizam em Paripiranga pelo desenvolvimento agropecuário e comunitário. Mapeamos recentemente uma oportunidade de financiamento de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês na região. Vocês teriam disponibilidade para uma breve conversa esta semana?",
-    "contatos_encontrados": {
-      "whatsapp": "7598389569",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DE DESENVOLVIMENTO AGROPECUARIO DA COMUNIDADE PAU DE COLHER, sediada em Paripiranga-BA e fundada em 2007, é uma entidade privada com longa trajetória (mais de 15 anos de maturidade) voltada ao associativismo e ao suporte ao setor agropecuário local e comunitário.\n\n### 🎯 Alinhamento com o Edital\nA organização possui localização estratégica no semiárido baiano (bioma Caatinga) e foco em desenvolvimento comunitário e agropecuário, o que a torna altamente elegível para ações de recuperação socioprodutiva de terras degradadas, geração de renda e mitigação das mudanças climáticas previstas no edital.",
-    "created_at": "2026-11-13T19:35:49.330Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "09156842000101",
-      "nome": "A ASSOCIACAO RURAL DAS MULHERES DE CALDEIRAO",
-      "uf": "BA",
-      "municipio": "IBITITA",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2007,
-      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "7436525021"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A associação está localizada em Ibititá, BA, região inserida no bioma Caatinga, e seu nome indica forte foco no protagonismo e desenvolvimento comunitário de mulheres rurais, alinhando-se perfeitamente aos temas de empreendedorismo, geração de renda e recuperação socioprodutiva.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho transformador que a Associação Rural das Mulheres de Caldeirão realiza em Ibititá. Mapeamos recentemente uma oportunidade de financiamento de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês no campo. Vocês teriam disponibilidade esta semana para uma breve conversa sobre isso?",
-    "contatos_encontrados": {
-      "whatsapp": "7436525021",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Associação Rural das Mulheres de Caldeirão\n- **Localização:** Ibititá, BA (Bioma Caatinga)\n- **Natureza jurídica:** Associação Privada\n- **Ano de fundação:** 2007 (17 anos de atuação, demonstrando alta maturidade e consolidação comunitária)\n- **Atividade principal:** Atividades associativas não especificadas anteriormente (focada em organização comunitária e rural)\n\n### 🎯 Alinhamento com o Edital\n- **Aderência temática:** O perfil comunitário e voltado para mulheres rurais em Ibititá atende diretamente aos critérios de desenvolvimento comunitário, empreendedorismo e geração de emprego e renda.\n- **Território estratégico:** A atuação no semiárido baiano (Caatinga) cumpre a exigência geográfica central do edital voltado à mitigação da desertificação e recuperação de terras degradadas.",
-    "created_at": "2026-11-13T19:36:01.452Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "09410252000163",
-      "nome": "ASSOCIACAO DE DESENVOLVIMENTO DOS AGROPECUARISTAS",
-      "uf": "PI",
-      "municipio": "REGENERACAO",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2008,
-      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8632931558"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A associação está sediada em Regeneração, Piauí, região inserida no bioma Caatinga e vulnerável à desertificação. Seu foco em desenvolvimento agropastoril alinha-se diretamente com a recuperação socioprodutiva de terras degradadas e geração de renda prevista no edital.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que vocês realizam em Regeneração e região com os produtores e o desenvolvimento local. Mapeei uma oportunidade de financiamento incrível no valor de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês na área ambiental e socioprodutiva. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos como captar esses recursos?",
-    "contatos_encontrados": {
-      "whatsapp": "8632931558",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DE DESENVOLVIMENTO DOS AGROPECUARISTAS é uma associação privada sem fins lucrativos fundada em 2008, com sede em Regeneração, PI. Com mais de 15 anos de atuação, possui forte arraigamento comunitário voltado ao apoio de produtores rurais e ao desenvolvimento local.\n\n### 🎯 Alinhamento com o Edital\nA organização possui forte aderência aos objetivos do Edital Recaatingar, pois sua localização estratégica no Piauí e sua natureza voltada aos agropecuaristas permitem a execução de ações de recuperação de terras, combate à desertificação, desenvolvimento comunitário e geração de renda na Caatinga.",
-    "created_at": "2026-11-13T19:36:07.714Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "10289074000143",
-      "nome": "ASSOCIACAO DOS PRODUTORES RURAIS DA COMUNIDADE NOVA ESPERANCA",
-      "uf": "PI",
-      "municipio": "JOSE DE FREITAS",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2008,
-      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
-      "cnae_secundario_descricao": "",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8694097141",
-        "ddd_telefone_2": "8694442137"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A associação está localizada em José de Freitas, Piauí, região de forte influência do bioma Caatinga e vulnerabilidade à desertificação, alinhando-se perfeitamente com o foco socioeconômico e ambiental do edital.",
-    "whatsapp_message": "Olá, tudo bem? Aqui é a Maria Angela Bonifacio, da Tríade ACR. Quero parabenizar vocês pelo lindo trabalho que realizam junto aos produtores rurais em José de Freitas! Mapeamos uma excelente oportunidade de financiamento no valor de até R$ 55.200.000 que tem tudo a ver com a atuação da associação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
-    "contatos_encontrados": {
-      "whatsapp": "8694097141",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS PRODUTORES RURAIS DA COMUNIDADE NOVA ESPERANCA, fundada em 2008 e sediada em José de Freitas (PI), é uma entidade privada sem fins lucrativos de base comunitária. Com mais de 15 anos de atuação, possui alta maturidade organizacional e capilaridade local junto aos produtores rurais.\n\n### 🎯 Alinhamento com o Edital\nA atuação voltada para produtores rurais em região semiárida encaixa-se diretamente nos objetivos do Edital Recaatingar, que busca a recuperação de terras degradadas e o desenvolvimento comunitário e socioprodutivo na Caatinga.",
-    "created_at": "2026-11-13T19:36:10.637Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "11989532000110",
-      "nome": "ASSOCIACAO VIVA COM ESPERANCA",
-      "uf": "PI",
-      "municipio": "TERESINA",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2010,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8699395007"
-      }
-    },
-    "score": 65,
-    "motivo_match": "A associação está sediada em Teresina (PI), região de abrangência da Caatinga, e possui histórico desde 2010. Contudo, seu CNAE primário foca em defesa de direitos sociais, exigindo uma articulação para demonstrar capacidade na recuperação de terras degradadas e geração de renda prevista no edital.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho e admiro muito a trajetória da Associação Viva com Esperança em Teresina. Mapeei uma oportunidade fantástica de financiamento no valor de até R$ 55.200.000 que tem tudo a ver com o trabalho lindo que vocês fazem. Vocês teriam disponibilidade para uma breve conversa esta semana?",
-    "contatos_encontrados": {
-      "whatsapp": "8699395007",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA **Associação Viva com Esperança**, fundada em 2010 e sediada em Teresina, Piauí, atua primordialmente na área de defesa de direitos sociais (CNAE 94.30-8-00). Com mais de uma década de existência, demonstra maturidade jurídica e institucional para captar recursos públicos e privados.\n\n### 🎯 Alinhamento com o Edital\nO perfil da OSC possui sinergia geográfica com o bioma Caatinga e potencial para atender aos eixos de desenvolvimento comunitário e empreendedorismo do Edital Recaatingar. O desafio será evidenciar no projeto a capacidade técnica para ações de recuperação socioprodutiva de terras degradadas, alinhando sua atuação em direitos sociais à mitigação das mudanças climáticas.",
-    "created_at": "2026-11-13T19:36:17.230Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "13818378000149",
-      "nome": "ASSOCIACAO DOS IRRIGANTES FAMILIARES DE OEIRAS",
+      "cnpj": "09130511000100",
+      "nome": "ASSOCIACAO DE EXTRATORES E PRODUTORES DE PO E CERA DE CARNAUBA E ARTESAOS DA PALHA DE CARNAUBA DOS VALES DOS RIOS CANINDE E ITAIM.",
       "uf": "PI",
       "municipio": "OEIRAS",
       "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2011,
+      "ano_fundacao": 2007,
       "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
       "cnae_secundario_descricao": "",
       "situacao_cadastral": "ATIVA",
@@ -665,269 +1033,155 @@
         "ddd_telefone_1": "8934621093"
       }
     },
-    "score": 85,
-    "motivo_match": "A associação está localizada em Oeiras (PI), região central do bioma Caatinga, e seu foco em irrigantes familiares alinha-se perfeitamente com a recuperação socioprodutiva de terras degradadas e geração de renda.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho lindo que vocês fazem com as famílias em Oeiras. Mapeamos uma oportunidade excelente de financiamento de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês na região. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "score": 92,
+    "motivo_match": "A OSC atua diretamente com extrativistas e artesãos da carnaúba nos vales dos rios Canindé e Itaim (PI), alinhando-se perfeitamente aos temas de desenvolvimento comunitário, empreendedorismo, geração de renda e sustentabilidade na Caatinga.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho e admiro muito o trabalho que vocês fazem com os extrativistas e artesãos em Oeiras e região. Mapeei uma oportunidade de financiamento de até R$ 55.200.000 voltada exatamente para fortalecer iniciativas socioambientais e produtivas na área de atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos como captar esses recursos?",
     "contatos_encontrados": {
       "whatsapp": "8934621093",
       "instagram": null
     },
-    "dossieText": "### 🏛️ Perfil Institucional\nA **ASSOCIACAO DOS IRRIGANTES FAMILIARES DE OEIRAS** é uma associação privada sem fins lucrativos fundada em 2011, situada no município de Oeiras, Piauí. Com mais de uma década de atuação, a instituição possui forte enraizamento local voltado para o apoio a agricultores e irrigantes familiares.\n\n### 🎯 Alinhamento com o Edital\nA organização possui forte aderência aos objetivos do Edital Recaatingar, pois sua localização no semiárido piauisense e seu foco na agricultura familiar dialogam diretamente com o combate à desertificação, a recuperação de terras e o desenvolvimento comunitário e socioprodutivo na Caatinga.",
-    "created_at": "2026-11-13T19:36:23.188Z"
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Associação de Extratores e Produtores de Pó e Cera de Carnaúba e Artesãos da Palha de Carnaúba dos Vales dos Rios Canindé e Itaim\n- **Localização:** Oeiras, PI (Zona Rural, Comunidade Várzea Branca)\n- **Natureza jurídica:** Associação Privada\n- **Fundação:** 2007 (17 anos de atuação)\n- **Atividade Principal (CNAE):** Atividades associativas não especificadas anteriormente\n\n### 🎯 Alinhamento com o Edital\nA organização possui forte capilaridade comunitária e atua com produtos da sociobiodiversidade da Caatinga (extrativismo da carnaúba e artesanato), o que se encaixa rigorosamente no objetivo do Edital Recaatingar de promover a recuperação socioprodutiva de terras degradadas, geração de emprego e renda, e desenvolvimento sustentável na região semiárida.",
+    "created_at": "2026-11-13T22:53:05.268Z"
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "39646002000198",
-      "nome": "INSTITUTO DE PRESERVACAO DOS DIREITOS HUMANOS E PRESERVACAO AMBIENTAL-VALE DO SOL",
-      "uf": "AL",
-      "municipio": "MACEIO",
+      "cnpj": "10541726000195",
+      "nome": "ASSOCIACAO COMUNITARIA DOS PRODUTORES RURAIS DA REGIAO DO BRAGA",
+      "uf": "BA",
+      "municipio": "MIRANTE",
       "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2020,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de apoio à agricultura não especificadas anteriormente | Atividades de apoio à produção florestal | Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias | Serviços de organização de feiras, congressos, exposições e festas | Outras atividades de ensino não especificadas anteriormente | Atividades de museus e de exploração de lugares e prédios históricos e atrações similares",
+      "ano_fundacao": 2008,
+      "cnae_primario_descricao": "Outras atividades de serviços pessoais não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
       "situacao_cadastral": "ATIVA",
       "official_contacts": {
-        "ddd_telefone_1": "8288878196",
-        "ddd_telefone_2": "7187554880"
+        "ddd_telefone_1": "7734681028"
       }
     },
     "score": 85,
-    "motivo_match": "A OSC está sediada em Alagoas (bioma Caatinga) e possui em seu objeto social atividades de apoio à agricultura e silvicultura, alinhando-se perfeitamente aos temas de meio ambiente, desenvolvimento comunitário e geração de renda exigidos no edital.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Conheço o belo trabalho que vocês vêm realizando e mapeei uma oportunidade de financiamento incrível no valor de até R$ 55.200.000 que se encaixa perfeitamente na atuação da instituição de vocês. Teriam disponibilidade para uma breve conversa esta semana?",
+    "motivo_match": "A associação está localizada em Mirante (BA), região inserida no bioma Caatinga, e sua natureza jurídica como associação de produtores rurais alinha-se perfeitamente aos temas de desenvolvimento comunitário, geração de renda e recuperação de terras do Edital Recaatingar.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito a atuação da Associação do Braga junto aos produtores rurais em Mirante. Mapeamos recentemente uma oportunidade fantástica de financiamento de até R$ 55,2 milhões voltada exatamente para fortalecer iniciativas na região de vocês, impulsionando a geração de renda e o desenvolvimento sustentável. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos como viabilizar essa captação?",
     "contatos_encontrados": {
-      "whatsapp": "8288878196",
+      "whatsapp": "7734681028",
       "instagram": null
     },
-    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Instituto de Preservação dos Direitos Humanos e Preservação Ambiental - Vale do Sol\n- **Localização:** Maceió, AL\n- **Natureza jurídica:** Associação Privada\n- **Ano de fundação:** 2020 (Maturidade de 6 anos)\n- **Atividades principais e secundárias:** Defesa de direitos sociais, apoio à agricultura e produção florestal, consultoria e serviços agronômicos.\n\n### 🎯 Alinhamento com o Edital\nO perfil da OSC é altamente compatível com o Edital Recaatingar. Por estar em Alagoas e possuir CNAEs voltados ao apoio agrícola e florestal, a entidade tem capacidade técnica para executar ações de recuperação de terras degradadas e geração de emprego e renda na Caatinga.",
-    "created_at": "2026-11-13T19:36:32.962Z"
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO COMUNITARIA DOS PRODUTORES RURAIS DA REGIAO DO BRAGA (CNPJ: 10.541.726/0001-95), conhecida como \"Associação do Braga\", é uma organização privada sem fins lucrativos fundada em 16 de maio de 2008. Com sede no município de Mirante, na Bahia, a instituição possui cerca de 17 anos de existência, demonstrando maturidade e estabilidade jurídica.\n\n### 🎯 Alinhamento com o Edital\nA organização possui forte aderência ao Edital Recaatingar - Segundo Ciclo - 2026. Por se tratar de uma associação de produtores rurais situada na Bahia, sua atuação está diretamente enraizada no bioma Caatinga. O perfil comunitário atende aos critérios de desenvolvimento comunitário, empreendedorismo e geração de emprego e renda, essenciais para projetos de recuperação socioprodutiva de terras degradadas e combate à desertificação.",
+    "created_at": "2026-11-13T22:53:21.049Z"
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "49008611000175",
-      "nome": "ASSOCIACAO DE DESENVOLVIMENTO SUSTENTAVEL DAS COMUNIDADES IPOJUCO, LAGOA DO MEL E TORROES EM CRAIBAS-AL",
-      "uf": "AL",
-      "municipio": "CRAIBAS",
+      "cnpj": "10804363000133",
+      "nome": "ASSOCIACAO COMUNITARIA BENEFICENTE DE POSTO DA MATA",
+      "uf": "BA",
+      "municipio": "NOVA VICOSA",
       "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2022,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8291834091"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A associação está localizada em Craíbas, Alagoas, região semiárida inserida no bioma Caatinga, e seu nome indica foco no desenvolvimento sustentável comunitário, alinhando-se perfeitamente com os objetivos de recuperação socioprodutiva e combate à desertificação do edital.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho e admiro muito o trabalho que vocês desenvolvem com as comunidades em Craíbas. Mapeamos uma oportunidade incrível de financiamento de até R$ 55.200.000 que tem tudo a ver com a atuação e os projetos de vocês. Vocês teriam disponibilidade essa semana para uma breve conversa para entendermos como capturar esse recurso?",
-    "contatos_encontrados": {
-      "whatsapp": "8291834091",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIAÇÃO DE DESENVOLVIMENTO SUSTENTAVEL DAS COMUNIDADES IPOJUCO, LAGOA DO MEL E TORROES EM CRAIBAS-AL é uma associação privada fundada em 2022, sediada no município de Craíbas (AL). Possui como atividade principal a defesa de direitos sociais e atua fortemente junto às comunidades locais, demonstrando raízes profundas no território.\n\n### 🎯 Alinhamento com o Edital\nA organização possui alto potencial de alinhamento com o Edital Recaatingar, pois atua diretamente no semiárido nordestino (Caatinga) com foco em desenvolvimento sustentável comunitário. Embora seu CNAE formal seja focado em direitos sociais, sua atuação prática e nomenclatura territorial atendem diretamente aos requisitos de desenvolvimento comunitário, geração de renda e recuperação ambiental exigidos pelo financiador.",
-    "created_at": "2026-11-13T19:36:45.609Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "46930278000169",
-      "nome": "ASSOCIACAO COMUNITARIA DOS MORADORES E AGRICULTORES FAMILIARES DO POVOADO MATA QUIRI SAO SEBASTIAO/AL",
-      "uf": "AL",
-      "municipio": "SAO SEBASTIAO",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2022,
+      "ano_fundacao": 2008,
       "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
       "cnae_secundario_descricao": "",
       "situacao_cadastral": "ATIVA",
       "official_contacts": {
-        "ddd_telefone_1": "8235421527",
-        "ddd_telefone_2": "8299193172"
+        "ddd_telefone_1": "7332915515"
       }
     },
-    "score": 85,
-    "motivo_match": "A associação está localizada em São Sebastião, Alagoas, região inserida no bioma Caatinga, e seu nome indica foco em agricultores familiares e moradores locais, alinhando-se diretamente com o desenvolvimento comunitário e a recuperação socioprodutiva de terras degradadas.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Parabéns pelo belo trabalho que vocês desenvolvem junto aos agricultores familiares em São Sebastião! Mapeamos uma oportunidade incrível de financiamento no valor de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês no campo. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "score": 65,
+    "motivo_match": "A associação está localizada na Bahia, estado que abrange o bioma Caatinga, e possui longa trajetória desde 2008, o que favorece o alinhamento com ações de desenvolvimento comunitário.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Parabenizo pelo belo trabalho comunitário que vocês realizam em Nova Viçosa. Mapeei uma oportunidade de financiamento incrível no valor de até R$ 55.200.000, voltada exatamente para fortalecer iniciativas da área de atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
     "contatos_encontrados": {
-      "whatsapp": "8235421527",
+      "whatsapp": "7332915515",
       "instagram": null
     },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO COMUNITARIA DOS MORADORES E AGRICULTORES FAMILIARES DO POVOADO MATA QUIRI SAO SEBASTIAO/AL é uma associação privada sem fins lucrativos fundada em 2022, localizada no município de São Sebastião, Alagoas. Possui baixa maturidade institucional (cerca de 4 anos de fundação) e atua voltada para o associativismo comunitário e apoio à agricultura familiar.\n\n### 🎯 Alinhamento com o Edital\nA organização atende ao critério geográfico por estar situada no semiárido nordestino (Caatinga) e possui forte aderência aos temas de desenvolvimento comunitário e geração de renda para agricultores familiares, sendo elegível para ações de recuperação de terras degradadas propostas pelo edital.",
-    "created_at": "2026-11-13T19:36:48.579Z"
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** ASSOCIAÇÃO COMUNITÁRIA BENEFICENTE DE POSTO DA MATA\n- **CNPJ:** 10.804.363/0001-33\n- **Localização:** Nova Viçosa, BA\n- **Fundação:** 13/05/2008 (17 anos de atuação)\n- **Natureza:** Associação Privada\n- **Atividade Principal:** Atividades associativas não especificadas anteriormente\n\n### 🎯 Alinhamento com o Edital\n- **Aderência:** A organização possui capilaridade local na Bahia e atuação comunitária sólida, alinhando-se aos temas de desenvolvimento comunitário e geração de emprego e renda exigidos pelo edital.\n- **Maturidade:** Com mais de 15 anos de existência, apresenta a regularidade institucional necessária para gerir recursos de grande porte.",
+    "created_at": "2026-11-13T22:53:26.312Z"
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "49323723000110",
-      "nome": "ASSOCIACAO COMUNITARIA DO SITIO BAIXA DA PEDRA",
-      "uf": "AL",
-      "municipio": "PALMEIRA DOS INDIOS",
+      "cnpj": "10772156000144",
+      "nome": "ASSOCIACAO DE JOVENS FLORIECOLOGISTAS DO POVOADO DO PEIXE",
+      "uf": "BA",
+      "municipio": "LAJEDO DO TABOCAL",
       "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2022,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8281296654"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A associação está localizada em Palmeira dos Índios, Alagoas, uma região inserida no bioma Caatinga e vulnerável à desertificação. Embora sua atividade principal seja voltada à defesa de direitos sociais, sua natureza comunitária permite a execução de projetos de recuperação socioprodutiva e desenvolvimento local exigidos pelo edital.",
-    "whatsapp_message": "Olá, tudo bem? Aqui é a Maria Angela Bonifacio, da Triade ACR. Quero parabenizar vocês pelo lindo trabalho comunitário que realizam em Palmeira dos Índios! Mapeamos uma oportunidade incrível de financiamento no valor de até R$ 55.200.000 que se encaixa perfeitamente na atuação de vocês com desenvolvimento local e sustentabilidade. Vocês teriam disponibilidade para uma breve conversa esta semana?",
-    "contatos_encontrados": {
-      "whatsapp": "8281296654",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO COMUNITARIA DO SITIO BAIXA DA PEDRA é uma associação privada fundada em 2022, com sede em Palmeira dos Índios (AL). Possui como atividade principal a defesa de direitos sociais e atua de forma comunitária na região semiárida.\n\n### 🎯 Alinhamento com o Edital\nA organização está geograficamente posicionada no bioma Caatinga, atendendo diretamente ao foco territorial do edital. Sua atuação comunitária favorece a mobilização local para ações de recuperação de terras degradadas, geração de renda e desenvolvimento sustentável, alinhando-se aos temas ambientais e socioeconômicos exigidos.",
-    "created_at": "2026-11-13T19:36:54.781Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "51431231000190",
-      "nome": "ASSOCIACAO COMUNITARIA DOS AGRICULTORES FAMILIARES DO QUINTA DA SERRA II",
-      "uf": "AL",
-      "municipio": "VICOSA",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2023,
+      "ano_fundacao": 2009,
       "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
       "cnae_secundario_descricao": "",
       "situacao_cadastral": "ATIVA",
       "official_contacts": {
-        "ddd_telefone_1": "8291526909"
+        "ddd_telefone_1": "7335333076"
       }
     },
-    "score": 85,
-    "motivo_match": "A associação está localizada em Viçosa (AL), região de incidência da Caatinga, e seu nome indica foco em agricultura familiar, alinhando-se diretamente com o desenvolvimento comunitário e recuperação socioprodutiva de terras degradadas.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Parabéns pelo belo trabalho que vocês desenvolvem com os agricultores em Viçosa! Mapeamos uma excelente oportunidade de financiamento no valor de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês na região. Vocês teriam disponibilidade para uma breve conversa?",
+    "score": 90,
+    "motivo_match": "A OSC está localizada em Lajedo do Tabocal, BA (região da Caatinga), possui foco em ecologia e juventude rural desde 2009, alinhando-se perfeitamente aos temas de meio ambiente, desenvolvimento comunitário e recuperação socioprodutiva do Edital Recaatingar.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Trade ACR. Acompanho e admiro muito a dedicação de vocês da Associação de Jovens Floriecologistas do Povoado do Peixe na Bahia. Mapeamos recentemente uma grande oportunidade de financiamento não reembolsável de até R$ 55,2 milhões que conversa diretamente com o trabalho lindo que vocês fazem na região. Teriam disponibilidade esta semana para uma breve conversa sobre isso?",
     "contatos_encontrados": {
-      "whatsapp": "8291526909",
+      "whatsapp": "7335333076",
       "instagram": null
     },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO COMUNITARIA DOS AGRICULTORES FAMILIARES DO QUINTA DA SERRA II é uma associação privada fundada em 2023, sediada em Viçosa, Alagoas. Possui foco em atividades associativas voltadas para o apoio aos agricultores familiares locais, demonstrando forte enraizamento comunitário, embora seja uma instituição jovem.\n\n### 🎯 Alinhamento com o Edital\nA organização possui grande potencial de alinhamento com o Edital Recaatingar devido à sua atuação com agricultores familiares em área de Caatinga. O perfil comunitário atende aos requisitos de geração de renda, empreendedorismo e desenvolvimento sustentável exigidos pela chamada.",
-    "created_at": "2026-11-13T19:37:04.706Z"
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DE JOVENS FLORIECOLOGISTAS DO POVOADO DO PEIXE (CNPJ 10.772.156/0001-44), fundada em 09/02/2009 e com situação cadastral ativa, está sediada na zona rural de Lajedo do Tabocal, BA. Trata-se de uma associação privada com forte apelo comunitário voltado à juventude e à pauta ambiental (floriecologia), contando com mais de 16 anos de atuação.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra alto alinhamento com o Edital Recaatingar. Sua atuação na zona rural da Bahia e sua vocação socioambiental atendem diretamente aos eixos de recuperação de terras degradadas na Caatinga, desenvolvimento comunitário e geração de emprego e renda para jovens, encaixando-se no perfil de executor local para o escopo e orçamento robusto da chamada.",
+    "created_at": "2026-11-13T22:53:31.610Z"
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "56003736000178",
-      "nome": "ASSOCIACAO DOS AGRICULTORES FAMILIARES AGROPECUARISTAS - AMIGOS DA NATUREZA - AFAAN",
-      "uf": "AL",
-      "municipio": "IGREJA NOVA",
+      "cnpj": "10685280000172",
+      "nome": "ASSOCIACAO DOS PRODUTORES RURAIS DA COMUNIDADE MACHADO",
+      "uf": "PI",
+      "municipio": "OEIRAS",
       "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2024,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "8296708445"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A AFAAN está localizada em Igreja Nova (AL), região semiárida propícia a ações na Caatinga, e seu nome indica forte atuação com agricultores familiares, alinhando-se diretamente com o desenvolvimento comunitário e a recuperação socioprodutiva de terras degradadas.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro o trabalho incrível que vocês desenvolvem com os agricultores em Igreja Nova. Mapeei recentemente uma oportunidade de financiamento no valor de até R$ 55.200.000 que tem tudo a ver com a atuação da AFAAN na pauta ambiental e comunitária. Vocês teriam disponibilidade para uma breve conversa esta semana?",
-    "contatos_encontrados": {
-      "whatsapp": "8296708445",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Associação dos Agricultores Familiares Agropecuaristas - Amigos da Natureza - AFAAN\n- **Localização:** Igreja Nova, AL\n- **Natureza:** Associação Privada\n- **Fundação:** 2024\n- **Atividade Principal (CNAE):** Atividades de associações de defesa de direitos sociais\n- **Atividades Secundárias:** Atividades culturais/artísticas e associativas não especificadas\n- **Maturidade:** Organização recém-criada (2024), exigindo atenção quanto à capacidade técnica prévia, mas com forte capilaridade local.\n\n### 🎯 Alinhamento com o Edital\n- **Aderência ao Objetivo:** A atuação voltada a agricultores familiares e agropecuaristas no semiúmido alinha-se perfeitamente com a recuperação socioprodutiva de terras degradadas na Caatinga.\n- **Temas Atendidos:** Meio ambiente, desenvolvimento comunitário, empreendedorismo e geração de emprego e renda.",
-    "created_at": "2026-11-13T19:37:30.651Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "54726590000163",
-      "nome": "ASSOCIACAO DOS AGROPECUARISTAS DO SITIO CACIMBINHA E CIRCUNVIZINHOS DO MUNICIPIO DE BODOCO PE",
-      "uf": "PE",
-      "municipio": "BODOCO",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2024,
+      "ano_fundacao": 2009,
       "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
       "cnae_secundario_descricao": "",
       "situacao_cadastral": "ATIVA",
       "official_contacts": {
-        "ddd_telefone_1": "8796623389"
+        "ddd_telefone_1": "8934621093"
       }
     },
-    "score": 85,
-    "motivo_match": "A associação está sediada em Bodocó, PE, no coração da Caatinga, e seu nome indica forte atuação agropecuária comunitária, alinhando-se perfeitamente aos temas de desenvolvimento comunitário, meio ambiente e recuperação de terras degradadas.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que vocês desenvolvem com os agropecuaristas na região de Bodocó. Mapeamos uma oportunidade excelente de financiamento de até R$ 55.200.000 voltada exatamente para fortalecer iniciativas na área de atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "score": 95,
+    "motivo_match": "A associação está localizada em Oeiras (PI), no coração do bioma Caatinga, e possui foco direto em produtores rurais, alinhando-se perfeitamente aos objetivos de recuperação socioprodutiva de terras degradadas e desenvolvimento comunitário do edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho que vocês desenvolvem junto aos produtores rurais em Oeiras. Mapeamos recentemente uma excelente oportunidade de financiamento de até R$ 55.200.000 voltada exatamente para ações de desenvolvimento socioprodutivo e sustentabilidade na região de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos como viabilizar essa captação?",
     "contatos_encontrados": {
-      "whatsapp": "8796623389",
-      "instagram": null
+      "whatsapp": "8934621093"
     },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS AGROPECUARISTAS DO SITIO CACIMBINHA E CIRCUNVIZINHOS DO MUNICIPIO DE BODOCO PE é uma associação privada fundada em 2024, localizada no município de Bodocó, em Pernambuco. Possui foco em atividades associativas ligadas ao setor agropecuário e comunitário regional.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra forte potencial para o Edital Recaatingar devido à sua localização geográfica na região semiárida (Pernambuco), o que atende diretamente aos critérios territoriais e temáticos de combate à desertificação, recuperação socioprodutiva e apoio ao empreendedorismo rural na Caatinga.",
-    "created_at": "2026-11-13T19:37:39.652Z"
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIAÇÃO DOS PRODUTORES RURAIS DA COMUNIDADE MACHADO, fundada em março de 2009 (CNPJ 10.685.280/0001-72), é uma entidade privada sem fins lucrativos localizada na zona rural de Oeiras, Piauí. Com 16 anos de atuação ativa, a organização tem como foco principal o apoio e representação de pequenos produtores rurais na região semiárida.\n\n### 🎯 Alinhamento com o Edital\nA OSC possui forte aderência ao 'Edital Recaatingar', pois atua diretamente na base comunitária rural em uma área afetada pela desertificação na Caatinga. Seus projetos e atuação local potencializam a geração de emprego, renda e empreendedorismo comunitário, cumprindo todos os requisitos temáticos e geográficos exigidos pelo financiador.",
+    "created_at": "2026-11-13T22:53:37.001Z"
   },
   {
     "edital_id": "19461",
     "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
     "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
     "osc": {
-      "cnpj": "56084281000162",
-      "nome": "ASSOCIACAO DOS AGRICULTORES DA AGROVILA DEZESSETE E REGIAO",
-      "uf": "PE",
-      "municipio": "SANTA MARIA DA BOA VISTA",
+      "cnpj": "12859165000100",
+      "nome": "ASSOCIACAO CASA DE AFONSO E MARIA",
+      "uf": "CE",
+      "municipio": "FORTALEZA",
       "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2024,
+      "ano_fundacao": 2010,
       "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
       "situacao_cadastral": "ATIVA",
       "official_contacts": {
-        "ddd_telefone_1": "8788734169"
+        "ddd_telefone_1": "8532622537"
       }
     },
     "score": 85,
-    "motivo_match": "A associação está localizada em Santa Maria da Boa Vista (PE), coração da Caatinga, e seu foco em agricultores familiares alinha-se perfeitamente com a recuperação socioprodutiva de terras degradadas e geração de renda exigidas pelo edital.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho o trabalho essencial que vocês fazem com os agricultores em Santa Maria da Boa Vista. Mapeamos recentemente uma oportunidade de financiamento de até R$ 55.200.000 que tem tudo a ver com a atuação de vocês na região. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "motivo_match": "A ACAM Mandacaru possui forte atuação comunitária no Ceará, com histórico de projetos socioambientais e intervenções na zona rural de Jaguaruana (região de Caatinga), alinhando-se diretamente ao edital de recuperação de terras e desenvolvimento socioprodutivo.",
+    "whatsapp_message": "Olá, equipe da ACAM Mandacaru! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho e admiro muito o trabalho lindo que vocês fazem no Ceará. Mapeei uma oportunidade de financiamento não reembolsável de até R$ 55.200.000 que tem total aderência com as ações socioambientais e comunitárias de vocês. Teria disponibilidade para uma breve conversa esta semana?",
     "contatos_encontrados": {
-      "whatsapp": "8788734169",
-      "instagram": null
+      "whatsapp": "(85) 3219-9797",
+      "email": "N/A",
+      "instagram": "N/A"
     },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS AGRICULTORES DA AGROVILA DEZESSETE E REGIAO é uma associação privada fundada em 2024, sediada em Santa Maria da Boa Vista, Pernambuco. Sua principal atividade estatutária é a defesa de direitos sociais, com forte atuação voltada para o fortalecimento da agricultura familiar local.\n\n### 🎯 Alinhamento com o Edital\nEmbora seja uma organização recém-criada (2024), sua localização geográfica no bioma Caatinga e seu público-alvo (agricultores) atendem diretamente aos critérios do edital de recuperação de terras degradadas, desenvolvimento comunitário e geração de emprego e renda.",
-    "created_at": "2026-11-13T19:38:01.587Z"
-  },
-  {
-    "edital_id": "19461",
-    "edital_titulo": "Edital Recaatingar - Segundo Ciclo - 2026",
-    "edital_url": "https://www.trt4.jus.br/portais/media-noticia/51146931/15%20-%20EDITAL%20SELE%C3%87%C3%83O%20PARA%20OCUPA%C3%87%C3%83O%20DOS%20ESPA%C3%87OS%20EXPOSITIVOS%20DO%20TRIBUNAL%20REGIONAL%20DO%20TRABALHO%20DA%204%C2%AA%20REGI%C3%83O%20%E2%80%93%20CALEND%C3%81RIO%202027%20-.pdf",
-    "osc": {
-      "cnpj": "56903399000175",
-      "nome": "ASSOCIACAO DOS PIPEIROS DE PETROLINA-PE-APIPE",
-      "uf": "PE",
-      "municipio": "PETROLINA",
-      "natureza_juridica": "Associação Privada",
-      "ano_fundacao": 2024,
-      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
-      "cnae_secundario_descricao": "Distribuição de água por caminhões",
-      "situacao_cadastral": "ATIVA",
-      "official_contacts": {
-        "ddd_telefone_1": "7498151399"
-      }
-    },
-    "score": 85,
-    "motivo_match": "A APIPE está localizada em Petrolina-PE, no coração da Caatinga, e possui como atividade secundária a distribuição de água, o que demonstra forte sinergia com ações de recuperação de terras degradadas e apoio comunitário.",
-    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho o trabalho essencial que vocês realizam em Petrolina e região. Mapeamos uma oportunidade excelente de capitação de recursos de até R$ 55.200.000 que se alinha perfeitamente com a atuação e o impacto de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
-    "contatos_encontrados": {
-      "whatsapp": "7498151399",
-      "instagram": null
-    },
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS PIPEIROS DE PETROLINA-PE-APIPE, localizada em Petrolina, PE, é uma associação privada fundada recentemente em 2024. Sua atividade econômica principal é a defesa de direitos sociais e, como atividade secundária, atua na distribuição de água por caminhões, essencial para regiões semiáridas.\n\n### 🎯 Alinhamento com o Edital\nA organização está estrategicamente posicionada no bioma Caatinga e possui capilaridade logística e comunitária através da distribuição de água. Isso a torna altamente qualificada para propor ações de recuperação socioprodutiva de terras degradadas, mitigação das mudanças climáticas e geração de renda nas comunidades locais.",
-    "created_at": "2026-11-13T19:38:10.973Z"
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO CASA DE AFONSO E MARIA (ACAM Mandacaru), fundada em 22/10/2010 e com sede em Fortaleza (CE), é uma entidade privada sem fins lucrativos com atuação filantrópica e foco em sustentabilidade sociocultural e ambiental. A organização também desenvolve ações sociais na zona rural de Jaguaruana (CE).\n\n### 🎯 Alinhamento com o Edital\nA OSC apresenta forte aderência aos temas de desenvolvimento comunitário, meio ambiente e geração de renda exigidos pelo Edital Recaatingar. Sua atuação prática no semiárido cearense (Jaguaruana) credencia a instituição a implementar ações de recuperação de terras degradadas e mitigação das mudanças climáticas.",
+    "created_at": "2026-11-13T22:53:48.095Z"
   },
   {
     "edital_id": "19697",
