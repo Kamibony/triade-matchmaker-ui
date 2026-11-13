@@ -666,9 +666,9 @@ async function runPipeline() {
       'colégio municipal', 'colégio estadual', 'conselho estadual', 'conselho municipal',
       'conselho escolar', 'conselho regional', 'prefeitura', 'secretaria', 'advogados',
       'escritório', 'contábil', 'contabilidade', 'assessoria contábil', 'assessoria contabil',
-      'comércio', 'associação comercial', 'associacao comercial', 'esporte clube', 'futebol clube',
-      'clube de', 'servidores', 'câmara', 'ministério público', 'tribunal', 'polícia',
-      'bombeiros', 'crea', 'oab', 'cartório', 'hospital municipal',
+      'comércio', 'associação comercial', 'associacao comercial', 'comercial e empresarial', 'cdl ',
+      'esporte clube', 'futebol clube', 'clube de', 'servidores', 'câmara', 'ministério público',
+      'tribunal', 'polícia', 'bombeiros', 'crea', 'oab', 'cartório', 'hospital municipal',
       'protecao veicular', 'moto - taxistas', 'motoristas de taxi'
     ];
 
@@ -887,11 +887,13 @@ Official Email: ${osc.official_contacts?.email || 'N/A'}
 ${webContext ? `\n${webContext}` : ''}${dossieText ? `\n**Existing Dossier:**\n${dossieText}` : ''}
 
 Return ONLY a valid JSON object containing:
-- "score": A number between 0 and 100 representing how well the NGO matches the grant's objective and themes.
-- "motivo_match": A brief 1-2 sentence justification in pt-BR citing specific evidence from their name, location, and activities.
-- "dossie_resumo": A structured Markdown summary in pt-BR with two sections ("### 🏛️ Perfil Institucional" and "### 🎯 Alinhamento com o Edital") summarizing the NGO's profile, maturity (founded in ${osc.ano_fundacao}), official activities, and why it fits this grant.
-- "whatsapp_message": "Mensagem curta, humana e atrativa de WhatsApp (em pt-BR) escrita por 'Maria Angela Bonifacio, Triade ACR' para a ONG. Elogie brevemente o trabalho da ONG. Diga que você mapeou uma oportunidade de edital/financiamento no valor de até ${valorEdital} voltado para a área de atuação deles. REGRA CRÍTICA E ABSOLUTA: NUNCA mencione o título, nome real ou a instituição do edital. Termine perguntando se eles têm disponibilidade para uma breve conversa."
-- "contatos_encontrados": An object with optional keys "whatsapp", "email", and "instagram".`;
+- "score": A number between 0 and 100 representing how well the NGO matches the grant's objective and themes. STRICT SCORING RULES using the Web/IPEA data above:
+  * Score < 55 (REJECT) if Brave Search or IPEA reveals this is a commercial/business association (associação comercial/empresarial, CDL), professional guild, inactive shell, or has no real thematic alignment with the grant.
+  * Score 85–98 (TOP PRIORITY) if Brave Search or IPEA confirms active, real-world projects aligned with the grant's theme.
+- "motivo_match": A brief 1-2 sentence justification in pt-BR citing specific evidence from their name, location, activities, and web/IPEA findings if available.
+- "dossie_resumo": A structured Markdown summary in pt-BR with two sections ("### 🏛️ Perfil Institucional" and "### 🎯 Alinhamento com o Edital") summarizing the NGO's profile, maturity (founded in ${osc.ano_fundacao}), web/IPEA projects, and why it fits this grant.
+- "whatsapp_message": "Mensagem curta, humana e atrativa de WhatsApp (em pt-BR) escrita por 'Maria Angela Bonifacio, Triade ACR' para a ONG. Elogie brevemente o trabalho da ONG usando algo real do perfil/web se disponível. Diga que você mapeou uma oportunidade de edital/financiamento no valor de até ${valorEdital} voltado para a área de atuação deles. REGRA CRÍTICA E ABSOLUTA: NUNCA mencione o título, nome real ou a instituição do edital. Termine perguntando se eles têm disponibilidade para uma breve conversa."
+- "contatos_encontrados": An object with optional keys "whatsapp" (if Brave Search snippets show a direct wa.me/ or mobile WhatsApp number, extract digits only e.g. 5585999998888), "email", and "instagram".`;
 
       let aiResult: any = null;
       if (GEMINI_API_KEY && GEMINI_API_KEY !== 'dummy') {
@@ -914,7 +916,7 @@ Return ONLY a valid JSON object containing:
       // Only mark as evaluated AFTER a successful AI evaluation!
       cacheEntry.evaluated_editais = Array.from(new Set([...(cacheEntry.evaluated_editais || []), String(edital.id)]));
 
-      if (!dossieText && aiResult.dossie_resumo) {
+      if ((webContext || !dossieText) && aiResult.dossie_resumo) {
         dossieText = aiResult.dossie_resumo;
         cacheEntry.dossieText = dossieText;
         cacheEntry.dossie_updated_at = new Date().toISOString();
@@ -924,9 +926,15 @@ Return ONLY a valid JSON object containing:
 
       const finalScore = Number(aiResult.score) || 0;
       if (finalScore >= 55 && aiResult.motivo_match && aiResult.whatsapp_message) {
+        const extractedWa = normalizePhone(aiResult.contatos_encontrados?.whatsapp);
+        const officialPhone = osc.official_contacts?.ddd_telefone_1 || osc.official_contacts?.ddd_telefone_2 || undefined;
+        const preferredWhatsapp = extractedWa && (!isMobilePhone(osc) || extractedWa.length >= 12)
+          ? extractedWa
+          : (aiResult.contatos_encontrados?.whatsapp || officialPhone);
+
         const resolvedContacts = {
           ...(aiResult.contatos_encontrados || {}),
-          whatsapp: aiResult.contatos_encontrados?.whatsapp || osc.official_contacts?.ddd_telefone_1 || osc.official_contacts?.ddd_telefone_2 || undefined,
+          whatsapp: preferredWhatsapp,
           email: aiResult.contatos_encontrados?.email || osc.official_contacts?.email || undefined
         };
 
