@@ -288,7 +288,7 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
     let angelaAlertDispatch = null;
 
     const envAutoReplyEnabled =
-      (env.WHATSAPP_AUTOREPLY_ENABLED || process.env.WHATSAPP_AUTOREPLY_ENABLED || '').toLowerCase() === 'true';
+      (env.WHATSAPP_AUTOREPLY_ENABLED || process.env.WHATSAPP_AUTOREPLY_ENABLED || 'true').toLowerCase() !== 'false';
     const allowAutoSend =
       envAutoReplyEnabled &&
       body.autoSendReply !== false &&
