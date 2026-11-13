@@ -26,7 +26,8 @@ export async function POST({ request }) {
       lead,
       useTwoStepOpener = false,
       enforceBusinessHours = true,
-      forceSendOutsideHours = false
+      forceSendOutsideHours = false,
+      overrideConfig
     } = body;
 
     const timeInfo = getBrasiliaTimeInfo();
@@ -54,7 +55,10 @@ export async function POST({ request }) {
       return json({ ok: false, error: 'Telefone ou texto da mensagem ausente.' }, { status: 400 });
     }
 
-    const result = await sendWhatsAppText(rawPhone, finalMessage, { simulateTypingMs: 3500 });
+    const result = await sendWhatsAppText(rawPhone, finalMessage, {
+      simulateTypingMs: 3500,
+      overrideConfig
+    });
 
     return json({
       ...result,

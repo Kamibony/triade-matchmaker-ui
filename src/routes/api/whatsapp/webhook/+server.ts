@@ -21,7 +21,18 @@ function extractIncomingPayload(body: any): {
     };
   }
 
-  // 2. Evolution API v1/v2 webhook format (messages.upsert)
+  // 2. Whapi.cloud webhook format (messages array)
+  if (Array.isArray(body?.messages) && body.messages[0]) {
+    const msg = body.messages[0];
+    return {
+      senderPhone: (msg.chat_id || msg.from || '').split('@')[0],
+      incomingText: msg.text?.body || msg.voice?.caption || '[Áudio/Mídia recebido no WhatsApp]',
+      fromMe: !!msg.from_me,
+      senderName: msg.from_name
+    };
+  }
+
+  // 3. Evolution API v1/v2 webhook format (messages.upsert)
   if (body?.data?.key?.remoteJid) {
     const jid: string = body.data.key.remoteJid;
     const fromMe = !!body.data.key.fromMe;
@@ -41,7 +52,7 @@ function extractIncomingPayload(body: any): {
     };
   }
 
-  // 3. Z-API webhook format
+  // 4. Z-API webhook format
   if (body?.phone && (body?.text?.message || body?.audio?.audioUrl)) {
     return {
       senderPhone: body.phone,
@@ -51,7 +62,20 @@ function extractIncomingPayload(body: any): {
     };
   }
 
-  // 4. Meta Official WhatsApp Cloud API format
+  // 5. Green-API webhook format
+  if (body?.senderData?.chatId && body?.messageData) {
+    return {
+      senderPhone: body.senderData.chatId.split('@')[0],
+      incomingText:
+        body.messageData.textMessageData?.textMessage ||
+        body.messageData.extendedTextMessageData?.text ||
+        null,
+      fromMe: body.typeWebhook === 'outgoingMessageReceived' || body.typeWebhook === 'outgoingAPIMessageReceived',
+      senderName: body.senderData.senderName
+    };
+  }
+
+  // 6. Meta Official WhatsApp Cloud API format
   const metaChange = body?.entry?.[0]?.changes?.[0]?.value;
   if (metaChange?.messages?.[0]) {
     const msg = metaChange.messages[0];
@@ -88,7 +112,6 @@ function findMatchingLeadByPhone(rawPhone: string | null, explicitLead?: any) {
 }
 
 export async function GET({ url }) {
-  // Meta Cloud API webhook verification challenge
   const mode = url.searchParams.get('hub.mode');
   const token = url.searchParams.get('hub.verify_token');
   const challenge = url.searchParams.get('hub.challenge');
@@ -104,7 +127,7 @@ export async function GET({ url }) {
   return json({
     status: 'active',
     webhook: '/api/whatsapp/webhook',
-    supportedProviders: ['evolution', 'zapi', 'meta', 'simulator']
+    supportedProviders: ['whapi', 'zapi', 'evolution', 'greenapi', 'meta', 'simulator']
   });
 }
 
@@ -113,7 +136,6 @@ export async function POST({ request }) {
     const body = await request.json();
     const { senderPhone, incomingText, fromMe, senderName } = extractIncomingPayload(body);
 
-    // Safety Switch: Ignore messages sent by Angela herself so the bot doesn't reply to itself
     if (fromMe) {
       return json({ ok: true, ignored: true, reason: 'Mensagem enviada pelo próprio número (fromMe).' });
     }
@@ -153,6 +175,7 @@ Você é o Assistente de Triagem e Captação da consultora sênior **Maria Ange
 
 CONTEXTO DO LEAD (ONG QUE ESTÁ RESPONDENDO):
 - Nome da ONG: ${orgNome} (${orgCidade})
+- Score do Match: ${matchedLead?.score || 'N/A'}%
 - Motivo do Match com a ONG: ${matchedLead?.motivo_match || 'Atuação compatível com o edital'}
 - Dossiê da ONG: ${matchedLead?.dossieText || 'N/A'}
 
@@ -197,14 +220,16 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
     const allowAutoSend = body.autoSendReply !== false;
     if (allowAutoSend && parsed.should_auto_reply && parsed.reply_message && senderPhone && !body.simulator) {
       autoReplyDispatch = await sendWhatsAppText(senderPhone, parsed.reply_message, {
-        simulateTypingMs: 4000
+        simulateTypingMs: 4000,
+        overrideConfig: body.overrideConfig
       });
     }
 
     const angelaPhone = env.ANGELA_NOTIFY_PHONE;
     if (angelaPhone && parsed.should_notify_angela && parsed.angela_alert && !body.simulator) {
       angelaAlertDispatch = await sendWhatsAppText(angelaPhone, parsed.angela_alert, {
-        simulateTypingMs: 1000
+        simulateTypingMs: 1000,
+        overrideConfig: body.overrideConfig
       });
     }
 
@@ -212,6 +237,8 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
       ok: true,
       senderPhone: normalizeBrazilPhone(senderPhone),
       matchedOrg: orgNome,
+      matchedScore: matchedLead?.score || null,
+      matchedUf: matchedLead?.osc?.uf || null,
       matchedEditalId: matchedLead?.edital_id || null,
       incomingText,
       sdrResult: parsed,
