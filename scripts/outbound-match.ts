@@ -371,8 +371,9 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
 }
 
 async function batchAiPreScreen(edital: any, candidates: OSC[]): Promise<OSC[]> {
-  if (!GEMINI_API_KEY || GEMINI_API_KEY === 'dummy' || candidates.length <= 6) {
-    return candidates.slice(0, 6);
+  const maxPerEdital = Math.max(1, parseInt(process.env.MAX_CANDIDATES_PER_EDITAL || '6', 10));
+  if (!GEMINI_API_KEY || GEMINI_API_KEY === 'dummy' || candidates.length <= maxPerEdital) {
+    return candidates.slice(0, maxPerEdital);
   }
 
   const compactCandidates = candidates.map(c => ({
@@ -386,7 +387,7 @@ async function batchAiPreScreen(edital: any, candidates: OSC[]): Promise<OSC[]> 
 
   const prompt = `Você é um consultor sênior de captação de recursos para ONGs (OSCs).
 Analise o Edital abaixo e a lista de ${compactCandidates.length} ONGs pré-selecionadas.
-Selecione APENAS as 6 ONGs com MAIOR aderência temática real ao objetivo e temas do edital (priorizando aquelas cujo nome e atividades demostrem atuação real na área do edital e que possuam telefone).
+Selecione APENAS as ${maxPerEdital} ONGs com MAIOR aderência temática real ao objetivo e temas do edital (priorizando aquelas cujo nome e atividades demostrem atuação real na área do edital e que possuam telefone).
 Descarte ONGs genéricas ou sem relação clara com o tema do edital.
 
 EDITAL:
@@ -409,14 +410,14 @@ Retorne APENAS um objeto JSON válido no formato:
       const selectedSet = new Set(parsed.selected_cnpjs.map((id: string) => String(id)));
       const filtered = candidates.filter(c => selectedSet.has(c.cnpj));
       if (filtered.length > 0) {
-        return filtered.slice(0, 6);
+        return filtered.slice(0, maxPerEdital);
       }
     }
   } catch (e: any) {
     console.warn(`Batch AI pre-screening failed, falling back to top heuristic candidates: ${e.message}`);
   }
 
-  return candidates.slice(0, 6);
+  return candidates.slice(0, maxPerEdital);
 }
 
 async function runPipeline() {

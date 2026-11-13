@@ -10,6 +10,17 @@ on:
     paths:
       - 'scripts/outbound-match.ts'
   workflow_dispatch:
+    inputs:
+      max_editais:
+        description: 'Max editais to process in this run'
+        required: false
+        default: '16'
+        type: string
+      max_per_edital:
+        description: 'Max candidate OSCs per edital'
+        required: false
+        default: '10'
+        type: string
 
 jobs:
   run-pipeline:
@@ -35,6 +46,8 @@ jobs:
       - name: Run Matchmaking Pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MAX_EDITAIS_PER_RUN: ${{ inputs.max_editais || '8' }}
+          MAX_CANDIDATES_PER_EDITAL: ${{ inputs.max_per_edital || '6' }}
         run: npx tsx scripts/outbound-match.ts
 
       - name: Commit Updated Leads and Cache
