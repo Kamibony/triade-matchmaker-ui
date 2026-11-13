@@ -20,8 +20,16 @@
   let naturezaJuridicaState = $state('');
   let idadeAnosState = $state(0);
   let cnaeDataState = $state('');
+  let whatsappMode = $state<'web' | 'app'>('web');
 
   onMount(async () => {
+    try {
+      const savedWaMode = localStorage.getItem('triade_whatsapp_mode');
+      if (savedWaMode === 'app' || savedWaMode === 'web') {
+        whatsappMode = savedWaMode;
+      }
+    } catch {}
+
     const params = new URLSearchParams(window.location.search);
     const queryCnpj = params.get('cnpj');
     if (queryCnpj) {
@@ -32,6 +40,24 @@
       }
     }
   });
+
+  function openReceptiveWhatsApp(event: MouseEvent, rawPhone: string, orgName: string, editalTitulo: string) {
+    event.preventDefault();
+    const digits = (rawPhone || '').replace(/\D/g, '');
+    if (!digits) return;
+    const cleanPhone = digits.startsWith('55') && digits.length >= 12 ? digits.slice(2) : digits;
+    const text = `Olá, equipe da *${orgName}*! Nosso sistema mapeou um edital perfeito para vocês: _${editalTitulo}_. Teriam 5 minutinhos para eu apresentar essa oportunidade?`;
+    try {
+      navigator.clipboard?.writeText(text);
+    } catch {}
+    const encoded = encodeURIComponent(text);
+    if (whatsappMode === 'app') {
+      window.location.href = `whatsapp://send?phone=55${cleanPhone}&text=${encoded}`;
+    } else {
+      const win = window.open(`https://web.whatsapp.com/send?phone=55${cleanPhone}&text=${encoded}`, 'whatsapp_triade');
+      if (win) win.focus();
+    }
+  }
 
   async function handleFetchMatches() {
     loading = true;
@@ -431,12 +457,12 @@
                     {/if}
                     {#if oscDetails?.telefone}
                       <a
-                        href="https://wa.me/55{oscDetails.telefone.replace(/[^\d]/g, '')}?text=Olá,%20equipe%20da%20*{oscDetails.nome_fantasia || oscDetails.razao_social}*!%20Nosso%20sistema%20mapeou%20um%20edital%20perfeito%20para%20vocês:%20_{match.titulo}_.%20Teriam%205%20minutinhos%20para%20eu%20apresentar%20essa%20oportunidade?"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="https://web.whatsapp.com/send?phone=55{oscDetails.telefone.replace(/[^\d]/g, '')}"
+                        target="whatsapp_triade"
+                        onclick={(e) => openReceptiveWhatsApp(e, oscDetails.telefone, oscDetails.nome_fantasia || oscDetails.razao_social, match.titulo)}
                         class="shrink-0 inline-flex items-center px-4 py-2 border border-green-300 shadow-sm text-sm font-medium rounded-md text-green-700 bg-green-50 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors"
                       >
-                        <span class="mr-2 text-lg">💬</span>
+                        <span class="mr-2 text-lg">{whatsappMode === 'app' ? '⚡' : '💬'}</span>
                         WhatsApp
                       </a>
                     {/if}

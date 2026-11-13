@@ -19,6 +19,10 @@
   let onlyWhatsApp = false;
   let minDaysFilter = 15; // Default: only show editais with >= 15 days left (or continuous flow)
 
+  // WhatsApp Launch Mode: 'web' (single reusable tab 'whatsapp_triade') | 'app' (native whatsapp:// protocol, 0 tabs, instant)
+  let whatsappMode: 'web' | 'app' = 'web';
+  let copiedFeedbackKey: string | null = null;
+
   // Message Template Mode per card: 'initial' | 'followup' | 'audio'
   let messageModeByCard: Record<string, 'initial' | 'followup' | 'audio'> = {};
 
@@ -28,10 +32,21 @@
       if (saved) {
         crmState = JSON.parse(saved);
       }
+      const savedWaMode = localStorage.getItem('triade_whatsapp_mode');
+      if (savedWaMode === 'app' || savedWaMode === 'web') {
+        whatsappMode = savedWaMode;
+      }
     } catch {
       crmState = {};
     }
   });
+
+  function setWhatsAppMode(mode: 'web' | 'app') {
+    whatsappMode = mode;
+    try {
+      localStorage.setItem('triade_whatsapp_mode', mode);
+    } catch {}
+  }
 
   function getLeadKey(editalId: string, cnpj: string): string {
     return `${editalId}_${cnpj}`;
@@ -186,7 +201,50 @@
   function getWhatsAppLink(lead: any, message: string): string | null {
     const cleanPhone = getCleanPhoneNumber(lead);
     if (!cleanPhone) return null;
-    return `https://wa.me/55${cleanPhone}?text=${encodeURIComponent(message || '')}`;
+    const encoded = encodeURIComponent(message || '');
+    if (whatsappMode === 'app') {
+      return `whatsapp://send?phone=55${cleanPhone}&text=${encoded}`;
+    }
+    return `https://web.whatsapp.com/send?phone=55${cleanPhone}&text=${encoded}`;
+  }
+
+  function copyMessageOnly(lead: any, message: string) {
+    const key = getLeadKey(lead.edital_id || 'manual', lead.osc?.cnpj || '');
+    try {
+      navigator.clipboard?.writeText(message || '');
+      copiedFeedbackKey = key;
+      setTimeout(() => {
+        if (copiedFeedbackKey === key) copiedFeedbackKey = null;
+      }, 2000);
+    } catch {}
+  }
+
+  function openWhatsAppSmart(event: MouseEvent, lead: any, message: string, markContacted = true) {
+    event.preventDefault();
+    const cleanPhone = getCleanPhoneNumber(lead);
+    if (!cleanPhone) return;
+
+    // Always copy text to clipboard as a backup convenience
+    try {
+      navigator.clipboard?.writeText(message || '');
+    } catch {}
+
+    if (markContacted && lead.edital_id && lead.osc?.cnpj) {
+      setLeadStatus(lead.edital_id, lead.osc.cnpj, 'contacted');
+    }
+
+    const encoded = encodeURIComponent(message || '');
+    if (whatsappMode === 'app') {
+      // Opens directly inside WhatsApp Desktop / Mobile app with 0 browser tabs and 0 reload delay
+      window.location.href = `whatsapp://send?phone=55${cleanPhone}&text=${encoded}`;
+    } else {
+      // Reuses the single named browser tab 'whatsapp_triade' instead of spawning 6+ tabs
+      const url = `https://web.whatsapp.com/send?phone=55${cleanPhone}&text=${encoded}`;
+      const win = window.open(url, 'whatsapp_triade');
+      if (win) {
+        win.focus();
+      }
+    }
   }
 
   function sortAndFilterLeads(leadList: any[]): any[] {
@@ -540,22 +598,45 @@
             </div>
           </div>
 
-          <!-- CRM & Phone Filter Toggles -->
-          <div class="flex flex-wrap items-center gap-3 pt-1 border-t border-gray-100 text-xs">
-            <label class="inline-flex items-center cursor-pointer select-none bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 hover:bg-gray-100">
-              <input type="checkbox" bind:checked={onlyWhatsApp} class="rounded border-gray-300 text-indigo-600 mr-1.5" />
-              <span class="font-semibold text-gray-700">📱 Apenas com Telefone</span>
-            </label>
+          <!-- CRM, Phone Filter & WhatsApp Mode Toggles -->
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-1 border-t border-gray-100 text-xs">
+            <div class="flex flex-wrap items-center gap-2">
+              <label class="inline-flex items-center cursor-pointer select-none bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 hover:bg-gray-100">
+                <input type="checkbox" bind:checked={onlyWhatsApp} class="rounded border-gray-300 text-indigo-600 mr-1.5" />
+                <span class="font-semibold text-gray-700">📱 Apenas com Telefone</span>
+              </label>
 
-            <label class="inline-flex items-center cursor-pointer select-none bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 hover:bg-gray-100">
-              <input type="checkbox" bind:checked={hideContactedOrArchived} class="rounded border-gray-300 text-indigo-600 mr-1.5" />
-              <span class="font-semibold text-gray-700">🙈 Ocultar já Contatados</span>
-            </label>
+              <label class="inline-flex items-center cursor-pointer select-none bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 hover:bg-gray-100">
+                <input type="checkbox" bind:checked={hideContactedOrArchived} class="rounded border-gray-300 text-indigo-600 mr-1.5" />
+                <span class="font-semibold text-gray-700">🙈 Ocultar já Contatados</span>
+              </label>
 
-            <label class="inline-flex items-center cursor-pointer select-none bg-amber-50 px-3 py-1.5 rounded-lg border border-amber-200 hover:bg-amber-100">
-              <input type="checkbox" bind:checked={onlyStarred} class="rounded border-amber-300 text-amber-600 mr-1.5" />
-              <span class="font-semibold text-amber-800">⭐ Apenas Em Negociação</span>
-            </label>
+              <label class="inline-flex items-center cursor-pointer select-none bg-amber-50 px-3 py-1.5 rounded-lg border border-amber-200 hover:bg-amber-100">
+                <input type="checkbox" bind:checked={onlyStarred} class="rounded border-amber-300 text-amber-600 mr-1.5" />
+                <span class="font-semibold text-amber-800">⭐ Apenas Em Negociação</span>
+              </label>
+            </div>
+
+            <!-- WhatsApp Single-Tab vs Desktop App Selector -->
+            <div class="inline-flex items-center bg-green-50 p-1 rounded-lg border border-green-200">
+              <span class="text-[11px] font-semibold text-green-800 px-2">Abrir WA via:</span>
+              <button
+                type="button"
+                onclick={() => setWhatsAppMode('web')}
+                title="Reutiliza sempre a mesma aba do navegador (não abre 6 abas repetidas)"
+                class="px-2 py-1 rounded text-[11px] font-semibold transition-colors {whatsappMode === 'web' ? 'bg-green-600 text-white shadow-sm' : 'text-green-800 hover:bg-green-100'}"
+              >
+                🌐 Web (1 Aba Única)
+              </button>
+              <button
+                type="button"
+                onclick={() => setWhatsAppMode('app')}
+                title="Abre direto no aplicativo WhatsApp Desktop/Celular em 0.1s sem abrir abas e sem recarregar mensagens!"
+                class="px-2 py-1 rounded text-[11px] font-semibold transition-colors {whatsappMode === 'app' ? 'bg-green-600 text-white shadow-sm' : 'text-green-800 hover:bg-green-100'}"
+              >
+                ⚡ App Desktop (Sem Recarregar)
+              </button>
+            </div>
           </div>
         </div>
 
@@ -721,15 +802,24 @@
                         📄 Ver Edital
                       </a>
                     {/if}
+                    <button
+                      type="button"
+                      onclick={() => copyMessageOnly(lead, activeMsgText)}
+                      class="inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-xs font-semibold rounded-md text-gray-700 bg-white hover:bg-gray-50"
+                      title="Copiar texto da mensagem para a área de transferência"
+                    >
+                      {copiedFeedbackKey === leadKey ? '✓ Copiado!' : '📋 Copiar'}
+                    </button>
                     {#if getWhatsAppLink(lead, activeMsgText)}
                       <a
                         href={getWhatsAppLink(lead, activeMsgText)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onclick={() => setLeadStatus(lead.edital_id, lead.osc.cnpj, 'contacted')}
+                        target="whatsapp_triade"
+                        onclick={(e) => openWhatsAppSmart(e, lead, activeMsgText, true)}
                         class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-xs font-semibold rounded-md text-white bg-green-600 hover:bg-green-700"
+                        title={whatsappMode === 'app' ? 'Abre instantaneamente no App WhatsApp (0 abas)' : 'Abre/Reutiliza 1 única aba do WhatsApp Web'}
                       >
-                        <span class="mr-1.5">💬</span> Enviar WhatsApp
+                        <span class="mr-1.5">{whatsappMode === 'app' ? '⚡' : '💬'}</span>
+                        Enviar WhatsApp {whatsappMode === 'app' ? '(App)' : '(1 Aba)'}
                       </a>
                     {:else}
                       <button
@@ -760,12 +850,30 @@
       {/if}
     {:else}
       <!-- Manual Search Results -->
-      <div class="p-5 bg-white border-b border-gray-200 shadow-sm z-10 shrink-0 flex justify-between items-center">
+      <div class="p-5 bg-white border-b border-gray-200 shadow-sm z-10 shrink-0 flex flex-wrap justify-between items-center gap-3">
         <h2 class="text-lg font-bold text-gray-800">Resultados da Busca Manual</h2>
-        <label class="inline-flex items-center cursor-pointer select-none bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 text-xs">
-          <input type="checkbox" bind:checked={onlyWhatsApp} class="rounded border-gray-300 text-indigo-600 mr-1.5" />
-          <span class="font-semibold text-gray-700">📱 Apenas com Telefone</span>
-        </label>
+        <div class="flex items-center gap-3">
+          <label class="inline-flex items-center cursor-pointer select-none bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 text-xs">
+            <input type="checkbox" bind:checked={onlyWhatsApp} class="rounded border-gray-300 text-indigo-600 mr-1.5" />
+            <span class="font-semibold text-gray-700">📱 Apenas com Telefone</span>
+          </label>
+          <div class="inline-flex items-center bg-green-50 p-1 rounded-lg border border-green-200 text-xs">
+            <button
+              type="button"
+              onclick={() => setWhatsAppMode('web')}
+              class="px-2 py-1 rounded text-[11px] font-semibold transition-colors {whatsappMode === 'web' ? 'bg-green-600 text-white shadow-sm' : 'text-green-800 hover:bg-green-100'}"
+            >
+              🌐 Web (1 Aba)
+            </button>
+            <button
+              type="button"
+              onclick={() => setWhatsAppMode('app')}
+              class="px-2 py-1 rounded text-[11px] font-semibold transition-colors {whatsappMode === 'app' ? 'bg-green-600 text-white shadow-sm' : 'text-green-800 hover:bg-green-100'}"
+            >
+              ⚡ App Desktop
+            </button>
+          </div>
+        </div>
       </div>
       <div class="flex-1 overflow-y-auto p-6 space-y-6">
         {#if manualSearchResults.length === 0 && !manualSearchLoading}
@@ -857,11 +965,12 @@
                       {#if getWhatsAppLink(lead, lead.whatsapp_message)}
                         <a
                           href={getWhatsAppLink(lead, lead.whatsapp_message)}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          target="whatsapp_triade"
+                          onclick={(e) => openWhatsAppSmart(e, lead, lead.whatsapp_message, false)}
                           class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-xs font-semibold rounded-md text-white bg-green-600 hover:bg-green-700"
                         >
-                          💬 Enviar WhatsApp
+                          <span class="mr-1.5">{whatsappMode === 'app' ? '⚡' : '💬'}</span>
+                          Enviar WhatsApp {whatsappMode === 'app' ? '(App)' : '(1 Aba)'}
                         </a>
                       {/if}
                     </div>
