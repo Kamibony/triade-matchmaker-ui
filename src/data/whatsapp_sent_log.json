@@ -1,4 +1,17 @@
 {
-  "last_run_at": null,
-  "sent_leads": {}
+  "last_run_at": "2026-11-13T12:45:26.575Z",
+  "sent_leads": {
+    "19405_05121802000173": {
+      "cnpj": "05121802000173",
+      "nome": "ASSOCIACAO DOS POVOS INDIGENAS MORADORES DE ALTAMIRA - AIMA",
+      "uf": "PA",
+      "municipio": "ALTAMIRA",
+      "edital_id": "19405",
+      "score": 95,
+      "phone": "559391572278",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T12:44:27.916Z",
+      "mode": "two_step_opener"
+    }
+  }
 }
