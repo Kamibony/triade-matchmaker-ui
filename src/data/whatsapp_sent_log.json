@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-11-13T15:11:11.780Z",
+  "last_run_at": "2026-11-13T17:17:00.694Z",
   "sent_leads": {
     "19405_05121802000173": {
       "cnpj": "05121802000173",
@@ -431,6 +431,174 @@
       "phone": "558298802061",
       "phone_type": "mobile",
       "sent_at": "2026-11-13T15:11:11.780Z",
+      "mode": "two_step_opener"
+    },
+    "17823_02934903000175": {
+      "cnpj": "02934903000175",
+      "nome": "ASSOCIACAO COMUNITARIA PIRANHAS",
+      "uf": "AL",
+      "municipio": "PIRANHAS",
+      "edital_id": "17823",
+      "score": 85,
+      "phone": "558288357041",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T17:02:22.912Z",
+      "mode": "two_step_opener"
+    },
+    "17823_04480159000101": {
+      "cnpj": "04480159000101",
+      "nome": "ASSOCIACAO DOS TRABALHADORES RURAIS DA REGIAO SUL E AGRESTE",
+      "uf": "AL",
+      "municipio": "CORURIPE",
+      "edital_id": "17823",
+      "score": 85,
+      "phone": "558291708180",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T17:03:17.256Z",
+      "mode": "two_step_opener"
+    },
+    "19685_05297133000195": {
+      "cnpj": "05297133000195",
+      "nome": "ASSOCIACAO DOS AGRICULTORES FAMILIARES DA REGIAO DE BELA VISTA",
+      "uf": "ES",
+      "municipio": "BOA ESPERANCA",
+      "edital_id": "19685",
+      "score": 85,
+      "phone": "552798446344",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T17:04:37.527Z",
+      "mode": "two_step_opener"
+    },
+    "19685_09129193000150": {
+      "cnpj": "09129193000150",
+      "nome": "CENTRO DE PROFISSIONAIS GESTORES E INOVACAO - CEPROGESTI",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "edital_id": "19685",
+      "score": 85,
+      "phone": "552799890390",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T17:05:33.518Z",
+      "mode": "two_step_opener"
+    },
+    "19685_15304093000115": {
+      "cnpj": "15304093000115",
+      "nome": "ASSOCIACAO DE AGRICULTORES FAMILIARES PAI & FILHOS - AAFAP&F",
+      "uf": "ES",
+      "municipio": "RIO BANANAL",
+      "edital_id": "19685",
+      "score": 85,
+      "phone": "552799709175",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T17:06:24.270Z",
+      "mode": "two_step_opener"
+    },
+    "15085_57110261000181": {
+      "cnpj": "57110261000181",
+      "nome": "ASSOCIACAO DE CAPOEIRA OBA AYRA",
+      "uf": "BA",
+      "municipio": "CAMACARI",
+      "edital_id": "15085",
+      "score": 65,
+      "phone": "557184221125",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T17:07:46.634Z",
+      "mode": "two_step_opener"
+    },
+    "19321_30122410000176": {
+      "cnpj": "30122410000176",
+      "nome": "ASSOCIACAO DE MORADORES E PESCADORES DA VILA AUTODROMO",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "edital_id": "19321",
+      "score": 65,
+      "phone": "552199009003",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T17:08:53.849Z",
+      "mode": "two_step_opener"
+    },
+    "19289_29832090000169": {
+      "cnpj": "29832090000169",
+      "nome": "ASSOCIACAO AMAMOS VIDAS",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "edital_id": "19289",
+      "score": 95,
+      "phone": "554734332288",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T17:09:53.072Z",
+      "mode": "two_step_opener"
+    },
+    "19289_08352654000196": {
+      "cnpj": "08352654000196",
+      "nome": "ASSOCIACAO BENEFICENTE AMIGOS DE VERDADE DE JOINVILLE-ABAVJ",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "edital_id": "19289",
+      "score": 95,
+      "phone": "554734630135",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T17:10:44.775Z",
+      "mode": "two_step_opener"
+    },
+    "19289_51549301006906": {
+      "cnpj": "51549301006906",
+      "nome": "ASSOCIACAO DE ENSINO SOCIAL PROFISSIONALIZANTE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "edital_id": "19289",
+      "score": 95,
+      "phone": "551131380080",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T17:12:08.740Z",
+      "mode": "two_step_opener"
+    },
+    "19289_79360475000572": {
+      "cnpj": "79360475000572",
+      "nome": "FUNDACAO 12 DE OUTUBRO",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "edital_id": "19289",
+      "score": 95,
+      "phone": "554734513747",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T17:13:01.434Z",
+      "mode": "two_step_opener"
+    },
+    "19685_27097229002196": {
+      "cnpj": "27097229002196",
+      "nome": "MOVIMENTO DE EDUCACAO PROMOCIONAL DO ESPIRITO SANTO",
+      "uf": "ES",
+      "municipio": "CASTELO",
+      "edital_id": "19685",
+      "score": 95,
+      "phone": "552835361151",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T17:14:16.086Z",
+      "mode": "two_step_opener"
+    },
+    "15085_15179690002451": {
+      "cnpj": "15179690002451",
+      "nome": "ASSOCIACAO CULTURAL BRASIL ESTADOS UNIDOS",
+      "uf": "BA",
+      "municipio": "LAURO DE FREITAS",
+      "edital_id": "15085",
+      "score": 90,
+      "phone": "557133405429",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T17:15:07.917Z",
+      "mode": "two_step_opener"
+    },
+    "15085_15179690002290": {
+      "cnpj": "15179690002290",
+      "nome": "ASSOCIACAO CULTURAL BRASIL ESTADOS UNIDOS",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "edital_id": "15085",
+      "score": 85,
+      "phone": "557133405429",
+      "phone_type": "landline",
+      "sent_at": "2026-11-13T17:15:59.767Z",
       "mode": "two_step_opener"
     }
   }
