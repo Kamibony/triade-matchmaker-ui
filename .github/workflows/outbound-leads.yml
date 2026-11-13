@@ -22,6 +22,10 @@ on:
         default: '10'
         type: string
 
+concurrency:
+  group: outbound-leads-generator
+  cancel-in-progress: false
+
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
