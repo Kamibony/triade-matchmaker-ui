@@ -150,7 +150,7 @@ export async function POST({ request }) {
       ? editaisArray.find((e: any) => String(e.id) === String(matchedLead.edital_id))
       : null;
 
-    const apiKey = env.GEMINI_API_KEY;
+    const apiKey = env.GEMINI_API_KEY || (env as any).GENINI_API_KEY || process.env.GEMINI_API_KEY || process.env.GENINI_API_KEY;
     if (!apiKey) {
       throw new Error('GEMINI_API_KEY não configurada no ambiente.');
     }
@@ -225,7 +225,7 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
       });
     }
 
-    const angelaPhone = env.ANGELA_NOTIFY_PHONE;
+    const angelaPhone = env.ANGELA_NOTIFY_PHONE || process.env.ANGELA_NOTIFY_PHONE;
     if (angelaPhone && parsed.should_notify_angela && parsed.angela_alert && !body.simulator) {
       angelaAlertDispatch = await sendWhatsAppText(angelaPhone, parsed.angela_alert, {
         simulateTypingMs: 1000,

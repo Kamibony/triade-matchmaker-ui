@@ -79,10 +79,10 @@ export function getBrasiliaTimeInfo(now = new Date()) {
 }
 
 export function resolveGatewayConfig(override?: GatewayOverrideConfig) {
-  const apiToken = (override?.apiToken || env.WHATSAPP_API_TOKEN || '').trim();
-  let apiUrl = (override?.apiUrl || env.WHATSAPP_API_URL || '').trim().replace(/\/+$/, '');
-  const instanceId = (override?.instanceId || env.WHATSAPP_INSTANCE_ID || 'triade').trim();
-  const rawProvider = (override?.provider || env.WHATSAPP_PROVIDER || '').toLowerCase().trim();
+  const apiToken = (override?.apiToken || env.WHATSAPP_API_TOKEN || process.env.WHATSAPP_API_TOKEN || '').trim();
+  let apiUrl = (override?.apiUrl || env.WHATSAPP_API_URL || process.env.WHATSAPP_API_URL || '').trim().replace(/\/+$/, '');
+  const instanceId = (override?.instanceId || env.WHATSAPP_INSTANCE_ID || process.env.WHATSAPP_INSTANCE_ID || 'triade').trim();
+  const rawProvider = (override?.provider || env.WHATSAPP_PROVIDER || process.env.WHATSAPP_PROVIDER || '').toLowerCase().trim();
 
   if (!apiToken) {
     return { provider: 'simulation' as WhatsAppProvider, apiUrl: '', apiToken: '', instanceId };
