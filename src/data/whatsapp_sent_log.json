@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-11-13T14:22:40.960Z",
+  "last_run_at": "2026-11-13T15:11:11.780Z",
   "sent_leads": {
     "19405_05121802000173": {
       "cnpj": "05121802000173",
@@ -287,6 +287,150 @@
       "phone": "558134196700",
       "phone_type": "landline",
       "sent_at": "2026-11-13T14:22:40.960Z",
+      "mode": "two_step_opener"
+    },
+    "19289_81140360000190": {
+      "cnpj": "81140360000190",
+      "nome": "SERVICO DE ACAO SOCIAL DE INTEGRACAO, EDUCACAO E QUALIDADE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "edital_id": "19289",
+      "score": 95,
+      "phone": "554799478881",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T14:58:38.682Z",
+      "mode": "two_step_opener"
+    },
+    "19289_44514296000134": {
+      "cnpj": "44514296000134",
+      "nome": "INSTITUTO ADRIA SANTOS",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "edital_id": "19289",
+      "score": 95,
+      "phone": "554799729179",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T14:59:34.674Z",
+      "mode": "two_step_opener"
+    },
+    "19289_73594293000156": {
+      "cnpj": "73594293000156",
+      "nome": "ASSOCIACAO BENEFICIENTE NOVO HORIZONTE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "edital_id": "19289",
+      "score": 95,
+      "phone": "554799610770",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T15:00:44.639Z",
+      "mode": "two_step_opener"
+    },
+    "19697_31962389000180": {
+      "cnpj": "31962389000180",
+      "nome": "SOMOS AMAZONIA SOCIEDADE DE MOBILIZACAO PARA OPORTUNIDADES SUSTENTAVEIS DA AMAZONIA",
+      "uf": "AC",
+      "municipio": "RIO BRANCO",
+      "edital_id": "19697",
+      "score": 85,
+      "phone": "556899321559",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T15:02:08.775Z",
+      "mode": "two_step_opener"
+    },
+    "15085_55196791000169": {
+      "cnpj": "55196791000169",
+      "nome": "ASSOCIACAO BENEFICENTE E CULTURAL YALORIXA RISOLETA FONSECA",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "edital_id": "15085",
+      "score": 85,
+      "phone": "557188049084",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T15:03:14.986Z",
+      "mode": "two_step_opener"
+    },
+    "15085_58404040000189": {
+      "cnpj": "58404040000189",
+      "nome": "ASSOCIACAO MUNICIPAL DE DESENVOLVIMENTO SOCIAL E DE PROMOCAO AS POLITICAS PUBLICAS NO CAMPO E NA CIDADE DE UAUA-BAHIA",
+      "uf": "BA",
+      "municipio": "UAUA",
+      "edital_id": "15085",
+      "score": 85,
+      "phone": "557499745989",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T15:04:08.964Z",
+      "mode": "two_step_opener"
+    },
+    "15085_58232409000113": {
+      "cnpj": "58232409000113",
+      "nome": "ASSOCIACAO DE CAPOEIRA NEGROS DO CANAVIAL (ACNC)",
+      "uf": "BA",
+      "municipio": "AMELIA RODRIGUES",
+      "edital_id": "15085",
+      "score": 85,
+      "phone": "557199250883",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T15:05:01.717Z",
+      "mode": "two_step_opener"
+    },
+    "15085_58541688000105": {
+      "cnpj": "58541688000105",
+      "nome": "AMAF- ASSOCIACAO MULHER A FLORIR",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "edital_id": "15085",
+      "score": 85,
+      "phone": "557191803733",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T15:06:25.988Z",
+      "mode": "two_step_opener"
+    },
+    "19289_54579652000151": {
+      "cnpj": "54579652000151",
+      "nome": "INSTITUTO P.A.R.E. (PROGRAMA AMBIENTAL DE RECUPERACAO E EDUCACAO)",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "edital_id": "19289",
+      "score": 85,
+      "phone": "554797075213",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T15:07:36.982Z",
+      "mode": "two_step_opener"
+    },
+    "19289_63786264000132": {
+      "cnpj": "63786264000132",
+      "nome": "ASSOCIACAO DE INTERVENCAO ASSISTIDA POR CAVALOS - RESGATE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "edital_id": "19289",
+      "score": 85,
+      "phone": "551188985008",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T15:08:38.980Z",
+      "mode": "two_step_opener"
+    },
+    "19289_13310879000110": {
+      "cnpj": "13310879000110",
+      "nome": "INSTITUTO DE PESQUISA DA ARTE PELO MOVIMENTO",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "edital_id": "19289",
+      "score": 85,
+      "phone": "554796720034",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T15:09:54.334Z",
+      "mode": "two_step_opener"
+    },
+    "17823_10778629000110": {
+      "cnpj": "10778629000110",
+      "nome": "GRANDE ORIENTE DO ESTADO DE ALAGOAS",
+      "uf": "AL",
+      "municipio": "MACEIO",
+      "edital_id": "17823",
+      "score": 85,
+      "phone": "558298802061",
+      "phone_type": "mobile",
+      "sent_at": "2026-11-13T15:11:11.780Z",
       "mode": "two_step_opener"
     }
   }
