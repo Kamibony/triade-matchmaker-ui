@@ -61,10 +61,19 @@ function extractIncomingPayload(body: any): {
   if (Array.isArray(body?.messages) && body.messages[0]) {
     const msg = body.messages[0];
     const chatId = msg.chat_id || msg.from || '';
+    let contactSummary: string | null = null;
+    const contactObj = msg.contact || (Array.isArray(msg.contacts) ? msg.contacts[0] : null);
+    if (contactObj) {
+      const cName = contactObj.name || 'Contato';
+      const vcard = String(contactObj.vcard || '');
+      const waidMatch = vcard.match(/waid=(\d+)/i) || vcard.match(/TEL[^:]*:([+\d\s()-]+)/i);
+      const cPhone = waidMatch ? waidMatch[1].replace(/\D/g, '') : '';
+      contactSummary = `[Contato compartilhado: ${cName}${cPhone ? ` - Tel: ${cPhone}` : ''}]`;
+    }
     return {
       senderPhone: chatId.split('@')[0],
       rawChatId: chatId,
-      incomingText: msg.text?.body || msg.voice?.caption || null,
+      incomingText: msg.text?.body || msg.voice?.caption || contactSummary || null,
       fromMe: !!msg.from_me,
       senderName: msg.from_name
     };
@@ -283,13 +292,16 @@ REGRAS DE OURO DA TRIADE ACR (OBRIGATÓRIAS):
 1. SEGREDO DO EDITAL: NUNCA, em hipótese alguma, revele o nome oficial do edital ou o nome da fundação/empresa patrocinadora pelo WhatsApp. Se a ONG perguntar "Qual é o edital?" ou "Quem está financiando?", explique com muita simpatia que, por política da consultoria, a Maria Angela apresenta o edital completo e valida gratuitamente a elegibilidade documental/estatutária da ONG em uma conversa rápida de 10 minutos (por telefone ou vídeo).
 2. Se a ONG perguntar se pode receber o resumo (ex: respondeu "Pode sim!", "Manda aí", "Como funciona?"), envie os detalhes atrativos (valor até R$ ${editalValor}, prazo em ${editalPrazo}, foco do projeto compatível com a atuação deles em ${orgCidade}, e explique que a Triade ACR cuida de toda a elaboração técnica do projeto) e convide para um bate-papo rápido de 10 min com a Maria Angela hoje ou amanhã.
 3. Se a ONG demonstrar falta de interesse clara ("Não temos interesse", "Pare de mandar mensagem"), agradeça educadamente, deseje sucesso aos projetos da instituição e encerre.
-4. O tom deve ser humano, caloroso, profissional, curto (formato WhatsApp, máximo 3 parágrafos curtos) e em português brasileiro.
+4. IDENTIDADE E TOM: Fale SEMPRE como o **assistente / equipe da Maria Angela Bonifacio, da Tríade ACR** (NUNCA diga "Aqui é a Maria Angela" em 1ª pessoa). O tom deve ser humano, caloroso, profissional, curto (formato WhatsApp, máximo 3 parágrafos curtos, sem markdown `**`) e em português brasileiro.
 5. DETECÇÃO DE BOT / URA / ASSUNTO NÃO RELACIONADO: Se a mensagem recebida parecer um robô/URA automático, menu numérico ("Digite 1 para...", "Opção inválida", "Protocolo", "Fatura", "Claro", "Vivo", "Banco", "Assistente virtual") ou qualquer assunto pessoal/administrativo sem relação com captação de recursos ou editais, classifique OBRIGATORIAMENTE como "unrelated_or_bot", defina "should_auto_reply": false, "should_notify_angela": false e "reply_message": "".
+6. OCUPADO / REAGENDAMENTO / INDICAÇÃO DE CONTATO:
+   - Se a ONG disser que está ocupada agora e pedir para falar amanhã ou depois ("Agora estou ocupado, pode ser amanhã"), responda de forma curta e gentil confirmando o retorno amanhã (SEM repetir o pitch completo!) e defina "should_notify_angela": true.
+   - Se a ONG enviar um contato ("[Contato compartilhado: ...]") ou indicar outra pessoa ("Esse é o número da minha assessora/coordenadora, pode falar com ela"), agradeça brevemente, confirme que nossa equipe entrará em contato com a pessoa indicada (SEM repetir o pitch!), classifique como "human_handoff", defina "crm_status": "negotiating", "should_notify_angela": true e inclua o nome e telefone indicado dentro de "angela_alert".
 
 Responda ESTRITAMENTE em JSON com esta estrutura:
 {
   "intent": "interested" | "question" | "asking_grant_name" | "not_interested" | "human_handoff" | "unrelated_or_bot",
-  "intent_label": "Rótulo curto em português (ex: '🔥 Interesse Confirmado', '❓ Dúvida sobre Prazo/Como funciona', '🔒 Pediu Nome do Edital', '🛑 Sem Interesse', '🤖 Bot/Assunto Não Relacionado')",
+  "intent_label": "Rótulo curto em português (ex: '🔥 Interesse Confirmado', '❓ Dúvida sobre Prazo/Como funciona', '🔒 Pediu Nome do Edital', '🛑 Sem Interesse', '🤝 Indicou Contato / Reagendou', '🤖 Bot/Assunto Não Relacionado')",
   "confidence": (número de 0 a 100),
   "analysis": "Explicação curta de 1 frase para a Maria Angela sobre o que a mensagem diz e qual o próximo passo",
   "crm_status": "negotiating" | "contacted" | "archived",
@@ -338,6 +350,14 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
       });
     }
 
+    const angelaStatusNote = !angelaPhone
+      ? 'Angela: ANGELA_NOTIFY_PHONE não configurada'
+      : angelaAlertDispatch?.ok
+        ? 'Angela: alerta enviado'
+        : angelaAlertDispatch?.error
+          ? `Angela: erro (${angelaAlertDispatch.error})`
+          : 'Angela: sem alerta nesta msg';
+
     const monitor = await logWhatsAppWebhookEvent({
       eventType: autoReplyDispatch?.ok ? 'auto_replied' : 'analyzed_only',
       isSimulator,
@@ -348,7 +368,7 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
       crmStatus: parsed?.crm_status || null,
       incomingText,
       replyMessage: autoReplyDispatch?.ok ? parsed?.reply_message : parsed?.reply_message ? `[Não enviado] ${parsed.reply_message}` : '',
-      detail: autoReplyDispatch?.error || parsed?.analysis || null
+      detail: `${autoReplyDispatch?.error || parsed?.analysis || ''} | ${angelaStatusNote}`.trim()
     });
 
     return json({
