@@ -26,6 +26,7 @@
 
   // Clean 3-tab Message Template Mode per card: 'opener' | 'initial' | 'followup'
   let messageModeByCard: Record<string, 'opener' | 'initial' | 'followup'> = {};
+  let customMessagesByCardMode: Record<string, string> = {};
 
   // --- In-Browser Gateway Configuration (for 7-day experiment setup) ---
   let customGatewayConfig = {
@@ -336,9 +337,18 @@
     return `Olá, pessoal da ${lead.osc?.nome}, tudo bem? Aqui é da equipe da Maria Angela, da Triade Captação de Recursos. Vimos a atuação de vocês em ${lead.osc?.municipio} e mapeamos um edital aberto de até ${valorStr} muito alinhado ao perfil da instituição. Posso enviar um resumo rápido por aqui?`;
   }
 
-  function getActiveMessage(lead: any): string {
+  function getActiveMessage(
+    lead: any,
+    explicitMode?: 'opener' | 'initial' | 'followup',
+    customEdits: Record<string, string> = customMessagesByCardMode
+  ): string {
     const key = getLeadKey(lead.edital_id, lead.osc?.cnpj);
-    const mode = messageModeByCard[key] || 'initial';
+    const mode = explicitMode || messageModeByCard[key] || 'initial';
+    const customKey = `${key}_${mode}`;
+    if (customEdits[customKey] !== undefined) {
+      return customEdits[customKey];
+    }
+
     const valorStr = lead.edital_valor ? formatCurrency(lead.edital_valor) : 'valor expressivo';
     const prazoStr = lead.dias_restantes ? `faltam apenas ${lead.dias_restantes} dias para o encerramento` : 'as inscrições estão abertas';
 
@@ -1129,7 +1139,7 @@
             {@const leadKey = getLeadKey(lead.edital_id, lead.osc.cnpj)}
             {@const crmInfo = crmState[leadKey]}
             {@const activeMode = messageModeByCard[leadKey] || 'initial'}
-            {@const activeMsgText = getActiveMessage(lead)}
+            {@const activeMsgText = getActiveMessage(lead, activeMode, customMessagesByCardMode)}
             {@const phoneKind = getPhoneType(lead)}
 
             <div class="bg-white rounded-xl shadow-sm border {crmInfo?.status === 'negotiating' ? 'border-amber-400 ring-2 ring-amber-100' : crmInfo?.status === 'contacted' ? 'border-green-200 opacity-85' : 'border-gray-200'} overflow-hidden transition-all">
@@ -1235,12 +1245,18 @@
                       {/each}
                     </div>
                   </div>
-                  <textarea
-                    class="w-full text-sm text-gray-700 p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm"
-                    rows="3"
-                    value={activeMsgText}
-                    oninput={(e) => { lead.whatsapp_message = (e.target as HTMLTextAreaElement).value; }}
-                  ></textarea>
+                  {#key `${leadKey}_${activeMode}`}
+                    <textarea
+                      class="w-full text-sm text-gray-700 p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm"
+                      rows="3"
+                      value={activeMsgText}
+                      oninput={(e) => {
+                        const val = (e.target as HTMLTextAreaElement).value;
+                        customMessagesByCardMode = { ...customMessagesByCardMode, [`${leadKey}_${activeMode}`]: val };
+                        if (activeMode === 'initial') lead.whatsapp_message = val;
+                      }}
+                    ></textarea>
+                  {/key}
                 </div>
 
                 <!-- Clean Action Bar -->
