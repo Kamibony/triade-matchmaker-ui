@@ -1,9 +1,9 @@
 name: WhatsApp Business-Hours Auto-Dispatcher
 
 on:
-  # Runs Monday through Friday during Brazilian Business Hours (09:30, 11:30, 14:30, 16:30 BRT = 12:30, 14:30, 17:30, 19:30 UTC)
+  # Runs Monday through Friday every 30 minutes during Brazilian Business Hours (09:00–17:30 BRT = 12:00–20:30 UTC)
   schedule:
-    - cron: '30 12,14,17,19 * * 1-5'
+    - cron: '0,30 12-20 * * 1-5'
   workflow_dispatch:
     inputs:
       max_messages:
@@ -24,6 +24,10 @@ on:
         required: false
         type: boolean
         default: false
+
+concurrency:
+  group: whatsapp-business-dispatch
+  cancel-in-progress: false
 
 permissions:
   contents: write
