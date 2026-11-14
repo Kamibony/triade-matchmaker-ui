@@ -182,10 +182,54 @@ export async function GET({ url }) {
   });
 }
 
+const SYSTEM_FAILURE_APOLOGY_MSG =
+  'Olá! Aqui é da equipe da Maria Angela Bonifácio, da Tríade ACR. Tivemos uma instabilidade momentânea no nosso sistema de atendimento agora e peço desculpas! Já registramos sua mensagem e nossa consultora retornará em breve por aqui em horário comercial (dias úteis).';
+
+function formatEditalValorPtBr(rawValor: unknown): string {
+  if (typeof rawValor === 'number' && Number.isFinite(rawValor) && rawValor > 0) {
+    if (rawValor >= 1_000_000) {
+      return `R$ ${(rawValor / 1_000_000).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} milhões`;
+    }
+    if (rawValor >= 1_000) {
+      return `R$ ${(rawValor / 1_000).toLocaleString('pt-BR', { maximumFractionDigits: 0 })} mil`;
+    }
+    return `R$ ${rawValor.toLocaleString('pt-BR')}`;
+  }
+  if (typeof rawValor === 'string' && rawValor.trim()) {
+    const trimmed = rawValor.trim();
+    return trimmed.startsWith('R$') ? trimmed : `R$ ${trimmed}`;
+  }
+  return 'valor expressivo';
+}
+
+function parseGeminiJsonResponse(rawText: string): any {
+  const cleaned = rawText
+    .trim()
+    .replace(/^```(?:json)?\s*/i, '')
+    .replace(/\s*```$/i, '')
+    .trim();
+  return JSON.parse(cleaned);
+}
+
 export async function POST({ request }) {
+  let parsedBody: any = null;
+  let senderPhone: string | null = null;
+  let rawChatId: string | null | undefined = null;
+  let incomingText: string | null = null;
+  let fromMe = false;
+  let senderName: string | undefined;
+  let isSimulator = false;
+  let matchedLead: any = null;
+  let normalizedSender: string | null = null;
+
   try {
-    const body = await request.json();
-    const { senderPhone, rawChatId, incomingText, fromMe, senderName } = extractIncomingPayload(body);
+    parsedBody = await request.json();
+    const extracted = extractIncomingPayload(parsedBody);
+    senderPhone = extracted.senderPhone;
+    rawChatId = extracted.rawChatId;
+    incomingText = extracted.incomingText;
+    fromMe = extracted.fromMe;
+    senderName = extracted.senderName;
 
     if (fromMe) {
       return json({ ok: true, ignored: true, reason: 'Mensagem enviada pelo próprio número (fromMe).' });
@@ -205,9 +249,9 @@ export async function POST({ request }) {
       return json({ ok: true, ignored: true, reason: 'Nenhum texto de mensagem identificado no evento.' });
     }
 
-    const isSimulator = !!body.simulator;
-    const matchedLead = findMatchingLeadByPhone(senderPhone, body.lead);
-    const normalizedSender = normalizeBrazilPhone(senderPhone);
+    isSimulator = !!parsedBody.simulator;
+    matchedLead = findMatchingLeadByPhone(senderPhone, parsedBody.lead);
+    normalizedSender = normalizeBrazilPhone(senderPhone);
 
     if (!isSimulator && !matchedLead) {
       const reason = 'Remetente não está na lista de leads abordados (ex: contato pessoal, Claro/operadora ou número desconhecido).';
@@ -243,7 +287,7 @@ export async function POST({ request }) {
     }
 
     const editaisArray = Array.isArray(editaisData) ? editaisData : [];
-    const matchedEdital = matchedLead
+    const matchedEdital: any = matchedLead
       ? editaisArray.find((e: any) => String(e.id) === String(matchedLead.edital_id))
       : null;
 
@@ -260,11 +304,34 @@ export async function POST({ request }) {
 
     const orgNome = matchedLead?.osc?.nome || senderName || 'Organização';
     const orgCidade = matchedLead?.osc?.municipio ? `${matchedLead.osc.municipio}/${matchedLead.osc.uf}` : 'Brasil';
-    const editalValor = matchedLead?.edital_valor || matchedEdital?.deep_metadata?.valor_maximo_ou_global_reais || 'valor expressivo';
-    const editalPrazo = matchedLead?.edital_prazo || matchedEdital?.deep_metadata?.prazo_de_inscricao || 'inscrições abertas';
-    const editalResumo = matchedEdital?.deep_metadata?.resumo_objetivo || matchedLead?.motivo_match || 'Edital voltado para projetos de impacto social.';
-    const conversationHistory = Array.isArray(body.history)
-      ? body.history.map((h: any) => `${h.role === 'ong' ? 'ONG' : 'Triade'}: ${h.text}`).join('\n')
+    const rawEditalValor =
+      matchedLead?.edital_valor ||
+      matchedEdital?.attributes?.valor_total ||
+      matchedEdital?.deep_metadata?.financeiro?.valor_maximo_ou_global_reais ||
+      matchedEdital?.deep_metadata?.financeiro?.valor_total_edital ||
+      null;
+    const editalValorText = formatEditalValorPtBr(rawEditalValor);
+    const editalPrazo =
+      matchedLead?.edital_prazo ||
+      matchedEdital?.deep_metadata?.prazo_de_inscricao ||
+      matchedEdital?.attributes?.data_fim ||
+      'inscrições abertas';
+    const editalTitulo =
+      matchedLead?.edital_titulo ||
+      matchedEdital?.attributes?.nome ||
+      matchedEdital?.titulo ||
+      'Edital de Fomento';
+    const editalId = matchedLead?.edital_id || matchedEdital?.id || '';
+    const editalResumo =
+      matchedEdital?.deep_metadata?.resumo_objetivo ||
+      matchedLead?.motivo_match ||
+      'Edital voltado para projetos de impacto social.';
+    const editalLink =
+      matchedEdital?.deep_metadata?.drive_pdf_link ||
+      matchedEdital?.public_url ||
+      '';
+    const conversationHistory = Array.isArray(parsedBody.history)
+      ? parsedBody.history.map((h: any) => `${h.role === 'ong' ? 'ONG' : 'Triade'}: ${h.text}`).join('\n')
       : '';
 
     const sdrPrompt = `
@@ -272,15 +339,16 @@ Você é o Assistente de Triagem e Captação da consultora sênior **Maria Ange
 
 CONTEXTO DO LEAD (ONG QUE ESTÁ RESPONDENDO):
 - Nome da ONG: ${orgNome} (${orgCidade})
-- Score do Match: ${matchedLead?.score || 'N/A'}%
 - Motivo do Match com a ONG: ${matchedLead?.motivo_match || 'Atuação compatível com o edital'}
 - Dossiê da ONG: ${matchedLead?.dossieText || 'N/A'}
 
-DADOS DO EDITAL MAPEADO (CONFIDENCIAL):
-- Título Interno (SEGREDO ABSOLUTO): ${matchedLead?.edital_titulo || matchedEdital?.titulo || 'Edital de Fomento'}
-- Valor do Edital: R$ ${editalValor}
+DADOS DO EDITAL MAPEADO:
+- ID do Edital: ${editalId || 'N/A'}
+- Nome Oficial do Edital: ${editalTitulo}
+- Valor Global do Edital: ${editalValorText}
 - Prazo de Inscrição: ${editalPrazo}
 - Resumo e Requisitos: ${editalResumo}
+- Link de Referência: ${editalLink || 'Disponível com a consultora'}
 
 HISTÓRICO ANTERIOR DA CONVERSA:
 ${conversationHistory || '(Primeiro retorno da ONG após nossa mensagem inicial)'}
@@ -288,20 +356,32 @@ ${conversationHistory || '(Primeiro retorno da ONG após nossa mensagem inicial)
 MENSAGEM QUE A ONG ACABOU DE ENVIAR NO WHATSAPP:
 "${incomingText}"
 
-REGRAS DE OURO DA TRIADE ACR (OBRIGATÓRIAS):
-1. SEGREDO DO EDITAL: NUNCA, em hipótese alguma, revele o nome oficial do edital ou o nome da fundação/empresa patrocinadora pelo WhatsApp. Se a ONG perguntar "Qual é o edital?" ou "Quem está financiando?", explique com muita simpatia que, por política da consultoria, a Maria Angela apresenta o edital completo e valida gratuitamente a elegibilidade documental/estatutária da ONG em uma conversa rápida de 10 minutos (por telefone ou vídeo).
-2. Se a ONG perguntar se pode receber o resumo (ex: respondeu "Pode sim!", "Manda aí", "Como funciona?"), envie os detalhes atrativos (valor até R$ ${editalValor}, prazo em ${editalPrazo}, foco do projeto compatível com a atuação deles em ${orgCidade}, e explique que a Triade ACR cuida de toda a elaboração técnica do projeto) e convide para um bate-papo rápido de 10 min com a Maria Angela hoje ou amanhã.
-3. Se a ONG demonstrar falta de interesse clara ("Não temos interesse", "Pare de mandar mensagem"), agradeça educadamente, deseje sucesso aos projetos da instituição e encerre.
-4. IDENTIDADE E TOM: Fale SEMPRE como o **assistente / equipe da Maria Angela Bonifacio, da Tríade ACR** (NUNCA diga "Aqui é a Maria Angela" em 1ª pessoa). O tom deve ser humano, caloroso, profissional, curto (formato WhatsApp, máximo 3 parágrafos curtos, sem usar asteriscos duplos de negrito) e em português brasileiro.
-5. DETECÇÃO DE BOT / URA / ASSUNTO NÃO RELACIONADO: Se a mensagem recebida parecer um robô/URA automático, menu numérico ("Digite 1 para...", "Opção inválida", "Protocolo", "Fatura", "Claro", "Vivo", "Banco", "Assistente virtual") ou qualquer assunto pessoal/administrativo sem relação com captação de recursos ou editais, classifique OBRIGATORIAMENTE como "unrelated_or_bot", defina "should_auto_reply": false, "should_notify_angela": false e "reply_message": "".
-6. OCUPADO / REAGENDAMENTO / INDICAÇÃO DE CONTATO:
-   - Se a ONG disser que está ocupada agora e pedir para falar amanhã ou depois ("Agora estou ocupado, pode ser amanhã"), responda de forma curta e gentil confirmando o retorno amanhã (SEM repetir o pitch completo!) e defina "should_notify_angela": true.
-   - Se a ONG enviar um contato ("[Contato compartilhado: ...]") ou indicar outra pessoa ("Esse é o número da minha assessora/coordenadora, pode falar com ela"), agradeça brevemente, confirme que nossa equipe entrará em contato com a pessoa indicada (SEM repetir o pitch!), classifique como "human_handoff", defina "crm_status": "negotiating", "should_notify_angela": true e inclua o nome e telefone indicado dentro de "angela_alert".
+REGRAS E TRAVAS OBRIGATÓRIAS DA TRIADE ACR:
+1. CITAR O EDITAL QUANDO PERGUNTAREM (TRANSPARÊNCIA):
+   - Na abordagem inicial ou se a ONG apenas pedir o resumo geral, foque nos pontos principais (${editalValorText}, prazo ${editalPrazo}, aderência com ${orgCidade}).
+   - PORÉM, SE A ONG PERGUNTAR EXPLICITAMENTE QUAL É O EDITAL, o órgão/patrocinador, ou mencionar um nome para confirmar (ex: "Qual é o edital?", "Vocês estão falando do PDRSX?", "Vocês têm o edital 2026?"), CITE COM TRANSPARÊNCIA o nome oficial do edital ("${editalTitulo}"${editalId ? `, código Prosas ${editalId}` : ''}), o prazo (${editalPrazo}) e o valor (${editalValorText})${editalLink ? `, e se ajudar pode compartilhar o link (${editalLink})` : ''}. Nunca invente outro edital se não tiver certeza.
+2. NÃO AFIRMAR HORÁRIO NEM FECHAR AGENDA SOZINHO (TRAVA DE AGENDA + DIAS ÚTEIS):
+   - NUNCA confirme, prometa ou "feche" um horário exato de reunião/ligação (PROIBIDO dizer "Já deixei agendado para às 9h", "Confirmado amanhã às 14h" ou similar).
+   - Sugira atendimento EXCLUSIVAMENTE em dias úteis (segunda a sexta, horário comercial) perguntando a preferência de turno (manhã ou tarde).
+   - Se a ONG sugerir um horário específico (ex: "Pode ser amanhã às 9h"), responda gentilmente que anotou a preferência de horário e que a consultora sênior Maria Angela Bonifacio confirmará diretamente a disponibilidade na agenda dela. Defina "should_notify_angela": true e registre o horário sugerido em "angela_alert".
+3. NÃO PROMETER PERCENTUAL (TRAVA DE PROBABILIDADE):
+   - NUNCA mencione, afirme ou prometa nenhum número percentual ("%") na mensagem à ONG — proibido dizer "95% de alinhamento", "100% elegível", "80% de chance" ou percentuais de aprovação/taxa. Use apenas descrições qualitativas (ex: "forte alinhamento", "ótima aderência").
+4. PEDIDO DE RESUMO / INTERESSE:
+   - Se a ONG responder que aceita o resumo ("Pode sim!", "Manda aí", "Como funciona?"), envie os detalhes claros (${editalValorText}, prazo ${editalPrazo}, foco compatível com a atuação deles em ${orgCidade}, e explique que a Triade ACR cuida da elaboração técnica) e convide para um bate-papo rápido de 10 minutos em dia útil (manhã ou tarde) a confirmar com a Maria Angela.
+5. FALTA DE INTERESSE:
+   - Se a ONG demonstrar falta de interesse clara ("Não temos interesse", "Pare de mandar mensagem"), agradeça educadamente, deseje sucesso aos projetos da instituição e encerre sem insistir.
+6. IDENTIDADE E TOM:
+   - Fale SEMPRE como o **assistente / equipe da Maria Angela Bonifacio, da Tríade ACR** (NUNCA diga "Aqui é a Maria Angela" em 1ª pessoa). Tom humano, caloroso, profissional, curto (máximo 3 parágrafos curtos, sem asteriscos duplos `**`) e em português brasileiro.
+7. DETECÇÃO DE BOT / URA / ASSUNTO NÃO RELACIONADO:
+   - Se a mensagem recebida parecer um robô/URA automático, menu numérico ("Digite 1 para...", "Opção inválida", "Protocolo", "Fatura", "Claro", "Vivo", "Banco", "Assistente virtual") ou assunto sem relação com captação de recursos/editais, classifique OBRIGATORIAMENTE como "unrelated_or_bot", defina "should_auto_reply": false, "should_notify_angela": false e "reply_message": "".
+8. OCUPADO / REAGENDAMENTO / INDICAÇÃO DE CONTATO:
+   - Se a ONG disser que está ocupada e pedir retorno outro dia útil, confirme de forma curta que retornaremos em dia útil (SEM repetir o pitch e SEM cravar hora exata!) e defina "should_notify_angela": true.
+   - Se a ONG enviar um contato ("[Contato compartilhado: ...]") ou indicar outra pessoa ("Esse é o número da minha assessora/coordenadora"), agradeça brevemente, confirme que nossa equipe entrará em contato em dia útil com a pessoa indicada (SEM repetir o pitch!), classifique como "human_handoff", defina "crm_status": "negotiating", "should_notify_angela": true e inclua nome e telefone indicado dentro de "angela_alert".
 
 Responda ESTRITAMENTE em JSON com esta estrutura:
 {
   "intent": "interested" | "question" | "asking_grant_name" | "not_interested" | "human_handoff" | "unrelated_or_bot",
-  "intent_label": "Rótulo curto em português (ex: '🔥 Interesse Confirmado', '❓ Dúvida sobre Prazo/Como funciona', '🔒 Pediu Nome do Edital', '🛑 Sem Interesse', '🤝 Indicou Contato / Reagendou', '🤖 Bot/Assunto Não Relacionado')",
+  "intent_label": "Rótulo curto em português (ex: '🔥 Interesse Confirmado', '❓ Dúvida sobre Prazo/Como funciona', '📋 Perguntou Nome do Edital', '🛑 Sem Interesse', '🤝 Indicou Contato / Reagendou', '🤖 Bot/Assunto Não Relacionado')",
   "confidence": (número de 0 a 100),
   "analysis": "Explicação curta de 1 frase para a Maria Angela sobre o que a mensagem diz e qual o próximo passo",
   "crm_status": "negotiating" | "contacted" | "archived",
@@ -313,7 +393,7 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
 `;
 
     const aiRes = await sdrModel.generateContent(sdrPrompt);
-    const parsed = JSON.parse(aiRes.response.text());
+    const parsed = parseGeminiJsonResponse(aiRes.response.text());
 
     let autoReplyDispatch = null;
     let angelaAlertDispatch = null;
@@ -322,13 +402,13 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
       (env.WHATSAPP_AUTOREPLY_ENABLED || process.env.WHATSAPP_AUTOREPLY_ENABLED || 'true').toLowerCase() !== 'false';
     const allowAutoSend =
       envAutoReplyEnabled &&
-      body.autoSendReply !== false &&
+      parsedBody.autoSendReply !== false &&
       parsed.intent !== 'unrelated_or_bot';
 
     if (allowAutoSend && parsed.should_auto_reply && parsed.reply_message && senderPhone && !isSimulator) {
       autoReplyDispatch = await sendWhatsAppText(senderPhone, parsed.reply_message, {
         simulateTypingMs: 4000,
-        overrideConfig: body.overrideConfig
+        overrideConfig: parsedBody.overrideConfig
       });
       if (autoReplyDispatch?.ok) {
         recordAutoReply(normalizedSender);
@@ -346,7 +426,7 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
     ) {
       angelaAlertDispatch = await sendWhatsAppText(angelaPhone, parsed.angela_alert, {
         simulateTypingMs: 1000,
-        overrideConfig: body.overrideConfig
+        overrideConfig: parsedBody.overrideConfig
       });
     }
 
@@ -387,10 +467,61 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
     });
   } catch (error: any) {
     console.error('Erro no Webhook WhatsApp IA SDR:', error);
+    const errMsg = error?.message || 'Erro interno no Webhook WhatsApp.';
+
+    // Trava 4: Pedir desculpa imediatamente (< 5 min) se o sistema falhar durante atendimento real
+    let fallbackApologyDispatch: any = null;
+    const envAutoReplyEnabled =
+      (env.WHATSAPP_AUTOREPLY_ENABLED || process.env.WHATSAPP_AUTOREPLY_ENABLED || 'true').toLowerCase() !== 'false';
+
+    if (
+      !isSimulator &&
+      !fromMe &&
+      incomingText &&
+      senderPhone &&
+      matchedLead &&
+      envAutoReplyEnabled &&
+      parsedBody?.autoSendReply !== false &&
+      !isRateLimitedOrLooped(normalizedSender).blocked
+    ) {
+      fallbackApologyDispatch = await sendWhatsAppText(senderPhone, SYSTEM_FAILURE_APOLOGY_MSG, {
+        simulateTypingMs: 2000,
+        overrideConfig: parsedBody?.overrideConfig
+      }).catch((sendErr: any) => ({ ok: false, error: sendErr?.message || 'Falha no fallback' }));
+
+      if (fallbackApologyDispatch?.ok) {
+        recordAutoReply(normalizedSender);
+      }
+
+      const angelaPhone = env.ANGELA_NOTIFY_PHONE || process.env.ANGELA_NOTIFY_PHONE;
+      if (angelaPhone) {
+        const orgLabel = matchedLead?.osc?.nome || senderName || normalizedSender || 'ONG';
+        await sendWhatsAppText(
+          angelaPhone,
+          `⚠️ Falha momentânea no robô ao responder ${orgLabel} (+${normalizedSender || senderPhone}). Enviamos pedido de desculpas automático; confira a conversa. Erro: ${errMsg.slice(0, 120)}`,
+          { simulateTypingMs: 1000, overrideConfig: parsedBody?.overrideConfig }
+        ).catch(() => {});
+      }
+    }
+
     await logWhatsAppWebhookEvent({
       eventType: 'error',
-      detail: error?.message || 'Erro interno no Webhook WhatsApp.'
+      isSimulator,
+      phone: normalizedSender || senderPhone,
+      orgNome: matchedLead?.osc?.nome || senderName || null,
+      editalId: matchedLead?.edital_id || null,
+      incomingText,
+      replyMessage: fallbackApologyDispatch?.ok ? SYSTEM_FAILURE_APOLOGY_MSG : '',
+      detail: `${errMsg}${fallbackApologyDispatch?.ok ? ' | Fallback de desculpas enviado' : ''}`
     }).catch(() => {});
-    return json({ ok: false, error: error.message || 'Erro interno no Webhook WhatsApp.' }, { status: 500 });
+
+    return json(
+      {
+        ok: false,
+        error: errMsg,
+        fallbackApologySent: !!fallbackApologyDispatch?.ok
+      },
+      { status: 500 }
+    );
   }
 }
