@@ -462,7 +462,7 @@ async function getTopEditais(existingLeads: MatchResult[]) {
 
 async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Record<string, CacheEntry>, poolTarget = 100) {
   let rawCnpjs: string[] = [];
-  const seed = parseInt(String(editalId).replace(/\D/g, '') || '1', 10) + new Date().getDate();
+  const seed = parseInt(String(editalId).replace(/\D/g, '') || '1', 10) + new Date().getDate() + new Date().getHours() * 17;
 
   const collectFromOscList = async (oscs: any[], maxToCollect: number) => {
     if (!Array.isArray(oscs) || oscs.length === 0) return;
@@ -633,7 +633,7 @@ async function runPipeline() {
     console.log(`Processing Edital [${edital.id}]: ${edital.attributes.nome}`);
     const criterios = edital.deep_metadata.criterios_eliminatorios || {};
 
-    const poolTarget = isSniperMode ? Math.min(500, Math.max(150, maxPerEdital * 5)) : 100;
+    const poolTarget = isSniperMode ? Math.min(800, Math.max(200, maxPerEdital * 6)) : 100;
     console.log(`Fetching IPEA IDs for region (pool target: ${poolTarget})...`);
     let rawCnpjs = await getIpeaIdsForRegion(criterios, String(edital.id), cache, poolTarget);
     console.log(`Retrieved ${rawCnpjs.length} fresh CNPJs for this edital from IPEA.`);
