@@ -1,5 +1,61 @@
 [
   {
+    "edital_id": "18143",
+    "edital_titulo": "Chamada Pública Rio Doce Participativo – Projetos Estruturantes para o Desenvolvimento Territorial",
+    "edital_url": "https://drive.google.com/file/d/1t_17sXk_G6ynAtPn385hNZxTztS-MBlf/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "00840618000160",
+      "nome": "CONSELHO POPULAR DE VITORIA",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1995,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2797355577"
+      }
+    },
+    "score": 85,
+    "motivo_match": "O Conselho Popular de Vitória possui forte alinhamento com a defesa de direitos sociais e desenvolvimento territorial exigidos pelo edital, atuando ativamente na representação da sociedade civil em Vitória (ES) desde 1995.",
+    "whatsapp_message": "Olá, tudo bem? Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho o trabalho consistente do Conselho Popular de Vitória na defesa dos direitos sociais e participação cidadã há algum tempo. Mapeamos recentemente uma oportunidade de financiamento de até R$ 23.000.000 que tem total aderência com a atuação de vocês no território. Vocês teriam disponibilidade para uma breve conversa esta semana para entendermos como viabilizar essa captação?",
+    "contatos_encontrados": {
+      "whatsapp": "2797355577",
+      "instagram": "@conselhopopulardevitoria"
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nO Conselho Popular de Vitória (CNPJ 00.840.618/0001-60), fundado em 29/09/1995 e localizado em Vitória/ES, é uma associação privada dedicada à defesa de direitos sociais e organizações associativas. Com longa trajetória institucional (quase 30 anos de atuação), possui forte inserção em conselhos municipais e redes comunitárias locais.\n\n### 🎯 Alinhamento com o Edital\nA OSC está perfeitamente alinhada com as diretrizes da Chamada Pública Rio Doce Participativo, focada em desenvolvimento territorial, resiliência comunitária e fortalecimento institucional. Sua capilaridade e histórico em pautas sociais populares a tornam uma excelente entidade executora potencial para projetos estruturantes na região.",
+    "created_at": "2026-11-14T09:55:04.245Z"
+  },
+  {
+    "edital_id": "19322",
+    "edital_titulo": "RIO DE JANEIRO  RJ - FOMENTO - DESENVOLVIMENTO DE PROJETOS AUDIOVISUAIS - 2026",
+    "edital_url": "https://drive.google.com/file/d/1R29B-JmtYlbKcCdDkkOhHeCo38IHlPnk/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "13540346000124",
+      "nome": "ASSOCIACAO DE PRESTADORES DE SERVICOS ARTISTICOS DE APOIO A CULTURA, CINEMA E ARTES",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente | Produção teatral | Produção musical | Produção de espetáculos de dança | Agenciamento de profissionais para atividades esportivas, culturais e artísticas | Atividades de produção cinematográfica, de vídeos e de programas de televisão não especificadas anteriormente | Comércio varejista de discos, CDs, DVDs e fitas",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2139081181"
+      }
+    },
+    "score": 88,
+    "motivo_match": "A OSC possui sede no Rio de Janeiro, foi fundada em 2011 e atua diretamente nos setores de cultura, cinema e artes cênicas, apresentando forte alinhamento com os objetivos do edital de desenvolvimento de projetos audiovisuais do FSA.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Tríade ACR. Acompanho o belo trabalho da Cinearte na área de cultura e cinema no Rio de Janeiro. Mapeei recentemente uma oportunidade de financiamento não reembolsável de até R$ 5.000.000 que tem tudo a ver com o perfil e a atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "2139081181",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DE PRESTADORES DE SERVICOS ARTISTICOS DE APOIO A CULTURA, CINEMA E ARTES (Cinearte), CNPJ 13.540.346/0001-24, está sediada no Rio de Janeiro - RJ e foi fundada em 2011. Possui histórico de atuação em projetos culturais na cidade, conforme registros em diários oficiais e programas de fomento.\n\n### 🎯 Alinhamento com o Edital\nO edital busca selecionar propostas de desenvolvimento de projetos audiovisuais por produtoras/entidades com sede no Rio de Janeiro. A Cinearte possui CNAEs voltados a produções artísticas, cinematográficas e de vídeo, além de localização e histórico compatíveis com o fomento do Fundo Setorial do Audiovisual.",
+    "created_at": "2026-11-14T09:56:41.779Z"
+  },
+  {
     "edital_id": "19546",
     "edital_titulo": "BRASIL - AUXÍLIO - EVENTOS CIENTÍFICOS TECNOLÓGICOS E DE INOVAÇÃO (CHAMADA CNPQ 34/2026 - ARC) - 2026",
     "edital_url": "https://drive.google.com/file/d/134ShSOyjNq2d8EglVUIgfEk31WtKQ4zx/view?usp=drivesdk",
