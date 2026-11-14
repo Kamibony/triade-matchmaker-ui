@@ -10333,5 +10333,634 @@
     "pipeline_status": "COMPLETED",
     "drive_backfill_attempted": true,
     "archived_at": "2026-11-13"
+  },
+  {
+    "id": "19564",
+    "attributes": {
+      "nome": "NAVEGANTES  SC - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-15",
+      "data_fim": "2026-11-13",
+      "valor_total": 1000000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19564",
+    "pdf_link": "https://navegantes.sc.gov.br/wp-content/uploads/2026/10/EDITAL-145-2026.pdf",
+    "full_text": "Ajuda NAVEGANTES SC - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e P",
+    "deep_metadata": {
+      "edital_id": "19564",
+      "resumo_objetivo": "Seleção de projetos sociais não governamentais financiados pelo Fundo Municipal dos Direitos da Pessoa Idosa para celebração de termos de fomento no Município de Navegantes.",
+      "temas_principais": [
+        "pessoa idosa",
+        "direitos humanos",
+        "assistência social"
+      ],
+      "prazo_de_inscricao": "2026-11-13",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": 1,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SC"
+        ],
+        "municipios_permitidos": [
+          "Navegantes - SC"
+        ],
+        "natureza_juridica_excluida": [
+          "fins lucrativos",
+          "órgãos públicos",
+          "partidos políticos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 1000000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 1000000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": true,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Inscrição vigente no Conselho Municipal dos Direitos da Pessoa Idosa (CMI)",
+          "Comprovação de experiência prévia de no mínimo 01 ano na realização do objeto ou natureza semelhante"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1f1tPX-SN3FY7BN1KivGZwhMbU-vw0kLD/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-14"
+  },
+  {
+    "id": "19253",
+    "attributes": {
+      "nome": "PERNAMBUCO - CHAMAMENTO PÚBLICO - AUDIOVISUAL - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-13",
+      "data_fim": "2026-11-13",
+      "valor_total": 4000000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19253",
+    "full_text": "Ajuda PERNAMBUCO - CHAMAMENTO PÚBLICO - AUDIOVISUAL - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Priv",
+    "deep_metadata": {
+      "edital_id": "19253",
+      "resumo_objetivo": "Seleção de propostas culturais do setor audiovisual pernambucano para celebração de Termos de Execução Cultural e recebimento de recursos destinados a incentivar produção audiovisual, jogos eletrônicos, festivais e pesquisa.",
+      "temas_principais": [
+        "audiovisual",
+        "cultura",
+        "artes"
+      ],
+      "prazo_de_inscricao": "2026-11-13",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 4000000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 4000000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Benefício exclusivo para o setor audiovisual pernambucano"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-14"
+  },
+  {
+    "id": "19314",
+    "attributes": {
+      "nome": "PARANÁ - PREMIAÇÃO - GENTILEZA URBANA - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-01",
+      "data_fim": "2026-11-13"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19314",
+    "pdf_link": "https://iabpr.org.br/docs/Edital%20Premio%20Gentileza%20Urbana%20IAB-PR%202026.pdf",
+    "full_text": "Ajuda PARANÁ - PREMIAÇÃO - GENTILEZA URBANA - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade ",
+    "deep_metadata": {
+      "edital_id": "19314",
+      "resumo_objetivo": "O Prêmio Gentileza Urbana do IAB/PR reconhece iniciativas que melhoram a experiência urbana, fortalecem vínculos entre pessoas e qualificam os espaços e as dinâmicas das cidades paranaenses.",
+      "temas_principais": [
+        "urbanismo",
+        "arquitetura",
+        "espaço público",
+        "sustentabilidade",
+        "mobilidade",
+        "cultura"
+      ],
+      "prazo_de_inscricao": "2026-11-13",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PR"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "A iniciativa deve estar implantada, em execução ou demonstrar resultados verificáveis no Estado do Paraná."
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1xhMiCB-qN8GECfe6nNPNWctT_FCvWTzG/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-14"
+  },
+  {
+    "id": "19436",
+    "attributes": {
+      "nome": "SANTA CATARINA - FOLHA DE FOMENTO - AÇÕES AFIRMATIVAS E INCLUSÃO - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-13",
+      "data_fim": "2026-11-13",
+      "valor_total": 423000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19436",
+    "full_text": "Ajuda SANTA CATARINA - FOLHA DE FOMENTO - AÇÕES AFIRMATIVAS E INCLUSÃO - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso ",
+    "deep_metadata": {
+      "edital_id": "19436",
+      "resumo_objetivo": "Concessão de auxílio financeiro para coordenação e bolsas para discentes em projetos de ensino vinculados a núcleos inclusivos/pedagógicos para reduzir desigualdades e promover permanência e êxito de estudantes vulnerabilizados.",
+      "temas_principais": [
+        "ações afirmativas",
+        "inclusão",
+        "educação",
+        "cultura"
+      ],
+      "prazo_de_inscricao": "2026-11-13",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SC"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 423000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 423000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Projetos de ensino com carga horária mínima de 40h vinculados a núcleos inclusivos/pedagógicos do IFSC (NAE, NEABI, NUPEJA, NEIQ, NEFE)"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-14"
+  },
+  {
+    "id": "19255",
+    "attributes": {
+      "nome": "GOIÁS - CHAMAMENTO PÚBLICO - RESIDÊNCIA EM SAÚDE - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-05",
+      "data_fim": "2026-11-13"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19255",
+    "pdf_link": "https://sistemas.institutoverbena.ufg.br/2027/coremu-ses/sistema/arquivos/editais/EDITAL_DE_ABERTURA_COREMU_SES_2027.pdf",
+    "full_text": "Ajuda GOIÁS - CHAMAMENTO PÚBLICO - RESIDÊNCIA EM SAÚDE - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de P",
+    "deep_metadata": {
+      "edital_id": "19255",
+      "resumo_objetivo": "Regulamenta o Processo Seletivo Unificado para ingresso nos Programas de Residência Uniprofissional e Multiprofissional em Saúde da Secretaria de Estado da Saúde de Goiás (SES-GO), com ingresso no ano de 2027.",
+      "temas_principais": [
+        "saúde",
+        "residência multiprofissional",
+        "residência uniprofissional",
+        "saúde pública"
+      ],
+      "prazo_de_inscricao": "2026-11-13",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "GO"
+        ],
+        "municipios_permitidos": [
+          "Goiânia - GO",
+          "Uruaçu - GO"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 4106.09,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Graduação nas áreas contempladas",
+          "Inscrição no Conselho Regional da categoria jurisdição Goiás"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1x7trXluWh4ILhC2g7NacXHKYklRvLYCJ/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-14"
+  },
+  {
+    "id": "19675",
+    "attributes": {
+      "nome": "CHAMAMENTO PÚBLICO nº 009/2026 – Premiação de Pontos e Pontões de Cultura (Rede Municipal de Pontos e Pontões de Cultura de Louveira - SP)",
+      "e_central?": true,
+      "data_inicio": "2026-11-04",
+      "data_fim": "2026-11-13",
+      "valor_total": 142453.5
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19675",
+    "pdf_link": "https://louveira.sp.gov.br/pnab/uploads_editais/anexo_ff2d44e8398c07242a93a227.pdf",
+    "full_text": "Ajuda CHAMAMENTO PÚBLICO nº 009/2026 – Premiação de Pontos e Pontões de Cultura (Rede Municipal de Pontos e Pontões de Cultura de Louveira - SP) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suport",
+    "deep_metadata": {
+      "edital_id": "19675",
+      "resumo_objetivo": "Premiação de iniciativas, atividades ou ações já realizadas por Pontos e Pontões de Cultura no município de Louveira, por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB) e Política Nacional de Cultura Viva.",
+      "temas_principais": [
+        "cultura",
+        "culturas tradicionais e populares",
+        "pontos e pontões de cultura"
+      ],
+      "prazo_de_inscricao": "2026-11-13",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "Louveira - SP"
+        ],
+        "natureza_juridica_excluida": [
+          "fins lucrativos",
+          "instituições de ensino, pesquisa e desenvolvimento institucional",
+          "entidades vinculadas a equipamentos públicos",
+          "fundações e institutos criados ou mantidos por empresas",
+          "Sistema S",
+          "partidos políticos",
+          "pessoas jurídicas de direito público"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 142453.5,
+        "exige_contrapartida": false,
+        "valor_total_edital": 142453.5
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Comprovar no mínimo 2 anos de desenvolvimento de atividades culturais na comunidade local",
+          "Coletivos informais representados por pessoas menores de 18 anos não podem participar",
+          "Pessoas físicas e Microempreendedores Individuais (MEI) não podem participar"
+        ]
+      },
+      "fonte_dados": "pdf"
+    },
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-14"
+  },
+  {
+    "id": "19638",
+    "attributes": {
+      "nome": "CHAMADA PÚBLICA DE PROJETOS DE BÔNUS PARA AQUISIÇÃO DE ELETRODOMÉSTICOS EFICIENTES - CPP 002/2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-13",
+      "data_fim": "2026-11-13",
+      "valor_total": 20000000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19638",
+    "full_text": "Ajuda CHAMADA PÚBLICA DE PROJETOS DE BÔNUS PARA AQUISIÇÃO DE ELETRODOMÉSTICOS EFICIENTES - CPP 002/2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Cono",
+    "deep_metadata": {
+      "edital_id": "19638",
+      "resumo_objetivo": "A Enel Distribuição São Paulo seleciona uma empresa para gestão e execução de projetos de bônus para aquisição de eletrodomésticos eficientes, no âmbito do Programa de Eficiência Energética regulado pela ANEEL.",
+      "temas_principais": [
+        "eficiência energética",
+        "meio ambiente"
+      ],
+      "prazo_de_inscricao": "2026-11-13",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 20000000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 20000000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "É obrigatório formalizar parceria com um ou mais varejistas pelo Termo de Compromisso do Anexo B"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-14"
+  },
+  {
+    "id": "19676",
+    "attributes": {
+      "nome": "Edital de Chamamento Público Nº 010/2026 – Premiação Trajetórias Artísticas Culturais",
+      "e_central?": true,
+      "data_inicio": "2026-11-04",
+      "data_fim": "2026-11-13",
+      "valor_total": 12000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19676",
+    "pdf_link": "https://louveira.sp.gov.br/pnab/uploads_editais/anexo_eded3cbf86a390c9f09605e2.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público Nº 010/2026 – Premiação Trajetórias Artísticas Culturais © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato ",
+    "deep_metadata": {
+      "edital_id": "19676",
+      "resumo_objetivo": "Premiação de agentes culturais com recursos da Política Nacional Aldir Blanc (PNAB) para reconhecer trajetórias artísticas e culturais com relevante contribuição ao município de Louveira - SP.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "patrimônio cultural",
+        "agentes culturais"
+      ],
+      "prazo_de_inscricao": "2026-11-13",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "Louveira - SP"
+        ],
+        "natureza_juridica_excluida": [
+          "Pessoa jurídica"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 12000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 12000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Residir no Município de Louveira há pelo menos 01 ano",
+          "Possuir Cartão Cidadão de Louveira",
+          "Estar devidamente cadastrado no Cadastro de Artistas do município de Louveira",
+          "Não ter sido premiado como pessoa física em editais da PNAB ciclo 01-2025 na Modalidade de Premiação Cultural"
+        ]
+      },
+      "fonte_dados": "pdf"
+    },
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-14"
+  },
+  {
+    "id": "19677",
+    "attributes": {
+      "nome": "Edital de Chamamento Público Nº 11/2026 - Oficinas Culturais (Seleção de projetos para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura - Lei Nº 14.399/2022)",
+      "e_central?": true,
+      "data_inicio": "2026-11-04",
+      "data_fim": "2026-11-13",
+      "valor_total": 39800
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19677",
+    "pdf_link": "https://louveira.sp.gov.br/pnab/uploads_editais/anexo_4980eb2066b09b7140e9b95b.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público Nº 11/2026 - Oficinas Culturais (Seleção de projetos para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura - Lei Nº 14.399/2022) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captaçã",
+    "deep_metadata": {
+      "edital_id": "19677",
+      "resumo_objetivo": "Seleção de projetos culturais de Oficinas Culturais para receberem apoio financeiro com recursos da Política Nacional Aldir Blanc de Fomento à Cultura no município de Louveira - SP.",
+      "temas_principais": [
+        "cultura",
+        "oficinas culturais",
+        "arte"
+      ],
+      "prazo_de_inscricao": "2026-11-13",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "Louveira - SP"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 39800,
+        "exige_contrapartida": false,
+        "valor_total_edital": 39800
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exige atuação ou residência no município de Louveira há pelo menos 01 ano",
+          "Exige Cartão Cidadão de Louveira para pessoas físicas ou representantes",
+          "Exige conta bancária específica e exclusiva para movimentação dos recursos"
+        ]
+      },
+      "fonte_dados": "pdf"
+    },
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-14"
+  },
+  {
+    "id": "19678",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 012/2026 – FESTIVAIS E MOSTRAS ARTÍSTICOS E CULTURAIS (Seleção de Projetos para Firmar Termo de Execução Cultural com Recursos da Política Nacional Aldir Blanc de Fomento à Cultura - Lei nº 14.399/2022)",
+      "e_central?": true,
+      "data_inicio": "2026-11-04",
+      "data_fim": "2026-11-13",
+      "valor_total": 120000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19678",
+    "pdf_link": "https://louveira.sp.gov.br/pnab/uploads_editais/anexo_2898d4137fb259c190f3db29.pdf",
+    "full_text": "Ajuda EDITAL DE CHAMAMENTO PÚBLICO Nº 012/2026 – FESTIVAIS E MOSTRAS ARTÍSTICOS E CULTURAIS (Seleção de Projetos para Firmar Termo de Execução Cultural com Recursos da Política Nacional Aldir Blanc de Fomento à Cultura - Lei nº 14.399/2022) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infânci",
+    "deep_metadata": {
+      "edital_id": "19678",
+      "resumo_objetivo": "Seleção de festivais e mostras artísticas e culturais para receber apoio financeiro por meio da Política Nacional Aldir Blanc de Fomento à Cultura no município de Louveira.",
+      "temas_principais": [
+        "cultura",
+        "festivais",
+        "mostras artísticas",
+        "capoeira"
+      ],
+      "prazo_de_inscricao": "2026-11-13",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "Louveira - SP"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 120000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 120000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Atuar ou residir em Louveira há pelo menos 01 ano",
+          "Possuir Cartão Cidadão da cidade de Louveira",
+          "Mínimo de 50% dos integrantes da equipe do projeto moradores de Louveira"
+        ]
+      },
+      "fonte_dados": "pdf"
+    },
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-14"
+  },
+  {
+    "id": "19679",
+    "attributes": {
+      "nome": "Edital de Chamamento Público Nº 013/2026 – Fomento à Projetos Culturais (Seleção de Projetos para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura - Lei nº 14.399/2022)",
+      "e_central?": true,
+      "data_inicio": "2026-11-04",
+      "data_fim": "2026-11-13",
+      "valor_total": 194000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19679",
+    "pdf_link": "https://louveira.sp.gov.br/pnab/uploads_editais/anexo_f9280b8452324d701dfcea8a.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público Nº 013/2026 – Fomento à Projetos Culturais (Seleção de Projetos para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura - Lei nº 14.399/2022) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa ido",
+    "deep_metadata": {
+      "edital_id": "19679",
+      "resumo_objetivo": "Seleção de projetos artísticos e culturais de diversas linguagens para receberem apoio financeiro com recursos da Política Nacional Aldir Blanc de Fomento à Cultura no município de Louveira - SP.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "patrimônio cultural"
+      ],
+      "prazo_de_inscricao": "2026-11-13",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "Louveira - SP"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 194000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 194000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Agente cultural que atua ou reside em Louveira há pelo menos 01 ano e possua Cartão Cidadão",
+          "Mínimo de 50% dos integrantes da equipe do projeto devem ser moradores do município de Louveira",
+          "Indicação de conta bancária específica e exclusiva para a movimentação dos recursos"
+        ]
+      },
+      "fonte_dados": "pdf"
+    },
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-14"
+  },
+  {
+    "id": "19702",
+    "attributes": {
+      "nome": "Edital de Chamamento Público SEEC Nº 35/2026 – Seleção de Projetos para Firmar Termo de Execução Cultural com Recursos da Política Nacional Aldir Blanc de Fomento à Cultura - PNAB",
+      "e_central?": true,
+      "data_inicio": "2026-11-09",
+      "data_fim": "2026-11-13",
+      "valor_total": 112601.53
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19702",
+    "pdf_link": "https://ecrie.com.br/Sistema/Conteudos/Licitacoes/l296_06112026142023.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público SEEC Nº 35/2026 – Seleção de Projetos para Firmar Termo de Execução Cultural com Recursos da Política Nacional Aldir Blanc de Fomento à Cultura - PNAB © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Centra",
+    "deep_metadata": {
+      "edital_id": "19702",
+      "resumo_objetivo": "Seleção de projetos culturais para firmar termo de execução cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB) no Município de Descalvado.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "patrimônio cultural",
+        "oficinas culturais"
+      ],
+      "prazo_de_inscricao": "2026-11-13",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "Descalvado - SP"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 112601.53,
+        "exige_contrapartida": false,
+        "valor_total_edital": 112601.53
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Comprovar residência, sede e/ou atuação cultural em Descalvado há pelo menos 2 anos"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1iEkDNrv452UImeKcH55oU5Pqa-z4YC45/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-14"
   }
 ]
