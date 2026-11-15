@@ -1,5 +1,33 @@
 [
   {
+    "edital_id": "15007",
+    "edital_titulo": "Financiamento para Projetos Inovadores ",
+    "edital_url": "https://drive.google.com/file/d/1vhqxO3629gQB2ZC7gQ3n9Dz_HDzgpNxt/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "49400550000197",
+      "nome": "ASSOCIACAO ARAPIRAQUENSE DE PACIENTES DE CANNABIS MEDICINAL",
+      "uf": "AL",
+      "municipio": "ARAPIRACA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Cultivo de outras oleaginosas de lavoura temporária não especificadas anteriormente | Produção de mudas e outras formas de propagação vegetal, certificadas | Fabricação de medicamentos fitoterápicos para uso humano | Fabricação de medicamentos para uso veterinário | Pesquisa e desenvolvimento experimental em ciências físicas e naturais | Pesquisa e desenvolvimento experimental em ciências sociais e humanas | Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais | Outras atividades de ensino não especificadas anteriormente | Atividades de serviços de complementação diagnóstica e terapêutica não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "8299050864"
+      }
+    },
+    "score": 88,
+    "motivo_match": "A OSC atua fortemente na área de saúde e direitos sociais através do acesso à cannabis medicinal, alinhando-se diretamente com os temas de redução da desigualdade social, desenvolvimento comunitário e pesquisa e desenvolvimento previstos no edital.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanhamos o belo trabalho da Associação Arapiraquense de Pacientes de Cannabis Medicinal em Arapiraca no apoio à saúde e aos direitos sociais. Mapeamos uma oportunidade excelente de financiamento de até R$ 4.000.000 que se encaixa perfeitamente na atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "558299050864",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO ARAPIRAQUENSE DE PACIENTES DE CANNABIS MEDICINAL, fundada em 2022 e sediada em Arapiraca (AL), é uma organização privada sem fins lucrativos focada na defesa de direitos sociais, apoio a pacientes no tratamento com cannabis medicinal e atividades de pesquisa e desenvolvimento.\n\n### 🎯 Alinhamento com o Edital\nO perfil da associação atende aos critérios do edital do FID por desenvolver ações de impacto comunitário voltadas para a saúde e a melhoria da qualidade de vida de populações vulneráveis, podendo pleitear financiamentos para expandir suas pesquisas e capacidade de atendimento.",
+    "created_at": "2026-11-15T10:30:12.222Z"
+  },
+  {
     "edital_id": "18143",
     "edital_titulo": "Chamada Pública Rio Doce Participativo – Projetos Estruturantes para o Desenvolvimento Territorial",
     "edital_url": "https://drive.google.com/file/d/1t_17sXk_G6ynAtPn385hNZxTztS-MBlf/view?usp=drivesdk",

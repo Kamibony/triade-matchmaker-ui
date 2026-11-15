@@ -543,7 +543,13 @@
       "cnae_secundario_descricao": "Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Pesquisa e desenvolvimento experimental em ciências sociais e humanas | Atividades de atendimento em pronto-socorro e unidades hospitalares para atendimento a urgências | Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos | Atividade médica ambulatorial com recursos para realização de exames complementares | Atividade médica ambulatorial restrita a consultas | Atividades de atenção ambulatorial não especificadas anteriormente | Atividades de enfermagem | Atividades de profissionais da nutrição | Atividades de psicologia e psicanálise | Atividades de fisioterapia | Atividades de profissionais da área de saúde não especificadas anteriormente | Atividades de apoio à gestão de saúde | Outras atividades de atenção à saúde humana não especificadas anteriormente",
       "situacao_cadastral": "ATIVA"
     },
-    "last_checked_date": "2026-11-05T19:02:33.741Z"
+    "last_checked_date": "2026-11-05T19:02:33.741Z",
+    "brave_enriched": true,
+    "evaluated_editais": [
+      "15007"
+    ],
+    "dossieText": "### 🏛️ Perfil Institucional\nO INSTITUTO NACIONAL DE TECNOLOGIA E SAUDE (INTS), sediado em Salvador, BA, é uma Organização Social (OS) com forte atuação na gestão, promoção à saúde e assistência a pacientes em unidades hospitalares e de urgência.\n\n### 🎯 Alinhamento com o Edital\nApesar de o edital abranger o tema geral de desenvolvimento e tecnologia, o escopo do fundo (FID) prioriza a redução estrutural da pobreza e desigualdade social por meio de inovações de impacto, perfil que difere do objeto principal de gestão de saúde pública do INTS.",
+    "dossie_updated_at": "2026-11-15T10:30:02.736Z"
   },
   "45599135000153": {
     "osc": {
@@ -14796,7 +14802,9 @@
       }
     },
     "last_checked_date": "2026-11-13T01:11:47.139Z",
-    "evaluated_editais": []
+    "evaluated_editais": [],
+    "ipea_id": 1401828,
+    "brave_enriched": true
   },
   "49995473000165": {
     "osc": {
@@ -19186,7 +19194,12 @@
       }
     },
     "last_checked_date": "2026-11-13T09:27:37.400Z",
-    "evaluated_editais": []
+    "evaluated_editais": [
+      "15007"
+    ],
+    "brave_enriched": true,
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** ASSOCIACAO INSTITUTO DE SAUDE MENTAL E FAMILIA NA ESCOLA\n- **Localização:** Serra, ES\n- **Natureza:** Associação Privada\n- **Ano de Fundação:** 2026\n- **Atividades Principais/Secundárias:** Envolve atenção à saúde humana, assistência psicossocial, treinamentos e serviços sociais.\n\n### 🎯 Alinhamento com o Edital\n- **Objetivo do Edital:** Financiamento de projetos inovadores para redução da pobreza e desigualdade (FID).\n- **Análise de Adequação:** Embora atue na área de saúde mental e social, a fundação muito recente (2026) e a ausência de histórico de pesquisa ou inovação tecnológica de alto impacto tornam a captação de R$ 4.000.000 incompatível com a maturidade atual da instituição.",
+    "dossie_updated_at": "2026-11-15T10:30:16.887Z"
   },
   "67755521000120": {
     "osc": {
@@ -29242,7 +29255,8 @@
       "19608"
     ],
     "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Federação Mineira de Fisculturismo e Fitness WBBF (FMFF)\n- **Localização:** Belo Horizonte, MG\n- **Natureza:** Associação Privada\n- **Maturidade:** Fundada em 2025 (baixa maturidade histórico-financeira)\n- **Atividade Principal (CNAE):** Produção e promoção de eventos esportivos\n\n### 🎯 Alinhamento com o Edital\n- **Compatibilidade:** Muito baixa.\n- **Justificativa:** O edital é restrito à organização de eventos técnico-científicos para divulgação de pesquisas em ciência, tecnologia e inovação, enquanto o escopo da organização é estritamente voltado ao setor de eventos esportivos e fitness.",
-    "dossie_updated_at": "2026-11-13T19:19:17.601Z"
+    "dossie_updated_at": "2026-11-13T19:19:17.601Z",
+    "brave_enriched": true
   },
   "60275696000190": {
     "osc": {
@@ -29283,7 +29297,8 @@
       "19608"
     ],
     "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO MINEIRA DE BOXE - AMB é uma associação privada sediada em Belo Horizonte, MG, fundada recentemente em 2025. Suas atividades principais e secundárias concentram-se no ensino de esportes e na produção e promoção de eventos esportivos, com baixa maturidade institucional devido ao ano de fundação.\n\n### 🎯 Alinhamento com o Edital\nO alinhamento é baixo. O edital destina-se ao apoio e organização de eventos técnico-científicos para divulgação de pesquisas em ciência, tecnologia e inovação, enquanto o escopo da AMB é estritamente esportivo.",
-    "dossie_updated_at": "2026-11-13T19:19:23.568Z"
+    "dossie_updated_at": "2026-11-13T19:19:23.568Z",
+    "brave_enriched": true
   },
   "60228768000149": {
     "osc": {
@@ -29343,10 +29358,12 @@
     },
     "last_checked_date": "2026-11-13T14:18:19.791Z",
     "evaluated_editais": [
-      "19608"
+      "19608",
+      "19607"
     ],
-    "dossieText": "### 🏛️ Perfil Institucional\nA FUNDO ESPECIAL REGISTRAL DO ESTADO DE MINAS GERAIS é uma associação privada sediada em Belo Horizonte, MG, fundada recentemente em 2025. Possui como atividade primária 'Atividades associativas não especificadas anteriormente' e não registra atividades secundárias.\n\n### 🎯 Alinhamento com o Edital\nA instituição está sediada em Minas Gerais, cumprindo a exigência geográfica do edital de eventos científico-tecnológicos. No entanto, sua natureza voltada a fundos registrais apresenta baixa aderência direta aos temas de ciência, tecnologia e inovação, exigindo cautela na comprovação de capacidade técnica para organizar eventos científicos.",
-    "dossie_updated_at": "2026-11-13T19:19:26.403Z"
+    "dossieText": "### 🏛️ Perfil Institucional\nA FUNDO ESPECIAL REGISTRAL DO ESTADO DE MINAS GERAIS (Recompe), sediada em Belo Horizonte - MG e fundada em 2025, é um fundo especial de direito privado autônomo criado por lei estadual para atuar na gestão de recursos do setor de registros públicos e notas.\n\n### 🎯 Alinhamento com o Edital\nApesar de estar localizada em Minas Gerais, a OSC possui finalidade estritamente voltada para atividades registrais e notariais, apresentando complete incompatibilidade temática com o fomento a pesquisas, ICTs e eventos técnico-científicos.",
+    "dossie_updated_at": "2026-11-15T10:29:34.155Z",
+    "brave_enriched": true
   },
   "60324750000140": {
     "osc": {
@@ -36437,10 +36454,12 @@
     },
     "last_checked_date": "2026-11-13T18:28:49.804Z",
     "evaluated_editais": [
-      "19546"
+      "19546",
+      "15007"
     ],
-    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Centro de Trabalho e Acolhimento Venha ao Senhor (CENTRAVES)\n- **Localização:** Manaus, AM\n- **Natureza jurídica:** Organização Social (OS)\n- **Ano de fundação:** 2022\n- **Atividade Principal (CNAE):** Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química.\n\n### 🎯 Alinhamento com o Edital\n- **Objetivo do Edital:** Apoiar eventos de grande porte em ciência, tecnologia e inovação.\n- **Análise:** A instituição possui foco assistencial e terapêutico, sem histórico ou vocação estatutária para a realização de grandes eventos científicos ou tecnológicos de abrangência nacional/internacional, tornando a elegibilidade inviável para esta chamada.",
-    "dossie_updated_at": "2026-11-13T19:18:38.522Z"
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** Centro de Trabalho e Acolhimento Venha ao Senhor (CENTRAVES)\n- **Localização:** Manaus, AM\n- **Natureza jurídica:** Organização Social (OS)\n- **Ano de fundação:** 2022\n- **Atividade Principal (CNAE):** Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química.\n\n### 🎯 Alinhamento com o Edital\n- **Objetivo do Edital:** Financiamento de projetos inovadores e pesquisas para redução da pobreza, desigualdade social, ciência e tecnologia.\n- **Análise:** A OSC atua estritamente no suporte assistencial e terapêutico local, sem histórico ou escopo voltado para pesquisa científica, inovação de impacto global ou combate estrutural à pobreza exigidos pelo fundo FID, tornando a aplicação inviável.",
+    "dossie_updated_at": "2026-11-15T10:30:07.438Z",
+    "brave_enriched": true
   },
   "42356356000102": {
     "osc": {
@@ -38735,7 +38754,12 @@
       }
     },
     "last_checked_date": "2026-11-13T19:10:56.442Z",
-    "evaluated_editais": []
+    "evaluated_editais": [
+      "15007"
+    ],
+    "brave_enriched": true,
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO ARAPIRAQUENSE DE PACIENTES DE CANNABIS MEDICINAL, fundada em 2022 e sediada em Arapiraca (AL), é uma organização privada sem fins lucrativos focada na defesa de direitos sociais, apoio a pacientes no tratamento com cannabis medicinal e atividades de pesquisa e desenvolvimento.\n\n### 🎯 Alinhamento com o Edital\nO perfil da associação atende aos critérios do edital do FID por desenvolver ações de impacto comunitário voltadas para a saúde e a melhoria da qualidade de vida de populações vulneráveis, podendo pleitear financiamentos para expandir suas pesquisas e capacidade de atendimento.",
+    "dossie_updated_at": "2026-11-15T10:30:12.222Z"
   },
   "48715530000142": {
     "osc": {
@@ -67629,6 +67653,24 @@
       }
     },
     "last_checked_date": "2026-11-15T09:11:56.746Z",
+    "evaluated_editais": []
+  },
+  "51282675000101": {
+    "osc": {
+      "cnpj": "51282675000101",
+      "nome": "ASSOCIACAO CULTURAL OUVIRAVIDA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5189241972"
+      }
+    },
+    "last_checked_date": "2026-11-15T10:29:53.405Z",
     "evaluated_editais": []
   }
 }
