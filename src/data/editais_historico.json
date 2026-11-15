@@ -10962,5 +10962,117 @@
     },
     "pipeline_status": "COMPLETED",
     "archived_at": "2026-11-14"
+  },
+  {
+    "id": "19442",
+    "attributes": {
+      "nome": "BAURU  SP - CHAMAMENTO PÚBLICO - PROTEÇÃO SOCIAL BÁSICA - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-16",
+      "data_fim": "2026-11-14",
+      "valor_total": 23905185.2
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19442",
+    "full_text": "Ajuda BAURU SP - CHAMAMENTO PÚBLICO - PROTEÇÃO SOCIAL BÁSICA - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Política",
+    "deep_metadata": {
+      "edital_id": "19442",
+      "resumo_objetivo": "Seleção de propostas de Organizações da Sociedade Civil (OSCs) para celebração de Termos de Colaboração visando à execução de serviços e programas no âmbito da Proteção Social Básica do SUAS, Segurança Alimentar e Nutricional, e Gestão do Trabalho e Educação Permanente no Município de Bauru.",
+      "temas_principais": [
+        "assistência social",
+        "desenvolvimento comunitário",
+        "empreendedorismo",
+        "infância e adolescência",
+        "idosos",
+        "pessoas com deficiência"
+      ],
+      "prazo_de_inscricao": "2026-11-14",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "Bauru - SP"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 23905185.2,
+        "exige_contrapartida": false,
+        "valor_total_edital": 23905185.2
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para Organizações da Sociedade Civil (OSCs)",
+          "Benefício exclusivo para atuação no Município de Bauru"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-15"
+  },
+  {
+    "id": "19640",
+    "attributes": {
+      "nome": "Edital de Chamamento Público Nº 21/2026 – Seleção de Projetos para Firmar Termo de Execução Cultural com Recursos da Política Nacional Aldir Blanc de Fomento à Cultura - PNAB (Edital Ocupa Goiás MIT SP 2027)",
+      "e_central?": true,
+      "data_inicio": "2026-11-04",
+      "data_fim": "2026-11-14",
+      "valor_total": 600000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19640",
+    "pdf_link": "https://goias.gov.br/cultura/wp-content/uploads/sites/25/2026/11/Edital-Ocupa-Goias-MITsp-2027.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público Nº 21/2026 – Seleção de Projetos para Firmar Termo de Execução Cultural com Recursos da Política Nacional Aldir Blanc de Fomento à Cultura - PNAB (Edital Ocupa Goiás MIT SP 2027) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação ",
+    "deep_metadata": {
+      "edital_id": "19640",
+      "resumo_objetivo": "O edital visa selecionar projetos artísticos no segmento de Artes Cênicas para participação na programação da 12ª Mostra Internacional de Teatro de São Paulo – MIT SP 2027. O objetivo é promover a difusão, circulação e valorização da produção artística goiana.",
+      "temas_principais": [
+        "artes cênicas",
+        "circo",
+        "dança",
+        "teatro",
+        "cultura"
+      ],
+      "prazo_de_inscricao": "2026-11-14",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "GO"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": [
+          "fins lucrativos (para determinadas aquisições de bens imóveis)",
+          "órgãos ou entidades de direito privado inadimplentes com convênios",
+          "empresas sob decretação de falência, dissolução ou liquidação"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 600000,
+        "exige_contrapartida": true,
+        "valor_total_edital": 600000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Proponente deve residir ou ter sede e foro no Estado de Goiás há pelo menos 2 anos",
+          "O orçamento total do projeto deve ser exatamente igual a 100% do valor previsto para a categoria indicada no Anexo I",
+          "Obrigatória a indicação e participação do Proprietário Intelectual do Projeto na execução",
+          "Apresentação de Declaração de Propriedade Intelectual assinada",
+          "Proibição de inscrição múltipla de projetos pelo mesmo CPF ou CNPJ"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1ojthS5a9RzvW6lLcRoUOWfql3ZrqIZ7f/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-15"
   }
 ]

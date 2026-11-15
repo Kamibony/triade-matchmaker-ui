@@ -393,58 +393,6 @@
     "pipeline_status": "FAILED_PERMANENTLY"
   },
   {
-    "id": "19442",
-    "attributes": {
-      "nome": "BAURU  SP - CHAMAMENTO PÚBLICO - PROTEÇÃO SOCIAL BÁSICA - 2026",
-      "e_central?": true,
-      "data_inicio": "2026-10-16",
-      "data_fim": "2026-11-14",
-      "valor_total": 23905185.2
-    },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19442",
-    "full_text": "Ajuda BAURU SP - CHAMAMENTO PÚBLICO - PROTEÇÃO SOCIAL BÁSICA - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por BAURU SP - CHAMAMENTO PÚBLICO - PROTEÇÃO SOCIAL BÁSICA - 2026 Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Público-Alvo Objetivos de Desenvolvimento Sustentável (ODS) 16/10/26 até 14/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: chamamentopublicopsb@bauru.sp.gov.br Seleção de propostas de Organizações da Sociedade Civil (OSCs) para celebração de Termos de Colaboração visando à execução de serviços e programas no âmbito da Proteção Social Básica do SUAS, Segurança Alimentar e Nutricional, e Gestão do Trabalho e Educação Permanente no Município de Bauru. Total Disponível R$ 23.905.185,20 Outros Bauru - SP E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Prefeitura Municipal de Bauru / Secretaria Municipal de Assistência Social (SMAS) Assistência Social Desenvolvimento comunitário Empreendedorismo / Geração de Emprego e Renda Formação para o trabalho Infância e Adolescência Juventude Idosos Pessoas com Deficiência",
-    "deep_metadata": {
-      "edital_id": "19442",
-      "resumo_objetivo": "Seleção de propostas de Organizações da Sociedade Civil (OSCs) para celebração de Termos de Colaboração visando à execução de serviços e programas no âmbito da Proteção Social Básica do SUAS, Segurança Alimentar e Nutricional, e Gestão do Trabalho e Educação Permanente no Município de Bauru.",
-      "temas_principais": [
-        "assistência social",
-        "desenvolvimento comunitário",
-        "empreendedorismo",
-        "infância e adolescência",
-        "idosos",
-        "pessoas com deficiência"
-      ],
-      "prazo_de_inscricao": "2026-11-14",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "SP"
-        ],
-        "municipios_permitidos": [
-          "Bauru - SP"
-        ],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": 23905185.2,
-        "exige_contrapartida": false,
-        "valor_total_edital": 23905185.2
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Exclusivo para Organizações da Sociedade Civil (OSCs)",
-          "Benefício exclusivo para atuação no Município de Bauru"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    },
-    "pipeline_status": "COMPLETED"
-  },
-  {
     "id": "19568",
     "attributes": {
       "nome": "SÃO CARLOS  SP - BOLSA - CULTURAS TRADICIONAIS E POPULARES - 2026",
@@ -15129,64 +15077,6 @@
     "pipeline_status": "COMPLETED"
   },
   {
-    "id": "19640",
-    "attributes": {
-      "nome": "Edital de Chamamento Público Nº 21/2026 – Seleção de Projetos para Firmar Termo de Execução Cultural com Recursos da Política Nacional Aldir Blanc de Fomento à Cultura - PNAB (Edital Ocupa Goiás MIT SP 2027)",
-      "e_central?": true,
-      "data_inicio": "2026-11-04",
-      "data_fim": "2026-11-14",
-      "valor_total": 600000
-    },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19640",
-    "pdf_link": "https://goias.gov.br/cultura/wp-content/uploads/sites/25/2026/11/Edital-Ocupa-Goias-MITsp-2027.pdf",
-    "full_text": "Ajuda Edital de Chamamento Público Nº 21/2026 – Seleção de Projetos para Firmar Termo de Execução Cultural com Recursos da Política Nacional Aldir Blanc de Fomento à Cultura - PNAB (Edital Ocupa Goiás MIT SP 2027) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Chamamento Público Nº 21/2026 – Seleção de Projetos para Firmar Termo de Execução Cultural com Recursos da Política Nacional Aldir Blanc de Fomento à Cultura - PNAB (Edital Ocupa Goiás MIT SP 2027) Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Subáreas Objetivos de Desenvolvimento Sustentável (ODS) Mídias 04/11/26 até 14/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: gpfac.cultura@goias.gov.br Seleção de 6 projetos artísticos no segmento de Artes Cênicas (nas linguagens de circo, dança e teatro, em formatos solo, dupla e grupo) para participação e apresentação na programação da 12ª Mostra Internacional de Teatro de São Paulo (MITsp 2027), a realizar-se de 04 a 14 de março de 2027, em São Paulo (SP). O edital visa promover a difusão, circulação e valorização da produção artística goiana. Total Disponível R$ 600.000,00 Política Nacional Aldir Blanc Goiás - GO Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Secretaria de Estado da Cultura de Goiás (SECULT - GO) Cultura e Artes Circo Dança Teatro CulturA índigena Cultura Afro Brasileira Site Anexos",
-    "deep_metadata": {
-      "edital_id": "19640",
-      "resumo_objetivo": "O edital visa selecionar projetos artísticos no segmento de Artes Cênicas para participação na programação da 12ª Mostra Internacional de Teatro de São Paulo – MIT SP 2027. O objetivo é promover a difusão, circulação e valorização da produção artística goiana.",
-      "temas_principais": [
-        "artes cênicas",
-        "circo",
-        "dança",
-        "teatro",
-        "cultura"
-      ],
-      "prazo_de_inscricao": "2026-11-14",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "GO"
-        ],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": [
-          "fins lucrativos (para determinadas aquisições de bens imóveis)",
-          "órgãos ou entidades de direito privado inadimplentes com convênios",
-          "empresas sob decretação de falência, dissolução ou liquidação"
-        ]
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": 600000,
-        "exige_contrapartida": true,
-        "valor_total_edital": 600000
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": true,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Proponente deve residir ou ter sede e foro no Estado de Goiás há pelo menos 2 anos",
-          "O orçamento total do projeto deve ser exatamente igual a 100% do valor previsto para a categoria indicada no Anexo I",
-          "Obrigatória a indicação e participação do Proprietário Intelectual do Projeto na execução",
-          "Apresentação de Declaração de Propriedade Intelectual assinada",
-          "Proibição de inscrição múltipla de projetos pelo mesmo CPF ou CNPJ"
-        ]
-      },
-      "fonte_dados": "pdf",
-      "drive_pdf_link": "https://drive.google.com/file/d/1ojthS5a9RzvW6lLcRoUOWfql3ZrqIZ7f/view?usp=drivesdk"
-    },
-    "pipeline_status": "COMPLETED"
-  },
-  {
     "id": "19637",
     "attributes": {
       "nome": "Edital Nº 1 - TJMG Pedra Azul 1ª Vara Cível, Criminal e de Execuções Penais",
@@ -19144,6 +19034,22 @@
     "id": "19766",
     "attributes": {
       "nome": "Chamada FAPEMIG n.º 19/2026: Minas para o Mundo - Chamada Institucional de Fomento à Internacionalização da CT&I Mineira (2027-2031).",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19761",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 006/2026 – PNAB-SECULT/AP – Territórios Culturais do Estado do Amapá – Ancestralidade e Identidade Amapaense",
+      "e_central?": true
+    },
+    "pipeline_status": "NEW_FROM_API"
+  },
+  {
+    "id": "19770",
+    "attributes": {
+      "nome": "Edital de Chamamento Público 02/2026 do FUNCULTURA – Fomento a Projetos Continuados de Pontos de Cultura (Termo de Compromisso Cultural - Rede Municipal de Pontos de Cultura de Campos dos Goytacazes - RJ)",
       "e_central?": true
     },
     "pipeline_status": "NEW_FROM_API"
