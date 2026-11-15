@@ -4,7 +4,7 @@ import { google } from 'googleapis';
 const DEFAULT_MONITOR_SHEET_ID = '1okK96biPmEpSwxFYFakvjfdfaFJ6tM5DKE9A_64DMAU';
 
 export interface WhatsAppMonitorEvent {
-  eventType: 'ignored' | 'analyzed_only' | 'auto_replied' | 'error';
+  eventType: 'ignored' | 'analyzed_only' | 'auto_replied' | 'opt_out' | 'error';
   isSimulator?: boolean;
   phone?: string | null;
   orgNome?: string | null;

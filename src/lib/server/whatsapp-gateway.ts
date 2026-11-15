@@ -1,4 +1,5 @@
 import { env } from '$env/dynamic/private';
+import { isPhoneOptedOut } from '$lib/server/whatsapp-optout';
 
 export type WhatsAppProvider = 'whapi' | 'zapi' | 'evolution' | 'greenapi' | 'meta' | 'simulation';
 
@@ -13,6 +14,7 @@ export interface SendWhatsAppResult {
   ok: boolean;
   provider: WhatsAppProvider;
   simulated: boolean;
+  blockedByOptOut?: boolean;
   phone: string;
   phoneType: 'mobile' | 'landline' | 'unknown';
   messageId?: string;
@@ -123,7 +125,7 @@ export function getActiveWhatsAppProvider(override?: GatewayOverrideConfig): Wha
 export async function sendWhatsAppText(
   rawPhone: string,
   text: string,
-  options: { simulateTypingMs?: number; overrideConfig?: GatewayOverrideConfig } = {}
+  options: { simulateTypingMs?: number; overrideConfig?: GatewayOverrideConfig; bypassOptOutCheck?: boolean } = {}
 ): Promise<SendWhatsAppResult> {
   const phone = normalizeBrazilPhone(rawPhone);
   const phoneType = classifyBrazilPhoneType(rawPhone);
@@ -143,6 +145,22 @@ export async function sendWhatsAppText(
 
   const { provider, apiUrl, apiToken, instanceId } = resolveGatewayConfig(options.overrideConfig);
   const typingMs = options.simulateTypingMs ?? 3500;
+
+  if (!options.bypassOptOutCheck) {
+    const optOutCheck = await isPhoneOptedOut(phone);
+    if (optOutCheck.blocked) {
+      return {
+        ok: false,
+        provider,
+        simulated: false,
+        blockedByOptOut: true,
+        phone,
+        phoneType,
+        timestamp,
+        error: optOutCheck.reason || 'Contato bloqueado (Opt-Out / PARAR).'
+      };
+    }
+  }
 
   if (provider === 'simulation') {
     return {

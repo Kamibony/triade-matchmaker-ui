@@ -2,6 +2,7 @@
   import { onMount, onDestroy } from 'svelte';
   import { marked } from 'marked';
   import DOMPurify from 'dompurify';
+  import MondayFollowupPanel from './MondayFollowupPanel.svelte';
 
   export let leads: any[] = [];
   export let bancoEditais: any[] = [];
@@ -1441,8 +1442,10 @@
         {/if}
       </div>
     {:else}
-      <!-- Right Pane for Automation Tab: 7-Day Experiment Analytics + Queue + AI SDR Simulator -->
+      <!-- Right Pane for Automation Tab: Monday 16/11 Approved Batch + 7-Day Experiment Analytics + Queue + AI SDR Simulator -->
       <div class="flex-1 overflow-y-auto p-6 space-y-6">
+        <MondayFollowupPanel overrideConfig={customGatewayConfig.apiToken ? customGatewayConfig : undefined} />
+
         <div class="bg-white rounded-xl shadow-sm border border-purple-200 p-4 space-y-3">
           <div class="flex flex-wrap items-center justify-between gap-2">
             <div>

@@ -3,6 +3,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import { env } from '$env/dynamic/private';
 import { normalizeBrazilPhone, sendWhatsAppText } from '$lib/server/whatsapp-gateway';
 import { logWhatsAppWebhookEvent } from '$lib/server/whatsapp-monitor';
+import { detectOptOutCommand, isPhoneOptedOut, recordOptOutPhone } from '$lib/server/whatsapp-optout';
 import dailyLeadsData from '../../../../data/daily_outbound_leads.json';
 import editaisData from '../../../../data/editais_prosas.json';
 
@@ -252,6 +253,97 @@ export async function POST({ request }) {
     isSimulator = !!parsedBody.simulator;
     matchedLead = findMatchingLeadByPhone(senderPhone, parsedBody.lead);
     normalizedSender = normalizeBrazilPhone(senderPhone);
+    const earlyOrgNome = matchedLead?.osc?.nome || senderName || 'Organização';
+
+    // Bloqueio permanente: se já está em Opt-Out (PARAR) ou CESAR, ignora imediatamente
+    const existingOptOut = await isPhoneOptedOut(normalizedSender || senderPhone);
+    if (existingOptOut.blocked) {
+      if (!isSimulator) {
+        await logWhatsAppWebhookEvent({
+          eventType: 'ignored',
+          isSimulator,
+          phone: normalizedSender || senderPhone,
+          orgNome: earlyOrgNome,
+          editalId: matchedLead?.edital_id || null,
+          incomingText,
+          detail: existingOptOut.reason
+        });
+      }
+      return json({
+        ok: true,
+        ignored: true,
+        blockedByOptOut: true,
+        reason: existingOptOut.reason
+      });
+    }
+
+    // Tratamento determinístico de PARAR (Opt-Out permanente)
+    if (detectOptOutCommand(incomingText)) {
+      const optOutRecord = !isSimulator
+        ? await recordOptOutPhone({
+            phone: normalizedSender || senderPhone,
+            orgNome: earlyOrgNome,
+            reason: incomingText
+          })
+        : { ok: true, recordedToSheets: false };
+
+      const optOutReply =
+        'Combinado! Já registramos seu pedido (PARAR) e bloqueamos seu número para não receber novas mensagens da Tríade ACR (@triade_acr). Desejamos muito sucesso ao trabalho de vocês!';
+
+      const envAutoReplyEnabled =
+        (env.WHATSAPP_AUTOREPLY_ENABLED || process.env.WHATSAPP_AUTOREPLY_ENABLED || 'true').toLowerCase() !== 'false';
+
+      let optOutReplyDispatch: any = null;
+      if (!isSimulator && envAutoReplyEnabled && parsedBody.autoSendReply !== false && senderPhone) {
+        optOutReplyDispatch = await sendWhatsAppText(senderPhone, optOutReply, {
+          simulateTypingMs: 2500,
+          overrideConfig: parsedBody.overrideConfig,
+          bypassOptOutCheck: true // envia apenas esta última confirmação de remoção
+        });
+      }
+
+      const angelaPhone = env.ANGELA_NOTIFY_PHONE || process.env.ANGELA_NOTIFY_PHONE;
+      if (!isSimulator && envAutoReplyEnabled && angelaPhone) {
+        await sendWhatsAppText(
+          angelaPhone,
+          `🛑 OPT-OUT (PARAR): ${earlyOrgNome} (+${normalizedSender || senderPhone}) respondeu "${incomingText}" e foi bloqueado permanentemente na aba Opt_Out.`,
+          { simulateTypingMs: 1000, overrideConfig: parsedBody.overrideConfig }
+        ).catch(() => {});
+      }
+
+      const monitor = await logWhatsAppWebhookEvent({
+        eventType: 'opt_out',
+        isSimulator,
+        phone: normalizedSender || senderPhone,
+        orgNome: earlyOrgNome,
+        editalId: matchedLead?.edital_id || null,
+        intent: 'opt_out',
+        crmStatus: 'archived',
+        incomingText,
+        replyMessage: optOutReplyDispatch?.ok ? optOutReply : `[Opt-Out registrado] ${optOutReply}`,
+        detail: `PARAR detectado | Sheets Opt_Out: ${optOutRecord.recordedToSheets}`
+      });
+
+      return json({
+        ok: true,
+        optOutRecorded: true,
+        recordedToSheets: optOutRecord.recordedToSheets,
+        senderPhone: normalizedSender,
+        matchedOrg: earlyOrgNome,
+        incomingText,
+        sdrResult: {
+          intent: 'opt_out',
+          intent_label: '🛑 Opt-Out Permanente (PARAR)',
+          crm_status: 'archived',
+          should_auto_reply: true,
+          should_notify_angela: true,
+          reply_message: optOutReply,
+          analysis: 'Contato respondeu PARAR e foi gravado na aba Opt_Out para bloqueio definitivo.'
+        },
+        autoReplyDispatch: optOutReplyDispatch,
+        monitor
+      });
+    }
 
     if (!isSimulator && !matchedLead) {
       const reason = 'Remetente não está na lista de leads abordados (ex: contato pessoal, Claro/operadora ou número desconhecido).';
