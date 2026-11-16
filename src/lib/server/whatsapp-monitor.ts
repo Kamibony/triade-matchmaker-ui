@@ -157,14 +157,30 @@ function formatPhoneDisplay(raw: string): string {
   return trimmed.startsWith('+') ? trimmed : `+${digits}`;
 }
 
+const RECENT_SYNC_LOCK_MS = 30_000;
+const recentFavorableSyncTails = new Map<string, number>();
+
 export async function upsertFavorableContactToSheet(input: FavorableContactInput): Promise<boolean> {
   if (input.isSimulator) {
     return false;
   }
 
+  const targetTail = normalizePhoneTail(input.phone);
+  const now = Date.now();
+  if (targetTail) {
+    const lastSync = recentFavorableSyncTails.get(targetTail);
+    if (lastSync && now - lastSync < RECENT_SYNC_LOCK_MS) {
+      return false;
+    }
+    recentFavorableSyncTails.set(targetTail, now);
+  }
+
   try {
     const auth = getGoogleAuth();
-    if (!auth) return false;
+    if (!auth) {
+      if (targetTail) recentFavorableSyncTails.delete(targetTail);
+      return false;
+    }
 
     const spreadsheetId =
       (env.WHATSAPP_MONITOR_SHEET_ID || process.env.WHATSAPP_MONITOR_SHEET_ID || '').trim() ||
@@ -179,7 +195,6 @@ export async function upsertFavorableContactToSheet(input: FavorableContactInput
       .catch(() => null);
 
     const rows = existingRes?.data?.values || [];
-    const targetTail = normalizePhoneTail(input.phone);
     const alreadyExists = targetTail
       ? rows.slice(1).some((r) => normalizePhoneTail(String(r?.[2] || '')) === targetTail)
       : false;
@@ -211,7 +226,117 @@ export async function upsertFavorableContactToSheet(input: FavorableContactInput
 
     return true;
   } catch (err: any) {
+    if (targetTail) recentFavorableSyncTails.delete(targetTail);
     console.warn('[whatsapp-monitor] Falha ao gravar em Contatos_Favoraveis:', err?.message || err);
     return false;
   }
+}
+
+export interface FavorableContactRow {
+  contactName: string;
+  orgNome: string;
+  phone: string;
+  editalLabel: string;
+  statusNote: string;
+  observation: string;
+  updatedAt: string;
+}
+
+export async function getFavorableContactsFromSheet(): Promise<FavorableContactRow[]> {
+  const auth = getGoogleAuth();
+  if (!auth) {
+    throw new Error('GCP_DRIVE_CREDENTIALS não configurada.');
+  }
+
+  const spreadsheetId =
+    (env.WHATSAPP_MONITOR_SHEET_ID || process.env.WHATSAPP_MONITOR_SHEET_ID || '').trim() ||
+    DEFAULT_MONITOR_SHEET_ID;
+
+  const sheets = google.sheets({ version: 'v4', auth });
+  const res = await sheets.spreadsheets.values.get({
+    spreadsheetId,
+    range: 'Contatos_Favoraveis!A:G'
+  });
+
+  const rows = res.data.values || [];
+  const seenTails = new Set<string>();
+  const contacts: FavorableContactRow[] = [];
+
+  for (const r of rows.slice(1)) {
+    const contactName = String(r?.[0] || '').trim();
+    const orgNome = String(r?.[1] || '').trim();
+    const phone = String(r?.[2] || '').trim();
+    if (!phone && !contactName && !orgNome) continue;
+
+    const tail = normalizePhoneTail(phone);
+    if (tail && seenTails.has(tail)) continue;
+    if (tail) seenTails.add(tail);
+
+    contacts.push({
+      contactName: contactName || 'Contato principal',
+      orgNome: orgNome || 'Organização',
+      phone,
+      editalLabel: String(r?.[3] || '').trim(),
+      statusNote: String(r?.[4] || '').trim(),
+      observation: String(r?.[5] || '').trim(),
+      updatedAt: String(r?.[6] || '').trim()
+    });
+  }
+
+  return contacts;
+}
+
+function escapeVCardValue(val: string): string {
+  return String(val || '')
+    .replace(/\\/g, '\\\\')
+    .replace(/\r?\n/g, '\\n')
+    .replace(/;/g, '\\;')
+    .replace(/,/g, '\\,');
+}
+
+function toE164Digits(rawPhone: string): string {
+  const digits = String(rawPhone || '').replace(/\D/g, '');
+  if (!digits) return '';
+  if (digits.startsWith('55') && digits.length >= 12) return `+${digits}`;
+  if (digits.length >= 10 && digits.length <= 11) return `+55${digits}`;
+  return `+${digits}`;
+}
+
+export function buildFavorableContactsVcf(contacts: FavorableContactRow[]): string {
+  const cards: string[] = [];
+
+  for (const c of contacts) {
+    const tel = toE164Digits(c.phone);
+    if (!tel) continue;
+
+    // Strip redundant parenthetical location only from FN if needed, keeping clean "Nome — OSC"
+    const cleanOrgShort = c.orgNome.replace(/\s*\([^)]+\)\s*$/, '').trim() || c.orgNome;
+    const displayName =
+      c.contactName && !c.contactName.toLowerCase().startsWith('contato principal')
+        ? `${c.contactName} — ${cleanOrgShort}`
+        : cleanOrgShort;
+
+    const noteParts = [
+      c.editalLabel ? `Edital: ${c.editalLabel}` : '',
+      c.statusNote ? `Status: ${c.statusNote}` : '',
+      c.observation ? `Obs: ${c.observation}` : '',
+      c.updatedAt ? `Atualizado (BRT): ${c.updatedAt}` : ''
+    ].filter(Boolean);
+
+    const lines = [
+      'BEGIN:VCARD',
+      'VERSION:3.0',
+      `FN:${escapeVCardValue(displayName)}`,
+      `N:;${escapeVCardValue(displayName)};;;`,
+      `ORG:${escapeVCardValue(c.orgNome)}`,
+      `TEL;TYPE=CELL,VOICE:${tel}`,
+      'CATEGORIES:Triade ACR',
+      noteParts.length ? `NOTE:${escapeVCardValue(noteParts.join(' | '))}` : '',
+      'END:VCARD'
+    ].filter(Boolean);
+
+    cards.push(lines.join('\r\n'));
+  }
+
+  return cards.join('\r\n') + (cards.length ? '\r\n' : '');
 }
