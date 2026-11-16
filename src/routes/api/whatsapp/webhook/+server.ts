@@ -6,6 +6,132 @@ import { logWhatsAppWebhookEvent } from '$lib/server/whatsapp-monitor';
 import { detectOptOutCommand, isPhoneOptedOut, recordOptOutPhone } from '$lib/server/whatsapp-optout';
 import dailyLeadsData from '../../../../data/daily_outbound_leads.json';
 import editaisData from '../../../../data/editais_prosas.json';
+import mondayQueueData from '../../../../data/monday_followup_queue.json';
+
+const MONDAY_APPROVED_EDITAL_OVERRIDES: Record<
+  number,
+  { editalId: string | null; editalTitulo: string; editalValor?: string; editalPrazo?: string; editalResumo: string }
+> = {
+  1: {
+    editalId: '19405',
+    editalTitulo: 'PDRSX 01/2026 (Desenvolvimento Regional Sustentável do Xingu)',
+    editalValor: 'R$ 300 mil até R$ 2 milhões (estruturante) ou até R$ 300 mil (pequeno porte)',
+    editalPrazo: '30/11/2026',
+    editalResumo: 'PDRSX 01/2026 (Xingu), contrapartida mínima de 10%, 2 anos de atuação comprovada na região do Xingu, Plano de Trabalho e Cronograma obrigatórios na inscrição.'
+  },
+  2: {
+    editalId: '19405',
+    editalTitulo: 'PDRSX 01/2026 (Desenvolvimento Regional Sustentável do Xingu)',
+    editalValor: 'R$ 300 mil até R$ 2 milhões (estruturante) ou até R$ 300 mil (pequeno porte)',
+    editalPrazo: '30/11/2026',
+    editalResumo: 'Contato indicado pelo Instituto Bepotire Xikrin (assessora Marcelia). Edital PDRSX 01/2026 (Xingu), contrapartida mínima de 10%, 2 anos de atuação na região.'
+  },
+  3: {
+    editalId: '19405',
+    editalTitulo: 'PDRSX 01/2026 (Desenvolvimento Regional Sustentável do Xingu)',
+    editalValor: 'R$ 300 mil até R$ 2 milhões (estruturante) ou até R$ 300 mil (pequeno porte)',
+    editalPrazo: '30/11/2026',
+    editalResumo: 'Contato principal do Instituto Bepotire Xikrin que indicou a assessora Marcelia para tratar do PDRSX 01/2026.'
+  },
+  4: {
+    editalId: '19405',
+    editalTitulo: 'PDRSX 01/2026 (Desenvolvimento Regional Sustentável do Xingu)',
+    editalValor: 'R$ 300 mil até R$ 2 milhões (estruturante) ou até R$ 300 mil (pequeno porte)',
+    editalPrazo: '30/11/2026',
+    editalResumo: 'ASSEEFA (Anapu/PA) — apoio técnico na planilha de orçamento, cronograma físico-financeiro e documentos do PDRSX 01/2026.'
+  },
+  5: {
+    editalId: '19405',
+    editalTitulo: 'PDRSX 01/2026 (Desenvolvimento Regional Sustentável do Xingu)',
+    editalValor: 'R$ 300 mil até R$ 2 milhões (estruturante) ou até R$ 300 mil (pequeno porte)',
+    editalPrazo: '30/11/2026',
+    editalResumo: 'IPA (Porto de Moz/PA — município incluído no PDRSX 01/2026). Contrapartida mínima de 10%, 2 anos de atuação na região.'
+  },
+  6: {
+    editalId: '19461',
+    editalTitulo: 'Recaatingar 001/2026 (FBDS, Iniciativa Floresta Viva)',
+    editalValor: 'Sem teto de valor por projeto',
+    editalPrazo: '14/12/2026 às 18h',
+    editalResumo: 'Recuperação de áreas degradadas da Caatinga (50 a 100 ha). Pão de Açúcar não consta na lista oficial, mas Piranhas, Carneiros, Olivença e São José da Tapera constam.'
+  },
+  7: {
+    editalId: '19461',
+    editalTitulo: 'Recaatingar 001/2026 (FBDS) + Chamada Cultural Equatorial Alagoas',
+    editalValor: 'Sem teto de valor (Recaatingar)',
+    editalPrazo: '14/12/2026 às 18h',
+    editalResumo: 'Duas frentes em Alagoas: Recaatingar 001/2026 (Coruripe não consta na lista, mas há municípios elegíveis em AL) e Chamada Cultural Equatorial Alagoas (regras 2026 em conferência).'
+  },
+  8: {
+    editalId: '19461',
+    editalTitulo: 'Recaatingar 001/2026 (FBDS) + Chamada Cultural Equatorial Alagoas',
+    editalValor: 'Sem teto de valor (Recaatingar)',
+    editalPrazo: '14/12/2026 às 18h',
+    editalResumo: 'Piranhas/AL está na lista oficial de municípios elegíveis do Recaatingar 001/2026 (50 a 100 ha na Caatinga, CAR ou posse, CNPJ 2+ anos). Também verificando Equatorial Alagoas.'
+  },
+  9: {
+    editalId: '19697',
+    editalTitulo: 'Edital Amabio 002/2026 (Banco da Amazônia)',
+    editalValor: 'Até R$ 300 mil por projeto',
+    editalPrazo: '18/12/2026 às 23h59 (Pipefy)',
+    editalResumo: 'Substituiu o edital estadual do Pará (exclusivo para órgãos públicos). Amabio 002/2026 exige CNPJ ativo e matriz na Amazônia Legal constituída até 31/12/2025, bioeconomia amazônica e receita/captação mínima em 2025.'
+  },
+  10: {
+    editalId: '19688',
+    editalTitulo: 'Edital de Seleção de Projetos nº 01/2026 — TJPE (Prestações Pecuniárias)',
+    editalValor: 'Bloco I até ~R$ 667 mil | Bloco II até ~R$ 95 mil',
+    editalPrazo: '30/11/2026 às 23h59 (CadPrest + PJe)',
+    editalResumo: 'Entidade privada com finalidade social constituída há mais de 1 ano, projeto executado em Pernambuco (Bloco I Pena Justa ou Bloco II social/educação/saúde).'
+  },
+  11: {
+    editalId: '19289',
+    editalTitulo: 'Chamamento Público nº 010/2026 — Prefeitura de Joinville (Infância e Adolescência)',
+    editalValor: 'Até R$ 200 mil por projeto (até 2 projetos/OSC)',
+    editalPrazo: '13/01/2027 às 23h59 (ou até esgotar recursos)',
+    editalResumo: 'Exige registro no CMDCA de Joinville anterior à publicação do edital, execução em Joinville e envio pela aba Autosserviço.'
+  },
+  12: {
+    editalId: null,
+    editalTitulo: 'Acompanhamento de novos editais para Manaus/AM (Fundo iFood Chega Junto encerrado)',
+    editalValor: 'A mapear conforme perfil da OSC',
+    editalPrazo: 'Acompanhamento contínuo',
+    editalResumo: 'Fundo iFood Chega Junto teve última janela encerrada em agosto de 2026. Buscando outras oportunidades abertas para Manaus conforme área de atuação, valor e tempo de CNPJ.'
+  },
+  13: {
+    editalId: '19461',
+    editalTitulo: 'Recaatingar 001/2026 (FBDS) — Município de Uauá/BA',
+    editalValor: 'Sem teto de valor por projeto',
+    editalPrazo: '14/12/2026 às 18h (inscrição da associação só entre 03/12 e 14/12)',
+    editalResumo: 'PNAB Audiovisual 09/2024 já encerrou. Uauá está na lista oficial do Recaatingar com prioridade muito alta; CNPJ completa 2 anos em 03/12/2026.'
+  },
+  14: {
+    editalId: null,
+    editalTitulo: 'Acompanhamento de editais municipais da PNAB e chamadas culturais/sociais em Salvador/BA',
+    editalValor: 'A mapear conforme perfil da OSC',
+    editalPrazo: 'Acompanhamento contínuo',
+    editalResumo: 'PNAB Audiovisual 09/2024 já encerrou. Acompanhando próximas chamadas culturais e sociais adequadas para Salvador/BA.'
+  },
+  15: {
+    editalId: null,
+    editalTitulo: 'Acompanhamento de editais municipais da PNAB em Camaçari/BA e chamadas de cultura/capoeira/esporte',
+    editalValor: 'A mapear conforme perfil da OSC',
+    editalPrazo: 'Acompanhamento contínuo',
+    editalResumo: 'PNAB Audiovisual 09/2024 já encerrou. Acompanhando editais adequados para Camaçari/BA e Bahia (cultura, capoeira e esporte).'
+  },
+  16: {
+    editalId: '19289',
+    editalTitulo: 'Chamamento Público nº 010/2026 — Prefeitura de Joinville (Infância e Adolescência)',
+    editalValor: 'Até R$ 200 mil por projeto',
+    editalPrazo: '13/01/2027 às 23h59 (ou até esgotar recursos)',
+    editalResumo: 'Verificando se atua com infância/adolescência e possui registro no CMDCA de Joinville anterior ao edital, ou se o foco é estritamente cultural.'
+  },
+  17: {
+    editalId: '19289',
+    editalTitulo: 'Chamamento Público nº 010/2026 — Prefeitura de Joinville (Encerramento cordial)',
+    editalValor: 'Até R$ 200 mil por projeto',
+    editalPrazo: '13/01/2027',
+    editalResumo: 'Caso sensível (Instituto P.A.R.E. tem foco ambiental). Mensagem de transparência e encerramento cordial sem novos contatos.'
+  }
+};
 
 const REPLY_COOLDOWN_MS = 60_000;
 const MAX_REPLIES_WINDOW_MS = 30 * 60_000;
@@ -142,6 +268,22 @@ function extractIncomingPayload(body: any): {
   return { senderPhone: null, rawChatId: null, incomingText: null, fromMe: false };
 }
 
+function findMatchingMondayContact(rawPhone: string | null) {
+  if (!rawPhone) return null;
+  const normalizedTarget = normalizeBrazilPhone(rawPhone);
+  if (!normalizedTarget) return null;
+  const last8 = normalizedTarget.slice(-8);
+
+  const queueArray = Array.isArray(mondayQueueData) ? mondayQueueData : [];
+  for (const item of queueArray) {
+    const normCandidate = normalizeBrazilPhone((item as any).phone);
+    if (normCandidate && normCandidate.slice(-8) === last8) {
+      return item as { order: number; org: string; phone: string; message: string };
+    }
+  }
+  return null;
+}
+
 function findMatchingLeadByPhone(rawPhone: string | null, explicitLead?: any) {
   if (explicitLead) return explicitLead;
   if (!rawPhone) return null;
@@ -221,7 +363,13 @@ export async function POST({ request }) {
   let senderName: string | undefined;
   let isSimulator = false;
   let matchedLead: any = null;
+  let mondayMatch: { order: number; org: string; phone: string; message: string } | null = null;
+  let effectiveEditalId: string | null = null;
   let normalizedSender: string | null = null;
+
+  // Opção A (Segunda 16/11): Bot em modo somente análise + log (WhatsApp_Log) para revisão manual.
+  // Respostas automáticas de IA para ONGs ficam pausadas; Opt-Out (PARAR) continua gravando na aba Opt_Out.
+  const isAutoReplyActive = false;
 
   try {
     parsedBody = await request.json();
@@ -252,8 +400,15 @@ export async function POST({ request }) {
 
     isSimulator = !!parsedBody.simulator;
     matchedLead = findMatchingLeadByPhone(senderPhone, parsedBody.lead);
+    mondayMatch = !parsedBody.lead ? findMatchingMondayContact(senderPhone) : null;
+    const mondayOverride = mondayMatch ? MONDAY_APPROVED_EDITAL_OVERRIDES[mondayMatch.order] : null;
+    effectiveEditalId = mondayOverride
+      ? mondayOverride.editalId
+      : matchedLead?.edital_id
+        ? String(matchedLead.edital_id)
+        : null;
     normalizedSender = normalizeBrazilPhone(senderPhone);
-    const earlyOrgNome = matchedLead?.osc?.nome || senderName || 'Organização';
+    const earlyOrgNome = mondayMatch?.org || matchedLead?.osc?.nome || senderName || 'Organização';
 
     // Bloqueio permanente: se já está em Opt-Out (PARAR) ou CESAR, ignora imediatamente
     const existingOptOut = await isPhoneOptedOut(normalizedSender || senderPhone);
@@ -264,7 +419,7 @@ export async function POST({ request }) {
           isSimulator,
           phone: normalizedSender || senderPhone,
           orgNome: earlyOrgNome,
-          editalId: matchedLead?.edital_id || null,
+          editalId: effectiveEditalId,
           incomingText,
           detail: existingOptOut.reason
         });
@@ -290,11 +445,8 @@ export async function POST({ request }) {
       const optOutReply =
         'Combinado! Já registramos seu pedido (PARAR) e bloqueamos seu número para não receber novas mensagens da Tríade ACR (@triade_acr). Desejamos muito sucesso ao trabalho de vocês!';
 
-      const envAutoReplyEnabled =
-        (env.WHATSAPP_AUTOREPLY_ENABLED || process.env.WHATSAPP_AUTOREPLY_ENABLED || 'true').toLowerCase() !== 'false';
-
       let optOutReplyDispatch: any = null;
-      if (!isSimulator && envAutoReplyEnabled && parsedBody.autoSendReply !== false && senderPhone) {
+      if (!isSimulator && isAutoReplyActive && parsedBody.autoSendReply !== false && senderPhone) {
         optOutReplyDispatch = await sendWhatsAppText(senderPhone, optOutReply, {
           simulateTypingMs: 2500,
           overrideConfig: parsedBody.overrideConfig,
@@ -303,7 +455,7 @@ export async function POST({ request }) {
       }
 
       const angelaPhone = env.ANGELA_NOTIFY_PHONE || process.env.ANGELA_NOTIFY_PHONE;
-      if (!isSimulator && envAutoReplyEnabled && angelaPhone) {
+      if (!isSimulator && isAutoReplyActive && angelaPhone) {
         await sendWhatsAppText(
           angelaPhone,
           `🛑 OPT-OUT (PARAR): ${earlyOrgNome} (+${normalizedSender || senderPhone}) respondeu "${incomingText}" e foi bloqueado permanentemente na aba Opt_Out.`,
@@ -316,7 +468,7 @@ export async function POST({ request }) {
         isSimulator,
         phone: normalizedSender || senderPhone,
         orgNome: earlyOrgNome,
-        editalId: matchedLead?.edital_id || null,
+        editalId: effectiveEditalId,
         intent: 'opt_out',
         crmStatus: 'archived',
         incomingText,
@@ -335,7 +487,7 @@ export async function POST({ request }) {
           intent: 'opt_out',
           intent_label: '🛑 Opt-Out Permanente (PARAR)',
           crm_status: 'archived',
-          should_auto_reply: true,
+          should_auto_reply: false,
           should_notify_angela: true,
           reply_message: optOutReply,
           analysis: 'Contato respondeu PARAR e foi gravado na aba Opt_Out para bloqueio definitivo.'
@@ -345,7 +497,7 @@ export async function POST({ request }) {
       });
     }
 
-    if (!isSimulator && !matchedLead) {
+    if (!isSimulator && !matchedLead && !mondayMatch) {
       const reason = 'Remetente não está na lista de leads abordados (ex: contato pessoal, Claro/operadora ou número desconhecido).';
       await logWhatsAppWebhookEvent({
         eventType: 'ignored',
@@ -369,8 +521,8 @@ export async function POST({ request }) {
           eventType: 'ignored',
           isSimulator,
           phone: normalizedSender || senderPhone,
-          orgNome: matchedLead?.osc?.nome || senderName || null,
-          editalId: matchedLead?.edital_id || null,
+          orgNome: earlyOrgNome,
+          editalId: effectiveEditalId,
           incomingText,
           detail: rateCheck.reason
         });
@@ -379,8 +531,8 @@ export async function POST({ request }) {
     }
 
     const editaisArray = Array.isArray(editaisData) ? editaisData : [];
-    const matchedEdital: any = matchedLead
-      ? editaisArray.find((e: any) => String(e.id) === String(matchedLead.edital_id))
+    const matchedEdital: any = effectiveEditalId
+      ? editaisArray.find((e: any) => String(e.id) === String(effectiveEditalId))
       : null;
 
     const apiKey = env.GEMINI_API_KEY || (env as any).GENINI_API_KEY || process.env.GEMINI_API_KEY || process.env.GENINI_API_KEY;
@@ -394,7 +546,7 @@ export async function POST({ request }) {
       generationConfig: { temperature: 0.2, responseMimeType: 'application/json' }
     });
 
-    const orgNome = matchedLead?.osc?.nome || senderName || 'Organização';
+    const orgNome = earlyOrgNome;
     const orgCidade = matchedLead?.osc?.municipio ? `${matchedLead.osc.municipio}/${matchedLead.osc.uf}` : 'Brasil';
     const rawEditalValor =
       matchedLead?.edital_valor ||
@@ -402,19 +554,22 @@ export async function POST({ request }) {
       matchedEdital?.deep_metadata?.financeiro?.valor_maximo_ou_global_reais ||
       matchedEdital?.deep_metadata?.financeiro?.valor_total_edital ||
       null;
-    const editalValorText = formatEditalValorPtBr(rawEditalValor);
+    const editalValorText = mondayOverride?.editalValor || formatEditalValorPtBr(rawEditalValor);
     const editalPrazo =
+      mondayOverride?.editalPrazo ||
       matchedLead?.edital_prazo ||
       matchedEdital?.deep_metadata?.prazo_de_inscricao ||
       matchedEdital?.attributes?.data_fim ||
       'inscrições abertas';
     const editalTitulo =
+      mondayOverride?.editalTitulo ||
       matchedLead?.edital_titulo ||
       matchedEdital?.attributes?.nome ||
       matchedEdital?.titulo ||
       'Edital de Fomento';
-    const editalId = matchedLead?.edital_id || matchedEdital?.id || '';
+    const editalId = effectiveEditalId || '';
     const editalResumo =
+      mondayOverride?.editalResumo ||
       matchedEdital?.deep_metadata?.resumo_objetivo ||
       matchedLead?.motivo_match ||
       'Edital voltado para projetos de impacto social.';
@@ -422,16 +577,19 @@ export async function POST({ request }) {
       matchedEdital?.deep_metadata?.drive_pdf_link ||
       matchedEdital?.public_url ||
       '';
-    const conversationHistory = Array.isArray(parsedBody.history)
-      ? parsedBody.history.map((h: any) => `${h.role === 'ong' ? 'ONG' : 'Triade'}: ${h.text}`).join('\n')
-      : '';
+    const conversationHistory =
+      Array.isArray(parsedBody.history) && parsedBody.history.length > 0
+        ? parsedBody.history.map((h: any) => `${h.role === 'ong' ? 'ONG' : 'Triade'}: ${h.text}`).join('\n')
+        : mondayMatch?.message
+          ? `Triade: ${mondayMatch.message}`
+          : '';
 
     const sdrPrompt = `
 Você é o Assistente de Triagem e Captação da consultora sênior **Maria Angela Bonifacio**, da **Triade ACR (Assessoria em Captação de Recursos)** no WhatsApp.
 
 CONTEXTO DO LEAD (ONG QUE ESTÁ RESPONDENDO):
 - Nome da ONG: ${orgNome} (${orgCidade})
-- Motivo do Match com a ONG: ${matchedLead?.motivo_match || 'Atuação compatível com o edital'}
+- Motivo do Match com a ONG: ${mondayOverride ? mondayOverride.editalResumo : matchedLead?.motivo_match || 'Atuação compatível com o edital'}
 - Dossiê da ONG: ${matchedLead?.dossieText || 'N/A'}
 
 DADOS DO EDITAL MAPEADO:
@@ -463,7 +621,7 @@ REGRAS E TRAVAS OBRIGATÓRIAS DA TRIADE ACR:
 5. FALTA DE INTERESSE:
    - Se a ONG demonstrar falta de interesse clara ("Não temos interesse", "Pare de mandar mensagem"), agradeça educadamente, deseje sucesso aos projetos da instituição e encerre sem insistir.
 6. IDENTIDADE E TOM:
-   - Fale SEMPRE como o **assistente / equipe da Maria Angela Bonifacio, da Tríade ACR** (NUNCA diga "Aqui é a Maria Angela" em 1ª pessoa). Tom humano, caloroso, profissional, curto (máximo 3 parágrafos curtos, sem asteriscos duplos `**`) e em português brasileiro.
+   - Fale SEMPRE como o **assistente / equipe da Maria Angela Bonifacio, da Tríade ACR** (NUNCA diga "Aqui é a Maria Angela" em 1ª pessoa). Tom humano, caloroso, profissional, curto (máximo 3 parágrafos curtos, sem asteriscos duplos de negrito) e em português brasileiro.
 7. DETECÇÃO DE BOT / URA / ASSUNTO NÃO RELACIONADO:
    - Se a mensagem recebida parecer um robô/URA automático, menu numérico ("Digite 1 para...", "Opção inválida", "Protocolo", "Fatura", "Claro", "Vivo", "Banco", "Assistente virtual") ou assunto sem relação com captação de recursos/editais, classifique OBRIGATORIAMENTE como "unrelated_or_bot", defina "should_auto_reply": false, "should_notify_angela": false e "reply_message": "".
 8. OCUPADO / REAGENDAMENTO / INDICAÇÃO DE CONTATO:
@@ -490,10 +648,8 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
     let autoReplyDispatch = null;
     let angelaAlertDispatch = null;
 
-    const envAutoReplyEnabled =
-      (env.WHATSAPP_AUTOREPLY_ENABLED || process.env.WHATSAPP_AUTOREPLY_ENABLED || 'true').toLowerCase() !== 'false';
     const allowAutoSend =
-      envAutoReplyEnabled &&
+      isAutoReplyActive &&
       parsedBody.autoSendReply !== false &&
       parsed.intent !== 'unrelated_or_bot';
 
@@ -509,7 +665,7 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
 
     const angelaPhone = env.ANGELA_NOTIFY_PHONE || process.env.ANGELA_NOTIFY_PHONE;
     if (
-      envAutoReplyEnabled &&
+      isAutoReplyActive &&
       angelaPhone &&
       parsed.intent !== 'unrelated_or_bot' &&
       parsed.should_notify_angela &&
@@ -522,20 +678,22 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
       });
     }
 
-    const angelaStatusNote = !angelaPhone
-      ? 'Angela: ANGELA_NOTIFY_PHONE não configurada'
-      : angelaAlertDispatch?.ok
-        ? 'Angela: alerta enviado'
-        : angelaAlertDispatch?.error
-          ? `Angela: erro (${angelaAlertDispatch.error})`
-          : 'Angela: sem alerta nesta msg';
+    const angelaStatusNote = !isAutoReplyActive
+      ? 'Modo somente análise (Opção A): auto-resposta pausada'
+      : !angelaPhone
+        ? 'Angela: ANGELA_NOTIFY_PHONE não configurada'
+        : angelaAlertDispatch?.ok
+          ? 'Angela: alerta enviado'
+          : angelaAlertDispatch?.error
+            ? `Angela: erro (${angelaAlertDispatch.error})`
+            : 'Angela: sem alerta nesta msg';
 
     const monitor = await logWhatsAppWebhookEvent({
       eventType: autoReplyDispatch?.ok ? 'auto_replied' : 'analyzed_only',
       isSimulator,
       phone: normalizedSender || senderPhone,
       orgNome,
-      editalId: matchedLead?.edital_id || null,
+      editalId: effectiveEditalId,
       intent: parsed?.intent || null,
       crmStatus: parsed?.crm_status || null,
       incomingText,
@@ -545,12 +703,13 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
 
     return json({
       ok: true,
-      autoReplyEnabled: envAutoReplyEnabled,
+      autoReplyEnabled: isAutoReplyActive,
       senderPhone: normalizedSender,
       matchedOrg: orgNome,
       matchedScore: matchedLead?.score || null,
       matchedUf: matchedLead?.osc?.uf || null,
-      matchedEditalId: matchedLead?.edital_id || null,
+      matchedEditalId: effectiveEditalId,
+      mondayBatchOrder: mondayMatch?.order || null,
       incomingText,
       sdrResult: parsed,
       autoReplyDispatch,
@@ -561,18 +720,16 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
     console.error('Erro no Webhook WhatsApp IA SDR:', error);
     const errMsg = error?.message || 'Erro interno no Webhook WhatsApp.';
 
-    // Trava 4: Pedir desculpa imediatamente (< 5 min) se o sistema falhar durante atendimento real
+    // Trava 4: Pedir desculpa imediatamente (< 5 min) apenas se o auto-atendimento estiver ativo
     let fallbackApologyDispatch: any = null;
-    const envAutoReplyEnabled =
-      (env.WHATSAPP_AUTOREPLY_ENABLED || process.env.WHATSAPP_AUTOREPLY_ENABLED || 'true').toLowerCase() !== 'false';
 
     if (
+      isAutoReplyActive &&
       !isSimulator &&
       !fromMe &&
       incomingText &&
       senderPhone &&
-      matchedLead &&
-      envAutoReplyEnabled &&
+      (matchedLead || mondayMatch) &&
       parsedBody?.autoSendReply !== false &&
       !isRateLimitedOrLooped(normalizedSender).blocked
     ) {
@@ -587,7 +744,7 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
 
       const angelaPhone = env.ANGELA_NOTIFY_PHONE || process.env.ANGELA_NOTIFY_PHONE;
       if (angelaPhone) {
-        const orgLabel = matchedLead?.osc?.nome || senderName || normalizedSender || 'ONG';
+        const orgLabel = mondayMatch?.org || matchedLead?.osc?.nome || senderName || normalizedSender || 'ONG';
         await sendWhatsAppText(
           angelaPhone,
           `⚠️ Falha momentânea no robô ao responder ${orgLabel} (+${normalizedSender || senderPhone}). Enviamos pedido de desculpas automático; confira a conversa. Erro: ${errMsg.slice(0, 120)}`,
@@ -600,8 +757,8 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
       eventType: 'error',
       isSimulator,
       phone: normalizedSender || senderPhone,
-      orgNome: matchedLead?.osc?.nome || senderName || null,
-      editalId: matchedLead?.edital_id || null,
+      orgNome: mondayMatch?.org || matchedLead?.osc?.nome || senderName || null,
+      editalId: effectiveEditalId,
       incomingText,
       replyMessage: fallbackApologyDispatch?.ok ? SYSTEM_FAILURE_APOLOGY_MSG : '',
       detail: `${errMsg}${fallbackApologyDispatch?.ok ? ' | Fallback de desculpas enviado' : ''}`
