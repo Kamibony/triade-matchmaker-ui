@@ -128,3 +128,90 @@ export async function logWhatsAppWebhookEvent(event: WhatsAppMonitorEvent): Prom
     };
   }
 }
+
+export interface FavorableContactInput {
+  isSimulator?: boolean;
+  contactName: string;
+  orgNome: string;
+  phone: string;
+  editalLabel?: string | null;
+  statusNote: string;
+  observation?: string | null;
+}
+
+function normalizePhoneTail(raw: string): string {
+  const digits = String(raw || '').replace(/\D/g, '');
+  return digits.slice(-8);
+}
+
+function formatPhoneDisplay(raw: string): string {
+  const trimmed = String(raw || '').trim();
+  const digits = trimmed.replace(/\D/g, '');
+  if (!digits) return trimmed;
+  if (digits.startsWith('55') && digits.length === 12) {
+    return `+55 ${digits.slice(2, 4)} ${digits.slice(4, 8)}-${digits.slice(8)}`;
+  }
+  if (digits.startsWith('55') && digits.length === 13) {
+    return `+55 ${digits.slice(2, 4)} ${digits.slice(4, 9)}-${digits.slice(9)}`;
+  }
+  return trimmed.startsWith('+') ? trimmed : `+${digits}`;
+}
+
+export async function upsertFavorableContactToSheet(input: FavorableContactInput): Promise<boolean> {
+  if (input.isSimulator) {
+    return false;
+  }
+
+  try {
+    const auth = getGoogleAuth();
+    if (!auth) return false;
+
+    const spreadsheetId =
+      (env.WHATSAPP_MONITOR_SHEET_ID || process.env.WHATSAPP_MONITOR_SHEET_ID || '').trim() ||
+      DEFAULT_MONITOR_SHEET_ID;
+
+    const sheets = google.sheets({ version: 'v4', auth });
+    const existingRes = await sheets.spreadsheets.values
+      .get({
+        spreadsheetId,
+        range: 'Contatos_Favoraveis!A:G'
+      })
+      .catch(() => null);
+
+    const rows = existingRes?.data?.values || [];
+    const targetTail = normalizePhoneTail(input.phone);
+    const alreadyExists = targetTail
+      ? rows.slice(1).some((r) => normalizePhoneTail(String(r?.[2] || '')) === targetTail)
+      : false;
+
+    if (alreadyExists) {
+      return false;
+    }
+
+    const formattedPhone = formatPhoneDisplay(input.phone);
+
+    await sheets.spreadsheets.values.append({
+      spreadsheetId,
+      range: 'Contatos_Favoraveis!A:G',
+      valueInputOption: 'RAW',
+      requestBody: {
+        values: [
+          [
+            input.contactName || 'Contato principal',
+            input.orgNome || 'Organização',
+            formattedPhone,
+            input.editalLabel || '',
+            input.statusNote,
+            input.observation || '',
+            formatBrasiliaTimestamp()
+          ]
+        ]
+      }
+    });
+
+    return true;
+  } catch (err: any) {
+    console.warn('[whatsapp-monitor] Falha ao gravar em Contatos_Favoraveis:', err?.message || err);
+    return false;
+  }
+}
