@@ -1,5 +1,33 @@
 [
   {
+    "edital_id": "19290",
+    "edital_titulo": "JOINVILLE  SC - CHAMAMENTO PÚBLICO - DIREITOS DA PESSOA IDOSA - 2026",
+    "edital_url": "https://drive.google.com/file/d/12ZFcD1_-y6PzcfxM19r-mEWPuC0snnqc/view?usp=drivesdk",
+    "osc": {
+      "cnpj": "83797134000102",
+      "nome": "ASSOCIACAO DOS APOSENTADOS E PENSIONISTAS DE JOINVILLE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1984,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4730254657"
+      }
+    },
+    "score": 95,
+    "motivo_match": "A AAPJ possui forte alinhamento com o edital, pois atua desde 1984 na defesa dos direitos de idosos (aposentados e pensionistas) em Joinville/SC, estando localizada no município e possuindo CNAE específico de defesa de direitos sociais.",
+    "whatsapp_message": "Olá! Aqui é a Maria Angela Bonifacio, da Triade ACR. Acompanho o belo trabalho que a AAPJ realiza em Joinville em prol dos aposentados e pensionistas. Mapeei uma oportunidade de financiamento de até R$ 3.000.000 voltada exatamente para ações na área de atuação de vocês. Vocês teriam disponibilidade para uma breve conversa esta semana?",
+    "contatos_encontrados": {
+      "whatsapp": "4730254657",
+      "instagram": null
+    },
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS APOSENTADOS E PENSIONISTAS DE JOINVILLE (AAPJ), CNPJ 83.797.134/0001-02, é uma associação privada sem fins lucrativos fundada em 1984, com sede no bairro América, em Joinville - SC. A entidade atua na defesa de direitos sociais, oferecendo assessoria jurídica, cursos, treinamentos e atividades associativas voltadas ao público idoso.\n\n### 🎯 Alinhamento com o Edital\nA organização atende perfeitamente ao objeto do Chamamento Público do COMDI de Joinville para o exercício de 2026. Com grande maturidade institucional (mais de 40 anos de história), seu foco histórico na promoção, proteção e defesa dos direitos da pessoa idosa garante total sinergia com os temas de assistência social, direitos humanos e cidadania exigidos pela seleção.",
+    "created_at": "2026-11-16T10:47:31.471Z"
+  },
+  {
     "edital_id": "19424",
     "edital_titulo": "BRASIL - FOMENTO - PLATAFORMAS DIGITAIS LIVRES E ABERTAS - 2026",
     "edital_url": "https://drive.google.com/file/d/1ydDmJjC-naTzMPcuYx30n69Z3BSG-SYK/view?usp=drivesdk",

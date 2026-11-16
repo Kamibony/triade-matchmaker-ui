@@ -67832,7 +67832,12 @@
       }
     },
     "last_checked_date": "2026-11-16T09:26:16.791Z",
-    "evaluated_editais": []
+    "evaluated_editais": [
+      "19608"
+    ],
+    "brave_enriched": true,
+    "dossieText": "### 🏛️ Perfil Institucional\nO **PROJETO BOM NA BOLA BOM NA VIDA** é uma associação privada sem fins lucrativos fundada em 2014, sediada em Belo Horizonte - MG. Sua atuação principal é voltada para a promoção de esportes, lazer e cultura, oferecendo oficinas esportivas (futsal e futebol) e atividades lúdico-educativas gratuitas para crianças, adolescentes e idosos em escolas públicas e parques.\n\n### 🎯 Alinhamento com o Edital\nO edital destina-se ao apoio e organização de **eventos científico-tecnológicos**, visando a divulgação de resultados de pesquisas científicas e inovação em Minas Gerais. Como o perfil da OSC é estritamente esportivo e de assistência social/educacional de base, há um desalinhamento completo com os temas de ciência, tecnologia e inovação exigidos pelo chamamento público.",
+    "dossie_updated_at": "2026-11-16T10:45:02.638Z"
   },
   "10790992000151": {
     "osc": {
@@ -67869,11 +67874,14 @@
     },
     "last_checked_date": "2026-11-16T09:26:17.571Z",
     "evaluated_editais": [
-      "19424"
+      "19424",
+      "19608",
+      "19607"
     ],
     "ipea_id": 534499,
-    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO EM PROL DA VIDA E DONA - APVD, sediada em Belo Horizonte - MG e fundada em 2009, é uma associação privada cuja atividade principal é a defesa de direitos sociais, contando com um leque amplo de atividades secundárias nas áreas de saúde, educação, artes e assistência social.\n\n### 🎯 Alinhamento com o Edital\nO edital busca apoiar projetos de pesquisa e desenvolvimento de plataformas digitais baseadas em software livre e protocolos abertos. A APVD não apresenta aderência temática com ciência, tecnologia ou software livre, tornando a elegibilidade inviável para esta chamada.",
-    "dossie_updated_at": "2026-11-16T09:26:57.892Z"
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO EM PROL DA VIDA E DONA - APVD, sediada em Belo Horizonte - MG e fundada em 2009, é uma associação privada com atuação voltada para a defesa de direitos sociais, saúde, assistência social e educação.\n\n### 🎯 Alinhamento com o Edital\nO edital visa apoiar a organização de eventos técnico-científicos em Minas Gerais. A atuação da APVD está concentrada em áreas assistenciais e de saúde, não havendo alinhamento com a divulgação de resultados de pesquisas científicas e tecnológicas.",
+    "dossie_updated_at": "2026-11-16T10:44:54.548Z",
+    "brave_enriched": true
   },
   "11057671000105": {
     "osc": {
@@ -68056,7 +68064,12 @@
       }
     },
     "last_checked_date": "2026-11-16T09:26:19.973Z",
-    "evaluated_editais": []
+    "evaluated_editais": [
+      "19608"
+    ],
+    "brave_enriched": true,
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS MEMBROS DO CORPO CONSULAR NO ESTADO DE MINAS GERAIS - AMCC-MG, sediada em Belo Horizonte - MG e fundada em 2003, atua principalmente na representação de membros do corpo consular, promoção de intercâmbio internacional e atividades associativas voltadas à cultura e defesa de direitos sociais.\n\n### 🎯 Alinhamento com o Edital\nO edital destina-se ao apoio e organização de eventos técnico-científicos, voltados à divulgação de resultados de pesquisas científicas, tecnológicas e de inovação em Minas Gerais. O perfil da AMCC-MG está focado em relações diplomáticas e consulares e eventos de honraria empresarial, não possuindo aderência à temática de ciência, tecnologia e inovação.",
+    "dossie_updated_at": "2026-11-16T10:45:07.835Z"
   },
   "14934501000150": {
     "osc": {
@@ -70569,5 +70582,2087 @@
     "ipea_id": 1334256,
     "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** SOCIEDADE BRASILEIRA DE NEUROEDUCACAO\n- **Localização:** Vitoria, ES\n- **Natureza:** Associação Privada\n- **Ano de Fundação:** 2020\n- **Atividade Principal:** Atividades de apoio à educação, exceto caixas escolares\n- **Atividades Secundárias:** Edição de livros, pesquisa em ciências sociais e humanas, e educação superior (pós-graduação e extensão).\n\n### 🎯 Alinhamento com o Edital\n- **Aderência Temática:** Alinha-se diretamente ao eixo de 'educação inovadora' do Edital Fapes nº 28/2026 – Elas Inovam.\n- **Território:** Localizada no Espírito Santo, atendendo ao requisito geográfico da chamada.\n- **Maturidade:** Fundada em 2020, possui capacidade operacional para estruturação de projetos educacionais inovadores.",
     "dossie_updated_at": "2026-11-16T09:28:06.549Z"
+  },
+  "34135756005633": {
+    "osc": {
+      "cnpj": "34135756005633",
+      "nome": "PRIMEIRA IGREJA EVANGELICA ASSEMBLEIA DE DEUS EM BENTO RIBEIRO",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2005,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2133903110"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:34.386Z",
+    "evaluated_editais": []
+  },
+  "07052610000188": {
+    "osc": {
+      "cnpj": "07052610000188",
+      "nome": "ASSOCIACAO DE SURFE DO CANTO DO RECREIO",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2004,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2196589024"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:34.698Z",
+    "evaluated_editais": []
+  },
+  "07070205000192": {
+    "osc": {
+      "cnpj": "07070205000192",
+      "nome": "GRCESM ESTRELINHA DA MOCIDADE INDEPENDENTE DE PADRE MIGUEL",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2004,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "02131590283"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:35.001Z",
+    "evaluated_editais": []
+  },
+  "08350298000171": {
+    "osc": {
+      "cnpj": "08350298000171",
+      "nome": ",IGREJA EVANGELICA ASSEMBLEIA DE DEUS MINISTERIO MOVER DO ESPIRITO IEME EM PACIENCIA",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2125334688",
+        "ddd_telefone_2": "2125334688"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:35.577Z",
+    "evaluated_editais": []
+  },
+  "13304351000138": {
+    "osc": {
+      "cnpj": "13304351000138",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS CRISTO FIEL MINISTERIO TOM JOBIM",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2010,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2125261620",
+        "ddd_telefone_2": "2138358595"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:36.827Z",
+    "evaluated_editais": []
+  },
+  "13886391000135": {
+    "osc": {
+      "cnpj": "13886391000135",
+      "nome": "ASSOCIACAO VAREJAO HORTIFRUTI AVH",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Atividades de organizações associativas patronais e empresariais",
+      "cnae_secundario_descricao": "Serviços combinados de escritório e apoio administrativo",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2124717157",
+        "ddd_telefone_2": "2124717053"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:37.429Z",
+    "evaluated_editais": []
+  },
+  "15701786000141": {
+    "osc": {
+      "cnpj": "15701786000141",
+      "nome": "ORDEM DE NOSSA SENHORA DO MONTE FIGOGNA",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2125945315"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:37.548Z",
+    "evaluated_editais": []
+  },
+  "13761227000363": {
+    "osc": {
+      "cnpj": "13761227000363",
+      "nome": "ASSOCIACAO BRASILEIRA DOS PORTADORES DE HEPATITE",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2015,
+      "cnae_primario_descricao": "Atividade médica ambulatorial com recursos para realização de exames complementares",
+      "cnae_secundario_descricao": "Aluguel de imóveis próprios | Aluguel de equipamentos científicos, médicos e hospitalares, sem operador | Serviços de assistência social sem alojamento",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "1132511888"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:37.829Z",
+    "evaluated_editais": []
+  },
+  "22962597000198": {
+    "osc": {
+      "cnpj": "22962597000198",
+      "nome": "FEDERACAO DAS ASSOCIACOES DE FAVELAS COMUNIDADES E AMIGOS DO ESTADO DO RIO DE JANEIRO - FAFCAERJ",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2015,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2138522968"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:39.946Z",
+    "evaluated_editais": []
+  },
+  "26810832000167": {
+    "osc": {
+      "cnpj": "26810832000167",
+      "nome": "IGREJA PENTECOSTAL PONTE DAS ESTRELAS DA MANHA",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2131569377",
+        "ddd_telefone_2": "2166245645"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:40.500Z",
+    "evaluated_editais": []
+  },
+  "30902803245049": {
+    "osc": {
+      "cnpj": "30902803245049",
+      "nome": "IGREJA INTERNACIONAL DA GRACA DE DEUS",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2133445959",
+        "ddd_telefone_2": "2133445634"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:41.093Z",
+    "evaluated_editais": []
+  },
+  "01373932000142": {
+    "osc": {
+      "cnpj": "01373932000142",
+      "nome": "ASSOCIACAO DOS PROPRIETARIOS E MOR DA RUA CAPITU",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1996,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T10:45:41.385Z",
+    "evaluated_editais": []
+  },
+  "02648365000152": {
+    "osc": {
+      "cnpj": "02648365000152",
+      "nome": "IGREJA CRISTA PRIMITIVA MINISTERIO PROFETICO",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1998,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2133940703"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:41.687Z",
+    "evaluated_editais": []
+  },
+  "57742959008609": {
+    "osc": {
+      "cnpj": "57742959008609",
+      "nome": "IGREJA CRISTA APOSTOLICA RENASCER EM CRISTO",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2001,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "02125325614"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:46.518Z",
+    "evaluated_editais": []
+  },
+  "11368170000140": {
+    "osc": {
+      "cnpj": "11368170000140",
+      "nome": "IGREJA PENTENCOSTAL MISSIONARIA DE CAMPO GRANDE",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2134032003"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:49.545Z",
+    "evaluated_editais": []
+  },
+  "42557454001694": {
+    "osc": {
+      "cnpj": "42557454001694",
+      "nome": "MISSAO EVANGELICA DO BRASIL",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2134576480",
+        "ddd_telefone_2": "2134633976"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:50.173Z",
+    "evaluated_editais": []
+  },
+  "14649690000119": {
+    "osc": {
+      "cnpj": "14649690000119",
+      "nome": "ASSOCIACAO KWE CEJA OMO OLUA DANGBI",
+      "uf": "RJ",
+      "municipio": "RIO DE JANEIRO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2125736246",
+        "ddd_telefone_2": "2186798034"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:50.473Z",
+    "evaluated_editais": []
+  },
+  "11835344000137": {
+    "osc": {
+      "cnpj": "11835344000137",
+      "nome": "GRUPO DE ESTUDOS ESPIRITA OCEANO DE LUZ.",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2008,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7134130800",
+        "ddd_telefone_2": "7181796770"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:52.187Z",
+    "evaluated_editais": []
+  },
+  "12779465000171": {
+    "osc": {
+      "cnpj": "12779465000171",
+      "nome": "INSTITUTO DE ACAO SOCIAL E CIDADANIA MAO AMIGA",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2010,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente | Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "713016119"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:52.759Z",
+    "evaluated_editais": []
+  },
+  "13828589000162": {
+    "osc": {
+      "cnpj": "13828589000162",
+      "nome": "TEMPLO ESPIRITUALISTA CASA DA CARIDADE",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7191360906",
+        "ddd_telefone_2": "7130189995"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:53.947Z",
+    "evaluated_editais": []
+  },
+  "14064062000171": {
+    "osc": {
+      "cnpj": "14064062000171",
+      "nome": "IGREJA COMUNIDADE FAMILIA DA GRACA EM SALVADOR",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7134614183",
+        "ddd_telefone_2": "7134614276"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:54.741Z",
+    "evaluated_editais": []
+  },
+  "14674138000180": {
+    "osc": {
+      "cnpj": "14674138000180",
+      "nome": "IGREJA BATISTA PENIEL PARA AS NACOES",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7132425658"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:55.043Z",
+    "evaluated_editais": []
+  },
+  "14696375000142": {
+    "osc": {
+      "cnpj": "14696375000142",
+      "nome": "INSTITUTO DE CRIADORES DE CAVALOS MANGALARGA DA BAHIA",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7132415264",
+        "ddd_telefone_2": "7132415264"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:55.343Z",
+    "evaluated_editais": []
+  },
+  "14688363000176": {
+    "osc": {
+      "cnpj": "14688363000176",
+      "nome": "ASSOCIACAO BENEFICENTE RESTAURACAO",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7181997195"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:55.663Z",
+    "evaluated_editais": []
+  },
+  "14783333000149": {
+    "osc": {
+      "cnpj": "14783333000149",
+      "nome": "MAVI MINISTERIO ARVORE DA VIDA",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2010,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7193112660"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:55.968Z",
+    "evaluated_editais": []
+  },
+  "14803671000103": {
+    "osc": {
+      "cnpj": "14803671000103",
+      "nome": "IGREJA PENTECOSTAL O SOCORRO DO SENHOR",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7186347675",
+        "ddd_telefone_2": "7186347675"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:56.246Z",
+    "evaluated_editais": []
+  },
+  "15690998000170": {
+    "osc": {
+      "cnpj": "15690998000170",
+      "nome": "INSTITUTO INTERNACIONAL HOLISTICO QUANTUM E UNIVERSO",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7196000250"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:57.463Z",
+    "evaluated_editais": [
+      "18925"
+    ],
+    "ipea_id": 1216765,
+    "brave_enriched": true,
+    "dossieText": "### 🏛️ Perfil Institucional\nO INSTITUTO INTERNACIONAL HOLISTICO QUANTUM E UNIVERSO, fundado em 2011 e localizado em Salvador, BA, atua primariamente na defesa de direitos sociais, além de atividades associativas ligadas à cultura, arte e terapias holísticas (como cromoterapia).\n\n### 🎯 Alinhamento com o Edital\nO edital da FINEP exige propostas de pesquisa e desenvolvimento em cooperação internacional com a Noruega e a obtenção prévia do selo Eureka. A OSC não possui capacidade técnica, CNAE compatível ou histórico de projetos em ciência e tecnologia para atender aos rigorosos critérios de P&D exigidos.",
+    "dossie_updated_at": "2026-11-16T10:46:09.168Z"
+  },
+  "02755157000314": {
+    "osc": {
+      "cnpj": "02755157000314",
+      "nome": "UNIAO PLANETARIA",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7133222039"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:58.085Z",
+    "evaluated_editais": []
+  },
+  "17292072000152": {
+    "osc": {
+      "cnpj": "17292072000152",
+      "nome": "IGREJA PENTENCOSTAL AS SETE LAMPADAS ACESAS",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7134500412",
+        "ddd_telefone_2": "7134500412"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:58.393Z",
+    "evaluated_editais": []
+  },
+  "17370493000154": {
+    "osc": {
+      "cnpj": "17370493000154",
+      "nome": "INSTITUTO DE EMPREENDEDORISMO E EDUCACAO FINANCEIRA DA BAHIA",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades de apoio à educação, exceto caixas escolares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7133823593",
+        "ddd_telefone_2": "7191427045"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:58.966Z",
+    "evaluated_editais": []
+  },
+  "17522141000177": {
+    "osc": {
+      "cnpj": "17522141000177",
+      "nome": "ASSOCIACAO PROFISSIONAL DOS GEOGRAFOS DA BAHIA",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7196090794",
+        "ddd_telefone_2": "7193859889"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:59.257Z",
+    "evaluated_editais": []
+  },
+  "17205015000199": {
+    "osc": {
+      "cnpj": "17205015000199",
+      "nome": "GEIC GRUPO ESPIRITA IRMAOS EM CRISTO",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7131861461"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:45:59.834Z",
+    "evaluated_editais": []
+  },
+  "17744793000156": {
+    "osc": {
+      "cnpj": "17744793000156",
+      "nome": "ASSOCIACAO BENEFICENTE CULTURAL E RELIGIOSA ILE ASE OYE NANA ALAABONA",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2010,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7188866955",
+        "ddd_telefone_2": "7188866955"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:00.413Z",
+    "evaluated_editais": []
+  },
+  "18256176000174": {
+    "osc": {
+      "cnpj": "18256176000174",
+      "nome": "IGREJA PENTECOSTAL CHAMAS DO AVIVAMENTO",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2013,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7188349948"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:01.117Z",
+    "evaluated_editais": []
+  },
+  "19312987000108": {
+    "osc": {
+      "cnpj": "19312987000108",
+      "nome": "IGREJA MISSIONARIA PENTECOSTAL TEMPLO DE ORACAO",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2013,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7133074150",
+        "ddd_telefone_2": "7186169661"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:02.196Z",
+    "evaluated_editais": []
+  },
+  "18756687000155": {
+    "osc": {
+      "cnpj": "18756687000155",
+      "nome": "CONFEDERACAO BRASILEIRA DE FUTEVOLEI 4 X 4",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2013,
+      "cnae_primario_descricao": "Outras atividades esportivas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7133267386",
+        "ddd_telefone_2": "7193297965"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:02.504Z",
+    "evaluated_editais": []
+  },
+  "02888405000133": {
+    "osc": {
+      "cnpj": "02888405000133",
+      "nome": "ASSOCIACAO DOS MAGISTRADOS APOSENTADOS DA BAHIA",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1998,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7135063480"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:03.175Z",
+    "evaluated_editais": []
+  },
+  "16110694000150": {
+    "osc": {
+      "cnpj": "16110694000150",
+      "nome": "ASSOCIACAO DOS SERVID EM TRANSPORTE E TRANSIT MUNICIPIO",
+      "uf": "BA",
+      "municipio": "SALVADOR",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "7133287979",
+        "ddd_telefone_2": "7188909024"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:03.848Z",
+    "evaluated_editais": []
+  },
+  "00209293000383": {
+    "osc": {
+      "cnpj": "00209293000383",
+      "nome": "ASSOCIACAO ECOS DE ESPERANCA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2015,
+      "cnae_primario_descricao": "Atividades de assistência social prestadas em residências coletivas e particulares não especificadas anteriormente",
+      "cnae_secundario_descricao": "Outras atividades de ensino não especificadas anteriormente | Outras atividades esportivas não especificadas anteriormente | Outras atividades de recreação e lazer não especificadas anteriormente | Albergues assistenciais | Educação profissional de nível técnico | Atividades de associações de defesa de direitos sociais | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734230104"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:37.374Z",
+    "evaluated_editais": []
+  },
+  "28705500000148": {
+    "osc": {
+      "cnpj": "28705500000148",
+      "nome": "LIONS CLUBE JOINVILLE IRIRIU",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4799732515"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:37.676Z",
+    "evaluated_editais": []
+  },
+  "32798923000127": {
+    "osc": {
+      "cnpj": "32798923000127",
+      "nome": "MOVIMENTO ARTISTICO PATRICIA DALCHAU EM ACAO",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Produção de espetáculos de dança",
+      "cnae_secundario_descricao": "Ensino de dança",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4788613766"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:38.061Z",
+    "evaluated_editais": []
+  },
+  "31737868000100": {
+    "osc": {
+      "cnpj": "31737868000100",
+      "nome": "CLUBE DE CAMPO VILLA FIRENZE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734330008"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:38.374Z",
+    "evaluated_editais": []
+  },
+  "39382316000120": {
+    "osc": {
+      "cnpj": "39382316000120",
+      "nome": "ASSOCIACAO DOS SERVIDORES ESTATUTARIOS DO IMETRO/SC - ASERVES",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4796175787"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:39.199Z",
+    "evaluated_editais": []
+  },
+  "33113601000160": {
+    "osc": {
+      "cnpj": "33113601000160",
+      "nome": "INSTITUTO AGORA DE INOVACAO E EMPREENDEDORISMO",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Pesquisa e desenvolvimento experimental em ciências físicas e naturais",
+      "cnae_secundario_descricao": "Consultoria em tecnologia da informação | Aluguel de imóveis próprios | Pesquisa e desenvolvimento experimental em ciências sociais e humanas | Agenciamento de espaços para publicidade, exceto em veículos de comunicação | Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Serviços de organização de feiras, congressos, exposições e festas | Atividades de apoio à educação, exceto caixas escolares | Treinamento em desenvolvimento profissional e gerencial | Atividades de organizações associativas patronais e empresariais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4738032249"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:39.491Z",
+    "evaluated_editais": []
+  },
+  "33649705000193": {
+    "osc": {
+      "cnpj": "33649705000193",
+      "nome": "BATISTA NOVO TEMPO EM CRISTO CHURCH",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4799916292"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:39.611Z",
+    "evaluated_editais": []
+  },
+  "41559262000178": {
+    "osc": {
+      "cnpj": "41559262000178",
+      "nome": "ASSOCIACAO JOINVILENSE DE BASQUETEBOL FEMININO - AJBF",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "Produção e promoção de eventos esportivos | Outras atividades esportivas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4799452513"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:39.913Z",
+    "evaluated_editais": []
+  },
+  "79080602019922": {
+    "osc": {
+      "cnpj": "79080602019922",
+      "nome": "UNIAO SUL BRASILEIRA DA IGREJA ADVENTISTA DO SETIMO DIA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4730324036",
+        "ddd_telefone_2": "4132177700"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:40.308Z",
+    "evaluated_editais": []
+  },
+  "72407505000267": {
+    "osc": {
+      "cnpj": "72407505000267",
+      "nome": "ASSOCIACAO PAVILHAO DA CARIDADE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2004,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "Educação infantil - pré-escola",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734268303"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:40.462Z",
+    "evaluated_editais": []
+  },
+  "43506444000106": {
+    "osc": {
+      "cnpj": "43506444000106",
+      "nome": "IGREJA DE COMPANHEIRISMO CRISTAO ASSOCIACAO CIVIL",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4796155140"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:40.797Z",
+    "evaluated_editais": []
+  },
+  "53096325000186": {
+    "osc": {
+      "cnpj": "53096325000186",
+      "nome": "ASSOCIACAO CENTRAL SOCIAL",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4731216900"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:41.098Z",
+    "evaluated_editais": []
+  },
+  "02145793001134": {
+    "osc": {
+      "cnpj": "02145793001134",
+      "nome": "INSTITUICAO COMUNITARIA DE CREDITO BLUMENAU-SOLIDARIEDADE-ICC BLUSOL",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2013,
+      "cnae_primario_descricao": "Concessão de crédito pelas OSCIP",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4731449505"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:41.422Z",
+    "evaluated_editais": []
+  },
+  "43820493000119": {
+    "osc": {
+      "cnpj": "43820493000119",
+      "nome": "MINISTERIO ATOS 2 SEDE DE JOINVILLE/SC",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4799612479"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:41.735Z",
+    "evaluated_editais": []
+  },
+  "52176076000176": {
+    "osc": {
+      "cnpj": "52176076000176",
+      "nome": "MBM MONITORAMENTO E BENEFICIOS MUTUOS",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4731453000"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:42.171Z",
+    "evaluated_editais": []
+  },
+  "02470593000185": {
+    "osc": {
+      "cnpj": "02470593000185",
+      "nome": "ASSOCIACAO CULTURAL, EDUCACIONAL E RADIO COMUNITARIA DE PIRABEIRABA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1998,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734240833"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:42.458Z",
+    "evaluated_editais": []
+  },
+  "07640927000135": {
+    "osc": {
+      "cnpj": "07640927000135",
+      "nome": "ASSOCIACAO JOINVILENSE DE MONTANHISMO - AJM",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2003,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4799947922"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:42.738Z",
+    "evaluated_editais": []
+  },
+  "16783372000171": {
+    "osc": {
+      "cnpj": "16783372000171",
+      "nome": "ASSOCIACAO DAS LETRAS",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades de artistas plásticos, jornalistas independentes e escritores",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4198183053"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:43.049Z",
+    "evaluated_editais": []
+  },
+  "81140972000183": {
+    "osc": {
+      "cnpj": "81140972000183",
+      "nome": "ASSOCIACAO DE CRIADORES DE CURIOS DE JOINVILLE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1990,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734261382"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:43.623Z",
+    "evaluated_editais": []
+  },
+  "57602288000191": {
+    "osc": {
+      "cnpj": "57602288000191",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS PORTUGAL MINISTERIO CATARINENSE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4791530434"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:43.918Z",
+    "evaluated_editais": []
+  },
+  "61305217000102": {
+    "osc": {
+      "cnpj": "61305217000102",
+      "nome": "INSTITUTO AU MIAU",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades veterinárias | Outras atividades de ensino não especificadas anteriormente | Atividades associativas não especificadas anteriormente | Higiene e embelezamento de animais domésticos",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4731453000"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:44.252Z",
+    "evaluated_editais": []
+  },
+  "03856673000136": {
+    "osc": {
+      "cnpj": "03856673000136",
+      "nome": "SOCIEDADE ESPORTIVA RECANTO LAGOA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2000,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "474540005"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:44.573Z",
+    "evaluated_editais": []
+  },
+  "16752707000194": {
+    "osc": {
+      "cnpj": "16752707000194",
+      "nome": "ACMAP ASSOCIACAO COMUNITARIA DAS MULHERES DO ARTESANATO POPULAR",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4735470185"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:44.870Z",
+    "evaluated_editais": []
+  },
+  "03114767000130": {
+    "osc": {
+      "cnpj": "03114767000130",
+      "nome": "ASSOCIACAO PARA INTEGRACAO SOCIAL DE CRIANCAS A ADULTOS ESPECIAIS-APISCAE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1999,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4792605512"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:45.427Z",
+    "evaluated_editais": [
+      "19290"
+    ],
+    "ipea_id": 700901,
+    "brave_enriched": true,
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO PARA INTEGRACAO SOCIAL DE CRIANCAS A ADULTOS ESPECIAIS-APISCAE, sediada em Joinville/SC, foi fundada em 1999 e atua primordialmente na defesa de direitos, inclusão, desenvolvimento e preparação para o trabalho de pessoas com deficiência intelectual.\n\n### 🎯 Alinhamento com o Edital\nO edital do COMDI de Joinville destina-se estritamente a ações e projetos voltados à promoção, proteção e defesa dos direitos da pessoa idosa. Como a APISCAE foca no público com deficiência intelectual, há um desalinhamento temático central com as diretrizes do chamamento.",
+    "dossie_updated_at": "2026-11-16T10:47:26.135Z"
+  },
+  "84696434002373": {
+    "osc": {
+      "cnpj": "84696434002373",
+      "nome": "COMUNIDADE EVANGELICA DE JOINVILLE - UNIAO PAROQUIAL",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4739031800"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:45.739Z",
+    "evaluated_editais": []
+  },
+  "84708478003690": {
+    "osc": {
+      "cnpj": "84708478003690",
+      "nome": "ARQUIDIOCESE DE JOINVILLE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1975,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734360839",
+        "ddd_telefone_2": "4734513700"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:46.045Z",
+    "evaluated_editais": []
+  },
+  "79361424000131": {
+    "osc": {
+      "cnpj": "79361424000131",
+      "nome": "SOCIEDADE JOINVILLENSE DE GINECOLOGIA E OBSTETRICIA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Ensino médio",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T10:46:46.371Z",
+    "evaluated_editais": []
+  },
+  "81140675000138": {
+    "osc": {
+      "cnpj": "81140675000138",
+      "nome": "ASSOCIACAO DE PROMOCAO SOCIAL DO FISSURADO LABIO-PALATAL E DEFICIENTES AUDITIVOS DE JOINVILLE - PROFIS",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1990,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734333145",
+        "ddd_telefone_2": "4788616160"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:46.658Z",
+    "evaluated_editais": [
+      "19290"
+    ],
+    "ipea_id": 703296,
+    "brave_enriched": true,
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DE PROMOCAO SOCIAL DO FISSURADO LABIO-PALATAL E DEFICIENTES AUDITIVOS DE JOINVILLE - PROFIS (CNPJ 81.140.675/0001-38), fundada em 1990 e localizada em Joinville/SC, é uma associação privada de assistência social e defesa de direitos sociais com 35 anos de atuação.\n\n### 🎯 Alinhamento com o Edital\nO edital da Prefeitura de Joinville destina-se a ações voltadas à promoção, proteção e defesa dos direitos da pessoa idosa (registradas no COMDI). A PROFIS possui forte atuação voltada para a saúde e reabilitação de fissurados e deficientes auditivos, público que não coincide diretamente com o objeto principal do edital, embora atue no terceiro setor local.",
+    "dossie_updated_at": "2026-11-16T10:47:21.203Z"
+  },
+  "81141004000191": {
+    "osc": {
+      "cnpj": "81141004000191",
+      "nome": "CENTRO ESPIRITA LAR FRANCISCO DE ASSIS",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1990,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T10:46:46.963Z",
+    "evaluated_editais": []
+  },
+  "81141079000172": {
+    "osc": {
+      "cnpj": "81141079000172",
+      "nome": "ASSOCIACAO BENEFICENTE DOS EMPREGADOS DA CELESC",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1990,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T10:46:47.258Z",
+    "evaluated_editais": []
+  },
+  "81141095000165": {
+    "osc": {
+      "cnpj": "81141095000165",
+      "nome": "ORGANIZACAO CRISTA EM JOINVILLE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1990,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T10:46:47.560Z",
+    "evaluated_editais": []
+  },
+  "83797134000102": {
+    "osc": {
+      "cnpj": "83797134000102",
+      "nome": "ASSOCIACAO DOS APOSENTADOS E PENSIONISTAS DE JOINVILLE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1984,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4730254657"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:47.864Z",
+    "evaluated_editais": [
+      "19290"
+    ],
+    "ipea_id": 703842,
+    "brave_enriched": true,
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS APOSENTADOS E PENSIONISTAS DE JOINVILLE (AAPJ), CNPJ 83.797.134/0001-02, é uma associação privada sem fins lucrativos fundada em 1984, com sede no bairro América, em Joinville - SC. A entidade atua na defesa de direitos sociais, oferecendo assessoria jurídica, cursos, treinamentos e atividades associativas voltadas ao público idoso.\n\n### 🎯 Alinhamento com o Edital\nA organização atende perfeitamente ao objeto do Chamamento Público do COMDI de Joinville para o exercício de 2026. Com grande maturidade institucional (mais de 40 anos de história), seu foco histórico na promoção, proteção e defesa dos direitos da pessoa idosa garante total sinergia com os temas de assistência social, direitos humanos e cidadania exigidos pela seleção.",
+    "dossie_updated_at": "2026-11-16T10:47:31.471Z"
+  },
+  "83797555000133": {
+    "osc": {
+      "cnpj": "83797555000133",
+      "nome": "IGREJA PRESBITERIANA ANTIOQUIA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1985,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T10:46:48.176Z",
+    "evaluated_editais": []
+  },
+  "02241085000125": {
+    "osc": {
+      "cnpj": "02241085000125",
+      "nome": "ASSOCIACAO DE MORADORES E PROPRIETARIOS DA ESTRADA BONITA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0474641231"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:48.487Z",
+    "evaluated_editais": []
+  },
+  "27360356000192": {
+    "osc": {
+      "cnpj": "27360356000192",
+      "nome": "ASSOCIACAO INSTITUTO DE APOIO M S",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Serviços de assistência social sem alojamento",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734392717"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:48.773Z",
+    "evaluated_editais": []
+  },
+  "00724082000117": {
+    "osc": {
+      "cnpj": "00724082000117",
+      "nome": "FUNDACAO SOFTVILLE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 1995,
+      "cnae_primario_descricao": "Treinamento em desenvolvimento profissional e gerencial",
+      "cnae_secundario_descricao": "Consultoria em tecnologia da informação | Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Serviços de organização de feiras, congressos, exposições e festas | Outras atividades de serviços prestados principalmente às empresas não especificadas anteriormente | Atividades de organizações associativas patronais e empresariais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734390666"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:49.097Z",
+    "evaluated_editais": []
+  },
+  "00783143000117": {
+    "osc": {
+      "cnpj": "00783143000117",
+      "nome": "FUNDACAO PADRE LUIZ FACCHINI PRO SOLIDARIEDADE E VIDA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 1995,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4730255666"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:49.480Z",
+    "evaluated_editais": [
+      "19290"
+    ],
+    "ipea_id": 701362,
+    "brave_enriched": true,
+    "dossieText": "### 🏛️ Perfil Institucional\nA **FUNDACAO PADRE LUIZ FACCHINI PRO SOLIDARIEDADE E VIDA** (CNPJ matriz em Joinville-SC, fundada em 1995) é uma Organização da Sociedade Civil sem fins lucrativos de natureza jurídica privada. Historicamente atua no bairro Itinga/Paranaguamirim, prestando serviços voltados prioritariamente para crianças em situação de vulnerabilidade social e suas famílias.\n\n### 🎯 Alinhamento com o Edital\nO edital da Prefeitura de Joinville destina-se a selecionar OSCs registradas no COMDI para projetos voltados à promoção e defesa dos direitos da **pessoa idosa**. Embora a OSC tenha forte atuação social no município, as evidências web apontam atuação focada em crianças e jovens, o que limita o alinhamento direto com o público-alvo idoso e os requisitos específicos do Fundo dos Direitos da Pessoa Idosa.",
+    "dossie_updated_at": "2026-11-16T10:47:36.871Z"
+  },
+  "82600107000135": {
+    "osc": {
+      "cnpj": "82600107000135",
+      "nome": "CLUBE DE RADIOAMADORES DE JOINVILLE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1971,
+      "cnae_primario_descricao": "Serviços de tradução, interpretação e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T10:46:49.786Z",
+    "evaluated_editais": []
+  },
+  "01406705000257": {
+    "osc": {
+      "cnpj": "01406705000257",
+      "nome": "FUNDACAO CULTURAL E EDUCACIONAL DE ITAJAI",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de televisão aberta",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4732499100"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:50.392Z",
+    "evaluated_editais": []
+  },
+  "54209481003518": {
+    "osc": {
+      "cnpj": "54209481003518",
+      "nome": "EXERCITO DE SALVACAO",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1985,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T10:46:50.681Z",
+    "evaluated_editais": []
+  },
+  "15241940000140": {
+    "osc": {
+      "cnpj": "15241940000140",
+      "nome": "ASSOCIACAO AMAR E SERVIR",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de rádio | Atividades de apoio à educação, exceto caixas escolares | Serviços de assistência social sem alojamento | Atividades de organizações religiosas ou filosóficas",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4799375530"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:51.001Z",
+    "evaluated_editais": []
+  },
+  "40911029000140": {
+    "osc": {
+      "cnpj": "40911029000140",
+      "nome": "CLUBE DE CAMPO A FAZENDA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Clubes sociais, esportivos e similares | Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4731453000"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:52.191Z",
+    "evaluated_editais": []
+  },
+  "84714682000437": {
+    "osc": {
+      "cnpj": "84714682000437",
+      "nome": "FUNDACAO EDUCACIONAL DA REGIAO DE JOINVILLE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 2005,
+      "cnae_primario_descricao": "Educação superior - graduação e pós-graduação",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734619031",
+        "ddd_telefone_2": "4799962939"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:52.492Z",
+    "evaluated_editais": []
+  },
+  "74006644000204": {
+    "osc": {
+      "cnpj": "74006644000204",
+      "nome": "COMUNIDADE CRISTA DE GUARAPUAVA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4796202001"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:52.792Z",
+    "evaluated_editais": []
+  },
+  "76557149000995": {
+    "osc": {
+      "cnpj": "76557149000995",
+      "nome": "ASSOCIACAO DE CABOS E SOLDADOS - PMSC",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1992,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T10:46:53.087Z",
+    "evaluated_editais": []
+  },
+  "83180299000130": {
+    "osc": {
+      "cnpj": "83180299000130",
+      "nome": "JOINVILLE ESPORTE CLUBE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1976,
+      "cnae_primario_descricao": "Outras atividades esportivas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T10:46:53.364Z",
+    "evaluated_editais": []
+  },
+  "83180299000211": {
+    "osc": {
+      "cnpj": "83180299000211",
+      "nome": "JOINVILLE ESPORTE CLUBE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Comércio varejista de artigos do vestuário e acessórios",
+      "cnae_secundario_descricao": "Comércio varejista de artigos esportivos",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734220502"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:53.667Z",
+    "evaluated_editais": []
+  },
+  "83180299000300": {
+    "osc": {
+      "cnpj": "83180299000300",
+      "nome": "JOINVILLE ESPORTE CLUBE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Comércio varejista de artigos do vestuário e acessórios",
+      "cnae_secundario_descricao": "Comércio varejista de artigos esportivos",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734550055"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:54.124Z",
+    "evaluated_editais": []
+  },
+  "05642552000117": {
+    "osc": {
+      "cnpj": "05642552000117",
+      "nome": "ASSOCIACAO CASA DO ADALTO APOIO AS CRIANCAS E ADOLESCENTES COM NEOPLASIA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2003,
+      "cnae_primario_descricao": "Atividades de assistência social prestadas em residências coletivas e particulares não especificadas anteriormente",
+      "cnae_secundario_descricao": "Albergues assistenciais | Centros de apoio a pacientes com câncer e com AIDS",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734452719"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:54.449Z",
+    "evaluated_editais": []
+  },
+  "17538534000179": {
+    "osc": {
+      "cnpj": "17538534000179",
+      "nome": "ASSOCIACAO NACIONAL DOS PARTICIPANTES DO PB1 DA PREVI - ANAPLAB",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2013,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4133851526"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:54.751Z",
+    "evaluated_editais": []
+  },
+  "04981978000132": {
+    "osc": {
+      "cnpj": "04981978000132",
+      "nome": "ASSOCIACAO DE AMIGOS DA FAMILIA ABIGAIL - A.A.F.A",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2002,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4796079230"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:55.496Z",
+    "evaluated_editais": []
+  },
+  "05616006000101": {
+    "osc": {
+      "cnpj": "05616006000101",
+      "nome": "ASSOCIACAO MARUYAMA DE AIKIDO DE JOINVILLE (A.M.A.J.)",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2003,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4731218080",
+        "ddd_telefone_2": "4731218081"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:55.800Z",
+    "evaluated_editais": []
+  },
+  "07646320000162": {
+    "osc": {
+      "cnpj": "07646320000162",
+      "nome": "ASSOCIACAO NOSSA SENHORA DE GUADALUPE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2005,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734276111",
+        "ddd_telefone_2": "4734250911"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:56.091Z",
+    "evaluated_editais": []
+  },
+  "03517135000117": {
+    "osc": {
+      "cnpj": "03517135000117",
+      "nome": "OBRAS SOCIAIS DA CASA ESPIRITA BEZERRA DE MENEZES",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1999,
+      "cnae_primario_descricao": "Educação infantil - pré-escola",
+      "cnae_secundario_descricao": "Educação infantil - creche | Ensino fundamental | Educação superior - graduação | Educação superior - pós-graduação e extensão | Educação profissional de nível técnico | Outras atividades de ensino não especificadas anteriormente | Serviços de assistência social sem alojamento | Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4730273701",
+        "ddd_telefone_2": "4799942003"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:56.643Z",
+    "evaluated_editais": []
+  },
+  "24029986000190": {
+    "osc": {
+      "cnpj": "24029986000190",
+      "nome": "LIGA CATARINENSE DE PESCA ESPORTIVA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Outras atividades esportivas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4799640020",
+        "ddd_telefone_2": "4734336696"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:57.273Z",
+    "evaluated_editais": []
+  },
+  "02379441000171": {
+    "osc": {
+      "cnpj": "02379441000171",
+      "nome": "ESTRELA ESPORTE CLUBE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1994,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T10:46:57.579Z",
+    "evaluated_editais": []
+  },
+  "20287497000188": {
+    "osc": {
+      "cnpj": "20287497000188",
+      "nome": "ASSOCIACAO BRASILEIRA DE CULTURA, DESPORTO E EDUCACAO ABCD DA EDUCACAO",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Edição de livros | Edição integrada à impressão de cadastros, listas e de outros produtos gráficos | Atividades de produção cinematográfica, de vídeos e de programas de televisão não especificadas anteriormente | Pesquisa e desenvolvimento experimental em ciências sociais e humanas | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Atividades de apoio à educação, exceto caixas escolares | Atividades de serviços de complementação diagnóstica e terapêutica não especificadas anteriormente | Atividades de profissionais da nutrição | Outras atividades de atenção à saúde humana não especificadas anteriormente | Produção teatral | Produção musical | Produção de espetáculos de dança | Produção de espetáculos circenses, de marionetes e similares | Produção de espetáculos de rodeios, vaquejadas e similares | Atividades de sonorização e de iluminação | Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente | Atividades de artistas plásticos, jornalistas independentes e escritores | Restauração de obras-de-arte | Produção e promoção de eventos esportivos | Outras atividades esportivas não especificadas anteriormente | Outras atividades de recreação e lazer não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4784070761"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:57.887Z",
+    "evaluated_editais": []
+  },
+  "12085117000102": {
+    "osc": {
+      "cnpj": "12085117000102",
+      "nome": "LIGA NORTE CATARINENSE DE PESCA DE ARREMESSO",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2010,
+      "cnae_primario_descricao": "Outras atividades esportivas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4730261338",
+        "ddd_telefone_2": "4730289685"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:58.001Z",
+    "evaluated_editais": []
+  },
+  "37394485000155": {
+    "osc": {
+      "cnpj": "37394485000155",
+      "nome": "INSTITUTO LUZ DIVINA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734330142"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:58.334Z",
+    "evaluated_editais": []
+  },
+  "27089948000111": {
+    "osc": {
+      "cnpj": "27089948000111",
+      "nome": "ASSOCIACAO ENGENHEIROS SEM FRONTEIRAS - NUCLEO JOINVILLE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4784026677"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:46:59.774Z",
+    "evaluated_editais": []
+  },
+  "34967917000181": {
+    "osc": {
+      "cnpj": "34967917000181",
+      "nome": "CENTRO DE ESTUDOS ESPIRITAS CHICO XAVIER",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Serviços de assistência social sem alojamento | Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734548363"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:00.062Z",
+    "evaluated_editais": []
+  },
+  "83503193000120": {
+    "osc": {
+      "cnpj": "83503193000120",
+      "nome": "BOLSA DE NEGOCIOS SUBCONTRATACAO DE SANTA CATARINA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1977,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4731453000"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:00.333Z",
+    "evaluated_editais": []
+  },
+  "84692144000146": {
+    "osc": {
+      "cnpj": "84692144000146",
+      "nome": "INSTITUTO JOINVILLENSE DE EDUCACAO E ASSISTENCIA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1966,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "atividades de design não especificadas anteriormente | Serviços de organização de feiras, congressos, exposições e festas | Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais | Educação infantil - creche | Educação infantil - pré-escola | Ensino de esportes | Ensino de dança | Ensino de artes cênicas, exceto dança | Ensino de música | Ensino de arte e cultura não especificado anteriormente | Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente | Clubes sociais, esportivos e similares | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734355617"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:00.619Z",
+    "evaluated_editais": [
+      "19290"
+    ],
+    "ipea_id": 704362,
+    "brave_enriched": true,
+    "dossieText": "### 🏛️ Perfil Institucional\nO **Instituto Joinvillense de Educação e Assistência** (conhecido como Centro Educacional Dom Bosco), CNPJ 84.692.144/0001-46, foi fundado em 1966 em Joinville, SC. É uma tradicional obra social focada no atendimento socioassistencial a crianças, adolescentes e jovens em situação de vulnerabilidade social.\n\n### 🎯 Alinhamento com o Edital\nO edital municipal visa o financiamento de projetos voltados especificamente à promoção, proteção e defesa dos **direitos da pessoa idosa**. Apesar da solidez institucional da OSC e da localização correta, seu público-alvo histórico e prático é voltado para a juventude, gerando desalinhamento temático central com o objeto do chamamento público do COMDI.",
+    "dossie_updated_at": "2026-11-16T10:47:10.953Z"
+  },
+  "84708478003771": {
+    "osc": {
+      "cnpj": "84708478003771",
+      "nome": "ARQUIDIOCESE DE JOINVILLE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2002,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734371016",
+        "ddd_telefone_2": "4734513700"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:00.958Z",
+    "evaluated_editais": []
+  },
+  "83792036000182": {
+    "osc": {
+      "cnpj": "83792036000182",
+      "nome": "REDE FEMININA DE COMBATE AO CANCER DE JOINVILLE",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1981,
+      "cnae_primario_descricao": "Centros de apoio a pacientes com câncer e com AIDS",
+      "cnae_secundario_descricao": "Serviços de organização de feiras, congressos, exposições e festas | Treinamento em desenvolvimento profissional e gerencial | Atividade médica ambulatorial com recursos para realização de exames complementares | Atividades de serviços de complementação diagnóstica e terapêutica não especificadas anteriormente | Atividades de fisioterapia | Atividades de práticas integrativas e complementares em saúde humana | Atividades de acupuntura | Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4730266512"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:01.950Z",
+    "evaluated_editais": [
+      "19290"
+    ],
+    "ipea_id": 703818,
+    "brave_enriched": true,
+    "dossieText": "### 🏛️ Perfil Institucional\nA Rede Feminina de Combate ao Câncer de Joinville é uma associação privada sem fins lucrativos fundada em 1980/1981, com sede em Joinville, SC. É amplamente reconhecida na região pelo seu trabalho de prevenção ao câncer de mama e do colo do útero, oferecendo suporte ambulatorial a pacientes oncológicos.\n\n### 🎯 Alinhamento com o Edital\nO edital em questão destina-se estritamente ao financiamento de projetos voltados à promoção, proteção e defesa dos direitos da pessoa idosa em Joinville, com registro obrigatório no COMDI. Embora a instituição atenda indiretamente pacientes idosas dentro do público oncológico, seu objeto social principal diverge do foco central da chamada pública (idosos), o que restringe a pontuação de alinhamento.",
+    "dossie_updated_at": "2026-11-16T10:47:16.150Z"
+  },
+  "44491433000162": {
+    "osc": {
+      "cnpj": "44491433000162",
+      "nome": "ASSOCIACAO DOS MOTOCICLISTAS - BODES DO NORTE DE SANTA CATARINA (AMBNSC)",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2021,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4738049580"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:02.239Z",
+    "evaluated_editais": []
+  },
+  "48865072000128": {
+    "osc": {
+      "cnpj": "48865072000128",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS CRISTO REINA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2022,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4730346803"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:02.528Z",
+    "evaluated_editais": []
+  },
+  "49900316000129": {
+    "osc": {
+      "cnpj": "49900316000129",
+      "nome": "MAGEN CHURCH",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "1124640354"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:02.647Z",
+    "evaluated_editais": []
+  },
+  "00889206000203": {
+    "osc": {
+      "cnpj": "00889206000203",
+      "nome": "FEDERACAO CATARINENSE DE HIPISMO",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2001,
+      "cnae_primario_descricao": "Outras atividades de recreação e lazer não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0482248855"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:02.954Z",
+    "evaluated_editais": []
+  },
+  "51452336000126": {
+    "osc": {
+      "cnpj": "51452336000126",
+      "nome": "INSTITUTO KRONA",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2023,
+      "cnae_primario_descricao": "Outras atividades de ensino não especificadas anteriormente",
+      "cnae_secundario_descricao": "Comércio varejista de outros artigos de uso pessoal e doméstico não especificados anteriormente | Comércio varejista de artigos de papelaria | Comércio varejista de artigos do vestuário e acessórios | Comércio varejista de suvenires, bijuterias e artesanatos | Serviços de assistência social sem alojamento | Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4797701104"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:03.279Z",
+    "evaluated_editais": []
+  },
+  "58771534000100": {
+    "osc": {
+      "cnpj": "58771534000100",
+      "nome": "INSTITUTO DE INTERVENCAO POR IMAGEM E INOVACAO",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2025,
+      "cnae_primario_descricao": "Atividade médica ambulatorial restrita a consultas",
+      "cnae_secundario_descricao": "Pesquisa e desenvolvimento experimental em ciências físicas e naturais | Treinamento em desenvolvimento profissional e gerencial | Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos | Atividade médica ambulatorial com recursos para realização de exames complementares | Atividades de atenção ambulatorial não especificadas anteriormente | Atividades de serviços de complementação diagnóstica e terapêutica não especificadas anteriormente | Atividades de apoio à gestão de saúde",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4796897293"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:03.919Z",
+    "evaluated_editais": []
+  },
+  "83797001000217": {
+    "osc": {
+      "cnpj": "83797001000217",
+      "nome": "ASSOCIACAO DE JOINVILLE E REGIAO DA PEQUENA, MICRO E MEDIA EMPRESA - AJORPEME",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2004,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4734333492"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:04.046Z",
+    "evaluated_editais": []
+  },
+  "63002900000198": {
+    "osc": {
+      "cnpj": "63002900000198",
+      "nome": "IGREJA EVANGELICA PENTECOSTAL ARCA DA RESTAURACAO",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2024,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "4796142306"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:04.630Z",
+    "evaluated_editais": []
+  },
+  "16422062000121": {
+    "osc": {
+      "cnpj": "16422062000121",
+      "nome": "UNIAO DE PRESTADORES DE SERVICOS DE CONTROLE DE PRAGAS - UNIPRAG",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2126052091",
+        "ddd_telefone_2": "4734390666"
+      }
+    },
+    "last_checked_date": "2026-11-16T10:47:05.278Z",
+    "evaluated_editais": []
+  },
+  "04603573000160": {
+    "osc": {
+      "cnpj": "04603573000160",
+      "nome": "ASSOCIACAO ABRIGO ANIMAL",
+      "uf": "SC",
+      "municipio": "JOINVILLE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2001,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T10:47:05.983Z",
+    "evaluated_editais": []
   }
 }
