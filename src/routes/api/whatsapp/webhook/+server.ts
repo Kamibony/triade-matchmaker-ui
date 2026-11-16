@@ -2,7 +2,7 @@ import { json } from '@sveltejs/kit';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { env } from '$env/dynamic/private';
 import { normalizeBrazilPhone, sendWhatsAppText } from '$lib/server/whatsapp-gateway';
-import { logWhatsAppWebhookEvent } from '$lib/server/whatsapp-monitor';
+import { logWhatsAppWebhookEvent, upsertFavorableContactToSheet } from '$lib/server/whatsapp-monitor';
 import { detectOptOutCommand, isPhoneOptedOut, recordOptOutPhone } from '$lib/server/whatsapp-optout';
 import dailyLeadsData from '../../../../data/daily_outbound_leads.json';
 import editaisData from '../../../../data/editais_prosas.json';
@@ -166,21 +166,68 @@ function recordAutoReply(normalizedPhone: string | null) {
   recentRepliesByPhone.set(normalizedPhone, timestamps);
 }
 
+interface SharedContactInfo {
+  name: string;
+  phone: string;
+}
+
+type ExtractedMediaType = 'audio' | 'contact' | 'image' | 'video' | 'document' | 'sticker' | 'text' | null;
+
+function parseSharedContacts(rawItems: any[]): SharedContactInfo[] {
+  const results: SharedContactInfo[] = [];
+  for (const item of rawItems) {
+    if (!item || typeof item !== 'object') continue;
+    const vcard = String(item.vcard || '');
+    const fnMatch = vcard.match(/^FN[^:]*:(.+)$/im);
+    const name =
+      (typeof item.name === 'string' ? item.name : item.name?.formatted_name) ||
+      item.displayName ||
+      (fnMatch ? fnMatch[1].trim() : '') ||
+      'Contato';
+
+    const waidMatch = vcard.match(/waid=(\d+)/i);
+    const telMatch = vcard.match(/TEL[^:]*:([+\d\s()-]+)/i);
+    const arrayPhone =
+      (Array.isArray(item.phones) && (item.phones[0]?.phone || item.phones[0]?.wa_id)) ||
+      item.phone ||
+      item.wa_id ||
+      '';
+    const rawPhone = String((waidMatch && waidMatch[1]) || (telMatch && telMatch[1]) || arrayPhone || '');
+    const phone = rawPhone.replace(/\D/g, '');
+    results.push({ name: String(name).trim() || 'Contato', phone });
+  }
+  return results;
+}
+
+function formatSharedContactsSummary(contacts: SharedContactInfo[]): string | null {
+  if (!contacts.length) return null;
+  return contacts
+    .map((c) => `[Contato compartilhado: ${c.name}${c.phone ? ` - Tel: ${c.phone}` : ''}]`)
+    .join(' | ');
+}
+
 function extractIncomingPayload(body: any): {
   senderPhone: string | null;
   rawChatId?: string | null;
   incomingText: string | null;
   fromMe: boolean;
   senderName?: string;
+  mediaType?: ExtractedMediaType;
+  sharedContacts?: SharedContactInfo[];
 } {
-  // 1. Direct / UI Simulator payload
-  if (body?.simulator || body?.incomingText) {
+  // 1. Direct / UI Simulator payload (only when explicit incomingText is provided)
+  if (body?.incomingText) {
     return {
-      senderPhone: body.phone || body.lead?.contatos_encontrados?.whatsapp || body.lead?.osc?.official_contacts?.ddd_telefone_1 || '5511999999999',
+      senderPhone:
+        body.phone ||
+        body.lead?.contatos_encontrados?.whatsapp ||
+        body.lead?.osc?.official_contacts?.ddd_telefone_1 ||
+        '5511999999999',
       rawChatId: null,
-      incomingText: body.incomingText,
+      incomingText: String(body.incomingText),
       fromMe: false,
-      senderName: body.lead?.osc?.nome || body.senderName
+      senderName: body.lead?.osc?.nome || body.senderName,
+      mediaType: 'text'
     };
   }
 
@@ -188,21 +235,56 @@ function extractIncomingPayload(body: any): {
   if (Array.isArray(body?.messages) && body.messages[0]) {
     const msg = body.messages[0];
     const chatId = msg.chat_id || msg.from || '';
-    let contactSummary: string | null = null;
-    const contactObj = msg.contact || (Array.isArray(msg.contacts) ? msg.contacts[0] : null);
-    if (contactObj) {
-      const cName = contactObj.name || 'Contato';
-      const vcard = String(contactObj.vcard || '');
-      const waidMatch = vcard.match(/waid=(\d+)/i) || vcard.match(/TEL[^:]*:([+\d\s()-]+)/i);
-      const cPhone = waidMatch ? waidMatch[1].replace(/\D/g, '') : '';
-      contactSummary = `[Contato compartilhado: ${cName}${cPhone ? ` - Tel: ${cPhone}` : ''}]`;
+    const msgType = String(msg.type || '').toLowerCase();
+
+    const rawContacts = [
+      ...(msg.contact ? [msg.contact] : []),
+      ...(Array.isArray(msg.contacts) ? msg.contacts : []),
+      ...(Array.isArray(msg.contact_list) ? msg.contact_list : []),
+      ...(Array.isArray(msg.contact_list?.list) ? msg.contact_list.list : [])
+    ];
+    const sharedContacts = parseSharedContacts(rawContacts);
+    const contactSummary = formatSharedContactsSummary(sharedContacts);
+
+    const audioObj = msg.voice || msg.audio || msg.ptt;
+    let incomingText: string | null = msg.text?.body || msg.voice?.caption || msg.audio?.caption || null;
+    let mediaType: ExtractedMediaType = incomingText ? 'text' : null;
+
+    if (contactSummary) {
+      incomingText = contactSummary;
+      mediaType = 'contact';
+    } else if (!incomingText && (audioObj || msgType === 'voice' || msgType === 'audio' || msgType === 'ptt')) {
+      const seconds = audioObj?.seconds || audioObj?.duration || null;
+      const link = audioObj?.link || audioObj?.url || null;
+      const caption = audioObj?.caption || msg.caption || null;
+      incomingText = `[Áudio recebido${seconds ? ` (${seconds}s)` : ''}${link ? ` — ${link}` : ' — ouvir no WhatsApp'}${caption ? ` | Legenda: ${caption}` : ''}]`;
+      mediaType = 'audio';
+    } else if (!incomingText && (msg.image || msgType === 'image')) {
+      const caption = msg.image?.caption || msg.caption || null;
+      incomingText = caption || '[Imagem recebida — ver no WhatsApp]';
+      mediaType = 'image';
+    } else if (!incomingText && (msg.video || msgType === 'video')) {
+      const caption = msg.video?.caption || msg.caption || null;
+      incomingText = caption || '[Vídeo recebido — ver no WhatsApp]';
+      mediaType = 'video';
+    } else if (!incomingText && (msg.document || msgType === 'document')) {
+      const caption = msg.document?.caption || msg.caption || null;
+      const filename = msg.document?.filename || msg.document?.file_name || null;
+      incomingText = caption || `[Documento recebido${filename ? `: ${filename}` : ''} — ver no WhatsApp]`;
+      mediaType = 'document';
+    } else if (!incomingText && (msg.sticker || msgType === 'sticker')) {
+      incomingText = '[Figurinha recebida]';
+      mediaType = 'sticker';
     }
+
     return {
       senderPhone: chatId.split('@')[0],
       rawChatId: chatId,
-      incomingText: msg.text?.body || msg.voice?.caption || contactSummary || null,
+      incomingText,
       fromMe: !!msg.from_me,
-      senderName: msg.from_name
+      senderName: msg.from_name,
+      mediaType,
+      sharedContacts: sharedContacts.length ? sharedContacts : undefined
     };
   }
 
@@ -212,43 +294,107 @@ function extractIncomingPayload(body: any): {
     const fromMe = !!body.data.key.fromMe;
     const senderPhone = jid.split('@')[0];
     const msgObj = body.data.message || {};
-    const text =
+
+    const rawContacts = [
+      ...(msgObj.contactMessage ? [{ name: msgObj.contactMessage.displayName, vcard: msgObj.contactMessage.vcard }] : []),
+      ...(Array.isArray(msgObj.contactsArrayMessage?.contacts) ? msgObj.contactsArrayMessage.contacts : [])
+    ];
+    const sharedContacts = parseSharedContacts(rawContacts);
+    const contactSummary = formatSharedContactsSummary(sharedContacts);
+
+    let text: string | null =
       msgObj.conversation ||
       msgObj.extendedTextMessage?.text ||
       msgObj.audioMessage?.caption ||
+      msgObj.imageMessage?.caption ||
+      msgObj.documentMessage?.caption ||
       body.data?.body ||
       null;
+    let mediaType: ExtractedMediaType = text ? 'text' : null;
+
+    if (contactSummary) {
+      text = contactSummary;
+      mediaType = 'contact';
+    } else if (!text && msgObj.audioMessage) {
+      const seconds = msgObj.audioMessage.seconds || null;
+      text = `[Áudio recebido${seconds ? ` (${seconds}s)` : ''} — ouvir no WhatsApp]`;
+      mediaType = 'audio';
+    } else if (!text && msgObj.imageMessage) {
+      text = '[Imagem recebida — ver no WhatsApp]';
+      mediaType = 'image';
+    } else if (!text && msgObj.documentMessage) {
+      const fname = msgObj.documentMessage.fileName || '';
+      text = `[Documento recebido${fname ? `: ${fname}` : ''} — ver no WhatsApp]`;
+      mediaType = 'document';
+    }
+
     return {
       senderPhone,
       rawChatId: jid,
       incomingText: text,
       fromMe,
-      senderName: body.data.pushName
+      senderName: body.data.pushName,
+      mediaType,
+      sharedContacts: sharedContacts.length ? sharedContacts : undefined
     };
   }
 
   // 4. Z-API webhook format
-  if (body?.phone && (body?.text?.message || body?.audio?.audioUrl)) {
+  if (body?.phone && (body?.text?.message || body?.audio?.audioUrl || body?.contact || body?.image || body?.document)) {
+    const sharedContacts = body.contact ? parseSharedContacts([body.contact]) : [];
+    const contactSummary = formatSharedContactsSummary(sharedContacts);
+    let text: string | null = body.text?.message || null;
+    let mediaType: ExtractedMediaType = text ? 'text' : null;
+    if (contactSummary) {
+      text = contactSummary;
+      mediaType = 'contact';
+    } else if (!text && body.audio?.audioUrl) {
+      text = `[Áudio recebido — ${body.audio.audioUrl}]`;
+      mediaType = 'audio';
+    } else if (!text && body.image) {
+      text = body.image.caption || '[Imagem recebida — ver no WhatsApp]';
+      mediaType = 'image';
+    } else if (!text && body.document) {
+      text = body.document.caption || '[Documento recebido — ver no WhatsApp]';
+      mediaType = 'document';
+    }
     return {
       senderPhone: body.phone,
       rawChatId: body.chatId || null,
-      incomingText: body.text?.message || null,
+      incomingText: text,
       fromMe: !!body.fromMe,
-      senderName: body.senderName
+      senderName: body.senderName,
+      mediaType,
+      sharedContacts: sharedContacts.length ? sharedContacts : undefined
     };
   }
 
   // 5. Green-API webhook format
   if (body?.senderData?.chatId && body?.messageData) {
+    const msgData = body.messageData;
+    const sharedContacts = msgData.contactMessageData ? parseSharedContacts([msgData.contactMessageData]) : [];
+    const contactSummary = formatSharedContactsSummary(sharedContacts);
+    let text: string | null =
+      msgData.textMessageData?.textMessage ||
+      msgData.extendedTextMessageData?.text ||
+      msgData.fileMessageData?.caption ||
+      null;
+    let mediaType: ExtractedMediaType = text ? 'text' : null;
+    if (contactSummary) {
+      text = contactSummary;
+      mediaType = 'contact';
+    } else if (!text && msgData.typeMessage === 'audioMessage') {
+      text = `[Áudio recebido${msgData.fileMessageData?.downloadUrl ? ` — ${msgData.fileMessageData.downloadUrl}` : ' — ouvir no WhatsApp'}]`;
+      mediaType = 'audio';
+    }
     return {
       senderPhone: body.senderData.chatId.split('@')[0],
       rawChatId: body.senderData.chatId,
-      incomingText:
-        body.messageData.textMessageData?.textMessage ||
-        body.messageData.extendedTextMessageData?.text ||
-        null,
+      incomingText: text,
       fromMe: body.typeWebhook === 'outgoingMessageReceived' || body.typeWebhook === 'outgoingAPIMessageReceived',
-      senderName: body.senderData.senderName
+      senderName: body.senderData.senderName,
+      mediaType,
+      sharedContacts: sharedContacts.length ? sharedContacts : undefined
     };
   }
 
@@ -256,16 +402,29 @@ function extractIncomingPayload(body: any): {
   const metaChange = body?.entry?.[0]?.changes?.[0]?.value;
   if (metaChange?.messages?.[0]) {
     const msg = metaChange.messages[0];
+    const sharedContacts = Array.isArray(msg.contacts) ? parseSharedContacts(msg.contacts) : [];
+    const contactSummary = formatSharedContactsSummary(sharedContacts);
+    let text: string | null = msg.text?.body || msg.image?.caption || msg.document?.caption || null;
+    let mediaType: ExtractedMediaType = text ? 'text' : null;
+    if (contactSummary) {
+      text = contactSummary;
+      mediaType = 'contact';
+    } else if (!text && msg.type === 'audio') {
+      text = '[Áudio recebido — ouvir no WhatsApp]';
+      mediaType = 'audio';
+    }
     return {
       senderPhone: msg.from,
       rawChatId: msg.from,
-      incomingText: msg.text?.body || null,
+      incomingText: text,
       fromMe: false,
-      senderName: metaChange.contacts?.[0]?.profile?.name
+      senderName: metaChange.contacts?.[0]?.profile?.name,
+      mediaType,
+      sharedContacts: sharedContacts.length ? sharedContacts : undefined
     };
   }
 
-  return { senderPhone: null, rawChatId: null, incomingText: null, fromMe: false };
+  return { senderPhone: null, rawChatId: null, incomingText: null, fromMe: false, mediaType: null };
 }
 
 function findMatchingMondayContact(rawPhone: string | null) {
@@ -627,6 +786,8 @@ REGRAS E TRAVAS OBRIGATÓRIAS DA TRIADE ACR:
 8. OCUPADO / REAGENDAMENTO / INDICAÇÃO DE CONTATO:
    - Se a ONG disser que está ocupada e pedir retorno outro dia útil, confirme de forma curta que retornaremos em dia útil (SEM repetir o pitch e SEM cravar hora exata!) e defina "should_notify_angela": true.
    - Se a ONG enviar um contato ("[Contato compartilhado: ...]") ou indicar outra pessoa ("Esse é o número da minha assessora/coordenadora"), agradeça brevemente, confirme que nossa equipe entrará em contato em dia útil com a pessoa indicada (SEM repetir o pitch!), classifique como "human_handoff", defina "crm_status": "negotiating", "should_notify_angela": true e inclua nome e telefone indicado dentro de "angela_alert".
+9. ÁUDIO E MÍDIA RECEBIDA:
+   - Se a mensagem recebida for um áudio ("[Áudio recebido ...]") ou mídia enviada por um lead abordado, NUNCA classifique como "unrelated_or_bot". Classifique como "human_handoff", defina "crm_status": "negotiating", "should_notify_angela": true, "should_auto_reply": false e oriente em "analysis" e "angela_alert" a ouvir o áudio diretamente no WhatsApp.
 
 Responda ESTRITAMENTE em JSON com esta estrutura:
 {
@@ -644,6 +805,23 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
 
     const aiRes = await sdrModel.generateContent(sdrPrompt);
     const parsed = parseGeminiJsonResponse(aiRes.response.text());
+
+    // Garantia determinística: áudio ou cartão de contato de um lead nunca deve virar "unrelated_or_bot"
+    if (extracted.mediaType === 'audio' && parsed?.intent === 'unrelated_or_bot') {
+      parsed.intent = 'human_handoff';
+      parsed.intent_label = '🎙️ Áudio Recebido (Ouvir no WhatsApp)';
+      parsed.crm_status = 'negotiating';
+      parsed.should_auto_reply = false;
+      parsed.should_notify_angela = true;
+      parsed.analysis = parsed.analysis || 'ONG enviou um áudio no WhatsApp; requer escuta manual pela Maria Angela.';
+    }
+    if ((extracted.mediaType === 'contact' || extracted.sharedContacts?.length) && parsed?.intent === 'unrelated_or_bot') {
+      parsed.intent = 'human_handoff';
+      parsed.intent_label = '🤝 Contato Compartilhado';
+      parsed.crm_status = 'negotiating';
+      parsed.should_auto_reply = false;
+      parsed.should_notify_angela = true;
+    }
 
     let autoReplyDispatch = null;
     let angelaAlertDispatch = null;
@@ -701,6 +879,43 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
       detail: `${autoReplyDispatch?.error || parsed?.analysis || ''} | ${angelaStatusNote}`.trim()
     });
 
+    const isFavorableOrHandoff =
+      parsed?.intent === 'interested' ||
+      parsed?.intent === 'human_handoff' ||
+      extracted.mediaType === 'audio' ||
+      !!(extracted.sharedContacts && extracted.sharedContacts.length > 0);
+
+    let favorableContactsSynced = 0;
+    if (isFavorableOrHandoff) {
+      const editalLabel = editalId ? `${editalTitulo} (${editalId})` : editalTitulo;
+      const primarySynced = await upsertFavorableContactToSheet({
+        isSimulator,
+        contactName: senderName || 'Contato principal',
+        orgNome,
+        phone: normalizedSender || senderPhone || '',
+        editalLabel,
+        statusNote: parsed?.intent_label || parsed?.intent || 'Retorno favorável',
+        observation: parsed?.analysis || incomingText.slice(0, 140)
+      });
+      if (primarySynced) favorableContactsSynced += 1;
+
+      if (extracted.sharedContacts?.length) {
+        for (const sc of extracted.sharedContacts) {
+          if (!sc.phone && !sc.name) continue;
+          const scSynced = await upsertFavorableContactToSheet({
+            isSimulator,
+            contactName: `${sc.name || 'Contato'} (Indicação)`,
+            orgNome,
+            phone: sc.phone || '',
+            editalLabel,
+            statusNote: 'Contato compartilhado para continuidade',
+            observation: `Indicado por +${normalizedSender || senderPhone || ''}`
+          });
+          if (scSynced) favorableContactsSynced += 1;
+        }
+      }
+    }
+
     return json({
       ok: true,
       autoReplyEnabled: isAutoReplyActive,
@@ -710,10 +925,13 @@ Responda ESTRITAMENTE em JSON com esta estrutura:
       matchedUf: matchedLead?.osc?.uf || null,
       matchedEditalId: effectiveEditalId,
       mondayBatchOrder: mondayMatch?.order || null,
+      mediaType: extracted.mediaType || 'text',
+      sharedContacts: extracted.sharedContacts || [],
       incomingText,
       sdrResult: parsed,
       autoReplyDispatch,
       angelaAlertDispatch,
+      favorableContactsSynced,
       monitor
     });
   } catch (error: any) {
