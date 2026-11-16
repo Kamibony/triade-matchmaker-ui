@@ -67672,5 +67672,2902 @@
     },
     "last_checked_date": "2026-11-15T10:29:53.405Z",
     "evaluated_editais": []
+  },
+  "17505249007407": {
+    "osc": {
+      "cnpj": "17505249007407",
+      "nome": "MITRA ARQUIDIOCESANA DE BELO HORIZONTE",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1978,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T09:26:13.691Z",
+    "evaluated_editais": []
+  },
+  "17505249022392": {
+    "osc": {
+      "cnpj": "17505249022392",
+      "nome": "MITRA ARQUIDIOCESANA DE BELO HORIZONTE",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1998,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0314767349"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:14.143Z",
+    "evaluated_editais": []
+  },
+  "21106117000124": {
+    "osc": {
+      "cnpj": "21106117000124",
+      "nome": "SOCIEDADE DOS SURDOS DE BELO HORIZONTE",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1979,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3136361291"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:14.462Z",
+    "evaluated_editais": []
+  },
+  "22441067000102": {
+    "osc": {
+      "cnpj": "22441067000102",
+      "nome": "CABANA ESPIRITA UMBANDISTA CABOCLO PENA AZUL",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1986,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3125558090",
+        "ddd_telefone_2": "3125148090"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:14.600Z",
+    "evaluated_editais": []
+  },
+  "23851884000193": {
+    "osc": {
+      "cnpj": "23851884000193",
+      "nome": "IGREJA BATISTA NOVO ALVORECER",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T09:26:14.739Z",
+    "evaluated_editais": []
+  },
+  "21240403000269": {
+    "osc": {
+      "cnpj": "21240403000269",
+      "nome": "INSTITUTO DAS SERVAS REPARADORAS - MISSAO BRASIL",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Serviços de assistência social sem alojamento",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3438319158",
+        "ddd_telefone_2": "3438315457"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:15.036Z",
+    "evaluated_editais": []
+  },
+  "10580063000118": {
+    "osc": {
+      "cnpj": "10580063000118",
+      "nome": "IGREJA BATISTA GERACAO DE ADORADORES",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2008,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3189613519"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:15.341Z",
+    "evaluated_editais": []
+  },
+  "13470777000161": {
+    "osc": {
+      "cnpj": "13470777000161",
+      "nome": "IGREJA PENTECOSTAL ESSA TERRA E SANTA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3133365375",
+        "ddd_telefone_2": "3133229002"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:16.455Z",
+    "evaluated_editais": []
+  },
+  "20109814000176": {
+    "osc": {
+      "cnpj": "20109814000176",
+      "nome": "PROJETO BOM NA BOLA BOM NA VIDA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Produção e promoção de eventos esportivos",
+      "cnae_secundario_descricao": "Agências de viagens | Serviços de reservas e outros serviços de turismo não especificados anteriormente | Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais | Ensino de esportes",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3197912605"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:16.791Z",
+    "evaluated_editais": []
+  },
+  "10790992000151": {
+    "osc": {
+      "cnpj": "10790992000151",
+      "nome": "ASSOCIACAO CULTURAL PIGMALIAO",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Ensino de arte e cultura não especificado anteriormente",
+      "cnae_secundario_descricao": "Atividades de produção cinematográfica, de vídeos e de programas de televisão não especificadas anteriormente | Produção teatral | Produção de espetáculos circenses, de marionetes e similares | Atividades de sonorização e de iluminação | Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132230420"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:17.108Z",
+    "evaluated_editais": []
+  },
+  "10897990000166": {
+    "osc": {
+      "cnpj": "10897990000166",
+      "nome": "ASSOCIACAO EM PROL DA VIDA E DONA - APVD",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Impressão de livros, revistas e outras publicações periódicas | Atividades de produção cinematográfica, de vídeos e de programas de televisão não especificadas anteriormente | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Educação profissional de nível técnico | Atividades de apoio à educação, exceto caixas escolares | Ensino de dança | Ensino de arte e cultura não especificado anteriormente | Outras atividades de ensino não especificadas anteriormente | Atividades de atenção ambulatorial não especificadas anteriormente | Atividades de fisioterapia | Atividades de profissionais da área de saúde não especificadas anteriormente | Atividades de apoio à gestão de saúde | Atividades de práticas integrativas e complementares em saúde humana | Outras atividades de atenção à saúde humana não especificadas anteriormente | Atividades de centros de assistência psicossocial | Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química e grupos similares não | Serviços de assistência social sem alojamento | Produção teatral | Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente | Produção e promoção de eventos esportivos | Outras atividades esportivas não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3191899713"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:17.571Z",
+    "evaluated_editais": [
+      "19424"
+    ],
+    "ipea_id": 534499,
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO EM PROL DA VIDA E DONA - APVD, sediada em Belo Horizonte - MG e fundada em 2009, é uma associação privada cuja atividade principal é a defesa de direitos sociais, contando com um leque amplo de atividades secundárias nas áreas de saúde, educação, artes e assistência social.\n\n### 🎯 Alinhamento com o Edital\nO edital busca apoiar projetos de pesquisa e desenvolvimento de plataformas digitais baseadas em software livre e protocolos abertos. A APVD não apresenta aderência temática com ciência, tecnologia ou software livre, tornando a elegibilidade inviável para esta chamada.",
+    "dossie_updated_at": "2026-11-16T09:26:57.892Z"
+  },
+  "11057671000105": {
+    "osc": {
+      "cnpj": "11057671000105",
+      "nome": "CONFEDERACAO INTERCONFESSIONAL CRISTA DE CAPELANIA, TEOLOGIA, EDUCACAO E PASTORAIS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "Educação superior - graduação | Educação superior - graduação e pós-graduação | Educação superior - pós-graduação e extensão",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132010312",
+        "ddd_telefone_2": "3183093757"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:17.862Z",
+    "evaluated_editais": []
+  },
+  "03683631000140": {
+    "osc": {
+      "cnpj": "03683631000140",
+      "nome": "UNIAO REPRESENTATIVA DOS ESTUDANTES DE BELO HORIZONTE",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2000,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "313920385"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:17.996Z",
+    "evaluated_editais": []
+  },
+  "03867329000142": {
+    "osc": {
+      "cnpj": "03867329000142",
+      "nome": "O GRUPO DA MELHOR IDADE ANOS DOURADOS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2000,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134939606",
+        "ddd_telefone_2": "3188969606"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:18.309Z",
+    "evaluated_editais": []
+  },
+  "03832239000205": {
+    "osc": {
+      "cnpj": "03832239000205",
+      "nome": "ASSOCIACAO DA IGREJA METODISTA - 4A. REGIAO ECLESIASTICA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2000,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132414459"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:18.446Z",
+    "evaluated_editais": []
+  },
+  "03832239006157": {
+    "osc": {
+      "cnpj": "03832239006157",
+      "nome": "ASSOCIACAO DA IGREJA METODISTA - 4A. REGIAO ECLESIASTICA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2000,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132414459"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:18.752Z",
+    "evaluated_editais": []
+  },
+  "10742474000162": {
+    "osc": {
+      "cnpj": "10742474000162",
+      "nome": "IGREJA PENTECOSTAL PROFETAS DO AVIVAMENTO",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134548960"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:19.055Z",
+    "evaluated_editais": []
+  },
+  "06290177000156": {
+    "osc": {
+      "cnpj": "06290177000156",
+      "nome": "ASSOCIACAO ARQUITETAS SEM FRONTEIRAS - ASF BRASIL",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2003,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3592504305",
+        "ddd_telefone_2": "3199311993"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:19.184Z",
+    "evaluated_editais": []
+  },
+  "04159989000131": {
+    "osc": {
+      "cnpj": "04159989000131",
+      "nome": "ASSOCIACAO UM ATO DE AMOR",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2000,
+      "cnae_primario_descricao": "Serviços de assistência social sem alojamento",
+      "cnae_secundario_descricao": "Ensino de esportes | Ensino de dança | Ensino de música | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente | Atividades de psicologia e psicanálise | Outras atividades esportivas não especificadas anteriormente | Outras atividades de recreação e lazer não especificadas anteriormente | Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134370763"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:19.308Z",
+    "evaluated_editais": []
+  },
+  "04382550000173": {
+    "osc": {
+      "cnpj": "04382550000173",
+      "nome": "ASSOCIACAO MINEIRA DE HEMODINAMICA E CARDIOLOGIA INTERVENCIONISTA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2001,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132139246"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:19.644Z",
+    "evaluated_editais": []
+  },
+  "05952053000126": {
+    "osc": {
+      "cnpj": "05952053000126",
+      "nome": "ASSOCIACAO DOS MEMBROS DO CORPO CONSULAR NO ESTADO DE MINAS GERAIS - AMCC-MG",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2003,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3133114962"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:19.973Z",
+    "evaluated_editais": []
+  },
+  "14934501000150": {
+    "osc": {
+      "cnpj": "14934501000150",
+      "nome": "ASSOCIACAO CIVIL DOS SERVIDORES DA SECRETARIA DE ESTADO DE FAZENDA DE MINAS GERAIS RECEITA SOLIDARIA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132137890"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:20.261Z",
+    "evaluated_editais": []
+  },
+  "62955505869805": {
+    "osc": {
+      "cnpj": "62955505869805",
+      "nome": "IGREJA DO EVANGELHO QUADRANGULAR",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T09:26:20.854Z",
+    "evaluated_editais": []
+  },
+  "62955505308374": {
+    "osc": {
+      "cnpj": "62955505308374",
+      "nome": "IGREJA DO EVANGELHO QUADRANGULAR",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1991,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T09:26:20.986Z",
+    "evaluated_editais": []
+  },
+  "62955505308455": {
+    "osc": {
+      "cnpj": "62955505308455",
+      "nome": "IGREJA DO EVANGELHO QUADRANGULAR",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1991,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T09:26:21.326Z",
+    "evaluated_editais": []
+  },
+  "62955505314188": {
+    "osc": {
+      "cnpj": "62955505314188",
+      "nome": "IGREJA DO EVANGELHO QUADRANGULAR",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1991,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T09:26:21.464Z",
+    "evaluated_editais": []
+  },
+  "70953401000141": {
+    "osc": {
+      "cnpj": "70953401000141",
+      "nome": "IGREJA UNIDA DE NOVA GRANADA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1993,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3133738989"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:21.758Z",
+    "evaluated_editais": []
+  },
+  "09019773000194": {
+    "osc": {
+      "cnpj": "09019773000194",
+      "nome": "CASA DE NAZARE",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2000,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132734399"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:21.976Z",
+    "evaluated_editais": []
+  },
+  "09220952000195": {
+    "osc": {
+      "cnpj": "09220952000195",
+      "nome": "ASSOCIACAO BRASILEIRA DOS AMIGOS CONDUTORES DE VEICULOS - PROTVEL",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132737655"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:22.117Z",
+    "evaluated_editais": []
+  },
+  "62955505205729": {
+    "osc": {
+      "cnpj": "62955505205729",
+      "nome": "IGREJA DO EVANGELHO QUADRANGULAR",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1986,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T09:26:23.140Z",
+    "evaluated_editais": []
+  },
+  "62955505280771": {
+    "osc": {
+      "cnpj": "62955505280771",
+      "nome": "IGREJA DO EVANGELHO QUADRANGULAR",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T09:26:23.465Z",
+    "evaluated_editais": []
+  },
+  "09340219000104": {
+    "osc": {
+      "cnpj": "09340219000104",
+      "nome": "INSTITUTO DE APOIO GENESIS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Educação infantil - pré-escola | Ensino fundamental | Outras atividades de atenção à saúde humana não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132229250"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:23.819Z",
+    "evaluated_editais": []
+  },
+  "09627883000139": {
+    "osc": {
+      "cnpj": "09627883000139",
+      "nome": "IGREJA APOSTOLICA CRISTA RESTAURANDO VIDAS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2008,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3133820072",
+        "ddd_telefone_2": "3191984335"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:24.355Z",
+    "evaluated_editais": []
+  },
+  "10463599000153": {
+    "osc": {
+      "cnpj": "10463599000153",
+      "nome": "ROTARY CLUBE BELO HORIZONTE - ALIANCA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2008,
+      "cnae_primario_descricao": "Serviços de assistência social sem alojamento",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132017366"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:24.479Z",
+    "evaluated_editais": []
+  },
+  "07153969000303": {
+    "osc": {
+      "cnpj": "07153969000303",
+      "nome": "ASSOCIACAO GOSPA MIRA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2013,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Atividades de rádio",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3130117922"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:25.194Z",
+    "evaluated_editais": []
+  },
+  "08413906000140": {
+    "osc": {
+      "cnpj": "08413906000140",
+      "nome": "MOTOCLUBE ESQUADRAO LOBO",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3198636400"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:25.506Z",
+    "evaluated_editais": []
+  },
+  "62955505868248": {
+    "osc": {
+      "cnpj": "62955505868248",
+      "nome": "IGREJA DO EVANGELHO QUADRANGULAR",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T09:26:27.359Z",
+    "evaluated_editais": []
+  },
+  "00794227000156": {
+    "osc": {
+      "cnpj": "00794227000156",
+      "nome": "INSTITUTO DE PROMOCAO SOCIAL E HUMANA DARCY RIBEIRO",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1995,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3125514412"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:28.095Z",
+    "evaluated_editais": []
+  },
+  "17344698000165": {
+    "osc": {
+      "cnpj": "17344698000165",
+      "nome": "PRIMEIRA IGREJA BATISTA DO BAIRRO NOVO DAS INDUSTRIAS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1983,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3133832945"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:29.166Z",
+    "evaluated_editais": []
+  },
+  "03442504000150": {
+    "osc": {
+      "cnpj": "03442504000150",
+      "nome": "IGREJA DE DEUS BIBLICA CIDADE FORTE",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1999,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3175550899"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:29.472Z",
+    "evaluated_editais": []
+  },
+  "36488712000149": {
+    "osc": {
+      "cnpj": "36488712000149",
+      "nome": "ASSOCIACAO BRASILEIRA DE TERAPIA DO ESQUEMA - ABTE",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de terapia ocupacional",
+      "cnae_secundario_descricao": "Pesquisa e desenvolvimento experimental em ciências sociais e humanas | Treinamento em desenvolvimento profissional e gerencial",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "9881158516"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:30.162Z",
+    "evaluated_editais": [
+      "19424"
+    ],
+    "ipea_id": 1322536,
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO BRASILEIRA DE TERAPIA DO ESQUEMA - ABTE, sediada em Porto Alegre, RS, foi fundada em 2020. Atua principalmente com terapia ocupacional, além de pesquisa em ciências sociais e humanas e treinamento profissional.\n\n### 🎯 Alinhamento com o Edital\nO edital busca o fomento a plataformas digitais livres e abertas (software livre e ciência e tecnologia). A atuação da ABTE está voltada para a saúde mental e terapia, sem qualquer relação com tecnologia da informação, desenvolvimento de software ou protocolos abertos.",
+    "dossie_updated_at": "2026-11-16T09:26:48.078Z"
+  },
+  "37076831000157": {
+    "osc": {
+      "cnpj": "37076831000157",
+      "nome": "ASSOCIACAO DOS DESPACHANTES DOCUMENTALISTAS DE TRANSITO DE PORTO ALEGRE",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5132237571",
+        "ddd_telefone_2": "5132173730"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:30.460Z",
+    "evaluated_editais": []
+  },
+  "36751059000169": {
+    "osc": {
+      "cnpj": "36751059000169",
+      "nome": "ASSOCIACAO VIVENDO ATOS 29",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais | Ensino de esportes | Ensino de música | Ensino de arte e cultura não especificado anteriormente | Ensino de idiomas | Treinamento em informática | Outras atividades de ensino não especificadas anteriormente | Atividade médica ambulatorial restrita a consultas | Atividades de atenção ambulatorial não especificadas anteriormente | Atividades de psicologia e psicanálise | Atividades de fisioterapia | Atividades de terapia ocupacional | Atividades de fonoaudiologia | Atividades de práticas integrativas e complementares em saúde humana | Outras atividades de atenção à saúde humana não especificadas anteriormente | Instituições de longa permanência para idosos | Atividades de centros de assistência psicossocial | Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química e grupos similares não | Orfanatos | Albergues assistenciais | Atividades de assistência social prestadas em residências coletivas e particulares não especificadas anteriormente | Serviços de assistência social sem alojamento | Produção musical | Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente | Gestão de instalações de esportes | Atividades de condicionamento físico | Outras atividades esportivas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5193505975"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:31.071Z",
+    "evaluated_editais": [
+      "19424"
+    ],
+    "ipea_id": 1323845,
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO VIVENDO ATOS 29, localizada em Porto Alegre - RS e fundada em 2020, tem como atividade principal a defesa de direitos sociais. Possui um leque extenso de atividades secundárias voltadas para saúde, assistência social, ensino de artes, esportes e idiomas, além de treinamento em informática básico.\n\n### 🎯 Alinhamento com o Edital\nO edital busca apoiar projetos de P&D em plataformas digitais baseadas em software livre e protocolos abertos. A OSC não apresenta histórico, CNAE ou foco institucional compatível com ciência, tecnologia ou desenvolvimento de software livre, resultando em um alinhamento nulo com o objeto do financiamento.",
+    "dossie_updated_at": "2026-11-16T09:27:01.360Z"
+  },
+  "36987687000148": {
+    "osc": {
+      "cnpj": "36987687000148",
+      "nome": "INSTITUTO IBERO-AMERICANO DA EMPRESA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2017,
+      "cnae_primario_descricao": "Atividades de organizações associativas patronais e empresariais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5132325199"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:31.204Z",
+    "evaluated_editais": []
+  },
+  "37010908000196": {
+    "osc": {
+      "cnpj": "37010908000196",
+      "nome": "INSTITUTO ADR BRASIL",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Treinamento em desenvolvimento profissional e gerencial",
+      "cnae_secundario_descricao": "Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Pesquisa e desenvolvimento experimental em ciências sociais e humanas | Atividades de apoio à educação, exceto caixas escolares",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5199988333"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:31.513Z",
+    "evaluated_editais": [
+      "19424"
+    ],
+    "ipea_id": 1324416,
+    "dossieText": "### 🏛️ Perfil Institucional\nO INSTITUTO ADR BRASIL, sediado em Porto Alegre - RS e fundado em 2020, é uma associação privada cuja atividade principal é o treinamento em desenvolvimento profissional e gerencial, complementada por atividades de consultoria e P&D em ciências sociais e humanas.\n\n### 🎯 Alinhamento com o Edital\nO edital exige projetos de P&D em plataformas digitais baseadas em software livre e protocolos abertos. As atividades da OSC estão voltadas para gestão e ciências sociais, demonstrando baixa aderência técnica aos requisitos de tecnologia da informação e software livre do fomento.",
+    "dossie_updated_at": "2026-11-16T09:26:51.394Z"
+  },
+  "37165874000109": {
+    "osc": {
+      "cnpj": "37165874000109",
+      "nome": "ASHRAE SOUTH BRAZIL CHAPTER",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Pesquisa e desenvolvimento experimental em ciências físicas e naturais | Atividades de apoio à educação, exceto caixas escolares | Treinamento em desenvolvimento profissional e gerencial | Outras atividades associativas profissionais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5199805656"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:31.828Z",
+    "evaluated_editais": [
+      "19424"
+    ],
+    "ipea_id": 1324909,
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASHRAE South Brazil Chapter, sediada em Porto Alegre, RS, é uma associação privada fundada em 2020. Atua principalmente em atividades associativas e possui CNAEs secundários em pesquisa em ciências físicas e naturais e treinamento profissional, estando ligada à comunidade técnica de HVAC&R (aquecimento, ventilação, ar-condicionado e refrigeração).\n\n### 🎯 Alinhamento com o Edital\nO edital busca apoiar projetos de pesquisa e desenvolvimento de plataformas digitais baseadas em software livre e protocolos abertos. A atuação da organização está focada em engenharia térmica e mecânica, apresentando baixa aderência temática com o fomento tecnológico proposto.",
+    "dossie_updated_at": "2026-11-16T09:26:54.491Z"
+  },
+  "37106323000174": {
+    "osc": {
+      "cnpj": "37106323000174",
+      "nome": "SOCIEDADE CULTURAL ORFEU",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5186080000",
+        "ddd_telefone_2": "5195654367"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:32.162Z",
+    "evaluated_editais": []
+  },
+  "37427223000140": {
+    "osc": {
+      "cnpj": "37427223000140",
+      "nome": "TENDA ESPIRITA DE UMBANDA GUIADOS PELA LUZ",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133443367"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:32.302Z",
+    "evaluated_editais": []
+  },
+  "37407184000119": {
+    "osc": {
+      "cnpj": "37407184000119",
+      "nome": "ASSOCIACAO DOS GUARDAS MUNICIPAIS DE PORTO ALEGRE",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5184971943"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:32.783Z",
+    "evaluated_editais": []
+  },
+  "37332067000133": {
+    "osc": {
+      "cnpj": "37332067000133",
+      "nome": "ONG INOVA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5191386885"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:33.482Z",
+    "evaluated_editais": []
+  },
+  "37463815000117": {
+    "osc": {
+      "cnpj": "37463815000117",
+      "nome": "ASSOCIACAO CAO DA GUARDA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2015,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5196247176",
+        "ddd_telefone_2": "5133918411"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:33.790Z",
+    "evaluated_editais": []
+  },
+  "37462053000134": {
+    "osc": {
+      "cnpj": "37462053000134",
+      "nome": "COLETIVO UBUNTU",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5199853219",
+        "ddd_telefone_2": "5198448032"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:34.146Z",
+    "evaluated_editais": []
+  },
+  "37610861000100": {
+    "osc": {
+      "cnpj": "37610861000100",
+      "nome": "ASSOCIACAO MUSICA DO BEM",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Ensino de música | Produção musical | Atividades de associações de defesa de direitos sociais | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5199588741"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:34.456Z",
+    "evaluated_editais": []
+  },
+  "37501923000137": {
+    "osc": {
+      "cnpj": "37501923000137",
+      "nome": "INSTITUTO ESPERANZA ORGANIZACAO HUMANITARIA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5131356220"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:34.760Z",
+    "evaluated_editais": []
+  },
+  "37682109000166": {
+    "osc": {
+      "cnpj": "37682109000166",
+      "nome": "CASA DO MEDIUM ORIENTE",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5192566709"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:35.056Z",
+    "evaluated_editais": []
+  },
+  "37673098000158": {
+    "osc": {
+      "cnpj": "37673098000158",
+      "nome": "ASSOCIACAO GAUCHA DOS TRABALHADORES DE SAUDE - AGTS/RS",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5198474381"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:35.366Z",
+    "evaluated_editais": []
+  },
+  "37697820000194": {
+    "osc": {
+      "cnpj": "37697820000194",
+      "nome": "AUGUSTA E RESPEITAVEL LOJA SIMBOLICA OSWALDO NUNES - 3068",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5191368663"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:35.529Z",
+    "evaluated_editais": []
+  },
+  "37641705000106": {
+    "osc": {
+      "cnpj": "37641705000106",
+      "nome": "INTERNATIONAL BUSINESS INSTITUTO",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Outras atividades de ensino não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133178000"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:35.833Z",
+    "evaluated_editais": []
+  },
+  "17582094000157": {
+    "osc": {
+      "cnpj": "17582094000157",
+      "nome": "COMUNIDADE EVANGELICA DE CONFISSAO LUTERANA MARTIN LUTHER EM PORTO ALEGRE",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2013,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133436834"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:36.168Z",
+    "evaluated_editais": []
+  },
+  "37833667000185": {
+    "osc": {
+      "cnpj": "37833667000185",
+      "nome": "IGREJA EVANGELICA POVO DE DEUS",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5185649074"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:36.455Z",
+    "evaluated_editais": []
+  },
+  "37901002000161": {
+    "osc": {
+      "cnpj": "37901002000161",
+      "nome": "ASSOCIACAO GAUCHA DE AUDIODESCRITORES (AGADE)",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2016,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5196128261"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:36.785Z",
+    "evaluated_editais": []
+  },
+  "37944302000128": {
+    "osc": {
+      "cnpj": "37944302000128",
+      "nome": "IGREJA PENTECOSTAL COLUNA DA VERDADE CRISTO VEM",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5191178036"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:37.094Z",
+    "evaluated_editais": []
+  },
+  "37784460000168": {
+    "osc": {
+      "cnpj": "37784460000168",
+      "nome": "ASSOCIACAO DOS CREDORES DO EMPREENDIMENTO RESIDENCIAL IBIZA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5184097794"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:37.433Z",
+    "evaluated_editais": []
+  },
+  "02564662000110": {
+    "osc": {
+      "cnpj": "02564662000110",
+      "nome": "INSTITUTO PORTO-ALEGRENSE DE ARTE-EDUCACAO",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1998,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T09:26:37.859Z",
+    "evaluated_editais": []
+  },
+  "02318677000106": {
+    "osc": {
+      "cnpj": "02318677000106",
+      "nome": "ASSOCIACAO DOS SERVIDORES DA JUSTICA FEDERAL DE PRIMEIRA ESEGUNDA INSTANCIA DO RIO GRANDE DO SUL",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0512112360"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:38.155Z",
+    "evaluated_editais": []
+  },
+  "37991712000120": {
+    "osc": {
+      "cnpj": "37991712000120",
+      "nome": "CENTRO AFRO-BRASILEIRO REINO DE XANGO, DE NACAO JEJE NAGO",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5130280642"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:38.566Z",
+    "evaluated_editais": []
+  },
+  "02820379000101": {
+    "osc": {
+      "cnpj": "02820379000101",
+      "nome": "ASSOCIACAO DE MULHERES NOSSA SENHORA APARECIDA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1998,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente | Educação infantil - creche | Educação infantil - pré-escola",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5136464002"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:38.893Z",
+    "evaluated_editais": []
+  },
+  "37984658000195": {
+    "osc": {
+      "cnpj": "37984658000195",
+      "nome": "INSTITUTO DE CIENCIAS, TECNOLOGIA E INOVACAO EM MOBILIDADE E ENERGIAS RENOVAVEIS",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Pesquisa e desenvolvimento experimental em ciências físicas e naturais",
+      "cnae_secundario_descricao": "Consultoria em tecnologia da informação | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Educação profissional de nível tecnológico",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5186819712"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:39.214Z",
+    "evaluated_editais": [
+      "19424"
+    ],
+    "ipea_id": 1328040,
+    "dossieText": "### 🏛️ Perfil Institucional\nO INSTITUTO DE CIENCIAS, TECNOLOGIA E INOVACAO EM MOBILIDADE E ENERGIAS RENOVAVEIS, fundado em 2020 e sediado em Porto Alegre - RS, é uma associação privada dedicada à pesquisa e desenvolvimento experimental em ciências físicas e naturais, além de consultoria em TI e educação profissional.\n\n### 🎯 Alinhamento com o Edital\nA organização demonstra maturidade institucional desde 2020 e possui em seu escopo de atuação primário e secundário atividades fundamentais de P&D e tecnologia da informação, o que a torna altamente apta a concorrer na modalidade de apoio à pesquisa para o desenvolvimento de plataformas digitais abertas.",
+    "dossie_updated_at": "2026-11-16T09:26:44.824Z"
+  },
+  "38009779000189": {
+    "osc": {
+      "cnpj": "38009779000189",
+      "nome": "FRENTE NEGRA GAUCHA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Serviços de organização de feiras, congressos, exposições e festas | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5199859592"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:39.345Z",
+    "evaluated_editais": []
+  },
+  "87098026000100": {
+    "osc": {
+      "cnpj": "87098026000100",
+      "nome": "ASSOCIACAO GAUCHA DE AVICULTURA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1972,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0512127357"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:39.486Z",
+    "evaluated_editais": []
+  },
+  "38075344000213": {
+    "osc": {
+      "cnpj": "38075344000213",
+      "nome": "ONG VIDALPRO FUTEBOL CLUBE",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "Ensino de esportes | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5181231773"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:39.789Z",
+    "evaluated_editais": []
+  },
+  "87115838000613": {
+    "osc": {
+      "cnpj": "87115838000613",
+      "nome": "INSTITUICAO ADVENTISTA SUL-RIO-GRANDENSE DE EDUCACAO",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1973,
+      "cnae_primario_descricao": "Ensino fundamental",
+      "cnae_secundario_descricao": "Educação infantil - pré-escola | Ensino médio | Outras atividades de ensino não especificadas anteriormente | Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T09:26:40.085Z",
+    "evaluated_editais": []
+  },
+  "87135547000182": {
+    "osc": {
+      "cnpj": "87135547000182",
+      "nome": "ASSOC DOS ORIENTADORES EDUCACIONAIS DO R GRANDE DO SUL",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1973,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T09:26:40.405Z",
+    "evaluated_editais": []
+  },
+  "38116341000108": {
+    "osc": {
+      "cnpj": "38116341000108",
+      "nome": "ASSOCIACAO NEXO-ESPORTE E CULTURA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Produção e promoção de eventos esportivos",
+      "cnae_secundario_descricao": "Ensino de esportes | Ensino de arte e cultura não especificado anteriormente | Outras atividades esportivas não especificadas anteriormente | Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5199999999"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:40.998Z",
+    "evaluated_editais": []
+  },
+  "38118657000120": {
+    "osc": {
+      "cnpj": "38118657000120",
+      "nome": "OPEN HEART CHURCH BRASIL",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Serviços de assistência social sem alojamento",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133158060"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:41.314Z",
+    "evaluated_editais": []
+  },
+  "88713888000150": {
+    "osc": {
+      "cnpj": "88713888000150",
+      "nome": "ASSOCIACAO GAUCHA DOS AUDITORES FISCAIS DA RECEITA FEDERAL DO BRASIL (ANFIP-RS)",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1976,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-16T09:26:41.615Z",
+    "evaluated_editais": []
+  },
+  "89150338000990": {
+    "osc": {
+      "cnpj": "89150338000990",
+      "nome": "IGREJA CRISTA PRIMITIVA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133373764",
+        "ddd_telefone_2": "5133374641"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:26:41.954Z",
+    "evaluated_editais": []
+  },
+  "37536403000160": {
+    "osc": {
+      "cnpj": "37536403000160",
+      "nome": "IGREJA EVANGELICA PENTECOSTAL A PALAVRA DE CRISTO PARA O BRASIL CASA DE ORACAO RESTITUINDO VIDAS EM JESUS CRISTO",
+      "uf": "ES",
+      "municipio": "MANTENOPOLIS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2788311133"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:25.285Z",
+    "evaluated_editais": []
+  },
+  "37405678000164": {
+    "osc": {
+      "cnpj": "37405678000164",
+      "nome": "ASSOCIACAO CAPIXABA DAS EMPRESAS DE SAUDE E SEGURANCA NO TRABALHO (ACESST)",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações associativas patronais e empresariais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2899247035"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:25.653Z",
+    "evaluated_editais": [
+      "19714"
+    ],
+    "ipea_id": 1325804,
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIAÇÃO CAPIXABA DAS EMPRESAS DE SAUDE E SEGURANCA NO TRABALHO (ACESST), fundada em 2020 e sediada em Vitória (ES), atua como uma organização associativa patronal e empresarial no setor de saúde e segurança do trabalho.\n\n### 🎯 Alinhamento com o Edital\nEmbora esteja localizada no Espírito Santo e atue no setor de saúde, a ACESST possui natureza de representação empresarial/patronal e não se enquadra no foco de desenvolvimento de negócios liderados por mulheres com soluções inovadoras e tecnológicas exigido pelo Edital Fapes nº 28/2026.",
+    "dossie_updated_at": "2026-11-16T09:28:02.907Z"
+  },
+  "37407679000148": {
+    "osc": {
+      "cnpj": "37407679000148",
+      "nome": "ASSOCIACAO DOS INSPETORES PENITENCIARIOS DO ESTADO DO ESPIRITO SANTO - ASSIP/ES",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2793090050"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:25.996Z",
+    "evaluated_editais": [
+      "19714"
+    ],
+    "ipea_id": 1325821,
+    "dossieText": "### 🏛️ Perfil Institucional\nA ASSIP/ES (Associação dos Inspetores Penitenciários do Estado do Espírito Santo), fundada em 2020 e localizada em Vitória/ES, atua na representação e defesa dos interesses profissionais da categoria de inspetores penitenciários.\n\n### 🎯 Alinhamento com o Edital\nO edital Fapes nº 28/2026 (Elas Inovam) foca no apoio a negócios inovadores liderados por mulheres em áreas como sustentabilidade, saúde, energias renováveis e transformação digital. A instituição possui foco em atividade associativa profissional de segurança pública, não apresentando aderência aos critérios de inovação e empreendedorismo feminino exigidos.",
+    "dossie_updated_at": "2026-11-16T09:28:09.842Z"
+  },
+  "37435173000142": {
+    "osc": {
+      "cnpj": "37435173000142",
+      "nome": "IGREJA ALMA CHURCH BRASIL",
+      "uf": "ES",
+      "municipio": "CARIACICA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2734412374"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:26.311Z",
+    "evaluated_editais": []
+  },
+  "37361379000175": {
+    "osc": {
+      "cnpj": "37361379000175",
+      "nome": "ASSOCIACAO MORITA DE KARATE-DO E KOBUDO",
+      "uf": "ES",
+      "municipio": "SERRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Ensino de esportes",
+      "cnae_secundario_descricao": "Produção e promoção de eventos esportivos | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2797405566"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:26.623Z",
+    "evaluated_editais": []
+  },
+  "37361530000175": {
+    "osc": {
+      "cnpj": "37361530000175",
+      "nome": "ASSOCIACAO DE MORADORES E PRODUTORES RURAIS DE AFONSOS - AMA",
+      "uf": "ES",
+      "municipio": "ITAPEMIRIM",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de apoio à agricultura não especificadas anteriormente | Produção e promoção de eventos esportivos | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "1282032528"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:26.967Z",
+    "evaluated_editais": []
+  },
+  "37409365000184": {
+    "osc": {
+      "cnpj": "37409365000184",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS GERACAO DO AVIVAMENTO",
+      "uf": "ES",
+      "municipio": "VILA VELHA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2795197565"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:27.280Z",
+    "evaluated_editais": []
+  },
+  "37496878000170": {
+    "osc": {
+      "cnpj": "37496878000170",
+      "nome": "ASSOCIACAO REGIONAL TRES DIVISAS DO QUARTO DE MILHA - ARTDQM",
+      "uf": "ES",
+      "municipio": "SAO MATEUS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Criação de eqüinos",
+      "cnae_secundario_descricao": "Serviços de organização de feiras, congressos, exposições e festas | Produção e promoção de eventos esportivos | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2796591009"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:27.622Z",
+    "evaluated_editais": []
+  },
+  "37551750000161": {
+    "osc": {
+      "cnpj": "37551750000161",
+      "nome": "IGREJA EVANGELICA MANANCIAL DE VIDA",
+      "uf": "ES",
+      "municipio": "SERRA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2799767367"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:27.910Z",
+    "evaluated_editais": []
+  },
+  "37551826000159": {
+    "osc": {
+      "cnpj": "37551826000159",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS MISSAO IDE",
+      "uf": "ES",
+      "municipio": "SERRA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2797376281"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:28.207Z",
+    "evaluated_editais": []
+  },
+  "37630458000134": {
+    "osc": {
+      "cnpj": "37630458000134",
+      "nome": "ASSOCIACAO DOS TRABALHADORES RURAIS E AGRICULTORES FAMILIARES DA COMUNIDADE DO BERTO PADRE - ES (ATRAP)",
+      "uf": "ES",
+      "municipio": "SAO JOSE DO CALCADO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2899495739"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:29.189Z",
+    "evaluated_editais": []
+  },
+  "37637557000148": {
+    "osc": {
+      "cnpj": "37637557000148",
+      "nome": "ASSOCIACAO DOS ADQUIRENTES E PERMUTANTES DO EDIFICIO RESIDENCIAL RECANTO DO MORENO - AMORENO",
+      "uf": "ES",
+      "municipio": "VILA VELHA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2721274150"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:29.343Z",
+    "evaluated_editais": []
+  },
+  "37610956000115": {
+    "osc": {
+      "cnpj": "37610956000115",
+      "nome": "AMRQA-ASSOCIACAO DE MORADORES RESISTENTES QUILOMBOLAS DO ANGELIM III",
+      "uf": "ES",
+      "municipio": "CONCEICAO DA BARRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2795142099"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:29.673Z",
+    "evaluated_editais": []
+  },
+  "37667073000141": {
+    "osc": {
+      "cnpj": "37667073000141",
+      "nome": "ASSEMBLEIA DE DEUS LUZ PARA AS NACOES EM VILA VELHA",
+      "uf": "ES",
+      "municipio": "VILA VELHA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0190000000"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:29.810Z",
+    "evaluated_editais": []
+  },
+  "37714603000165": {
+    "osc": {
+      "cnpj": "37714603000165",
+      "nome": "ISBR - INSTITUTO SOCIAL BOLA NA REDE",
+      "uf": "ES",
+      "municipio": "SERRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Serviços de assistência social sem alojamento",
+      "cnae_secundario_descricao": "Ensino de esportes | Ensino de dança | Ensino de artes cênicas, exceto dança | Ensino de música | Ensino de arte e cultura não especificado anteriormente | Ensino de idiomas | Treinamento em informática | Treinamento em desenvolvimento profissional e gerencial",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798851442"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:30.478Z",
+    "evaluated_editais": []
+  },
+  "37761284000149": {
+    "osc": {
+      "cnpj": "37761284000149",
+      "nome": "IGREJA BATISTA MEMORIAL EM ARACRUZ",
+      "uf": "ES",
+      "municipio": "ARACRUZ",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2732569750"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:31.676Z",
+    "evaluated_editais": []
+  },
+  "37803132000161": {
+    "osc": {
+      "cnpj": "37803132000161",
+      "nome": "PRIMEIRA IGREJA BATISTA DE CARATOIRA",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2797026138"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:32.569Z",
+    "evaluated_editais": []
+  },
+  "37815454000120": {
+    "osc": {
+      "cnpj": "37815454000120",
+      "nome": "IGREJA PRESBITERIANA EM CACHOERINHA DO ITAUNAS",
+      "uf": "ES",
+      "municipio": "BARRA DE SAO FRANCISCO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798674935"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:32.897Z",
+    "evaluated_editais": []
+  },
+  "37862312000114": {
+    "osc": {
+      "cnpj": "37862312000114",
+      "nome": "FEDERACAO DAS ASSOCIACOES DE MORADORES DE ARACRUZ - FAMA",
+      "uf": "ES",
+      "municipio": "ARACRUZ",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações políticas | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798229034"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:33.195Z",
+    "evaluated_editais": []
+  },
+  "37872935000178": {
+    "osc": {
+      "cnpj": "37872935000178",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS ALIANCA",
+      "uf": "ES",
+      "municipio": "CARIACICA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2799999999"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:33.859Z",
+    "evaluated_editais": []
+  },
+  "37971127000168": {
+    "osc": {
+      "cnpj": "37971127000168",
+      "nome": "IGREJA CEU NA TERRA",
+      "uf": "ES",
+      "municipio": "ITAGUACU",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2796196844"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:34.193Z",
+    "evaluated_editais": []
+  },
+  "37961461000130": {
+    "osc": {
+      "cnpj": "37961461000130",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS MINISTERIO AGAPE DE SAO JOSE DO CALCADO - ES",
+      "uf": "ES",
+      "municipio": "SAO JOSE DO CALCADO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2835562081"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:34.509Z",
+    "evaluated_editais": []
+  },
+  "37964308000167": {
+    "osc": {
+      "cnpj": "37964308000167",
+      "nome": "SELF PROTECAO PATRIMONIAL MUTUALISTA",
+      "uf": "ES",
+      "municipio": "VILA VELHA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3141415729"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:34.827Z",
+    "evaluated_editais": []
+  },
+  "37973904000103": {
+    "osc": {
+      "cnpj": "37973904000103",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS SHALOM - IADS",
+      "uf": "ES",
+      "municipio": "VIANA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798991677"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:35.165Z",
+    "evaluated_editais": []
+  },
+  "37992952000149": {
+    "osc": {
+      "cnpj": "37992952000149",
+      "nome": "ASSOCIACAO NACIONAL DOS JURISDICIONADOS",
+      "uf": "ES",
+      "municipio": "FUNDAO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798695156"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:35.484Z",
+    "evaluated_editais": []
+  },
+  "38010689000108": {
+    "osc": {
+      "cnpj": "38010689000108",
+      "nome": "ASSOCIACAO HEIAN DE KARATE-DO - AHK",
+      "uf": "ES",
+      "municipio": "VIANA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Produção e promoção de eventos esportivos",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2799417691"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:35.847Z",
+    "evaluated_editais": []
+  },
+  "38028934000104": {
+    "osc": {
+      "cnpj": "38028934000104",
+      "nome": "MINISTERIO PROFETICO LEAO DE JUDA A IGREJA",
+      "uf": "ES",
+      "municipio": "MANTENOPOLIS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2788131850"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:36.178Z",
+    "evaluated_editais": []
+  },
+  "38057628000104": {
+    "osc": {
+      "cnpj": "38057628000104",
+      "nome": "ESCOLA DO EVANGELHO ALLAN KARDEC",
+      "uf": "ES",
+      "municipio": "SERRA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2788396435"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:36.480Z",
+    "evaluated_editais": []
+  },
+  "38047054000185": {
+    "osc": {
+      "cnpj": "38047054000185",
+      "nome": "ASSOCIACAO GANHADORES DE ALMAS PARA O REINO DE DEUS",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Serviços de assistência social sem alojamento",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2795042540"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:36.779Z",
+    "evaluated_editais": []
+  },
+  "38039782000145": {
+    "osc": {
+      "cnpj": "38039782000145",
+      "nome": "ASSOCIACAO DOS PRODUTORES RURAIS DA COMUNIDADE CABECEIRA DO CORREGO DA LAPA",
+      "uf": "ES",
+      "municipio": "MARILANDIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798398634"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:37.098Z",
+    "evaluated_editais": []
+  },
+  "38110511000139": {
+    "osc": {
+      "cnpj": "38110511000139",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS - MINISTERIO PLANTANDO SEMENTES - M.A. SERRA - ES",
+      "uf": "ES",
+      "municipio": "SERRA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2799017187",
+        "ddd_telefone_2": "2799012220"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:37.388Z",
+    "evaluated_editais": []
+  },
+  "38097581000102": {
+    "osc": {
+      "cnpj": "38097581000102",
+      "nome": "PRIMEIRA IGREJA BATISTA DA LAGOINHA EM VITORIA",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2734419646"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:37.727Z",
+    "evaluated_editais": []
+  },
+  "38101795000105": {
+    "osc": {
+      "cnpj": "38101795000105",
+      "nome": "DINAMEC",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Outras atividades de ensino não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Pesquisas de mercado e de opinião pública | Serviços de organização de feiras, congressos, exposições e festas | Treinamento em desenvolvimento profissional e gerencial",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2733333333"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:38.105Z",
+    "evaluated_editais": []
+  },
+  "38076670000164": {
+    "osc": {
+      "cnpj": "38076670000164",
+      "nome": "ACB - ASSOCIACAO CAPIXABA DE BENEFICIOS",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2799616503"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:38.428Z",
+    "evaluated_editais": []
+  },
+  "38094451000108": {
+    "osc": {
+      "cnpj": "38094451000108",
+      "nome": "INDENIZA ASSOCIACAO DE PROTECAO PATRIMONIAL MUTUALISTA",
+      "uf": "ES",
+      "municipio": "SERRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3125590744"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:38.731Z",
+    "evaluated_editais": []
+  },
+  "38258530000107": {
+    "osc": {
+      "cnpj": "38258530000107",
+      "nome": "IGREJA UNIDOS EM CRISTO JESUS MINISTERIO RESGATANDO VIDAS",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798947474",
+        "ddd_telefone_2": "2797032480"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:39.311Z",
+    "evaluated_editais": []
+  },
+  "38197955000153": {
+    "osc": {
+      "cnpj": "38197955000153",
+      "nome": "IGREJA EVANGELICA VERBO DA VIDA VILA VELHA - PRAIA DE ITAPARICA",
+      "uf": "ES",
+      "municipio": "VILA VELHA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798957983"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:39.643Z",
+    "evaluated_editais": []
+  },
+  "38230485000182": {
+    "osc": {
+      "cnpj": "38230485000182",
+      "nome": "CONSELHO DE ESCOLA DA CMEIEF PROFESSORA VIRGINIA MARIA DE OLIVEIRA AMARAL",
+      "uf": "ES",
+      "municipio": "DORES DO RIO PRETO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Educação infantil - pré-escola",
+      "cnae_secundario_descricao": "Ensino fundamental | Outras atividades de ensino não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2835591102"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:40.357Z",
+    "evaluated_editais": [
+      "19714"
+    ],
+    "ipea_id": 1329180,
+    "dossieText": "### 🏛️ Perfil Institucional\nO Conselho de Escola da CMEIEF Professora Virginia Maria de Oliveira Amaral, fundado em 2020, está localizado em Dores do Rio Preto (ES) e tem como atividade principal a educação infantil e pré-escola, atuando na gestão participativa da escola pública local.\n\n### 🎯 Alinhamento com o Edital\nO Edital Fapes nº 28/2026 (Elas Inovam) destina-se ao apoio de soluções inovadoras e negócios liderados por mulheres em áreas como tecnologia, bioeconomia e energias renováveis. A instituição não possui aderência aos objetivos de subvenção econômica empresarial e fomento a negócios.",
+    "dossie_updated_at": "2026-11-16T09:28:13.014Z"
+  },
+  "38258345000112": {
+    "osc": {
+      "cnpj": "38258345000112",
+      "nome": "SOCIEDADE DE ESTUDOS ESPIRITAS VIANNA DE CARVALHO",
+      "uf": "ES",
+      "municipio": "SERRA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2797506634"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:40.488Z",
+    "evaluated_editais": []
+  },
+  "38258534000195": {
+    "osc": {
+      "cnpj": "38258534000195",
+      "nome": "MISSAO AIME - AGENCIA DE APOIO A INICIATIVAS MISSIONARIAS E EVANGELISTICAS",
+      "uf": "ES",
+      "municipio": "GUARAPARI",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "Outras atividades de ensino não especificadas anteriormente | Atividades de associações de defesa de direitos sociais | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2899491239"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:40.791Z",
+    "evaluated_editais": []
+  },
+  "38418288000191": {
+    "osc": {
+      "cnpj": "38418288000191",
+      "nome": "IGREJA EVANGELICA MINISTERIO SEMEAR",
+      "uf": "ES",
+      "municipio": "CACHOEIRO DE ITAPEMIRIM",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2899551905",
+        "ddd_telefone_2": "2835185290"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:41.121Z",
+    "evaluated_editais": []
+  },
+  "38417522000166": {
+    "osc": {
+      "cnpj": "38417522000166",
+      "nome": "ASSOCIACAO DOS FAMILIARES REMANESCENTES DE QUILOMBOLAS DO PALMITO LINDOMAR MACHADO DO MUNICIPIO DE JAGUARE ES",
+      "uf": "ES",
+      "municipio": "JAGUARE",
+      "natureza_juridica": "Organização Social (OS)",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Cultivo de milho | Cultivo de outros cereais não especificados anteriormente | Cultivo de frutas de lavoura permanente não especificadas anteriormente | Produção de ovos | Fabricação de farinha de mandioca e derivados | Fabricação de produtos de padaria e confeitaria com predominância de produção própria | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2737673353",
+        "ddd_telefone_2": "2798288906"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:41.421Z",
+    "evaluated_editais": []
+  },
+  "38295439000161": {
+    "osc": {
+      "cnpj": "38295439000161",
+      "nome": "ATLETICO CAPIXABA ESPORTE CLUBE - ACEC",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Ensino de esportes | Outras atividades esportivas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2732331449"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:41.601Z",
+    "evaluated_editais": []
+  },
+  "38297251000152": {
+    "osc": {
+      "cnpj": "38297251000152",
+      "nome": "IGREJA EVANGELICA MINISTERIO CONHECENDO O CORACAO DO PAI",
+      "uf": "ES",
+      "municipio": "SERRA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2733286989",
+        "ddd_telefone_2": "2799847989"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:41.948Z",
+    "evaluated_editais": []
+  },
+  "38478066000164": {
+    "osc": {
+      "cnpj": "38478066000164",
+      "nome": "IGREJA PENTECOSTAL UNGIDA DE DEUS PELA FE",
+      "uf": "ES",
+      "municipio": "SERRA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2788638624",
+        "ddd_telefone_2": "2788652065"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:42.276Z",
+    "evaluated_editais": []
+  },
+  "38658640000166": {
+    "osc": {
+      "cnpj": "38658640000166",
+      "nome": "ONG DEFESA ANIMAL",
+      "uf": "ES",
+      "municipio": "CACHOEIRO DE ITAPEMIRIM",
+      "natureza_juridica": "Organização Social (OS)",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2899525341"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:42.601Z",
+    "evaluated_editais": []
+  },
+  "38651260000108": {
+    "osc": {
+      "cnpj": "38651260000108",
+      "nome": "CORAL CANTARES DE AFONSO CLAUDIO",
+      "uf": "ES",
+      "municipio": "AFONSO CLAUDIO",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Produção musical",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798836213"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:42.927Z",
+    "evaluated_editais": []
+  },
+  "38538136000122": {
+    "osc": {
+      "cnpj": "38538136000122",
+      "nome": "PRIMEIRA IGREJA REFORMADA EM VILA VELHA",
+      "uf": "ES",
+      "municipio": "VILA VELHA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2796032606",
+        "ddd_telefone_2": "2781510808"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:43.594Z",
+    "evaluated_editais": []
+  },
+  "38598050000195": {
+    "osc": {
+      "cnpj": "38598050000195",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS MINISTERIO CENTRAL",
+      "uf": "ES",
+      "municipio": "AGUA DOCE DO NORTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798594367"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:44.221Z",
+    "evaluated_editais": []
+  },
+  "38928153000176": {
+    "osc": {
+      "cnpj": "38928153000176",
+      "nome": "CLUBE DE TIRO COLT - CTC",
+      "uf": "ES",
+      "municipio": "CARIACICA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798333333"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:44.865Z",
+    "evaluated_editais": []
+  },
+  "39288229000109": {
+    "osc": {
+      "cnpj": "39288229000109",
+      "nome": "IGREJA CRISTA COMUNIDADE DA GRACA",
+      "uf": "ES",
+      "municipio": "VILA VELHA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2792928262"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:45.188Z",
+    "evaluated_editais": []
+  },
+  "39273790000114": {
+    "osc": {
+      "cnpj": "39273790000114",
+      "nome": "ASSOCIACAO BRASILEIRA DE TURISMO RECEPTIVO - RECEPT",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações associativas patronais e empresariais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2781491155"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:45.491Z",
+    "evaluated_editais": []
+  },
+  "39154213000103": {
+    "osc": {
+      "cnpj": "39154213000103",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS MINISTERIO SANTA MARIA DE JETIBA",
+      "uf": "ES",
+      "municipio": "SANTA MARIA DE JETIBA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798818123"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:45.811Z",
+    "evaluated_editais": []
+  },
+  "39264712000153": {
+    "osc": {
+      "cnpj": "39264712000153",
+      "nome": "IGREJA PENTECOSTAL UNIAO EM CRISTO",
+      "uf": "ES",
+      "municipio": "SERRA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2796227171"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:46.125Z",
+    "evaluated_editais": []
+  },
+  "39285105000170": {
+    "osc": {
+      "cnpj": "39285105000170",
+      "nome": "COMIPRES - CONSELHO MISSIONARIO PRESBITERIANO PARA EVANGELIZACAO DO SERTAO",
+      "uf": "ES",
+      "municipio": "VILA VELHA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2733115997"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:46.447Z",
+    "evaluated_editais": []
+  },
+  "39325889000112": {
+    "osc": {
+      "cnpj": "39325889000112",
+      "nome": "CLUBE DE TIRO CAVEIRA",
+      "uf": "ES",
+      "municipio": "CARIACICA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798313050"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:46.775Z",
+    "evaluated_editais": []
+  },
+  "39311661000173": {
+    "osc": {
+      "cnpj": "39311661000173",
+      "nome": "IGREJA ASSEMBLEIA DE DEUS MINISTERIO CASA DE ZADOQUE",
+      "uf": "ES",
+      "municipio": "CARIACICA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2799999999"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:47.074Z",
+    "evaluated_editais": []
+  },
+  "39606799000108": {
+    "osc": {
+      "cnpj": "39606799000108",
+      "nome": "ASSOCIACAO DE PRODUTORES RURAIS DO ALTO SANTA RITA",
+      "uf": "ES",
+      "municipio": "BREJETUBA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2797494940"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:47.380Z",
+    "evaluated_editais": []
+  },
+  "39406078000146": {
+    "osc": {
+      "cnpj": "39406078000146",
+      "nome": "IGREJA BATISTA AGAPE",
+      "uf": "ES",
+      "municipio": "GUARAPARI",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798374422"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:47.994Z",
+    "evaluated_editais": []
+  },
+  "39432288000109": {
+    "osc": {
+      "cnpj": "39432288000109",
+      "nome": "ONG INSTITUTO NALMA",
+      "uf": "ES",
+      "municipio": "SERRA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798468053"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:48.302Z",
+    "evaluated_editais": []
+  },
+  "39486344000198": {
+    "osc": {
+      "cnpj": "39486344000198",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS MINISTERIO AVIVA",
+      "uf": "ES",
+      "municipio": "LINHARES",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798665380",
+        "ddd_telefone_2": "2733737200"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:48.600Z",
+    "evaluated_editais": []
+  },
+  "39522836000191": {
+    "osc": {
+      "cnpj": "39522836000191",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS EM ALTO CAXIXE",
+      "uf": "ES",
+      "municipio": "VENDA NOVA DO IMIGRANTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798280380"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:48.926Z",
+    "evaluated_editais": []
+  },
+  "39568163000100": {
+    "osc": {
+      "cnpj": "39568163000100",
+      "nome": "ASSOCIACAO DOS MORADORES DA RUA JACOMO PANCIERI E ADJACENCIAS",
+      "uf": "ES",
+      "municipio": "COLATINA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798955590"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:49.268Z",
+    "evaluated_editais": []
+  },
+  "39395269000150": {
+    "osc": {
+      "cnpj": "39395269000150",
+      "nome": "IGREJA FILADELFIA CAMINHANDO COM JESUS",
+      "uf": "ES",
+      "municipio": "VILA VELHA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2799656736",
+        "ddd_telefone_2": "2797681651"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:49.907Z",
+    "evaluated_editais": []
+  },
+  "39450832000145": {
+    "osc": {
+      "cnpj": "39450832000145",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS MINISTERIO SOB TUA PALAVRA",
+      "uf": "ES",
+      "municipio": "LINHARES",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2796381014"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:50.368Z",
+    "evaluated_editais": []
+  },
+  "39514074000181": {
+    "osc": {
+      "cnpj": "39514074000181",
+      "nome": "GUERREIROS CLUBE DO TIRO CAMPESTRE",
+      "uf": "ES",
+      "municipio": "IBIRACU",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "Operadores turísticos | Serviços de reservas e outros serviços de turismo não especificados anteriormente | Serviços de organização de feiras, congressos, exposições e festas | Outras atividades de recreação e lazer não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2730664244"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:51.347Z",
+    "evaluated_editais": []
+  },
+  "39556818000120": {
+    "osc": {
+      "cnpj": "39556818000120",
+      "nome": "ASSOCIACAO MULTIPLIQUE",
+      "uf": "ES",
+      "municipio": "GUARAPARI",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2796445554"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:51.641Z",
+    "evaluated_editais": []
+  },
+  "39557123000163": {
+    "osc": {
+      "cnpj": "39557123000163",
+      "nome": "IGREJA EVANGELICA ASSEMBLEIA DE DEUS MINISTERIO EDIFICADOS NA PALAVRA",
+      "uf": "ES",
+      "municipio": "CARIACICA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2734412374"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:51.960Z",
+    "evaluated_editais": []
+  },
+  "39592566000195": {
+    "osc": {
+      "cnpj": "39592566000195",
+      "nome": "ASSOCIACAO DE PRODUTORES RURAIS AGUAS MARINHAS",
+      "uf": "ES",
+      "municipio": "BREJETUBA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2797717249"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:52.562Z",
+    "evaluated_editais": []
+  },
+  "39652593000106": {
+    "osc": {
+      "cnpj": "39652593000106",
+      "nome": "IGREJA PENTECOSTAL JESUS REINA PAZ",
+      "uf": "ES",
+      "municipio": "CACHOEIRO DE ITAPEMIRIM",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2888010590"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:52.875Z",
+    "evaluated_editais": []
+  },
+  "39842897000136": {
+    "osc": {
+      "cnpj": "39842897000136",
+      "nome": "IGREJA PENTECOSTAL FONTE DE ADORACAO",
+      "uf": "ES",
+      "municipio": "IUNA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2899584126"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:53.161Z",
+    "evaluated_editais": []
+  },
+  "39691319000146": {
+    "osc": {
+      "cnpj": "39691319000146",
+      "nome": "ASSEMBLEIA DE DEUS MINISTERIO FAMILIA EM CRISTO",
+      "uf": "ES",
+      "municipio": "CARIACICA",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798100850"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:53.462Z",
+    "evaluated_editais": []
+  },
+  "39691972000105": {
+    "osc": {
+      "cnpj": "39691972000105",
+      "nome": "ASSOCIACAO ALEGRIA DE VIVER - ALEVI",
+      "uf": "ES",
+      "municipio": "SAO GABRIEL DA PALHA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Treinamento em desenvolvimento profissional e gerencial | Atividades de centros de assistência psicossocial | Serviços de assistência social sem alojamento | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2799742827"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:53.779Z",
+    "evaluated_editais": []
+  },
+  "39693438000138": {
+    "osc": {
+      "cnpj": "39693438000138",
+      "nome": "ASSOCIACAO DE PEQUENAS E PEQUENOS PRODUTORES RURAIS DA REGIAO DOS PONTOES (APREPO)",
+      "uf": "ES",
+      "municipio": "SAO DOMINGOS DO NORTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2799870413",
+        "ddd_telefone_2": "2799500705"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:54.071Z",
+    "evaluated_editais": []
+  },
+  "39710386000160": {
+    "osc": {
+      "cnpj": "39710386000160",
+      "nome": "IMCN IGREJA MISSIONARIA CRISTO PARA AS NACOES",
+      "uf": "ES",
+      "municipio": "PRESIDENTE KENNEDY",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2899918482"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:54.392Z",
+    "evaluated_editais": []
+  },
+  "39711111000141": {
+    "osc": {
+      "cnpj": "39711111000141",
+      "nome": "ENTIDADE SAO JORGE, SAO SEBASTIAO E SANTO ANTONIO",
+      "uf": "ES",
+      "municipio": "DORES DO RIO PRETO",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2899242059",
+        "ddd_telefone_2": "2898830020"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:54.701Z",
+    "evaluated_editais": []
+  },
+  "39727449000191": {
+    "osc": {
+      "cnpj": "39727449000191",
+      "nome": "ASSOCIACAO DE PRODUTORES, TRABALHADORES, PROPRIETARIOS E MORADORES RURAIS TAQUARAL E VENTANIA",
+      "uf": "ES",
+      "municipio": "MUQUI",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2899930378",
+        "ddd_telefone_2": "2899029901"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:55.041Z",
+    "evaluated_editais": []
+  },
+  "39715322000152": {
+    "osc": {
+      "cnpj": "39715322000152",
+      "nome": "ASSOCIACAO FORCA NACIONAL",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2781255290"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:55.356Z",
+    "evaluated_editais": []
+  },
+  "39735797000100": {
+    "osc": {
+      "cnpj": "39735797000100",
+      "nome": "ASSOCIACAO ESPORTIVA BARRA DE NOVO BRASIL - AEBNB",
+      "uf": "ES",
+      "municipio": "GOVERNADOR LINDENBERG",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Produção e promoção de eventos esportivos",
+      "cnae_secundario_descricao": "Outras atividades esportivas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2796362679"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:55.649Z",
+    "evaluated_editais": []
+  },
+  "39795406000224": {
+    "osc": {
+      "cnpj": "39795406000224",
+      "nome": "CENTRATUH CENTRO DOS TRAB EM TURISMO E HOSP NO EST DO ESPIRITO SANTO",
+      "uf": "ES",
+      "municipio": "DOMINGOS MARTINS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2019,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Hotéis | Restaurantes e similares | Serviços de alimentação para eventos e recepções - bufê | Fornecimento e gestão de recursos humanos para terceiros | Serviços de organização de feiras, congressos, exposições e festas | Atividades de cobranças e informações cadastrais | Outras atividades de serviços prestados principalmente às empresas não especificadas anteriormente | Educação profissional de nível técnico | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de recreação e lazer não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2732237642"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:55.965Z",
+    "evaluated_editais": [
+      "19714"
+    ],
+    "ipea_id": 1333974,
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** CENTRATUH CENTRO DOS TRAB EM TURISMO E HOSP NO EST DO ESPIRITO SANTO\n- **Localização:** Domingos Martins, ES\n- **Natureza:** Associação Privada fundada em 2019\n- **Atividades (CNAE):** Foco principal em atividades associativas e secundário em hotelaria, restaurantes, eventos, treinamento profissional e gestão de recursos humanos.\n\n### 🎯 Alinhamento com o Edital\n- **Objetivo do Edital:** Apoio a soluções inovadoras e negócios liderados por mulheres (subvenção e bolsas).\n- **Análise:** Embora atue com treinamento e esteja no ES, o objeto social e o perfil da instituição não contemplam o ecossistema de inovação feminina, bioeconomia, transição energética ou transformação digital exigidos pelo Edital Fapes nº 28/2026.",
+    "dossie_updated_at": "2026-11-16T09:27:59.215Z"
+  },
+  "39848777000146": {
+    "osc": {
+      "cnpj": "39848777000146",
+      "nome": "SOCIEDADE BRASILEIRA DE NEUROEDUCACAO",
+      "uf": "ES",
+      "municipio": "VITORIA",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2020,
+      "cnae_primario_descricao": "Atividades de apoio à educação, exceto caixas escolares",
+      "cnae_secundario_descricao": "Edição de livros | Pesquisa e desenvolvimento experimental em ciências sociais e humanas | Gestão de ativos intangíveis não-financeiros | Educação superior - pós-graduação e extensão",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2798819096"
+      }
+    },
+    "last_checked_date": "2026-11-16T09:27:56.405Z",
+    "evaluated_editais": [
+      "19714"
+    ],
+    "ipea_id": 1334256,
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** SOCIEDADE BRASILEIRA DE NEUROEDUCACAO\n- **Localização:** Vitoria, ES\n- **Natureza:** Associação Privada\n- **Ano de Fundação:** 2020\n- **Atividade Principal:** Atividades de apoio à educação, exceto caixas escolares\n- **Atividades Secundárias:** Edição de livros, pesquisa em ciências sociais e humanas, e educação superior (pós-graduação e extensão).\n\n### 🎯 Alinhamento com o Edital\n- **Aderência Temática:** Alinha-se diretamente ao eixo de 'educação inovadora' do Edital Fapes nº 28/2026 – Elas Inovam.\n- **Território:** Localizada no Espírito Santo, atendendo ao requisito geográfico da chamada.\n- **Maturidade:** Fundada em 2020, possui capacidade operacional para estruturação de projetos educacionais inovadores.",
+    "dossie_updated_at": "2026-11-16T09:28:06.549Z"
   }
 }
