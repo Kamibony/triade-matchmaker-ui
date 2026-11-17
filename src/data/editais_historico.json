@@ -11631,5 +11631,689 @@
     },
     "pipeline_status": "COMPLETED",
     "archived_at": "2026-11-16"
+  },
+  {
+    "id": "19384",
+    "attributes": {
+      "nome": "PARANÁ - CHAMAMENTO PÚBLICO - ECONOMIA AZUL SUSTENTÁVEL - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-09-24",
+      "data_fim": "2026-11-16",
+      "valor_total": 504900
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19384",
+    "pdf_link": "https://www.fappr.pr.gov.br/sites/fundacao-araucaria/arquivos_restritos/files/documento/2026-09/diretrizes_blue_economy_2026.pdf",
+    "full_text": "Ajuda PARANÁ - CHAMAMENTO PÚBLICO - ECONOMIA AZUL SUSTENTÁVEL - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Polític",
+    "deep_metadata": {
+      "edital_id": "19384",
+      "resumo_objetivo": "Apoiar projetos transnacionais de pesquisa e inovação voltados à economia azul sustentável, fortalecendo a cooperação científica e tecnológica internacional em parceria com a Sustainable Blue Economy Partnership (SBEP).",
+      "temas_principais": [
+        "economia azul",
+        "pesquisa e inovação",
+        "sustentabilidade",
+        "meio ambiente",
+        "marinho e costeiro"
+      ],
+      "prazo_de_inscricao": "2026-11-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PR"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": [
+          "com fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 504900,
+        "exige_contrapartida": false,
+        "valor_total_edital": 504900
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Pesquisador com título de doutor ou equivalente",
+          "Vínculo formal com ICT sediada no Paraná",
+          "Integração em consórcio transnacional elegível"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1phxNTP7vTLLx_EofgK3IAu84hWoANMXV/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-17"
+  },
+  {
+    "id": "19563",
+    "attributes": {
+      "nome": "ESPÍRITO SANTO - BOLSA - DOUTORADO PROCAP - 2027",
+      "e_central?": true,
+      "data_inicio": "2026-09-28",
+      "data_fim": "2026-11-16",
+      "valor_total": 27000000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19563",
+    "pdf_link": "https://fapes.es.gov.br/media/Editais/procap-2027-doutorado.pdf",
+    "full_text": "Ajuda ESPÍRITO SANTO - BOLSA - DOUTORADO PROCAP - 2027 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacid",
+    "deep_metadata": {
+      "edital_id": "19563",
+      "resumo_objetivo": "O edital tem por finalidade apoiar a formação de recursos humanos qualificados por meio da concessão de bolsas de doutorado a discentes regularmente matriculados em Programas de Pós-Graduação stricto sensu localizados no Espírito Santo.",
+      "temas_principais": [
+        "pós-graduação",
+        "educação",
+        "pesquisa científica",
+        "tecnologia e inovação"
+      ],
+      "prazo_de_inscricao": "2026-11-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "ES"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 27000000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 27000000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exige vínculo do PPG a Instituição de Ensino Superior e/ou Pesquisa localizada no Espírito Santo",
+          "Exige que o bolsista seja residente no Espírito Santo ou em município limítrofe"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1QP97zPTrDycEvj2ahSo24XHDTQA6tVpE/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-17"
+  },
+  {
+    "id": "19562",
+    "attributes": {
+      "nome": "ESPÍRITO SANTO - BOLSA - MESTRADO - 2027",
+      "e_central?": true,
+      "data_inicio": "2026-09-28",
+      "data_fim": "2026-11-16",
+      "valor_total": 16128000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19562",
+    "pdf_link": "https://fapes.es.gov.br/media/Editais/procap-2027-mestrado.pdf",
+    "full_text": "Ajuda ESPÍRITO SANTO - BOLSA - MESTRADO - 2027 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale",
+    "deep_metadata": {
+      "edital_id": "19562",
+      "resumo_objetivo": "O edital tem por finalidade apoiar a formação de recursos humanos qualificados por meio da concessão de bolsas de mestrado acadêmico ou profissional a discentes regularmente matriculados em Programas de Pós-Graduação stricto sensu vinculados a IES/P localizadas no estado do Espírito Santo.",
+      "temas_principais": [
+        "pós-graduação",
+        "mestrado",
+        "educação",
+        "pesquisa científica",
+        "inovação"
+      ],
+      "prazo_de_inscricao": "2026-11-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "ES"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 16128000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 16128000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para Programas de Pós-Graduação stricto sensu localizados no estado do Espírito Santo",
+          "Exige que o PPG possua política regulamentada de ações afirmativas",
+          "Bolsista deve ser residente no Espírito Santo ou em município limítrofe"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/18gsmx33ht2PWCiuJJAA8dVowXkp9PiHy/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-17"
+  },
+  {
+    "id": "19560",
+    "attributes": {
+      "nome": "RIO DAS OSTRAS  RJ - CHAMAMENTO PÚBLICO - FOMENTO À PRODUÇÃO DE CENÁRIOS, FIGURINOS E ELEMENTOS CÊNICOS - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-23",
+      "data_fim": "2026-11-16",
+      "valor_total": 40000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19560",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/hSph72X7D07SpUDhfJ3ufGGL3D848jDos9b9HkO8JOBujzb1T4h0Oz-rl11pe4Zh/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/114/789/original/EDITAL.pdf",
+    "full_text": "Ajuda RIO DAS OSTRAS RJ - CHAMAMENTO PÚBLICO - FOMENTO À PRODUÇÃO DE CENÁRIOS, FIGURINOS E ELEMENTOS CÊNICOS - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog T",
+    "deep_metadata": {
+      "edital_id": "19560",
+      "resumo_objetivo": "Seleção de projetos culturais para concessão de apoio financeiro destinado à criação, produção e montagem de espetáculos artísticos de teatro e dança para o Centro de Formação Artística ONDA.",
+      "temas_principais": [
+        "cultura",
+        "teatro",
+        "dança",
+        "artes cênicas"
+      ],
+      "prazo_de_inscricao": "2026-11-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RJ"
+        ],
+        "municipios_permitidos": [
+          "Rio das Ostras - RJ"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 40000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 40000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para atuação em Rio das Ostras - RJ"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-17"
+  },
+  {
+    "id": "19460",
+    "attributes": {
+      "nome": "SÃO PAULO  SP - FOMENTO - VIDEOCAST E PODCAST - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-19",
+      "data_fim": "2026-11-16",
+      "valor_total": 403660.88
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19460",
+    "pdf_link": "https://spcine.com.br/wp-content/uploads/2026/10/00_EDITAL_07_2026_PNAB_PODCAST.pdf",
+    "full_text": "Ajuda SÃO PAULO SP - FOMENTO - VIDEOCAST E PODCAST - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Priva",
+    "deep_metadata": {
+      "edital_id": "19460",
+      "resumo_objetivo": "Apoio financeiro a projetos de videocast e podcast inéditos de narrativa territorial produzidos por proponentes sediados no município de São Paulo.",
+      "temas_principais": [
+        "audiovisual",
+        "cultura",
+        "videocast",
+        "podcast",
+        "narrativa territorial"
+      ],
+      "prazo_de_inscricao": "2026-11-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": 1,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "São Paulo - SP"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 403660.88,
+        "exige_contrapartida": false,
+        "valor_total_edital": 403660.88
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Proponente deve ter sede no município de São Paulo há pelo menos 1 ano",
+          "Apresentação de proposta de acessibilidade",
+          "Termo de compromisso entre proponente e responsável criador/artístico"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1W_rPgbgUen6mHBUPOFW6_FDoQtgybeC1/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-17"
+  },
+  {
+    "id": "19577",
+    "attributes": {
+      "nome": "LIMA DUARTE/MG - FOMENTO - PROJETOS CULTURAIS DA CIDADE - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-28",
+      "data_fim": "2026-11-16",
+      "valor_total": 120000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19577",
+    "pdf_link": "https://limaduarte.mg.gov.br/wp-content/uploads/2026/10/000101020506.pdf",
+    "full_text": "Ajuda LIMA DUARTE/MG - FOMENTO - PROJETOS CULTURAIS DA CIDADE - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Polític",
+    "deep_metadata": {
+      "edital_id": "19577",
+      "resumo_objetivo": "O Programa Cultural Professor Márcio Ulysses tem a finalidade de priorizar a cultura da população do município de Lima Duarte, selecionando e financiando projetos culturais.",
+      "temas_principais": [
+        "cultura",
+        "música",
+        "teatro",
+        "artes cênicas",
+        "artes visuais",
+        "fotografia",
+        "audiovisual",
+        "literatura",
+        "cultura popular",
+        "patrimônio",
+        "artesanato"
+      ],
+      "prazo_de_inscricao": "2026-11-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": 2,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Lima Duarte - MG"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 10000,
+        "exige_contrapartida": true,
+        "valor_total_edital": 120000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Residência ou sede comprovada no município de Lima Duarte há no mínimo 2 anos",
+          "Comprovar atividade no campo artístico através de premiações, apresentações, fotografias, notícias em jornais ou revistas"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1iqjEfK9vlLvHVrpLqvh0FXkZXf8FZMgJ/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-17"
+  },
+  {
+    "id": "19621",
+    "attributes": {
+      "nome": "Chamada Conjunta de Propostas FAPESP/CONFAP/SBEP 2026/2027",
+      "e_central?": true,
+      "data_inicio": "2026-09-24",
+      "data_fim": "2026-11-16"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19621",
+    "full_text": "Ajuda Chamada Conjunta de Propostas FAPESP/CONFAP/SBEP 2026/2027 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas d",
+    "deep_metadata": {
+      "edital_id": "19621",
+      "resumo_objetivo": "Apoiar projetos de pesquisa em economia azul sustentável no âmbito da chamada internacional Sustainable Blue Economy Partnership (SBEP), com participação da FAPESP via CONFAP.",
+      "temas_principais": [
+        "ciência e tecnologia",
+        "pesquisa",
+        "economia azul sustentável"
+      ],
+      "prazo_de_inscricao": "2026-11-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": [
+          "fins lucrativos",
+          "organizações da sociedade civil sem fins lucrativos não acadêmicas"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 600000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exige Pesquisador Responsável no estado de São Paulo",
+          "Exige consórcio internacional com no mínimo 2 organizações de países da União Europeia ou associados à SBEP"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-17"
+  },
+  {
+    "id": "19627",
+    "attributes": {
+      "nome": "Call for Proposals for Medium-Size Grants (August 2026)",
+      "e_central?": true,
+      "data_inicio": "2026-10-12",
+      "data_fim": "2026-11-16"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19627",
+    "pdf_link": "https://globalebafund.org/wp-content/uploads/2026/08/Global-EbA-Fund_Medium-size-grants-Call-for-Proposals.pdf",
+    "full_text": "Ajuda Call for Proposals for Medium-Size Grants (August 2026) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de P",
+    "deep_metadata": {
+      "edital_id": "19627",
+      "resumo_objetivo": "O Global EbA Fund financia iniciativas inovadoras e catalíticas focadas em superar barreiras sistêmicas para a escalabilidade da Adaptação Baseada em Ecossistemas (EbA), fortalecendo ambientes favoráveis, capacidades institucionais e sinergias globais.",
+      "temas_principais": [
+        "mudanças climáticas",
+        "biodiversidade",
+        "adaptação baseada em ecossistemas",
+        "finanças sustentáveis",
+        "desenvolvimento humano",
+        "segurança"
+      ],
+      "prazo_de_inscricao": "2026-11-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 2800000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Para projetos com atividades em nível de país, é obrigatório um consórcio com uma ou mais organizações locais, com pelo menos 25% do orçamento alocado para os parceiros locais."
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1gG_cuqxnXJ4CXpIzlNUkzu8aJxpjJel_/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-17"
+  },
+  {
+    "id": "19637",
+    "attributes": {
+      "nome": "Edital Nº 1 - TJMG Pedra Azul 1ª Vara Cível, Criminal e de Execuções Penais",
+      "e_central?": true,
+      "data_inicio": "2026-10-26",
+      "data_fim": "2026-11-16"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19637",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/Zh2QOZkdwJZt6W9-O0L0dYyBUNIRbFOz6Db1GQqbOOE_5pYO_UipcHrZY-Z224__/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/122/666/original/Acesse_o_edital_-_Pedra_Azul.pdf",
+    "full_text": "Ajuda Edital Nº 1 - TJMG Pedra Azul 1ª Vara Cível, Criminal e de Execuções Penais © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de ",
+    "deep_metadata": {
+      "edital_id": "19637",
+      "resumo_objetivo": "Seleção de entidades públicas ou privadas sem fins lucrativos para financiamento de projetos sociais com recursos de prestações pecuniárias na comarca de Pedra Azul - MG.",
+      "temas_principais": [
+        "segurança pública",
+        "sistema prisional e socioeducativo",
+        "educação",
+        "saúde",
+        "cidadania",
+        "assistência social"
+      ],
+      "prazo_de_inscricao": "2026-11-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": 1,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Pedra Azul - MG",
+          "Águas Vermelhas - MG",
+          "Cachoeira de Pajeú - MG",
+          "Divisa Alegre - MG"
+        ],
+        "natureza_juridica_excluida": [
+          "com fins lucrativos",
+          "pessoas naturais"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 80209.67,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Abertura de conta bancária exclusiva de titularidade da entidade",
+          "Apresentação de cotações com pelo menos 3 fornecedores",
+          "Apresentação de projeto básico com limite de 10 páginas"
+        ]
+      },
+      "fonte_dados": "pdf"
+    },
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-17"
+  },
+  {
+    "id": "19671",
+    "attributes": {
+      "nome": "CHAMADA PÚBLICA DE PROJETOS EQUATORIAL – CPP 001/2026",
+      "e_central?": true,
+      "data_inicio": "2026-08-17",
+      "data_fim": "2026-11-16"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19671",
+    "pdf_link": "https://equatorial.gestaocpp.com.br/uploads/landing/11111111-1111-1111-1111-111111111111/50f9e0b3-845d-4d97-84bd-e2006e011eef.pdf",
+    "full_text": "Ajuda CHAMADA PÚBLICA DE PROJETOS EQUATORIAL – CPP 001/2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Pri",
+    "deep_metadata": {
+      "edital_id": "19671",
+      "resumo_objetivo": "Chamada pública para seleção de projetos de eficiência energética em unidades consumidoras na área de concessão do Grupo Equatorial, conforme requisitos da ANEEL.",
+      "temas_principais": [
+        "eficiência energética",
+        "energia",
+        "sustentabilidade",
+        "poder público",
+        "iluminação pública",
+        "comércio e serviços"
+      ],
+      "prazo_de_inscricao": "2026-11-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PA",
+          "GO",
+          "RS",
+          "MA",
+          "PI",
+          "AP",
+          "AL",
+          "ES"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 12000000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": true,
+        "exigencias_especificas_adicionais": [
+          "Apresentar declaração de adimplência perante a concessionária emitida após o início da chamada pública",
+          "Para projetos de Comércio e Serviços, exige Certificação de Entidades Beneficentes de Assistência Social - CEBAS",
+          "Clientes com projetos aprovados na CPP 001/25 não poderão apresentar propostas na CPP 001/26 (matriz e filiais)"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1lEKgv_33fOn9WB-tQsmbin1vzrZIM5ZH/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-17"
+  },
+  {
+    "id": "19648",
+    "attributes": {
+      "nome": "CHAMAMENTO PÚBLICO Nº 03/2026 – PREMIAÇÃO DE TRAJETÓRIAS ",
+      "e_central?": false,
+      "data_inicio": "2026-11-10",
+      "data_fim": "2026-11-16"
+    },
+    "public_url": "https://prosas.com.br/editais/19648",
+    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
+    "deep_metadata": {
+      "edital_id": "19648",
+      "resumo_objetivo": "Premiação de trajetórias e contribuições culturais já realizadas por agentes culturais do município de Grajaú/MA.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "premiação cultural"
+      ],
+      "prazo_de_inscricao": "2026-11-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MA"
+        ],
+        "municipios_permitidos": [
+          "Grajaú - MA"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para agentes culturais de Grajaú/MA"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-17"
+  },
+  {
+    "id": "19647",
+    "attributes": {
+      "nome": "CHAMAMENTO PÚBLICO Nº 02/2026 - PREMIAÇÃO DE PONTOS E PONTÕES DE CULTURA",
+      "e_central?": false,
+      "data_inicio": "2026-11-10",
+      "data_fim": "2026-11-16"
+    },
+    "public_url": "https://prosas.com.br/editais/19647",
+    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
+    "deep_metadata": {
+      "edital_id": "19647",
+      "resumo_objetivo": "Premiação de iniciativas, atividades ou ações já realizadas por Pontos de Cultura com ou sem CNPJ no Município de Grajaú/MA, nos termos da Política Nacional de Cultura Viva.",
+      "temas_principais": [
+        "cultura",
+        "pontos de cultura",
+        "premiação"
+      ],
+      "prazo_de_inscricao": "2026-11-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MA"
+        ],
+        "municipios_permitidos": [
+          "Grajaú - MA"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exige atuação como Ponto ou Pontão de Cultura no Município de Grajaú/MA",
+          "Permite participação com ou sem CNPJ"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-17"
+  },
+  {
+    "id": "19713",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 008/2026 - PNAB - SECULT/AP - Seleção de Ações Continuadas para Firmar Termo de Execução Cultural com Recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº 14.399/2022) - Programa de Apoio a Ações Co",
+      "e_central?": true,
+      "data_inicio": "2026-11-07",
+      "data_fim": "2026-11-16",
+      "valor_total": 2000000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19713",
+    "full_text": "Ajuda EDITAL DE CHAMAMENTO PÚBLICO Nº 008/2026 - PNAB - SECULT/AP - Seleção de Ações Continuadas para Firmar Termo de Execução Cultural com Recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº 14.399/2022) - Programa de Apoio a Ações Co © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento ",
+    "deep_metadata": {
+      "edital_id": "19713",
+      "resumo_objetivo": "Seleção de propostas de ações continuadas para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc (PNAB), fomentando grupos, coletivos e eventos artístico-culturais no Amapá.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "eventos culturais",
+        "grupos e coletivos"
+      ],
+      "prazo_de_inscricao": "2026-11-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "AP"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 100000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 2000000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-17"
   }
 ]
