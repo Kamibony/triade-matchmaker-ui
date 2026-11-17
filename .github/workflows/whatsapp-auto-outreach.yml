@@ -1,11 +1,10 @@
 name: Cloud WhatsApp Auto-Dispatcher (24/7)
 
 on:
-  schedule:
-    # Runs automatically in Brasília business hours even when user's PC is OFF:
-    # 09:15 BRT (12:15 UTC) and 14:00 BRT (17:00 UTC), Monday to Friday
-    - cron: '15 12 * * 1-5'
-    - cron: '0 17 * * 1-5'
+  # Cron desativado: disparos só acontecem manualmente via workflow_dispatch
+  # schedule:
+  #   - cron: '15 12 * * 1-5'
+  #   - cron: '0 17 * * 1-5'
   workflow_dispatch:
     inputs:
       force_send:

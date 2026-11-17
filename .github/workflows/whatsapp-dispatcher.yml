@@ -1,9 +1,9 @@
 name: WhatsApp Business-Hours Auto-Dispatcher
 
 on:
-  # Runs Monday through Friday every hour during Brazilian Business Hours (09:00–17:00 BRT = 12:00–20:00 UTC)
-  schedule:
-    - cron: '0 12-20 * * 1-5'
+  # Cron desativado: disparos só acontecem manualmente via workflow_dispatch ou pelo Radar Outbound
+  # schedule:
+  #   - cron: '0 12-20 * * 1-5'
   workflow_dispatch:
     inputs:
       max_messages:
