@@ -94,6 +94,7 @@ export async function load() {
 
       const summaryObj = {
         id: String(e.id),
+        source_portal: e.source_portal || 'Prosas',
         titulo: e.attributes?.nome || `Edital ${e.id}`,
         valor,
         prazo,

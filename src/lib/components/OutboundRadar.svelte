@@ -902,7 +902,7 @@
                   <option value="" disabled>Escolha um edital aberto...</option>
                   {#each filteredBancoEditais as item}
                     <option value={item.id}>
-                      [{formatCurrency(item.valor)} | {item.dias_restantes !== null ? `Faltam ${item.dias_restantes}d` : 'Contínuo'}{item.estados_permitidos?.length ? ` | ${item.estados_permitidos.join(',')}` : ' | BR'}] {item.titulo}
+                      [{item.source_portal && item.source_portal !== 'Prosas' ? `${item.source_portal} | ` : ''}{formatCurrency(item.valor)} | {item.dias_restantes !== null ? `Faltam ${item.dias_restantes}d` : 'Contínuo'}{item.estados_permitidos?.length ? ` | ${item.estados_permitidos.join(',')}` : ' | BR'}] {item.titulo}
                     </option>
                   {/each}
                 </select>
@@ -912,6 +912,11 @@
                 {@const selBadge = formatPrazoBadge(selectedBancoEditalObj.prazo, selectedBancoEditalObj.dias_restantes)}
                 <div class="p-2.5 bg-white rounded border border-indigo-100 text-xs space-y-1.5">
                   <div class="flex flex-wrap gap-1.5">
+                    {#if selectedBancoEditalObj.source_portal && selectedBancoEditalObj.source_portal !== 'Prosas'}
+                      <span class="px-2 py-0.5 rounded font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200">
+                        🌐 {selectedBancoEditalObj.source_portal}
+                      </span>
+                    {/if}
                     <span class="px-2 py-0.5 rounded font-bold bg-green-50 text-green-700 border border-green-200">
                       💰 {formatCurrency(selectedBancoEditalObj.valor)}
                     </span>
