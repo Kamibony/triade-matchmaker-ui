@@ -89,18 +89,40 @@ export async function POST({ request }) {
     const criterios = edital.deep_metadata?.criterios_eliminatorios || {};
     let ipeaResults: any[] = [];
 
-    const effectiveMunicipio = targetMunicipio || (criterios.municipios_permitidos?.length > 0 ? criterios.municipios_permitidos[0].split('-')[0].trim() : '');
-    const effectiveUf = targetUf || (criterios.estados_permitidos?.length > 0 ? criterios.estados_permitidos[0] : '');
+    const UF_IBGE_CODE: Record<string, string> = {
+      AC: '12', AL: '27', AP: '16', AM: '13', BA: '29', CE: '23', DF: '53', ES: '32', GO: '52',
+      MA: '21', MT: '51', MS: '50', MG: '31', PA: '15', PB: '25', PR: '41', PE: '26', PI: '22',
+      RJ: '33', RN: '24', RS: '43', RO: '11', RR: '14', SC: '42', SP: '35', SE: '28', TO: '17'
+    };
+
+    const rawMuniInput = targetMunicipio || (criterios.municipios_permitidos?.length > 0 ? criterios.municipios_permitidos[0] : '');
+    const muniParts = String(rawMuniInput).split(/[-/]/).map((s: string) => s.trim()).filter(Boolean);
+    const effectiveMunicipio = muniParts[0] || '';
+    const muniUfHint = muniParts.length > 1 ? muniParts[muniParts.length - 1].toUpperCase() : '';
+    const effectiveUf = (targetUf || (criterios.estados_permitidos?.length > 0 ? criterios.estados_permitidos[0] : '') || muniUfHint).trim().toUpperCase();
 
     if (effectiveMunicipio) {
       const muniData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/municipio/${encodeURIComponent(effectiveMunicipio)}`);
-      if (muniData?.length > 0) {
-        ipeaResults = (await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${muniData[0].edmu_cd_municipio}`)) || [];
+      if (Array.isArray(muniData) && muniData.length > 0) {
+        const normCity = normalizeText(effectiveMunicipio);
+        const bestMuni =
+          (effectiveUf && muniData.find((m: any) => normalizeText(m.edmu_nm_municipio || '') === normCity && String(m.eduf_sg_uf || '').toUpperCase() === effectiveUf)) ||
+          (effectiveUf && muniData.find((m: any) => String(m.eduf_sg_uf || '').toUpperCase() === effectiveUf)) ||
+          muniData.find((m: any) => normalizeText(m.edmu_nm_municipio || '') === normCity) ||
+          muniData[0];
+        if (bestMuni?.edmu_cd_municipio) {
+          ipeaResults = (await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${bestMuni.edmu_cd_municipio}`)) || [];
+        }
       }
     } else if (effectiveUf) {
-      const stateData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/estado/${encodeURIComponent(effectiveUf)}`);
-      if (stateData?.length > 0) {
-        ipeaResults = (await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/estado/${stateData[0].eduf_cd_uf}`)) || [];
+      const ibgeCode = UF_IBGE_CODE[effectiveUf];
+      if (ibgeCode) {
+        ipeaResults = (await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/estado/${ibgeCode}`)) || [];
+      } else {
+        const stateData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/estado/${encodeURIComponent(effectiveUf)}`);
+        if (stateData?.length > 0) {
+          ipeaResults = (await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/estado/${stateData[0].eduf_cd_uf}`)) || [];
+        }
       }
     } else {
       ipeaResults = (await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/3550308`)) || [];

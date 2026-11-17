@@ -516,6 +516,7 @@ async function runStandaloneScraper() {
 
                 masterMap.set(String(item.id), {
                     id: merged.id,
+                    source_portal: existing.source_portal,
                     attributes: merged.attributes,
                     public_url: merged.public_url,
                     pdf_link: merged.pdf_link,
@@ -545,9 +546,16 @@ async function runStandaloneScraper() {
         const maxDeepScrape = process.env.MAX_DEEP_SCRAPE ? parseInt(process.env.MAX_DEEP_SCRAPE, 10) : 450;
         const forceRescrape = process.env.FORCE_RESCRAPE === 'true';
         const eligibleItems = deduplicatedItems
-            .filter(item =>
-                forceRescrape || (item.pipeline_status !== 'COMPLETED' && item.pipeline_status !== 'FAILED_PERMANENTLY' && item.pipeline_status !== 'PENDING_EXTRACTION')
-            )
+            .filter(item => {
+                const idStr = String(item.id || '');
+                const isExternalSource =
+                    (item.source_portal && item.source_portal !== 'Prosas') ||
+                    idStr.startsWith('pncp_') ||
+                    idStr.startsWith('mapas_') ||
+                    idStr.startsWith('fund_');
+                if (isExternalSource) return false;
+                return forceRescrape || (item.pipeline_status !== 'COMPLETED' && item.pipeline_status !== 'FAILED_PERMANENTLY' && item.pipeline_status !== 'PENDING_EXTRACTION');
+            })
             .sort((a, b) => {
                 const retryDiff = (a.retry_count || 0) - (b.retry_count || 0);
                 if (retryDiff !== 0) return retryDiff;

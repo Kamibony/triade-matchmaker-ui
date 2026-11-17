@@ -18,7 +18,7 @@ on:
       max_extract:
         description: 'Max items to extract via Gemini'
         required: false
-        default: '35'
+        default: '60'
         type: string
       force_rescrape:
         description: 'Force rescraping of all items'
@@ -59,18 +59,23 @@ jobs:
           FORCE_RESCRAPE: ${{ github.event.inputs.force_rescrape || 'false' }}
         run: npm run scrape-prosas
 
+      - name: Run Extra Sources Scraper (PNCP, Mapas & Foundations)
+        env:
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+        run: npm run scrape-extra-sources
+
       - name: Run Extractor Immediately After
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GCP_DRIVE_CREDENTIALS: ${{ secrets.GCP_DRIVE_CREDENTIALS }}
-          MAX_EXTRACT: ${{ github.event.inputs.max_extract || '35' }}
+          MAX_EXTRACT: ${{ github.event.inputs.max_extract || '60' }}
         run: npm run extract-metadata
 
       - name: Safe Git Commit & Push (Editais & Archive)
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add src/data/editais_prosas.json src/data/editais_historico.json 2>/dev/null || git add src/data/editais_prosas.json
+          git add src/data/editais_prosas.json src/data/editais_historico.json src/data/extra_sources_state.json 2>/dev/null || git add src/data/editais_prosas.json
           if ! git diff --staged --quiet; then
             git commit -m "chore(data): update editais_prosas.json & archive expired to editais_historico.json"
             git pull --rebase origin main
