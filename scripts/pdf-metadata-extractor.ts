@@ -183,9 +183,20 @@ async function extractMetadataFromPdf(pdfData: ArrayBuffer, prosasSummaryText?: 
         ? `--- RESUMO DA PÁGINA PROSAS (FONTE OFICIAL ATUALIZADA DE PRAZOS E VALORES) ---\n${prosasSummaryText.substring(0, 2000)}\n\n--- TEXTO DO EDITAL (PDF) ---\n${extractedText}`
         : extractedText;
 
-    const prompt = "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n" + combinedContext;
+    const parts: any[] = [
+        "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n" + combinedContext
+    ];
 
-    const result = await generateContentWithRetry(model, [prompt]);
+    if (extractedText.trim().length < 200 && pdfBuffer.byteLength <= 10 * 1024 * 1024) {
+        parts.push({
+            inlineData: {
+                data: pdfBuffer.toString('base64'),
+                mimeType: 'application/pdf'
+            }
+        });
+    }
+
+    const result = await generateContentWithRetry(model, parts);
     const text = result.response.text();
     return JSON.parse(text);
 }
@@ -601,8 +612,12 @@ export async function processEditais() {
     const newlyExpired: any[] = [];
 
     for (const e of editais) {
-        const prazo = e.deep_metadata?.prazo_de_inscricao || e.attributes?.data_fim;
-        if (prazo && prazo !== 'Não informado' && prazo < todayIso) {
+        let prazo = String(e.deep_metadata?.prazo_de_inscricao || e.attributes?.data_fim || '').trim();
+        const brMatch = prazo.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+        if (brMatch) {
+            prazo = `${brMatch[3]}-${brMatch[2]}-${brMatch[1]}`;
+        }
+        if (/^\d{4}-\d{2}-\d{2}$/.test(prazo) && prazo < todayIso) {
             newlyExpired.push(e);
         } else {
             activeEditais.push(e);

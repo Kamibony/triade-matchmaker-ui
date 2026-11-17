@@ -105,6 +105,36 @@ const NATIONAL_ROTATION_CITIES = [
   'Belém', 'Goiânia', 'Manaus', 'Florianópolis', 'João Pessoa'
 ];
 
+const UF_IBGE_MAP: Record<string, { code: string; name: string }> = {
+  AC: { code: '12', name: 'Acre' },
+  AL: { code: '27', name: 'Alagoas' },
+  AP: { code: '16', name: 'Amapá' },
+  AM: { code: '13', name: 'Amazonas' },
+  BA: { code: '29', name: 'Bahia' },
+  CE: { code: '23', name: 'Ceará' },
+  DF: { code: '53', name: 'Distrito Federal' },
+  ES: { code: '32', name: 'Espírito Santo' },
+  GO: { code: '52', name: 'Goiás' },
+  MA: { code: '21', name: 'Maranhão' },
+  MT: { code: '51', name: 'Mato Grosso' },
+  MS: { code: '50', name: 'Mato Grosso do Sul' },
+  MG: { code: '31', name: 'Minas Gerais' },
+  PA: { code: '15', name: 'Pará' },
+  PB: { code: '25', name: 'Paraíba' },
+  PR: { code: '41', name: 'Paraná' },
+  PE: { code: '26', name: 'Pernambuco' },
+  PI: { code: '22', name: 'Piauí' },
+  RJ: { code: '33', name: 'Rio de Janeiro' },
+  RN: { code: '24', name: 'Rio Grande do Norte' },
+  RS: { code: '43', name: 'Rio Grande do Sul' },
+  RO: { code: '11', name: 'Rondônia' },
+  RR: { code: '14', name: 'Roraima' },
+  SC: { code: '42', name: 'Santa Catarina' },
+  SP: { code: '35', name: 'São Paulo' },
+  SE: { code: '28', name: 'Sergipe' },
+  TO: { code: '17', name: 'Tocantins' }
+};
+
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 function normalizeText(text: string): string {
@@ -112,6 +142,22 @@ function normalizeText(text: string): string {
     .toLowerCase()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '');
+}
+
+function resolveUfEntry(stateInput: string): { uf: string; code: string; name: string } | null {
+  const trimmed = (stateInput || '').trim();
+  if (!trimmed) return null;
+  const upper = trimmed.toUpperCase();
+  if (UF_IBGE_MAP[upper]) {
+    return { uf: upper, ...UF_IBGE_MAP[upper] };
+  }
+  const norm = normalizeText(trimmed);
+  for (const [uf, info] of Object.entries(UF_IBGE_MAP)) {
+    if (normalizeText(info.name) === norm) {
+      return { uf, ...info };
+    }
+  }
+  return null;
 }
 
 function hasValidPhone(osc: OSC): boolean {
@@ -225,13 +271,16 @@ async function parseCustomPdfEdital(pdfUrl: string): Promise<any> {
     throw new Error('A URL informada não retornou um arquivo PDF válido.');
   }
 
-  const parsedPdf = await pdfParse(Buffer.from(arrayBuffer));
-  const textSlice = (parsedPdf.text || '').slice(0, 35000);
-  if (!textSlice.trim()) {
-    throw new Error('Não foi possível extrair texto do PDF informado.');
+  const pdfBuffer = Buffer.from(arrayBuffer);
+  const parsedPdf = await pdfParse(pdfBuffer).catch(() => ({ text: '' }));
+  const textSlice = (parsedPdf?.text || '').slice(0, 35000);
+  const useMultimodalPdf = textSlice.trim().length < 200;
+
+  if (useMultimodalPdf && pdfBuffer.byteLength > 10 * 1024 * 1024) {
+    throw new Error('Não foi possível extrair texto do PDF informado (PDF digitalizado acima de 10MB).');
   }
 
-  const prompt = `Analise o texto deste edital brasileiro e extraia as informações em JSON estrito:
+  const prompt = `Analise este edital brasileiro e extraia as informações em JSON estrito:
 {
   "titulo": "Título oficial do edital",
   "resumo_objetivo": "Resumo objetivo em 1-2 frases (pt-BR)",
@@ -248,12 +297,19 @@ async function parseCustomPdfEdital(pdfUrl: string): Promise<any> {
     "valor_maximo_ou_global_reais": number ou null,
     "exige_contrapartida": boolean
   }
-}
+}${useMultimodalPdf ? '\n(Leia diretamente o PDF anexo.)' : `\n\nTEXTO DO EDITAL:\n${textSlice}`}`;
 
-TEXTO DO EDITAL:
-${textSlice}`;
-
-  const result = await modelWithoutSearch.generateContent(prompt);
+  const result = useMultimodalPdf
+    ? await modelWithoutSearch.generateContent([
+        {
+          inlineData: {
+            data: pdfBuffer.toString('base64'),
+            mimeType: 'application/pdf'
+          }
+        },
+        prompt
+      ])
+    : await modelWithoutSearch.generateContent(prompt);
   const cleaned = result.response.text().trim().replace(/^```json\s*/i, '').replace(/```\s*$/, '');
   const meta = JSON.parse(cleaned);
   const hashId = 'pdf_' + crypto.createHash('sha1').update(pdfUrl.trim()).digest('hex').slice(0, 10);
@@ -487,19 +543,40 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
     }
   };
 
+  const pickBestMunicipality = (muniData: any[], cityName: string, targetUf?: string | null) => {
+    if (!Array.isArray(muniData) || muniData.length === 0) return null;
+    const normCity = normalizeText(cityName);
+    const normUf = targetUf ? targetUf.toUpperCase() : null;
+    if (normUf) {
+      const exactWithUf = muniData.find(
+        (m: any) => normalizeText(m.edmu_nm_municipio || '') === normCity && String(m.eduf_sg_uf || '').toUpperCase() === normUf
+      );
+      if (exactWithUf) return exactWithUf;
+      const anyWithUf = muniData.find((m: any) => String(m.eduf_sg_uf || '').toUpperCase() === normUf);
+      if (anyWithUf) return anyWithUf;
+    }
+    const exactName = muniData.find((m: any) => normalizeText(m.edmu_nm_municipio || '') === normCity);
+    return exactName || muniData[0];
+  };
+
   if (criterios.municipios_permitidos && criterios.municipios_permitidos.length > 0) {
     const perMuniCap = Math.max(30, Math.ceil(poolTarget / criterios.municipios_permitidos.length) + 10);
     for (const cityString of criterios.municipios_permitidos) {
-      const cityPart = cityString.split('-')[0].trim();
+      const parts = String(cityString).split(/[-/]/).map(s => s.trim()).filter(Boolean);
+      const cityPart = parts[0] || String(cityString).trim();
+      const rawUfPart = parts.length > 1 ? parts[parts.length - 1] : '';
+      const ufEntry = rawUfPart ? resolveUfEntry(rawUfPart) : null;
+      const targetUf = ufEntry?.uf || (/^[A-Za-z]{2}$/.test(rawUfPart) ? rawUfPart.toUpperCase() : null);
+
       try {
         const muniData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/municipio/${encodeURIComponent(cityPart)}`);
-        if (muniData && muniData.length > 0) {
-          const id = muniData[0].edmu_cd_municipio;
-          const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${id}`);
+        const bestMatch = pickBestMunicipality(muniData, cityPart, targetUf);
+        if (bestMatch?.edmu_cd_municipio) {
+          const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${bestMatch.edmu_cd_municipio}`);
           await collectFromOscList(oscs, perMuniCap);
         }
       } catch {
-        console.warn(`Failed to fetch OSCs for municipality ${cityPart}`);
+        console.warn(`Failed to fetch OSCs for municipality ${cityPart}${targetUf ? ` (${targetUf})` : ''}`);
       }
       if (rawCnpjs.length >= poolTarget) break;
     }
@@ -507,11 +584,19 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
     const perStateCap = Math.max(30, Math.ceil(poolTarget / criterios.estados_permitidos.length) + 10);
     for (const state of criterios.estados_permitidos) {
       try {
-        const stateData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/estado/${encodeURIComponent(state)}`);
-        if (stateData && stateData.length > 0) {
-          const id = stateData[0].eduf_cd_uf;
-          const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/estado/${id}`);
+        const ufEntry = resolveUfEntry(String(state));
+        let ibgeStateCode = ufEntry?.code || '';
+        if (!ibgeStateCode) {
+          const stateData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/estado/${encodeURIComponent(state)}`);
+          if (Array.isArray(stateData) && stateData.length > 0) {
+            ibgeStateCode = String(stateData[0].eduf_cd_uf || '');
+          }
+        }
+        if (ibgeStateCode) {
+          const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/estado/${ibgeStateCode}`);
           await collectFromOscList(oscs, perStateCap);
+        } else {
+          console.warn(`Could not resolve IBGE code for state "${state}"`);
         }
       } catch {
         console.warn(`Failed to fetch OSCs for state ${state}`);
@@ -528,9 +613,9 @@ async function getIpeaIdsForRegion(criterios: any, editalId: string, cache: Reco
     for (const city of citiesToQuery) {
       try {
         const muniData = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/busca/municipio/${encodeURIComponent(city)}`);
-        if (muniData && muniData.length > 0) {
-          const id = muniData[0].edmu_cd_municipio;
-          const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${id}`);
+        const bestMatch = pickBestMunicipality(muniData, city, null);
+        if (bestMatch?.edmu_cd_municipio) {
+          const oscs = await fetchFromIpea(`https://mapaosc.ipea.gov.br/api/api/geo/oscs/municipio/${bestMatch.edmu_cd_municipio}`);
           await collectFromOscList(oscs, perCityCap);
         }
       } catch {
@@ -639,7 +724,9 @@ async function runPipeline() {
     console.log(`Retrieved ${rawCnpjs.length} fresh CNPJs for this edital from IPEA.`);
 
     if (rawCnpjs.length < (isSniperMode ? poolTarget : 30)) {
-      const allowedStates: string[] = (criterios.estados_permitidos || []).map((s: string) => s.toUpperCase());
+      const allowedStates: string[] = (criterios.estados_permitidos || []).map(
+        (s: string) => resolveUfEntry(String(s))?.uf || String(s).trim().toUpperCase()
+      );
       const cachedCnpjs = Object.keys(cache).filter(cnpj => {
         const entry = cache[cnpj];
         const osc = entry?.osc;
@@ -657,6 +744,8 @@ async function runPipeline() {
     }
 
     const enrichedOscs: OSC[] = [];
+    const seenRoots = new Map<string, number>();
+    const seenNames = new Map<string, number>();
     let apiCalls = 0;
 
     const globalBlacklist = [
@@ -683,6 +772,7 @@ async function runPipeline() {
       } else {
         apiCalls++;
         const bApiData = await fetchBrasilAPIWithBackoff(cnpj);
+        await sleep(150);
         if (bApiData && bApiData.descricao_situacao_cadastral === 'ATIVA') {
           const ano_fundacao = parseInt(bApiData.data_inicio_atividade.split('-')[0], 10);
 
@@ -733,12 +823,28 @@ async function runPipeline() {
         const alreadyContacted = phoneNorm ? sentPhones.has(phoneNorm) : false;
         const phoneOk = !isSniperMode || hasValidPhone(oscData);
         if (age >= minAge && !isNaturezaProibida && !isGloballyBlacklisted && !alreadyContacted && phoneOk) {
-          enrichedOscs.push(oscData);
+          const cnpjRoot = oscData.cnpj.slice(0, 8);
+          const orgNameKey = normalizeText(oscData.nome).replace(/[^a-z0-9]/g, '');
+          const existingIdx = seenRoots.get(cnpjRoot) ?? (orgNameKey ? seenNames.get(orgNameKey) : undefined);
+
+          if (existingIdx === undefined) {
+            const idx = enrichedOscs.length;
+            enrichedOscs.push(oscData);
+            seenRoots.set(cnpjRoot, idx);
+            if (orgNameKey) seenNames.set(orgNameKey, idx);
+          } else {
+            const existingOsc = enrichedOscs[existingIdx];
+            const existingScore = (isMobilePhone(existingOsc) ? 2 : hasValidPhone(existingOsc) ? 1 : 0);
+            const candidateScore = (isMobilePhone(oscData) ? 2 : hasValidPhone(oscData) ? 1 : 0);
+            if (candidateScore > existingScore) {
+              enrichedOscs[existingIdx] = oscData;
+            }
+          }
         }
       }
     }
 
-    console.log(`Made ${apiCalls} calls to BrasilAPI. Eligible OSCs after K.O. filters: ${enrichedOscs.length}`);
+    console.log(`Made ${apiCalls} calls to BrasilAPI. Eligible unique OSCs after K.O. filters: ${enrichedOscs.length}`);
     if (enrichedOscs.length === 0) continue;
 
     // --- Stage 1A: Strict Local Heuristic Scoring ---
@@ -907,7 +1013,7 @@ Return ONLY a valid JSON object containing:
         }
       }
 
-      if (!aiResult || !aiResult.score) {
+      if (!aiResult || typeof aiResult.score !== 'number' || Number.isNaN(aiResult.score)) {
         console.log(`  -> Skipping ${osc.nome} due to empty/failed AI evaluation (not recording as evaluated).`);
         await sleep(1500);
         continue;
