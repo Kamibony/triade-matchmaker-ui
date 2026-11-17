@@ -59878,9 +59878,13 @@
       }
     },
     "last_checked_date": "2026-11-14T08:54:52.593Z",
-    "evaluated_editais": [],
+    "evaluated_editais": [
+      "19608"
+    ],
     "ipea_id": 1073558,
-    "brave_enriched": true
+    "brave_enriched": true,
+    "dossieText": "### 🏛️ Perfil Institucional\nFundada em 1988 e sediada em Belo Horizonte - MG, a ABRIGO MACONICO MINEIRO é uma associação privada cuja atuação principal está voltada para atividades de assistência social prestadas em residências coletivas e particulares, bem como condomínios residenciais para idosos e deficientes físicos.\n\n### 🎯 Alinhamento com o Edital\nO perfil da instituição não possui qualquer aderência temática com o edital de organização de eventos técnico-científicos, tecnologia e inovação. Trata-se de uma entidade de assistência social e abrigo, o que torna a elegibilidade para esta chamada pública inviável.",
+    "dossie_updated_at": "2026-11-17T10:33:01.833Z"
   },
   "44748564000182": {
     "osc": {
@@ -68065,7 +68069,8 @@
     },
     "last_checked_date": "2026-11-16T09:26:19.973Z",
     "evaluated_editais": [
-      "19608"
+      "19608",
+      "19607"
     ],
     "brave_enriched": true,
     "dossieText": "### 🏛️ Perfil Institucional\nA ASSOCIACAO DOS MEMBROS DO CORPO CONSULAR NO ESTADO DE MINAS GERAIS - AMCC-MG, sediada em Belo Horizonte - MG e fundada em 2003, atua principalmente na representação de membros do corpo consular, promoção de intercâmbio internacional e atividades associativas voltadas à cultura e defesa de direitos sociais.\n\n### 🎯 Alinhamento com o Edital\nO edital destina-se ao apoio e organização de eventos técnico-científicos, voltados à divulgação de resultados de pesquisas científicas, tecnológicas e de inovação em Minas Gerais. O perfil da AMCC-MG está focado em relações diplomáticas e consulares e eventos de honraria empresarial, não possuindo aderência à temática de ciência, tecnologia e inovação.",
@@ -72663,6 +72668,2589 @@
       "official_contacts": {}
     },
     "last_checked_date": "2026-11-16T10:47:05.983Z",
+    "evaluated_editais": []
+  },
+  "23843162000197": {
+    "osc": {
+      "cnpj": "23843162000197",
+      "nome": "IGREJA BATISTA MONTE SINAI",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3125593256",
+        "ddd_telefone_2": "3132746375"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:46.023Z",
+    "evaluated_editais": []
+  },
+  "24024937000165": {
+    "osc": {
+      "cnpj": "24024937000165",
+      "nome": "CRECHE COMUNITARIA DA VILA CEMIG",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3133840712"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:46.443Z",
+    "evaluated_editais": []
+  },
+  "24026312000132": {
+    "osc": {
+      "cnpj": "24026312000132",
+      "nome": "ASSOCIACAO DOS COMERCIARIOS APOSENTADOS E PENSIONISTAS DE BELO HORIZONTE E REGIAO - ASCOAP",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3121010178",
+        "ddd_telefone_2": "3133248803"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:46.704Z",
+    "evaluated_editais": []
+  },
+  "21699533000183": {
+    "osc": {
+      "cnpj": "21699533000183",
+      "nome": "AMO BJG - ASSOCIACAO DOS MORADORES DO BAIRRO JARDIM GUANABARA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1980,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134279924"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:46.971Z",
+    "evaluated_editais": []
+  },
+  "22256796000180": {
+    "osc": {
+      "cnpj": "22256796000180",
+      "nome": "CRECHE COMUNITARIA SOSSEGO DA MAMAE",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1986,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "Ensino de arte e cultura não especificado anteriormente | Produção e promoção de eventos esportivos",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3130198702",
+        "ddd_telefone_2": "3184844750"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:47.257Z",
+    "evaluated_editais": []
+  },
+  "22256812000216": {
+    "osc": {
+      "cnpj": "22256812000216",
+      "nome": "ACAO SOCIAL DA COMUNIDADE PAROQUIAL DE NOSSA SENHORA RAINHA DA PAZ",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "Serviços de organização de feiras, congressos, exposições e festas | Educação infantil - pré-escola | Ensino de esportes | Ensino de dança | Ensino de música | Ensino de arte e cultura não especificado anteriormente | Outras atividades de ensino não especificadas anteriormente | Serviços de assistência social sem alojamento | Produção teatral | Produção musical | Produção de espetáculos de dança | Produção e promoção de eventos esportivos",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:33:47.499Z",
+    "evaluated_editais": []
+  },
+  "22133003000136": {
+    "osc": {
+      "cnpj": "22133003000136",
+      "nome": "CRECHE COMUNITARIA LAR INFANTIL DORCAS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1986,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "Educação infantil - pré-escola | Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134427600",
+        "ddd_telefone_2": "3196235190"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:47.563Z",
+    "evaluated_editais": []
+  },
+  "23201643000107": {
+    "osc": {
+      "cnpj": "23201643000107",
+      "nome": "IGREJA BATISTA DE NOVA AMERICA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134561330",
+        "ddd_telefone_2": "3189422088"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:47.827Z",
+    "evaluated_editais": []
+  },
+  "22314918000148": {
+    "osc": {
+      "cnpj": "22314918000148",
+      "nome": "ASSOCIACAO BRASILEIRA DE ORTODONTIA E ORTOPEDIA FACIAL SECAO MINAS GERAIS - ABOR/MG",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1986,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132649584"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:48.032Z",
+    "evaluated_editais": []
+  },
+  "22315170000106": {
+    "osc": {
+      "cnpj": "22315170000106",
+      "nome": "CRECHE COMUNITARIA CRISTO OPERARIO - C.C.C.O",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1986,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134942398"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:48.268Z",
+    "evaluated_editais": []
+  },
+  "21854153000176": {
+    "osc": {
+      "cnpj": "21854153000176",
+      "nome": "CASA DOS FUNCIONARIOS DE MINAS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1981,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3194701762"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:48.626Z",
+    "evaluated_editais": []
+  },
+  "22441463000121": {
+    "osc": {
+      "cnpj": "22441463000121",
+      "nome": "FUNDACAO CDL - BH",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 1986,
+      "cnae_primario_descricao": "Serviços de assistência social sem alojamento",
+      "cnae_secundario_descricao": "Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Fornecimento e gestão de recursos humanos para terceiros | Outras atividades de serviços prestados principalmente às empresas não especificadas anteriormente | Educação profissional de nível técnico | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente | Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132268880"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:48.871Z",
+    "evaluated_editais": []
+  },
+  "22441539000119": {
+    "osc": {
+      "cnpj": "22441539000119",
+      "nome": "INSTITUTO MINEIRO DE HOMEOPATIA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1986,
+      "cnae_primario_descricao": "Atividades de práticas integrativas e complementares em saúde humana",
+      "cnae_secundario_descricao": "Outras atividades de atenção à saúde humana não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3133329417",
+        "ddd_telefone_2": "3133713368"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:49.089Z",
+    "evaluated_editais": []
+  },
+  "22442479000159": {
+    "osc": {
+      "cnpj": "22442479000159",
+      "nome": "UNIAO NACIONAL DOS ACIONISTAS MINORIT BANCO DO BRASIL",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132013396"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:49.488Z",
+    "evaluated_editais": []
+  },
+  "22442628000180": {
+    "osc": {
+      "cnpj": "22442628000180",
+      "nome": "ASSOCIACAO DOS JUIZES CLASSISTAS APOSENTADOS DA JUSTICA DO TRABALHO DA TERCEIRA REGIAO - AJUCLA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134962315",
+        "ddd_telefone_2": "3199149300"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:49.819Z",
+    "evaluated_editais": []
+  },
+  "23253255000161": {
+    "osc": {
+      "cnpj": "23253255000161",
+      "nome": "CRECHE ETELVINA CAETANO DE JESUS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "Educação infantil - pré-escola",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134455592"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:50.080Z",
+    "evaluated_editais": []
+  },
+  "21856620000105": {
+    "osc": {
+      "cnpj": "21856620000105",
+      "nome": "CENTRO DA COMUNIDADE LUSO-BRASILEIRA DE BELO HORIZONTE",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1981,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:33:50.316Z",
+    "evaluated_editais": []
+  },
+  "22443410000140": {
+    "osc": {
+      "cnpj": "22443410000140",
+      "nome": "IGREJA BATISTA RENOVADA DE JARDIM EUROPA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1986,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3135155484"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:50.610Z",
+    "evaluated_editais": []
+  },
+  "25460486000171": {
+    "osc": {
+      "cnpj": "25460486000171",
+      "nome": "CRECHE COMUNITARIA BOM MENINO",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3133858907"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:50.857Z",
+    "evaluated_editais": []
+  },
+  "07798524000119": {
+    "osc": {
+      "cnpj": "07798524000119",
+      "nome": "SER EM SI -SEXUALIDADE, ENERGIA E REFERENCIA EM SI",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2005,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132268947",
+        "ddd_telefone_2": "3132223029"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:51.121Z",
+    "evaluated_editais": []
+  },
+  "25461872000188": {
+    "osc": {
+      "cnpj": "25461872000188",
+      "nome": "IGREJA BATISTA DO BAIRRO OURO PRETO",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134501273"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:51.355Z",
+    "evaluated_editais": []
+  },
+  "25462177000130": {
+    "osc": {
+      "cnpj": "25462177000130",
+      "nome": "INSTITUTO CULTURAL BANCO DE DESENVOLVIMENTO DE MINAS GERAIS - BDMG CULTURAL",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente",
+      "cnae_secundario_descricao": "Serviços de organização de feiras, congressos, exposições e festas | Gestão de espaços para artes cênicas, espetáculos e outras atividades artísticas | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132198382",
+        "ddd_telefone_2": "3133137935"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:51.617Z",
+    "evaluated_editais": []
+  },
+  "25455569000172": {
+    "osc": {
+      "cnpj": "25455569000172",
+      "nome": "GREMIO RECREATIVO FERROVIARIO - GREFER",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132262844"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:51.936Z",
+    "evaluated_editais": []
+  },
+  "25455783000129": {
+    "osc": {
+      "cnpj": "25455783000129",
+      "nome": "ASSOCIACAO NACIONAL DA CACHACA DE ALAMBIQUE ANPAQ",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Comércio varejista de outros produtos não especificados anteriormente | Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Serviços de organização de feiras, congressos, exposições e festas | Treinamento em desenvolvimento profissional e gerencial | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3198287495"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:52.177Z",
+    "evaluated_editais": []
+  },
+  "25457946000102": {
+    "osc": {
+      "cnpj": "25457946000102",
+      "nome": "COMUNIDADE MISSIONARIA DE VILLAREGIA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Aluguel de imóveis próprios | Seleção e agenciamento de mão-de-obra | Outras atividades de serviços prestados principalmente às empresas não especificadas anteriormente | Ensino de arte e cultura não especificado anteriormente | Outras atividades de ensino não especificadas anteriormente | Serviços de assistência social sem alojamento | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3133831545"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:52.310Z",
+    "evaluated_editais": []
+  },
+  "25458357000149": {
+    "osc": {
+      "cnpj": "25458357000149",
+      "nome": "DIRETORIO CENTRAL DOS ESTUDANTES GONCALO DE FREITAS DA PONTIFICIA UNIVERSIDADE CATOLICA DE MINAS GERAIS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132240963"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:52.378Z",
+    "evaluated_editais": []
+  },
+  "25458381000188": {
+    "osc": {
+      "cnpj": "25458381000188",
+      "nome": "LAR DOS IDOSOS SANTO ANTONIO DE PADUA DE VENDA NOVA DA SOCIEDADE DE SAO VICENTE DE PAULO",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Instituições de longa permanência para idosos",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:33:52.598Z",
+    "evaluated_editais": []
+  },
+  "25458720000126": {
+    "osc": {
+      "cnpj": "25458720000126",
+      "nome": "SEJA-SOCIEDADE ESPIRITA JOANNA DE ANGELIS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "Atividades de organizações religiosas ou filosóficas | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134452678"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:52.829Z",
+    "evaluated_editais": []
+  },
+  "22641039000120": {
+    "osc": {
+      "cnpj": "22641039000120",
+      "nome": "ASSOCIACAO DOS SERVIDORES DO INSTITUTO MINEIRO DE AGROPECUARIA - ASSIMA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132136844"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:52.896Z",
+    "evaluated_editais": []
+  },
+  "22641559000133": {
+    "osc": {
+      "cnpj": "22641559000133",
+      "nome": "PRIMEIRA IGREJA BATISTA EM FLORAMAR",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3186893620"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:53.127Z",
+    "evaluated_editais": []
+  },
+  "25466707000119": {
+    "osc": {
+      "cnpj": "25466707000119",
+      "nome": "FUNDACAO RADIO EDUCATIVA QUADRANGULAR",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Atividades de rádio",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0312825929"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:53.369Z",
+    "evaluated_editais": []
+  },
+  "08000919000197": {
+    "osc": {
+      "cnpj": "08000919000197",
+      "nome": "IGREJA BATISTA DA SAVASSI",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132717328"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:53.626Z",
+    "evaluated_editais": []
+  },
+  "07984300000100": {
+    "osc": {
+      "cnpj": "07984300000100",
+      "nome": "ASSOCIACAO KARPOS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Educação superior - graduação",
+      "cnae_secundario_descricao": "Educação profissional de nível técnico | Ensino médio | Ensino fundamental | Educação infantil - pré-escola",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3130553475"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:53.872Z",
+    "evaluated_editais": []
+  },
+  "08228750000127": {
+    "osc": {
+      "cnpj": "08228750000127",
+      "nome": "ASSOCIACAO DOS CONSULTORIOS DE PROFISSIONAIS DA AREA DE SAUDE",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132738111"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:54.349Z",
+    "evaluated_editais": []
+  },
+  "08218215000195": {
+    "osc": {
+      "cnpj": "08218215000195",
+      "nome": "INSTITUTO GIL NOGUEIRA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Comércio varejista de livros | Edição de livros | Atividades de bibliotecas e arquivos",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3133246008"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:54.595Z",
+    "evaluated_editais": []
+  },
+  "08274897000153": {
+    "osc": {
+      "cnpj": "08274897000153",
+      "nome": "CASA RECRIAR OBRAS SOCIAIS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134447092",
+        "ddd_telefone_2": "3134230464"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:54.908Z",
+    "evaluated_editais": []
+  },
+  "08561662000142": {
+    "osc": {
+      "cnpj": "08561662000142",
+      "nome": "ASSOCIACAO RECREATIVA DOS AMIGOS DE DIAMANTINA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "cnae_secundario_descricao": "Produção musical",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3197645029"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:55.109Z",
+    "evaluated_editais": []
+  },
+  "08710829000190": {
+    "osc": {
+      "cnpj": "08710829000190",
+      "nome": "INSTITUTO MINAS PELA PAZ - IMPP",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Promoção de vendas | Marketing direto | Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários | Agenciamento de profissionais para atividades esportivas, culturais e artísticas | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Serviços combinados de escritório e apoio administrativo | Preparação de documentos e serviços especializados de apoio administrativo não especificados anteriormente | Serviços de levantamento de fundos sob contrato | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3172590144"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:55.212Z",
+    "evaluated_editais": []
+  },
+  "08703783000181": {
+    "osc": {
+      "cnpj": "08703783000181",
+      "nome": "IGREJA BATISTA ESPERANCA NO MILIONARIOS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3135336213"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:55.429Z",
+    "evaluated_editais": []
+  },
+  "08706529000137": {
+    "osc": {
+      "cnpj": "08706529000137",
+      "nome": "ASSOCIACAO HUMANITARIA COMPAIXAO",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3183146749"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:55.892Z",
+    "evaluated_editais": []
+  },
+  "08338172000181": {
+    "osc": {
+      "cnpj": "08338172000181",
+      "nome": "IGREJA EVANGELICA CASA DE ORACAO PALAVRA VIVA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3175565426"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:56.180Z",
+    "evaluated_editais": []
+  },
+  "08415255000127": {
+    "osc": {
+      "cnpj": "08415255000127",
+      "nome": "CENTRO MINEIRO DE ALIANCAS INTERSETORIAIS - CEMAIS",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Edição de revistas | Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica | Outras atividades profissionais, científicas e técnicas não especificadas anteriormente | Serviços combinados de escritório e apoio administrativo | Serviços de organização de feiras, congressos, exposições e festas | Ensino de arte e cultura não especificado anteriormente | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3133706601"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:56.635Z",
+    "evaluated_editais": []
+  },
+  "08452888000105": {
+    "osc": {
+      "cnpj": "08452888000105",
+      "nome": "MINISTERIO CARVALHO DE JUSTICA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3182103553"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:56.874Z",
+    "evaluated_editais": []
+  },
+  "08403417000107": {
+    "osc": {
+      "cnpj": "08403417000107",
+      "nome": "ACE- ACAO COM ESPORTE",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Serviços de assistência social sem alojamento",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134629244"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:57.112Z",
+    "evaluated_editais": []
+  },
+  "08724004000124": {
+    "osc": {
+      "cnpj": "08724004000124",
+      "nome": "ASSOCIACAO DE CULTURA DA COMUNIDADE JARDIM ALVORADA",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2000,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "Educação infantil - pré-escola | Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134184534"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:57.349Z",
+    "evaluated_editais": []
+  },
+  "08725760000178": {
+    "osc": {
+      "cnpj": "08725760000178",
+      "nome": "CASA DE APOIO AS PESSOAS COM CANCER-CAPEC",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Serviços de assistência social sem alojamento",
+      "cnae_secundario_descricao": "Desenvolvimento e licenciamento de programas de computador customizáveis | Centros de apoio a pacientes com câncer e com AIDS",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134593000"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:57.584Z",
+    "evaluated_editais": []
+  },
+  "08816826000135": {
+    "osc": {
+      "cnpj": "08816826000135",
+      "nome": "CRECHE CENTRO EDUCACIONAL CRIANCA FELIZ",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3134502831",
+        "ddd_telefone_2": "3136383602"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:57.635Z",
+    "evaluated_editais": []
+  },
+  "08829571000145": {
+    "osc": {
+      "cnpj": "08829571000145",
+      "nome": "FUNDACAO SOUZA BRASIL",
+      "uf": "MG",
+      "municipio": "BELO HORIZONTE",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "Comércio varejista de livros | Pesquisa e desenvolvimento experimental em ciências sociais e humanas | Educação superior - graduação e pós-graduação | Educação profissional de nível técnico | Outras atividades de ensino não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "3132257181"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:57.860Z",
+    "evaluated_editais": [
+      "18925"
+    ],
+    "ipea_id": 508316,
+    "dossieText": "### 🏛️ Perfil Institucional\nA FUNDACAO SOUZA BRASIL, sediada em Belo Horizonte (MG) e fundada em 2007, atua primariamente em atividades associativas profissionais, com atividades secundárias voltadas para educação superior, ensino técnico e pesquisa em ciências sociais e humanas.\n\n### 🎯 Alinhamento com o Edital\nO edital FINEP/Noruega exige projetos de pesquisa e desenvolvimento (P&D) em cooperação internacional que já possuam o selo Eureka. Embora o perfil secundário mencione pesquisa, a natureza institucional e a falta de histórico em P&D tecnológico de fronteira reduzem drasticamente as chances de elegibilidade para esta chamada.",
+    "dossie_updated_at": "2026-11-17T10:34:09.233Z"
+  },
+  "92843945001246": {
+    "osc": {
+      "cnpj": "92843945001246",
+      "nome": "COMUNIDADE EVANGELICA DE PORTO ALEGRE",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1979,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5132245010"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:57.919Z",
+    "evaluated_editais": []
+  },
+  "92843945001408": {
+    "osc": {
+      "cnpj": "92843945001408",
+      "nome": "COMUNIDADE EVANGELICA DE PORTO ALEGRE",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1979,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5132245010"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:58.128Z",
+    "evaluated_editais": []
+  },
+  "03979122000160": {
+    "osc": {
+      "cnpj": "03979122000160",
+      "nome": "ASSOCIACAO DE DEFESA DOS DIREITOS DOS SERVIDORES PUBLICOS DO ESTADO DO RIO GRANDE DO SUL",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2000,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5193006449"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:58.334Z",
+    "evaluated_editais": []
+  },
+  "09386873000159": {
+    "osc": {
+      "cnpj": "09386873000159",
+      "nome": "INSTITUTO MERIDIONAL DE EDUCACAO E PESQUISA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Educação superior - pós-graduação e extensão",
+      "cnae_secundario_descricao": "Ensino médio | Educação profissional de nível técnico | Educação profissional de nível tecnológico",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5430271300"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:58.556Z",
+    "evaluated_editais": [
+      "18925"
+    ],
+    "ipea_id": 732109,
+    "dossieText": "### 🏛️ Perfil Institucional\nO INSTITUTO MERIDIONAL DE EDUCACAO E PESQUISA, fundado em 2007 e localizado em Porto Alegre, RS, atua principalmente nas áreas de educação superior, pós-graduação e extensão, além de ensino médio e técnico.\n\n### 🎯 Alinhamento com o Edital\nO edital FINEP/Noruega demanda P&D em cooperação internacional e o selo Eureka. Embora a OSC tenha capacidade em pesquisa acadêmica, não há evidências de projetos internacionais conjuntos ou da obtenção exigida do selo Eureka, tornando a elegibilidade inviável.",
+    "dossie_updated_at": "2026-11-17T10:34:15.814Z"
+  },
+  "88924659000185": {
+    "osc": {
+      "cnpj": "88924659000185",
+      "nome": "ASSOCIACAO BRASILEIRA DE ORTODONTIA E ORTOPEDIA FACIAL DO ESTADO DO RIO GRANDE DO SUL - ABOR SECAO RS",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1976,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0513309583"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:58.790Z",
+    "evaluated_editais": []
+  },
+  "89543219000140": {
+    "osc": {
+      "cnpj": "89543219000140",
+      "nome": "LIGA HOMEOPATICA DO RIO GRANDE DO SUL",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5132280915"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:59.018Z",
+    "evaluated_editais": []
+  },
+  "05487727000169": {
+    "osc": {
+      "cnpj": "05487727000169",
+      "nome": "ASSOCIACAO BRASILEIRA DE MEDICINA ESTETICA E COLABORADORES",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2003,
+      "cnae_primario_descricao": "Outras atividades de ensino não especificadas anteriormente",
+      "cnae_secundario_descricao": "Serviços de organização de feiras, congressos, exposições e festas",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "516255675"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:59.219Z",
+    "evaluated_editais": []
+  },
+  "91336453000149": {
+    "osc": {
+      "cnpj": "91336453000149",
+      "nome": "FEDERACAO GAUCHA DE FUTEBOL SETE",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Produção e promoção de eventos esportivos",
+      "cnae_secundario_descricao": "Outras atividades esportivas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5132322041"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:59.473Z",
+    "evaluated_editais": []
+  },
+  "18247028000193": {
+    "osc": {
+      "cnpj": "18247028000193",
+      "nome": "ASSOCIACAO GAUCHA DE ARBITROS DE FUTEBOL SETE SOCIETY",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2013,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5196415054"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:33:59.699Z",
+    "evaluated_editais": []
+  },
+  "91698720000128": {
+    "osc": {
+      "cnpj": "91698720000128",
+      "nome": "A ASBEA-RS (ASSOCIACAO BRASILEIRA DOS ESCRITORIOS DE ARQUITETURA - RIO GRANDE DO SUL)",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5180442120"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:00.165Z",
+    "evaluated_editais": []
+  },
+  "30902803147624": {
+    "osc": {
+      "cnpj": "30902803147624",
+      "nome": "IGREJA INTERNACIONAL DA GRACA DE DEUS",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2004,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "2133445959",
+        "ddd_telefone_2": "2133445634"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:00.424Z",
+    "evaluated_editais": []
+  },
+  "92706308007340": {
+    "osc": {
+      "cnpj": "92706308007340",
+      "nome": "PROVINCIA MARISTA BRASIL SUL AMAZONIA PMBSA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Serviços de assistência social sem alojamento",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133140300",
+        "ddd_telefone_2": "5133140306"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:00.638Z",
+    "evaluated_editais": []
+  },
+  "92706308007420": {
+    "osc": {
+      "cnpj": "92706308007420",
+      "nome": "PROVINCIA MARISTA BRASIL SUL AMAZONIA PMBSA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "Outros alojamentos não especificados anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133140300",
+        "ddd_telefone_2": "5133140306"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:00.877Z",
+    "evaluated_editais": []
+  },
+  "93004190000104": {
+    "osc": {
+      "cnpj": "93004190000104",
+      "nome": "ESPORTE CLUBE BANDEIRANTES",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1971,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:01.168Z",
+    "evaluated_editais": []
+  },
+  "11840112000177": {
+    "osc": {
+      "cnpj": "11840112000177",
+      "nome": "ASSOCIACAO FORCA E CORAGEM DE RECICLAGEM",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2010,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133344112"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:01.715Z",
+    "evaluated_editais": []
+  },
+  "04338450000140": {
+    "osc": {
+      "cnpj": "04338450000140",
+      "nome": "REDE BRASILEIRA DE COOPERACAO EM EMERGENCIAS (RBCE)",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2001,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133626105"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:02.214Z",
+    "evaluated_editais": [
+      "18925"
+    ],
+    "ipea_id": 754474,
+    "dossieText": "### 🏛️ Perfil Institucional\nA REDE BRASILEIRA DE COOPERACAO EM EMERGENCIAS (RBCE), localizada em Porto Alegre - RS, é uma associação privada fundada em 2001, cujo CNAE principal é voltado para atividades de associações de defesa de direitos sociais.\n\n### 🎯 Alinhamento com o Edital\nO edital FINEP/Noruega exige foco estrito em Pesquisa e Desenvolvimento (P&D) com cooperação internacional e obtenção prévia do selo Eureka. A OSC não possui afinidade técnica, científica ou histórico em P&D industrial ou tecnológico.",
+    "dossie_updated_at": "2026-11-17T10:34:12.372Z"
+  },
+  "14900415000126": {
+    "osc": {
+      "cnpj": "14900415000126",
+      "nome": "ROTARY CLUB DE PORTO ALEGRE JARDIM PLANALTO",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2011,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133403122"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:02.919Z",
+    "evaluated_editais": []
+  },
+  "07976669000162": {
+    "osc": {
+      "cnpj": "07976669000162",
+      "nome": "CENTRAL DE EMPREENDIMENTOS DE ECONOMIA SOLIDARIA DE PORTO ALEGRE - CESPA",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Outras atividades associativas profissionais | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133348823",
+        "ddd_telefone_2": "5134833279"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:03.159Z",
+    "evaluated_editais": []
+  },
+  "62955505075256": {
+    "osc": {
+      "cnpj": "62955505075256",
+      "nome": "IGREJA DO EVANGELHO QUADRANGULAR",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1979,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "1132263131"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:04.103Z",
+    "evaluated_editais": []
+  },
+  "90367780000103": {
+    "osc": {
+      "cnpj": "90367780000103",
+      "nome": "CLUBE DE MAES NOSSA SENHORA DAS GRACAS",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1985,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5132682971",
+        "ddd_telefone_2": "513262971"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:04.313Z",
+    "evaluated_editais": []
+  },
+  "90368077000101": {
+    "osc": {
+      "cnpj": "90368077000101",
+      "nome": "ASSOCIACAO DOS GEOGRAFOS PROFISSIONAIS DO RIO GRANDE DO SUL",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1985,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5194600885"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:04.583Z",
+    "evaluated_editais": []
+  },
+  "06217984000143": {
+    "osc": {
+      "cnpj": "06217984000143",
+      "nome": "ASSOCIACAO ASPIRANTES 1984 - TURMA ROLO COMPRESSOR",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2004,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133412840",
+        "ddd_telefone_2": "5184087571"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:04.830Z",
+    "evaluated_editais": []
+  },
+  "92518943000129": {
+    "osc": {
+      "cnpj": "92518943000129",
+      "nome": "ASSOCIACAO COMUN.DE MORADORES AMIGOS DO 'SEU SETE'",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1989,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Educação infantil - creche | Ensino de arte e cultura não especificado anteriormente | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5132233558"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:05.988Z",
+    "evaluated_editais": []
+  },
+  "88929609000190": {
+    "osc": {
+      "cnpj": "88929609000190",
+      "nome": "CENTRO DE UMBANDA REINO DA MAE OXUM",
+      "uf": "RS",
+      "municipio": "PORTO ALEGRE",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1976,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:06.521Z",
+    "evaluated_editais": []
+  },
+  "90544461000118": {
+    "osc": {
+      "cnpj": "90544461000118",
+      "nome": "ASSOCIACAO EDUCACIONAL GERACAO VIDA",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "Educação infantil - pré-escola | Ensino fundamental | Ensino médio | Educação profissional de nível técnico | Educação profissional de nível tecnológico | Ensino de arte e cultura não especificado anteriormente | Ensino de idiomas | Treinamento em informática | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5130511270"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:40.306Z",
+    "evaluated_editais": []
+  },
+  "90544461000541": {
+    "osc": {
+      "cnpj": "90544461000541",
+      "nome": "ASSOCIACAO EDUCACIONAL GERACAO VIDA",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2010,
+      "cnae_primario_descricao": "Educação infantil - creche",
+      "cnae_secundario_descricao": "Educação infantil - pré-escola | Ensino fundamental | Ensino médio | Educação profissional de nível técnico | Educação profissional de nível tecnológico | Ensino de arte e cultura não especificado anteriormente | Ensino de idiomas | Treinamento em informática | Treinamento em desenvolvimento profissional e gerencial | Outras atividades de ensino não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5130511270"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:46.453Z",
+    "evaluated_editais": []
+  },
+  "90811878000108": {
+    "osc": {
+      "cnpj": "90811878000108",
+      "nome": "AUGUSTA RESPEITAVEL LOJA SIMBOLICA JUSTICA TRABALHO 57",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1981,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:46.664Z",
+    "evaluated_editais": []
+  },
+  "92858000006186": {
+    "osc": {
+      "cnpj": "92858000006186",
+      "nome": "MITRA DA ARQUIDIOCESE DE PORTO ALEGRE",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2002,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:47.473Z",
+    "evaluated_editais": []
+  },
+  "92858000006933": {
+    "osc": {
+      "cnpj": "92858000006933",
+      "nome": "MITRA DA ARQUIDIOCESE DE PORTO ALEGRE",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1975,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5134776641"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:47.692Z",
+    "evaluated_editais": []
+  },
+  "92852854000548": {
+    "osc": {
+      "cnpj": "92852854000548",
+      "nome": "SOS-CASAS DE ACOLHIDA",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1993,
+      "cnae_primario_descricao": "Atividades de assistência social prestadas em residências coletivas e particulares não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:47.900Z",
+    "evaluated_editais": [
+      "18924"
+    ],
+    "ipea_id": 729181,
+    "dossieText": "### 🏛️ Perfil Institucional\nA SOS-CASAS DE ACOLHIDA é uma associação privada fundada em 1993, sediada em Canoas, RS. Possui como atividade principal CNAE o serviço de assistência social prestado em residências coletivas, demonstrando alta maturidade, longevidade e especialização histórica na pauta de acolhimento institucional.\n\n### 🎯 Alinhamento com o Edital\nO objeto do edital visa o credenciamento de entidades para acolhimento institucional provisório de crianças e adolescentes em Canoas/RS, com valor global de até R$ 2.930.490. Como a instituição é focada exatamente em residências coletivas de assistência social e está localizada no município executor, o encaixe técnico é perfeito.",
+    "dossie_updated_at": "2026-11-17T10:35:21.276Z"
+  },
+  "92852854000700": {
+    "osc": {
+      "cnpj": "92852854000700",
+      "nome": "SOS-CASAS DE ACOLHIDA",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2008,
+      "cnae_primario_descricao": "Atividades de assistência social prestadas em residências coletivas e particulares não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133351333",
+        "ddd_telefone_2": "5133351465"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:48.106Z",
+    "evaluated_editais": [
+      "18924"
+    ],
+    "ipea_id": 729183,
+    "dossieText": "### 🏛️ Perfil Institucional\nA SOS-CASAS DE ACOLHIDA é uma associação privada fundada em 2008, sediada em Canoas, RS. Seu CNAE principal refere-se a atividades de assistência social prestadas em residências coletivas, demonstrando plena especialização e maturidade institucional na área de acolhimento.\n\n### 🎯 Alinhamento com o Edital\nO edital de Canoas busca o credenciamento de entidades para prestação de serviço de acolhimento institucional para crianças e adolescentes. A atuação da OSC em Canoas e sua expertise histórica em residências coletivas fazem dela uma candidata de topo para captar até R$ 2.930.490.",
+    "dossie_updated_at": "2026-11-17T10:35:18.025Z"
+  },
+  "92858000008120": {
+    "osc": {
+      "cnpj": "92858000008120",
+      "nome": "MITRA DA ARQUIDIOCESE DE PORTO ALEGRE",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1975,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:48.318Z",
+    "evaluated_editais": []
+  },
+  "92858000008634": {
+    "osc": {
+      "cnpj": "92858000008634",
+      "nome": "MITRA DA ARQUIDIOCESE DE PORTO ALEGRE",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1975,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:48.561Z",
+    "evaluated_editais": []
+  },
+  "92858000009959": {
+    "osc": {
+      "cnpj": "92858000009959",
+      "nome": "MITRA DA ARQUIDIOCESE DE PORTO ALEGRE",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1975,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:48.798Z",
+    "evaluated_editais": []
+  },
+  "92858000011260": {
+    "osc": {
+      "cnpj": "92858000011260",
+      "nome": "MITRA DA ARQUIDIOCESE DE PORTO ALEGRE",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1976,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:49.045Z",
+    "evaluated_editais": []
+  },
+  "00990715000139": {
+    "osc": {
+      "cnpj": "00990715000139",
+      "nome": "FEDERACAO DOS CAMINHONEIROS AUTONOMOS DO ESTADO DO RIO GRANDE DO SUL",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1996,
+      "cnae_primario_descricao": "Atividades de organizações associativas patronais e empresariais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5132323407"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:49.343Z",
+    "evaluated_editais": []
+  },
+  "94309572000109": {
+    "osc": {
+      "cnpj": "94309572000109",
+      "nome": "CANOAS TENIS CLUBE",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1993,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "Estacionamento de veículos | Aluguel de imóveis próprios",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5134662999"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:49.682Z",
+    "evaluated_editais": []
+  },
+  "92954957005316": {
+    "osc": {
+      "cnpj": "92954957005316",
+      "nome": "CENTRO DE INTEGRACAO EMPRESA ESCOLA DO RS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2004,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5132847022"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:49.932Z",
+    "evaluated_editais": []
+  },
+  "01633738000159": {
+    "osc": {
+      "cnpj": "01633738000159",
+      "nome": "ASSOCIACAO DA HORTA COMUNITARIA UNIAO DOS OPERARIOS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1996,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Horticultura, exceto morango | Cultivo de flores e plantas ornamentais | Educação infantil - pré-escola | Educação infantil - creche | Ensino de arte e cultura não especificado anteriormente | Treinamento em informática | Treinamento em desenvolvimento profissional e gerencial | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:50.400Z",
+    "evaluated_editais": []
+  },
+  "10652166000146": {
+    "osc": {
+      "cnpj": "10652166000146",
+      "nome": "CROD - CENTRO DE RECUPERACAO OLARIA DE DEUS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5130321971",
+        "ddd_telefone_2": "5196248383"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:50.605Z",
+    "evaluated_editais": []
+  },
+  "10892402000100": {
+    "osc": {
+      "cnpj": "10892402000100",
+      "nome": "ASSOCIACAO BENEFICENTE E EDUCADORA KAUA SOLIDARIO",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5134666653"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:50.840Z",
+    "evaluated_editais": []
+  },
+  "11051101000108": {
+    "osc": {
+      "cnpj": "11051101000108",
+      "nome": "ASSOCIACAO DOS PAIS E AMIGOS DO VOLEIBOL - APAV",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Produção e promoção de eventos esportivos",
+      "cnae_secundario_descricao": "Outras atividades esportivas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5193811464"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:51.101Z",
+    "evaluated_editais": []
+  },
+  "04611321000183": {
+    "osc": {
+      "cnpj": "04611321000183",
+      "nome": "ASSOCIACAO UNIVERSALISTA LUZ DE ARUANDA",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2001,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5134725583"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:51.308Z",
+    "evaluated_editais": []
+  },
+  "05971959000198": {
+    "osc": {
+      "cnpj": "05971959000198",
+      "nome": "ASSOCI - ASSOCIACAO DO MERCADO IMOBILIARIO DE CANOAS, ESTEIO, SAPUCAIA DO SUL E NOVA SANTA RITA",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2002,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5194570110"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:51.564Z",
+    "evaluated_editais": []
+  },
+  "80234826000820": {
+    "osc": {
+      "cnpj": "80234826000820",
+      "nome": "ASSOCIACAO MISSIONARIA DE BENEFICENCIA DAS IRMAS SERVAS DO ESPIRITO SANTO",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1972,
+      "cnae_primario_descricao": "Ensino fundamental",
+      "cnae_secundario_descricao": "Educação infantil - creche | Educação infantil - pré-escola | Ensino médio | Outras atividades de ensino não especificadas anteriormente | Atividades de associações de defesa de direitos sociais | Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:51.814Z",
+    "evaluated_editais": []
+  },
+  "15210813000183": {
+    "osc": {
+      "cnpj": "15210813000183",
+      "nome": "IGREJA PRESBITERIANA DO BRASIL EM CANOAS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5133477104",
+        "ddd_telefone_2": "5133477104"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:51.867Z",
+    "evaluated_editais": []
+  },
+  "07773527000106": {
+    "osc": {
+      "cnpj": "07773527000106",
+      "nome": "IGREJA DO MOVER - MOVIMENTO EVANGELICO DA RENOVACAO",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2006,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5134663578",
+        "ddd_telefone_2": "5134669684"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:52.125Z",
+    "evaluated_editais": []
+  },
+  "09328940000189": {
+    "osc": {
+      "cnpj": "09328940000189",
+      "nome": "AGENCIA DE DESENVOLVIMENTO SUSTENTAVEL DO RIO GRANDE DO SUL - ADESSUL",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2007,
+      "cnae_primario_descricao": "Atividades de organizações associativas patronais e empresariais",
+      "cnae_secundario_descricao": "Serviços de organização de feiras, congressos, exposições e festas | Atividades de apoio à educação, exceto caixas escolares | Treinamento em desenvolvimento profissional e gerencial | Produção e promoção de eventos esportivos | Outras atividades associativas profissionais | Atividades de associações de defesa de direitos sociais | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5134774005"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:52.383Z",
+    "evaluated_editais": [
+      "18924"
+    ],
+    "ipea_id": 732084,
+    "dossieText": "### 🏛️ Perfil Institucional\n- **Nome:** AGENCIA DE DESENVOLVIMENTO SUSTENTAVEL DO RIO GRANDE DO SUL - ADESSUL\n- **Localização:** Canoas, RS\n- **Natureza:** Associação Privada\n- **Ano de Fundação:** 2007\n- **Atividade Principal:** Atividades de organizações associativas patronais e empresariais.\n- **Atividades Secundárias:** Organização de feiras, congressos, apoio à educação, treinamento profissional, eventos esportivos e defesa de direitos sociais.\n- **Maturidade:** Organização consolidada desde 2007, com atuação voltada ao desenvolvimento econômico e empresarial.\n\n### 🎯 Alinhamento com o Edital\nO edital da Prefeitura de Canoas visa o credenciamento de entidades para serviço de acolhimento institucional provisório de crianças e adolescentes. A ADESSUL, apesar de sediada no mesmo município e com longa trajetória, tem seu escopo estatutário e histórico voltado para o setor empresarial e patronal, carecendo de alinhamento técnico, CNAE específico e expertise comprovada na área de assistência social e proteção à infância.",
+    "dossie_updated_at": "2026-11-17T10:35:25.006Z"
+  },
+  "02415583073888": {
+    "osc": {
+      "cnpj": "02415583073888",
+      "nome": "IGREJA MUNDIAL DO PODER DE DEUS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "1135773815"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:52.696Z",
+    "evaluated_editais": []
+  },
+  "17179091000177": {
+    "osc": {
+      "cnpj": "17179091000177",
+      "nome": "PRIMEIRA IGREJA BATISTA METROPOLITANA DE CANOAS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5130721577"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:52.950Z",
+    "evaluated_editais": []
+  },
+  "02415583090626": {
+    "osc": {
+      "cnpj": "02415583090626",
+      "nome": "IGREJA MUNDIAL DO PODER DE DEUS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2014,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "1135773815"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:53.188Z",
+    "evaluated_editais": []
+  },
+  "17234541000187": {
+    "osc": {
+      "cnpj": "17234541000187",
+      "nome": "ORGANIZACAO RELIGIOSA DE SERVICO CRISTAO DE CANOAS/RS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5192667647"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:53.422Z",
+    "evaluated_editais": []
+  },
+  "01915577000196": {
+    "osc": {
+      "cnpj": "01915577000196",
+      "nome": "ASSOCIACAO DESPORTIVA CANOAS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5134729744"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:53.671Z",
+    "evaluated_editais": []
+  },
+  "02198327000145": {
+    "osc": {
+      "cnpj": "02198327000145",
+      "nome": "ASSOCIACAO BENEFICENTE DOS APOSENTADOS E PENSIONISTAS DE CANOAS ( ABAPEC)",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1997,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0514725605"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:53.884Z",
+    "evaluated_editais": []
+  },
+  "02669361000150": {
+    "osc": {
+      "cnpj": "02669361000150",
+      "nome": "REDE SUL DE INTERCESSAO E GUERRA ESPIRITUAL",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1998,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5181064772"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:54.344Z",
+    "evaluated_editais": []
+  },
+  "02929098000191": {
+    "osc": {
+      "cnpj": "02929098000191",
+      "nome": "COMUNIDADE EVANGELICA DE CONFISSAO LUTERANA DE MATHIAS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1999,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0514725645"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:54.592Z",
+    "evaluated_editais": []
+  },
+  "03112955000129": {
+    "osc": {
+      "cnpj": "03112955000129",
+      "nome": "ROTARY CLUB DE CANOAS INDUSTRIAL",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1999,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5199898199"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:54.819Z",
+    "evaluated_editais": []
+  },
+  "03286299000423": {
+    "osc": {
+      "cnpj": "03286299000423",
+      "nome": "FUNDACAO ULBRA",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Fundação Privada",
+      "ano_fundacao": 2004,
+      "cnae_primario_descricao": "Pesquisa e desenvolvimento experimental em ciências sociais e humanas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:55.050Z",
+    "evaluated_editais": []
+  },
+  "03224666000111": {
+    "osc": {
+      "cnpj": "03224666000111",
+      "nome": "ASSOCIACAO MEDICA DE CANOAS - SOMEDICA",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1999,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "514767507"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:55.295Z",
+    "evaluated_editais": []
+  },
+  "03241185000114": {
+    "osc": {
+      "cnpj": "03241185000114",
+      "nome": "SHOOTER - CLUBE DE TIRO DEFENSIVO",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1999,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0514668137"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:55.532Z",
+    "evaluated_editais": []
+  },
+  "87672820000108": {
+    "osc": {
+      "cnpj": "87672820000108",
+      "nome": "RIO GRANDE FUTEBOL CLUBE",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1981,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:55.775Z",
+    "evaluated_editais": []
+  },
+  "87670824000157": {
+    "osc": {
+      "cnpj": "87670824000157",
+      "nome": "ASSOCIACAO AMIGOS DO PARQUE RESIDENCIAL IGARA",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1985,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5192799390"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:56.266Z",
+    "evaluated_editais": []
+  },
+  "87671392000107": {
+    "osc": {
+      "cnpj": "87671392000107",
+      "nome": "ASSOCIACAO DOS UMBANDISTAS DE CANOAS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1984,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "0514723938"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:56.476Z",
+    "evaluated_editais": []
+  },
+  "87665758000127": {
+    "osc": {
+      "cnpj": "87665758000127",
+      "nome": "CONSELHO COMUNITARIO DO BAIRRO RIO BRANCO",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1982,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5134282090"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:56.699Z",
+    "evaluated_editais": []
+  },
+  "87666129000111": {
+    "osc": {
+      "cnpj": "87666129000111",
+      "nome": "ASFUCAR ASSOCIACAO DOS FUNCIONARIOS DA SBARDECAR",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1981,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:56.749Z",
+    "evaluated_editais": []
+  },
+  "87667010000163": {
+    "osc": {
+      "cnpj": "87667010000163",
+      "nome": "ASSOCIACAO DOS MORADORES DO JARDIM IGARA II",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1982,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5130324760",
+        "ddd_telefone_2": "5199941312"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:57.008Z",
+    "evaluated_editais": []
+  },
+  "88578026000162": {
+    "osc": {
+      "cnpj": "88578026000162",
+      "nome": "ASSOCIACAO BENEFICENTE DORCAS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1975,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:57.255Z",
+    "evaluated_editais": []
+  },
+  "88955406000179": {
+    "osc": {
+      "cnpj": "88955406000179",
+      "nome": "ASSOCIACAO ESPIRITA BENEFICENTE ALLAN KARDEC",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1976,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:57.744Z",
+    "evaluated_editais": []
+  },
+  "90093212000153": {
+    "osc": {
+      "cnpj": "90093212000153",
+      "nome": "ASSOC DOS TRAB APOSENTADOS E PENSIONISTAS DE CANOAS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1986,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5130313668",
+        "ddd_telefone_2": "5130323295"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:58.000Z",
+    "evaluated_editais": []
+  },
+  "88850003000165": {
+    "osc": {
+      "cnpj": "88850003000165",
+      "nome": "IGREJA EVANGELICA PENTECOSTAL DE CANOAS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1974,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:58.261Z",
+    "evaluated_editais": []
+  },
+  "90092412000191": {
+    "osc": {
+      "cnpj": "90092412000191",
+      "nome": "SOCIEDADE RECREATIVA EXPRESSINHO AZUL",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1985,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:58.531Z",
+    "evaluated_editais": []
+  },
+  "90092727000139": {
+    "osc": {
+      "cnpj": "90092727000139",
+      "nome": "IGREJA EVANGELICA PENTECOSTAL DO ESPIRITO SANTO",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1985,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5130320882"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:59.262Z",
+    "evaluated_editais": []
+  },
+  "89213631000100": {
+    "osc": {
+      "cnpj": "89213631000100",
+      "nome": "ASSOCIACAO ESPORTIVA RECREATIVA CULTURAL BENEFICIENTE E ASSISTENCIAL ESTRELA BENFICA",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1977,
+      "cnae_primario_descricao": "Outras atividades esportivas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "514668916"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:34:59.671Z",
+    "evaluated_editais": []
+  },
+  "89215107000160": {
+    "osc": {
+      "cnpj": "89215107000160",
+      "nome": "ASSOCIACAO CULTURAL E BENEFICENTE CASTRO ALVES",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1977,
+      "cnae_primario_descricao": "Outras atividades de recreação e lazer não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:34:59.898Z",
+    "evaluated_editais": []
+  },
+  "89216311000104": {
+    "osc": {
+      "cnpj": "89216311000104",
+      "nome": "LIONS CLUBE CANOAS CENTRO",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1977,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:35:00.145Z",
+    "evaluated_editais": []
+  },
+  "90093469000105": {
+    "osc": {
+      "cnpj": "90093469000105",
+      "nome": "LIGA CANOENSE DE FUTEBOL DE SALAO, (FUTSAL)",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Outras atividades esportivas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5134722558"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:01.152Z",
+    "evaluated_editais": []
+  },
+  "90093717000118": {
+    "osc": {
+      "cnpj": "90093717000118",
+      "nome": "ASSOCIACAO COMUNITARIA DO BAIRRO MATO GRANDE",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:35:01.988Z",
+    "evaluated_editais": []
+  },
+  "90093840000139": {
+    "osc": {
+      "cnpj": "90093840000139",
+      "nome": "ASSOCIACAO CULTURAL UNIDADE DO REINO",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1987,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5185251217"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:02.210Z",
+    "evaluated_editais": []
+  },
+  "90093956000178": {
+    "osc": {
+      "cnpj": "90093956000178",
+      "nome": "ASSOCIACAO DOS MORADORES DO BAIRRO JARDIM ATLANTICO",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1988,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5193338042"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:02.483Z",
+    "evaluated_editais": []
+  },
+  "92858000023862": {
+    "osc": {
+      "cnpj": "92858000023862",
+      "nome": "MITRA DA ARQUIDIOCESE DE PORTO ALEGRE",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5132286199"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:03.150Z",
+    "evaluated_editais": []
+  },
+  "90811431000120": {
+    "osc": {
+      "cnpj": "90811431000120",
+      "nome": "CONGREGACAO EVANGELICA LUTERANA SAO LUCAS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Organização Religiosa",
+      "ano_fundacao": 1979,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5134662002"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:03.389Z",
+    "evaluated_editais": []
+  },
+  "90811498000165": {
+    "osc": {
+      "cnpj": "90811498000165",
+      "nome": "ASSOCIACAO DOS MORADORES DO BAIRRO RIO BRANCO",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1981,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:35:03.623Z",
+    "evaluated_editais": []
+  },
+  "92933027000155": {
+    "osc": {
+      "cnpj": "92933027000155",
+      "nome": "INSTITUTO DE EDUCACAO ESPIRITA LUZIA",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1989,
+      "cnae_primario_descricao": "Serviços de assistência social sem alojamento",
+      "cnae_secundario_descricao": "Ensino de arte e cultura não especificado anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:35:03.880Z",
+    "evaluated_editais": [
+      "18924"
+    ],
+    "ipea_id": 742846,
+    "dossieText": "### 🏛️ Perfil Institucional\nFundada em 1989 e sediada em Canoas (RS), a organização privada INSTITUTO DE EDUCACAO ESPIRITA LUZIA tem como atividade principal a prestação de serviços de assistência social sem alojamento, contando com forte arraigamento comunitário e maturidade institucional.\n\n### 🎯 Alinhamento com o Edital\nO perfil da OSC alinha-se perfeitamente aos temas de assistência social, infância e adolescência exigidos pelo edital de credenciamento para acolhimento institucional em Canoas/RS, cujo valor global chega a R$ 2.930.490, sendo plenamente elegível para a execução do objeto.",
+    "dossie_updated_at": "2026-11-17T10:35:14.953Z"
+  },
+  "92933720000128": {
+    "osc": {
+      "cnpj": "92933720000128",
+      "nome": "ASSOCIACAO DE MULHERES PRINCESA ISABEL",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1990,
+      "cnae_primario_descricao": "Atividades de associações de defesa de direitos sociais",
+      "cnae_secundario_descricao": "Atividades de organizações associativas ligadas à cultura e à arte | Atividades associativas não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5199181235"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:04.122Z",
+    "evaluated_editais": []
+  },
+  "92933779000116": {
+    "osc": {
+      "cnpj": "92933779000116",
+      "nome": "UNIAO FUTEBOL CLUBE",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1990,
+      "cnae_primario_descricao": "Clubes sociais, esportivos e similares",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:35:04.357Z",
+    "evaluated_editais": []
+  },
+  "92933977000180": {
+    "osc": {
+      "cnpj": "92933977000180",
+      "nome": "COMUNIDADE EVANGELICA VIDA",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1990,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5134281663"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:04.569Z",
+    "evaluated_editais": []
+  },
+  "94308947000108": {
+    "osc": {
+      "cnpj": "94308947000108",
+      "nome": "IGREJA EVANGELICA DE RENOVACAO SANTA FE",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1992,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {}
+    },
+    "last_checked_date": "2026-11-17T10:35:04.999Z",
+    "evaluated_editais": []
+  },
+  "94309044000141": {
+    "osc": {
+      "cnpj": "94309044000141",
+      "nome": "ASSOCIACAO DOS MORADORES DO JARDIM DO LAGO",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1993,
+      "cnae_primario_descricao": "Atividades associativas não especificadas anteriormente",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5181820049"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:05.244Z",
+    "evaluated_editais": []
+  },
+  "18502859000164": {
+    "osc": {
+      "cnpj": "18502859000164",
+      "nome": "ASSOCIACAO ESPORTIVA E CULTURAL PRO ESPORTE",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2013,
+      "cnae_primario_descricao": "Produção e promoção de eventos esportivos",
+      "cnae_secundario_descricao": "Outras atividades de recreação e lazer não especificadas anteriormente",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5139220575"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:05.515Z",
+    "evaluated_editais": []
+  },
+  "97131346000160": {
+    "osc": {
+      "cnpj": "97131346000160",
+      "nome": "IGREJA EVANGELICA PENTECOSTAL O BRASIL PARA CRISTO EM CANOAS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 1994,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5130320882"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:06.299Z",
+    "evaluated_editais": []
+  },
+  "97131346000322": {
+    "osc": {
+      "cnpj": "97131346000322",
+      "nome": "IGREJA EVANGELICA PENTECOSTAL O BRASIL PARA CRISTO EM CANOAS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5130320882"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:06.517Z",
+    "evaluated_editais": []
+  },
+  "97131346000403": {
+    "osc": {
+      "cnpj": "97131346000403",
+      "nome": "IGREJA EVANGELICA PENTECOSTAL O BRASIL PARA CRISTO EM CANOAS",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2009,
+      "cnae_primario_descricao": "Atividades de organizações religiosas ou filosóficas",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5130320882"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:06.783Z",
+    "evaluated_editais": []
+  },
+  "19394103000101": {
+    "osc": {
+      "cnpj": "19394103000101",
+      "nome": "AGENCIAUTO-RS - ASSOCIACAO DOS REVENDEDORES DE VEICULOS AUTOMOTORES DO ESTADO DO RIO GRANDE DO SUL",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2013,
+      "cnae_primario_descricao": "Atividades de organizações associativas patronais e empresariais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5134767979",
+        "ddd_telefone_2": "5134767979"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:07.943Z",
+    "evaluated_editais": []
+  },
+  "19392710000132": {
+    "osc": {
+      "cnpj": "19392710000132",
+      "nome": "PROJETO ASSISTENCIAL CONSTRUIR",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2013,
+      "cnae_primario_descricao": "Educação profissional de nível técnico",
+      "cnae_secundario_descricao": "Educação profissional de nível tecnológico | Ensino de música | Treinamento em informática | Outras atividades de ensino não especificadas anteriormente | Serviços de assistência social sem alojamento",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5134665522",
+        "ddd_telefone_2": "5134729365"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:08.184Z",
+    "evaluated_editais": [
+      "18924"
+    ],
+    "ipea_id": 745539,
+    "dossieText": "### 🏛️ Perfil Institucional\nO Projeto Assistencial Construir, localizado em Canoas (RS) e fundado em 2013, é uma associação privada cuja atividade principal é a educação profissional de nível técnico, contando também com atuações secundárias em ensino de música, informática e assistência social sem alojamento.\n\n### 🎯 Alinhamento com o Edital\nO edital da Prefeitura de Canoas busca o credenciamento de entidades para serviço de acolhimento institucional provisório (com alojamento) para crianças e adolescentes em situação de medida protetiva. Como a OSC não possui histórico ou CNAE voltado para o acolhimento residencial/abrigamento, o alinhamento é fraco, resultando em reprovação técnica para este objeto específico.",
+    "dossie_updated_at": "2026-11-17T10:35:11.675Z"
+  },
+  "15573896000175": {
+    "osc": {
+      "cnpj": "15573896000175",
+      "nome": "ASSOCIACAO DOS MEDICOS E ODONTOLOGOS DO HOSPITAL MUNICIPAL DE PRONTO SOCORRO DE CANOAS - AMOHPSC",
+      "uf": "RS",
+      "municipio": "CANOAS",
+      "natureza_juridica": "Associação Privada",
+      "ano_fundacao": 2012,
+      "cnae_primario_descricao": "Outras atividades associativas profissionais",
+      "cnae_secundario_descricao": "",
+      "situacao_cadastral": "ATIVA",
+      "official_contacts": {
+        "ddd_telefone_1": "5193362411"
+      }
+    },
+    "last_checked_date": "2026-11-17T10:35:08.414Z",
     "evaluated_editais": []
   }
 }
