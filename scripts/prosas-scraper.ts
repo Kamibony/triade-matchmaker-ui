@@ -467,9 +467,15 @@ async function runStandaloneScraper() {
 
         const maxDeepScrape = process.env.MAX_DEEP_SCRAPE ? parseInt(process.env.MAX_DEEP_SCRAPE, 10) : 450;
         const forceRescrape = process.env.FORCE_RESCRAPE === 'true';
-        const eligibleItems = deduplicatedItems.filter(item =>
-            forceRescrape || (item.pipeline_status !== 'COMPLETED' && item.pipeline_status !== 'FAILED_PERMANENTLY' && item.pipeline_status !== 'PENDING_EXTRACTION')
-        );
+        const eligibleItems = deduplicatedItems
+            .filter(item =>
+                forceRescrape || (item.pipeline_status !== 'COMPLETED' && item.pipeline_status !== 'FAILED_PERMANENTLY' && item.pipeline_status !== 'PENDING_EXTRACTION')
+            )
+            .sort((a, b) => {
+                const retryDiff = (a.retry_count || 0) - (b.retry_count || 0);
+                if (retryDiff !== 0) return retryDiff;
+                return (Number(b.id) || 0) - (Number(a.id) || 0);
+            });
         const itemsToDeepScrape = eligibleItems.slice(0, maxDeepScrape);
 
         const concurrency = 2;
@@ -534,7 +540,7 @@ async function runStandaloneScraper() {
                                                 queue.push(childNodes[i]);
                                             }
                                         } else if (node.nodeType === Node.DOCUMENT_FRAGMENT_NODE) {
-                                             const childNodes = el.childNodes;
+                                             const childNodes = node.childNodes;
                                              for (let i = 0; i < childNodes.length; i++) {
                                                  queue.push(childNodes[i]);
                                              }
@@ -586,7 +592,7 @@ async function runStandaloneScraper() {
                                                             queue.push(childNodes[i]);
                                                         }
                                                     } else if (node.nodeType === Node.DOCUMENT_FRAGMENT_NODE) {
-                                                         const childNodes = el.childNodes;
+                                                         const childNodes = node.childNodes;
                                                          for (let i = 0; i < childNodes.length; i++) {
                                                              queue.push(childNodes[i]);
                                                          }
@@ -606,25 +612,32 @@ async function runStandaloneScraper() {
                                 let smartPdf = await capturePdfFromButton(workerPage, context);
 
                                 const rawWorkerLinks = await workerPage.evaluate(() => {
-                                    const allElements = document.querySelectorAll('*');
                                     const allLinks: { href: string, text: string }[] = [];
+                                    const queue: (Document | ShadowRoot)[] = [document];
+                                    const visited = new Set<Node>();
 
-                                    for (let i = 0; i < allElements.length; i++) {
-                                        if (allElements[i].tagName === 'A') {
-                                            const a = allElements[i] as HTMLAnchorElement;
-                                            allLinks.push({
-                                                href: a.href || a.getAttribute('href') || '',
-                                                text: (a.textContent || '').toLowerCase().trim()
-                                            });
-                                        }
-                                        if (allElements[i].shadowRoot) {
-                                            const shadowLinks = allElements[i].shadowRoot!.querySelectorAll('a');
-                                            for(let j=0; j<shadowLinks.length; j++) {
-                                                const a = shadowLinks[j] as HTMLAnchorElement;
+                                    while (queue.length > 0) {
+                                        const root = queue.shift();
+                                        if (!root || visited.has(root)) continue;
+                                        visited.add(root);
+
+                                        const allElements = root.querySelectorAll('*');
+                                        for (let i = 0; i < allElements.length; i++) {
+                                            const el = allElements[i];
+                                            if (el.tagName === 'A') {
+                                                const a = el as HTMLAnchorElement;
                                                 allLinks.push({
                                                     href: a.href || a.getAttribute('href') || '',
                                                     text: (a.textContent || '').toLowerCase().trim()
                                                 });
+                                            } else if (el.tagName === 'IFRAME' || el.tagName === 'EMBED') {
+                                                const src = el.getAttribute('src') || '';
+                                                if (src) {
+                                                    allLinks.push({ href: src, text: 'edital embedded pdf' });
+                                                }
+                                            }
+                                            if (el.shadowRoot && !visited.has(el.shadowRoot)) {
+                                                queue.push(el.shadowRoot);
                                             }
                                         }
                                     }
@@ -674,11 +687,16 @@ async function runStandaloneScraper() {
                                 } else {
                                      item.pipeline_status = 'PENDING_EXTRACTION';
                                      item.last_error = undefined;
+                                     item.retry_count = undefined;
                                 }
 
                             } catch (err: any) {
                                 console.error(`[StandaloneProsasScraper] Failed to deep scrape ${detailUrl}: ${err.message}`);
+                                item.retry_count = (item.retry_count || 0) + 1;
                                 item.last_error = err.message;
+                                if (item.retry_count >= 4) {
+                                    item.pipeline_status = 'FAILED_PERMANENTLY';
+                                }
                             } finally {
                                 if (workerPage) {
                                     try { await workerPage.close(); } catch (e) {}

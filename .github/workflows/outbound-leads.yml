@@ -1,14 +1,7 @@
 name: Outbound Matchmaking Leads Generator
 
 on:
-  schedule:
-    # Runs at 03:00 UTC (1 hour after Data Ingestion Pipeline at 02:00 UTC to avoid race conditions)
-    - cron: '0 3 * * *'
-  push:
-    branches:
-      - main
-    paths:
-      - 'scripts/outbound-match.ts'
+  # Execução manual sob demanda (ideal para Sniper Mode com edital único)
   workflow_dispatch:
     inputs:
       target_edital_id:
