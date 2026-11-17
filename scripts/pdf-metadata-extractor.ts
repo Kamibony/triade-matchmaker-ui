@@ -64,9 +64,9 @@ export async function downloadPdf(url: string): Promise<{ success: boolean, data
             return { success: false, error: `HTTP Error: ${response.status}` };
         }
 
-        const contentType = response.headers.get('content-type') || '';
-        if (contentType.includes('text/html') || contentType.includes('application/xhtml+xml') || (!contentType.includes('application/pdf') && !contentType.includes('application/octet-stream'))) {
-            return { success: false, notPdf: true, error: 'URL did not return a valid PDF binary' };
+        const contentType = (response.headers.get('content-type') || '').toLowerCase();
+        if (contentType.includes('text/html') || contentType.includes('application/xhtml+xml')) {
+            return { success: false, notPdf: true, error: 'URL returned HTML instead of a PDF binary' };
         }
 
         const contentLength = response.headers.get('content-length');
@@ -164,7 +164,42 @@ async function generateContentWithRetry(model: any, promptData: any, maxRetries 
     }
 }
 
-async function extractMetadataFromPdf(pdfData: ArrayBuffer, prosasSummaryText?: string): Promise<any> {
+function normalizeIsoDate(raw?: string | null): string | null {
+    const val = String(raw || '').trim();
+    if (!val) return null;
+    const isoMatch = val.match(/^(\d{4}-\d{2}-\d{2})/);
+    if (isoMatch) return isoMatch[1];
+    const brMatch = val.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+    if (brMatch) return `${brMatch[3]}-${brMatch[2]}-${brMatch[1]}`;
+    return null;
+}
+
+function buildProsasApiContext(edital: any): string {
+    const attrs = edital?.attributes || {};
+    const lines: string[] = [];
+    if (attrs.nome) lines.push(`Título: ${attrs.nome}`);
+    if (attrs.patrocinador) {
+        const pat = typeof attrs.patrocinador === 'object' ? (attrs.patrocinador.nome || JSON.stringify(attrs.patrocinador)) : attrs.patrocinador;
+        lines.push(`Patrocinador / Órgão: ${pat}`);
+    }
+    if (attrs.locais && (Array.isArray(attrs.locais) ? attrs.locais.length > 0 : true)) {
+        const locaisText = Array.isArray(attrs.locais)
+            ? attrs.locais.map((l: any) => (typeof l === 'string' ? l : l?.nome || l?.uf || JSON.stringify(l))).join(', ')
+            : String(attrs.locais);
+        if (locaisText) lines.push(`Locais elegíveis (Prosas API): ${locaisText}`);
+    }
+    if (attrs.areas_interesse && (Array.isArray(attrs.areas_interesse) ? attrs.areas_interesse.length > 0 : true)) {
+        const areasText = Array.isArray(attrs.areas_interesse)
+            ? attrs.areas_interesse.map((a: any) => (typeof a === 'string' ? a : a?.nome || JSON.stringify(a))).join(', ')
+            : String(attrs.areas_interesse);
+        if (areasText) lines.push(`Áreas de interesse (Prosas API): ${areasText}`);
+    }
+    if (attrs.valor_total) lines.push(`Valor Total (Prosas API): R$ ${attrs.valor_total}`);
+    if (attrs.data_fim) lines.push(`Data de encerramento (Prosas API): ${attrs.data_fim}`);
+    return lines.length > 0 ? `--- METADADOS ESTRUTURADOS (PROSAS API) ---\n${lines.join('\n')}` : '';
+}
+
+async function extractMetadataFromPdf(pdfData: ArrayBuffer, prosasSummaryText?: string, apiContext?: string): Promise<any> {
     const model = genAI.getGenerativeModel({
         model: "gemini-3.5-flash-lite",
         generationConfig: sharedGenerationConfig
@@ -179,12 +214,17 @@ async function extractMetadataFromPdf(pdfData: ArrayBuffer, prosasSummaryText?: 
         console.warn("pdf-parse failed to extract text, proceeding with Prosas summary text: " + err.message);
     }
 
-    const combinedContext = prosasSummaryText
-        ? `--- RESUMO DA PÁGINA PROSAS (FONTE OFICIAL ATUALIZADA DE PRAZOS E VALORES) ---\n${prosasSummaryText.substring(0, 2000)}\n\n--- TEXTO DO EDITAL (PDF) ---\n${extractedText}`
-        : extractedText;
+    const sections: string[] = [];
+    if (apiContext) sections.push(apiContext);
+    if (prosasSummaryText) {
+        sections.push(`--- RESUMO DA PÁGINA PROSAS (FONTE OFICIAL ATUALIZADA DE PRAZOS E VALORES) ---\n${prosasSummaryText.substring(0, 2000)}`);
+    }
+    if (extractedText) {
+        sections.push(`--- TEXTO DO EDITAL (PDF) ---\n${extractedText}`);
+    }
 
     const parts: any[] = [
-        "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n" + combinedContext
+        "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n" + sections.join('\n\n')
     ];
 
     if (extractedText.trim().length < 200 && pdfBuffer.byteLength <= 10 * 1024 * 1024) {
@@ -356,13 +396,14 @@ async function uploadPdfToDrive(pdfData: ArrayBuffer, fileName: string): Promise
     }
 }
 
-async function extractMetadataFromText(textContent: string): Promise<any> {
+async function extractMetadataFromText(textContent: string, apiContext?: string): Promise<any> {
     const model = genAI.getGenerativeModel({
         model: "gemini-3.5-flash-lite",
         generationConfig: sharedGenerationConfig
     });
 
-    const prompt = "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n" + textContent;
+    const combinedText = apiContext ? `${apiContext}\n\n--- TEXTO DA PÁGINA PROSAS ---\n${textContent}` : textContent;
+    const prompt = "Extract the strict bureaucratic criteria from this document according to the required JSON schema in Brazilian Portuguese.\n\n" + combinedText;
 
     const result = await generateContentWithRetry(model, [prompt]);
     const text = result.response.text();
@@ -383,6 +424,12 @@ function applyAuthoritativeProsasMetadata(edital: any, metadata: any): boolean {
             edital.attributes.data_fim = headerInfo.data_fim;
             changed = true;
         }
+    }
+    const apiFim = normalizeIsoDate(edital.attributes?.data_fim);
+    const metaPrazo = normalizeIsoDate(metadata.prazo_de_inscricao);
+    if (apiFim && (!metaPrazo || apiFim > metaPrazo)) {
+        metadata.prazo_de_inscricao = apiFim;
+        changed = true;
     }
     if (headerInfo.valor_total) {
         edital.attributes = edital.attributes || {};
@@ -491,7 +538,7 @@ export async function processEditais() {
         if (useTextFallback) {
             if (edital.full_text && edital.full_text.length > 300) {
                 try {
-                    const metadata = await extractMetadataFromText(edital.full_text);
+                    const metadata = await extractMetadataFromText(edital.full_text, buildProsasApiContext(edital));
                     metadata.edital_id = edital.id ? edital.id.toString() : String(i);
                     metadata.fonte_dados = "texto_pagina";
                     applyAuthoritativeProsasMetadata(edital, metadata);
@@ -523,7 +570,7 @@ export async function processEditais() {
                 const fileName = `${editalId}_edital.pdf`;
                 const driveLink = await uploadPdfToDrive(downloadResult.data, fileName);
 
-                const metadata = await extractMetadataFromPdf(downloadResult.data, edital.full_text);
+                const metadata = await extractMetadataFromPdf(downloadResult.data, edital.full_text, buildProsasApiContext(edital));
                 metadata.edital_id = editalId;
                 metadata.fonte_dados = "pdf";
 
@@ -561,7 +608,7 @@ export async function processEditais() {
         } else if (downloadResult.skip) {
              if (edital.full_text && edital.full_text.length > 300) {
                  try {
-                     const metadata = await extractMetadataFromText(edital.full_text);
+                     const metadata = await extractMetadataFromText(edital.full_text, buildProsasApiContext(edital));
                      metadata.edital_id = edital.id ? edital.id.toString() : String(i);
                      metadata.fonte_dados = "texto_pagina";
                      applyAuthoritativeProsasMetadata(edital, metadata);
@@ -591,15 +638,14 @@ export async function processEditais() {
              modified = false;
         }
 
-        if (processedCount % 10 === 0 && processedCount > 0 && processedCount < maxExtract) {
-            console.log(`Processed ${processedCount} items. Sleeping for 65 seconds to avoid rate limits...`);
-            await sleep(65000);
+        if (processedCount < maxExtract) {
+            await sleep(1200);
         }
     }
 
-    // Retroactively enrich already-COMPLETED editais from Prosas header text before archiving expired ones
+    // Retroactively enrich already-COMPLETED editais from Prosas header/API metadata before archiving expired ones
     for (const e of editais) {
-        if (e.deep_metadata && e.full_text) {
+        if (e.deep_metadata) {
             if (applyAuthoritativeProsasMetadata(e, e.deep_metadata)) {
                 modified = true;
             }

@@ -12,6 +12,82 @@ function formatGoogleDriveUrl(url: string) {
     return url;
 }
 
+function isPdfLikeUrl(url: string): boolean {
+    if (!url || typeof url !== 'string') return false;
+    const lower = url.toLowerCase();
+    return lower.endsWith('.pdf') || lower.includes('.pdf?') || lower.includes('drive.google.com/uc?export=download');
+}
+
+function normalizeIsoDate(raw?: string | null): string | null {
+    const val = String(raw || '').trim();
+    if (!val) return null;
+    const isoMatch = val.match(/^(\d{4}-\d{2}-\d{2})/);
+    if (isoMatch) return isoMatch[1];
+    const brMatch = val.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+    if (brMatch) return `${brMatch[3]}-${brMatch[2]}-${brMatch[1]}`;
+    return null;
+}
+
+function scorePdfCandidate(href: string, linkText: string): number {
+    const combined = `${(linkText || '').toLowerCase()} ${href.toLowerCase()}`
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '');
+
+    let score = 0;
+
+    // Strong positive signals for actual grant call PDFs / amendments
+    if (combined.includes('retifica') || combined.includes('prorroga')) score += 110;
+    if (combined.includes('edital')) score += 100;
+    if (combined.includes('chamamento')) score += 95;
+    if (combined.includes('regulamento')) score += 90;
+    if (combined.includes('selecao') || combined.includes('fomento')) score += 75;
+    if (combined.includes('termo_de_referencia') || combined.includes('termo-de-referencia') || combined.includes('termo de referencia')) score += 65;
+    if (combined.includes('documento') || combined.includes('regras') || combined.includes('complementares')) score += 55;
+    if (href.toLowerCase().includes('prosas-prod') || href.toLowerCase().includes('objectstorage')) score += 50;
+
+    // Hard negative signals for clearly unrelated documents (even if button says 'edital')
+    const hardJunkKeywords = ['iptu', 'isencao', 'requerimento', 'certidao', 'comprovante', 'curriculo'];
+    if (hardJunkKeywords.some(kw => combined.includes(kw))) {
+        score -= 300;
+    }
+
+    // Soft negative signals for municipal boilerplate / legal acts
+    const softJunkKeywords = ['diario-oficial', 'diario_oficial', 'diario oficial', 'estatuto', 'decreto', 'portaria', 'nota-tecnica'];
+    if (softJunkKeywords.some(kw => combined.includes(kw))) {
+        score -= 140;
+    }
+
+    // Mild penalty for annexes/forms so main edital wins first
+    const annexKeywords = ['anexo', 'modelo', 'planilha', 'formulario', 'declaracao', 'checklist', 'ficha'];
+    if (annexKeywords.some(kw => combined.includes(kw))) {
+        score -= 45;
+    }
+
+    return score;
+}
+
+function pickBestPdfLink(links: { href: string; text: string }[]): string | null {
+    let bestHref: string | null = null;
+    let bestScore = -Infinity;
+
+    for (const link of links) {
+        const href = formatGoogleDriveUrl((link.href || '').trim());
+        if (!isPdfLikeUrl(href)) continue;
+
+        const score = scorePdfCandidate(href, link.text || '');
+        if (score > bestScore) {
+            bestScore = score;
+            bestHref = href;
+        }
+    }
+
+    // Reject obviously unrelated municipal documents (e.g. IPTU exemption forms)
+    if (bestHref && bestScore < -60) {
+        return null;
+    }
+    return bestHref;
+}
+
 async function loginOnProdutosIfNeeded(workerPage: any, username: string, password: string) {
     return await workerPage.evaluate(async ({ u, p }: { u: string, p: string }) => {
         let emailInput: HTMLInputElement | null = null;
@@ -247,20 +323,7 @@ async function capturePdfFromButton(page: any, context: any): Promise<string | n
             return extractedLinks;
         });
 
-        let fallbackPdf = null;
-        for (let i = 0; i < rawLinks.length; i++) {
-            let href = rawLinks[i].href;
-            href = formatGoogleDriveUrl(href);
-            if (href.toLowerCase().endsWith('.pdf') || href.toLowerCase().includes('.pdf?') || href.includes('drive.google.com/uc?export=download')) {
-                const text = rawLinks[i].text;
-                if (text.includes('edital') || text.includes('regulamento') || text.includes('chamada') || text.includes('retificação')) {
-                    return href;
-                }
-                if (!fallbackPdf) fallbackPdf = href;
-            }
-        }
-
-        return fallbackPdf;
+        return pickBestPdfLink(rawLinks);
 
     } catch (e: any) {
         console.warn("[capturePdfFromButton] Error capturing PDF:", e.message);
@@ -425,10 +488,24 @@ async function runStandaloneScraper() {
             const forceRescrape = process.env.FORCE_RESCRAPE === 'true';
 
             if (existing) {
+                const syncedDeepMetadata = forceRescrape
+                    ? undefined
+                    : existing.deep_metadata
+                      ? { ...existing.deep_metadata }
+                      : undefined;
+
+                if (syncedDeepMetadata) {
+                    const apiFim = normalizeIsoDate(cleanAttributes.data_fim);
+                    const existingPrazo = normalizeIsoDate(syncedDeepMetadata.prazo_de_inscricao);
+                    if (apiFim && (!existingPrazo || apiFim > existingPrazo)) {
+                        syncedDeepMetadata.prazo_de_inscricao = apiFim;
+                    }
+                }
+
                 const merged = {
                     ...item,
                     attributes: cleanAttributes,
-                    deep_metadata: forceRescrape ? undefined : existing.deep_metadata,
+                    deep_metadata: syncedDeepMetadata,
                     pdf_link: forceRescrape ? undefined : existing.pdf_link,
                     full_text: forceRescrape ? undefined : existing.full_text,
                     retry_count: forceRescrape ? undefined : existing.retry_count,
@@ -644,38 +721,12 @@ async function runStandaloneScraper() {
                                     return allLinks;
                                 });
 
-                                let foundPdf = '';
-                                let annexPdf = '';
-                                for (let i = 0; i < rawWorkerLinks.length; i++) {
-                                    const link = rawWorkerLinks[i];
-                                    const btnText = link.text;
-                                    let href = link.href;
-                                    href = formatGoogleDriveUrl(href);
-
-                                    if (href && (href.toLowerCase().endsWith('.pdf') || href.toLowerCase().includes('.pdf?') || href.includes('drive.google.com/uc?export=download'))) {
-                                        const isAnnex = btnText.includes('anexo') || btnText.includes('modelo') || btnText.includes('planilha') || btnText.includes('formulario') || href.toLowerCase().includes('anexo') || href.toLowerCase().includes('modelo') || href.toLowerCase().includes('planilha') || href.toLowerCase().includes('formulario');
-
-                                        if (isAnnex) {
-                                            if (!annexPdf) annexPdf = href;
-                                            continue;
-                                        }
-
-                                        if (btnText.includes('regulamento') || btnText.includes('edital') || btnText.includes('complementares') || btnText.includes('chamamento') || btnText.includes('documento') || btnText.includes('regras')) {
-                                            foundPdf = href;
-                                            break;
-                                        }
-                                        if (!foundPdf) foundPdf = href;
-                                    }
-                                }
-
-                                let pdfLink = foundPdf || annexPdf;
-
-                                const finalPdfLink = smartPdf || pdfLink;
-                                if (finalPdfLink && (finalPdfLink.toLowerCase().endsWith('.pdf') || finalPdfLink.toLowerCase().includes('.pdf?') || finalPdfLink.includes('drive.google.com/uc?export=download'))) {
-                                    item.pdf_link = finalPdfLink;
-                                } else {
-                                    item.pdf_link = undefined;
-                                }
+                                const workerCandidates = [
+                                    ...(smartPdf ? [{ href: smartPdf, text: 'acessar edital' }] : []),
+                                    ...rawWorkerLinks
+                                ];
+                                const finalPdfLink = pickBestPdfLink(workerCandidates);
+                                item.pdf_link = finalPdfLink || undefined;
 
                                 if (pageText.length > 15000) pageText = pageText.substring(0, 15000);
                                 item.full_text = pageText;
