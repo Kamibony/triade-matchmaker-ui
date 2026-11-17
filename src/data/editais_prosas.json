@@ -1,5 +1,115 @@
 [
   {
+    "id": "anater-03-2026-lote6",
+    "source_portal": "Anater / Acordo Rio Doce",
+    "attributes": {
+      "nome": "Coopera Rio + Doce — Seleção Pública Anater nº 03/2026 (Lote 6 — Médio Rio Doce/MG | Chamamento ADAFAC até 23/11)",
+      "e_central?": false,
+      "data_inicio": "2026-10-15",
+      "data_fim": "2026-12-16",
+      "valor_total": 27982800,
+      "patrocinador": "ANATER (Acordo do Rio Doce) | Entidade Proponente: ADAFAC",
+      "locais": [
+        {
+          "municipio": "Governador Valadares",
+          "uf": "MG"
+        },
+        {
+          "municipio": "Alpercata",
+          "uf": "MG"
+        },
+        {
+          "municipio": "Tumiritinga",
+          "uf": "MG"
+        },
+        {
+          "municipio": "Galiléia",
+          "uf": "MG"
+        },
+        {
+          "municipio": "Conselheiro Pena",
+          "uf": "MG"
+        },
+        {
+          "municipio": "Itueta",
+          "uf": "MG"
+        },
+        {
+          "municipio": "Resplendor",
+          "uf": "MG"
+        },
+        {
+          "municipio": "Aimorés",
+          "uf": "MG"
+        }
+      ],
+      "areas_interesse": [
+        "Agricultura Familiar",
+        "Agroindústrias",
+        "Cooperativismo",
+        "Segurança Alimentar"
+      ]
+    },
+    "public_url": "https://editalpre.anater.org/",
+    "pdf_link": "https://editalpre.anater.org/",
+    "full_text": "Seleção Pública Anater nº 03/2026 — Projeto Agroindústrias e Mercados Cooperativos no Rio Doce (Coopera Rio + Doce), Lote 6 (Médio Rio Doce/MG): R$ 27.982.800,00 para investimentos em no mínimo 3 Organizações Beneficiárias (até R$ 9.327.600,00 por organização: até R$ 3.877.600 em ATER/formação por 36 meses, até R$ 3.000.000 em agroindústria e até R$ 2.450.000 em logística/comercialização/caminhões). A ADAFAC (Aimorés/MG) atua como Entidade Proponente e abriu o Chamamento Público nº 01/2026 com prazo de manifestação de interesse até 23/11/2026, visitas técnicas de 24 a 28/11/2026 e envio final Anater até 16/12/2026.",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "anater-03-2026-lote6",
+      "resumo_objetivo": "Chamamento Público nº 01/2026 da ADAFAC (até 23/11/2026) para selecionar Organizações Beneficiárias do Lote 6 no edital Coopera Rio + Doce (Seleção Pública Anater nº 03/2026, prazo final 16/12/2026). Oferece até R$ 9.327.600,00 por organização em agroindústria, equipamentos, veículos/logística e ATER por 36 meses (sem repasse financeiro direto às beneficiárias; bens transferidos ao final com encargo de 5 anos).",
+      "temas_principais": [
+        "agricultura familiar",
+        "agroindústria",
+        "cooperativismo rural",
+        "comercialização e mercados",
+        "Vale do Rio Doce"
+      ],
+      "prazo_de_inscricao": "2026-12-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Governador Valadares - MG",
+          "Alpercata - MG",
+          "Tumiritinga - MG",
+          "Galiléia - MG",
+          "Conselheiro Pena - MG",
+          "Itueta - MG",
+          "Resplendor - MG",
+          "Aimorés - MG"
+        ],
+        "natureza_juridica_excluida": [
+          "sindicatos",
+          "com fins lucrativos",
+          "entidades ligadas a Samarco/Vale/BHP/Renova"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 27982800,
+        "exige_contrapartida": false,
+        "valor_total_edital": 27982800
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Manifestação de interesse no Chamamento ADAFAC 01/2026 até 23/11/2026",
+          "Associação ou cooperativa da agricultura familiar com sede nos 8 municípios do Lote 6",
+          "Base social com maioria de agricultores familiares/Eixo Rural (CAF, DAP ou RB)",
+          "Estatuto compatível com produção, beneficiamento ou comercialização de alimentos",
+          "Posse ou direito legítimo de uso do imóvel da agroindústria",
+          "Exclusividade: não integrar outra proposta ao Edital 03/2026 (item 6.9.1)"
+        ]
+      },
+      "fonte_dados": "zip_drive",
+      "drive_pdf_link": "https://editalpre.anater.org/"
+    }
+  },
+  {
     "id": "pncp_46523015000135-1-000468_2026",
     "source_portal": "PNCP",
     "attributes": {
@@ -17771,13 +17881,13 @@
     "full_text": "Ajuda Chamada Pública de Projetos de Eficiência Energética – CPP 002/2026 (PEE EDP Espírito Santo) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Chamada Pública de Projetos de Eficiência Energética – CPP 002/2026 (PEE EDP Espírito Santo) Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Objetivos de Desenvolvimento Sustentável (ODS) 09/11/26 até 15/01/27 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: Selecionar propostas de projetos que tenham como objetivo a conservação e o uso racional da energia elétrica em unidades consumidoras localizadas na área de concessão da EDP Espírito Santo, promovendo ações de eficiência energética (como substituição de equipamentos, iluminação LED, sistemas de refrigeração e fontes de geração incentivada/fotovoltaica). Total Disponível R$ 11.000.000,00 Outros Espírito Santo - ES E-mail: Telefone : Publicado por: Central de Editais Patrocinador: EDP Espírito Santo Distribuição de Energia S.A. Assistência Social Ciência e Tecnologia Meio Ambiente",
     "deep_metadata": {
       "edital_id": "19708",
-      "resumo_objetivo": "Selecionar projetos de eficiência energética no uso final de energia elétrica para integrar o Programa de Eficiência Energética (PEE) da EDP Espírito Santo, visando a conservação e o uso racional da energia.",
+      "resumo_objetivo": "Chamada Pública de Projetos PEE EDP Espírito Santo (CPP 002/2026) — R$ 11.000.000,00 totais, com R$ 4.000.000,00 exclusivos para a tipologia Hospitais e Entidades Beneficentes (projetos de R$ 300 mil a R$ 2 milhões a fundo perdido, sem contrapartida exigida). Exige certificação CEBAS vigente (Lei 12.101/2009, item 8.4.3), alto consumo elétrico e unidade consumidora adimplente nos 70 municípios da concessão EDP ES (exclui 8 municípios atendidos pela ELFES/Coonorte). Esclarecimentos até 27/11/2026; bônus de pontuação até 08/01/2027; submissão final até 15/01/2027.",
       "temas_principais": [
         "eficiência energética",
-        "energia elétrica",
-        "sustentabilidade",
-        "energia solar",
-        "iluminação pública"
+        "hospitais filantrópicos",
+        "entidades beneficentes CEBAS",
+        "energia solar fotovoltaica",
+        "climatização e iluminação LED"
       ],
       "prazo_de_inscricao": "2027-01-15",
       "criterios_eliminatorios": {
@@ -17787,7 +17897,17 @@
           "ES"
         ],
         "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
+        "natureza_juridica_excluida": [],
+        "municipios_excluidos_es": [
+          "Águia Branca",
+          "Alto Rio Novo",
+          "Governador Lindenberg",
+          "Marilândia",
+          "Pancas",
+          "São Domingos do Norte",
+          "São Gabriel da Palha",
+          "São Roque do Canaã"
+        ]
       },
       "financeiro": {
         "valor_maximo_ou_global_reais": 11000000,
@@ -17797,13 +17917,13 @@
       "burocracia_e_documentos": {
         "exige_cnd": true,
         "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
+        "exige_cebas": true,
         "exigencias_especificas_adicionais": [
-          "Apresentação de Carta de Apresentação assinada",
-          "Apresentação de Diagnóstico Energético",
-          "Apresentação de Anotação de Responsabilidade Técnica (ART)",
-          "Apresentação de laudo estrutural com ART para projetos com geração incentivada ou aquecimento solar",
-          "Comprovação de adimplência perante a concessionária"
+          "Certificação CEBAS vigente na área da Saúde, Assistência Social ou Educação (Lei 12.101/2009, item 8.4.3)",
+          "Unidade consumidora adimplente localizada em um dos 70 municípios atendidos pela EDP Espírito Santo",
+          "Valor por projeto entre R$ 300.000,00 e R$ 2.000.000,00 (tipologia Hospitais e Entidades Beneficentes)",
+          "Iluminação com temperatura de cor >= 4500K em hospitais ou áreas da saúde",
+          "Diagnóstico Energético e ART com empresa de engenharia habilitada"
         ]
       },
       "fonte_dados": "pdf",
