@@ -56,7 +56,7 @@
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "anater-03-2026-lote6",
-      "resumo_objetivo": "Chamamento Público nº 01/2026 da ADAFAC (até 23/11/2026) para selecionar no mínimo 3 Organizações Beneficiárias (item 9.4.1, Retificação 02) do Lote 6 no edital Coopera Rio + Doce (Seleção Pública Anater nº 03/2026, envio recomendado 11/12/2026 e prazo final 16/12/2026 às 23h59). Oferece até R$ 9.327.600,00 por organização (até R$ 3.000.000 em agroindústria, R$ 2.450.000 em mercado/logística/caminhões e R$ 3.877.600,00 em equipe técnica, assessoramento técnico-gerencial e formação por 36 meses). Sem repasse financeiro direto às beneficiárias; bens transferidos somente após aprovação da prestação de contas final via Termo de Doação com Encargo (5 anos de uso coletivo).",
+      "resumo_objetivo": "Chamamento Público nº 01/2026 da ADAFAC (manifestações até segunda-feira, 23/11/2026) para selecionar 3 Organizações Beneficiárias + 1 suplente (atendendo ao mínimo de 3 do item 9.4.1 da Retificação 02) do Lote 6 no edital Coopera Rio + Doce (Seleção Pública Anater nº 03/2026, envio recomendado 11/12/2026 e prazo final 16/12/2026 às 23h59). Oferece até R$ 9.327.600,00 por organização (até R$ 3.000.000 em agroindústria, R$ 2.450.000 em mercado/logística/caminhões e R$ 3.877.600,00 em equipe técnica, assessoramento técnico-gerencial e formação por 36 meses). Sem repasse financeiro direto às beneficiárias; bens transferidos somente após aprovação da prestação de contas final via Termo de Doação com Encargo (5 anos de uso coletivo).",
       "temas_principais": [
         "agricultura familiar",
         "agroindústria",
@@ -17881,7 +17881,7 @@
     "full_text": "Ajuda Chamada Pública de Projetos de Eficiência Energética – CPP 002/2026 (PEE EDP Espírito Santo) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Chamada Pública de Projetos de Eficiência Energética – CPP 002/2026 (PEE EDP Espírito Santo) Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Objetivos de Desenvolvimento Sustentável (ODS) 09/11/26 até 15/01/27 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: Selecionar propostas de projetos que tenham como objetivo a conservação e o uso racional da energia elétrica em unidades consumidoras localizadas na área de concessão da EDP Espírito Santo, promovendo ações de eficiência energética (como substituição de equipamentos, iluminação LED, sistemas de refrigeração e fontes de geração incentivada/fotovoltaica). Total Disponível R$ 11.000.000,00 Outros Espírito Santo - ES E-mail: Telefone : Publicado por: Central de Editais Patrocinador: EDP Espírito Santo Distribuição de Energia S.A. Assistência Social Ciência e Tecnologia Meio Ambiente",
     "deep_metadata": {
       "edital_id": "19708",
-      "resumo_objetivo": "Chamada Pública de Projetos PEE EDP Espírito Santo (CPP 002/2026) — R$ 11.000.000,00 totais, com R$ 4.000.000,00 exclusivos para a tipologia Hospitais e Entidades Beneficentes (projetos de R$ 300 mil a R$ 2 milhões a fundo perdido, sem contrapartida exigida). Exige certificação CEBAS vigente (Lei 12.101/2009, item 8.4.3), alto consumo elétrico e unidade consumidora adimplente nos 70 municípios da concessão EDP ES (exclui 8 municípios atendidos pela ELFES/Coonorte). Esclarecimentos até 27/11/2026; bônus de pontuação até 08/01/2027; submissão final até 15/01/2027.",
+      "resumo_objetivo": "Chamada Pública de Projetos PEE EDP Espírito Santo (CPP 002/2026) — R$ 11.000.000,00 totais, com R$ 4.000.000,00 exclusivos para a tipologia Hospitais e Entidades Beneficentes (projetos de R$ 300 mil a R$ 2 milhões a fundo perdido, sem contrapartida exigida). Exige certificação CEBAS vigente (Lei 12.101/2009, item 8.4.3 — consultar SisCEBAS por CNPJ), unidade consumidora adimplente atendida pela EDP ES (atentar a municípios atendidos total ou parcialmente pela Luz e Força Santa Maria, como Colatina/Vila Valério/Santa Teresa — confirmar pela fatura) e empresa de engenharia proponente com atestado técnico e profissional certificado em Medição e Verificação (M&V). Esclarecimentos até 27/11/2026 às 17h; bônus até 08/01/2027; entrega final até 15/01/2027.",
       "temas_principais": [
         "eficiência energética",
         "hospitais filantrópicos",
@@ -17907,7 +17907,8 @@
           "São Domingos do Norte",
           "São Gabriel da Palha",
           "São Roque do Canaã"
-        ]
+        ],
+        "observacao_concessionaria": "Além dos 8 municípios sem concessão EDP ES, 11 municípios (incluindo Colatina, Vila Valério e Santa Teresa) têm atendimento pela Luz e Força Santa Maria em parte do território — confirmar pela fatura."
       },
       "financeiro": {
         "valor_maximo_ou_global_reais": 11000000,
@@ -17919,11 +17920,12 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": true,
         "exigencias_especificas_adicionais": [
-          "Certificação CEBAS vigente na área da Saúde, Assistência Social ou Educação (Lei 12.101/2009, item 8.4.3)",
-          "Unidade consumidora adimplente localizada em um dos 70 municípios atendidos pela EDP Espírito Santo",
+          "Certificação CEBAS vigente na área da Saúde, Assistência Social ou Educação (Lei 12.101/2009, item 8.4.3) — validar no SisCEBAS por CNPJ",
+          "Unidade consumidora adimplente atendida pela EDP Espírito Santo (confirmar fatura em municípios com atuação da Luz e Força Santa Maria, como Colatina)",
           "Valor por projeto entre R$ 300.000,00 e R$ 2.000.000,00 (tipologia Hospitais e Entidades Beneficentes)",
           "Iluminação com temperatura de cor >= 4500K em hospitais ou áreas da saúde",
-          "Diagnóstico Energético e ART com empresa de engenharia habilitada"
+          "Empresa de engenharia proponente com atestado de capacidade técnica, Diagnóstico Energético, ART e profissional certificado em M&V",
+          "Não duplicar equipamentos já substituídos pelo PEE dentro da vida útil (item 9.1)"
         ]
       },
       "fonte_dados": "pdf",
