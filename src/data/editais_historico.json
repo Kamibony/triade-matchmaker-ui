@@ -7017,16 +7017,15 @@
       "valor_total": 40000
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17689",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/l_2xVEaTv8yzX-9aMgbZCkp64W1iBNMUClVrBugyclFKATrxkLTTLjq5dbCbrKk8/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/725/673/original/5436.pdf",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/p8lPNUD6Tz4CkkDKjoNbC5naYBmwnLejkoRxrvggPbJmfVhtFQjziGVM1D_b80_h/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/725/673/original/5436.pdf",
     "full_text": "Ajuda Edital de Convocação nº 01/2026 para credenciamento de instituições interessadas em receber recursos oriundos de Penas Pecuniárias © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « volt",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17689",
-      "resumo_objetivo": "Aquisição de produtos da agricultura familiar e empreendedor familiar rural para alimentação escolar nas escolas municipais e indígenas de Campo Novo do Parecis – MT. O edital visa o credenciamento para o fornecimento de gêneros alimentícios conforme o PNAE.",
+      "resumo_objetivo": "Chamamento público para o credenciamento de agricultores familiares e empreendedores familiares rurais para o fornecimento de gêneros alimentícios destinados à alimentação escolar da rede municipal de ensino de Campo Novo do Parecis - MT.",
       "temas_principais": [
         "agricultura familiar",
         "alimentação escolar",
-        "merenda escolar",
         "educação"
       ],
       "prazo_de_inscricao": "2026-02-10",
@@ -7042,7 +7041,7 @@
         "natureza_juridica_excluida": []
       },
       "financeiro": {
-        "valor_maximo_ou_global_reais": 40000,
+        "valor_maximo_ou_global_reais": 839848.7,
         "exige_contrapartida": false,
         "valor_total_edital": 40000
       },
@@ -7051,15 +7050,15 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Apresentação de DAP ou CAF atualizada dos últimos 60 dias",
-          "Projeto de Venda de Gêneros Alimentícios da Agricultura Familiar",
-          "Documentação comprobatória de Serviço de Inspeção para produtos de origem animal (municipal, estadual ou federal)"
+          "Apresentação de Declaração de Aptidão ao PRONAF (DAP) ou CAF atualizada dos últimos 60 dias",
+          "Apresentação de Projeto de Venda de Gêneros Alimentícios",
+          "Documentação comprobatória de Serviço de Inspeção para produtos de origem animal"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1dU5nrk_bVUwW5Y7gW9RYoOsnWsOHrkEh/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-18"
+    "archived_at": "2026-11-19"
   },
   {
     "id": "17385",
@@ -7222,12 +7221,12 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17535",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/k8Ok4qQ7SJNBcoaSxDD-AmdFAbK0-NhFvF72Az3QETjfrgSsqHtMzVk7Np_7jxIz/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/696/911/original/Edital_Fapes_07.2026_-_Espacos_Cientificos_Culturais-ECCs_-_Assinado.pdf",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/8doo8KYOpxPGiSVKEJR7taRV84geWDMd5d-uwvVQAU94l47Xh4wyqA8pCBcLtxg9/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/696/911/original/Edital_Fapes_07.2026_-_Espacos_Cientificos_Culturais-ECCs_-_Assinado.pdf",
     "full_text": "Ajuda Edital para Implantação, Estruturação, Modernização, Manutenção e Expansão de Espaços Científico-Culturais © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trab",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17535",
-      "resumo_objetivo": "Apoiar a implantação, estruturação, modernização, manutenção e expansão de Espaços Científico-Culturais (ECCs) no estado do Espírito Santo para promover a popularização da ciência, tecnologia e inovação.",
+      "resumo_objetivo": "Apoiar a implantação, estruturação, modernização, manutenção e expansão de Espaços Científico-Culturais (ECCs) no estado do Espírito Santo para promover a popularização da ciência, tecnologia e inovação. A iniciativa visa ampliar o acesso à cultura científica e aprimorar a infraestrutura desses locais.",
       "temas_principais": [
         "ciência",
         "tecnologia",
@@ -7246,8 +7245,7 @@
         ],
         "municipios_permitidos": [],
         "natureza_juridica_excluida": [
-          "com fins lucrativos",
-          "pessoas jurídicas com fins lucrativos"
+          "fins lucrativos"
         ]
       },
       "financeiro": {
@@ -7259,15 +7257,15 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Coordenador com titulação mínima de graduação e vínculo celetista ou estatutário com IES/P pública ou privada sem fins lucrativos sediada no ES",
+          "Coordenador deve ter titulação mínima de graduação e vínculo celetista ou estatutário com IES/P pública ou privada sem fins lucrativos sediada no ES",
           "Currículo Lattes atualizado há menos de 6 meses",
-          "Categoria I de implantação com vedação para o município da capital Vitória"
+          "Para novas implantações de ECC, o espaço físico deve estar localizado em município do Estado, exceto na capital Vitória"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/16Dktle76KcRsJorQNhkQhRf5t8SoOiAy/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-18"
+    "archived_at": "2026-11-19"
   },
   {
     "id": "17542",
@@ -8092,16 +8090,17 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/18194",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/MMEqexOAvRzEWDeljtzJdtxkfQSMy8viqWLzBcA7fMvMb-zHwNYWr5UwbrVxPIgM/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/881/396/original/EDITAL_PROFESSORES_OFICINEIROS_CIRCO_DO_POVO.pdf",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/IOLPU3Jk0tDkJOJVdjBvwKmzQb7vqQaM0dPYf8oVLkVFu7codM0BaSM1j1Rm0TYs/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/881/396/original/EDITAL_PROFESSORES_OFICINEIROS_CIRCO_DO_POVO.pdf",
     "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "18194",
-      "resumo_objetivo": "Credenciamento de professores e oficineiros (pessoas jurídicas - MEI/ME e EPP) para atuação remunerada no Circo do Povo, vinculado à Fundação Cultural de Uberaba.",
+      "resumo_objetivo": "Credenciamento de professores e oficineiros (pessoas jurídicas MEI/ME e EPP) para atuação remunerada no programa Circo do Povo, vinculado à Fundação Cultural de Uberaba.",
       "temas_principais": [
         "cultura",
-        "educação",
-        "arte"
+        "circo",
+        "oficinas",
+        "educação"
       ],
       "prazo_de_inscricao": "2026-06-18",
       "criterios_eliminatorios": {
@@ -8115,14 +8114,13 @@
         ],
         "natureza_juridica_excluida": [
           "pessoa física",
-          "associação sem fins lucrativos",
-          "fundações",
-          "sindicatos",
-          "igrejas"
+          "cooperativa",
+          "consórcio",
+          "empresa estrangeira"
         ]
       },
       "financeiro": {
-        "valor_maximo_ou_global_reais": null,
+        "valor_maximo_ou_global_reais": 45,
         "exige_contrapartida": false
       },
       "burocracia_e_documentos": {
@@ -8130,13 +8128,16 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Credenciamento exclusivo para pessoas jurídicas MEI/ME e EPP",
-          "Atuação voltada para o município de Uberaba"
+          "Exclusivo para pessoas jurídicas MEI/ME e EPP com CNAE compatível",
+          "Apresentação de declaração de inexistência de impedimento legal",
+          "Apresentação de declaração de inexistência de mão de obra infantil",
+          "Cessão de direito de som e imagem"
         ]
       },
-      "fonte_dados": "texto_pagina"
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1sbDT5q7oElxisGz9DveEjRkxsnZfC-OU/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-18"
+    "archived_at": "2026-11-19"
   },
   {
     "id": "15288",
@@ -12119,20 +12120,26 @@
     "attributes": {
       "nome": "CHAMAMENTO PÚBLICO Nº 03/2026 – PREMIAÇÃO DE TRAJETÓRIAS ",
       "e_central?": false,
-      "data_inicio": "2026-11-10",
-      "data_fim": "2026-11-16"
+      "data_inicio": "2026-11-11",
+      "data_fim": "2026-11-18"
     },
     "public_url": "https://prosas.com.br/editais/19648",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/pzk2ykk-YJFx0-m71AGKsTH5eZYXo0oneNTiKlNGSlvqUz6rQ5XVblVJ3h6GQmn8/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/134/104/original/Edital_03.2026_Premio_Trajetorias_%281%29_assinado.pdf",
     "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
     "deep_metadata": {
       "edital_id": "19648",
-      "resumo_objetivo": "Premiação de trajetórias e contribuições culturais já realizadas por agentes culturais do município de Grajaú/MA.",
+      "resumo_objetivo": "Premiação de trajetórias e contribuições culturais já realizadas por agentes culturais do Município de Grajaú/MA, com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
       "temas_principais": [
         "cultura",
         "arte",
-        "premiação cultural"
+        "patrimônio cultural",
+        "artesanato",
+        "carnaval",
+        "danças regionais",
+        "festivais",
+        "cultura popular"
       ],
-      "prazo_de_inscricao": "2026-11-16",
+      "prazo_de_inscricao": "2026-11-18",
       "criterios_eliminatorios": {
         "idade_minima_cnpj_anos": null,
         "abrangencia_nacional": false,
@@ -12145,41 +12152,46 @@
         "natureza_juridica_excluida": []
       },
       "financeiro": {
-        "valor_maximo_ou_global_reais": null,
+        "valor_maximo_ou_global_reais": 203000,
         "exige_contrapartida": false
       },
       "burocracia_e_documentos": {
-        "exige_cnd": false,
+        "exige_cnd": true,
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Exclusivo para agentes culturais de Grajaú/MA"
+          "Atuação comprovada de no mínimo 3 anos consecutivos na área escolhida no Município de Grajaú",
+          "Ser maior de 18 anos"
         ]
       },
-      "fonte_dados": "texto_pagina"
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1s7vs7JUKaBUCXQk8w4DKHp0beY8ukxhz/view?usp=drivesdk"
     },
     "pipeline_status": "COMPLETED",
-    "archived_at": "2026-11-17"
+    "archived_at": "2026-11-19"
   },
   {
     "id": "19647",
     "attributes": {
       "nome": "CHAMAMENTO PÚBLICO Nº 02/2026 - PREMIAÇÃO DE PONTOS E PONTÕES DE CULTURA",
       "e_central?": false,
-      "data_inicio": "2026-11-10",
-      "data_fim": "2026-11-16"
+      "data_inicio": "2026-11-11",
+      "data_fim": "2026-11-18"
     },
     "public_url": "https://prosas.com.br/editais/19647",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/W7VzuGDcfWO-hrO2P6oO-HXghsuRbMfZEt9Eta7AN-gnd9lwqCirT-hnn_ehHsp1/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/134/102/original/EDITAL_DE_PREMIACAO_assinado.pdf",
     "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
     "deep_metadata": {
       "edital_id": "19647",
-      "resumo_objetivo": "Premiação de iniciativas, atividades ou ações já realizadas por Pontos de Cultura com ou sem CNPJ no Município de Grajaú/MA, nos termos da Política Nacional de Cultura Viva.",
+      "resumo_objetivo": "Premiação de iniciativas, atividades ou ações já realizadas por Pontos e Pontões de Cultura com ou sem CNPJ no Município de Grajaú/MA, no âmbito da Política Nacional Aldir Blanc (PNAB) e da Política Nacional de Cultura Viva.",
       "temas_principais": [
         "cultura",
-        "pontos de cultura",
-        "premiação"
+        "cultura viva",
+        "patrimônio cultural",
+        "diversidade cultural",
+        "culturas tradicionais"
       ],
-      "prazo_de_inscricao": "2026-11-16",
+      "prazo_de_inscricao": "2026-11-18",
       "criterios_eliminatorios": {
         "idade_minima_cnpj_anos": null,
         "abrangencia_nacional": false,
@@ -12189,25 +12201,32 @@
         "municipios_permitidos": [
           "Grajaú - MA"
         ],
-        "natureza_juridica_excluida": []
+        "natureza_juridica_excluida": [
+          "fins lucrativos",
+          "instituições de ensino e pesquisa",
+          "órgãos públicos",
+          "Sistema S",
+          "partidos políticos"
+        ]
       },
       "financeiro": {
-        "valor_maximo_ou_global_reais": null,
+        "valor_maximo_ou_global_reais": 141820,
         "exige_contrapartida": false
       },
       "burocracia_e_documentos": {
-        "exige_cnd": false,
+        "exige_cnd": true,
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Exige atuação como Ponto ou Pontão de Cultura no Município de Grajaú/MA",
-          "Permite participação com ou sem CNPJ"
+          "Comprovar no mínimo 2 anos de desenvolvimento de atividades culturais na comunidade local",
+          "Pontuação mínima de 50 pontos na Etapa de Seleção"
         ]
       },
-      "fonte_dados": "texto_pagina"
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1iBj4SSyXt1_nZDqlOYggcBs7An80L-cH/view?usp=drivesdk"
     },
     "pipeline_status": "COMPLETED",
-    "archived_at": "2026-11-17"
+    "archived_at": "2026-11-19"
   },
   {
     "id": "19713",
@@ -13422,5 +13441,526 @@
     },
     "pipeline_status": "COMPLETED",
     "archived_at": "2026-11-18"
+  },
+  {
+    "id": "mapas_ce_8496",
+    "source_portal": "Mapas Culturais CE",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO PARA SELEÇÃO DE ORGANIZAÇÃO DA SOCIEDADE CIVIL PARA REALIZAÇÃO DO CIRCUITO CULTURA E MOVIMENTO - VIVA ACOPIARA! - PNAB - EDITAL Nº 04/2026",
+      "data_inicio": "2026-11-12",
+      "data_fim": "2026-11-18",
+      "patrocinador": "Mapa Cultural CE",
+      "locais": [
+        {
+          "uf": "CE"
+        }
+      ],
+      "areas_interesse": [
+        "Cultura",
+        "Edital"
+      ]
+    },
+    "public_url": "https://mapacultural.secult.ce.gov.br/oportunidade/8496/",
+    "full_text": "FONTE: Mapa Cultural CE\nTítulo: EDITAL DE CHAMAMENTO PÚBLICO PARA SELEÇÃO DE ORGANIZAÇÃO DA SOCIEDADE CIVIL PARA REALIZAÇÃO DO CIRCUITO CULTURA E MOVIMENTO - VIVA ACOPIARA! - PNAB - EDITAL Nº 04/2026\nEstado (UF): CE\nTipo: Edital\nInício das inscrições: 2026-11-12\nEncerramento das inscrições: 2026-11-18\nDescrição:\nO Circuito Cultura em Movimento - Viva Acopiara busca promover a democratização, descentralização e ampliação do acesso à cultura no Município de Acopiara, por meio da realização de ações culturais, artísticas e formativas na sede e nos distritos, valorizando os artistas, grupos, colet",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "mapas_ce_8496",
+      "resumo_objetivo": "O edital busca selecionar uma Organização da Sociedade Civil para a realização do Circuito Cultura e Movimento - Viva Acopiara!, promovendo a democratização e o acesso à cultura no município por meio de ações artísticas e formativas.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "formação"
+      ],
+      "prazo_de_inscricao": "2026-11-18",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "CE"
+        ],
+        "municipios_permitidos": [
+          "Acopiara - CE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "archived_at": "2026-11-19"
+  },
+  {
+    "id": "mapas_ce_8464",
+    "source_portal": "Mapas Culturais CE",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 003/2026-LINGUAGENS GERAIS SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA (LEI Nº 14.399/2022)",
+      "data_inicio": "2026-10-29",
+      "data_fim": "2026-11-18",
+      "patrocinador": "Mapa Cultural CE",
+      "locais": [
+        {
+          "uf": "CE"
+        }
+      ],
+      "areas_interesse": [
+        "Cultura",
+        "Edital"
+      ]
+    },
+    "public_url": "https://mapacultural.secult.ce.gov.br/oportunidade/8464/",
+    "full_text": "FONTE: Mapa Cultural CE\nTítulo: EDITAL DE CHAMAMENTO PÚBLICO Nº 003/2026-LINGUAGENS GERAIS SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA (LEI Nº 14.399/2022)\nEstado (UF): CE\nTipo: Edital\nInício das inscrições: 2026-10-29\nEncerramento das inscrições: 2026-11-18\nDescrição:\nOlá, agentes culturais do Município de Barbalha-CE! Estamos muito felizes com o seu interesse em participar deste chamamento público. Este Edital é realizado com recursos do Governo Federal repassados pelo Ministério da Cultura, por meio da Polític",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "mapas_ce_8464",
+      "resumo_objetivo": "Seleção de projetos culturais para firmar termo de execução cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura no município de Barbalha-CE.",
+      "temas_principais": [
+        "cultura",
+        "linguagens gerais"
+      ],
+      "prazo_de_inscricao": "2026-11-18",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "CE"
+        ],
+        "municipios_permitidos": [
+          "Barbalha - CE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Benefício exclusivo para agentes culturais do Município de Barbalha-CE"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "archived_at": "2026-11-19"
+  },
+  {
+    "id": "19445",
+    "attributes": {
+      "nome": "BRASIL - CHAMAMENTO PÚBLICO - CULTURAS TRADICIONAIS E POPULARES E DAS ARTES - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-19",
+      "data_fim": "2026-11-18",
+      "valor_total": 5000000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19445",
+    "full_text": "Ajuda BRASIL - CHAMAMENTO PÚBLICO - CULTURAS TRADICIONAIS E POPULARES E DAS ARTES - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Ter",
+    "deep_metadata": {
+      "edital_id": "19445",
+      "resumo_objetivo": "Selecionar e apoiar projetos de Instituições Federais de Ensino Superior (IFES) para a promoção, difusão e valorização dos saberes e fazeres das culturas tradicionais e populares brasileiras.",
+      "temas_principais": [
+        "cultura",
+        "artes",
+        "cultura indígena",
+        "cultura afro-brasileira",
+        "educação superior"
+      ],
+      "prazo_de_inscricao": "2026-11-18",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 5000000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 5000000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para Instituições Federais de Ensino Superior (IFES)"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-19"
+  },
+  {
+    "id": "19695",
+    "attributes": {
+      "nome": "Edital de Chamamento Público Nº 025/2026 – Premiação para Manifestações Tradicionais Carnavalescas das Culturas Populares do Estado de Pernambuco (PNAB 2026-2027)",
+      "e_central?": true,
+      "data_inicio": "2026-11-12",
+      "data_fim": "2026-11-18",
+      "valor_total": 2000000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19695",
+    "full_text": "Ajuda Edital de Chamamento Público Nº 025/2026 – Premiação para Manifestações Tradicionais Carnavalescas das Culturas Populares do Estado de Pernambuco (PNAB 2026-2027) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Aces",
+    "deep_metadata": {
+      "edital_id": "19695",
+      "resumo_objetivo": "Premiação de agremiações, grupos ou coletivos artísticos para a salvaguarda, difusão e transmissão das Culturas Populares de Pernambuco ligadas à tradição carnavalesca.",
+      "temas_principais": [
+        "cultura",
+        "cultura popular",
+        "carnaval",
+        "patrimônio imaterial"
+      ],
+      "prazo_de_inscricao": "2026-11-18",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 2000000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 2000000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Permite participação de grupos e coletivos com ou sem personalidade jurídica",
+          "Premiação em dinheiro sem exigência de contrapartida ou prestação de contas"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-19"
+  },
+  {
+    "id": "19646",
+    "attributes": {
+      "nome": "CHAMAMENTO PÚBLICO Nº 01/2026 - FOMENTO À EXECUÇÃO DE AÇÕES CULTURAIS (APOIO DIRETO A PROJETOS)",
+      "e_central?": false,
+      "data_inicio": "2026-11-11",
+      "data_fim": "2026-11-18"
+    },
+    "public_url": "https://prosas.com.br/editais/19646",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/CzWC8h212BSwsCK7MUO1oTsbXH8ERsX2xoSEGeHZRIEV-imzjjHl-OpwOjDNfoh_/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/134/099/original/Edital_01.2026_Fomento_Grajau_assinado.pdf",
+    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
+    "deep_metadata": {
+      "edital_id": "19646",
+      "resumo_objetivo": "O objeto deste Edital é a seleção de projetos culturais para receberem apoio financeiro com o objetivo de incentivar as diversas formas de manifestações culturais do Município de Grajaú/MA.",
+      "temas_principais": [
+        "cultura",
+        "arte"
+      ],
+      "prazo_de_inscricao": "2026-11-18",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MA"
+        ],
+        "municipios_permitidos": [
+          "Grajaú - MA"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 170000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Benefício exclusivo para projetos com atuação no Município de Grajaú/MA"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-19"
+  },
+  {
+    "id": "19779",
+    "attributes": {
+      "nome": "Nº 002/2026 – Prêmio Cultura Viva Linhares - Premiação de Pontos e Pontões de Cultura - Rede Municipal de Pontos de Cultura de Linhares",
+      "e_central?": true,
+      "data_inicio": "2026-11-12",
+      "data_fim": "2026-11-18",
+      "valor_total": 120000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19779",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/f6Zfy703DNFgaOyb_donOrx9AdI1wYBBNkmRwt7uv8UR5w20t6I1ru9vkE84m8Oj/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/139/044/original/EDITAL-002-CULTURA_VIVA_-_LINHARES_assinado.pdf",
+    "full_text": "Ajuda Nº 002/2026 – Prêmio Cultura Viva Linhares - Premiação de Pontos e Pontões de Cultura - Rede Municipal de Pontos de Cultura de Linhares © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte «",
+    "deep_metadata": {
+      "edital_id": "19779",
+      "resumo_objetivo": "Premiação de 4 iniciativas, atividades ou ações já realizadas por Pontos e Pontões de Cultura certificados, entidades sem fins lucrativos e coletivos da Rede Municipal de Pontos de Cultura de Linhares.",
+      "temas_principais": [
+        "cultura",
+        "culturas populares",
+        "culturas tradicionais",
+        "pontos de cultura"
+      ],
+      "prazo_de_inscricao": "2026-11-18",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "ES"
+        ],
+        "municipios_permitidos": [
+          "Linhares - ES"
+        ],
+        "natureza_juridica_excluida": [
+          "fins lucrativos",
+          "instituições de ensino e pesquisa",
+          "partidos políticos",
+          "órgãos públicos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 30000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 120000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Comprovar no mínimo 2 anos de atividades culturais na comunidade local em Linhares",
+          "Ter sede em Linhares ou representante residente no Município"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/15qClxzE9ku2hOZm1AA8nOPVTMGP6S5Iw/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-19"
+  },
+  {
+    "id": "19798",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 006/2026 – 2º Salão de Artes Plásticas de Ceará-Mirim (PNAB)",
+      "e_central?": true,
+      "data_inicio": "2026-11-11",
+      "data_fim": "2026-11-18",
+      "valor_total": 10000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19798",
+    "full_text": "Ajuda Edital de Chamamento Público nº 006/2026 – 2º Salão de Artes Plásticas de Ceará-Mirim (PNAB) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco C",
+    "deep_metadata": {
+      "edital_id": "19798",
+      "resumo_objetivo": "O edital visa premiar artistas plásticos através do 2º Salão de Artes Plásticas de Ceará-Mirim, utilizando recursos da Política Nacional Aldir Blanc (PNAB).",
+      "temas_principais": [
+        "cultura",
+        "artes plásticas",
+        "artes visuais"
+      ],
+      "prazo_de_inscricao": "2026-11-18",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RN"
+        ],
+        "municipios_permitidos": [
+          "Ceará-Mirim - RN"
+        ],
+        "natureza_juridica_excluida": [
+          "pessoas jurídicas"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 10000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 10000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exige que o participante seja pessoa física com 18 anos ou mais",
+          "Exige residência em Ceará-Mirim",
+          "Inscrição presencial com entrega da obra física"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-19"
+  },
+  {
+    "id": "19830",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 003/2026 – PNAB (Ibicuitinga/CE)",
+      "e_central?": true,
+      "data_inicio": "2026-11-09",
+      "data_fim": "2026-11-18",
+      "valor_total": 57000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19830",
+    "pdf_link": "https://www.ibicuitinga.ce.gov.br/arquivos/70/REQUERIMENTO%20ISENCAO%20IPTU__2021_0000001.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público nº 003/2026 – PNAB (Ibicuitinga/CE) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Polít",
+    "deep_metadata": {
+      "edital_id": "19830",
+      "resumo_objetivo": "Edital de fomento cultural PNAB do município de Ibicuitinga/CE para apoio a projetos de música, dança regional, teatro, artes visuais, artesanato, capoeira, quadrilhas juninas, audiovisual e oficinas.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "música",
+        "teatro",
+        "artesanato",
+        "audiovisual"
+      ],
+      "prazo_de_inscricao": "2026-11-18",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "CE"
+        ],
+        "municipios_permitidos": [
+          "Ibicuitinga - CE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 57000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 57000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Residir e atuar no município há pelo menos 2 anos"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1ALcEbPlreuSJEdzaEcZ-ApxkqOT_kOzH/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-19"
+  },
+  {
+    "id": "19866",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 02/2026 – Do Fundo Municipal de Assistência a Pessoa Idosa – FUMDAI",
+      "e_central?": true,
+      "data_inicio": "2026-10-29",
+      "data_fim": "2026-11-18"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19866",
+    "full_text": "Ajuda Edital de Chamamento Público nº 02/2026 – Do Fundo Municipal de Assistência a Pessoa Idosa – FUMDAI © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Co",
+    "deep_metadata": {
+      "edital_id": "19866",
+      "resumo_objetivo": "Chamamento público do Fundo Municipal de Assistência a Pessoa Idosa – FUMDAI para seleção de projetos voltados ao atendimento da pessoa idosa em Muriaé.",
+      "temas_principais": [
+        "idosos",
+        "assistência social"
+      ],
+      "prazo_de_inscricao": "2026-11-18",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Muriaé - MG"
+        ],
+        "natureza_juridica_excluida": [
+          "fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 193000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": true,
+        "exigencias_especificas_adicionais": [
+          "Inscrição regular no COMIMU",
+          "Sede ou instalação em Muriaé",
+          "Atendimento comprovado à pessoa idosa"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-19"
+  },
+  {
+    "id": "19845",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 18/2026",
+      "e_central?": true,
+      "data_inicio": "2026-11-16",
+      "data_fim": "2026-11-18",
+      "valor_total": 6000000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19845",
+    "full_text": "Ajuda EDITAL DE CHAMAMENTO PÚBLICO Nº 18/2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale ",
+    "deep_metadata": {
+      "edital_id": "19845",
+      "resumo_objetivo": "Seleciona organização da sociedade civil para Termo de Colaboração do Projeto Vida Nova 60+Cuidado, visando o atendimento domiciliar a pessoas idosas a partir de 60 anos em Salvador.",
+      "temas_principais": [
+        "idosos",
+        "assistência social"
+      ],
+      "prazo_de_inscricao": "2026-11-18",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "BA"
+        ],
+        "municipios_permitidos": [
+          "Salvador - BA"
+        ],
+        "natureza_juridica_excluida": [
+          "fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 6000000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 6000000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Entrega presencial em envelope lacrado e rubricado, identificado com nome da OSC e CNPJ"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-19"
   }
 ]
