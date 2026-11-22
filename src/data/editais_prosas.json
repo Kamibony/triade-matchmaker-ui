@@ -1,5 +1,327 @@
 [
   {
+    "id": "pncp_95548400000142-1-000110_2026",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "AQUISIÇÃO DE GÊNEROS ALIMENTÍCIOS DA AGRICULTURA FAMILIAR E DO EMPREENDEDOR FAMILIAR RURAL, DESTINADOS AO ATENDIMENTO DA ALIMENTAÇÃO ESCOLAR DA REDE PÚBLICA...",
+      "data_inicio": "2026-11-11",
+      "data_fim": "2026-12-09",
+      "valor_total": 810510.6,
+      "patrocinador": "MUNICIPIO DE MAUA DA SERRA",
+      "locais": [
+        {
+          "municipio": "Mauá da Serra",
+          "uf": "PR"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/95548400000142/2026/110",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/95548400000142/compras/2026/110/arquivos/1",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: MUNICIPIO DE MAUA DA SERRA (CNPJ: 95548400000142)\nModalidade: Credenciamento\nLocalidade: Mauá da Serra - PR\nValor Total Estimado: R$ 810.510,60\nAbertura: 2026-11-11\nEncerramento das propostas: 2026-12-09\nObjeto: AQUISIÇÃO DE GÊNEROS ALIMENTÍCIOS DA AGRICULTURA FAMILIAR E DO EMPREENDEDOR FAMILIAR RURAL, DESTINADOS AO ATENDIMENTO DA ALIMENTAÇÃO ESCOLAR DA REDE PÚBLICA MUNICIPAL DE ENSINO DE MAUÁ DA SERRA/PR, NO ÂMBITO DO PROGRAMA NACIONAL DE ALIMENTAÇÃO ESCOLAR – PNAE",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "pncp_95548400000142-1-000110_2026",
+      "resumo_objetivo": "Aquisição de gêneros alimentícios da agricultura familiar e do empreendedor familiar rural, destinados ao atendimento da alimentação escolar da rede pública municipal de ensino de Mauá da Serra/PR, no âmbito do PNAE.",
+      "temas_principais": [
+        "agricultura familiar",
+        "alimentação escolar",
+        "PNAE",
+        "alimentação"
+      ],
+      "prazo_de_inscricao": "2026-12-09",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PR"
+        ],
+        "municipios_permitidos": [
+          "Mauá da Serra - PR"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 810510.6,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Apresentação de extrato do CAF (Cadastro da Agricultura Familiar)",
+          "Apresentação de projeto de venda",
+          "Declaração de que os alimentos são oriundos de produção própria ou de associados/cooperados",
+          "Atendimento aos requisitos higiênico-sanitários e comprovação de inspeção sanitária para produtos de origem animal",
+          "No mínimo 50% do valor das aquisições de alimentos da Unidade Familiarde Produção Agrária deve estar em nome da mulher"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1qKmRDRwvzReZw0lfdkpNcCXriJGhKCW9/view?usp=drivesdk"
+    }
+  },
+  {
+    "id": "pncp_87866745000116-1-000534_2026",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "SERVICOS DE ASSISTENCIA SOCIAL prestacao de servicos funerarios destinados ao atendimento de familias beneficiarias do auxilio funeral concedido pelo Municip...",
+      "data_inicio": "2026-11-03",
+      "data_fim": "2036-11-03",
+      "valor_total": 284851.26,
+      "patrocinador": "MUNICIPIO DE VACARIA",
+      "locais": [
+        {
+          "municipio": "Vacaria",
+          "uf": "RS"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/87866745000116/2026/534",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/87866745000116/compras/2026/534/arquivos/1",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: MUNICIPIO DE VACARIA (CNPJ: 87866745000116)\nModalidade: Credenciamento\nLocalidade: Vacaria - RS\nValor Total Estimado: R$ 284.851,26\nAbertura: 2026-11-03\nEncerramento das propostas: 2036-11-03\nObjeto: SERVICOS DE ASSISTENCIA SOCIAL prestacao de servicos funerarios destinados ao atendimento de familias beneficiarias do auxilio funeral concedido pelo Municipio de Vacaria RS mediante condicoes e precos previamente estabelecidos pela Administracao.\nInformações Complementares:  \nSistema de Origem:  ",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "pncp_87866745000116-1-000534_2026",
+      "resumo_objetivo": "Credenciamento de pessoas jurídicas para prestação de serviços funerários destinados a famílias beneficiárias do auxílio-funeral concedido pelo Município de Vacaria/RS.",
+      "temas_principais": [
+        "assistência social",
+        "serviços funerários",
+        "auxílio-funeral",
+        "chamamento público"
+      ],
+      "prazo_de_inscricao": "2036-11-03",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RS"
+        ],
+        "municipios_permitidos": [
+          "Vacaria - RS"
+        ],
+        "natureza_juridica_excluida": [
+          "fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 284851.26,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Atestado de Capacidade Técnica",
+          "Licença sanitária e alvarás de funcionamento",
+          "Certidão negativa de falência",
+          "Regularidade perante a Justiça do Trabalho (CNDT)"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1tI8CmgNYh4jSu7ymQQLFW8F6dG35cMPT/view?usp=drivesdk"
+    }
+  },
+  {
+    "id": "pncp_29115474000160-1-000760_2026",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "SELEÇÃO DE PROPOSTAS QUE TENHAM POR OBJETO A EXECUÇÃO DE ATIVIDADES CULTURAIS RELATIVAS AO CARNAVAL MACAÉ 2027 – DESFILE ESCOLAS DE SAMBA, A SER REALIZADO PO...",
+      "data_inicio": "2026-11-13",
+      "data_fim": "2026-12-16",
+      "valor_total": 1800000,
+      "patrocinador": "MUNICIPIO DE MACAE",
+      "locais": [
+        {
+          "municipio": "Macaé",
+          "uf": "RJ"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/29115474000160/2026/760",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/29115474000160/compras/2026/760/arquivos/1",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: MUNICIPIO DE MACAE (CNPJ: 29115474000160)\nModalidade: Credenciamento\nLocalidade: Macaé - RJ\nValor Total Estimado: R$ 1.800.000,00\nAbertura: 2026-11-13\nEncerramento das propostas: 2026-12-16\nObjeto: SELEÇÃO DE PROPOSTAS QUE TENHAM POR OBJETO A EXECUÇÃO DE ATIVIDADES CULTURAIS RELATIVAS AO CARNAVAL MACAÉ 2027 – DESFILE ESCOLAS DE SAMBA, A SER REALIZADO POR ORGANIZAÇÕES DA SOCIEDADE CIVIL, SEM FINALIDADE LUCRATIVA, MEDIANTE TERMO DE COLABORAÇÃO, COM FULCRO NA LEI FEDERAL Nº 13.019/2014, PARA ATENDER ÀS NECESSIDADES DA SECRETARIA DE TURISMO DO MUNICÍPIO DE MACAÉ.\nInformações Complementares: -",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "pncp_29115474000160-1-000760_2026",
+      "resumo_objetivo": "Seleção de propostas para a execução de atividades culturais relativas ao Carnaval Macaé 2027, especificamente o desfile de escolas de samba, mediante termo de colaboração com organizações da sociedade civil sem fins lucrativos.",
+      "temas_principais": [
+        "cultura",
+        "carnaval",
+        "turismo",
+        "escolas de samba"
+      ],
+      "prazo_de_inscricao": "2026-12-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": 1,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RJ"
+        ],
+        "municipios_permitidos": [
+          "Macaé - RJ"
+        ],
+        "natureza_juridica_excluida": [
+          "sociedade empresária",
+          "fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 1800000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Possuir sede no Município de Macaé",
+          "Apresentar Plano de Trabalho condizente",
+          "Comprovar experiência prévia na realização do objeto ou de natureza semelhante",
+          "Apresentar certidões negativas de débitos federais, estaduais, municipais, trabalhistas e FGTS"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1nWjwpr-HPkT84BJUEp3f51Cw1xgoa4Qk/view?usp=drivesdk"
+    }
+  },
+  {
+    "id": "pncp_13701966000106-1-000169_2026",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "CHAMADA PÚBLICA É PARA AQUISIÇÃO DE ALIMENTOS DE AGRICULTORES FAMILIARES E DEMAIS BENEFICIÁRIOS QUE SE ENQUADREM NAS DISPOSIÇÕES DA LEI Nº 11.326/2006, por m...",
+      "data_inicio": "2026-11-13",
+      "data_fim": "2026-12-07",
+      "valor_total": 190838.07,
+      "patrocinador": "MUNICIPIO DE ITAGIBA",
+      "locais": [
+        {
+          "municipio": "Itagibá",
+          "uf": "BA"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/13701966000106/2026/169",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/13701966000106/compras/2026/169/arquivos/1",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: MUNICIPIO DE ITAGIBA (CNPJ: 13701966000106)\nModalidade: Credenciamento\nLocalidade: Itagibá - BA\nValor Total Estimado: R$ 190.838,07\nAbertura: 2026-11-13\nEncerramento das propostas: 2026-12-07\nObjeto: CHAMADA PÚBLICA É PARA AQUISIÇÃO DE ALIMENTOS DE AGRICULTORES FAMILIARES E DEMAIS BENEFICIÁRIOS QUE SE ENQUADREM NAS DISPOSIÇÕES DA LEI Nº 11.326/2006, por meio da modalidade compra institucional do programa nacional de alimentação escolar, através de chamamento público com dispensa de licitação, conforme referenciado neste Termo de Referência, no edital e seus anexos.\nSistema de Origem: sai.io.org.br/site/PublicadoPncp/173636?localConsulta=2&cod=1692",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "pncp_13701966000106-1-000169_2026",
+      "resumo_objetivo": "Aquisição de gêneros alimentícios da agricultura familiar para a alimentação escolar da rede municipal de ensino, por meio do PNAE.",
+      "temas_principais": [
+        "agricultura familiar",
+        "alimentação escolar",
+        "PNAE"
+      ],
+      "prazo_de_inscricao": "2026-12-07",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "BA"
+        ],
+        "municipios_permitidos": [
+          "Itagibá - BA"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 190838.07,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Apresentação de CAF física ou jurídica",
+          "Projeto de Venda de Gêneros Alimentícios",
+          "Declaração de produção própria ou controle de limite individual de venda",
+          "Prova de atendimento de requisitos higiênico-sanitários e registros pertinentes (ANVISA/MAPA)"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1z0lIyypevHyg2MCn4Q4075Be-e_dDLUk/view?usp=drivesdk"
+    }
+  },
+  {
+    "id": "pncp_13783279000179-1-000079_2026",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "Chamamento Público para fins de credenciamento de pessoas físicas e jurídicas interessadas na prestação de serviços de locação de veículos e máquinas pesadas...",
+      "data_inicio": "2026-11-18",
+      "data_fim": "2027-11-18",
+      "valor_total": 2413000,
+      "patrocinador": "MUNICIPIO DE RIO DO PIRES",
+      "locais": [
+        {
+          "municipio": "Rio do Pires",
+          "uf": "BA"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/13783279000179/2026/79",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/13783279000179/compras/2026/79/arquivos/1",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: MUNICIPIO DE RIO DO PIRES (CNPJ: 13783279000179)\nModalidade: Credenciamento\nLocalidade: Rio do Pires - BA\nValor Total Estimado: R$ 2.413.000,00\nAbertura: 2026-11-18\nEncerramento das propostas: 2027-11-18\nObjeto: Chamamento Público para fins de credenciamento de pessoas físicas e jurídicas interessadas na prestação de serviços de locação de veículos e máquinas pesadas, sob demanda, destinados ao atendimento das necessidades da Secretaria Municipal de Infraestrutura e Serviços Públicos e da Administração Municipal, visando assegurar o suporte às atividades administrativas, operacionais e de infraestrutura, bem como proporcionar os meios necessários à execução dos serviços públicos e ao atendimento das demandas institucionais.\nSistema de Origem: https://riodopires.ba.gov.br/diariooficial",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "pncp_13783279000179-1-000079_2026",
+      "resumo_objetivo": "Chamamento público para credenciamento de pessoas físicas e jurídicas interessadas na prestação de serviços de locação de veículos e máquinas pesadas, sob demanda, para atender às necessidades da Administração Municipal de Rio do Pires - BA.",
+      "temas_principais": [
+        "transporte",
+        "infraestrutura",
+        "locação de veículos",
+        "máquinas pesadas"
+      ],
+      "prazo_de_inscricao": "2027-11-18",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "BA"
+        ],
+        "municipios_permitidos": [
+          "Rio do Pires - BA"
+        ],
+        "natureza_juridica_excluida": [
+          "consórcio",
+          "estrangeiras que não funcionem no País"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 2413000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Apresentação de atestado de capacidade técnica",
+          "Vistoria prévia obrigatória dos veículos e máquinas pela Comissão de Fiscalização",
+          "Apresentação de CRLV atualizado ou documento idôneo de posse/propriedade"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1WXqpSMQDcGyDRPyXM7FRBTCW13gxTFz5/view?usp=drivesdk"
+    }
+  },
+  {
     "id": "pncp_12585173000106-1-000016_2026",
     "source_portal": "PNCP",
     "attributes": {
@@ -6064,8 +6386,7 @@
       "fonte_dados": "texto_pagina",
       "drive_pdf_link": "https://drive.google.com/file/d/1SQDixi5X0GUM2uHvZjjDQlYTS3QXxA5L/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19329",
@@ -6109,8 +6430,7 @@
       "fonte_dados": "texto_pagina",
       "drive_pdf_link": "https://drive.google.com/file/d/1LHhaBn2JhQMfDsW0qRcWuu8DukgC1s80/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "18063",
@@ -16096,8 +16416,7 @@
       "fonte_dados": "texto_pagina",
       "drive_pdf_link": "https://drive.google.com/file/d/1oDkpSKAN1HFp9-6Y1vv9wvJpmIPm62re/view?usp=drivesdk"
     },
-    "pipeline_status": "COMPLETED",
-    "drive_backfill_attempted": true
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19633",
@@ -16702,49 +17021,6 @@
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
           "Unidades consumidoras devem pertencer às áreas de concessão das distribuidoras do Grupo Neoenergia"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    },
-    "pipeline_status": "COMPLETED"
-  },
-  {
-    "id": "19681",
-    "attributes": {
-      "nome": "EDITAL CONJUNTO SECADI/SETEC Nº 2/2026 (Chamamento público para Certificação H2E de Entidade Formadora e seleção de propostas de Apoio Financeiro H2E)",
-      "e_central?": true,
-      "data_inicio": "2026-11-10",
-      "data_fim": "2026-11-21"
-    },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19681",
-    "full_text": "Ajuda EDITAL CONJUNTO SECADI/SETEC Nº 2/2026 (Chamamento público para Certificação H2E de Entidade Formadora e seleção de propostas de Apoio Financeiro H2E) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por EDITAL CONJUNTO SECADI/SETEC Nº 2/2026 (Chamamento público para Certificação H2E de Entidade Formadora e seleção de propostas de Apoio Financeiro H2E) Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Subáreas Objetivos de Desenvolvimento Sustentável (ODS) 10/11/26 até 21/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: Disciplina a certificação de organizações, coletivos e demais entidades que desenvolvam processos formativos vinculados a Hip-Hop e educação (por meio da Certificação H2E de Entidade Formadora e inclusão no Cadastro Nacional), bem como a seleção de propostas apresentadas por tais entidades para apoio financeiro a atividades de Hip-Hop e educação. Recursos próprios Brasil E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Ministério da Educação (MEC) / Secretaria de Educação Continuada, Alfabetização de Jovens e Adultos, Diversidade e Inclusão (SECADI) e Secretaria de Educação Profissional e Tecnológica (SETEC) Cultura e Artes Educação Dança Música Popular Artes Visuais / Plásticas Literatura Cultura Afro Brasileira",
-    "deep_metadata": {
-      "edital_id": "19681",
-      "resumo_objetivo": "Disciplina a certificação de organizações e coletivos que desenvolvam processos formativos vinculados a Hip-Hop e educação, além de selecionar propostas para apoio financeiro a essas atividades.",
-      "temas_principais": [
-        "cultura",
-        "educação",
-        "hip-hop",
-        "cultura afro brasileira"
-      ],
-      "prazo_de_inscricao": "2026-11-21",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Certificação H2E de Entidade Formadora e inclusão no Cadastro Nacional"
         ]
       },
       "fonte_dados": "texto_pagina"
@@ -24584,62 +24860,6 @@
     "pipeline_status": "COMPLETED"
   },
   {
-    "id": "19852",
-    "attributes": {
-      "nome": "Edital de Chamamento Público Complementar nº 001/2026 – Saldo Remanescente Complementar ao Edital de Chamamento Público nº 002/2026/SEMCUT",
-      "e_central?": true,
-      "data_inicio": "2026-11-14",
-      "data_fim": "2026-11-21",
-      "valor_total": 68480
-    },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19852",
-    "pdf_link": "https://4fdfdc7ecc7eac3fcdc8af2e4ed6ae07.cdn.bubble.io/f1794596339122x107493078772429740/EDITAL%20DE%20CHAMAMENTO%20P%C3%9ABLICO%20COMPLETAR%20N%C2%B0%20001-2026%20-%20PNAB..pdf",
-    "full_text": "Ajuda Edital de Chamamento Público Complementar nº 001/2026 – Saldo Remanescente Complementar ao Edital de Chamamento Público nº 002/2026/SEMCUT © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Chamamento Público Complementar nº 001/2026 – Saldo Remanescente Complementar ao Edital de Chamamento Público nº 002/2026/SEMCUT Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Objetivos de Desenvolvimento Sustentável (ODS) Mídias 14/11/26 até 21/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: pmosemcult@obidos.pa.gov.br Seleção de 12 projetos culturais para firmar Termo de Execução Cultural, visando o preenchimento de vagas com saldo remanescente do Edital nº 002/2026/SEMCUT nas categorias de Cultura Popular (Blocos Carnavalescos), Música (Shows), Artes Plásticas e Artes Visuais (Pintura e Escultura) e Artesanato (Identidade Cultural e Sustentabilidade), incentivando as manifestações culturais do Município de Óbidos-PA. Total Disponível R$ 68.480,00 Política Nacional Aldir Blanc Óbidos - PA Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Prefeitura de Óbidos/PA – SEMCUT Cultura e Artes Site Regulamento (PDF)",
-    "deep_metadata": {
-      "edital_id": "19852",
-      "resumo_objetivo": "Seleção de projetos culturais para firmar Termo de Execução Cultural, visando o preenchimento de vagas com saldo remanescente do Edital nº 002/2026/SEMCUT nas categorias de Cultura Popular, Música, Artes Plásticas e Visuais e Artesanato. A iniciativa fomenta as manifestações culturais do Município de Óbidos-PA com recursos da PNAB.",
-      "temas_principais": [
-        "cultura",
-        "cultura popular",
-        "música",
-        "artes plásticas",
-        "artes visuais",
-        "artesanato",
-        "pnab"
-      ],
-      "prazo_de_inscricao": "2026-11-21",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "PA"
-        ],
-        "municipios_permitidos": [
-          "Óbidos - PA"
-        ],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": 68480,
-        "exige_contrapartida": false,
-        "valor_total_edital": 68480
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": true,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Agente cultural que atua ou reside no Município de Óbidos-PA há pelo menos 02 anos",
-          "Proponentes já contemplados no edital original (Edital nº 002/2026/SEMCUT) estão impedidos de concorrer",
-          "Exige abertura de conta bancária específica para recebimento dos recursos"
-        ]
-      },
-      "fonte_dados": "pdf",
-      "drive_pdf_link": "https://drive.google.com/file/d/1bbazK3QpqxrqXwl09uX5P49V1XKI7MCv/view?usp=drivesdk"
-    },
-    "pipeline_status": "COMPLETED"
-  },
-  {
     "id": "19861",
     "attributes": {
       "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº XX/2026 - SELEÇÃO ESPAÇO, AMBIENTES E INICIATIVAS ARTÍSTICO-CULTURAIS PARA RECEBER SUBSÍDIO PARA MANUTENÇÃO COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA",
@@ -25549,7 +25769,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19902",
     "full_text": "Ajuda Edital de Chamamento Público nº 006.20.2026 – Apoio a Eventos – Seleção de projetos para firmar Termo de Execução Cultural com recursos da PNAB (Itapipoca/CE) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Chamamento Público nº 006.20.2026 – Apoio a Eventos – Seleção de projetos para firmar Termo de Execução Cultural com recursos da PNAB (Itapipoca/CE) Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Subáreas Público-Alvo Mídias 16/11/26 até 23/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: codac.cultura@itapipoca.ce.gov.br Chamamento 006.20/2026 de Itapipoca/CE (PNAB) para seleção de projetos de Apoio a Eventos com Termo de Execução Cultural. Total R$ 230.000,00. Inscrições de 16/11 a 23/11/2026 às 23h59. Publicado em: 16/11/2026. Inscrições abertas desde: 16/11/2026. Total Disponível R$ 230.000,00 Limite por projeto R$ 120.000,00 Política Nacional Aldir Blanc Itapipoca - CE Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Prefeitura Municipal de Itapipoca/CE – Secretaria da Cultura (recursos PNAB) Cultura e Artes Circo Dança Teatro Música Popular Música Erudita e Instrumental Audiovisual Fotografia Artes Visuais / Plásticas Museu / Centro Cultural Literatura Design Patrimônio Histórico Moda CulturA índigena Cultura Afro Brasileira Infância e Adolescência Juventude Idosos Mulheres LGBTQIA+ Pessoas com Deficiência População Negra Povos originários e Comunidades Tradicionais Site Regulamento Inscrição",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19902",
       "resumo_objetivo": "Seleção de projetos para firmar Termo de Execução Cultural com recursos da PNAB para apoio a eventos no município de Itapipoca/CE.",
@@ -25584,7 +25803,8 @@
         ]
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19887",
@@ -25911,8 +26131,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19919",
     "pdf_link": "https://www.socorro.sp.gov.br/wp-content/uploads/2026/11/01_Edital_Chamamento_Cultural_05_2026_assinado.pdf",
     "full_text": "Ajuda Edital de Chamamento Cultural nº 05/2026 – 3ª Exposição de Natal \"Estrela Guia\" – Socorro/SP © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Chamamento Cultural nº 05/2026 – 3ª Exposição de Natal \"Estrela Guia\" – Socorro/SP Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Mídias 17/11/26 até 25/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: cultura@socorro.sp.gov.br Chamamento da Secretaria de Cultura de Socorro/SP para selecionar 1 projeto e agente cultural que realize a 3ª Exposição de Natal \"Estrela Guia\" (06/12/2026 a 06/01/2027), com exposição de artes visuais, catálogo-livro, documentário, oficinas de estandartes e apresentação da Folia de Reis Santos Reis do Livramento. Apoio máximo de R$ 40 mil via Termo de Execução Cultural. Inscrições por e-mail até o 5º dia útil após a publicação. Total Disponível R$ 40.000,00 Limite por projeto R$ 40.000,00 Recursos próprios Socorro - SP Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Prefeitura da Estância de Socorro/SP – Secretaria Municipal de Cultura Cultura e Artes Site REGULAMENTO",
-    "retry_count": 2,
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19919",
       "resumo_objetivo": "Seleção de 1 projeto e agente cultural para realizar a 3ª Exposição de Natal 'Estrela Guia' em Socorro/SP, contemplando artes visuais, catálogo-livro, documentário, oficinas e apresentação da Folia de Reis.",
@@ -25949,7 +26167,9 @@
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1OLg2EgIPdgmxUHN0Cach2eF4LWh_y-UM/view?usp=drivesdk"
-    }
+    },
+    "retry_count": 2,
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19920",
@@ -26774,60 +26994,6 @@
     "pipeline_status": "COMPLETED"
   },
   {
-    "id": "19946",
-    "attributes": {
-      "nome": "Edital de Chamamento Público nº 50/2026 – SEDET/DF – Hub de Empreendedorismo Feminino",
-      "e_central?": true,
-      "data_inicio": "2026-11-19",
-      "data_fim": "2026-11-21"
-    },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19946",
-    "pdf_link": "https://drive.google.com/uc?export=download&id=111dCqZdS2AVFAoqKjl80YHIkrms2Tam5",
-    "full_text": "Ajuda Edital de Chamamento Público nº 50/2026 – SEDET/DF – Hub de Empreendedorismo Feminino © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Chamamento Público nº 50/2026 – SEDET/DF – Hub de Empreendedorismo Feminino Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Locais de Atuação Áreas de Atuação Objetivos de Desenvolvimento Sustentável (ODS) Mídias 19/11/26 até 21/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: (61) 3773-9302_ Chamamento da SEDET/DF para inscrição de mulheres empreendedoras e potenciais empreendedoras nas atividades do Hub de Empreendedorismo Feminino (cursos para 200 participantes e mínimo de 300 atendimentos técnicos de mentoria/consultoria), no âmbito do Termo de Colaboração com o Instituto Conecta Brasil. Inscrições de 19 a 21/11/2026. Resultado a partir de 23/11/2026 no portal da SEDET. Distrito Federal - DF Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Governo do Distrito Federal – Secretaria de Estado de Desenvolvimento Econômico, Trabalho e Renda (SEDET/DF), em parceria com o Instituto Conecta Brasil (Termo de Colaboração TC-1-SEDET/2026) Assistência Social Empreendedorismo / Geração de Emprego e Renda Formação para o trabalho Site Regulamento",
-    "deep_metadata": {
-      "edital_id": "19946",
-      "resumo_objetivo": "Seleção de agricultores familiares fornecedores para participação no Programa de Aquisição de Alimentos – PAA, modalidade Compra com Doação Simultânea – CDS, no Município do Paulista/PE.",
-      "temas_principais": [
-        "agricultura familiar",
-        "segurança alimentar",
-        "desenvolvimento social"
-      ],
-      "prazo_de_inscricao": "2026-11-21",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "PE"
-        ],
-        "municipios_permitidos": [
-          "Paulista - PE"
-        ],
-        "natureza_juridica_excluida": [
-          "fins lucrativos",
-          "pessoas jurídicas em geral (exclusivo para agricultores familiares pessoas físicas)"
-        ]
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": 500000,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Apresentação de CAF válido ou outro instrumento de identificação admitido",
-          "Apresentação de Proposta Individual de Fornecimento",
-          "Declaração de Produção Própria",
-          "Documentação sanitária exigível conforme a natureza dos produtos ofertados"
-        ]
-      },
-      "fonte_dados": "pdf",
-      "drive_pdf_link": "https://drive.google.com/file/d/1iJrhI7Y30LDTpPYhIZCfCFHdkkDQisbw/view?usp=drivesdk"
-    },
-    "pipeline_status": "COMPLETED"
-  },
-  {
     "id": "19949",
     "attributes": {
       "nome": "Edital de Chamamento Público nº 04/2026 – Seleção de projetos para Termo de Execução Cultural – Grupos Musicais (vagas remanescentes PNAB) – Girau do Ponciano/AL",
@@ -26945,7 +27111,6 @@
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19905",
     "full_text": "Ajuda Edital de Chamamento Público nº 001/2026 – Seleção de OSC para Qualificação Profissional na Cadeia Produtiva do Turismo (Martinópole/CE) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Chamamento Público nº 001/2026 – Seleção de OSC para Qualificação Profissional na Cadeia Produtiva do Turismo (Martinópole/CE) Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Mídias 05/11/26 até 23/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: licitacao@xn--martinpole-lbb.ce.gov.br Seleção de Organização da Sociedade Civil (OSC), em regime de mútua cooperação com o Município de Martinópole/CE, para a celebração de Termo de Colaboração visando à execução de 10 cursos/capacitações de qualificação profissional voltados à cadeia produtiva do turismo local (vinculada à Proposta Transferegov nº 016094/2026). O objetivo é qualificar prestadores de serviços turísticos, gestores, empreendedores e potenciais ingressantes no setor (incluindo públicos em situação de vulnerabilidade) para elevar a qualidade do atendimento, fortalecer a competitividade do destino e impulsionar o desenvolvimento econômico e social local. Total Disponível R$ 505.000,00 Limite por projeto R$ 505.000,00 Parceria - Governo Recursos próprios Martinópole - CE Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Município de Martinópole/CE – Secretaria Municipal de Cultura, Esporte e Turismo Educação Formação para o trabalho Desenvolvimento comunitário Empreendedorismo / Geração de Emprego e Renda Site Regulamento Inscrição",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19905",
       "resumo_objetivo": "Seleção de Organização da Sociedade Civil (OSC) para execução de cursos de qualificação profissional voltados à cadeia produtiva do turismo no município de Martinópole/CE.",
@@ -26980,7 +27145,8 @@
         "exigencias_especificas_adicionais": []
       },
       "fonte_dados": "texto_pagina"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19940",
@@ -27853,9 +28019,9 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19932",
     "pdf_link": "https://angra.rj.gov.br/pmar/assets/files/boletins/6afcb3587711c.pdf",
     "full_text": "Ajuda Edital de Chamamento Público \"Expressões da Terra\" nº 01/2026/FMC – Angra dos Reis/RJ © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Chamamento Público \"Expressões da Terra\" nº 01/2026/FMC – Angra dos Reis/RJ Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Mídias 18/11/26 até 20/12/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: fundo.cultura@angra.rj.gov.br Chamamento \"Expressões da Terra\" da Secretaria de Cultura e Patrimônio de Angra dos Reis/RJ, com recursos próprios do Fundo Municipal de Cultura, para apoiar 17 projetos nas áreas de música, dança, cultura popular, literatura, moda e artesanato e artes visuais, com R$ 685.000,00. Restrito a agentes culturais com CNPJ (inclusive MEI) e cadastro homologado como Fazedor de Cultura. Inscrições de 18/11 a 20/12/2026. Total Disponível R$ 685.000,00 Recursos próprios Angra dos Reis - RJ Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Prefeitura de Angra dos Reis/RJ – Secretaria de Cultura e Patrimônio (recursos próprios, Fundo Municipal de Cultura) Cultura e Artes Site Regulamento",
-    "retry_count": 2,
+    "retry_count": 3,
     "last_error": "fetch failed",
-    "pipeline_status": "PENDING_EXTRACTION"
+    "pipeline_status": "FAILED_PERMANENTLY"
   },
   {
     "id": "19943",
@@ -28073,7 +28239,6 @@
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19942",
     "pdf_link": "https://www.sentose.ba.gov.br/wp-content/uploads/2026/11/EDITAL-DE-CHAMAMENTO-PUBLICO-N-05-2026.pdf",
     "full_text": "Ajuda Edital de Chamamento Público nº 05/2026 – Natal Cultural (PNAB) – Sento-Sé/BA © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Chamamento Público nº 05/2026 – Natal Cultural (PNAB) – Sento-Sé/BA Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Mídias 16/11/26 até 23/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: Chamamento nº 05/2026 da Gerência de Cultura de Sento-Sé/BA, com recursos da PNAB, para selecionar 14 projetos do Natal Cultural 2026 (13 apresentações artísticas e 1 festival de fim de ano exclusivo para CNPJ), somando R$ 119.100,00. Aberto a agentes culturais do município. Inscrições online de 16 a 23/11/2026. Total Disponível R$ 119.100,00 Política Nacional Aldir Blanc Sento Sé - BA Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Prefeitura de Sento-Sé/BA – Gerência de Cultura / Fundo Municipal de Cultura (recursos PNAB) Cultura e Artes Site Regulamento",
-    "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19942",
       "resumo_objetivo": "O edital seleciona 14 projetos culturais para as festividades do Natal Cultural 2026 no município de Sento-Sé/BA, utilizando recursos da Política Nacional Aldir Blanc (PNAB).",
@@ -28111,7 +28276,8 @@
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1XxbOj0dt2cCWVbsezEvYHocV_YUfKKZ-/view?usp=drivesdk"
-    }
+    },
+    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19904",
@@ -28160,5 +28326,15 @@
       },
       "fonte_dados": "texto_pagina"
     }
+  },
+  {
+    "id": "16705",
+    "attributes": {
+      "nome": "Edital Pontos de Cultura",
+      "e_central?": true
+    },
+    "retry_count": 1,
+    "last_error": "page.evaluate: Target page, context or browser has been closed",
+    "pipeline_status": "NEW_FROM_API"
   }
 ]

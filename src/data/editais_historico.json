@@ -6807,12 +6807,12 @@
       "data_fim": "2026-09-10"
     },
     "public_url": "https://prosas.com.br/editais/17421",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/0PMBcdaKii2BQkNT67eLgrEHR9Muiwef-LrFlMvPadG-lTHLyOpSCAmaeDyUaiOA/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/865/352/original/Edital_-_Linha_INDUCAO_CINEMATOGRAFICA.docx.pdf",
-    "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"] Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página ",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/jlO7iJ-77PvGkdxanK-OIGplZRnSGqa_r11tElEniijgOLUo3gF-0zA8DSADbxC6/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/865/352/original/Edital_-_Linha_INDUCAO_CINEMATOGRAFICA.docx.pdf",
+    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17421",
-      "resumo_objetivo": "Seleção de projetos de produção audiovisual com a execução de etapas de produção na Paraíba e contratação de mão de obra local, por meio do Programa ICMS Cultural.",
+      "resumo_objetivo": "Seleção de projetos de produção audiovisual com execução de etapas na Paraíba e contratação de mão de obra local, por meio de incentivo fiscal do ICMS Cultural.",
       "temas_principais": [
         "audiovisual",
         "cultura",
@@ -6835,15 +6835,15 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Empresa cadastrada na ANCINE com sede há mais de 02 anos",
+          "Cadastro na ANCINE com sede há mais de 02 anos",
           "Apresentação de Carta de Compromisso de Incentivo (CCI)",
-          "Projetos com execução de etapas na Paraíba e contratação de mão de obra local"
+          "Comprovação de captação prévia de recursos"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1_q8HIQA8A0I0WkvuiW-YYM6XtFPrax5r/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "16668",
@@ -6857,13 +6857,12 @@
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "16668",
-      "resumo_objetivo": "O programa visa fomentar a cooperação bilateral entre o Brasil e a França por meio do apoio ao Centro Franco-Brasileiro de Biodiversidade Amazônica (CFBBA), selecionando projetos conjuntos de pesquisa científica, tecnológica e de inovação na Amazônia.",
+      "resumo_objetivo": "O programa fomenta a cooperação bilateral entre Brasil e França por meio de apoio a projetos conjuntos de pesquisa focados na biodiversidade amazônica, conservação e bioeconomia.",
       "temas_principais": [
         "biodiversidade",
         "amazônia",
-        "ciência e tecnologia",
+        "pesquisa científica",
         "povos indígenas",
-        "mudanças ambientais",
         "saúde",
         "bioeconomia"
       ],
@@ -6889,13 +6888,14 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Coordenador brasileiro deve possuir o título de doutor e vínculo celetista ou estatutário com a instituição de execução",
-          "Instituição proponente brasileira deve estar sediada nos estados do Amapá, Amazonas, Pará ou Roraima"
+          "O coordenador brasileiro deve possuir título de doutor",
+          "O coordenador brasileiro deve ter vínculo celetista ou estatutário com a instituição de execução",
+          "Submissão exclusiva pela Plataforma Integrada Carlos Chagas (PICC)"
         ]
       },
       "fonte_dados": "texto_pagina"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "16705",
@@ -6959,7 +6959,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17064",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/u_5d4qs4_kW3Y0vK7l7kcPeiKBKaBPn8_VCQAaM0mRvwrJkShrufaUAkZTljktjs/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/580/633/original/Edital_patrocinio_carnaval_26.pdf",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/-3pTPqZGRtojVczBSmdgPQCV3u9tbQR0Hll9pdE0eXjddoA-oA1tZnhJeowFajz2/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/580/633/original/Edital_patrocinio_carnaval_26.pdf",
     "full_text": "Ajuda EDITAL DE CHAMAMENTO PÚBLICO Nº 013 – SMT/2025 CAPTAÇÃO DE PATROCÍNIO PARA REALIZAÇÃO DO CARNAVAL 2026 DE POÇOS DE CALDAS © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
@@ -6992,14 +6992,13 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Empresas privadas com CNPJ no Município de Poços de Caldas",
-          "Apresentação de proposta de patrocínio e documentação exigida em envelope lacrado"
+          "Exclusivo para empresas privadas com CNPJ no Município de Poços de Caldas"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1e_BFxqsnIPFXQSyrO5jZ5gus0cXl-GGb/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "17689",
@@ -7009,16 +7008,16 @@
       "valor_total": 40000
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17689",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/RTfzKlGM51zas5W7_FNOHuaNbbTxKklNNdr5XUKUPIol65JVpqtqMYupkSyfzOWt/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/725/673/original/5436.pdf",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/3qLuRzUhvNDFmaPRj0dc4VyGdhvBONh7EPbEL6pk2hpkLUeuBYAsYdmIxjqS_0zy/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/725/673/original/5436.pdf",
     "full_text": "Ajuda Edital de Convocação nº 01/2026 para credenciamento de instituições interessadas em receber recursos oriundos de Penas Pecuniárias © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « volt",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17689",
-      "resumo_objetivo": "Chamamento público para o credenciamento de fornecedores da agricultura familiar e empreendedor familiar rural para o fornecimento de gêneros alimentícios destinados à alimentação escolar da rede municipal de Campo Novo do Peres - MT.",
+      "resumo_objetivo": "Chamamento público para o credenciamento e aquisição de gêneros alimentícios da agricultura familiar e do empreendedor familiar rural para atendimento à merenda escolar da Rede Pública Municipal de Campo Novo do Parecis - MT.",
       "temas_principais": [
         "agricultura familiar",
         "alimentação escolar",
-        "educación"
+        "educação"
       ],
       "prazo_de_inscricao": "2026-02-10",
       "criterios_eliminatorios": {
@@ -7033,7 +7032,7 @@
         "natureza_juridica_excluida": []
       },
       "financeiro": {
-        "valor_maximo_ou_global_reais": 40000,
+        "valor_maximo_ou_global_reais": 839848.7,
         "exige_contrapartida": false,
         "valor_total_edital": 40000
       },
@@ -7043,13 +7042,14 @@
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
           "Apresentação de DAP ou CAF atualizada dos últimos 60 dias",
-          "Projeto de Venda de Gêneros Alimentícios da Agricultura Familiar"
+          "Projeto de Venda de Gêneros Alimentícios da Agricultura Familiar",
+          "Documentação comprobatória de Serviço de Inspeção para produtos de origem animal"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1dU5nrk_bVUwW5Y7gW9RYoOsnWsOHrkEh/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "17385",
@@ -7059,19 +7059,20 @@
       "valor_total": 1229514.29
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17385",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/w3yn7OT_GYp4-7e6VL4XAWatYQBBombFI-zM3qRu4Ftr2NuBjHeqfNBVQtdw_oK7/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/655/114/original/edital-de-chamamento-publico-no-01_2026.pdf",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/RlgzwmBlFH0B22ovQa4TeIfZ4AJgA5aiEyltrLf-uef8UBKT2FL7naVA31fxguHU/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/655/114/original/edital-de-chamamento-publico-no-01_2026.pdf",
     "full_text": "Ajuda Cultura Vicentina: Edital PNAB São Vicente 01/2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privac",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17385",
-      "resumo_objetivo": "Selecionar projetos culturais para fortalecer o cenário artístico local de São Vicente, promovendo a democratização do acesso e a descentralização das ações culturais com recursos da Política Nacional Aldir Blanc (PNAB).",
+      "resumo_objetivo": "Seleção de projetos culturais para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB) no município de São Vicente.",
       "temas_principais": [
         "cultura",
-        "artes visuais",
-        "artes cênicas",
+        "arte",
+        "artesanato",
         "audiovisual",
         "música",
-        "patrimônio cultural"
+        "dança",
+        "patrimônio"
       ],
       "prazo_de_inscricao": "2026-03-08",
       "criterios_eliminatorios": {
@@ -7095,14 +7096,13 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "O agente cultural deve residir no município de São Vicente há pelo menos 2 anos",
-          "Inadimplentes nos Editais nº 06/2023, 07/2023 e/ou 08/2023 da Secretaria Municipal de Cultura de São Vicente não podem participar"
+          "Residir no município de São Vicente há pelo menos 2 anos"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/13B0lvdNneXo34JLUpdOvQaT3VFHMclUM/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "17401",
@@ -7112,15 +7112,15 @@
       "valor_total": 2341800
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17401",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/2CVWuFxwNqIf324qemyRYVfrG9DL2tv1IigqKS0JSf0oXbkePQlOFwp6Qr7LvJXm/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/662/967/original/EditalCulturasPesqueiras_01_26_FINAL.pdf",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/6-oBDqn-PrrI5bYNResk9VC_I2q4kqHC3WpUvbqdlqiav2pCAqnUzLWRRuEjZcQH/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/662/967/original/EditalCulturasPesqueiras_01_26_FINAL.pdf",
     "full_text": "Ajuda Culturas Pesqueiras Artesanais do Brasil - Edital de Chamamento Público nº 01/2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Ter",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17401",
-      "resumo_objetivo": "O edital tem por objetivo a seleção de projetos culturais, mestres e mestras das culturas tradicionais e populares da pesca artesanal brasileira, além de acadêmicos e intelectuais, visando à valorização, difusão e fortalecimento das expressões culturais das comunidades pesqueiras artesanais em todo o território nacional.",
+      "resumo_objetivo": "O edital visa a seleção de projetos culturais, premiações de mestres e mestras das culturas tradicionais e homenagens a acadêmicos da pesca artesanal brasileira. O objetivo é valorizar, difundir e fortalecer as expressões culturais e saberes das comunidades pesqueiras artesanais em todo o território nacional.",
       "temas_principais": [
-        "cultura",
         "pesca artesanal",
+        "cultura",
         "comunidades tradicionais",
         "patrimônio imaterial",
         "gastronomia"
@@ -7152,7 +7152,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/13TisVD6p7nb7oVFDfChW-fxa6dCPO5qt/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "17459",
@@ -7161,17 +7161,17 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17459",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/gMBzBv61TxzwA4exLycbUVbKeOrBnZIf402PFm9ibkhNWwRcDdVLT75Cxc0dvEXQ/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/677/466/original/Chamamento_publico_02_2026.pdf",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/cddNDVw2JnWlNkaRptcr-YaJ2s-RZV8KsK1w6CxSRVLloOXJ1UWnATmr3oQUhG83/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/677/466/original/Chamamento_publico_02_2026.pdf",
     "full_text": "Ajuda Ocupação da Biblioteca Pública Municipal Josué Guimarães © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de ",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17459",
-      "resumo_objetivo": "Selecionar propostas para o uso do espaço da Biblioteca Pública Municipal Josué Guimarães em 2026, visando a realização de 18 eventos culturais como cursos, oficinas, lançamentos de livros, contações de histórias e clubes de leitura.",
+      "resumo_objetivo": "Selecionar propostas para o uso do espaço da Biblioteca Pública Municipal Josué Guimarães em 2026, visando a realização de 18 eventos como cursos, oficinas e lançamentos de livros.",
       "temas_principais": [
         "cultura",
-        "livro e leitura",
-        "educação",
-        "eventos literários"
+        "livro",
+        "leitura",
+        "educação"
       ],
       "prazo_de_inscricao": "2026-04-03",
       "criterios_eliminatorios": {
@@ -7194,17 +7194,15 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Apresentar Ofício de Solicitação (Anexo I) preenchido e assinado",
-          "Apresentar Declaração de Responsabilidade de Direito Autoral (Anexo II)",
-          "Comprovante de residência do responsável pelo projeto",
-          "Currículo de todos os integrantes em formato PDF",
-          "Texto e/ou roteiro do evento em formato PDF"
+          "Apresentar Ofício de Solicitação Anexo I",
+          "Apresentar Declaração de Responsabilidade de Direito Autoral Anexo II",
+          "Comprovante de residência"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1UVh3VHuA2uFMOKKLj5xlGEDTMdjeZvqG/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "17535",
@@ -7213,7 +7211,7 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17535",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/-KWJUmbrC_5J6uYV5SzzduHQfHOTN0T6ZQe5rngTUeuZUm1-ieYbKpgKAuOHeToR/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/696/911/original/Edital_Fapes_07.2026_-_Espacos_Cientificos_Culturais-ECCs_-_Assinado.pdf",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/cDqokRf1YWRPtvxQPTrVAWAtoxRjFCfp-A3mndLazwrhrPNKLwi3049yBrX5Q_JQ/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/696/911/original/Edital_Fapes_07.2026_-_Espacos_Cientificos_Culturais-ECCs_-_Assinado.pdf",
     "full_text": "Ajuda Edital para Implantação, Estruturação, Modernização, Manutenção e Expansão de Espaços Científico-Culturais © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trab",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
@@ -7237,26 +7235,27 @@
         ],
         "municipios_permitidos": [],
         "natureza_juridica_excluida": [
-          "com fins lucrativos"
+          "fins lucrativos"
         ]
       },
       "financeiro": {
-        "valor_maximo_ou_global_reais": 300000,
-        "exige_contrapartida": true
+        "valor_maximo_ou_global_reais": 2100000,
+        "exige_contrapartida": false
       },
       "burocracia_e_documentos": {
         "exige_cnd": true,
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Titulação mínima de graduação e vínculo celetista ou estatutário com IES/P pública ou privada sem fins lucrativos sediada no estado do Espírito Santo",
-          "Currículo na plataforma Lattes atualizado há menos de 6 meses"
+          "Titulação mínima de graduação para o coordenador",
+          "Vínculo celetista ou estatutário com IES/P pública ou privada sem fins lucrativos sediada no ES",
+          "Currículo Lattes atualizado há menos de 6 meses"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/16Dktle76KcRsJorQNhkQhRf5t8SoOiAy/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "17542",
@@ -7312,15 +7311,15 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/12743",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/001/333/922/original/2_Extrato_altera%C3%A7%C3%A3o_Edital.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261121%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261121T093555Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=f96076aaeaeb527347263c5d085c7212f7add82438ff37d44f010f3d6da1c214",
-    "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"] Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta p",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/001/333/922/original/2_Extrato_altera%C3%A7%C3%A3o_Edital.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261122%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261122T094202Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=2d1287350010e1071c6d1d4fc8a2533222dc7b23d9546c0f89de9b36f49b8529",
+    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar noss",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "12743",
-      "resumo_objetivo": "Credenciamento de orientadores artísticos para o Programa Arte nos Bairros - Projeto Oficinas Culturais pela Fundação Cultural Cassiano Ricardo.",
+      "resumo_objetivo": "Credenciamento de orientadores artísticos para o Programa Arte nos Bairros - Projeto Oficinas Culturais promovido pela Fundação Cultural Cassiano Ricardo.",
       "temas_principais": [
         "cultura",
-        "arte",
+        "artes",
         "oficinas"
       ],
       "prazo_de_inscricao": "2023-10-30",
@@ -7343,17 +7342,12 @@
         "exige_cnd": false,
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Apresentação de Atestado de Capacidade Técnica",
-          "Declaração de ausência de fato impeditivo",
-          "Declaração de Prática Profissional",
-          "Declaração de Prática de Grupo"
-        ]
+        "exigencias_especificas_adicionais": []
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1qajQNJjP-KK_DxQMfOnMzoIwCAELuJlM/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "14962",
@@ -7362,18 +7356,17 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/14962",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/706/022/original/Credenciamento_007_-_CORO.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261121%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261121T093508Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=6947869653d2aa22248685944d85bb92df59ec71f903790691266314177b34b8",
-    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar noss",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/706/022/original/Credenciamento_007_-_CORO.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261122%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261122T094104Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1d6b5c751ca593e53a809c99fa87b31d044cc9a073d8784d6a7a8ca9e6e23ae7",
+    "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"] Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta p",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "14962",
-      "resumo_objetivo": "Credenciamento de propostas para contratação de prestadores de serviços artísticos e pedagógicos (pianista, monitores de técnica vocal e monitor de teoria e percepção musical) para compor o Coro Sinfônico de São José dos Campos da Fundação Cultural Cassiano Ricardo.",
+      "resumo_objetivo": "Credenciamento de propostas para projetos de formação livre em artes no Coro Sinfônico de São José dos Campos, visando compor o quadro artístico de pianistas, monitores de técnica vocal e monitores de teoria e percepção musical.",
       "temas_principais": [
         "cultura",
         "música",
         "canto coral",
-        "formação artística",
-        "educação"
+        "educação artística"
       ],
       "prazo_de_inscricao": "2024-09-27",
       "criterios_eliminatorios": {
@@ -7381,10 +7374,7 @@
         "abrangencia_nacional": true,
         "estados_permitidos": [],
         "municipios_permitidos": [],
-        "natureza_juridica_excluida": [
-          "fins lucrativos incompatíveis com o objeto",
-          "pessoas físicas não MEI (exige PJ ou MEI)"
-        ]
+        "natureza_juridica_excluida": []
       },
       "financeiro": {
         "valor_maximo_ou_global_reais": 80,
@@ -7395,16 +7385,15 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Exige idade mínima de 18 anos completos na data de inscrição para o profissional executante",
-          "Exige envio de link de vídeo no YouTube (3 a 5 minutos) com técnica de canto solo ou piano solo",
-          "Exige apresentação de Atestado de Capacidade Técnica emitido por pessoa jurídica",
-          "Exige Certidão de regularidade de débitos da Fazenda do Município de São José dos Campos apenas para empresas nela sediadas"
+          "Idade mínima de 18 anos completos na data de inscrição para os prestadores de serviço",
+          "Apresentação de atestado de capacidade técnica emitido por pessoa jurídica",
+          "Envio de link de vídeo no YouTube com atuação recente e boa qualidade técnica"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/16KLjN-O_p2fcEQGg0iVg5uSO9fNhKNhf/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "14964",
@@ -7413,17 +7402,16 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/14964",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/706/138/original/Credenciamento_009_-_TAP.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261121%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261121T093507Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=d45c0cfda0472eedd5406ab32ea66a73a17d9c62875f4732d054cd3b3608afb3",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/706/138/original/Credenciamento_009_-_TAP.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261122%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261122T094053Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=6600ef91ae4c91c34c0bf60053f089d03519261f2edc13b0ff280ac8f1196787",
     "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar noss",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "14964",
-      "resumo_objetivo": "Credenciamento de propostas para o projeto de formação livre em artes 'Tap da Longevidade', selecionando profissionais para ministrar aulas de sapateado americano e curadoria artística para o público com mais de 45 anos.",
+      "resumo_objetivo": "Credenciamento de propostas para projetos de formação livre em artes, especificamente sapateado americano para o projeto Tap da Longevidade voltado para maiores de 45 anos.",
       "temas_principais": [
         "cultura",
         "arte",
         "dança",
-        "idosos",
         "educação"
       ],
       "prazo_de_inscricao": "2024-09-27",
@@ -7445,16 +7433,15 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Exige envio de link em vídeo no YouTube com demonstração artística e de orientação",
-          "Exige atestado de capacidade técnica emitido por pessoa jurídica",
-          "Profissionais devem ter idade mínima de 18 anos completos",
-          "Exige plano de aula adequado à técnica de sapateado americano para maiores de 45 anos"
+          "Atestado de capacidade técnica emitido por pessoa jurídica",
+          "Envio de link em vídeo no YouTube com demonstração artística e plano de aula",
+          "Comprovante de Inscrição Municipal"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1hztIsnEbgRdtfqcAYVFJyCmJZctaPa2K/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "14963",
@@ -7514,15 +7501,16 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/13702",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/040/297/original/2%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261121%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261121T093531Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=4ac571d370f370bb0ba17f2c4091a7b925a252e2c1b32e2d4d7f77cab4c35f7f",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/040/297/original/2%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261122%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261122T094127Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c39e74ecab1fa2d9512bb697aa57bf07ef6466f26a3754573aa4304a211bf9ab",
     "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"] Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta p",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "13702",
-      "resumo_objetivo": "Credenciamento de propostas artísticas de espetáculo infantil para circulação e difusão cultural pela Fundação Cultural Cassiano Ricardo.",
+      "resumo_objetivo": "Credenciamento de propostas artísticas de espetáculo infantil para circulação e difusão no âmbito da Fundação Cultural Cassiano Ricardo.",
       "temas_principais": [
         "cultura",
         "arte",
+        "teatro",
         "espetáculo infantil"
       ],
       "prazo_de_inscricao": "2023-10-30",
@@ -7546,7 +7534,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1t8-W93t3hZTZppzeDFTrGrDBtQLvEV2J/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "14961",
@@ -7555,19 +7543,69 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/14961",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/705/991/original/Credenciamento_006_-_CIA.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261121%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261121T093519Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=060510347b905f6599b5a7c6cadb7d79dbbed1651428323dada1541660d7feff",
-    "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"] Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta p",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/705/991/original/Credenciamento_006_-_CIA.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261122%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261122T094109Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=7e4c96776f54e34f2a7faddc09c599ec8acf79ea7fe15545aa416b528247f065",
+    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar noss",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "14961",
-      "resumo_objetivo": "Credenciamento de propostas para projetos de formação livre em artes para compor o quadro artístico da Companhia de Dança de São José dos Campos da Fundação Cultural Cassiano Ricardo.",
+      "resumo_objetivo": "Credenciamento de propostas para projetos de formação livre em artes para a Companhia de Dança de São José dos Campos, visando compor o quadro artístico do projeto com curadores, professores, preparadores físicos, ensaiadores e bailarinos.",
+      "temas_principais": [
+        "dança",
+        "cultura",
+        "arte",
+        "formação"
+      ],
+      "prazo_de_inscricao": "2024-09-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "São José dos Campos - SP"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Idade mínima de 18 anos completos na data de inscrição para todos os prestadores de serviço",
+          "Apresentação de atestado de capacidade técnica emitido por pessoa jurídica",
+          "Envio de vídeo em canal do Youtube não listado com demonstração artística e técnica conforme exigências do edital"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1Yi4odm8cWrJU-rAz-lhRavzqcaSAg2UR/view?usp=drivesdk"
+    },
+    "archived_at": "2026-11-22"
+  },
+  {
+    "id": "14958",
+    "attributes": {
+      "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO CENTRO DE ARTES CIRCENSES – CREDENCIAMENTO Nº 005/EDITAL Nº 04/FCCR/2024",
+      "e_central?": false
+    },
+    "public_url": "https://prosas.com.br/editais/14958",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/705/941/original/Credenciamento_005_-_CARCI.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261122%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261122T094116Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=d4ada931ea75ec771be1aac4b3ead7c6e5439e46c1662458c42c0c574756957b",
+    "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"] Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta p",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "14958",
+      "resumo_objetivo": "Credenciamento de propostas para projetos de formação livre em artes no Centro de Artes Circenses de São José dos Campos, visando compor o quadro artístico de professores, curadores e supervisores.",
       "temas_principais": [
         "cultura",
-        "dança",
-        "arte",
+        "artes cênicas",
+        "circo",
         "formação artística"
       ],
-      "prazo_de_inscricao": "2025-05-31",
+      "prazo_de_inscricao": "2024-09-27",
       "criterios_eliminatorios": {
         "idade_minima_cnpj_anos": null,
         "abrangencia_nacional": true,
@@ -7584,63 +7622,15 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Idade mínima de 18 anos completos na data de inscrição",
+          "Profissionais devem ter idade mínima de 18 anos completos na data de inscrição",
           "Apresentação de atestado de capacidade técnica emitido por pessoa jurídica",
-          "Envio de link de vídeo no Youtube conforme critérios específicos do edital"
-        ]
-      },
-      "fonte_dados": "pdf",
-      "drive_pdf_link": "https://drive.google.com/file/d/1Yi4odm8cWrJU-rAz-lhRavzqcaSAg2UR/view?usp=drivesdk"
-    },
-    "archived_at": "2026-11-21"
-  },
-  {
-    "id": "14958",
-    "attributes": {
-      "nome": "CREDENCIAMENTO DE PROPOSTAS PARA O PROJETO CENTRO DE ARTES CIRCENSES – CREDENCIAMENTO Nº 005/EDITAL Nº 04/FCCR/2024",
-      "e_central?": false
-    },
-    "public_url": "https://prosas.com.br/editais/14958",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/705/941/original/Credenciamento_005_-_CARCI.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261121%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261121T093520Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a23c3c982deb28593bf8da76f2104b14d1a148fb251a9d06f0411e4fbc8de14a",
-    "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"] Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta p",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "14958",
-      "resumo_objetivo": "Credenciamento de propostas para projetos de formação livre em artes no âmbito do Centro de Artes Circenses, visando a composição do quadro artístico e prestação de serviços educacionais e de curadoria.",
-      "temas_principais": [
-        "cultura",
-        "arte",
-        "circo",
-        "educação"
-      ],
-      "prazo_de_inscricao": "2024-09-27",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": 100,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": true,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Exige idade mínima de 18 anos completos para o artista responsável na data da inscrição",
-          "Exige envio de currículo artístico e portfólio",
-          "Exige plano de aula da atividade circense",
-          "Exige link de vídeo em canal do Youtube não listado com demonstração artística e de orientação",
-          "Exige atestado de capacidade técnica emitido por pessoa jurídica"
+          "Envio de vídeo demonstrativo em canal do Youtube não listado com qualidade técnica"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1soHRcabldHVt1yHyKeww2spR--FxropT/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "14639",
@@ -7759,17 +7749,17 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/13705",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/001/861/704/original/1%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261121%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261121T093531Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=e5cead8f0af812162973e04e5ecb5e2336d05534c49a9faaea1b996703c9dda7",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/001/861/704/original/1%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261122%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261122T094122Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=823a363e19f277376cde30ddebd2013b77f408aca838f3d41bfc380fc23c6703",
     "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"] Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta p",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "13705",
-      "resumo_objetivo": "Credenciamento de propostas artísticas para circulação e difusão de espetáculos na área de cultura pela Fundação Cultural Cassiano Ricardo.",
+      "resumo_objetivo": "Credenciamento de propostas artísticas para circulação e difusão de espetáculos adultos ou livres pela Fundação Cultural Cassiano Ricardo.",
       "temas_principais": [
         "cultura",
         "arte",
-        "teatro",
-        "espetáculo"
+        "espetáculo",
+        "circulação artística"
       ],
       "prazo_de_inscricao": "2023-10-30",
       "criterios_eliminatorios": {
@@ -7788,7 +7778,7 @@
         "exige_contrapartida": false
       },
       "burocracia_e_documentos": {
-        "exige_cnd": true,
+        "exige_cnd": false,
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": []
@@ -7796,7 +7786,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1p4vVeH5dADhE6hFJIqO1LJSd2z3YxjYO/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "13507",
@@ -7853,15 +7843,17 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/13701",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/040/322/original/2%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261121%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261121T093543Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=e64bbb4057c0eeb05819c24e928355add3d5ba69173000060d31e25f12e84a23",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/040/322/original/2%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261122%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261122T094134Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=6b64f554d99b0b5e5c6b40c0c5cd2a01d593be0bc7eba1a8aa88b8fbbb4aaad8",
     "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"] Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta p",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "13701",
-      "resumo_objetivo": "Credenciamento de propostas artísticas para circulação e difusão no exercício de 2023 pela Fundação Cultural Cassiano Ricardo.",
+      "resumo_objetivo": "Credenciamento de propostas artísticas para difusão e circulação no exercício de 2023 pela Fundação Cultural Cassiano Ricardo.",
       "temas_principais": [
         "cultura",
-        "arte"
+        "arte",
+        "circulação artística",
+        "difusão artística"
       ],
       "prazo_de_inscricao": "2023-10-30",
       "criterios_eliminatorios": {
@@ -7888,7 +7880,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1ePnXqZvu22iqBfCNTHBRYO7dGQjWcpPR/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "13693",
@@ -7897,12 +7889,12 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/13693",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/040/380/original/2%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261121%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261121T093606Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=671697378f15740ef94b8596dc1e1109f7da0ddd216fb557c231489fe3b1d3fc",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/040/380/original/2%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261122%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261122T094138Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=7b548130a0b2763caee2c06e72d75295e5a25090521a0f66ba418cd0088fe6c5",
     "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"] Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta p",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "13693",
-      "resumo_objetivo": "Credenciamento de propostas artísticas para circulação e difusão nas áreas de exposição de artes e exibição audiovisual pela Fundação Cultural Cassiano Ricardo.",
+      "resumo_objetivo": "Credenciamento de propostas artísticas para circulação e difusão nas áreas de exposição de artes e exibição audiovisual.",
       "temas_principais": [
         "cultura",
         "artes visuais",
@@ -7929,7 +7921,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1FBW5xWjF3f03Vi9mzh7ENwZA2eOPCR4U/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "13691",
@@ -7938,12 +7930,12 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/13691",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/040/427/original/2%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261121%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261121T093618Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=11d55f75f202a7673f5e86984baa4b404e8735bcfc248f7c777d77ffa6fd426a",
-    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar noss",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/040/427/original/2%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261122%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261122T094156Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=2346d8f20d24a293c2ef6cd9908c438e49b0719170a6285e918e48e003a12bc3",
+    "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"] Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta p",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "13691",
-      "resumo_objetivo": "Credenciamento de propostas artísticas para circulação e difusão no âmbito das manifestações da cultura popular, promovido pela Fundação Cultural Cassiano Ricardo.",
+      "resumo_objetivo": "Credenciamento de propostas artísticas para circulação e difusão no âmbito das manifestações da cultura popular pela Fundação Cultural Cassiano Ricardo.",
       "temas_principais": [
         "cultura",
         "cultura popular",
@@ -7974,7 +7966,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1l2GxmN403-ipGbb97RdAZC7eDWJODEly/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "13686",
@@ -7983,17 +7975,16 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/13686",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/040/462/original/2%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261121%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261121T093617Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9e058072230a8c2c4d031cb6d838260d7d0a2898f8fb5ab966cd4accbef2b1bc",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/040/462/original/2%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261122%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261122T094150Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=ccac6a39da4a28d84ebf42fe89cacba2c4a60f7a6980f03c4e2bb01052248558",
     "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"] Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta p",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "13686",
-      "resumo_objetivo": "O edital tem por objetivo o credenciamento de propostas artísticas para difusão e circulação no exercício de 2023 pela Fundação Cultural Cassiano Ricardo.",
+      "resumo_objetivo": "Credenciamento de propostas artísticas para difusão e circulação no exercício de 2023 pela Fundação Cultural Cassiano Ricardo.",
       "temas_principais": [
         "cultura",
         "arte",
-        "circulação artística",
-        "difusão artística"
+        "circulação e difusão artística"
       ],
       "prazo_de_inscricao": "2023-10-30",
       "criterios_eliminatorios": {
@@ -8020,7 +8011,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1oUtab4xPEZP3hoqi8XBgEmvmtp3GIoro/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "13678",
@@ -8029,16 +8020,17 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/13678",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/040/494/original/2%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261121%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261121T093543Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=5089797a750e717633b987e78b4b3566df6acc2c0d0a6afd256a5f11ec78d1c5",
-    "full_text": "[\"Não foi possível iniciar sua inscrição - Este edital está aberto apenas para os seguintes perfis de empreendedor: Pessoa jurídica com fins lucrativos, Pessoa jurídica sem fins lucrativos\"] Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta p",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/040/494/original/2%C2%AA_prorrogacao_alteracao_de_prazos_Credenciamento_003_Edital_009_2023.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261122%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261122T094159Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a6fa07a2014746ae72997afaed207bd469bb31e4379aadc8ced72ad02126ee2b",
+    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar noss",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "13678",
-      "resumo_objetivo": "O edital tem como objetivo o credenciamento de propostas artísticas para circulação e difusão no exercício de 2023 pela Fundação Cultural Cassiano Ricardo.",
+      "resumo_objetivo": "Credenciamento de propostas artísticas para difusão e circulação no exercício de 2023 pela Fundação Cultural Cassiano Ricardo.",
       "temas_principais": [
         "cultura",
         "arte",
-        "circulação artística"
+        "circulação artística",
+        "difusão cultural"
       ],
       "prazo_de_inscricao": "2023-10-30",
       "criterios_eliminatorios": {
@@ -8057,17 +8049,15 @@
         "exige_contrapartida": false
       },
       "burocracia_e_documentos": {
-        "exige_cnd": true,
+        "exige_cnd": false,
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Apresentar atestado de capacidade técnica"
-        ]
+        "exigencias_especificas_adicionais": []
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1nf8JCC1dB3VQ74b-mZj7RPrk3ub62IDB/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "18194",
@@ -8076,18 +8066,17 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/18194",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/iY3n8QvmiQYSRpOWi0qxh64ocSXPNvdjlgEbZUKN6WaMXsmqwjBKWYHSbimxzkPm/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/881/396/original/EDITAL_PROFESSORES_OFICINEIROS_CIRCO_DO_POVO.pdf",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/FbHI_htClmhiteq9bTrzaPG0iirCPRFiNQorVRrF0KO1s2hH6onESUkXfIPmCIKI/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/881/396/original/EDITAL_PROFESSORES_OFICINEIROS_CIRCO_DO_POVO.pdf",
     "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "18194",
-      "resumo_objetivo": "Credenciamento de professores e oficineiros (pessoas jurídicas MEI/ME/EPP) para atuação remunerada no programa Circo do Povo, vinculado à Fundação Cultural de Uberaba.",
+      "resumo_objetivo": "Credenciamento de professores e oficineiros (pessoas jurídicas MEI/ME e EPP) para atuação remunerada no Circo do Povo, vinculado à Fundação Cultural de Uberaba, com o objetivo de difundir e valorizar a cultura no município.",
       "temas_principais": [
         "cultura",
         "circo",
         "educação",
-        "arte",
-        "oficinas"
+        "arte"
       ],
       "prazo_de_inscricao": "2026-06-18",
       "criterios_eliminatorios": {
@@ -8101,9 +8090,9 @@
         ],
         "natureza_juridica_excluida": [
           "pessoa física",
+          "consórcio",
           "cooperativa de serviço",
           "cooperativa de trabalho",
-          "consórcio",
           "empresa estrangeira"
         ]
       },
@@ -8116,17 +8105,19 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Exclusivo para pessoas jurídicas MEI/ME e EPP",
-          "Exige comprovação de CNAE de atividades correlatas ao objeto",
-          "Apresentação de declaração de inexistência de impedimento legal",
-          "Apresentação de declaração de inexistência de mão de obra infantil",
-          "Apresentação de declaração de cessão de uso de direito de som e imagem"
+          "Exige comprovação de CNAE compatível com o objeto",
+          "Vedada a participação de servidores públicos do município de Uberaba ou parentes",
+          "Exige Certidão Conjunta de Regularidade de Débitos Federais e à Dívida Ativa da União",
+          "Exige Certidão de Regularidade de Débitos Estaduais",
+          "Exige Certidão de Regularidade de Débitos Municipais",
+          "Exige CRF do FGTS",
+          "Exige Certidão Negativa de Débitos Trabalhistas (CNDT)"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1sbDT5q7oElxisGz9DveEjRkxsnZfC-OU/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "15288",
@@ -12113,20 +12104,21 @@
       "data_fim": "2026-11-18"
     },
     "public_url": "https://prosas.com.br/editais/19648",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/DJ6Xw-gg2ZGkZFLMBClX7JQM6ADVNukUShAs0LuZAui94HZuss8W3R2blhrE6rXy/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/134/104/original/Edital_03.2026_Premio_Trajetorias_%281%29_assinado.pdf",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/8mwsUBr0KXhhocA7eg8D--a2iJX4uPdEgJlMFIKZGQJ8mt1C0e21lHe4ktcpMHpD/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/134/104/original/Edital_03.2026_Premio_Trajetorias_%281%29_assinado.pdf",
     "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "19648",
-      "resumo_objetivo": "O objeto deste Edital é a premiação de trajetórias e contribuições culturais já realizadas por agentes culturais de Grajaú/MA, nas categorias constantes no Anexo I. Trata-se de reconhecimento pela contribuição já realizada pelo agente cultural ao Município.",
+      "resumo_objetivo": "Este Edital tem por objeto a premiação de trajetórias e contribuições culturais já realizadas por agentes culturais do Município de Grajaú/MA, utilizando recursos da Política Nacional Aldir Blanc (PNAB).",
       "temas_principais": [
         "cultura",
-        "arte",
         "patrimônio cultural",
+        "artes",
         "música",
         "artesanato",
-        "carnaval",
         "dança",
+        "carnaval",
+        "festivais",
         "cultura popular"
       ],
       "prazo_de_inscricao": "2026-11-18",
@@ -12150,15 +12142,14 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Atuação comprovada de no mínimo 3 anos consecutivos na área escolhida em Grajaú",
-          "Ser maior de 18 anos",
-          "Comprovação de residência em Grajaú por pelo menos 2 anos atrás e um atual"
+          "Atuação comprovada de no mínimo 3 anos consecutivos na área escolhida no Município de Grajaú",
+          "Ser maior de 18 anos"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1s7vs7JUKaBUCXQk8w4DKHp0beY8ukxhz/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-21"
+    "archived_at": "2026-11-22"
   },
   {
     "id": "19647",
@@ -15804,5 +15795,161 @@
     "pipeline_status": "COMPLETED",
     "drive_backfill_attempted": true,
     "archived_at": "2026-11-21"
+  },
+  {
+    "id": "19681",
+    "attributes": {
+      "nome": "EDITAL CONJUNTO SECADI/SETEC Nº 2/2026 (Chamamento público para Certificação H2E de Entidade Formadora e seleção de propostas de Apoio Financeiro H2E)",
+      "e_central?": true,
+      "data_inicio": "2026-11-10",
+      "data_fim": "2026-11-21"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19681",
+    "full_text": "Ajuda EDITAL CONJUNTO SECADI/SETEC Nº 2/2026 (Chamamento público para Certificação H2E de Entidade Formadora e seleção de propostas de Apoio Financeiro H2E) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil P",
+    "deep_metadata": {
+      "edital_id": "19681",
+      "resumo_objetivo": "Disciplina a certificação de organizações e coletivos que desenvolvam processos formativos vinculados a Hip-Hop e educação, além de selecionar propostas para apoio financeiro a essas atividades.",
+      "temas_principais": [
+        "cultura",
+        "educação",
+        "hip-hop",
+        "cultura afro brasileira"
+      ],
+      "prazo_de_inscricao": "2026-11-21",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Certificação H2E de Entidade Formadora e inclusão no Cadastro Nacional"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-22"
+  },
+  {
+    "id": "19852",
+    "attributes": {
+      "nome": "Edital de Chamamento Público Complementar nº 001/2026 – Saldo Remanescente Complementar ao Edital de Chamamento Público nº 002/2026/SEMCUT",
+      "e_central?": true,
+      "data_inicio": "2026-11-14",
+      "data_fim": "2026-11-21",
+      "valor_total": 68480
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19852",
+    "pdf_link": "https://4fdfdc7ecc7eac3fcdc8af2e4ed6ae07.cdn.bubble.io/f1794596339122x107493078772429740/EDITAL%20DE%20CHAMAMENTO%20P%C3%9ABLICO%20COMPLETAR%20N%C2%B0%20001-2026%20-%20PNAB..pdf",
+    "full_text": "Ajuda Edital de Chamamento Público Complementar nº 001/2026 – Saldo Remanescente Complementar ao Edital de Chamamento Público nº 002/2026/SEMCUT © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suport",
+    "deep_metadata": {
+      "edital_id": "19852",
+      "resumo_objetivo": "Seleção de projetos culturais para firmar Termo de Execução Cultural, visando o preenchimento de vagas com saldo remanescente do Edital nº 002/2026/SEMCUT nas categorias de Cultura Popular, Música, Artes Plásticas e Visuais e Artesanato. A iniciativa fomenta as manifestações culturais do Município de Óbidos-PA com recursos da PNAB.",
+      "temas_principais": [
+        "cultura",
+        "cultura popular",
+        "música",
+        "artes plásticas",
+        "artes visuais",
+        "artesanato",
+        "pnab"
+      ],
+      "prazo_de_inscricao": "2026-11-21",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PA"
+        ],
+        "municipios_permitidos": [
+          "Óbidos - PA"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 68480,
+        "exige_contrapartida": false,
+        "valor_total_edital": 68480
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Agente cultural que atua ou reside no Município de Óbidos-PA há pelo menos 02 anos",
+          "Proponentes já contemplados no edital original (Edital nº 002/2026/SEMCUT) estão impedidos de concorrer",
+          "Exige abertura de conta bancária específica para recebimento dos recursos"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1bbazK3QpqxrqXwl09uX5P49V1XKI7MCv/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-22"
+  },
+  {
+    "id": "19946",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 50/2026 – SEDET/DF – Hub de Empreendedorismo Feminino",
+      "e_central?": true,
+      "data_inicio": "2026-11-19",
+      "data_fim": "2026-11-21"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19946",
+    "pdf_link": "https://drive.google.com/uc?export=download&id=111dCqZdS2AVFAoqKjl80YHIkrms2Tam5",
+    "full_text": "Ajuda Edital de Chamamento Público nº 50/2026 – SEDET/DF – Hub de Empreendedorismo Feminino © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato ",
+    "deep_metadata": {
+      "edital_id": "19946",
+      "resumo_objetivo": "Seleção de agricultores familiares fornecedores para participação no Programa de Aquisição de Alimentos – PAA, modalidade Compra com Doação Simultânea – CDS, no Município do Paulista/PE.",
+      "temas_principais": [
+        "agricultura familiar",
+        "segurança alimentar",
+        "desenvolvimento social"
+      ],
+      "prazo_de_inscricao": "2026-11-21",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Paulista - PE"
+        ],
+        "natureza_juridica_excluida": [
+          "fins lucrativos",
+          "pessoas jurídicas em geral (exclusivo para agricultores familiares pessoas físicas)"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 500000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Apresentação de CAF válido ou outro instrumento de identificação admitido",
+          "Apresentação de Proposta Individual de Fornecimento",
+          "Declaração de Produção Própria",
+          "Documentação sanitária exigível conforme a natureza dos produtos ofertados"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1iJrhI7Y30LDTpPYhIZCfCFHdkkDQisbw/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-22"
   }
 ]
