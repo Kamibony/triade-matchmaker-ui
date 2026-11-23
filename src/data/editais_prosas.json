@@ -1,5 +1,200 @@
 [
   {
+    "id": "pncp_29141322000132-1-000269_2026",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "Prestação de serviços de acolhimento institucional em Instituição de Longa Permanência para Idosos (ILPI)",
+      "data_inicio": "2026-11-13",
+      "data_fim": "2026-12-07",
+      "valor_total": 1968700.5,
+      "patrocinador": "MUNICIPIO DE PIRAI",
+      "locais": [
+        {
+          "municipio": "Piraí",
+          "uf": "RJ"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/29141322000132/2026/269",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/29141322000132/compras/2026/269/arquivos/1",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: MUNICIPIO DE PIRAI (CNPJ: 29141322000132)\nModalidade: Credenciamento\nLocalidade: Piraí - RJ\nValor Total Estimado: R$ 1.968.700,50\nAbertura: 2026-11-13\nEncerramento das propostas: 2026-12-07\nObjeto: Prestação de serviços de acolhimento institucional em Instituição de Longa Permanência para Idosos (ILPI)",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "pncp_29141322000132-1-000269_2026",
+      "resumo_objetivo": "Registro de preços para futura e eventual aquisição de material de limpeza para suprir as necessidades das secretarias do Município de Piraí.",
+      "temas_principais": [
+        "material de limpeza",
+        "aquisição",
+        "registro de preços"
+      ],
+      "prazo_de_inscricao": "2026-12-07",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 4394244.53,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Apresentação de certidões negativas de feitos sobre falência ou recuperação judicial",
+          "Apresentação de atestado de capacidade técnica"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1QWRAgZ5-DCC1aY3FTnrS3HL1n9Y3GyPz/view?usp=drivesdk"
+    }
+  },
+  {
+    "id": "pncp_11049830000120-1-000410_2026",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "CREDENCIAMENTO DE PRESTADORES DE SERVIÇOS DE SAÚDE, PESSOAS JURÍDICAS COM OU SEM FINS LUCRATIVOS PARA EVENTUAL PRESTAÇÃO DE SERVIÇOS ESPECIALIZADOS EM REALIZ...",
+      "data_inicio": "2026-11-14",
+      "data_fim": "2027-11-14",
+      "valor_total": 124920,
+      "patrocinador": "MUNICIPIO DE GRAVATA",
+      "locais": [
+        {
+          "municipio": "Gravatá",
+          "uf": "PE"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/11049830000120/2026/410",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/11049830000120/compras/2026/410/arquivos/1",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: MUNICIPIO DE GRAVATA (CNPJ: 11049830000120)\nModalidade: Credenciamento\nLocalidade: Gravatá - PE\nValor Total Estimado: R$ 124.920,00\nAbertura: 2026-11-14\nEncerramento das propostas: 2027-11-14\nObjeto: CREDENCIAMENTO DE PRESTADORES DE SERVIÇOS DE SAÚDE, PESSOAS JURÍDICAS COM OU SEM FINS LUCRATIVOS PARA EVENTUAL PRESTAÇÃO DE SERVIÇOS ESPECIALIZADOS EM REALIZAÇÃO DE EXAMES DE CITOLOGIA, INCLUINDO ACONDICIONAMENTO, TRANSPORTE, ANÁLISE LABORATORIAL, EMISSÃO DE LAUDOS TÉCNICOS E DISPONIBILIZAÇÃO DE RESULTADOS, CONFORME ESPECIFICAÇÕES TÉCNICAS, QUANTITATIVOS ESTIMADOS E DEMAIS CONDIÇÕES CONSTANTES NO TERMO DE REFERÊNCIA, ANEXO I, DESTE EDITAL.\nSistema de Origem: https://bnccompras.com/Process/ProcessView?param1=[gkz]cNyxtZBml3Aw0hW5gr_3GHqLAfR4kOsZBeqc9XcUWqzRtcC1Q_N0P7bY64F5UXxitdPa57QMkgrBccy3KnUm3JEh3zYBAxjrHVhW7bgs7u4=",
+    "pipeline_status": "PENDING_EXTRACTION",
+    "retry_count": 1,
+    "last_error": "HTTP Error: 422"
+  },
+  {
+    "id": "pncp_32531313000162-1-000030_2026",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "AQUISIÇÃO DE GÊNEROS ALIMENTÍCIOS, DESTINADOS AO ATENDIMENTO AO PROGRAMA NACIONAL DE ALIMENTAÇÃO ESCOLAR, NOS TERMOS DA LEI 11.947/2009 E RESOLUÇÃO 06/2020 A...",
+      "data_inicio": "2026-11-11",
+      "data_fim": "2026-12-16",
+      "valor_total": 3750240.84,
+      "patrocinador": "FUNDO MUNICIPAL DE EDUCACAO - FME",
+      "locais": [
+        {
+          "municipio": "Luziânia",
+          "uf": "GO"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/32531313000162/2026/30",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/32531313000162/compras/2026/30/arquivos/1",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: FUNDO MUNICIPAL DE EDUCACAO - FME (CNPJ: 32531313000162)\nModalidade: Credenciamento\nLocalidade: Luziânia - GO\nValor Total Estimado: R$ 3.750.240,84\nAbertura: 2026-11-11\nEncerramento das propostas: 2026-12-16\nObjeto: AQUISIÇÃO DE GÊNEROS ALIMENTÍCIOS, DESTINADOS AO ATENDIMENTO AO PROGRAMA NACIONAL DE ALIMENTAÇÃO ESCOLAR, NOS TERMOS DA LEI 11.947/2009 E RESOLUÇÃO 06/2020 A SEREM ADQUIRIDOS DA AGRICULTURA FAMILIAR E DO EMPREENDEDOR FAMILIAR RURAL OU DE SUAS ORGANIZAÇÕES FAMILIARES, DESTINADOS À ELABORAÇÃO DA ALIMENTAÇÃO ESCOLAR PARA OS ALUNOS DOS CENTROS MUNICIPAIS DE EDUCAÇÃO INFANTIL E ESCOLAS MUNICIPAIS DO MUNICÍPIO DE LUZIÂNIA-GO",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "pncp_32531313000162-1-000030_2026",
+      "resumo_objetivo": "Aquisição de gêneros alimentícios da agricultura familiar para atendimento ao Programa Nacional de Alimentação Escolar (PNAE) na rede municipal de ensino de Luziânia-GO.",
+      "temas_principais": [
+        "agricultura familiar",
+        "alimentação escolar",
+        "PNAE"
+      ],
+      "prazo_de_inscricao": "2026-12-16",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "GO"
+        ],
+        "municipios_permitidos": [
+          "Luziânia - GO"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 3750240.84,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exige DAP Física ou Jurídica conforme o enquadramento",
+          "Exige Alvará Sanitário da Agricultura Familiar vigente para produtos processados/manipulados",
+          "Exige comprovação de Serviço de Inspeção para produtos de origem animal (Municipal, Estadual ou Federal)"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1y5qNvHsBZW7pwc9FK1MZLUf5y7-lKsEQ/view?usp=drivesdk"
+    }
+  },
+  {
+    "id": "pncp_02014521000123-1-000045_2026",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "Chamamento Público tem por objetivo a prospecção do mercado imobiliário na cidade do CRATO/CE, visando a locação de imóvel, sob medida, na modalidade Built t...",
+      "data_inicio": "2026-12-02",
+      "data_fim": "2027-01-04",
+      "valor_total": 550000,
+      "patrocinador": "DEFENSORIA PUBLICA DO ESTADO DO CEARA",
+      "locais": [
+        {
+          "municipio": "Fortaleza",
+          "uf": "CE"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/02014521000123/2026/45",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/02014521000123/compras/2026/45/arquivos/1",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: DEFENSORIA PUBLICA DO ESTADO DO CEARA (CNPJ: 02014521000123)\nModalidade: Credenciamento\nLocalidade: Fortaleza - CE\nValor Total Estimado: R$ 550.000,00\nAbertura: 2026-12-02\nEncerramento das propostas: 2027-01-04\nObjeto: Chamamento Público tem por objetivo a prospecção do mercado imobiliário na cidade do CRATO/CE, visando a locação de imóvel, sob medida, na modalidade Built to Suit – BTS, com o fito de implantar uma nova sede da Defensoria Pública no município, que comporte adequadamente a estrutura necessária para abrigar: 17 (dezessete) gabinetes; recepção/protocolo; salas de mediação; salas psicossocial; banheiros; almoxarifado; depósito; copa/cozinha; sala multiuso/reuniões; espaços para administração...\nInformações Complementares: O presente Chamamento Público tem por objetivo a prospecção do mercado imobiliário na cidade do CRATO/CE, visando a locação de imóvel, sob medida, na modalidade Built to Suit – BTS, com o fito de implantar uma nova sede da Defensoria Pública no município, que comporte adequadamente a estrutura necessária para abrigar: 17 (dezessete) gabinetes; recepção/protocolo; salas de mediação; salas psicossocial; banheiros; almoxarifado; depósito; copa/cozinha; sala multiuso/reuniões; espaços para administração, suporte de TI, motoristas, serviços gerais, segurança e atendimentos; lactário; brinquedoteca; área de circulação; e, 40 (quarenta) vagas de garagem privativas e cobertas, conforme especificações contidas neste Edital e seus anexos. ",
+    "pipeline_status": "PENDING_EXTRACTION",
+    "retry_count": 1,
+    "last_error": "HTTP Error: 422"
+  },
+  {
+    "id": "pncp_76968627000100-1-000340_2026",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "Chamada Pública , visando o credenciamento de fornecedores da Agricultura Familiar, para aquisição de gêneros alimentícios para a Alimentação Escolar da Rede...",
+      "data_inicio": "2026-11-17",
+      "data_fim": "2026-12-08",
+      "valor_total": 1226851.5,
+      "patrocinador": "MUNICIPIO DE SANTO ANTONIO DA PLATINA",
+      "locais": [
+        {
+          "municipio": "Santo Antônio da Platina",
+          "uf": "PR"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/76968627000100/2026/340",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/76968627000100/compras/2026/340/arquivos/1",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: MUNICIPIO DE SANTO ANTONIO DA PLATINA (CNPJ: 76968627000100)\nModalidade: Credenciamento\nLocalidade: Santo Antônio da Platina - PR\nValor Total Estimado: R$ 1.226.851,50\nAbertura: 2026-11-17\nEncerramento das propostas: 2026-12-08\nObjeto: Chamada Pública , visando o credenciamento de fornecedores da Agricultura Familiar, para aquisição de gêneros alimentícios para a Alimentação Escolar da Rede Pública Municipal, a serem adquiridos conforme a necessidade, pelo período de 12 (doze) meses",
+    "pipeline_status": "PENDING_EXTRACTION",
+    "retry_count": 1,
+    "last_error": "HTTP Error: 422"
+  },
+  {
     "id": "pncp_95548400000142-1-000110_2026",
     "source_portal": "PNCP",
     "attributes": {
@@ -1350,62 +1545,6 @@
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
           "Benefício exclusivo para o município de Caridade"
-        ]
-      },
-      "fonte_dados": "texto_pagina"
-    }
-  },
-  {
-    "id": "mapas_ce_8497",
-    "source_portal": "Mapas Culturais CE",
-    "attributes": {
-      "nome": "III EDITAL CAPISTRANO DAS ARTES",
-      "data_inicio": "2026-11-12",
-      "data_fim": "2026-11-22",
-      "patrocinador": "Mapa Cultural CE",
-      "locais": [
-        {
-          "uf": "CE"
-        }
-      ],
-      "areas_interesse": [
-        "Cultura",
-        "Edital"
-      ]
-    },
-    "public_url": "https://mapacultural.secult.ce.gov.br/oportunidade/8497/",
-    "full_text": "FONTE: Mapa Cultural CE\nTítulo: III EDITAL CAPISTRANO DAS ARTES\nEstado (UF): CE\nTipo: Edital\nInício das inscrições: 2026-11-12\nEncerramento das inscrições: 2026-11-22\nDescrição:\nEdital Capistrano das Artes tem como objetivo fomentar, valorizar e fortalecer a produção artística e cultural do Município de Capistrano/CE, por meio do incentivo a artistas, produtores, grupos, coletivos e demais agentes culturais locais. A iniciativa busca promover a diversidade das expressões culturais, reconhecer os talentos do município, incentivar a criação e a difusão artística e ampliar o acesso da população às manifestações culturais, contemplando diferentes linguagens e segmentos artísticos, contribuindo para o fortalecimento da identidade cultural e do patrimônio cultural de Capistrano.",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "mapas_ce_8497",
-      "resumo_objetivo": "O edital tem como objetivo fomentar, valorizar e fortalecer a produção artística e cultural do município de Capistrano/CE, incentivando agentes culturais locais.",
-      "temas_principais": [
-        "cultura",
-        "arte",
-        "patrimônio cultural"
-      ],
-      "prazo_de_inscricao": "2026-11-22",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "CE"
-        ],
-        "municipios_permitidos": [
-          "Capistrano - CE"
-        ],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Benefício exclusivo para agentes culturais locais de Capistrano/CE"
         ]
       },
       "fonte_dados": "texto_pagina"
@@ -2893,72 +3032,6 @@
     }
   },
   {
-    "id": "mapas_rn_316",
-    "source_portal": "Mapas Culturais RN",
-    "attributes": {
-      "nome": "EDITAL DE SELEÇÃO PÚBLICA PARA O 17º SALÃO DE ARTES VISUAIS DA CIDADE DE NATAL - 2026",
-      "data_inicio": "2026-10-06",
-      "data_fim": "2026-11-22",
-      "patrocinador": "Mapa Cultural RN",
-      "locais": [
-        {
-          "uf": "RN"
-        }
-      ],
-      "areas_interesse": [
-        "Cultura",
-        "Edital"
-      ]
-    },
-    "public_url": "https://mapacultural.natal.rn.gov.br/oportunidade/316/",
-    "pdf_link": "https://mapacultural.natal.rn.gov.br/files/opportunity/316/edital-17-salao-artes-visuais-natal-2026-revisao.pdf",
-    "full_text": "FONTE: Mapa Cultural RN\nTítulo: EDITAL DE SELEÇÃO PÚBLICA PARA O 17º SALÃO DE ARTES VISUAIS DA CIDADE DE NATAL - 2026\nEstado (UF): RN\nTipo: Edital\nInício das inscrições: 2026-10-06\nEncerramento das inscrições: 2026-11-22\nDescrição:\nEDITAL DA SELEÇÃO PÚBLICA Nº 19/2026-FUNCARTE PARA O 17º SALÃO DE ARTES VISUAIS DA CIDADE DE NATAL - 2026. PAE Nº Funcarte-20261108891 O presente Edital tem por objeto selecionar trabalhos artísticos no campo das artes visuais com autoria de artistas residentes no Estado do Rio Grande do Norte e/ou em algum dos Estados da Região Nordeste do Brasil, para compor a exposição do 17º Salão de Artes Visuais da Cidade de Natal, com data prevista para 16 de janeiro a 30 de março de 2027. Serão selecionados até 15 (quinze) trabalhos artísticos, observada a ordem de classificação, podendo ser selecionados até 3 (três) trabalhos por expressão artística, de acordo com a classificação final e os critérios estabelecidos neste Edital, especialmente ao item 10. A seleção compreenderá análise documental e análise artística, conforme critérios e procedimentos previstos neste Edital ao item 10. Os artistas que necessitarem de suporte para realização da inscrição poderão solicitar atendimento com antecedência mínima de 24 (vinte e quatro) horas, pelo e-mail secult.funcarte@natal.rn.gov.br ou pelo Suporte de Editais sob número +55 84 92001-9072.",
-    "pipeline_status": "COMPLETED",
-    "deep_metadata": {
-      "edital_id": "mapas_rn_316",
-      "resumo_objetivo": "Selecionar trabalhos artísticos no campo das artes visuais com autoria de artistas residentes no Rio Grande do Norte e/ou na Região Nordeste para compor a exposição do 17º Salão de Artes Visuais da Cidade de Natal.",
-      "temas_principais": [
-        "artes visuais",
-        "cultura",
-        "exposição artística"
-      ],
-      "prazo_de_inscricao": "2026-11-22",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "RN",
-          "AL",
-          "BA",
-          "CE",
-          "MA",
-          "PB",
-          "PE",
-          "PI",
-          "SE"
-        ],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": 6000,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": true,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Comprovar residência há pelo menos 2 anos no Rio Grande do Norte ou em algum estado da Região Nordeste",
-          "Servidores públicos da SECULT/FUNCARTE e membros da Curadoria estão impedidos de participar",
-          "Proibição de obras com conteúdo racista, capacitista, homofóbico, transfóbico ou que incitem discriminação"
-        ]
-      },
-      "fonte_dados": "pdf",
-      "drive_pdf_link": "https://drive.google.com/file/d/1ldxWQ6aHGfsoBCegFeYUYjFf5qdqGEYC/view?usp=drivesdk"
-    }
-  },
-  {
     "id": "fund_be3f8d8d5f",
     "source_portal": "Fundações (Brave)",
     "attributes": {
@@ -3494,65 +3567,6 @@
     "retry_count": 5,
     "last_error": "fetch failed",
     "pipeline_status": "FAILED_PERMANENTLY"
-  },
-  {
-    "id": "19501",
-    "attributes": {
-      "nome": "BREJO SANTO  CE - PREMIAÇÃO - PONTOS DE CULTURA - 2026",
-      "e_central?": true,
-      "data_inicio": "2026-10-22",
-      "data_fim": "2026-11-22",
-      "valor_total": 75839.3
-    },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19501",
-    "pdf_link": "https://mapacultural.secult.ce.gov.br/files/opportunity/8451/premiacao-de-pontos-de-cultura-de-brejo-santo-ce-004-2026.pdf",
-    "full_text": "Ajuda BREJO SANTO CE - PREMIAÇÃO - PONTOS DE CULTURA - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por BREJO SANTO CE - PREMIAÇÃO - PONTOS DE CULTURA - 2026 Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Subáreas Objetivos de Desenvolvimento Sustentável (ODS) Mídias 22/10/26 até 22/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: pnabbrejosanto@gmail.com (88) 8830-2262_ Seleção e premiação de iniciativas, atividades ou ações culturais já realizadas por Pontos de Cultura no município, visando o fortalecimento da Rede Municipal de Pontos de Cultura e da Política Nacional de Cultura Viva. Total Disponível R$ 75.839,30 Limite por projeto R$ 10.834,28 Política Nacional Aldir Blanc Brejo Santo - CE Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Seculte Brejo Santo / Prefeitura Municipal de Brejo Santo - CE Cultura e Artes Circo Audiovisual Patrimônio Histórico CulturA índigena Cultura Afro Brasileira Site Anexos",
-    "deep_metadata": {
-      "edital_id": "19501",
-      "resumo_objetivo": "Premiação de iniciativas, atividades ou ações já realizadas por Pontos de Cultura no município de Brejo Santo, visando fortalecer a cultura de base comunitária e a diversidade cultural.",
-      "temas_principais": [
-        "cultura",
-        "cultura viva",
-        "cultura popular",
-        "diversidade cultural",
-        "patrimônio cultural"
-      ],
-      "prazo_de_inscricao": "2026-11-22",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "CE"
-        ],
-        "municipios_permitidos": [
-          "Brejo Santo - CE"
-        ],
-        "natureza_juridica_excluida": [
-          "fins lucrativos",
-          "órgãos e entidades públicas",
-          "instituições de ensino, pesquisa e desenvolvimento institucional",
-          "Sistema S"
-        ]
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": 10834.28,
-        "exige_contrapartida": false,
-        "valor_total_edital": 75839.3
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": false,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Comprovar no mínimo 2 anos de desenvolvimento de atividades culturais na comunidade local",
-          "Apresentar portfólio e material de comprovação das atividades culturais",
-          "Formulário de Inscrição Anexo 3"
-        ]
-      },
-      "fonte_dados": "pdf",
-      "drive_pdf_link": "https://drive.google.com/file/d/1YpZq4iehe_kSlzN6yRRhD1_HQyFN049A/view?usp=drivesdk"
-    },
-    "pipeline_status": "COMPLETED"
   },
   {
     "id": "19420",
@@ -19145,62 +19159,6 @@
     "pipeline_status": "COMPLETED"
   },
   {
-    "id": "19730",
-    "attributes": {
-      "nome": "Edital de Chamamento Público Nº 005.20/2026 - Socorro Andrade - Apoio ao Ciclo Carnavalesco de Itapipoca",
-      "e_central?": true,
-      "data_inicio": "2026-11-09",
-      "data_fim": "2026-11-22",
-      "valor_total": 224000
-    },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19730",
-    "pdf_link": "https://mapacultural.secult.ce.gov.br/files/opportunity/8463/edital-005-20-2026-socorro-andrade-2.pdf",
-    "full_text": "Ajuda Edital de Chamamento Público Nº 005.20/2026 - Socorro Andrade - Apoio ao Ciclo Carnavalesco de Itapipoca © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Chamamento Público Nº 005.20/2026 - Socorro Andrade - Apoio ao Ciclo Carnavalesco de Itapipoca Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Objetivos de Desenvolvimento Sustentável (ODS) Mídias 09/11/26 até 22/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: codac.cultura@itapipoca.ce.gov.br A Prefeitura de Itapipoca (CE), por meio da Secretaria da Cultura, abre o Edital Socorro Andrade de apoio ao ciclo carnavalesco do município, em homenagem à mestra carnavalesca Socorro Andrade. São R$ 224.000,00 para 24 propostas de escolas de samba, maracatus, blocos afro, blocos tradicionais e blocos de rua, com valores de R$ 6 mil a R$ 20 mil. Podem se inscrever pessoas físicas residentes e atuantes na cultura de Itapipoca há pelo menos dois anos. As inscrições vão de 09/11/2026 a 22/11/2026, pelo Mapa Cultural do Ceará. Total Disponível R$ 224.000,00 Limite por projeto R$ 20.000,00 Política Nacional Aldir Blanc Itapipoca - CE Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Prefeitura Municipal de Itapipoca – Secretaria da Cultura Cultura e Artes Site Regulamento",
-    "deep_metadata": {
-      "edital_id": "19730",
-      "resumo_objetivo": "O edital seleciona e apoia financeiramente projetos de agremiações carnavalescas (escolas de samba, maracatus, blocos afro, tradicionais e de rua) para compor a programação do Desfile Carnavalesco de Itapipoca em 2027.",
-      "temas_principais": [
-        "cultura",
-        "carnaval",
-        "cultura popular",
-        "patrimônio imaterial",
-        "turismo cultural"
-      ],
-      "prazo_de_inscricao": "2026-11-22",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": false,
-        "estados_permitidos": [
-          "CE"
-        ],
-        "municipios_permitidos": [
-          "Itapipoca - CE"
-        ],
-        "natureza_juridica_excluida": [
-          "pessoas jurídicas (exclusivo para pessoas físicas)"
-        ]
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": 224000,
-        "exige_contrapartida": true,
-        "valor_total_edital": 224000
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": true,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Exige cadastro obrigatório no Mapa Cultural do Ceará com endereço no município de Itapipoca",
-          "Proponente deve ser pessoa física residente e domiciliada em Itapipoca há pelo menos 2 anos",
-          "Exige comprovação de atuação no campo artístico cultural e no carnaval de Itapipoca por no mínimo 2 anos (ou 25 anos para blocos tradicionais)"
-        ]
-      },
-      "fonte_dados": "pdf",
-      "drive_pdf_link": "https://drive.google.com/file/d/1p0ozWA_kMl5JarECZNzS0WQY7qZmPWSd/view?usp=drivesdk"
-    },
-    "pipeline_status": "COMPLETED"
-  },
-  {
     "id": "19749",
     "attributes": {
       "nome": "Seleção e Premiação de Artistas, Grupos Culturais, Profissionais de Arte e Cultura e Espaços/Territórios Culturais do Município de Santa Branca, com recursos da Política Nacional Aldir Blanc de Fomento à Cultura - PNAB",
@@ -20659,55 +20617,6 @@
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1ZGCYKw2VNqXHXRQcEhMlRWprMap3l4_f/view?usp=drivesdk"
-    },
-    "pipeline_status": "COMPLETED"
-  },
-  {
-    "id": "19765",
-    "attributes": {
-      "nome": "Chamada para Inscrição de Projetos Socioambientais, Esportivos e Culturais – Cielo S.A. – Instituição de Pagamento – 2026",
-      "e_central?": true,
-      "data_inicio": "2026-11-06",
-      "data_fim": "2026-11-22"
-    },
-    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19765",
-    "pdf_link": "https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F226807%2F1793882379Chamada_para_Seleo_de_Projetos_Sociais_-_2026.pdf",
-    "full_text": "Ajuda Chamada para Inscrição de Projetos Socioambientais, Esportivos e Culturais – Cielo S.A. – Instituição de Pagamento – 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Chamada para Inscrição de Projetos Socioambientais, Esportivos e Culturais – Cielo S.A. – Instituição de Pagamento – 2026 Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Mídias 06/11/26 até 22/11/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: A Cielo S.A. Instituição de Pagamento abre chamada para inscrição de projetos socioambientais, esportivos e culturais alinhados à sua estratégia de investimento social privado. Podem participar pessoas jurídicas responsáveis por projetos elegíveis por leis de incentivo (entre elas Pronon, Pronas/PCD, Lei Federal de Incentivo à Cultura, Lei Federal de Incentivo ao Esporte, Lei da Reciclagem, FIA e Fundo da Pessoa Idosa) ou por recurso próprio, nos termos do regulamento. A chamada prioriza projetos executados nas regiões Norte e Nordeste; as demais regiões também podem ser consideradas, com menor prioridade. O valor total e o valor por projeto não estão informados no regulamento. As inscrições vão de 06/11/2026 a 22/11/2026, exclusivamente pelo canal oficial https://selecao.simbi.social/cielo. A Cielo acompanha a execução e os resultados por relatórios e auditorias presenciais. Contato público específico não consta do regulamento; a Simbi pode contatar as organizações inscritas. Regulamento: ver o PDF oficial na página da chamada. FIA - Fundo",
-    "deep_metadata": {
-      "edital_id": "19765",
-      "resumo_objetivo": "A Cielo S.A. abre chamada para seleção e apoio de projetos socioambientais, esportivos e culturais alinhados à sua estratégia de investimento social privado, com prioridade para as regiões Norte e Nordeste.",
-      "temas_principais": [
-        "socioambiental",
-        "esporte",
-        "cultura",
-        "inclusão socioprodutiva",
-        "geração de renda"
-      ],
-      "prazo_de_inscricao": "2026-11-22",
-      "criterios_eliminatorios": {
-        "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
-        "natureza_juridica_excluida": [
-          "fins comerciais"
-        ]
-      },
-      "financeiro": {
-        "valor_maximo_ou_global_reais": null,
-        "exige_contrapartida": false
-      },
-      "burocracia_e_documentos": {
-        "exige_cnd": true,
-        "exige_balanco_patrimonial": false,
-        "exige_cebas": false,
-        "exigencias_especificas_adicionais": [
-          "Não serão aceitos projetos propostos por organizações cujos dirigentes sejam pessoas expostas politicamente (PEPs)",
-          "O projeto deve estar devidamente aprovado e apto ao recebimento de recursos via leis de incentivo ou recurso próprio"
-        ]
-      },
-      "fonte_dados": "pdf",
-      "drive_pdf_link": "https://drive.google.com/file/d/1MjrbFdGo3YQJUa4y-lf6QcxiOGa-Z1h_/view?usp=drivesdk"
     },
     "pipeline_status": "COMPLETED"
   },
@@ -28328,13 +28237,57 @@
     }
   },
   {
-    "id": "16705",
+    "id": "19874",
     "attributes": {
-      "nome": "Edital Pontos de Cultura",
-      "e_central?": true
+      "nome": "Edital de Chamamento Público nº 119.000/SMLCP/2026 – Programa Talentos Mané – Esporte e Lazer Comunitário",
+      "e_central?": true,
+      "data_inicio": "2026-10-23",
+      "data_fim": "2026-12-10",
+      "valor_total": 1485000
     },
-    "retry_count": 1,
-    "last_error": "page.evaluate: Target page, context or browser has been closed",
-    "pipeline_status": "NEW_FROM_API"
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19874",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/c-PLprW5YEYZ1nbb7YxocD9p1XUotkpPcQdmTqa5fteo-0ZkZ-owTsq-fpKsQc-1/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/145/337/original/Edital.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público nº 119.000/SMLCP/2026 – Programa Talentos Mané – Esporte e Lazer Comunitário © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO Para Empresas Para Organizações Públicas Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Plataforma Soluções Formações Desenvolvido por Edital de Chamamento Público nº 119.000/SMLCP/2026 – Programa Talentos Mané – Esporte e Lazer Comunitário Compartilhar edital Informações Inscrições de : GMT-03 ( Horário Padrão de Brasília ) Sobre Fonte de financiamento Locais de Atuação Áreas de Atuação Público-Alvo Objetivos de Desenvolvimento Sustentável (ODS) Mídias Complementares 23/10/26 até 10/12/26 Acessar Edital registrado pela Central de Editais. Se tiver alguma dúvida, entre em contato com: Selecionar propostas apresentadas por Organizações da Sociedade Civil (OSCs) para implantação e execução de até 60 projetos/núcleos gratuitos de esporte e lazer no Programa Talentos Mané Esporte e Lazer Comunitário, mediante celebração de Termos de Colaboração, divididos em três eixos: Eixo I Esporte e Lazer Comunitário (até 40 projetos), Eixo II Pessoa Idosa (até 10 projetos) e Eixo III Paradesporto (até 10 projetos). Total Disponível R$ 1.485.000,00 Política Nacional Aldir Blanc Florianópolis - SC Ver menos Ver menos E-mail: Telefone : Publicado por: Central de Editais Patrocinador: Prefeitura de Florianópolis – Secretaria Municipal de Cultura, Esporte e Lazer / SMLCP Esportes Desenvolvimento comunitário Idosos Pessoas com Deficiência Site Edital Regulamento",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "19874",
+      "resumo_objetivo": "Seleção de Organizações da Sociedade Civil (OSCs) para implantação e execução do Programa Talentos Mané – Esporte e Lazer Comunitário, estruturado em até 60 projetos gratuitos divididos em três eixos.",
+      "temas_principais": [
+        "esporte",
+        "lazer",
+        "pessoa idosa",
+        "paradesporto"
+      ],
+      "prazo_de_inscricao": "2026-12-10",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SC"
+        ],
+        "municipios_permitidos": [
+          "Florianópolis - SC"
+        ],
+        "natureza_juridica_excluida": [
+          "fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 1485000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 1485000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Comprovação de objeto social compatível com atividades esportivas, de lazer ou sociais",
+          "Disponibilidade de espaço físico adequado com acessibilidade para o Eixo III"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1I3waMC8RkMKWdRmQPRLfVrX6HOg5t5FE/view?usp=drivesdk"
+    }
   }
 ]
