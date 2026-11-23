@@ -144,7 +144,7 @@ export function buildDiagnosticoUrl(
 export function buildDiagnosticoOpenerMessage(lead: Pick<DiagnosticoCampaignLead, 'nome'>): string {
   const orgName = (lead?.nome || 'sua organização').trim();
   return (
-    `Olá, equipe da ${orgName}! Aqui é da Tríade Captação de Recursos.\n\n` +
+    `Olá, equipe da ${orgName}! Aqui é da Tríade Captação de Recursos (Instagram: @triade_acr).\n\n` +
     `Preparamos um autodiagnóstico gratuito (leva cerca de 3 minutos) que mostra o nível de prontidão documental da organização e editais abertos hoje para o seu CNPJ — sem compromisso e sem promessa de aprovação.\n\n` +
     `Deseja receber o link personalizado da ${orgName} por aqui?\n` +
     `Responda *SIM* para receber ou *NÃO* caso prefira não receber mensagens.`
@@ -165,10 +165,10 @@ export function buildDiagnosticoLinkReplyMessage(
 }
 
 export const DIAGNOSTICO_OPT_OUT_REPLY =
-  'Combinado! Já registramos sua preferência e bloqueamos este número para não receber novas mensagens da Tríade Captação de Recursos. Desejamos muito sucesso ao trabalho de vocês!';
+  'Combinado! Já registramos sua preferência e bloqueamos este número para não receber novas mensagens da Tríade Captação de Recursos (@triade_acr). Desejamos muito sucesso ao trabalho de vocês!';
 
 export const DIAGNOSTICO_CLARIFICATION_REPLY =
-  'Este canal é automático para envio do autodiagnóstico gratuito da Tríade Captação de Recursos. Responda *SIM* para receber o link personalizado (onde explicamos tudo e mostramos editais abertos) ou *NÃO* para não receber novas mensagens.';
+  'Este canal é automático para envio do autodiagnóstico gratuito da Tríade Captação de Recursos (Instagram: @triade_acr). Responda *SIM* para receber o link personalizado (onde explicamos tudo e mostramos editais abertos) ou *NÃO* para não receber novas mensagens.';
 
 /**
  * Classificador determinístico (sem IA) para respostas do funil SIM / NÃO do /diagnostico.

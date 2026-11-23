@@ -4,6 +4,8 @@
     AREAS_ATUACAO_OPTIONS,
     LGPD_CONSENT_TEXT,
     LGPD_CONTROLLER_NAME,
+    LGPD_INSTAGRAM_HANDLE,
+    LGPD_INSTAGRAM_URL,
     LGPD_PRIVACY_EMAIL,
     SELOS_OPTIONS,
     type AtaStatus,
@@ -353,7 +355,17 @@
           T
         </div>
         <div>
-          <p class="text-sm font-bold text-slate-900 leading-tight">{LGPD_CONTROLLER_NAME}</p>
+          <div class="flex flex-wrap items-center gap-x-2 gap-y-0.5">
+            <p class="text-sm font-bold text-slate-900 leading-tight">{LGPD_CONTROLLER_NAME}</p>
+            <a
+              href={LGPD_INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-[11px] font-semibold text-teal-700 hover:text-teal-900 hover:underline"
+            >
+              Instagram {LGPD_INSTAGRAM_HANDLE} ↗
+            </a>
+          </div>
           <p class="text-xs text-slate-500">Autodiagnóstico Gratuito de Prontidão para Editais</p>
         </div>
       </div>

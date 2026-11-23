@@ -9,19 +9,22 @@ export type TierClass = 'Tier A' | 'Tier B' | 'Tier C';
 
 export const LGPD_CONSENT_VERSION = 'LGPD_v1_2026-11-23';
 export const LGPD_CONTROLLER_NAME = 'Tríade Captação de Recursos';
+export const LGPD_INSTAGRAM_HANDLE = '@triade_acr';
+export const LGPD_INSTAGRAM_URL = 'https://www.instagram.com/triade_acr/';
 export const LGPD_PRIVACY_EMAIL = 'triade.captacaoderecursos@gmail.com';
 export const LGPD_CONSENT_TEXT =
   'Autorizo a Tríade Captação de Recursos (controladora dos dados) a armazenar as informações deste formulário para gerar meu diagnóstico documental e avisar sobre editais compatíveis, podendo solicitar exclusão a qualquer momento pelo e-mail triade.captacaoderecursos@gmail.com.';
 
 export const AREAS_ATUACAO_OPTIONS = [
   { id: 'mulheres', label: 'Mulheres e Equidade de Gênero', keywords: ['mulher', 'mulheres', 'genero', 'equidade', 'feminino'] },
-  { id: 'agro', label: 'Agricultura Familiar / Agroecologia', keywords: ['agricultura', 'familiar', 'agroecologia', 'rural', 'alimentos', 'cooperativa', 'agro'] },
+  { id: 'agro', label: 'Agricultura Familiar / Agroecologia', keywords: ['agricultura', 'familiar', 'agroecologia', 'rural', 'alimentos', 'cooperativa', 'agro', 'extrativismo'] },
+  { id: 'direitos_humanos', label: 'Comunidades Tradicionais / Direitos Humanos', keywords: ['tradicionais', 'comunidades', 'quilombola', 'indigena', 'ribeirinho', 'ribeirinha', 'extrativista', 'direitos', 'humanos', 'cidadania', 'racial'] },
+  { id: 'causa_animal', label: 'Proteção e Causa Animal', keywords: ['animal', 'animais', 'pet', 'cao', 'caes', 'gato', 'gatos', 'fauna', 'veterinario', 'castracao', 'protecao'] },
   { id: 'assistencia', label: 'Assistência Social / Idosos / PCD', keywords: ['assistencia', 'social', 'idoso', 'idosos', 'pcd', 'deficiencia', 'vulnerabilidade', 'suas'] },
   { id: 'educacao', label: 'Educação / Juventude', keywords: ['educacao', 'juventude', 'jovens', 'crianca', 'adolescente', 'escola', 'capacitacao'] },
   { id: 'saude', label: 'Saúde / Hospitais Filantrópicos', keywords: ['saude', 'hospital', 'filantropico', 'cuidado', 'atendimento'] },
-  { id: 'meio_ambiente', label: 'Meio Ambiente / Clima', keywords: ['meio', 'ambiente', 'ambiental', 'clima', 'floresta', 'agua', 'sustentabilidade', 'residuos'] },
+  { id: 'meio_ambiente', label: 'Meio Ambiente / Clima / Amazônia', keywords: ['meio', 'ambiente', 'ambiental', 'clima', 'floresta', 'amazonia', 'agua', 'sustentabilidade', 'residuos'] },
   { id: 'cultura_esporte', label: 'Cultura / Esporte', keywords: ['cultura', 'cultural', 'arte', 'esporte', 'patrimonio', 'musica'] },
-  { id: 'direitos_humanos', label: 'Direitos Humanos / Povos Tradicionais', keywords: ['direitos', 'humanos', 'quilombola', 'indigena', 'tradicionais', 'cidadania', 'racial'] },
   { id: 'geracao_renda', label: 'Geração de Renda / Economia Solidária', keywords: ['renda', 'economia', 'solidaria', 'empreendedorismo', 'trabalho', 'produtivo', 'artesanato'] }
 ] as const;
 
