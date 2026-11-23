@@ -21,6 +21,9 @@
   let cnpjError = $state<string | null>(null);
   let cnpjLoaded = $state(false);
   let manualOrgMode = $state(false);
+  let preIdentifiedFromLink = $state(false);
+  let editingCnpj = $state(false);
+  let waPrefilledFromLink = $state(false);
 
   let razaoSocial = $state('');
   let uf = $state('');
@@ -72,8 +75,16 @@
     'Voluntário(a) / Conselheiro(a)'
   ];
 
+  const hideCnpjBlock = $derived(preIdentifiedFromLink && !editingCnpj);
+  const stepOffset = $derived(hideCnpjBlock ? 0 : 1);
+  const totalBlocks = $derived(hideCnpjBlock ? 6 : 7);
+
   const completedBlocks = $derived(
-    (cnpjLoaded || (manualOrgMode && razaoSocial.trim() && cnpjInput.replace(/\D/g, '').length === 14) ? 1 : 0) +
+    (hideCnpjBlock
+      ? 0
+      : cnpjLoaded || (manualOrgMode && razaoSocial.trim() && cnpjInput.replace(/\D/g, '').length === 14)
+        ? 1
+        : 0) +
       (contatoNome.trim() && (contatoWhatsapp.trim() || contatoEmail.trim()) ? 1 : 0) +
       (selectedAreas.length > 0 ? 1 : 0) +
       (estatuto && ata ? 1 : 0) +
@@ -82,7 +93,7 @@
       (experiencia && optInLgpd ? 1 : 0)
   );
 
-  const progressPct = $derived(Math.round((completedBlocks / 7) * 100));
+  const progressPct = $derived(Math.round((completedBlocks / totalBlocks) * 100));
 
   function formatCnpjDisplay(raw: string): string {
     const d = (raw || '').replace(/\D/g, '').slice(0, 14);
@@ -91,6 +102,20 @@
       .replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3')
       .replace(/\.(\d{3})(\d)/, '.$1/$2')
       .replace(/(\d{4})(\d)/, '$1-$2');
+  }
+
+  function formatPhoneDisplay(raw: string): string {
+    let d = (raw || '').replace(/\D/g, '');
+    if (d.startsWith('55') && (d.length === 12 || d.length === 13)) {
+      d = d.slice(2);
+    }
+    if (d.length === 11) {
+      return `(${d.slice(0, 2)}) ${d.slice(2, 7)}-${d.slice(7)}`;
+    }
+    if (d.length === 10) {
+      return `(${d.slice(0, 2)}) ${d.slice(2, 6)}-${d.slice(6)}`;
+    }
+    return raw.trim();
   }
 
   function formatCurrency(val: number | null | undefined): string {
@@ -152,9 +177,19 @@
       cnpjInput = formatCnpjDisplay(clean);
       cnpjLoaded = true;
       manualOrgMode = false;
+      if (preIdentifiedFromLink) {
+        editingCnpj = false;
+      }
     } catch (err: any) {
-      cnpjError = `${err?.message || 'Erro ao buscar CNPJ.'} Você pode preencher os dados básicos manualmente abaixo.`;
-      manualOrgMode = true;
+      if (razaoSocial.trim() && uf) {
+        // Fallback info already provided via link
+        cnpjLoaded = true;
+        manualOrgMode = false;
+      } else {
+        cnpjError = `${err?.message || 'Erro ao buscar CNPJ.'} Você pode preencher os dados básicos manualmente abaixo.`;
+        manualOrgMode = true;
+        editingCnpj = true;
+      }
     } finally {
       cnpjLoading = false;
     }
@@ -165,6 +200,12 @@
     const qCnpj = params.get('cnpj');
     const qOrigem = params.get('origem');
     const qCampanha = params.get('campanha');
+    const qWa = params.get('wa') || params.get('whatsapp');
+    const qNome = params.get('nome');
+    const qEmail = params.get('email');
+    const qRazao = params.get('razao');
+    const qUf = params.get('uf');
+    const qMun = params.get('mun');
 
     if (qOrigem && ['Lista', 'Indicacao', 'Organico'].includes(qOrigem)) {
       origemContato = qOrigem;
@@ -172,7 +213,29 @@
     if (qCampanha) {
       campanhaTag = qCampanha;
     }
-    if (qCnpj) {
+    if (qWa && qWa.trim()) {
+      contatoWhatsapp = formatPhoneDisplay(qWa);
+      waPrefilledFromLink = true;
+    }
+    if (qNome && qNome.trim()) {
+      contatoNome = qNome.trim();
+    }
+    if (qEmail && qEmail.trim()) {
+      contatoEmail = qEmail.trim();
+    }
+    if (qRazao && qRazao.trim()) {
+      razaoSocial = qRazao.trim();
+    }
+    if (qUf && qUf.trim()) {
+      uf = qUf.trim().toUpperCase().slice(0, 2);
+    }
+    if (qMun && qMun.trim()) {
+      municipio = qMun.trim();
+    }
+
+    if (qCnpj && qCnpj.replace(/\D/g, '').length === 14) {
+      preIdentifiedFromLink = true;
+      editingCnpj = false;
       cnpjInput = formatCnpjDisplay(qCnpj);
       await lookupCnpj(qCnpj);
     }
@@ -259,6 +322,17 @@
   function resetForm() {
     result = null;
     submitError = null;
+    preIdentifiedFromLink = false;
+    editingCnpj = true;
+    cnpjLoaded = false;
+    cnpjInput = '';
+    razaoSocial = '';
+    uf = '';
+    municipio = '';
+    naturezaJuridica = '';
+    idadeCnpjAnos = 0;
+    cnaePrincipal = '';
+    waPrefilledFromLink = false;
   }
 </script>
 
@@ -485,100 +559,148 @@
           Sua organização está pronta para captar recursos em editais?
         </h1>
         <p class="text-sm text-slate-600 mt-2 leading-relaxed">
-          Responda a 7 blocos rápidos para receber na hora o <strong>Índice de Prontidão Documental (0 a 100)</strong>, um checklist do que falta regularizar e até <strong>3 editais abertos compatíveis</strong> com o seu CNPJ — sem compromisso e sem promessa de aprovação.
+          Responda a {totalBlocks} blocos rápidos para receber na hora o <strong>Índice de Prontidão Documental (0 a 100)</strong>, um checklist do que falta regularizar e até <strong>3 editais abertos compatíveis</strong> com a sua organização — sem compromisso e sem promessa de aprovação.
         </p>
       </div>
 
       <form onsubmit={handleSubmit} class="space-y-5">
-        <!-- BLOCO 1: CNPJ -->
-        <section class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">1</span>
-            <h2 class="text-base font-bold text-slate-900">Identificação da OSC (CNPJ)</h2>
-          </div>
-
-          <div class="flex flex-col sm:flex-row gap-2.5">
-            <input
-              type="text"
-              inputmode="numeric"
-              placeholder="00.000.000/0001-00"
-              value={cnpjInput}
-              oninput={(e) => (cnpjInput = formatCnpjDisplay((e.target as HTMLInputElement).value))}
-              class="flex-1 px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none"
-              required
-            />
-            <button
-              type="button"
-              onclick={() => lookupCnpj()}
-              disabled={cnpjLoading}
-              class="px-5 py-2.5 rounded-xl bg-teal-700 text-white text-sm font-semibold hover:bg-teal-800 disabled:opacity-60 whitespace-nowrap"
-            >
-              {cnpjLoading ? 'Buscando...' : 'Buscar CNPJ'}
-            </button>
-          </div>
-
-          {#if cnpjError}
-            <p class="text-xs text-amber-700 mt-2">{cnpjError}</p>
-          {/if}
-
-          {#if cnpjLoaded}
-            <div class="mt-3.5 bg-teal-50/70 border border-teal-200 rounded-xl p-3.5 text-xs sm:text-sm">
-              <div class="flex items-center justify-between gap-2">
-                <p class="font-bold text-teal-950">{razaoSocial}</p>
-                <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-white text-teal-800 border border-teal-200">
-                  {idadeCnpjAnos} {idadeCnpjAnos === 1 ? 'ano' : 'anos'} de CNPJ
-                </span>
+        {#if hideCnpjBlock}
+          <!-- BANNER COMPACTO: OSC JÁ IDENTIFICADA PELO LINK PERSONALIZADO -->
+          <section class="bg-teal-50/85 rounded-2xl border border-teal-200 p-4 sm:p-5 shadow-sm">
+            {#if cnpjLoading}
+              <div class="flex items-center gap-3 text-sm text-teal-900 font-medium">
+                <span class="inline-block w-4 h-4 rounded-full border-2 border-teal-700 border-t-transparent animate-spin"></span>
+                Identificando automaticamente os dados da sua organização...
               </div>
-              <p class="text-slate-600 mt-1">
-                {municipio}/{uf} • {naturezaJuridica}
-              </p>
-              {#if cnaePrincipal}
-                <p class="text-xs text-slate-500 mt-0.5">CNAE: {cnaePrincipal}</p>
+            {:else if cnpjLoaded}
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2.5">
+                <div>
+                  <span class="inline-block text-[11px] font-bold uppercase tracking-wide text-teal-800 bg-white/90 border border-teal-200 px-2.5 py-0.5 rounded-full mb-1.5">
+                    ✓ Diagnóstico preparado para sua organização
+                  </span>
+                  <h2 class="text-base sm:text-lg font-extrabold text-teal-950 leading-snug">
+                    {razaoSocial}
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-700 mt-1">
+                    {#if municipio || uf}{municipio}{municipio && uf ? '/' : ''}{uf} • {/if}
+                    {idadeCnpjAnos} {idadeCnpjAnos === 1 ? 'ano' : 'anos'} de CNPJ • {cnpjInput}
+                  </p>
+                  {#if naturezaJuridica}
+                    <p class="text-xs text-slate-500 mt-0.5">{naturezaJuridica}</p>
+                  {/if}
+                </div>
+                <button
+                  type="button"
+                  onclick={() => (editingCnpj = true)}
+                  class="self-start text-xs font-semibold text-teal-800 hover:text-teal-950 underline underline-offset-2 whitespace-nowrap"
+                >
+                  Não é sua OSC? Trocar CNPJ
+                </button>
+              </div>
+            {/if}
+          </section>
+        {:else}
+          <!-- BLOCO 1: CNPJ (exibido para acesso orgânico, indicação ou troca manual) -->
+          <section class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">1</span>
+                <h2 class="text-base font-bold text-slate-900">Identificação da OSC (CNPJ)</h2>
+              </div>
+              {#if preIdentifiedFromLink && cnpjLoaded}
+                <button
+                  type="button"
+                  onclick={() => (editingCnpj = false)}
+                  class="text-xs font-semibold text-teal-700 hover:underline"
+                >
+                  Concluir troca
+                </button>
               {/if}
             </div>
-          {/if}
 
-          {#if manualOrgMode}
-            <div class="grid sm:grid-cols-3 gap-3 mt-3.5 pt-3 border-t border-slate-100">
-              <div class="sm:col-span-2">
-                <label class="block text-xs font-semibold text-slate-700 mb-1" for="manual-razao">Razão Social / Nome da OSC *</label>
-                <input
-                  id="manual-razao"
-                  type="text"
-                  bind:value={razaoSocial}
-                  class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm"
-                  required
-                />
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1" for="manual-uf">Estado (UF) *</label>
-                <select id="manual-uf" bind:value={uf} class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm bg-white" required>
-                  <option value="">Selecione</option>
-                  {#each UFS as u}
-                    <option value={u}>{u}</option>
-                  {/each}
-                </select>
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1" for="manual-mun">Município</label>
-                <input id="manual-mun" type="text" bind:value={municipio} class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm" />
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1" for="manual-idade">Anos de CNPJ</label>
-                <input id="manual-idade" type="number" min="0" max="150" bind:value={idadeCnpjAnos} class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm" />
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1" for="manual-nat">Natureza Jurídica</label>
-                <input id="manual-nat" type="text" bind:value={naturezaJuridica} placeholder="Associação / Fundação" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm" />
-              </div>
+            <div class="flex flex-col sm:flex-row gap-2.5">
+              <input
+                type="text"
+                inputmode="numeric"
+                placeholder="00.000.000/0001-00"
+                value={cnpjInput}
+                oninput={(e) => (cnpjInput = formatCnpjDisplay((e.target as HTMLInputElement).value))}
+                class="flex-1 px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none"
+                required
+              />
+              <button
+                type="button"
+                onclick={() => lookupCnpj()}
+                disabled={cnpjLoading}
+                class="px-5 py-2.5 rounded-xl bg-teal-700 text-white text-sm font-semibold hover:bg-teal-800 disabled:opacity-60 whitespace-nowrap"
+              >
+                {cnpjLoading ? 'Buscando...' : 'Buscar CNPJ'}
+              </button>
             </div>
-          {/if}
-        </section>
 
-        <!-- BLOCO 2: CONTATO -->
+            {#if cnpjError}
+              <p class="text-xs text-amber-700 mt-2">{cnpjError}</p>
+            {/if}
+
+            {#if cnpjLoaded}
+              <div class="mt-3.5 bg-teal-50/70 border border-teal-200 rounded-xl p-3.5 text-xs sm:text-sm">
+                <div class="flex items-center justify-between gap-2">
+                  <p class="font-bold text-teal-950">{razaoSocial}</p>
+                  <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-white text-teal-800 border border-teal-200">
+                    {idadeCnpjAnos} {idadeCnpjAnos === 1 ? 'ano' : 'anos'} de CNPJ
+                  </span>
+                </div>
+                <p class="text-slate-600 mt-1">
+                  {municipio}/{uf} • {naturezaJuridica}
+                </p>
+                {#if cnaePrincipal}
+                  <p class="text-xs text-slate-500 mt-0.5">CNAE: {cnaePrincipal}</p>
+                {/if}
+              </div>
+            {/if}
+
+            {#if manualOrgMode}
+              <div class="grid sm:grid-cols-3 gap-3 mt-3.5 pt-3 border-t border-slate-100">
+                <div class="sm:col-span-2">
+                  <label class="block text-xs font-semibold text-slate-700 mb-1" for="manual-razao">Razão Social / Nome da OSC *</label>
+                  <input
+                    id="manual-razao"
+                    type="text"
+                    bind:value={razaoSocial}
+                    class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1" for="manual-uf">Estado (UF) *</label>
+                  <select id="manual-uf" bind:value={uf} class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm bg-white" required>
+                    <option value="">Selecione</option>
+                    {#each UFS as u}
+                      <option value={u}>{u}</option>
+                    {/each}
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1" for="manual-mun">Município</label>
+                  <input id="manual-mun" type="text" bind:value={municipio} class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1" for="manual-idade">Anos de CNPJ</label>
+                  <input id="manual-idade" type="number" min="0" max="150" bind:value={idadeCnpjAnos} class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1" for="manual-nat">Natureza Jurídica</label>
+                  <input id="manual-nat" type="text" bind:value={naturezaJuridica} placeholder="Associação / Fundação" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm" />
+                </div>
+              </div>
+            {/if}
+          </section>
+        {/if}
+
+        <!-- BLOCO CONTATO -->
         <section class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
           <div class="flex items-center gap-2 mb-3">
-            <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">2</span>
+            <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">{1 + stepOffset}</span>
             <h2 class="text-base font-bold text-slate-900">Quem está respondendo?</h2>
           </div>
 
@@ -603,7 +725,12 @@
               </select>
             </div>
             <div>
-              <label class="block text-xs font-semibold text-slate-700 mb-1" for="contato-wa">WhatsApp (com DDD) *</label>
+              <label class="block text-xs font-semibold text-slate-700 mb-1" for="contato-wa">
+                WhatsApp (com DDD) *
+                {#if waPrefilledFromLink}
+                  <span class="font-normal text-teal-700 ml-1">✓ preenchido</span>
+                {/if}
+              </label>
               <input
                 id="contato-wa"
                 type="tel"
@@ -628,7 +755,7 @@
         <!-- BLOCO 3: ÁREAS DE ATUAÇÃO -->
         <section class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
           <div class="flex items-center gap-2 mb-1">
-            <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">3</span>
+            <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">{2 + stepOffset}</span>
             <h2 class="text-base font-bold text-slate-900">Principais áreas de atuação *</h2>
           </div>
           <p class="text-xs text-slate-500 mb-3">Toque em todas as áreas em que sua organização atua hoje.</p>
@@ -652,7 +779,7 @@
         <!-- BLOCO 4: DOCUMENTAÇÃO JURÍDICA BASE -->
         <section class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm space-y-4">
           <div class="flex items-center gap-2">
-            <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">4</span>
+            <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">{3 + stepOffset}</span>
             <h2 class="text-base font-bold text-slate-900">Documentação Jurídica Base *</h2>
           </div>
 
@@ -702,7 +829,7 @@
         <!-- BLOCO 5: REGULARIDADE FISCAL & MROSC -->
         <section class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm space-y-4">
           <div class="flex items-center gap-2">
-            <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">5</span>
+            <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">{4 + stepOffset}</span>
             <h2 class="text-base font-bold text-slate-900">Regularidade Fiscal e MROSC *</h2>
           </div>
 
@@ -759,7 +886,7 @@
         <!-- BLOCO 6: FINANCEIRO, PORTE & CONTA PJ -->
         <section class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm space-y-4">
           <div class="flex items-center gap-2">
-            <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">6</span>
+            <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">{5 + stepOffset}</span>
             <h2 class="text-base font-bold text-slate-900">Gestão Financeira e Porte *</h2>
           </div>
 
@@ -836,7 +963,7 @@
         <!-- BLOCO 7: EXPERIÊNCIA, SELOS, NECESSIDADE & LGPD -->
         <section class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm space-y-4">
           <div class="flex items-center gap-2">
-            <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">7</span>
+            <span class="w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">{6 + stepOffset}</span>
             <h2 class="text-base font-bold text-slate-900">Experiência, Selos e Prioridade *</h2>
           </div>
 
