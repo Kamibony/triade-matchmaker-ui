@@ -2,12 +2,8 @@ name: Data Ingestion Pipeline
 
 on:
   schedule:
-    - cron: '0 2 * * *'
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/data-pipeline.yml'
+    # Executa a cada 3 dias às 02:00 UTC (23:00 BRT) para manter a base atualizada com menor custo de Gemini API
+    - cron: '0 2 */3 * *'
   workflow_dispatch:
     inputs:
       max_scrape:
