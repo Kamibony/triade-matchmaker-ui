@@ -373,3 +373,9 @@ export function buildTwoStepOpenerMessage(lead: any): string {
 
   return `Olá, pessoal da ${orgName}, tudo bem? Aqui é da equipe da Maria Angela, da Triade Captação de Recursos. Vimos a atuação de vocês${city} e mapeamos um edital aberto de até ${valor} muito alinhado ao perfil da instituição. Posso enviar um resumo rápido por aqui?`;
 }
+
+export {
+  buildDiagnosticoOpenerMessage,
+  buildDiagnosticoLinkReplyMessage,
+  buildDiagnosticoUrl
+} from '$lib/server/diagnostico-whatsapp';

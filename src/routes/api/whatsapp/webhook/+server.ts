@@ -7,6 +7,20 @@ import { detectOptOutCommand, isPhoneOptedOut, recordOptOutPhone } from '$lib/se
 import dailyLeadsData from '../../../../data/daily_outbound_leads.json';
 import editaisData from '../../../../data/editais_prosas.json';
 import mondayQueueData from '../../../../data/monday_followup_queue.json';
+import diagnosticoCampaignLeadsData from '../../../../data/diagnostico_campaign_leads.json';
+import {
+  DEFAULT_DIAGNOSTICO_BASE_URL,
+  DIAGNOSTICO_CLARIFICATION_REPLY,
+  DIAGNOSTICO_OPT_OUT_REPLY,
+  buildDiagnosticoLinkReplyMessage,
+  classifyDiagnosticoReply,
+  findDiagnosticoCampaignLead,
+  hasClarificationAlreadyBeenSent,
+  hasLinkAlreadyBeenSent,
+  markClarificationSent,
+  markLinkSent,
+  type DiagnosticoCampaignLead
+} from '$lib/server/diagnostico-whatsapp';
 
 const MONDAY_APPROVED_EDITAL_OVERRIDES: Record<
   number,
@@ -588,6 +602,195 @@ export async function POST({ request }) {
         ignored: true,
         blockedByOptOut: true,
         reason: existingOptOut.reason
+      });
+    }
+
+    // Fluxo determinístico SIM / NÃO exclusivo da campanha /diagnostico (sem IA e sem trabalho manual)
+    const diagnosticoLead = findDiagnosticoCampaignLead(
+      senderPhone,
+      (Array.isArray(diagnosticoCampaignLeadsData) ? diagnosticoCampaignLeadsData : []) as DiagnosticoCampaignLead[],
+      parsedBody.mode === 'diagnostico' ? parsedBody.diagnosticoLead : null
+    );
+
+    if (diagnosticoLead) {
+      const isDiagnosticoAutoReplyEnabled =
+        (env.DIAGNOSTICO_AUTOREPLY_ENABLED || process.env.DIAGNOSTICO_AUTOREPLY_ENABLED || 'true').toLowerCase() !==
+        'false';
+      const canSendNow =
+        !isSimulator && isDiagnosticoAutoReplyEnabled && parsedBody.autoSendReply !== false && Boolean(senderPhone);
+      const classification = classifyDiagnosticoReply(incomingText);
+      const diagOrgNome = diagnosticoLead.nome || earlyOrgNome;
+      const diagPhoneKey = normalizedSender || senderPhone || diagnosticoLead.phone;
+
+      if (classification.intent === 'no') {
+        const optOutRecord = !isSimulator
+          ? await recordOptOutPhone({
+              phone: diagPhoneKey,
+              orgNome: diagOrgNome,
+              reason: `Autodiagnóstico NÃO: ${incomingText}`
+            })
+          : { ok: true, recordedToSheets: false };
+
+        let replyDispatch: any = null;
+        if (canSendNow && senderPhone) {
+          replyDispatch = await sendWhatsAppText(senderPhone, DIAGNOSTICO_OPT_OUT_REPLY, {
+            simulateTypingMs: 2000,
+            overrideConfig: parsedBody.overrideConfig,
+            bypassOptOutCheck: true
+          });
+        }
+
+        const monitor = await logWhatsAppWebhookEvent({
+          eventType: 'opt_out',
+          isSimulator,
+          phone: diagPhoneKey,
+          orgNome: diagOrgNome,
+          editalId: 'AUTODIAGNOSTICO',
+          intent: 'diagnostico_nao',
+          crmStatus: 'archived',
+          incomingText,
+          replyMessage: replyDispatch?.ok ? DIAGNOSTICO_OPT_OUT_REPLY : `[Opt-Out registrado] ${DIAGNOSTICO_OPT_OUT_REPLY}`,
+          detail: `${classification.reason} | Sheets Opt_Out: ${optOutRecord.recordedToSheets}`
+        });
+
+        return json({
+          ok: true,
+          mode: 'diagnostico',
+          intent: 'no',
+          optOutRecorded: true,
+          recordedToSheets: optOutRecord.recordedToSheets,
+          matchedOrg: diagOrgNome,
+          replyMessage: DIAGNOSTICO_OPT_OUT_REPLY,
+          autoReplyDispatch: replyDispatch,
+          monitor
+        });
+      }
+
+      if (classification.intent === 'bot_or_ura') {
+        await logWhatsAppWebhookEvent({
+          eventType: 'ignored',
+          isSimulator,
+          phone: diagPhoneKey,
+          orgNome: diagOrgNome,
+          editalId: 'AUTODIAGNOSTICO',
+          intent: 'diagnostico_bot',
+          incomingText,
+          detail: classification.reason
+        });
+        return json({
+          ok: true,
+          mode: 'diagnostico',
+          ignored: true,
+          intent: 'bot_or_ura',
+          reason: classification.reason
+        });
+      }
+
+      if (classification.intent === 'yes') {
+        if (!isSimulator && hasLinkAlreadyBeenSent(diagPhoneKey)) {
+          return json({
+            ok: true,
+            mode: 'diagnostico',
+            ignored: true,
+            intent: 'yes',
+            reason: 'Link personalizado do /diagnostico já enviado recentemente para este número.'
+          });
+        }
+
+        const baseUrl = (env.PUBLIC_APP_URL || process.env.PUBLIC_APP_URL || '').trim() || DEFAULT_DIAGNOSTICO_BASE_URL;
+        const linkReply = buildDiagnosticoLinkReplyMessage(
+          { ...diagnosticoLead, phone: diagPhoneKey },
+          baseUrl
+        );
+
+        let replyDispatch: any = null;
+        if (canSendNow && senderPhone) {
+          replyDispatch = await sendWhatsAppText(senderPhone, linkReply, {
+            simulateTypingMs: 2500,
+            overrideConfig: parsedBody.overrideConfig
+          });
+          if (replyDispatch?.ok) {
+            markLinkSent(diagPhoneKey);
+          }
+        }
+
+        const monitor = await logWhatsAppWebhookEvent({
+          eventType: 'processed',
+          isSimulator,
+          phone: diagPhoneKey,
+          orgNome: diagOrgNome,
+          editalId: 'AUTODIAGNOSTICO',
+          intent: 'diagnostico_sim',
+          crmStatus: 'contacted',
+          incomingText,
+          replyMessage: linkReply,
+          detail: `${classification.reason} | AutoReply: ${isDiagnosticoAutoReplyEnabled}`
+        });
+
+        return json({
+          ok: true,
+          mode: 'diagnostico',
+          intent: 'yes',
+          matchedOrg: diagOrgNome,
+          replyMessage: linkReply,
+          autoReplyDispatch: replyDispatch,
+          monitor
+        });
+      }
+
+      // Outras mensagens (perguntas abertas / áudio / texto fora de SIM/NÃO): no máximo 1 lembrete automático
+      if (!isSimulator && (hasLinkAlreadyBeenSent(diagPhoneKey) || hasClarificationAlreadyBeenSent(diagPhoneKey))) {
+        await logWhatsAppWebhookEvent({
+          eventType: 'ignored',
+          isSimulator,
+          phone: diagPhoneKey,
+          orgNome: diagOrgNome,
+          editalId: 'AUTODIAGNOSTICO',
+          intent: 'diagnostico_other_muted',
+          incomingText,
+          detail: 'Orientação automática SIM/NÃO ou link já enviado anteriormente (anti-loop).'
+        });
+        return json({
+          ok: true,
+          mode: 'diagnostico',
+          ignored: true,
+          intent: 'other',
+          reason: 'Orientação SIM/NÃO ou link já enviado anteriormente.'
+        });
+      }
+
+      let clarificationDispatch: any = null;
+      if (canSendNow && senderPhone) {
+        clarificationDispatch = await sendWhatsAppText(senderPhone, DIAGNOSTICO_CLARIFICATION_REPLY, {
+          simulateTypingMs: 2000,
+          overrideConfig: parsedBody.overrideConfig
+        });
+        if (clarificationDispatch?.ok) {
+          markClarificationSent(diagPhoneKey);
+        }
+      }
+
+      const monitor = await logWhatsAppWebhookEvent({
+        eventType: 'processed',
+        isSimulator,
+        phone: diagPhoneKey,
+        orgNome: diagOrgNome,
+        editalId: 'AUTODIAGNOSTICO',
+        intent: 'diagnostico_other',
+        crmStatus: 'contacted',
+        incomingText,
+        replyMessage: DIAGNOSTICO_CLARIFICATION_REPLY,
+        detail: `${classification.reason} | Enviado 1 lembrete SIM/NÃO`
+      });
+
+      return json({
+        ok: true,
+        mode: 'diagnostico',
+        intent: 'other',
+        matchedOrg: diagOrgNome,
+        replyMessage: DIAGNOSTICO_CLARIFICATION_REPLY,
+        autoReplyDispatch: clarificationDispatch,
+        monitor
       });
     }
 

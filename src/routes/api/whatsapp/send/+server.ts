@@ -3,8 +3,10 @@ import {
   getBrasiliaTimeInfo,
   getActiveWhatsAppProvider,
   sendWhatsAppText,
-  buildTwoStepOpenerMessage
+  buildTwoStepOpenerMessage,
+  buildDiagnosticoOpenerMessage
 } from '$lib/server/whatsapp-gateway';
+import { registerRuntimeDiagnosticoLead } from '$lib/server/diagnostico-whatsapp';
 
 export async function GET() {
   const timeInfo = getBrasiliaTimeInfo();
@@ -24,6 +26,8 @@ export async function POST({ request }) {
       phone,
       message,
       lead,
+      mode = 'edital',
+      diagnosticoLead,
       useTwoStepOpener = false,
       enforceBusinessHours = true,
       forceSendOutsideHours = false,
@@ -45,11 +49,20 @@ export async function POST({ request }) {
 
     const rawPhone =
       phone ||
+      diagnosticoLead?.phone ||
       lead?.contatos_encontrados?.whatsapp ||
       lead?.osc?.official_contacts?.ddd_telefone_1 ||
       lead?.osc?.official_contacts?.ddd_telefone_2;
 
-    const finalMessage = useTwoStepOpener && lead ? buildTwoStepOpenerMessage(lead) : message || lead?.whatsapp_message;
+    const isDiagnosticoMode = mode === 'diagnostico';
+    const finalMessage = isDiagnosticoMode
+      ? message ||
+        buildDiagnosticoOpenerMessage({
+          nome: diagnosticoLead?.nome || lead?.osc?.nome || 'sua organização'
+        })
+      : useTwoStepOpener && lead
+        ? buildTwoStepOpenerMessage(lead)
+        : message || lead?.whatsapp_message;
 
     if (!rawPhone || !finalMessage) {
       return json({ ok: false, error: 'Telefone ou texto da mensagem ausente.' }, { status: 400 });
@@ -60,8 +73,21 @@ export async function POST({ request }) {
       overrideConfig
     });
 
+    if (isDiagnosticoMode && result.ok && (diagnosticoLead?.cnpj || lead?.osc?.cnpj)) {
+      registerRuntimeDiagnosticoLead({
+        cnpj: String(diagnosticoLead?.cnpj || lead?.osc?.cnpj || '').replace(/\D/g, ''),
+        nome: diagnosticoLead?.nome || lead?.osc?.nome || 'Organização',
+        phone: result.phone || rawPhone,
+        uf: diagnosticoLead?.uf || lead?.osc?.uf,
+        municipio: diagnosticoLead?.municipio || lead?.osc?.municipio,
+        campanha_tag: diagnosticoLead?.campanha_tag,
+        origem: diagnosticoLead?.origem || 'Lista'
+      });
+    }
+
     return json({
       ...result,
+      mode: isDiagnosticoMode ? 'diagnostico' : 'edital',
       sentText: finalMessage,
       businessHours: timeInfo
     });
