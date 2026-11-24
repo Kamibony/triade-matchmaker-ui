@@ -7,7 +7,8 @@ const LOG_PATH = path.join(process.cwd(), 'src', 'data', 'diagnostico_sent_log.j
 
 const VERCEL_SEND_ENDPOINT =
   process.env.VERCEL_WA_SEND_URL || 'https://triade-matchmaker-ui.vercel.app/api/whatsapp/send';
-const MAX_MESSAGES = Math.max(1, parseInt(process.env.MAX_MESSAGES || '15', 10));
+const MAX_MESSAGES = Math.max(1, parseInt(process.env.MAX_MESSAGES || '6', 10));
+const MAX_DAILY = Math.max(1, parseInt(process.env.MAX_DAILY || '23', 10));
 const TARGET_LOTE = (process.env.TARGET_LOTE || '').trim();
 const DRY_RUN = (process.env.DRY_RUN || 'false').toLowerCase() === 'true';
 const FORCE_SEND = (process.env.FORCE_SEND || 'false').toLowerCase() === 'true';
@@ -45,6 +46,19 @@ function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+function getBrasiliaDateKey(date: Date): string {
+  const parts = new Intl.DateTimeFormat('pt-BR', {
+    timeZone: 'America/Sao_Paulo',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).formatToParts(date);
+  const y = parts.find((p) => p.type === 'year')?.value || '';
+  const m = parts.find((p) => p.type === 'month')?.value || '';
+  const d = parts.find((p) => p.type === 'day')?.value || '';
+  return `${y}-${m}-${d}`;
+}
+
 function getBrasiliaTimeInfo(now = new Date()) {
   const formatter = new Intl.DateTimeFormat('pt-BR', {
     timeZone: 'America/Sao_Paulo',
@@ -66,14 +80,17 @@ function getBrasiliaTimeInfo(now = new Date()) {
 
   return {
     isBusinessHours,
+    dateKey: getBrasiliaDateKey(now),
     formattedTime: `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')} BRT (${map.weekday || ''})`
   };
 }
 
 async function run() {
   const timeInfo = getBrasiliaTimeInfo();
-  console.log(`Diagnostico Pilot Dispatcher started at ${timeInfo.formattedTime}`);
-  console.log(`Config: MAX_MESSAGES=${MAX_MESSAGES}, TARGET_LOTE=${TARGET_LOTE || 'any'}, DRY_RUN=${DRY_RUN}, FORCE_SEND=${FORCE_SEND}`);
+  console.log(`Diagnostico Pilot Dispatcher started at ${timeInfo.formattedTime} [${timeInfo.dateKey}]`);
+  console.log(
+    `Config: MAX_MESSAGES=${MAX_MESSAGES}, MAX_DAILY=${MAX_DAILY}, TARGET_LOTE=${TARGET_LOTE || 'any'}, DRY_RUN=${DRY_RUN}, FORCE_SEND=${FORCE_SEND}`
+  );
 
   if (!timeInfo.isBusinessHours && !FORCE_SEND && !DRY_RUN) {
     console.log('Fora do horário comercial (Seg–Sex, 09:00–17:30 BRT). Encerrando com segurança sem enviar.');
@@ -86,6 +103,16 @@ async function run() {
     sentLog = JSON.parse(await fs.readFile(LOG_PATH, 'utf-8'));
   } catch {
     sentLog = [];
+  }
+
+  const sentTodayCount = sentLog.filter(
+    (e) => e.status === 'sent' && e.sentAt && getBrasiliaDateKey(new Date(e.sentAt)) === timeInfo.dateKey
+  ).length;
+  const remainingToday = Math.max(0, MAX_DAILY - sentTodayCount);
+
+  if (remainingToday === 0) {
+    console.log(`Limite diário atingido hoje (${sentTodayCount}/${MAX_DAILY} enviados em ${timeInfo.dateKey}). Aguardando amanhã.`);
+    return;
   }
 
   const alreadyDoneCnpjs = new Set(
@@ -101,8 +128,11 @@ async function run() {
     return true;
   });
 
-  const batch = pending.slice(0, MAX_MESSAGES);
-  console.log(`Total leads: ${leads.length} | Already done: ${alreadyDoneCnpjs.size} | Pending: ${pending.length} | This batch: ${batch.length}`);
+  const waveLimit = Math.min(MAX_MESSAGES, remainingToday);
+  const batch = pending.slice(0, waveLimit);
+  console.log(
+    `Total leads: ${leads.length} | Already done: ${alreadyDoneCnpjs.size} | Sent today: ${sentTodayCount}/${MAX_DAILY} | Pending: ${pending.length} | This wave: ${batch.length}`
+  );
 
   if (batch.length === 0) {
     console.log('Nenhum lead pendente para este lote. Tudo pronto!');
@@ -210,9 +240,9 @@ async function run() {
       await fs.writeFile(LOG_PATH, JSON.stringify(sentLog, null, 2) + '\n');
     }
 
-    // Humanized anti-ban delay (20–35 seconds between messages)
+    // Humanized anti-ban delay (35–65 seconds between messages inside each 6-OSC wave)
     if (i < batch.length - 1) {
-      const delayMs = 20_000 + Math.floor(Math.random() * 15_000);
+      const delayMs = 35_000 + Math.floor(Math.random() * 30_000);
       console.log(`   ⏳ Aguardando ${(delayMs / 1000).toFixed(1)}s antes do próximo envio...`);
       await sleep(delayMs);
     }

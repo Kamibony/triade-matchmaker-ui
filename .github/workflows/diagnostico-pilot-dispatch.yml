@@ -1,15 +1,28 @@
 name: Autodiagnóstico OSC — Disparo Piloto (SIM/NÃO)
 
 on:
+  schedule:
+    # Piloto Amazonas (45 OSCs divididas em 2 dias: Ter 24/11 = 23 OSCs, Qua 25/11 = 22 OSCs)
+    # 4 ondas espaçadas por dia em horário comercial BRT (09:10, 11:10, 13:40, 16:10 BRT = 08:10–15:10 Manaus)
+    # Até 6 mensagens por onda + limite diário MAX_DAILY=23 (para automaticamente após 25/11)
+    - cron: '10 12 24,25 11 *'
+    - cron: '10 14 24,25 11 *'
+    - cron: '40 16 24,25 11 *'
+    - cron: '10 19 24,25 11 *'
   workflow_dispatch:
     inputs:
       max_messages:
-        description: 'Quantidade de OSCs neste lote (recomendado: 15 por dia)'
+        description: 'Quantidade máxima de OSCs nesta onda (padrão: 6 por onda)'
         required: false
-        default: '15'
+        default: '6'
+        type: string
+      max_daily:
+        description: 'Limite máximo de envios no dia BRT (padrão: 23)'
+        required: false
+        default: '23'
         type: string
       target_lote:
-        description: 'Filtrar lote específico (1, 2, 3 ou vazio para próximos pendentes)'
+        description: 'Filtrar lote específico (1, 2 ou vazio para próximos pendentes)'
         required: false
         default: ''
         type: string
@@ -49,9 +62,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run Diagnostico Pilot Batch
+      - name: Run Diagnostico Pilot Wave
         env:
-          MAX_MESSAGES: ${{ inputs.max_messages || '15' }}
+          MAX_MESSAGES: ${{ inputs.max_messages || '6' }}
+          MAX_DAILY: ${{ inputs.max_daily || '23' }}
           TARGET_LOTE: ${{ inputs.target_lote || '' }}
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
           FORCE_SEND: ${{ inputs.force_outside_hours || 'false' }}
