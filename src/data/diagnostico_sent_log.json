@@ -232,5 +232,83 @@
     "provider": "whapi",
     "messageId": "PspBr3LIkwTEfX0-wA4FFjhqUz4",
     "sentAt": "2026-11-24T18:32:14.376Z"
+  },
+  {
+    "ref": "AM-07",
+    "lote": 1,
+    "cnpj": "06065515000156",
+    "nome": "ASSOCIACAO AGRICOLA MISTA RIBEIRINHA DE ASSENTADOS PESCADORES INDIGENAS DE EMPREENDEDORISMO SOCIAL NOVA ESPERANCA RIO APUAU NO RIO NEGRO",
+    "phone": "5592991569141",
+    "tema": "Comunidades Tradicionais",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "Psq7YpykyIeHn1I-wAsFFjhGlPU",
+    "sentAt": "2026-11-24T18:33:14.278Z"
+  },
+  {
+    "ref": "AM-08",
+    "lote": 1,
+    "cnpj": "07627001000100",
+    "nome": "ASSOCIACAO DE AMPARO AS MULHERES DE IRANDUBA",
+    "phone": "5592991817181",
+    "tema": "Mulheres",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PspQaDs613sZ6W0-wN0FFjhKXd0",
+    "sentAt": "2026-11-24T18:34:07.104Z"
+  },
+  {
+    "ref": "AM-09",
+    "lote": 1,
+    "cnpj": "05457806000127",
+    "nome": "ASSOCIACAO DOS PRODUTORES RURAIS UNIDOS DE ITACOATIARA",
+    "phone": "5592992162520",
+    "tema": "Agro",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PspJKCh3YlbqSiw-wDAFFjhPotg",
+    "sentAt": "2026-11-24T18:34:53.925Z"
+  },
+  {
+    "ref": "AM-10",
+    "lote": 1,
+    "cnpj": "06666370000149",
+    "nome": "COORDENACAO DAS ORGANIZACOES INDIGENAS KAIXANA DO ALTO SOLIMOES",
+    "phone": "5597991840493",
+    "tema": "Comunidades Tradicionais",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PsoEQ2okCM9ljTU-wLwFF2JQqu0",
+    "sentAt": "2026-11-24T18:35:40.677Z"
+  },
+  {
+    "ref": "AM-11",
+    "lote": 1,
+    "cnpj": "07154473000192",
+    "nome": "REDE FEMININA DE COMBATE AO CANCER DO AMAZONAS",
+    "phone": "5592981450048",
+    "tema": "Mulheres",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "Pspa_AyZ8p1yQhs-wAoFFjesLUA",
+    "sentAt": "2026-11-24T18:36:36.563Z"
+  },
+  {
+    "ref": "AM-12",
+    "lote": 1,
+    "cnpj": "05587631000172",
+    "nome": "ASSOCIACAO DOS PRODUTORES CRIADORES E EXTRATIVISTAS DO AMAZONAS",
+    "phone": "5592991496366",
+    "tema": "Agro",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "Psq_PiS7erZN9mA-wKcFFjhFeK4",
+    "sentAt": "2026-11-24T18:37:17.516Z"
   }
 ]
