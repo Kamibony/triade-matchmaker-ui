@@ -127,7 +127,23 @@ const PT_ACCENT_MAP: Record<string, string> = {
   regiao: 'Região',
   articulacao: 'Articulação',
   amazonidas: 'Amazônidas',
-  solidaria: 'Solidária'
+  solidaria: 'Solidária',
+  solidarios: 'Solidários',
+  solidario: 'Solidário',
+  franca: 'França',
+  recomecar: 'Recomeçar',
+  arvore: 'Árvore',
+  amazonico: 'Amazônico',
+  inclusao: 'Inclusão',
+  deficiencia: 'Deficiência',
+  referencia: 'Referência',
+  satere: 'Sateré',
+  mawe: 'Mawé',
+  joao: 'João',
+  jose: 'José',
+  colonia: 'Colônia',
+  maues: 'Maués',
+  celia: 'Célia'
 };
 
 const KNOWN_ACRONYMS = new Set([
@@ -153,7 +169,14 @@ const KNOWN_ACRONYMS = new Set([
   'PET',
   'ISMA',
   'IMBA',
-  'ASPROAMA'
+  'ASPROAMA',
+  'ISANF',
+  'IAS',
+  'IAFES',
+  'ISNB',
+  'APRA',
+  'CMULHER',
+  'COLPESCA'
 ]);
 
 /**
@@ -228,7 +251,7 @@ export function humanizeTemaLabel(tema?: string): string {
     return 'povos indígenas e comunidades tradicionais';
   }
   if (norm.includes('animal')) return 'proteção animal e meio ambiente';
-  return 'impacto social';
+  return 'impacto social e desenvolvimento comunitário';
 }
 
 export function registerRuntimeDiagnosticoLead(lead: DiagnosticoCampaignLead): void {

@@ -7,8 +7,8 @@ const LOG_PATH = path.join(process.cwd(), 'src', 'data', 'diagnostico_sent_log.j
 
 const VERCEL_SEND_ENDPOINT =
   process.env.VERCEL_WA_SEND_URL || 'https://triade-matchmaker-ui.vercel.app/api/whatsapp/send';
-const MAX_MESSAGES = Math.max(1, parseInt(process.env.MAX_MESSAGES || '6', 10));
-const MAX_DAILY = Math.max(1, parseInt(process.env.MAX_DAILY || '23', 10));
+const MAX_MESSAGES = Math.max(1, parseInt(process.env.MAX_MESSAGES || '7', 10));
+const MAX_DAILY = Math.max(1, parseInt(process.env.MAX_DAILY || '25', 10));
 const TARGET_LOTE = (process.env.TARGET_LOTE || '').trim();
 const DRY_RUN = (process.env.DRY_RUN || 'false').toLowerCase() === 'true';
 const FORCE_SEND = (process.env.FORCE_SEND || 'false').toLowerCase() === 'true';
