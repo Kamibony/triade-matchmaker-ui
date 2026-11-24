@@ -167,5 +167,70 @@
     "provider": "whapi",
     "messageId": "PsqA6xFNo.SZi_M-wBUFFjenfcU",
     "sentAt": "2026-11-24T18:27:45.623Z"
+  },
+  {
+    "ref": "AM-02",
+    "lote": 1,
+    "cnpj": "02442813000167",
+    "nome": "ASSOCIACAO AGRICOLA E PISCICULTURA DOS PRODUTORES RURAIS DO ESTADO DO AMAZONAS",
+    "phone": "5592992746594",
+    "tema": "Agro",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PsqtsSjQ1B0SP08-wDQFFjhYjGI",
+    "sentAt": "2026-11-24T18:28:49.155Z"
+  },
+  {
+    "ref": "AM-03",
+    "lote": 1,
+    "cnpj": "63691505000160",
+    "nome": "ASSOCIACAO SOCIAL INDIGENA DOS POVOS TRADICIONAIS DO ESTADO DO AMAZONAS - ASIPTEAM",
+    "phone": "5592994221566",
+    "tema": "Comunidades Tradicionais",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "Psqd.B98VVmLqgY-wDIFFjhvDf4",
+    "sentAt": "2026-11-24T18:29:41.605Z"
+  },
+  {
+    "ref": "AM-04",
+    "lote": 1,
+    "cnpj": "07420873000100",
+    "nome": "INSTITUTO AMBIENTAL DE DESENVOLVIMENTO ECO SUSTENTAVEL E PROTECAO ANIMAL - AMAZONAS ECO CIDADAO ECOCID",
+    "phone": "5592991472391",
+    "tema": "Causa Animal",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PsrNdFgQmRYv4Kw-wNAFFjhFGwc",
+    "sentAt": "2026-11-24T18:30:30.977Z"
+  },
+  {
+    "ref": "AM-05",
+    "lote": 1,
+    "cnpj": "05484846000168",
+    "nome": "INSTITUTO DE MULHERES MAE SOLO DO MUNICIPIO DE PARINTINS - AM",
+    "phone": "5592991818242",
+    "tema": "Mulheres",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "Psoj9nGQiZ.17U4-wIwFFjhKYgI",
+    "sentAt": "2026-11-24T18:31:21.233Z"
+  },
+  {
+    "ref": "AM-06",
+    "lote": 1,
+    "cnpj": "03342150000171",
+    "nome": "ASPREAM ASSOCIACAO DE PRODUTORES RURAIS E EXTRATIVISTAS DO AMAZONAS",
+    "phone": "5592993911614",
+    "tema": "Agro",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PspBr3LIkwTEfX0-wA4FFjhqUz4",
+    "sentAt": "2026-11-24T18:32:14.376Z"
   }
 ]
