@@ -12,6 +12,7 @@ import {
   DEFAULT_DIAGNOSTICO_BASE_URL,
   DIAGNOSTICO_CLARIFICATION_REPLY,
   DIAGNOSTICO_OPT_OUT_REPLY,
+  DIAGNOSTICO_WRONG_NUMBER_REPLY,
   buildDiagnosticoLinkReplyMessage,
   classifyDiagnosticoReply,
   findDiagnosticoCampaignLead,
@@ -622,18 +623,24 @@ export async function POST({ request }) {
       const diagOrgNome = diagnosticoLead.nome || earlyOrgNome;
       const diagPhoneKey = normalizedSender || senderPhone || diagnosticoLead.phone;
 
-      if (classification.intent === 'no') {
+      if (classification.intent === 'no' || classification.intent === 'wrong_number') {
+        const isWrongNumber = classification.intent === 'wrong_number';
+        const optOutReplyText = isWrongNumber ? DIAGNOSTICO_WRONG_NUMBER_REPLY : DIAGNOSTICO_OPT_OUT_REPLY;
+        const optOutReason = isWrongNumber
+          ? `Numero_Nao_OSC: ${incomingText}`
+          : `Autodiagnóstico NÃO: ${incomingText}`;
+
         const optOutRecord = !isSimulator
           ? await recordOptOutPhone({
               phone: diagPhoneKey,
               orgNome: diagOrgNome,
-              reason: `Autodiagnóstico NÃO: ${incomingText}`
+              reason: optOutReason
             })
           : { ok: true, recordedToSheets: false };
 
         let replyDispatch: any = null;
         if (canSendNow && senderPhone) {
-          replyDispatch = await sendWhatsAppText(senderPhone, DIAGNOSTICO_OPT_OUT_REPLY, {
+          replyDispatch = await sendWhatsAppText(senderPhone, optOutReplyText, {
             simulateTypingMs: 2000,
             overrideConfig: parsedBody.overrideConfig,
             bypassOptOutCheck: true
@@ -646,21 +653,21 @@ export async function POST({ request }) {
           phone: diagPhoneKey,
           orgNome: diagOrgNome,
           editalId: 'AUTODIAGNOSTICO',
-          intent: 'diagnostico_nao',
+          intent: isWrongNumber ? 'diagnostico_numero_nao_osc' : 'diagnostico_nao',
           crmStatus: 'archived',
           incomingText,
-          replyMessage: replyDispatch?.ok ? DIAGNOSTICO_OPT_OUT_REPLY : `[Opt-Out registrado] ${DIAGNOSTICO_OPT_OUT_REPLY}`,
+          replyMessage: replyDispatch?.ok ? optOutReplyText : `[Opt-Out registrado] ${optOutReplyText}`,
           detail: `${classification.reason} | Sheets Opt_Out: ${optOutRecord.recordedToSheets}`
         });
 
         return json({
           ok: true,
           mode: 'diagnostico',
-          intent: 'no',
+          intent: classification.intent,
           optOutRecorded: true,
           recordedToSheets: optOutRecord.recordedToSheets,
           matchedOrg: diagOrgNome,
-          replyMessage: DIAGNOSTICO_OPT_OUT_REPLY,
+          replyMessage: optOutReplyText,
           autoReplyDispatch: replyDispatch,
           monitor
         });

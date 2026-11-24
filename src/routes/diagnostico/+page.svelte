@@ -202,9 +202,7 @@
     const qCnpj = params.get('cnpj');
     const qOrigem = params.get('origem');
     const qCampanha = params.get('campanha');
-    const qWa = params.get('wa') || params.get('whatsapp');
-    const qNome = params.get('nome');
-    const qEmail = params.get('email');
+    const qRef = params.get('ref');
     const qRazao = params.get('razao');
     const qUf = params.get('uf');
     const qMun = params.get('mun');
@@ -212,18 +210,8 @@
     if (qOrigem && ['Lista', 'Indicacao', 'Organico'].includes(qOrigem)) {
       origemContato = qOrigem;
     }
-    if (qCampanha) {
-      campanhaTag = qCampanha;
-    }
-    if (qWa && qWa.trim()) {
-      contatoWhatsapp = formatPhoneDisplay(qWa);
-      waPrefilledFromLink = true;
-    }
-    if (qNome && qNome.trim()) {
-      contatoNome = qNome.trim();
-    }
-    if (qEmail && qEmail.trim()) {
-      contatoEmail = qEmail.trim();
+    if (qCampanha || qRef) {
+      campanhaTag = [qCampanha?.trim(), qRef?.trim()].filter(Boolean).join(' | ');
     }
     if (qRazao && qRazao.trim()) {
       razaoSocial = qRazao.trim();

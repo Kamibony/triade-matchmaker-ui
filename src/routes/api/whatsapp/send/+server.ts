@@ -80,6 +80,8 @@ export async function POST({ request }) {
         phone: result.phone || rawPhone,
         uf: diagnosticoLead?.uf || lead?.osc?.uf,
         municipio: diagnosticoLead?.municipio || lead?.osc?.municipio,
+        tema: diagnosticoLead?.tema,
+        ref: diagnosticoLead?.ref,
         campanha_tag: diagnosticoLead?.campanha_tag,
         origem: diagnosticoLead?.origem || 'Lista'
       });

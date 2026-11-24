@@ -8,11 +8,13 @@ export interface DiagnosticoCampaignLead {
   phone: string;
   uf?: string;
   municipio?: string;
+  tema?: string;
+  ref?: string;
   campanha_tag?: string;
   origem?: 'Lista' | 'Indicacao' | 'Organico';
 }
 
-export type DiagnosticoReplyIntent = 'yes' | 'no' | 'bot_or_ura' | 'other';
+export type DiagnosticoReplyIntent = 'yes' | 'no' | 'wrong_number' | 'bot_or_ura' | 'other';
 
 export interface DiagnosticoReplyClassification {
   intent: DiagnosticoReplyIntent;
@@ -59,6 +61,8 @@ export function findDiagnosticoCampaignLead(
       phone: normalizePhoneDigits(overrideLead.phone || senderPhone),
       uf: overrideLead.uf,
       municipio: overrideLead.municipio,
+      tema: overrideLead.tema,
+      ref: overrideLead.ref,
       campanha_tag: overrideLead.campanha_tag,
       origem: overrideLead.origem || 'Lista'
     };
@@ -120,8 +124,12 @@ export function markClarificationSent(phone: string | null | undefined): void {
   if (norm) clarificationSentByPhone.set(norm, Date.now());
 }
 
+/**
+ * Constrói o link personalizado do /diagnostico SEM incluir telefone pessoal na URL (LGPD).
+ * Usa apenas CNPJ (dado público PJ), origem, campanha e código opaco de referência (ref).
+ */
 export function buildDiagnosticoUrl(
-  lead: Pick<DiagnosticoCampaignLead, 'cnpj' | 'phone' | 'origem' | 'campanha_tag'>,
+  lead: Pick<DiagnosticoCampaignLead, 'cnpj' | 'origem' | 'campanha_tag' | 'ref'>,
   baseUrl = DEFAULT_DIAGNOSTICO_BASE_URL
 ): string {
   const cleanBase = (baseUrl || DEFAULT_DIAGNOSTICO_BASE_URL).replace(/\/+$/, '');
@@ -130,13 +138,12 @@ export function buildDiagnosticoUrl(
   if (cleanCnpj.length === 14) {
     params.set('cnpj', cleanCnpj);
   }
-  const cleanPhone = normalizePhoneDigits(lead.phone);
-  if (cleanPhone) {
-    params.set('wa', cleanPhone);
-  }
   params.set('origem', lead.origem || 'Lista');
   if (lead.campanha_tag) {
     params.set('campanha', lead.campanha_tag);
+  }
+  if (lead.ref) {
+    params.set('ref', lead.ref);
   }
   return `${cleanBase}/diagnostico?${params.toString()}`;
 }
@@ -152,13 +159,13 @@ export function buildDiagnosticoOpenerMessage(lead: Pick<DiagnosticoCampaignLead
 }
 
 export function buildDiagnosticoLinkReplyMessage(
-  lead: Pick<DiagnosticoCampaignLead, 'cnpj' | 'nome' | 'phone' | 'origem' | 'campanha_tag'>,
+  lead: Pick<DiagnosticoCampaignLead, 'cnpj' | 'nome' | 'origem' | 'campanha_tag' | 'ref'>,
   baseUrl = DEFAULT_DIAGNOSTICO_BASE_URL
 ): string {
   const orgName = (lead?.nome || 'sua organização').trim();
   const url = buildDiagnosticoUrl(lead, baseUrl);
   return (
-    `Prontinho! Aqui está o link personalizado do autodiagnóstico da ${orgName} (já com os dados básicos preenchidos):\n\n` +
+    `Prontinho! Aqui está o link personalizado do autodiagnóstico da ${orgName} (já com o CNPJ preenchido):\n\n` +
     `${url}\n\n` +
     `É só abrir pelo celular — leva cerca de 3 minutos e o resultado com a nota (0 a 100), checklist documental e editais compatíveis sai na hora.`
   );
@@ -167,16 +174,20 @@ export function buildDiagnosticoLinkReplyMessage(
 export const DIAGNOSTICO_OPT_OUT_REPLY =
   'Combinado! Já registramos sua preferência e bloqueamos este número para não receber novas mensagens da Tríade Captação de Recursos (@triade_acr). Desejamos muito sucesso ao trabalho de vocês!';
 
+export const DIAGNOSTICO_WRONG_NUMBER_REPLY =
+  'Peço desculpas pelo engano! Encontramos este telefone nos dados públicos da Receita Federal, mas já removemos e bloqueamos seu número para que não receba novas mensagens da Tríade Captação de Recursos (@triade_acr). Obrigado por avisar!';
+
 export const DIAGNOSTICO_CLARIFICATION_REPLY =
   'Este canal é automático para envio do autodiagnóstico gratuito da Tríade Captação de Recursos (Instagram: @triade_acr). Responda *SIM* para receber o link personalizado (onde explicamos tudo e mostramos editais abertos) ou *NÃO* para não receber novas mensagens.';
 
 /**
  * Classificador determinístico (sem IA) para respostas do funil SIM / NÃO do /diagnostico.
  * Prioridade:
- * 1. Opt-out / NÃO (segurança e LGPD sempre vêm primeiro)
- * 2. Bots / URA / mensagens automáticas de ausência (evita loop entre robôs)
- * 3. SIM / confirmação positiva (envia link personalizado)
- * 4. Outros (envia no máximo 1 mensagem curta de orientação SIM/NÃO)
+ * 1. Número errado / contador / não é da OSC (bloqueio permanente imediato)
+ * 2. Opt-out / NÃO (segurança e LGPD sempre vêm primeiro)
+ * 3. Bots / URA / mensagens automáticas de ausência (evita loop entre robôs)
+ * 4. SIM / confirmação positiva (envia link personalizado sem telefone na URL)
+ * 5. Outros (envia no máximo 1 mensagem curta de orientação SIM/NÃO)
  */
 export function classifyDiagnosticoReply(rawText: string | null | undefined): DiagnosticoReplyClassification {
   const raw = String(rawText || '').trim();
@@ -186,7 +197,16 @@ export function classifyDiagnosticoReply(rawText: string | null | undefined): Di
     return { intent: 'other', reason: 'Mensagem vazia.' };
   }
 
-  // 1. Opt-out / NÃO (checado primeiro para nunca confundir "não quero" com "quero")
+  // 1. Número errado / contador / não pertence à OSC
+  if (
+    /\b(numero errado|engano|sou contador|sou contadora|contabilidade|escritorio contabil|nao sou dessa|nao somos dessa|nao e dessa|nao pertence|nao conheco essa|nao trabalho mais|sai da associacao|ex presidente|antigo numero)\b/i.test(
+      norm
+    )
+  ) {
+    return { intent: 'wrong_number', reason: 'Número não pertence à OSC / telefone de contador.' };
+  }
+
+  // 2. Opt-out / NÃO (checado antes do SIM para nunca confundir "não quero" com "quero")
   if (detectOptOutCommand(raw)) {
     return { intent: 'no', reason: 'Comando de opt-out detectado.' };
   }
@@ -204,7 +224,7 @@ export function classifyDiagnosticoReply(rawText: string | null | undefined): Di
     return { intent: 'no', reason: 'Recusa explícita (NÃO).' };
   }
 
-  // 2. Detecção de robô / URA / resposta automática de WhatsApp Business
+  // 3. Detecção de robô / URA / resposta automática de WhatsApp Business
   if (
     /\b(digite\s+\d|opcao invalida|protocolo|fatura|atendimento automatico|mensagem automatica|assistente virtual|fora do horario|horario de atendimento|obrigado por entrar em contato|agradecemos seu contato|agradecemos o contato|em breve retornaremos|assim que possivel retornaremos|escolha uma opcao|menu principal)\b/i.test(
       norm
@@ -213,7 +233,7 @@ export function classifyDiagnosticoReply(rawText: string | null | undefined): Di
     return { intent: 'bot_or_ura', reason: 'Resposta automática / URA detectada.' };
   }
 
-  // 3. SIM / aceitação clara (garantindo ausência de negação e ausência de pergunta aberta)
+  // 4. SIM / aceitação clara (garantindo ausência de negação e ausência de pergunta aberta)
   const hasNegation = /\b(nao|nunca|jamais|sem|nem)\b/i.test(norm);
   const looksLikeQuestion =
     raw.includes('?') ||
@@ -237,6 +257,6 @@ export function classifyDiagnosticoReply(rawText: string | null | undefined): Di
     }
   }
 
-  // 4. Pergunta livre ou texto ambíguo
+  // 5. Pergunta livre ou texto ambíguo
   return { intent: 'other', reason: 'Resposta fora do padrão SIM/NÃO.' };
 }

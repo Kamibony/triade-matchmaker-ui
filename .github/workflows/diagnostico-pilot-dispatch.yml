@@ -1,0 +1,71 @@
+name: Autodiagnóstico OSC — Disparo Piloto (SIM/NÃO)
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_messages:
+        description: 'Quantidade de OSCs neste lote (recomendado: 15 por dia)'
+        required: false
+        default: '15'
+        type: string
+      target_lote:
+        description: 'Filtrar lote específico (1, 2, 3 ou vazio para próximos pendentes)'
+        required: false
+        default: ''
+        type: string
+      dry_run:
+        description: 'Modo simulação (não envia mensagens reais)?'
+        required: false
+        default: false
+        type: boolean
+      force_outside_hours:
+        description: 'Forçar fora do horário comercial (Seg–Sex 09:00–17:30 BRT)?'
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: diagnostico-pilot-dispatch
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  dispatch-pilot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Diagnostico Pilot Batch
+        env:
+          MAX_MESSAGES: ${{ inputs.max_messages || '15' }}
+          TARGET_LOTE: ${{ inputs.target_lote || '' }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          FORCE_SEND: ${{ inputs.force_outside_hours || 'false' }}
+        run: npx tsx scripts/diagnostico-pilot-dispatcher.ts
+
+      - name: Commit Diagnostico Sent Log
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/diagnostico_sent_log.json
+          if git diff --staged --quiet; then
+            echo "No diagnostico sent log changes to commit"
+          else
+            git commit -m "chore(diagnostico): update pilot sent log [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
