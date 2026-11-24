@@ -76,5 +76,83 @@
     "provider": "whapi",
     "error": "need channel authorization for send message",
     "sentAt": "2026-11-24T14:28:01.359Z"
+  },
+  {
+    "ref": "AM-01",
+    "lote": 1,
+    "cnpj": "13232638000108",
+    "nome": "UNIAO BRASILEIRA DE MULHERES - SECAO AMAZONAS",
+    "phone": "5592981142981",
+    "tema": "Mulheres",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "failed",
+    "provider": "whapi",
+    "error": "need channel authorization for send message",
+    "sentAt": "2026-11-24T17:52:34.739Z"
+  },
+  {
+    "ref": "AM-02",
+    "lote": 1,
+    "cnpj": "02442813000167",
+    "nome": "ASSOCIACAO AGRICOLA E PISCICULTURA DOS PRODUTORES RURAIS DO ESTADO DO AMAZONAS",
+    "phone": "5592992746594",
+    "tema": "Agro",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "failed",
+    "provider": "whapi",
+    "error": "need channel authorization for send message",
+    "sentAt": "2026-11-24T17:53:16.915Z"
+  },
+  {
+    "ref": "AM-03",
+    "lote": 1,
+    "cnpj": "63691505000160",
+    "nome": "ASSOCIACAO SOCIAL INDIGENA DOS POVOS TRADICIONAIS DO ESTADO DO AMAZONAS - ASIPTEAM",
+    "phone": "5592994221566",
+    "tema": "Comunidades Tradicionais",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "failed",
+    "provider": "whapi",
+    "error": "need channel authorization for send message",
+    "sentAt": "2026-11-24T17:54:07.135Z"
+  },
+  {
+    "ref": "AM-04",
+    "lote": 1,
+    "cnpj": "07420873000100",
+    "nome": "INSTITUTO AMBIENTAL DE DESENVOLVIMENTO ECO SUSTENTAVEL E PROTECAO ANIMAL - AMAZONAS ECO CIDADAO ECOCID",
+    "phone": "5592991472391",
+    "tema": "Causa Animal",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "failed",
+    "provider": "whapi",
+    "error": "need channel authorization for send message",
+    "sentAt": "2026-11-24T17:54:48.326Z"
+  },
+  {
+    "ref": "AM-05",
+    "lote": 1,
+    "cnpj": "05484846000168",
+    "nome": "INSTITUTO DE MULHERES MAE SOLO DO MUNICIPIO DE PARINTINS - AM",
+    "phone": "5592991818242",
+    "tema": "Mulheres",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "failed",
+    "provider": "whapi",
+    "error": "need channel authorization for send message",
+    "sentAt": "2026-11-24T17:55:29.146Z"
+  },
+  {
+    "ref": "AM-06",
+    "lote": 1,
+    "cnpj": "03342150000171",
+    "nome": "ASPREAM ASSOCIACAO DE PRODUTORES RURAIS E EXTRATIVISTAS DO AMAZONAS",
+    "phone": "5592993911614",
+    "tema": "Agro",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "failed",
+    "provider": "whapi",
+    "error": "need channel authorization for send message",
+    "sentAt": "2026-11-24T17:56:28.393Z"
   }
 ]
