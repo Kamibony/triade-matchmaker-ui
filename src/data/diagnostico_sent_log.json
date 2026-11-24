@@ -310,5 +310,83 @@
     "provider": "whapi",
     "messageId": "Psq_PiS7erZN9mA-wKcFFjhFeK4",
     "sentAt": "2026-11-24T18:37:17.516Z"
+  },
+  {
+    "ref": "AM-13",
+    "lote": 1,
+    "cnpj": "13639771000175",
+    "nome": "INSTITUTO NOTRE DAME",
+    "phone": "5592991416084",
+    "tema": "Causa Animal",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PsrA0k2qlUjwmWM-wBMFFjhEPxQ",
+    "sentAt": "2026-11-24T19:04:13.579Z"
+  },
+  {
+    "ref": "AM-14",
+    "lote": 1,
+    "cnpj": "07547093000118",
+    "nome": "ASSOCIACAO DAS MULHERES DO ESTADO DO AMAZONAS - AMEA",
+    "phone": "5592992499383",
+    "tema": "Mulheres",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "Pso41MHA7RUFm4M-wNUFFjhUxrc",
+    "sentAt": "2026-11-24T19:05:17.311Z"
+  },
+  {
+    "ref": "AM-15",
+    "lote": 1,
+    "cnpj": "08837774000183",
+    "nome": "ASSOCIACAO COMUNITARIA DOS PRODUTORES RURAIS DO RAMAL AMAZONAS",
+    "phone": "5592992346893",
+    "tema": "Agro",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "Psrhq0doBzP9xk4-wPIFFjhScw0",
+    "sentAt": "2026-11-24T19:06:04.153Z"
+  },
+  {
+    "ref": "AM-16",
+    "lote": 1,
+    "cnpj": "07401314000145",
+    "nome": "ASSOCIACAO INDIGENA DO ESTADO DO AMAZONAS - AIEA",
+    "phone": "5592984260064",
+    "tema": "Comunidades Tradicionais",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PsorY4cSZb4Z8sE-wD4FFjfXDeA",
+    "sentAt": "2026-11-24T19:07:11.233Z"
+  },
+  {
+    "ref": "AM-17",
+    "lote": 1,
+    "cnpj": "10614159000150",
+    "nome": "ASSOCIACAO MULHERES PEROLAS DE TABATINGA - MAIS AMOR",
+    "phone": "5597991881099",
+    "tema": "Mulheres",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PspF.fsYa.kjjzg-wP0FF2JRSYs",
+    "sentAt": "2026-11-24T19:08:02.219Z"
+  },
+  {
+    "ref": "AM-18",
+    "lote": 1,
+    "cnpj": "10949293000101",
+    "nome": "INSTITUTO DE DESENVOLVIMENTO DA AGRICULTURA FAMILIAR DO AMAZONAS",
+    "phone": "5592993687208",
+    "tema": "Agro",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "Psq.ZZQvu44eGOQ-wOkFFjhm5qg",
+    "sentAt": "2026-11-24T19:08:52.502Z"
   }
 ]
