@@ -154,5 +154,18 @@
     "provider": "whapi",
     "error": "need channel authorization for send message",
     "sentAt": "2026-11-24T17:56:28.393Z"
+  },
+  {
+    "ref": "AM-01",
+    "lote": 1,
+    "cnpj": "13232638000108",
+    "nome": "UNIAO BRASILEIRA DE MULHERES - SECAO AMAZONAS",
+    "phone": "5592981142981",
+    "tema": "Mulheres",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PsqA6xFNo.SZi_M-wBUFFjenfcU",
+    "sentAt": "2026-11-24T18:27:45.623Z"
   }
 ]
