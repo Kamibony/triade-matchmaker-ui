@@ -31,6 +31,7 @@ export async function POST({ request }) {
       useTwoStepOpener = false,
       enforceBusinessHours = true,
       forceSendOutsideHours = false,
+      validateBeforeSend,
       overrideConfig
     } = body;
 
@@ -58,7 +59,11 @@ export async function POST({ request }) {
     const finalMessage = isDiagnosticoMode
       ? message ||
         buildDiagnosticoOpenerMessage({
-          nome: diagnosticoLead?.nome || lead?.osc?.nome || 'sua organização'
+          nome: diagnosticoLead?.nome || lead?.osc?.nome || 'sua organização',
+          tema: diagnosticoLead?.tema,
+          municipio: diagnosticoLead?.municipio || lead?.osc?.municipio,
+          uf: diagnosticoLead?.uf || lead?.osc?.uf,
+          variant: diagnosticoLead?.variant
         })
       : useTwoStepOpener && lead
         ? buildTwoStepOpenerMessage(lead)
@@ -70,6 +75,7 @@ export async function POST({ request }) {
 
     const result = await sendWhatsAppText(rawPhone, finalMessage, {
       simulateTypingMs: 3500,
+      validateBeforeSend: typeof validateBeforeSend === 'boolean' ? validateBeforeSend : isDiagnosticoMode,
       overrideConfig
     });
 
@@ -83,7 +89,8 @@ export async function POST({ request }) {
         tema: diagnosticoLead?.tema,
         ref: diagnosticoLead?.ref,
         campanha_tag: diagnosticoLead?.campanha_tag,
-        origem: diagnosticoLead?.origem || 'Lista'
+        origem: diagnosticoLead?.origem || 'Lista',
+        variant: diagnosticoLead?.variant
       });
     }
 

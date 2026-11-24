@@ -25,17 +25,19 @@ interface CampaignLead {
   idade_anos?: number;
   campanha_tag?: string;
   origem?: 'Lista' | 'Indicacao' | 'Organico';
+  variant?: 'A' | 'B';
 }
 
 interface SentLogEntry {
   ref: string;
   lote?: number;
+  variant?: 'A' | 'B';
   cnpj: string;
   nome: string;
   phone: string;
   tema?: string;
   campanha_tag?: string;
-  status: 'sent' | 'blocked_opt_out' | 'failed';
+  status: 'sent' | 'blocked_opt_out' | 'not_on_whatsapp' | 'failed';
   provider?: string;
   messageId?: string;
   error?: string;
@@ -115,12 +117,9 @@ async function run() {
     return;
   }
 
-  const alreadyDoneCnpjs = new Set(
-    sentLog.filter((e) => e.status === 'sent' || e.status === 'blocked_opt_out').map((e) => e.cnpj)
-  );
-  const alreadyDonePhones = new Set(
-    sentLog.filter((e) => e.status === 'sent' || e.status === 'blocked_opt_out').map((e) => e.phone)
-  );
+  const terminalStatuses = new Set(['sent', 'blocked_opt_out', 'not_on_whatsapp']);
+  const alreadyDoneCnpjs = new Set(sentLog.filter((e) => terminalStatuses.has(e.status)).map((e) => e.cnpj));
+  const alreadyDonePhones = new Set(sentLog.filter((e) => terminalStatuses.has(e.status)).map((e) => e.phone));
 
   const pending = leads.filter((l) => {
     if (alreadyDoneCnpjs.has(l.cnpj) || alreadyDonePhones.has(l.phone)) return false;
@@ -141,16 +140,23 @@ async function run() {
 
   let sentCount = 0;
   let blockedCount = 0;
+  let notOnWaCount = 0;
   let failedCount = 0;
+  let abortedDueToAuth = false;
 
   for (let i = 0; i < batch.length; i++) {
     const lead = batch[i];
-    console.log(`\n[${i + 1}/${batch.length}] ${lead.ref} (${lead.tema || 'OSC'}) — ${lead.nome} (${lead.municipio}/${lead.uf}) -> +${lead.phone}`);
+    const variantTag = lead.variant ? ` [v${lead.variant}]` : '';
+    console.log(
+      `\n[${i + 1}/${batch.length}] ${lead.ref}${variantTag} (${lead.tema || 'OSC'}) — ${lead.nome} (${lead.municipio}/${lead.uf}) -> +${lead.phone}`
+    );
 
     if (DRY_RUN) {
       console.log('   🧪 DRY_RUN ativo: nenhuma mensagem enviada.');
       continue;
     }
+
+    let didSendRealMessage = false;
 
     try {
       const res = await fetch(VERCEL_SEND_ENDPOINT, {
@@ -160,6 +166,7 @@ async function run() {
           mode: 'diagnostico',
           phone: lead.phone,
           diagnosticoLead: lead,
+          validateBeforeSend: true,
           enforceBusinessHours: !FORCE_SEND,
           forceSendOutsideHours: FORCE_SEND
         })
@@ -173,12 +180,30 @@ async function run() {
         sentLog.push({
           ref: lead.ref,
           lote: lead.lote,
+          variant: lead.variant,
           cnpj: lead.cnpj,
           nome: lead.nome,
           phone: lead.phone,
           tema: lead.tema,
           campanha_tag: lead.campanha_tag,
           status: 'blocked_opt_out',
+          provider: data.provider,
+          error: data.error,
+          sentAt: new Date().toISOString()
+        });
+      } else if (data?.notOnWhatsApp) {
+        notOnWaCount++;
+        console.log(`   📵 Sem WhatsApp ativo: ${data.error || 'invalid'} (pulado sem gastar cota)`);
+        sentLog.push({
+          ref: lead.ref,
+          lote: lead.lote,
+          variant: lead.variant,
+          cnpj: lead.cnpj,
+          nome: lead.nome,
+          phone: lead.phone,
+          tema: lead.tema,
+          campanha_tag: lead.campanha_tag,
+          status: 'not_on_whatsapp',
           provider: data.provider,
           error: data.error,
           sentAt: new Date().toISOString()
@@ -192,6 +217,7 @@ async function run() {
         sentLog.push({
           ref: lead.ref,
           lote: lead.lote,
+          variant: lead.variant,
           cnpj: lead.cnpj,
           nome: lead.nome,
           phone: lead.phone,
@@ -202,15 +228,25 @@ async function run() {
           error: errMsg,
           sentAt: new Date().toISOString()
         });
+
+        // Fail-fast: se o canal Whapi perdeu autorização (QR/INIT), encerra imediatamente
+        if (/need channel authorization|unauthorized|not authorized/i.test(errMsg)) {
+          await fs.writeFile(LOG_PATH, JSON.stringify(sentLog, null, 2) + '\n');
+          console.error('\n🛑 FAIL-FAST: Canal Whapi sem autorização. Encerrando onda imediatamente para evitar erros repetidos.');
+          abortedDueToAuth = true;
+          break;
+        }
       } else {
         sentCount++;
-        console.log(`   ✅ Enviado via ${data.provider} (id: ${data.messageId || 'ok'})`);
+        didSendRealMessage = true;
+        console.log(`   ✅ Enviado via ${data.provider} para +${data.phone || lead.phone} (id: ${data.messageId || 'ok'})`);
         sentLog.push({
           ref: lead.ref,
           lote: lead.lote,
+          variant: lead.variant,
           cnpj: lead.cnpj,
           nome: lead.nome,
-          phone: lead.phone,
+          phone: data.phone || lead.phone,
           tema: lead.tema,
           campanha_tag: lead.campanha_tag,
           status: 'sent',
@@ -228,6 +264,7 @@ async function run() {
       sentLog.push({
         ref: lead.ref,
         lote: lead.lote,
+        variant: lead.variant,
         cnpj: lead.cnpj,
         nome: lead.nome,
         phone: lead.phone,
@@ -240,15 +277,19 @@ async function run() {
       await fs.writeFile(LOG_PATH, JSON.stringify(sentLog, null, 2) + '\n');
     }
 
-    // Humanized anti-ban delay (35–65 seconds between messages inside each 6-OSC wave)
+    // Humanized anti-ban delay (35–65s after real send; short 4–7s pause after skipped invalid number)
     if (i < batch.length - 1) {
-      const delayMs = 35_000 + Math.floor(Math.random() * 30_000);
-      console.log(`   ⏳ Aguardando ${(delayMs / 1000).toFixed(1)}s antes do próximo envio...`);
+      const delayMs = didSendRealMessage
+        ? 35_000 + Math.floor(Math.random() * 30_000)
+        : 4_000 + Math.floor(Math.random() * 3_000);
+      console.log(`   ⏳ Aguardando ${(delayMs / 1000).toFixed(1)}s antes do próximo contato...`);
       await sleep(delayMs);
     }
   }
 
-  console.log(`\nResumo do lote: sent=${sentCount}, blocked_opt_out=${blockedCount}, failed=${failedCount}`);
+  console.log(
+    `\nResumo do lote: sent=${sentCount}, not_on_whatsapp=${notOnWaCount}, blocked_opt_out=${blockedCount}, failed=${failedCount}${abortedDueToAuth ? ' (ABORTED: channel auth)' : ''}`
+  );
 }
 
 run().catch((err) => {

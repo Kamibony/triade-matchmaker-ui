@@ -2,6 +2,8 @@ import { detectOptOutCommand } from '$lib/server/whatsapp-optout';
 
 export const DEFAULT_DIAGNOSTICO_BASE_URL = 'https://triade-matchmaker-ui.vercel.app';
 
+export type DiagnosticoOpenerVariant = 'A' | 'B';
+
 export interface DiagnosticoCampaignLead {
   cnpj: string;
   nome: string;
@@ -12,6 +14,7 @@ export interface DiagnosticoCampaignLead {
   ref?: string;
   campanha_tag?: string;
   origem?: 'Lista' | 'Indicacao' | 'Organico';
+  variant?: DiagnosticoOpenerVariant;
 }
 
 export type DiagnosticoReplyIntent = 'yes' | 'no' | 'wrong_number' | 'bot_or_ura' | 'other';
@@ -43,6 +46,184 @@ function normalizeText(text: string | null | undefined): string {
     .replace(/\s+/g, ' ');
 }
 
+const PT_LOWERCASE_WORDS = new Set([
+  'de',
+  'da',
+  'do',
+  'das',
+  'dos',
+  'e',
+  'em',
+  'na',
+  'no',
+  'nas',
+  'nos',
+  'a',
+  'o',
+  'as',
+  'os',
+  'com',
+  'para',
+  'por',
+  'ao',
+  'aos',
+  'a',
+  'às'
+]);
+
+const PT_ACCENT_MAP: Record<string, string> = {
+  associacao: 'Associação',
+  associacoes: 'Associações',
+  federacao: 'Federação',
+  organizacao: 'Organização',
+  organizacoes: 'Organizações',
+  coordenacao: 'Coordenação',
+  fundacao: 'Fundação',
+  uniao: 'União',
+  protecao: 'Proteção',
+  secao: 'Seção',
+  municipio: 'Município',
+  indigena: 'Indígena',
+  indigenas: 'Indígenas',
+  agricola: 'Agrícola',
+  amazonia: 'Amazônia',
+  varzea: 'Várzea',
+  sao: 'São',
+  antonio: 'Antônio',
+  ica: 'Içá',
+  tefe: 'Tefé',
+  alvaraes: 'Alvarães',
+  vitoria: 'Vitória',
+  regia: 'Régia',
+  mae: 'Mãe',
+  cancer: 'Câncer',
+  artistico: 'Artístico',
+  cidadao: 'Cidadão',
+  sustentavel: 'Sustentável',
+  perolas: 'Pérolas',
+  belem: 'Belém',
+  solimoes: 'Solimões',
+  comunitaria: 'Comunitária',
+  esperanca: 'Esperança',
+  nucleo: 'Núcleo',
+  nao: 'Não',
+  governamental: 'Governamental',
+  pesca: 'Pesca',
+  pescadores: 'Pescadores',
+  mulheres: 'Mulheres',
+  etnocultural: 'Etnocultural',
+  educacao: 'Educação',
+  saude: 'Saúde',
+  assistencia: 'Assistência',
+  infancia: 'Infância',
+  adolescencia: 'Adolescência',
+  promocao: 'Promoção',
+  integracao: 'Integração',
+  atuacao: 'Atuação',
+  acao: 'Ação',
+  preservacao: 'Preservação',
+  recuperacao: 'Recuperação',
+  instituicao: 'Instituição'
+};
+
+const KNOWN_ACRONYMS = new Set([
+  'ONG',
+  'OSC',
+  'AM',
+  'UBM',
+  'OIKAM',
+  'APROAM',
+  'AASCAM',
+  'APAMAAM',
+  'AIEA',
+  'AMEA',
+  'ADACAIBS',
+  'APPROSC',
+  'ASIPTEAM',
+  'ECOCID',
+  'ASPREAM',
+  'AIETUM',
+  'AEATCEB',
+  'SGC',
+  'IPA',
+  'PET'
+]);
+
+/**
+ * Converte a Razão Social em caixa alta da Receita Federal para um nome curto,
+ * natural e legível em português para uso em mensagens humanas de WhatsApp.
+ */
+export function humanizeOrgName(rawName: string | null | undefined): string {
+  let clean = String(rawName || '')
+    .replace(/\s+/g, ' ')
+    .replace(/\s*-\s*$/g, '')
+    .trim();
+  if (!clean) return 'sua organização';
+
+  // Remove sufixos burocráticos longos quando o nome excede 42 caracteres
+  if (clean.length > 42) {
+    clean = clean
+      .replace(/\s+(NO|DO)\s+ESTADO\s+DO\s+AMAZONAS(\s*-\s*AM)?$/i, '')
+      .replace(/\s+DO\s+MUNICIPIO\s+DE\s+[^-]+$/i, '')
+      .replace(/\s*-\s*(AM|AMAZONAS)$/i, '')
+      .replace(/\s*-\s*$/g, '')
+      .trim();
+  }
+
+  // Substitui "ORGANIZACAO NAO GOVERNAMENTAL " por "ONG " para soar natural
+  clean = clean.replace(/^ORGANIZACAO\s+NAO\s+GOVERNAMENTAL\s+/i, 'ONG ');
+
+  const words = clean.split(' ');
+  const formatted = words.map((word, idx) => {
+    if (word === '-' || word === '—') return word;
+    const upper = word.toUpperCase();
+    const stripped = upper.replace(/[^A-Z]/g, '');
+    if (KNOWN_ACRONYMS.has(stripped)) {
+      return upper;
+    }
+
+    const lower = word.toLowerCase();
+    const norm = lower.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    if (idx > 0 && PT_LOWERCASE_WORDS.has(norm)) {
+      return lower;
+    }
+    if (PT_ACCENT_MAP[norm]) {
+      return PT_ACCENT_MAP[norm];
+    }
+    return lower.charAt(0).toUpperCase() + lower.slice(1);
+  });
+
+  let result = formatted.join(' ').replace(/\s*-\s*$/, '').trim();
+
+  // Limite visual amigável para não parecer texto colado de banco de dados
+  if (result.length > 58) {
+    // Se tiver sigla após hífen (ex: "... - UBM"), tenta manter apenas a parte mais limpa
+    const dashParts = result.split(' - ');
+    if (dashParts.length >= 2 && dashParts[dashParts.length - 1].length <= 12) {
+      const sigla = dashParts[dashParts.length - 1].trim();
+      const prefix = dashParts[0].slice(0, 44).replace(/\s+\S*$/, '').trim();
+      result = `${prefix} (${sigla})`;
+    } else {
+      result = result.slice(0, 56).replace(/\s+\S*$/, '').trim();
+    }
+  }
+
+  return result || 'sua organização';
+}
+
+export function humanizeTemaLabel(tema?: string): string {
+  const norm = normalizeText(tema);
+  if (norm.includes('mulher')) return 'fortalecimento de mulheres';
+  if (norm.includes('agro') || norm.includes('rural') || norm.includes('pesca')) {
+    return 'agricultura familiar e produção rural';
+  }
+  if (norm.includes('tradicion') || norm.includes('indigen') || norm.includes('ribeirinh')) {
+    return 'povos indígenas e comunidades tradicionais';
+  }
+  if (norm.includes('animal')) return 'proteção animal e meio ambiente';
+  return 'impacto social';
+}
+
 export function registerRuntimeDiagnosticoLead(lead: DiagnosticoCampaignLead): void {
   const norm = normalizePhoneDigits(lead.phone);
   if (!norm) return;
@@ -64,7 +245,8 @@ export function findDiagnosticoCampaignLead(
       tema: overrideLead.tema,
       ref: overrideLead.ref,
       campanha_tag: overrideLead.campanha_tag,
-      origem: overrideLead.origem || 'Lista'
+      origem: overrideLead.origem || 'Lista',
+      variant: overrideLead.variant
     };
   }
 
@@ -148,13 +330,28 @@ export function buildDiagnosticoUrl(
   return `${cleanBase}/diagnostico?${params.toString()}`;
 }
 
-export function buildDiagnosticoOpenerMessage(lead: Pick<DiagnosticoCampaignLead, 'nome'>): string {
-  const orgName = (lead?.nome || 'sua organização').trim();
+export function buildDiagnosticoOpenerMessage(
+  lead: Pick<DiagnosticoCampaignLead, 'nome' | 'tema' | 'municipio' | 'uf' | 'variant'>
+): string {
+  const orgName = humanizeOrgName(lead?.nome);
+  const temaLabel = humanizeTemaLabel(lead?.tema);
+  const municipio = (lead?.municipio || '').trim();
+  const uf = (lead?.uf || '').trim().toUpperCase();
+  const regiao = uf === 'AM' ? 'no Amazonas' : uf ? `em ${uf}` : '';
+  const localMunicipio = municipio ? ` em ${municipio}` : regiao ? ` ${regiao}` : '';
+
+  if (lead?.variant === 'B') {
+    return (
+      `Olá, pessoal da ${orgName}! Aqui é a Maria Angela, da Tríade Captação de Recursos (@triade_acr).\n\n` +
+      `Vimos o trabalho de vocês${localMunicipio} com ${temaLabel} e temos editais abertos hoje compatíveis com a instituição.\n\n` +
+      `Posso te mandar por aqui um diagnóstico gratuito (3 min) já com os editais abertos para vocês?`
+    );
+  }
+
   return (
-    `Olá, equipe da ${orgName}! Aqui é da Tríade Captação de Recursos (Instagram: @triade_acr).\n\n` +
-    `Preparamos um autodiagnóstico gratuito (leva cerca de 3 minutos) que mostra o nível de prontidão documental da organização e editais abertos hoje para o seu CNPJ — sem compromisso e sem promessa de aprovação.\n\n` +
-    `Deseja receber o link personalizado da ${orgName} por aqui?\n` +
-    `Responda *SIM* para receber ou *NÃO* caso prefira não receber mensagens.`
+    `Olá, pessoal da ${orgName}! Tudo bem?\n\n` +
+    `Aqui é a Maria Angela, da Tríade Captação de Recursos (@triade_acr). Mapeamos editais abertos nesta semana para projetos de ${temaLabel}${regiao ? ` ${regiao}` : ''} e preparamos uma ferramenta gratuita (3 min) que mostra na hora quais editais combinam com a instituição de vocês.\n\n` +
+    `Posso enviar o acesso por aqui? (Caso prefira não receber mensagens, é só responder NÃO.)`
   );
 }
 
@@ -162,12 +359,12 @@ export function buildDiagnosticoLinkReplyMessage(
   lead: Pick<DiagnosticoCampaignLead, 'cnpj' | 'nome' | 'origem' | 'campanha_tag' | 'ref'>,
   baseUrl = DEFAULT_DIAGNOSTICO_BASE_URL
 ): string {
-  const orgName = (lead?.nome || 'sua organização').trim();
+  const orgName = humanizeOrgName(lead?.nome);
   const url = buildDiagnosticoUrl(lead, baseUrl);
   return (
-    `Prontinho! Aqui está o link personalizado do autodiagnóstico da ${orgName} (já com o CNPJ preenchido):\n\n` +
+    `Prontinho! Aqui está o acesso gratuito do diagnóstico da ${orgName} (já preenchido):\n\n` +
     `${url}\n\n` +
-    `É só abrir pelo celular — leva cerca de 3 minutos e o resultado com a nota (0 a 100), checklist documental e editais compatíveis sai na hora.`
+    `É só abrir pelo celular — leva cerca de 3 minutos e o resultado com a nota (0 a 100), checklist documental e editais abertos compatíveis sai na hora.`
   );
 }
 
@@ -178,7 +375,7 @@ export const DIAGNOSTICO_WRONG_NUMBER_REPLY =
   'Peço desculpas pelo engano! Encontramos este telefone nos dados públicos da Receita Federal, mas já removemos e bloqueamos seu número para que não receba novas mensagens da Tríade Captação de Recursos (@triade_acr). Obrigado por avisar!';
 
 export const DIAGNOSTICO_CLARIFICATION_REPLY =
-  'Este canal é automático para envio do autodiagnóstico gratuito da Tríade Captação de Recursos (Instagram: @triade_acr). Responda *SIM* para receber o link personalizado (onde explicamos tudo e mostramos editais abertos) ou *NÃO* para não receber novas mensagens.';
+  'Este canal é automático para envio do diagnóstico gratuito de editais da Tríade Captação de Recursos (Instagram: @triade_acr). Responda *SIM* para receber o acesso (onde mostramos editais abertos compatíveis) ou *NÃO* para não receber novas mensagens.';
 
 /**
  * Classificador determinístico (sem IA) para respostas do funil SIM / NÃO do /diagnostico.
@@ -243,13 +440,17 @@ export function classifyDiagnosticoReply(rawText: string | null | undefined): Di
 
   if (!hasNegation && !looksLikeQuestion) {
     if (
-      /^(sim|s|si|siim+|siiim+|ss|ok|okay|1|claro|com certeza|pode|pode sim|pode enviar|pode mandar|pode manda|manda|mande|envia|envie|quero|quero sim|queremos|gostaria|aceito|por favor|pfv|beleza|blz|joia|show|perfeito|otimo|legal|bora|vamos)[\s.,!?;:]*$/i.test(
+      /^(sim|s|si|siim+|siiim+|ss|ok|okay|1|claro|com certeza|pode|pode sim|pode enviar|pode mandar|pode manda|manda|manda sim|mande|envia|envia sim|envie|quero|quero sim|queremos|gostaria|gostaria sim|aceito|por favor|pfv|beleza|blz|joia|show|perfeito|otimo|legal|bora|vamos)[\s.,!?;:]*$/i.test(
         norm
       ) ||
-      (/^(sim|pode enviar|pode mandar|quero sim|quero receber|quero o link|manda o link|mande o link|envia o link|envie o link|claro|com certeza|ok pode|sim por favor|sim,? pode)\b.*$/i.test(
+      (/^(sim|pode enviar|pode mandar|pode sim|quero sim|quero receber|quero o link|manda o link|mande o link|envia o link|envie o link|claro|com certeza|ok pode|sim por favor|sim,? pode)\b.*$/i.test(
         norm
       ) &&
-        norm.length <= 50) ||
+        norm.length <= 60) ||
+      (/\b(pode mandar|pode enviar|pode sim|quero receber|quero sim|manda sim|envia sim|claro que sim|por favor pode)\b/i.test(
+        norm
+      ) &&
+        norm.length <= 90) ||
       raw.includes('👍') ||
       raw.includes('✅')
     ) {

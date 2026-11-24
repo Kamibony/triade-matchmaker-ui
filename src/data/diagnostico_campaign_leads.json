@@ -308,8 +308,9 @@
     "municipio": "Parintins",
     "tema": "Mulheres",
     "idade_anos": 14,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vA",
+    "origem": "Lista",
+    "variant": "A"
   },
   {
     "ref": "AM-25",
@@ -321,8 +322,9 @@
     "municipio": "Manaus",
     "tema": "Agro",
     "idade_anos": 12,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vA",
+    "origem": "Lista",
+    "variant": "A"
   },
   {
     "ref": "AM-26",
@@ -334,8 +336,9 @@
     "municipio": "Barcelos",
     "tema": "Comunidades Tradicionais",
     "idade_anos": 12,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vA",
+    "origem": "Lista",
+    "variant": "A"
   },
   {
     "ref": "AM-27",
@@ -347,8 +350,9 @@
     "municipio": "Manaus",
     "tema": "Causa Animal",
     "idade_anos": 2,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vA",
+    "origem": "Lista",
+    "variant": "A"
   },
   {
     "ref": "AM-28",
@@ -360,8 +364,9 @@
     "municipio": "Coari",
     "tema": "Mulheres",
     "idade_anos": 9,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vB",
+    "origem": "Lista",
+    "variant": "B"
   },
   {
     "ref": "AM-29",
@@ -373,8 +378,9 @@
     "municipio": "Iranduba",
     "tema": "Agro",
     "idade_anos": 11,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vB",
+    "origem": "Lista",
+    "variant": "B"
   },
   {
     "ref": "AM-30",
@@ -386,8 +392,9 @@
     "municipio": "Santo Antônio do Içá",
     "tema": "Comunidades Tradicionais",
     "idade_anos": 11,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vB",
+    "origem": "Lista",
+    "variant": "B"
   },
   {
     "ref": "AM-31",
@@ -399,8 +406,9 @@
     "municipio": "Manaus",
     "tema": "Causa Animal",
     "idade_anos": 2,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vB",
+    "origem": "Lista",
+    "variant": "B"
   },
   {
     "ref": "AM-32",
@@ -412,8 +420,9 @@
     "municipio": "Itacoatiara",
     "tema": "Mulheres",
     "idade_anos": 7,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vA",
+    "origem": "Lista",
+    "variant": "A"
   },
   {
     "ref": "AM-33",
@@ -425,8 +434,9 @@
     "municipio": "Manacapuru",
     "tema": "Agro",
     "idade_anos": 8,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vA",
+    "origem": "Lista",
+    "variant": "A"
   },
   {
     "ref": "AM-34",
@@ -438,8 +448,9 @@
     "municipio": "Manaus",
     "tema": "Comunidades Tradicionais",
     "idade_anos": 9,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vA",
+    "origem": "Lista",
+    "variant": "A"
   },
   {
     "ref": "AM-35",
@@ -451,8 +462,9 @@
     "municipio": "Iranduba",
     "tema": "Causa Animal",
     "idade_anos": 2,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vA",
+    "origem": "Lista",
+    "variant": "A"
   },
   {
     "ref": "AM-36",
@@ -464,8 +476,9 @@
     "municipio": "Borba",
     "tema": "Mulheres",
     "idade_anos": 6,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vB",
+    "origem": "Lista",
+    "variant": "B"
   },
   {
     "ref": "AM-37",
@@ -477,8 +490,9 @@
     "municipio": "Careiro da Várzea",
     "tema": "Agro",
     "idade_anos": 8,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vB",
+    "origem": "Lista",
+    "variant": "B"
   },
   {
     "ref": "AM-38",
@@ -490,8 +504,9 @@
     "municipio": "São Gabriel da Cachoeira",
     "tema": "Comunidades Tradicionais",
     "idade_anos": 8,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vB",
+    "origem": "Lista",
+    "variant": "B"
   },
   {
     "ref": "AM-39",
@@ -503,8 +518,9 @@
     "municipio": "Manaus",
     "tema": "Mulheres",
     "idade_anos": 6,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vA",
+    "origem": "Lista",
+    "variant": "A"
   },
   {
     "ref": "AM-40",
@@ -516,8 +532,9 @@
     "municipio": "Alvarães",
     "tema": "Agro",
     "idade_anos": 7,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vA",
+    "origem": "Lista",
+    "variant": "A"
   },
   {
     "ref": "AM-41",
@@ -529,8 +546,9 @@
     "municipio": "Rio Preto da Eva",
     "tema": "Comunidades Tradicionais",
     "idade_anos": 6,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vA",
+    "origem": "Lista",
+    "variant": "A"
   },
   {
     "ref": "AM-42",
@@ -542,8 +560,9 @@
     "municipio": "São Gabriel da Cachoeira",
     "tema": "Mulheres",
     "idade_anos": 5,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vB",
+    "origem": "Lista",
+    "variant": "B"
   },
   {
     "ref": "AM-43",
@@ -555,8 +574,9 @@
     "municipio": "Manacapuru",
     "tema": "Agro",
     "idade_anos": 6,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vB",
+    "origem": "Lista",
+    "variant": "B"
   },
   {
     "ref": "AM-44",
@@ -568,8 +588,9 @@
     "municipio": "Tefé",
     "tema": "Comunidades Tradicionais",
     "idade_anos": 5,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vB",
+    "origem": "Lista",
+    "variant": "B"
   },
   {
     "ref": "AM-45",
@@ -581,7 +602,8 @@
     "municipio": "Careiro da Várzea",
     "tema": "Mulheres",
     "idade_anos": 4,
-    "campanha_tag": "piloto_am_2026_11",
-    "origem": "Lista"
+    "campanha_tag": "piloto_am_2026_11_vB",
+    "origem": "Lista",
+    "variant": "B"
   }
 ]
