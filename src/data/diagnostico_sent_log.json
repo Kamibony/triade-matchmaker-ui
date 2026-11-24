@@ -388,5 +388,70 @@
     "provider": "whapi",
     "messageId": "Psq.ZZQvu44eGOQ-wOkFFjhm5qg",
     "sentAt": "2026-11-24T19:08:52.502Z"
+  },
+  {
+    "ref": "AM-19",
+    "lote": 1,
+    "cnpj": "10282100000101",
+    "nome": "ASSOCIACAO DE DESENVOLVIMENTO ARTISTICO CULTURAL DA ALDEIA INDIGENA DE BELEM DO SOLIMOES - ADACAIBS",
+    "phone": "5597991413287",
+    "tema": "Comunidades Tradicionais",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PsrwgdLt4R6aduI-wIIFF2JKJic",
+    "sentAt": "2026-11-24T19:28:59.963Z"
+  },
+  {
+    "ref": "AM-20",
+    "lote": 1,
+    "cnpj": "28688443000136",
+    "nome": "ASSOCIACAO DOS ATIVISTAS DE PROTECAO ANIMAL E AMBIENTAL DO ESTADO DO AMAZONAS",
+    "phone": "5592991341688",
+    "tema": "Causa Animal",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PspqL59W9bfzIGc-wCUFFjhDHHg",
+    "sentAt": "2026-11-24T19:30:05.258Z"
+  },
+  {
+    "ref": "AM-21",
+    "lote": 1,
+    "cnpj": "15209986000181",
+    "nome": "ASSOCIACAO DE MULHERES JASMIM DO ESTADO DO AMAZONAS",
+    "phone": "5592984594504",
+    "tema": "Mulheres",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PspaLZssRChMXOc-wPoFFjfcKEg",
+    "sentAt": "2026-11-24T19:31:12.930Z"
+  },
+  {
+    "ref": "AM-22",
+    "lote": 1,
+    "cnpj": "13448884000193",
+    "nome": "ASSOCIACAO DOS PISCICULTORES PRODUTORES RURAIS E CRIADORES DE CAREIRO - APPROSC",
+    "phone": "5592993466644",
+    "tema": "Agro",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PsoR9MkY69jY7m0-wI8FFjhjiRQ",
+    "sentAt": "2026-11-24T19:32:04.954Z"
+  },
+  {
+    "ref": "AM-23",
+    "lote": 1,
+    "cnpj": "13160923000152",
+    "nome": "UNIAO DOS POVOS INDIGENAS DE COARI DO AMAZONAS",
+    "phone": "5597991547049",
+    "tema": "Comunidades Tradicionais",
+    "campanha_tag": "piloto_am_2026_11",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "PsrEZ95UU0c3AwE-wFMFF2JMMKk",
+    "sentAt": "2026-11-24T19:32:50.030Z"
   }
 ]
