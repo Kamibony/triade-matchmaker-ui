@@ -329,16 +329,16 @@
   {
     "ref": "AM-26",
     "lote": 2,
-    "cnpj": "19874085000165",
-    "nome": "NUCLEO DE ARTE E CULTURA INDIGENA DE BARCELOS",
-    "phone": "5597991511786",
+    "cnpj": "47460450000120",
+    "nome": "INSTITUTO SOCIAL MULHERES AMAZONIDAS - ISMA",
+    "phone": "5592991329750",
     "uf": "AM",
-    "municipio": "Barcelos",
-    "tema": "Comunidades Tradicionais",
-    "idade_anos": 12,
-    "campanha_tag": "piloto_am_2026_11_vA",
+    "municipio": "Manaus",
+    "tema": "Mulheres",
+    "idade_anos": 4,
+    "campanha_tag": "piloto_am_2026_11_vB",
     "origem": "Lista",
-    "variant": "A"
+    "variant": "B"
   },
   {
     "ref": "AM-27",
@@ -357,16 +357,16 @@
   {
     "ref": "AM-28",
     "lote": 2,
-    "cnpj": "27261137000156",
-    "nome": "ORGANIZACAO NAO GOVERNAMENTAL MULHERES DE ATITUDES DE COARI",
-    "phone": "5597991747410",
+    "cnpj": "54890384000194",
+    "nome": "INSTITUTO MULHERES DO BAIRRO DO ALEIXO (IMBA)",
+    "phone": "5592992350041",
     "uf": "AM",
-    "municipio": "Coari",
+    "municipio": "Manaus",
     "tema": "Mulheres",
-    "idade_anos": 9,
-    "campanha_tag": "piloto_am_2026_11_vB",
+    "idade_anos": 2,
+    "campanha_tag": "piloto_am_2026_11_vA",
     "origem": "Lista",
-    "variant": "B"
+    "variant": "A"
   },
   {
     "ref": "AM-29",
@@ -385,13 +385,13 @@
   {
     "ref": "AM-30",
     "lote": 2,
-    "cnpj": "24403489000100",
-    "nome": "ORGANIZACAO INDIGENA KOKAMA DO AMAZONAS-OIKAM",
-    "phone": "5597991502197",
+    "cnpj": "51335309000173",
+    "nome": "INSTITUTO MULHERES GUERREIRAS PROMOVENDO CIDADANIA",
+    "phone": "5592991200754",
     "uf": "AM",
-    "municipio": "Santo Antônio do Içá",
-    "tema": "Comunidades Tradicionais",
-    "idade_anos": 11,
+    "municipio": "Manaus",
+    "tema": "Mulheres",
+    "idade_anos": 3,
     "campanha_tag": "piloto_am_2026_11_vB",
     "origem": "Lista",
     "variant": "B"
@@ -399,27 +399,27 @@
   {
     "ref": "AM-31",
     "lote": 2,
-    "cnpj": "55853880000130",
-    "nome": "ASSOCIACAO DE PROTECAO E AMPARO ANIMAL DO ESTADO DO AMAZONAS",
-    "phone": "5592984405320",
+    "cnpj": "49911961000147",
+    "nome": "ASSOCIACAO DE MULHERES PROFISSIONAIS DO AMAZONAS",
+    "phone": "5592994181703",
     "uf": "AM",
     "municipio": "Manaus",
-    "tema": "Causa Animal",
-    "idade_anos": 2,
-    "campanha_tag": "piloto_am_2026_11_vB",
+    "tema": "Mulheres",
+    "idade_anos": 3,
+    "campanha_tag": "piloto_am_2026_11_vA",
     "origem": "Lista",
-    "variant": "B"
+    "variant": "A"
   },
   {
     "ref": "AM-32",
     "lote": 2,
-    "cnpj": "32814067000156",
-    "nome": "UNIAO BRASILEIRA DE MULHERES - ITACOATIARA - UBM",
-    "phone": "5592994034703",
+    "cnpj": "52875189000160",
+    "nome": "ASSOCIACAO DOS PRODUTORES RURAIS DO RIO AMAZONAS-ASPROAMA",
+    "phone": "5592993971557",
     "uf": "AM",
-    "municipio": "Itacoatiara",
-    "tema": "Mulheres",
-    "idade_anos": 7,
+    "municipio": "Manaus",
+    "tema": "Agro",
+    "idade_anos": 3,
     "campanha_tag": "piloto_am_2026_11_vA",
     "origem": "Lista",
     "variant": "A"
@@ -427,16 +427,16 @@
   {
     "ref": "AM-33",
     "lote": 2,
-    "cnpj": "30556915000149",
-    "nome": "ASSOCIACAO MISTA DA AGRICULTURA FAMILIAR E PESCA DO ESTADO DO AMAZONAS - AM",
-    "phone": "5592993779728",
+    "cnpj": "24913130000183",
+    "nome": "UNIAO DAS COOPERATIVAS DA AGRICULTURA FAMILIAR E DE ECONOMIA SOLIDARIA NO ESTADO DO AMAZONAS",
+    "phone": "5592992705181",
     "uf": "AM",
     "municipio": "Manacapuru",
     "tema": "Agro",
-    "idade_anos": 8,
-    "campanha_tag": "piloto_am_2026_11_vA",
+    "idade_anos": 10,
+    "campanha_tag": "piloto_am_2026_11_vB",
     "origem": "Lista",
-    "variant": "A"
+    "variant": "B"
   },
   {
     "ref": "AM-34",
@@ -462,23 +462,23 @@
     "municipio": "Iranduba",
     "tema": "Causa Animal",
     "idade_anos": 2,
-    "campanha_tag": "piloto_am_2026_11_vA",
+    "campanha_tag": "piloto_am_2026_11_vB",
     "origem": "Lista",
-    "variant": "A"
+    "variant": "B"
   },
   {
     "ref": "AM-36",
     "lote": 2,
-    "cnpj": "36740661000109",
-    "nome": "ASSOCIACAO DAS MULHERES GUERREIRAS DO AMAZONAS",
-    "phone": "5592988433898",
+    "cnpj": "52437210000145",
+    "nome": "ASSOCIACAO DOS PRODUTORES RURAIS DA REGIAO METROPOLITANA DE MANAUS",
+    "phone": "5592984878875",
     "uf": "AM",
-    "municipio": "Borba",
-    "tema": "Mulheres",
-    "idade_anos": 6,
-    "campanha_tag": "piloto_am_2026_11_vB",
+    "municipio": "Rio Preto da Eva",
+    "tema": "Agro",
+    "idade_anos": 3,
+    "campanha_tag": "piloto_am_2026_11_vA",
     "origem": "Lista",
-    "variant": "B"
+    "variant": "A"
   },
   {
     "ref": "AM-37",
@@ -518,20 +518,20 @@
     "municipio": "Manaus",
     "tema": "Mulheres",
     "idade_anos": 6,
-    "campanha_tag": "piloto_am_2026_11_vA",
+    "campanha_tag": "piloto_am_2026_11_vB",
     "origem": "Lista",
-    "variant": "A"
+    "variant": "B"
   },
   {
     "ref": "AM-40",
     "lote": 2,
-    "cnpj": "35381597000146",
-    "nome": "ASSOCIACAO DOS PESCADORES E PESCADORAS ARTESANAIS DO MUNICIPIO DE ALVARAES NO ESTADO DO AMAZONAS AM",
-    "phone": "5597984696658",
+    "cnpj": "49786226000159",
+    "nome": "ARTICULACAO DAS ORGANIZACOES E POVOS INDIGENAS DO AMAZONAS",
+    "phone": "5592984649989",
     "uf": "AM",
-    "municipio": "Alvarães",
-    "tema": "Agro",
-    "idade_anos": 7,
+    "municipio": "Manaus",
+    "tema": "Comunidades Tradicionais",
+    "idade_anos": 3,
     "campanha_tag": "piloto_am_2026_11_vA",
     "origem": "Lista",
     "variant": "A"
@@ -546,9 +546,9 @@
     "municipio": "Rio Preto da Eva",
     "tema": "Comunidades Tradicionais",
     "idade_anos": 6,
-    "campanha_tag": "piloto_am_2026_11_vA",
+    "campanha_tag": "piloto_am_2026_11_vB",
     "origem": "Lista",
-    "variant": "A"
+    "variant": "B"
   },
   {
     "ref": "AM-42",
@@ -560,9 +560,9 @@
     "municipio": "São Gabriel da Cachoeira",
     "tema": "Mulheres",
     "idade_anos": 5,
-    "campanha_tag": "piloto_am_2026_11_vB",
+    "campanha_tag": "piloto_am_2026_11_vA",
     "origem": "Lista",
-    "variant": "B"
+    "variant": "A"
   },
   {
     "ref": "AM-43",
@@ -574,20 +574,20 @@
     "municipio": "Manacapuru",
     "tema": "Agro",
     "idade_anos": 6,
-    "campanha_tag": "piloto_am_2026_11_vB",
+    "campanha_tag": "piloto_am_2026_11_vA",
     "origem": "Lista",
-    "variant": "B"
+    "variant": "A"
   },
   {
     "ref": "AM-44",
     "lote": 2,
-    "cnpj": "45596036000118",
-    "nome": "ASSOCIACAO DOS POVOS INDIGENAS DA CIDADE DE TEFE ENTORNO",
-    "phone": "5597991784680",
+    "cnpj": "34500983000147",
+    "nome": "INSTITUTO EKOA DA AMAZONIA",
+    "phone": "5592993214872",
     "uf": "AM",
-    "municipio": "Tefé",
+    "municipio": "Manaus",
     "tema": "Comunidades Tradicionais",
-    "idade_anos": 5,
+    "idade_anos": 37,
     "campanha_tag": "piloto_am_2026_11_vB",
     "origem": "Lista",
     "variant": "B"

@@ -123,7 +123,11 @@ const PT_ACCENT_MAP: Record<string, string> = {
   acao: 'Ação',
   preservacao: 'Preservação',
   recuperacao: 'Recuperação',
-  instituicao: 'Instituição'
+  instituicao: 'Instituição',
+  regiao: 'Região',
+  articulacao: 'Articulação',
+  amazonidas: 'Amazônidas',
+  solidaria: 'Solidária'
 };
 
 const KNOWN_ACRONYMS = new Set([
@@ -146,7 +150,10 @@ const KNOWN_ACRONYMS = new Set([
   'AEATCEB',
   'SGC',
   'IPA',
-  'PET'
+  'PET',
+  'ISMA',
+  'IMBA',
+  'ASPROAMA'
 ]);
 
 /**
