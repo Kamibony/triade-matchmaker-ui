@@ -225,20 +225,35 @@ export function humanizeOrgName(rawName: string | null | undefined): string {
 
   let result = formatted.join(' ').replace(/\s*-\s*$/, '').trim();
 
+  const trimDanglingPrep = (str: string) =>
+    str.replace(/\s+(de|da|do|das|dos|e|em|a|ao|aos|para|com|no|na|nos|nas)$/i, '').trim();
+
   // Limite visual amigável para não parecer texto colado de banco de dados
   if (result.length > 58) {
     // Se tiver sigla após hífen (ex: "... - UBM"), tenta manter apenas a parte mais limpa
     const dashParts = result.split(' - ');
     if (dashParts.length >= 2 && dashParts[dashParts.length - 1].length <= 12) {
       const sigla = dashParts[dashParts.length - 1].trim();
-      const prefix = dashParts[0].slice(0, 44).replace(/\s+\S*$/, '').trim();
+      const prefix = trimDanglingPrep(dashParts[0].slice(0, 44).replace(/\s+\S*$/, '').trim());
       result = `${prefix} (${sigla})`;
     } else {
-      result = result.slice(0, 56).replace(/\s+\S*$/, '').trim();
+      result = trimDanglingPrep(result.slice(0, 56).replace(/\s+\S*$/, '').trim());
     }
   }
 
-  return result || 'sua organização';
+  return trimDanglingPrep(result) || 'sua organização';
+}
+
+export function getOrgArticle(orgName: string): 'do' | 'da' {
+  const firstWord = normalizeText(orgName).split(/\s+/)[0] || '';
+  if (
+    /^(instituto|centro|conselho|movimento|sindicato|grupo|projeto|forum|fundo|nucleo|coletivo|clube|observatorio|comite|espaco|programa|sistema|servicos|servico)$/.test(
+      firstWord
+    )
+  ) {
+    return 'do';
+  }
+  return 'da';
 }
 
 export function humanizeTemaLabel(tema?: string): string {
@@ -364,6 +379,7 @@ export function buildDiagnosticoOpenerMessage(
   lead: Pick<DiagnosticoCampaignLead, 'nome' | 'tema' | 'municipio' | 'uf' | 'variant'>
 ): string {
   const orgName = humanizeOrgName(lead?.nome);
+  const orgArt = getOrgArticle(orgName);
   const temaLabel = humanizeTemaLabel(lead?.tema);
   const municipio = (lead?.municipio || '').trim();
   const uf = (lead?.uf || '').trim().toUpperCase();
@@ -372,14 +388,14 @@ export function buildDiagnosticoOpenerMessage(
 
   if (lead?.variant === 'B') {
     return (
-      `Olá, pessoal da ${orgName}! Aqui é a Maria Angela, da Tríade Captação de Recursos (@triade_acr).\n\n` +
+      `Olá, pessoal ${orgArt} ${orgName}! Aqui é a Maria Angela, da Tríade Captação de Recursos (@triade_acr).\n\n` +
       `Vimos o trabalho de vocês${localMunicipio} com ${temaLabel} e temos editais abertos hoje compatíveis com a instituição.\n\n` +
       `Posso te mandar por aqui um diagnóstico gratuito (3 min) já com os editais abertos para vocês?`
     );
   }
 
   return (
-    `Olá, pessoal da ${orgName}! Tudo bem?\n\n` +
+    `Olá, pessoal ${orgArt} ${orgName}! Tudo bem?\n\n` +
     `Aqui é a Maria Angela, da Tríade Captação de Recursos (@triade_acr). Mapeamos editais abertos nesta semana para projetos de ${temaLabel}${regiao ? ` ${regiao}` : ''} e preparamos uma ferramenta gratuita (3 min) que mostra na hora quais editais combinam com a instituição de vocês.\n\n` +
     `Posso enviar o acesso por aqui? (Caso prefira não receber mensagens, é só responder NÃO.)`
   );
@@ -390,9 +406,10 @@ export function buildDiagnosticoLinkReplyMessage(
   baseUrl = DEFAULT_DIAGNOSTICO_BASE_URL
 ): string {
   const orgName = humanizeOrgName(lead?.nome);
+  const orgArt = getOrgArticle(orgName);
   const url = buildDiagnosticoUrl(lead, baseUrl);
   return (
-    `Prontinho! Aqui está o acesso gratuito do diagnóstico da ${orgName} (já preenchido):\n\n` +
+    `Prontinho! Aqui está o acesso gratuito do diagnóstico ${orgArt} ${orgName} (já preenchido):\n\n` +
     `${url}\n\n` +
     `É só abrir pelo celular — leva cerca de 3 minutos e o resultado com a nota (0 a 100), checklist documental e editais abertos compatíveis sai na hora.`
   );
@@ -453,7 +470,7 @@ export function classifyDiagnosticoReply(rawText: string | null | undefined): Di
 
   // 3. Detecção de robô / URA / resposta automática de WhatsApp Business
   if (
-    /\b(digite\s+\d|opcao invalida|protocolo|fatura|atendimento automatico|mensagem automatica|assistente virtual|fora do horario|horario de atendimento|obrigado por entrar em contato|agradecemos seu contato|agradecemos o contato|agradece seu contato|agradece o contato|em breve retornaremos|assim que possivel retornaremos|escolha uma opcao|menu principal)\b/i.test(
+    /\b(digite\s+\d|opcao invalida|protocolo|fatura|atendimento automatico|mensagem automatica|assistente virtual|fora do horario|horario de atendimento|obrigado por entrar em contato|agradecemos seu contato|agradecemos o contato|agradece seu contato|agradece o contato|agradecemos sua mensagem|agradecemos a mensagem|nao estamos disponiveis|responderemos assim que possivel|em breve retornaremos|assim que possivel retornaremos|escolha uma opcao|menu principal)\b/i.test(
       norm
     )
   ) {

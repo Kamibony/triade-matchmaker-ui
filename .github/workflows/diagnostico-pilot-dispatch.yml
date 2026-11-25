@@ -1,14 +1,13 @@
 name: Autodiagnóstico OSC — Disparo Piloto (SIM/NÃO)
 
 on:
-  schedule:
-    # Piloto Amazonas expandido (50 OSCs 100% Whapi-validadas: Qua 25/11 Lote 2 = 25 OSCs, Qui 26/11 Lote 3 = 25 OSCs)
-    # 4 ondas espaçadas por dia em horário comercial BRT (09:10, 11:10, 13:40, 16:10 BRT = 08:10–15:10 Manaus)
-    # Até 7 mensagens por onda + limite diário MAX_DAILY=25 (para automaticamente após 26/11)
-    - cron: '10 12 25,26 11 *'
-    - cron: '10 14 25,26 11 *'
-    - cron: '40 16 25,26 11 *'
-    - cron: '10 19 25,26 11 *'
+  # Schedule temporariamente pausado enquanto o canal Whapi (+55 83 9112-1544) está em status ERROR/banned.
+  # Reativar ou disparar manualmente via workflow_dispatch assim que o número/API oficial estiver ativo.
+  # schedule:
+  #   - cron: '10 12 25,26 11 *'
+  #   - cron: '10 14 25,26 11 *'
+  #   - cron: '40 16 25,26 11 *'
+  #   - cron: '10 19 25,26 11 *'
   workflow_dispatch:
     inputs:
       max_messages:

@@ -229,10 +229,10 @@ async function run() {
           sentAt: new Date().toISOString()
         });
 
-        // Fail-fast: se o canal Whapi perdeu autorização (QR/INIT), encerra imediatamente
-        if (/need channel authorization|unauthorized|not authorized/i.test(errMsg)) {
+        // Fail-fast: se o canal Whapi perdeu autorização (QR/INIT) ou foi bloqueado/banido, encerra imediatamente
+        if (/need channel authorization|unauthorized|not authorized|banned|disconnected|channel.*error/i.test(errMsg)) {
           await fs.writeFile(LOG_PATH, JSON.stringify(sentLog, null, 2) + '\n');
-          console.error('\n🛑 FAIL-FAST: Canal Whapi sem autorização. Encerrando onda imediatamente para evitar erros repetidos.');
+          console.error('\n🛑 FAIL-FAST: Canal Whapi sem autorização ou banido. Encerrando onda imediatamente para evitar erros repetidos.');
           abortedDueToAuth = true;
           break;
         }
