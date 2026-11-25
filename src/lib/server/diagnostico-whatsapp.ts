@@ -453,7 +453,7 @@ export function classifyDiagnosticoReply(rawText: string | null | undefined): Di
 
   // 3. Detecção de robô / URA / resposta automática de WhatsApp Business
   if (
-    /\b(digite\s+\d|opcao invalida|protocolo|fatura|atendimento automatico|mensagem automatica|assistente virtual|fora do horario|horario de atendimento|obrigado por entrar em contato|agradecemos seu contato|agradecemos o contato|em breve retornaremos|assim que possivel retornaremos|escolha uma opcao|menu principal)\b/i.test(
+    /\b(digite\s+\d|opcao invalida|protocolo|fatura|atendimento automatico|mensagem automatica|assistente virtual|fora do horario|horario de atendimento|obrigado por entrar em contato|agradecemos seu contato|agradecemos o contato|agradece seu contato|agradece o contato|em breve retornaremos|assim que possivel retornaremos|escolha uma opcao|menu principal)\b/i.test(
       norm
     )
   ) {
@@ -481,10 +481,14 @@ export function classifyDiagnosticoReply(rawText: string | null | undefined): Di
         norm
       ) &&
         norm.length <= 90) ||
-      (/^(ola|oi|bom dia|boa tarde|boa noite|tudo bem|tudo bom|tudo otimo)\b.*\b(sim|pode|claro|quero|gostaria|manda|mande|envia|envie|ok|por favor)\b/i.test(
+      (/\b(tenho interesse|temos interesse|estou interessad[oa]|estamos interessad[oa]s|gostaria de conhecer|gostariamos de conhecer|quero conhecer|queremos conhecer|gostaria de receber|gostaria de acessar|quero acessar|me envia|me manda|pode nos enviar|pode me enviar|pode me mandar)\b/i.test(
         norm
       ) &&
-        norm.length <= 100) ||
+        norm.length <= 180) ||
+      (/^(ola|oi|bom dia|boa tarde|boa noite|tudo bem|tudo bom|tudo otimo)\b.*\b(sim|pode|claro|quero|gostaria|manda|mande|envia|envie|ok|por favor|interesse)\b/i.test(
+        norm
+      ) &&
+        norm.length <= 140) ||
       raw.includes('👍') ||
       raw.includes('✅')
     ) {
