@@ -453,5 +453,19 @@
     "provider": "whapi",
     "messageId": "PsrEZ95UU0c3AwE-wFMFF2JMMKk",
     "sentAt": "2026-11-24T19:32:50.030Z"
+  },
+  {
+    "ref": "AM-24",
+    "lote": 2,
+    "variant": "A",
+    "cnpj": "28318849000127",
+    "nome": "ASSOCIACAO DE MULHERES VITORIA REGIA DO MUNICIPIO DE PARINTINS - AMAZONAS",
+    "phone": "559294363483",
+    "tema": "Mulheres",
+    "campanha_tag": "piloto_am_2026_11_vA",
+    "status": "sent",
+    "provider": "whapi",
+    "messageId": "Psrfo31hkGeEWsY-wAGCOIq3Ww",
+    "sentAt": "2026-11-25T13:55:00.061Z"
   }
 ]
