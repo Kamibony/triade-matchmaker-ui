@@ -477,10 +477,14 @@ export function classifyDiagnosticoReply(rawText: string | null | undefined): Di
         norm
       ) &&
         norm.length <= 60) ||
-      (/\b(pode mandar|pode enviar|pode sim|quero receber|quero sim|manda sim|envia sim|claro que sim|por favor pode)\b/i.test(
+      (/\b(sim|siim+|pode mandar|pode enviar|pode sim|quero receber|quero sim|manda sim|envia sim|claro que sim|por favor pode|com certeza)\b/i.test(
         norm
       ) &&
         norm.length <= 90) ||
+      (/^(ola|oi|bom dia|boa tarde|boa noite|tudo bem|tudo bom|tudo otimo)\b.*\b(sim|pode|claro|quero|gostaria|manda|mande|envia|envie|ok|por favor)\b/i.test(
+        norm
+      ) &&
+        norm.length <= 100) ||
       raw.includes('👍') ||
       raw.includes('✅')
     ) {
