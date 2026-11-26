@@ -401,6 +401,32 @@ export function buildDiagnosticoOpenerMessage(
   );
 }
 
+/**
+ * Gera os 3 parâmetros sanitizados para o Template oficial da Meta (diagnostico_edital_v1):
+ * {{1}} = "do/da <OrgName>"
+ * {{2}} = "em <Municipio>" ou "no Amazonas"
+ * {{3}} = "<temaLabel>"
+ */
+export function buildDiagnosticoMetaTemplateParams(
+  lead: Pick<DiagnosticoCampaignLead, 'nome' | 'tema' | 'municipio' | 'uf'>
+): [string, string, string] {
+  const sanitize = (v: string) =>
+    v
+      .replace(/[\r\n\t]+/g, ' ')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
+
+  const orgName = humanizeOrgName(lead?.nome);
+  const orgArt = getOrgArticle(orgName);
+  const temaLabel = humanizeTemaLabel(lead?.tema);
+  const municipio = (lead?.municipio || '').trim();
+  const uf = (lead?.uf || '').trim().toUpperCase();
+  const regiao = uf === 'AM' ? 'no Amazonas' : uf ? `em ${uf}` : 'no Brasil';
+  const localMunicipio = municipio ? `em ${municipio}` : regiao;
+
+  return [sanitize(`${orgArt} ${orgName}`), sanitize(localMunicipio), sanitize(temaLabel)];
+}
+
 export function buildDiagnosticoLinkReplyMessage(
   lead: Pick<DiagnosticoCampaignLead, 'cnpj' | 'nome' | 'origem' | 'campanha_tag' | 'ref'>,
   baseUrl = DEFAULT_DIAGNOSTICO_BASE_URL

@@ -1,4 +1,5 @@
 import { json } from '@sveltejs/kit';
+import { env } from '$env/dynamic/private';
 import {
   getBrasiliaTimeInfo,
   getActiveWhatsAppProvider,
@@ -6,7 +7,10 @@ import {
   buildTwoStepOpenerMessage,
   buildDiagnosticoOpenerMessage
 } from '$lib/server/whatsapp-gateway';
-import { registerRuntimeDiagnosticoLead } from '$lib/server/diagnostico-whatsapp';
+import {
+  registerRuntimeDiagnosticoLead,
+  buildDiagnosticoMetaTemplateParams
+} from '$lib/server/diagnostico-whatsapp';
 
 export async function GET() {
   const timeInfo = getBrasiliaTimeInfo();
@@ -32,6 +36,7 @@ export async function POST({ request }) {
       enforceBusinessHours = true,
       forceSendOutsideHours = false,
       validateBeforeSend,
+      metaTemplate,
       overrideConfig
     } = body;
 
@@ -73,9 +78,26 @@ export async function POST({ request }) {
       return json({ ok: false, error: 'Telefone ou texto da mensagem ausente.' }, { status: 400 });
     }
 
+    const activeProvider = getActiveWhatsAppProvider(overrideConfig);
+    const resolvedMetaTemplate =
+      metaTemplate ||
+      (isDiagnosticoMode && activeProvider === 'meta' && !message
+        ? {
+            name: (env.WHATSAPP_DIAGNOSTICO_TEMPLATE_NAME || 'diagnostico_edital_v1').trim(),
+            languageCode: (env.WHATSAPP_DIAGNOSTICO_TEMPLATE_LANG || 'pt_BR').trim(),
+            bodyParameters: buildDiagnosticoMetaTemplateParams({
+              nome: diagnosticoLead?.nome || lead?.osc?.nome || 'sua organização',
+              tema: diagnosticoLead?.tema,
+              municipio: diagnosticoLead?.municipio || lead?.osc?.municipio,
+              uf: diagnosticoLead?.uf || lead?.osc?.uf
+            })
+          }
+        : undefined);
+
     const result = await sendWhatsAppText(rawPhone, finalMessage, {
       simulateTypingMs: 3500,
       validateBeforeSend: typeof validateBeforeSend === 'boolean' ? validateBeforeSend : isDiagnosticoMode,
+      metaTemplate: resolvedMetaTemplate,
       overrideConfig
     });
 

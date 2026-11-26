@@ -215,10 +215,10 @@ export function resolveGatewayConfig(override?: GatewayOverrideConfig) {
     return { provider: 'simulation' as WhatsAppProvider, apiUrl: '', apiToken: '', instanceId };
   }
 
-  if (rawProvider === 'whapi' || apiUrl.includes('whapi.cloud') || (!apiUrl && apiToken.length >= 20)) {
+  if (rawProvider === 'meta' || apiUrl.includes('graph.facebook.com')) {
     return {
-      provider: 'whapi' as WhatsAppProvider,
-      apiUrl: apiUrl || 'https://gate.whapi.cloud',
+      provider: 'meta' as WhatsAppProvider,
+      apiUrl: apiUrl || 'https://graph.facebook.com/v22.0',
       apiToken,
       instanceId
     };
@@ -232,8 +232,13 @@ export function resolveGatewayConfig(override?: GatewayOverrideConfig) {
     return { provider: 'greenapi' as WhatsAppProvider, apiUrl, apiToken, instanceId };
   }
 
-  if (rawProvider === 'meta' || apiUrl.includes('graph.facebook.com')) {
-    return { provider: 'meta' as WhatsAppProvider, apiUrl, apiToken, instanceId };
+  if (rawProvider === 'whapi' || apiUrl.includes('whapi.cloud') || (!apiUrl && apiToken.length >= 20)) {
+    return {
+      provider: 'whapi' as WhatsAppProvider,
+      apiUrl: apiUrl || 'https://gate.whapi.cloud',
+      apiToken,
+      instanceId
+    };
   }
 
   if (apiUrl) {
@@ -247,6 +252,12 @@ export function getActiveWhatsAppProvider(override?: GatewayOverrideConfig): Wha
   return resolveGatewayConfig(override).provider;
 }
 
+export interface MetaTemplatePayload {
+  name: string;
+  languageCode?: string;
+  bodyParameters?: string[];
+}
+
 export async function sendWhatsAppText(
   rawPhone: string,
   text: string,
@@ -255,6 +266,7 @@ export async function sendWhatsAppText(
     overrideConfig?: GatewayOverrideConfig;
     bypassOptOutCheck?: boolean;
     validateBeforeSend?: boolean;
+    metaTemplate?: MetaTemplatePayload;
   } = {}
 ): Promise<SendWhatsAppResult> {
   const phone = normalizeBrazilPhone(rawPhone);
@@ -460,19 +472,45 @@ export async function sendWhatsAppText(
     }
 
     if (provider === 'meta') {
+      const metaBody = options.metaTemplate
+        ? {
+            messaging_product: 'whatsapp',
+            recipient_type: 'individual',
+            to: phone,
+            type: 'template',
+            template: {
+              name: options.metaTemplate.name,
+              language: { code: options.metaTemplate.languageCode || 'pt_BR' },
+              ...(options.metaTemplate.bodyParameters?.length
+                ? {
+                    components: [
+                      {
+                        type: 'body',
+                        parameters: options.metaTemplate.bodyParameters.map((p) => ({
+                          type: 'text',
+                          text: p
+                        }))
+                      }
+                    ]
+                  }
+                : {})
+            }
+          }
+        : {
+            messaging_product: 'whatsapp',
+            recipient_type: 'individual',
+            to: phone,
+            type: 'text',
+            text: { preview_url: false, body: text }
+          };
+
       const res = await fetch(`${apiUrl}/${instanceId}/messages`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${apiToken}`
         },
-        body: JSON.stringify({
-          messaging_product: 'whatsapp',
-          recipient_type: 'individual',
-          to: phone,
-          type: 'text',
-          text: { preview_url: false, body: text }
-        })
+        body: JSON.stringify(metaBody)
       });
 
       const data = await res.json().catch(() => ({}));

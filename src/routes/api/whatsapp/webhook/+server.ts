@@ -419,7 +419,16 @@ function extractIncomingPayload(body: any): {
     const msg = metaChange.messages[0];
     const sharedContacts = Array.isArray(msg.contacts) ? parseSharedContacts(msg.contacts) : [];
     const contactSummary = formatSharedContactsSummary(sharedContacts);
-    let text: string | null = msg.text?.body || msg.image?.caption || msg.document?.caption || null;
+    let text: string | null =
+      msg.text?.body ||
+      msg.button?.text ||
+      msg.button?.payload ||
+      msg.interactive?.button_reply?.title ||
+      msg.interactive?.button_reply?.id ||
+      msg.interactive?.list_reply?.title ||
+      msg.image?.caption ||
+      msg.document?.caption ||
+      null;
     let mediaType: ExtractedMediaType = text ? 'text' : null;
     if (contactSummary) {
       text = contactSummary;
