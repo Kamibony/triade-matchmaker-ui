@@ -108,6 +108,7 @@ function normalizeCnpj(raw: string | null | undefined): string {
 
 function humanizeOrgName(rawName: string | null | undefined): string {
   let clean = String(rawName || '')
+    .replace(/([A-Za-zÀ-ÿ])-([A-Za-zÀ-ÿ])/g, '$1 - $2')
     .replace(/\s+/g, ' ')
     .replace(/\s*-\s*$/g, '')
     .trim();
