@@ -143,7 +143,10 @@ const PT_ACCENT_MAP: Record<string, string> = {
   jose: 'José',
   colonia: 'Colônia',
   maues: 'Maués',
-  celia: 'Célia'
+  celia: 'Célia',
+  tomas: 'Tomás',
+  vitorias: 'Vitórias',
+  familias: 'Famílias'
 };
 
 const KNOWN_ACRONYMS = new Set([
@@ -176,7 +179,12 @@ const KNOWN_ACRONYMS = new Set([
   'ISNB',
   'APRA',
   'CMULHER',
-  'COLPESCA'
+  'COLPESCA',
+  'ITV',
+  'IBEN',
+  'IDE',
+  'IFAMTS',
+  'IASJUSMAF'
 ]);
 
 /**

@@ -1,0 +1,60 @@
+name: Autodiagnóstico OSC — Disparo Lote 5 (Sábado 28/11 10:00 BRT)
+
+on:
+  # Execução única agendada para Sábado, 28/11 às 10:00 BRT (13:00 UTC)
+  schedule:
+    - cron: '0 13 28 11 *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Modo simulação (não envia mensagens reais)?'
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: diagnostico-pilot-dispatch
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  dispatch-lote5:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Diagnostico Lote 5 (20 OSCs — R$ 6,43)
+        env:
+          MAX_MESSAGES: '20'
+          MAX_DAILY: '20'
+          TARGET_LOTE: '5'
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          FORCE_SEND: 'true'
+        run: npx tsx scripts/diagnostico-pilot-dispatcher.ts
+
+      - name: Commit Diagnostico Sent Log
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/diagnostico_sent_log.json
+          if git diff --staged --quiet; then
+            echo "No diagnostico sent log changes to commit"
+          else
+            git commit -m "chore(diagnostico): update sent log after Lote 5 [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
