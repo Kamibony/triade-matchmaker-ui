@@ -6807,17 +6807,16 @@
       "data_fim": "2026-09-10"
     },
     "public_url": "https://prosas.com.br/editais/17421",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/sR7S4DOKFUxG7dqikjCTzPNpinuqw_V1ohg1rSRHy6BntQIvIFns1Tc4Qvl8ifL9/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/865/352/original/Edital_-_Linha_INDUCAO_CINEMATOGRAFICA.docx.pdf",
-    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/EPAb5SJeE9PBVI9U_QxkkxQcNb3462_fzpb24AA6cW0nRwd8z1AkZeXShuNHN6Pl/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/865/352/original/Edital_-_Linha_INDUCAO_CINEMATOGRAFICA.docx.pdf",
+    "full_text": "Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços,",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17421",
-      "resumo_objetivo": "Seleção e autorização de projetos de produção audiovisual para captação de recursos via incentivo fiscal do ICMS Cultural da Paraíba, destinados à coparticipação em obras audiovisuais com execução de etapas no estado e contratação de mão de obra local.",
+      "resumo_objetivo": "Seleção e autorização de projetos de produção audiovisual para captação de recursos via ICMS Cultural da Paraíba, visando à coparticipação em obras audiovisuais com execução de etapas no estado e contratação de mão de obra local.",
       "temas_principais": [
-        "cultura",
         "audiovisual",
-        "cinema",
-        "economia criativa"
+        "cultura",
+        "cinema"
       ],
       "prazo_de_inscricao": "2026-09-10",
       "criterios_eliminatorios": {
@@ -6836,16 +6835,15 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Cadastro na ANCINE com sede há mais de 02 (dois) anos",
-          "Apresentação de Carta de Compromisso de Incentivo (CCI) correspondente ao valor pretendido",
-          "Execução de etapas da produção no Estado da Paraíba com contratação de mão de obra local",
-          "O valor solicitado deve corresponder até 25% do valor total já captado ou com comprovação de captação prévia"
+          "Cadastro na ANCINE com sede há mais de 02 anos",
+          "Apresentação de Carta de Compromisso de Incentivo (CCI) correspondente ao total pretendido",
+          "Comprovação de captação prévia de recursos ou financiamento"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1_q8HIQA8A0I0WkvuiW-YYM6XtFPrax5r/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-23"
+    "archived_at": "2026-11-28"
   },
   {
     "id": "16668",
@@ -6854,18 +6852,17 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=16668",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/k6zAvjFjRiho-4xTlqOUoTGUSjGrI5HFLp3Q_Ke85VNNwdvAsnA-NRgzc4mWJPHT/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/478/526/original/06112025_1761691278503DUP_Chamada27.2025CFBBA.pdf",
-    "full_text": "Ajuda Programa de apoio ao Centro Franco-Brasileiro de Biodiversidade Amazônica © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Us",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/23uFbvhXwsbd-lny-yN71Wk-UANgpUXecwK5TONiHrK3e2wFNKBAh8nibSkEkuAp/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/478/526/original/06112025_1761691278503DUP_Chamada27.2025CFBBA.pdf",
+    "full_text": "Programa de apoio ao Centro Franco-Brasileiro de Biodiversidade Amazônica © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Ter",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "16668",
-      "resumo_objetivo": "Selecionar projetos conjuntos de pesquisa entre grupos brasileiros e franceses para fomentar o desenvolvimento científico, tecnológico e a inovação com foco no Centro Franco-Brasileiro de Biodiversidade Amazônica (CFBBA).",
+      "resumo_objetivo": "Selecionar projetos conjuntos de pesquisa entre grupos brasileiros e franceses que visem contribuir para o desenvolvimento científico, tecnológico e a inovação na região amazônica.",
       "temas_principais": [
-        "biodiversidade",
-        "amazônia",
-        "ciência e tecnologia",
-        "povos indígenas",
-        "saúde humana",
+        "biodiversidade amazônica",
+        "povos indígenas e comunidades locais",
+        "mudanças ambientais",
+        "saúde humana e alimentação",
         "bioeconomia"
       ],
       "prazo_de_inscricao": "2026-02-20",
@@ -6882,7 +6879,7 @@
         "natureza_juridica_excluida": []
       },
       "financeiro": {
-        "valor_maximo_ou_global_reais": 2814825,
+        "valor_maximo_ou_global_reais": 400000,
         "exige_contrapartida": true
       },
       "burocracia_e_documentos": {
@@ -6890,15 +6887,17 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "O coordenador brasileiro deve possuir título de doutor e vínculo celetista ou estatutário com instituição sediada no Amapá, Amazonas, Pará ou Roraima",
-          "O projeto deve incluir um documento obrigatório em inglês em formato PDF OCR limitado a 1 Mb",
-          "Todas as instituições de pesquisa envolvidas devem estar previamente cadastradas no Diretório de Instituições do CNPq"
+          "Coordenador brasileiro deve possuir título de doutor",
+          "Vínculo com instituição de execução sediada no Amapá, Amazonas, Pará ou Roraima",
+          "Currículo Lattes atualizado do proponente e equipe",
+          "Instituições envolvidas cadastradas no Diretório de Instituições do CNPq",
+          "Envio de documento em inglês de até 1 Mb contendo o plano de pesquisa e itens correlatos"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1Iax3BqqI9XJd3SJUpixdtSHreJ_G5IH9/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-23"
+    "archived_at": "2026-11-28"
   },
   {
     "id": "16705",
@@ -6908,15 +6907,16 @@
       "valor_total": 158214
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=16705",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/NJyZmIG_HmA-BmkGa8tnv_19oxV44TWkbTFk8AL0z97Y2cdKLInjZjmo27iUwacT/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/488/552/original/DOM_-_CHAMAMENTO_PUBLICO_01_2025.pdf",
-    "full_text": "Ajuda Edital Pontos de Cultura © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o nosso DPO",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/W_aKepA7-kbLghUIxkTsml6mHyJj6MfIXTYx7MC-12gSq0m7sHq0KcI-KhQnQ4Cx/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/488/552/original/DOM_-_CHAMAMENTO_PUBLICO_01_2025.pdf",
+    "full_text": "Edital Pontos de Cultura © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Termos de Uso e Políticas de Privacidade Fale com o ",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "16705",
-      "resumo_objetivo": "Premiação e certificação da Rede Municipal de Pontos de Cultura de Araripina/PE, viabilizada com recursos da Política Nacional Aldir Blanc (PNAB). O edital visa reconhecer iniciativas culturais locais já realizadas por entidades e coletivos com ou sem CNPJ.",
+      "resumo_objetivo": "O edital tem por objeto a premiação de projetos, iniciativas, atividades ou ações de Pontos e Pontões de Cultura, nos termos da Política Nacional de Cultura Viva, visando reconhecer a contribuição de entidades e coletivos culturais locais.",
       "temas_principais": [
         "cultura",
         "cultura viva",
+        "pontos de cultura",
         "patrimônio cultural",
         "culturas populares e tradicionais"
       ],
@@ -6932,9 +6932,14 @@
         ],
         "natureza_juridica_excluida": [
           "fins lucrativos",
-          "instituições de ensino e pesquisa",
-          "instituições do Sistema S",
-          "partidos políticos"
+          "instituições de ensino, pesquisa e desenvolvimento institucional",
+          "entidades vinculadas a equipamentos públicos",
+          "fundações e institutos criados ou mantidos por empresas",
+          "sistema S",
+          "partidos políticos",
+          "órgãos públicos",
+          "microempreendedores individuais (MEI)",
+          "pessoas físicas menores de 18 anos"
         ]
       },
       "financeiro": {
@@ -6948,13 +6953,15 @@
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
           "Comprovar no mínimo 2 anos de desenvolvimento de atividades culturais na comunidade local",
-          "Pontos ou coletivos não certificados devem obter pontuação mínima de 50 pontos nos critérios de avaliação"
+          "Obter pontuação mínima de 50 pontos na Etapa de Seleção para pré-certificação",
+          "Apresentar portfólio e material de comprovação das atividades culturais",
+          "Para coletivos informais, apresentar declaração de representação assinada por todos os membros"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1osc8FPLqruV49CKANNfz8oUBYy7K5oqu/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-23"
+    "archived_at": "2026-11-28"
   },
   {
     "id": "17064",
@@ -6963,12 +6970,12 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17064",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/e8jxVYIaiA3rhc18NTpFDxkCDSchSV3al-a_WFhl1SdUV8vMJ4mOf-EpIGIklXPl/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/580/633/original/Edital_patrocinio_carnaval_26.pdf",
-    "full_text": "Ajuda EDITAL DE CHAMAMENTO PÚBLICO Nº 013 – SMT/2025 CAPTAÇÃO DE PATROCÍNIO PARA REALIZAÇÃO DO CARNAVAL 2026 DE POÇOS DE CALDAS © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/b1RwM2XiZeUxz_tE1zPPqey3BzwUADIaijpwYRugVwmJlwAlJRkxWkkeo6sgNSiv/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/580/633/original/Edital_patrocinio_carnaval_26.pdf",
+    "full_text": "EDITAL DE CHAMAMENTO PÚBLICO Nº 013 – SMT/2025 CAPTAÇÃO DE PATROCÍNIO PARA REALIZAÇÃO DO CARNAVAL 2026 DE POÇOS DE CALDAS © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suport",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17064",
-      "resumo_objetivo": "Captação de patrocínio de empresas privadas com CNPJ no Município para a realização do evento Carnaval 2026 de Poços de Caldas.",
+      "resumo_objetivo": "Captação de patrocínio de empresas privadas com CNPJ no município para a realização do Carnaval 2026 de Poços de Caldas, por meio de cotas de fornecimento de bens e serviços.",
       "temas_principais": [
         "cultura",
         "turismo",
@@ -6985,7 +6992,9 @@
         "municipios_permitidos": [
           "Poços de Caldas - MG"
         ],
-        "natureza_juridica_excluida": []
+        "natureza_juridica_excluida": [
+          "fins lucrativos"
+        ]
       },
       "financeiro": {
         "valor_maximo_ou_global_reais": 6000,
@@ -6997,13 +7006,15 @@
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
           "Empresas privadas com CNPJ no Município de Poços de Caldas",
-          "Apresentação de proposta de patrocínio e documentos de habilitação em envelope lacrado"
+          "Apresentação de documentos pessoais do representante legal (RG e CPF)",
+          "Ato constitutivo, estatuto ou contrato social em vigor",
+          "Certidão Negativa de Débitos Trabalhistas e Fiscais"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1e_BFxqsnIPFXQSyrO5jZ5gus0cXl-GGb/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-23"
+    "archived_at": "2026-11-28"
   },
   {
     "id": "17689",
@@ -7013,17 +7024,17 @@
       "valor_total": 40000
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17689",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/Y363uLMBOE6PV7CrYQd8NAlZidNdiUz9gs1vYau_RUM2hPbL869_CGkaNr4308vN/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/725/673/original/5436.pdf",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/Ei4kbwz0sLRIp6PkqIS2DVgxjoegIQxTOFyLi8AcCLLFYD5Fp9l0CtgR2xzsEmaM/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/725/673/original/5436.pdf",
     "full_text": "Edital de Convocação nº 01/2026 para credenciamento de instituições interessadas em receber recursos oriundos de Penas Pecuniárias © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Pros",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17689",
-      "resumo_objetivo": "Aquisição de gêneros alimentícios da agricultura familiar e do empreendedor familiar rural para a alimentação escolar da rede pública municipal de Campo Novo do Parecis - MT. O objetivo é atender às escolas municipais e indígenas durante o ano letivo de 2026, com base no Programa Nacional de Alimentação Escolar (PNAE).",
+      "resumo_objetivo": "Aquisição de produtos da agricultura familiar e empreendedor familiar rural para alimentação escolar na Rede Pública Municipal de Campo Novo do Parecis.",
       "temas_principais": [
         "agricultura familiar",
         "alimentação escolar",
-        "educação",
-        "merenda"
+        "merenda",
+        "educação"
       ],
       "prazo_de_inscricao": "2026-02-10",
       "criterios_eliminatorios": {
@@ -7048,15 +7059,14 @@
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
           "Apresentação de DAP ou CAF atualizada dos últimos 60 dias",
-          "Apresentação de Projeto de Venda de Gêneros Alimentícios",
-          "Documentação comprobatória de Serviço de Inspeção para produtos de origem animal",
-          "Declaração de que os gêneros alimentícios são de produção própria"
+          "Projeto de Venda de Gêneros Alimentícios da Agricultura Familiar",
+          "Documentação comprobatória de Serviço de Inspeção para produtos de origem animal"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1dU5nrk_bVUwW5Y7gW9RYoOsnWsOHrkEh/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-26"
+    "archived_at": "2026-11-28"
   },
   {
     "id": "17385",
@@ -7066,19 +7076,17 @@
       "valor_total": 1229514.29
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17385",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/jecKvDO_ahkxQ51vxdeQ_xBuKthWwGJWWR1XmkAfrFUmU-bJYLGrFghn5vWvFLBq/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/655/114/original/edital-de-chamamento-publico-no-01_2026.pdf",
-    "full_text": "Ajuda Cultura Vicentina: Edital PNAB São Vicente 01/2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privac",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/_hV3VmEIjJnaEOWxWmC12sdoI6aXrqazsgnp2gEj5y35INHAauHxRA5admL8s4ZG/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/655/114/original/edital-de-chamamento-publico-no-01_2026.pdf",
+    "full_text": "Cultura Vicentina: Edital PNAB São Vicente 01/2026 © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Termos de Uso e Políticas ",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17385",
-      "resumo_objetivo": "Seleção de projetos culturais para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB) no município de São Vicente.",
+      "resumo_objetivo": "O edital seleciona projetos culturais para fortalecer o cenário artístico local e promover a democratização do acesso à cultura no município de São Vicente, com recursos da Política Nacional Aldir Blanc (PNAB).",
       "temas_principais": [
         "cultura",
         "arte",
         "patrimônio",
-        "artes cênicas",
-        "audiovisual",
-        "música"
+        "democratização do acesso"
       ],
       "prazo_de_inscricao": "2026-03-08",
       "criterios_eliminatorios": {
@@ -7104,14 +7112,14 @@
         "exigencias_especificas_adicionais": [
           "Residir no município de São Vicente há pelo menos 2 anos",
           "Apresentar certidão negativa de débitos relativos a créditos tributários federais e Dívida Ativa da União",
-          "Apresentar certidões negativas de débitos relativas aos créditos tributários estaduais e municipais de São Vicente",
+          "Apresentar certidões negativas de débitos estaduais e municipais de São Vicente",
           "Apresentar certidão negativa de débitos trabalhistas (CNDT)"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/13B0lvdNneXo34JLUpdOvQaT3VFHMclUM/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-23"
+    "archived_at": "2026-11-28"
   },
   {
     "id": "17401",
@@ -7171,17 +7179,17 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17459",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/r62YjTPda-p365p59bwLHaj-EDjVv-9DzCak7xHPji3YGSahpTU1sxpkskFsHn74/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/677/466/original/Chamamento_publico_02_2026.pdf",
-    "full_text": "Ajuda Ocupação da Biblioteca Pública Municipal Josué Guimarães © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de ",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VMy1Wodwo8iwu6nFgQHyNIxgcW_n_9-qa0HV46qTeEOSMpVqUK75AX2-VO3QS2Rn/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/677/466/original/Chamamento_publico_02_2026.pdf",
+    "full_text": "Ocupação da Biblioteca Pública Municipal Josué Guimarães © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Termos de Uso e Polí",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17459",
-      "resumo_objetivo": "Selecionar propostas culturais para o uso dos espaços da Biblioteca Pública Municipal Josué Guimarães ao longo de 2026, visando a realização de 18 eventos como cursos, oficinas, lançamentos de livros e contações de histórias.",
+      "resumo_objetivo": "Selecionar propostas para o uso do espaço da Biblioteca Pública Municipal Josué Guimarães em Porto Alegre durante o ano de 2026, visando a realização de 18 eventos culturais como cursos, oficinas, lançamentos de livros e contações de histórias.",
       "temas_principais": [
         "cultura",
         "literatura",
         "educação",
-        "desenvolvimento sustentável"
+        "eventos culturais"
       ],
       "prazo_de_inscricao": "2026-04-03",
       "criterios_eliminatorios": {
@@ -7213,7 +7221,7 @@
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1UVh3VHuA2uFMOKKLj5xlGEDTMdjeZvqG/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-23"
+    "archived_at": "2026-11-28"
   },
   {
     "id": "17535",
@@ -7222,17 +7230,17 @@
       "e_central?": true
     },
     "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=17535",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/sKSy2Ip66_j0CbMNiwn8E35tU0YNko0UvNcq0kE_7FLOOa7ETiVVfbJqIaIHUgE6/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/696/911/original/Edital_Fapes_07.2026_-_Espacos_Cientificos_Culturais-ECCs_-_Assinado.pdf",
-    "full_text": "Ajuda Edital para Implantação, Estruturação, Modernização, Manutenção e Expansão de Espaços Científico-Culturais © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trab",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/Xr-aftsKulWN4601iI08oZyR7puuC42DymNVp2JF8kPSiE-LEoRLzNs75g2sab-3/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/696/911/original/Edital_Fapes_07.2026_-_Espacos_Cientificos_Culturais-ECCs_-_Assinado.pdf",
+    "full_text": "Edital para Implantação, Estruturação, Modernização, Manutenção e Expansão de Espaços Científico-Culturais © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Iníc",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "17535",
-      "resumo_objetivo": "Apoiar a implantação, estruturação, modernização, manutenção e expansão de Espaços Científico-Culturais (ECCs) no estado do Espírito Santo para promover a popularização da ciência, tecnologia e inovação.",
+      "resumo_objetivo": "Apoiar a implantação, estruturação, modernização, manutenção e expansão de Espaços Científico-Culturais (ECCs) no estado do Espírito Santo, promovendo a popularização da ciência, tecnologia e inovação.",
       "temas_principais": [
         "ciência",
         "tecnologia",
-        "inovação",
         "cultura",
+        "inovação",
         "educação ambiental",
         "sustentabilidade",
         "cidadania"
@@ -7246,27 +7254,27 @@
         ],
         "municipios_permitidos": [],
         "natureza_juridica_excluida": [
-          "com fins lucrativos"
+          "fins lucrativos"
         ]
       },
       "financeiro": {
         "valor_maximo_ou_global_reais": 2100000,
-        "exige_contrapartida": true
+        "exige_contrapartida": false
       },
       "burocracia_e_documentos": {
         "exige_cnd": true,
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Titulação mínima de graduação e vínculo estatutário ou celetista com IES/P pública ou privada sem fins lucrativos sediada no ES",
+          "Exige vínculo celetista ou estatutário do coordenador com Instituição de Ensino Superior e/ou Pesquisa pública ou privada sem fins lucrativos sediada no ES",
           "Currículo Lattes atualizado há menos de 6 meses",
-          "Apresentação de declaração de disponibilidade do local ou edificação (Categoria I - exceto Vitória) ou declaração de ECC existente (Categoria II)"
+          "Para Categoria I (Implantação de novo ECC), o local não pode ser na capital Vitória"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/16Dktle76KcRsJorQNhkQhRf5t8SoOiAy/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-23"
+    "archived_at": "2026-11-28"
   },
   {
     "id": "17542",
@@ -7372,26 +7380,30 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/14962",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/706/022/original/Credenciamento_007_-_CORO.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261123%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261123T103816Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=cde2bf17830372a9503ea6e2aa2917d74887d9b5a8305e3bbf91a34adb852b44",
-    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar noss",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/706/022/original/Credenciamento_007_-_CORO.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261128%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261128T100154Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=80a730c33c4a76798438a9d834bba567e6b622fdcd3e9d67e7d5f90ca5f2565d",
+    "full_text": "Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "14962",
-      "resumo_objetivo": "Credenciamento de propostas para projetos de formação livre em artes para o Coro Sinfônico de São José dos Campos, selecionando profissionais como pianista, monitores de técnica vocal e monitor de teoria e percepção musical.",
+      "resumo_objetivo": "Credenciamento de propostas para contratação de profissionais e prestadores de serviços para o projeto Coro Sinfônico de São José dos Campos da Fundação Cultural Cassiano Ricardo.",
       "temas_principais": [
         "cultura",
         "música",
         "canto coral",
-        "educação"
+        "formação artística"
       ],
-      "prazo_de_inscricao": "2024-11-05",
+      "prazo_de_inscricao": "2024-09-27",
       "criterios_eliminatorios": {
         "idade_minima_cnpj_anos": null,
-        "abrangencia_nacional": true,
-        "estados_permitidos": [],
-        "municipios_permitidos": [],
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "São José dos Campos - SP"
+        ],
         "natureza_juridica_excluida": [
-          "fins lucrativos incompatíveis"
+          "fins lucrativos"
         ]
       },
       "financeiro": {
@@ -7403,16 +7415,15 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Idade mínima de 18 anos completos na data de inscrição para o prestador de serviços",
-          "Apresentação de atestado de capacidade técnica",
-          "Envio de link de vídeo no YouTube com demonstração artística de 3 a 5 minutos",
-          "Certidão da Fazenda Municipal de São José dos Campos obrigatória apenas para empresas sediadas no município"
+          "Todos os prestadores de serviço inscritos deverão ter, obrigatoriamente, 18 anos completos, na data de inscrição da proposta.",
+          "Apresentação de atestado de capacidade técnica emitido por pessoa jurídica.",
+          "Envio de link de vídeo em canal do Youtube com gravação de 3 a 5 minutos com demonstração artística de técnica de canto solo ou piano solo."
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/16KLjN-O_p2fcEQGg0iVg5uSO9fNhKNhf/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-23"
+    "archived_at": "2026-11-28"
   },
   {
     "id": "14964",
@@ -7421,17 +7432,18 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/14964",
-    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/706/138/original/Credenciamento_009_-_TAP.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261123%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261123T103815Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9442b53c3f3bfe1a88e1b1db813048e69935ef0d25a5fe523431fbae2408806f",
-    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar noss",
+    "pdf_link": "https://prosas-prod-files.s3.sa-east-1.amazonaws.com/arquivos/arquivos/003/706/138/original/Credenciamento_009_-_TAP.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUS3M5UKOOGXP27N7%2F20261128%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261128T100153Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8bae066c7024f0c246ad45107879d500a11a24281c2400b6f21fd65cc1f7aac7",
+    "full_text": "Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Mídia Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "14964",
-      "resumo_objetivo": "Credenciamento de propostas para projetos de formação livre em artes, especificamente sapateado americano para o projeto Tap da Longevidade voltado para maiores de 45 anos.",
+      "resumo_objetivo": "Credenciamento de propostas para projetos de formação livre em artes, especificamente aulas de sapateado americano e curadoria para o projeto TAP da Longevidade voltado para maiores de 45 anos, promovido pela Fundação Cultural Cassiano Ricardo.",
       "temas_principais": [
         "cultura",
         "arte",
         "dança",
-        "educação"
+        "educação",
+        "idosos"
       ],
       "prazo_de_inscricao": "2024-09-27",
       "criterios_eliminatorios": {
@@ -7439,7 +7451,9 @@
         "abrangencia_nacional": true,
         "estados_permitidos": [],
         "municipios_permitidos": [],
-        "natureza_juridica_excluida": []
+        "natureza_juridica_excluida": [
+          "fins lucrativos incompatíveis com o objeto social"
+        ]
       },
       "financeiro": {
         "valor_maximo_ou_global_reais": 100,
@@ -7450,15 +7464,15 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Atestado de capacidade técnica emitido por pessoa jurídica",
-          "Link em vídeo no YouTube demonstrando técnica artística e plano de aula",
-          "Certidão de regularidade da Fazenda do Município de São José dos Campos obrigatória apenas para empresas sediadas no município"
+          "Todos os prestadores de serviço inscritos deverão ter, obrigatoriamente, 18 anos completos na data de inscrição.",
+          "Apresentação de atestado de capacidade técnica emitido por pessoa jurídica.",
+          "Envio de link em vídeo no YouTube com demonstração artística da técnica e plano de aula adequado a partir de 45 anos."
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1hztIsnEbgRdtfqcAYVFJyCmJZctaPa2K/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-23"
+    "archived_at": "2026-11-28"
   },
   {
     "id": "14963",
@@ -8092,12 +8106,12 @@
       "e_central?": false
     },
     "public_url": "https://prosas.com.br/editais/18194",
-    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/ubNJ8hDIc_ZwCVc9bsJSbzolWJBHsNkEAtR556qpDMu8Q2A38R8DWRPVykddY-eE/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/881/396/original/EDITAL_PROFESSORES_OFICINEIROS_CIRCO_DO_POVO.pdf",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/UUyGRhGkIQDw9Vr2-GDuwU_UfAE5RcsbFuCYft22pyVJekP7TWuKvz-nLV-vSSR0/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/004/881/396/original/EDITAL_PROFESSORES_OFICINEIROS_CIRCO_DO_POVO.pdf",
     "full_text": "Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços,",
     "pipeline_status": "COMPLETED",
     "deep_metadata": {
       "edital_id": "18194",
-      "resumo_objetivo": "Credenciamento de professores e oficineiros (pessoas jurídicas MEI/ME/EPP) para atuação remunerada no projeto Circo do Povo, com o objetivo de difundir e valorizar a cultura no município de Uberaba.",
+      "resumo_objetivo": "Credenciamento de professores e oficineiros (pessoas jurídicas MEI/ME e EPP) para atuação remunerada no projeto Circo do Povo da Fundação Cultural de Uberaba.",
       "temas_principais": [
         "cultura",
         "arte circense",
@@ -8112,7 +8126,8 @@
         "municipios_permitidos": [],
         "natureza_juridica_excluida": [
           "pessoa física",
-          "cooperativa de serviço e/ou trabalho",
+          "cooperativa de serviço",
+          "cooperativa de trabalho",
           "consórcio",
           "empresa estrangeira que não funcione no País"
         ]
@@ -8126,16 +8141,18 @@
         "exige_balanco_patrimonial": false,
         "exige_cebas": false,
         "exigencias_especificas_adicionais": [
-          "Exclusivo para pessoas jurídicas MEI, ME ou EPP",
-          "Exige comprovação de regularidade fiscal federal, estadual, municipal, FGTS e trabalhista",
-          "Apresentação de declaração de inexistência de impedimento legal",
-          "Apresentação de declaração de inexistência de mão de obra infantil"
+          "Exclusivo para pessoas jurídicas MEI, ME e EPP com CNAE correlato",
+          "Exige apresentação de Certidão Conjunta de Regularidade de Débitos Federais e Dívida Ativa da União",
+          "Exige Certidão de Regularidade de Débitos Estaduais",
+          "Exige Certidão de Regularidade de Débitos Municipais",
+          "Exige Certificado de Regularidade do FGTS",
+          "Exige Certidão Negativa de Débitos Trabalhostas (CNDT)"
         ]
       },
       "fonte_dados": "pdf",
       "drive_pdf_link": "https://drive.google.com/file/d/1sbDT5q7oElxisGz9DveEjRkxsnZfC-OU/view?usp=drivesdk"
     },
-    "archived_at": "2026-11-26"
+    "archived_at": "2026-11-28"
   },
   {
     "id": "15288",
@@ -21249,5 +21266,2867 @@
     },
     "drive_backfill_attempted": true,
     "archived_at": "2026-11-26"
+  },
+  {
+    "id": "fund_30cd327da0",
+    "source_portal": "Fundações (Brave)",
+    "attributes": {
+      "nome": "Editais para projetos educacionais em 2026 · Capitaai",
+      "patrocinador": "capitaai.com.br",
+      "locais": [
+        {
+          "abrangencia": "Nacional"
+        }
+      ],
+      "areas_interesse": [
+        "Investimento Social Privado / Fundação"
+      ]
+    },
+    "public_url": "https://capitaai.com.br/editais-abertos/educacao",
+    "full_text": "Editais para projetos educacionais em 2026 · Capitaai\nURL: https://capitaai.com.br/editais-abertos/educacao\nEditais para projetos educacionais em 2026 · Capitaai Início / Editais abertos Editais abertos para projetos educacionais em 2026 Há 49 editais abertos para projetos educacionais no Brasil, somando mais de R$ 125,3 mi em recursos. O próximo prazo fecha em 27/11/2026. Levantamento do Capitaai em 25 de novembro de 2026, apurado todo dia a partir de mais de 40 fontes oficiais. A lista abaixo traz o valor, o prazo e quem pode se candidatar em cada um. 49 editais abertos R$ 125,3 mi em recurs",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "fund_30cd327da0",
+      "resumo_objetivo": "Levantamento consolidado pelo Capitaai de editais abertos para projetos educacionais no Brasil, somando recursos para diversas iniciativas de fomento à educação, pesquisa e desenvolvimento.",
+      "temas_principais": [
+        "educação",
+        "pesquisa",
+        "tecnologia",
+        "inovação",
+        "assistência social"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 125300000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "pncp_12585173000106-1-000016_2026",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "CREDENCIAMENTO DE INSTITUIÇOES PRIVADAS INTERESSADAS NA PRESTAÇAO DE SERVIÇOS DE ACOLHIMENTO INSTITUCIONAL, INTEGRANTES DA PROTEÇAO SOCIAL ESPECIAL DE ALTA C...",
+      "data_inicio": "2026-08-27",
+      "data_fim": "2026-11-27",
+      "valor_total": 3402921.6,
+      "patrocinador": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE RIO NEGRINHO - FAS",
+      "locais": [
+        {
+          "municipio": "Rio Negrinho",
+          "uf": "SC"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/12585173000106/2026/16",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/12585173000106/compras/2026/16/arquivos/1",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE RIO NEGRINHO - FAS (CNPJ: 12585173000106)\nModalidade: Credenciamento\nLocalidade: Rio Negrinho - SC\nValor Total Estimado: R$ 3.402.921,60\nAbertura: 2026-08-27\nEncerramento das propostas: 2026-11-27\nObjeto: CREDENCIAMENTO DE INSTITUIÇOES PRIVADAS INTERESSADAS NA PRESTAÇAO DE SERVIÇOS DE ACOLHIMENTO INSTITUCIONAL, INTEGRANTES DA PROTEÇAO SOCIAL ESPECIAL DE ALTA COMPLEXIDADE DO SISTEMA UNICO DE ASSISTENCIA SOCIAL - SUAS, DESTINADOS AO ATENDIMENTO DE PESSOAS QUE, EM RAZAO DE VIOLAÇA",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "pncp_12585173000106-1-000016_2026",
+      "resumo_objetivo": "Credenciamento de instituições privadas para a prestação de serviços de acolhimento institucional (ILPI e Residência Inclusiva) vinculados ao SUAS no município de Rio Negrinho - SC. Os serviços atendem pessoas em situação de vulnerabilidade, violação de direitos ou rompimento de vínculos familiares.",
+      "temas_principais": [
+        "assistência social",
+        "idosos",
+        "pessoas com deficiência",
+        "acolhimento institucional",
+        "chamamento público"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 3402921.6,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Apresentar alvará de funcionamento válido compatível com a atividade",
+          "Apresentar licença ou alvará sanitário vigente expedido pela autoridade sanitária competente",
+          "Apresentar certidão negativa de feitos sobre falência expedida pelo distribuidor da sede da empresa com emissão não superior a 90 dias",
+          "Exige inscrição no Conselho Municipal de Assistência Social exclusivamente para entidades socioassistenciais, conforme a LOAS"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1a1hBerr92vTBYvXLYZFqRjcHJTEnsxZ6/view?usp=drivesdk"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "pncp_96291141000180-1-007785_2026",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "AQUISIÇÃO DE GÊNEROS ALIMENTICIOS HORTIFRUTIS, LEITE E DERIVADOS ATRAVÉS DE CHAMADA PÚBLICA - PPAIS - 1° QUADRIMESTRE 2027",
+      "data_inicio": "2026-11-12",
+      "data_fim": "2026-11-27",
+      "valor_total": 576319.45,
+      "patrocinador": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+      "locais": [
+        {
+          "municipio": "Caiuá",
+          "uf": "SP"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/96291141000180/2026/7785",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/7785/arquivos/1",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA (CNPJ: 96291141000180)\nModalidade: Credenciamento\nLocalidade: Caiuá - SP\nValor Total Estimado: R$ 576.319,45\nAbertura: 2026-11-12\nEncerramento das propostas: 2026-11-27\nObjeto: AQUISIÇÃO DE GÊNEROS ALIMENTICIOS HORTIFRUTIS, LEITE E DERIVADOS ATRAVÉS DE CHAMADA PÚBLICA - PPAIS - 1° QUADRIMESTRE 2027",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "pncp_96291141000180-1-007785_2026",
+      "resumo_objetivo": "Chamada pública para a aquisição de gêneros alimentícios hortifrutis, leite e derivados pelo Programa Paulista da Agricultura de Interesse Social (PPAIS) para o 1º quadrimestre de 2027.",
+      "temas_principais": [
+        "agricultura familiar",
+        "alimentação",
+        "chamamento público"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "Caiuá - SP"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 576319.45,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1VQJASZ7fpSQ9N06cMILex1hJiivERIlx/view?usp=drivesdk"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "pncp_08999716000156-1-000034_2026",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "[Portal de Compras Públicas] - Chamamento Público o credenciamento de pessoas jurídicas do ramo pertinente para a prestação de serviços de fornecimento e ges...",
+      "data_inicio": "2026-11-12",
+      "data_fim": "2026-11-26",
+      "valor_total": 523564.23,
+      "patrocinador": "MUNICIPIO DO LASTRO",
+      "locais": [
+        {
+          "municipio": "Lastro",
+          "uf": "PB"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/08999716000156/2026/34",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/08999716000156/compras/2026/34/arquivos/1",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: MUNICIPIO DO LASTRO (CNPJ: 08999716000156)\nModalidade: Credenciamento\nLocalidade: Lastro - PB\nValor Total Estimado: R$ 523.564,23\nAbertura: 2026-11-12\nEncerramento das propostas: 2026-11-26\nObjeto: [Portal de Compras Públicas] - Chamamento Público o credenciamento de pessoas jurídicas do ramo pertinente para a prestação de serviços de fornecimento e gestão de mão de obra especializada, com encargos complementares, destinados ao atendimento das demandas de manutenção, conservação, reparos e pequenos serviços das divers",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "pncp_08999716000156-1-000034_2026",
+      "resumo_objetivo": "Aquisição em complementação de material médico e insumos de uso hospitalar destinados a atender às necessidades da Secretaria Municipal de Saúde de Aparecida-PB.",
+      "temas_principais": [
+        "saúde",
+        "materiais médicos",
+        "insumos hospitalares"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PB"
+        ],
+        "municipios_permitidos": [
+          "Aparecida - PB"
+        ],
+        "natureza_juridica_excluida": [
+          "pessoa física",
+          "sociedade cooperativa"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 21830.2,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": true,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Comprovação de qualificação técnico-operacional através de certidão ou atestado",
+          "Apresentar fabricante, lote, validade e registro na ANVISA para os produtos"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1pAmKNLJ4NF0UCJL-eBDAz85erYPzp34p/view?usp=drivesdk"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "mapas_ce_8542",
+    "source_portal": "Mapas Culturais CE",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 08/2026 – SUBSÍDIO PARA MANUTENÇÃO DE ESPAÇOS, AMBIENTES E INICIATIVAS ARTÍSTICO-CULTURAIS - PNAB – TAMBORIL/CE",
+      "data_inicio": "2019-11-19",
+      "data_fim": "2026-11-26",
+      "patrocinador": "Mapa Cultural CE",
+      "locais": [
+        {
+          "uf": "CE"
+        }
+      ],
+      "areas_interesse": [
+        "Cultura",
+        "Edital"
+      ]
+    },
+    "public_url": "https://mapacultural.secult.ce.gov.br/oportunidade/8542/",
+    "full_text": "FONTE: Mapa Cultural CE\nTítulo: EDITAL DE CHAMAMENTO PÚBLICO Nº 08/2026 – SUBSÍDIO PARA MANUTENÇÃO DE ESPAÇOS, AMBIENTES E INICIATIVAS ARTÍSTICO-CULTURAIS - PNAB – TAMBORIL/CE\nEstado (UF): CE\nTipo: Edital\nInício das inscrições: 2019-11-19\nEncerramento das inscrições: 2026-11-26\nDescrição:\nO Município de Tamboril/CE, pessoa jurídica de direito público interno, inscrito no CNPJ/MF sob o nº 07.705.817/0001-04, por meio da Secretaria de Cultura, Turismo e Desporto, torna público o presente Edital, com fundamento na Lei nº 14.399/2022 (Política Nacional Aldir Blanc de Fomento à Cultura – PNAB), na ",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "mapas_ce_8542",
+      "resumo_objetivo": "Concessão de subsídio para manutenção de espaços, ambientes e iniciativas artístico-culturais no município de Tamboril/CE, com base na Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "manutenção de espaços culturais"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "CE"
+        ],
+        "municipios_permitidos": [
+          "Tamboril - CE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Benefício exclusivo para espaços, ambientes e iniciativas artístico-culturais localizados no município de Tamboril/CE"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "mapas_ce_8538",
+    "source_portal": "Mapas Culturais CE",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 003/2026 - SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB (LEI Nº 14.399/2022 – Ciclo 2)",
+      "data_inicio": "2026-11-20",
+      "data_fim": "2026-11-26",
+      "patrocinador": "Mapa Cultural CE",
+      "locais": [
+        {
+          "uf": "CE"
+        }
+      ],
+      "areas_interesse": [
+        "Cultura",
+        "Edital"
+      ]
+    },
+    "public_url": "https://mapacultural.secult.ce.gov.br/oportunidade/8538/",
+    "full_text": "FONTE: Mapa Cultural CE\nTítulo: EDITAL DE CHAMAMENTO PÚBLICO Nº 003/2026 - SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB (LEI Nº 14.399/2022 – Ciclo 2)\nEstado (UF): CE\nTipo: Edital\nInício das inscrições: 2026-11-20\nEncerramento das inscrições: 2026-11-26\nDescrição:\nO Município de Quixeré/CE, inscrito no CNPJ sob o nº 07.807.191/0001-47 , por meio da Secretaria de Esporte, Cultura, torna a público o presente edital n° 004/2026 Seleção de Projetos na categoria de Artesanato e Audiovisual para Firmar Termo de E",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "mapas_ce_8538",
+      "resumo_objetivo": "Seleção de projetos na categoria de artesanato e audiovisual para firmar termo de execução cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+      "temas_principais": [
+        "cultura",
+        "artesanato",
+        "audiovisual"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "CE"
+        ],
+        "municipios_permitidos": [
+          "Quixeré - CE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": []
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "mapas_ce_8539",
+    "source_portal": "Mapas Culturais CE",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº [06/2026] SELEÇÃO DE JOVENS PARA O PROGRAMA DE RESIDÊNCIAS ARTÍSTICO-CULTURAIS DO CENTRO CULTURAL DE PORTEIRAS",
+      "data_inicio": "2026-11-19",
+      "data_fim": "2026-11-26",
+      "patrocinador": "Mapa Cultural CE",
+      "locais": [
+        {
+          "uf": "CE"
+        }
+      ],
+      "areas_interesse": [
+        "Cultura",
+        "Edital"
+      ]
+    },
+    "public_url": "https://mapacultural.secult.ce.gov.br/oportunidade/8539/",
+    "full_text": "FONTE: Mapa Cultural CE\nTítulo: EDITAL DE CHAMAMENTO PÚBLICO Nº [06/2026] SELEÇÃO DE JOVENS PARA O PROGRAMA DE RESIDÊNCIAS ARTÍSTICO-CULTURAIS DO CENTRO CULTURAL DE PORTEIRAS\nEstado (UF): CE\nTipo: Edital\nInício das inscrições: 2026-11-19\nEncerramento das inscrições: 2026-11-26\nDescrição:\nO presente Edital tem por objeto a seleção de 05 (cinco) jovens residentes no município de Porteiras para participação no Programa de Residências Artístico-Culturais do Centro Cultural de Porteiras, mediante concessão de bolsas culturais no valor mensal de R$ 600,00 (seiscentos reais), durante 10 (dez) meses, ",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "mapas_ce_8539",
+      "resumo_objetivo": "O edital seleciona jovens residentes no município de Porteiras para participação no Programa de Residências Artístico-Culturais do Centro Cultural de Porteiras com concessão de bolsas.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "juventude"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "CE"
+        ],
+        "municipios_permitidos": [
+          "Porteiras - CE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 6000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Benefício exclusivo para jovens residentes no município de Porteiras"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "mapas_ce_8494",
+    "source_portal": "Mapas Culturais CE",
+    "attributes": {
+      "nome": "EDITAL DE CHAMAMENTO PÚBLICO Nº 03/2026 - SELEÇÃO DE AGENTES TERRITORIAIS DE CULTURA PARA FIRMAR TERMO DE BOLSA CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA - PNAB (LEI Nº 14.399/2022)",
+      "data_inicio": "2026-11-16",
+      "data_fim": "2026-11-26",
+      "patrocinador": "Mapa Cultural CE",
+      "locais": [
+        {
+          "uf": "CE"
+        }
+      ],
+      "areas_interesse": [
+        "Cultura",
+        "Edital"
+      ]
+    },
+    "public_url": "https://mapacultural.secult.ce.gov.br/oportunidade/8494/",
+    "full_text": "FONTE: Mapa Cultural CE\nTítulo: EDITAL DE CHAMAMENTO PÚBLICO Nº 03/2026 - SELEÇÃO DE AGENTES TERRITORIAIS DE CULTURA PARA FIRMAR TERMO DE BOLSA CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA - PNAB (LEI Nº 14.399/2022)\nEstado (UF): CE\nTipo: Edital\nInício das inscrições: 2026-11-16\nEncerramento das inscrições: 2026-11-26\nDescrição:\nO objeto deste Edital é a seleção de agentes para recebimento de Bolsa Cultural, com a finalidade de fazer o mapeamento da cultura do município, voltado à criação de indicadores culturais por meio do identificação das atividades, institui",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "mapas_ce_8494",
+      "resumo_objetivo": "Seleção de agentes territoriais de cultura para firmar termo de bolsa cultural com recursos da PNAB, com finalidade de fazer mapeamento da cultura do município de Bela Cruz.",
+      "temas_principais": [
+        "cultura",
+        "mapeamento cultural",
+        "agentes culturais"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "CE"
+        ],
+        "municipios_permitidos": [
+          "Bela Cruz - CE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Benefício exclusivo para atuação como agente territorial de cultura no município de Bela Cruz"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "pncp_96291141000180-1-000036_2027",
+    "source_portal": "PNCP",
+    "attributes": {
+      "nome": "CHAMADA PÚBLICA VISANDO O CREDENCIAMENTO DE AGRICULTORES FAMILIARES PARA ATENDIMENTO DO PROGRAMA PAULISTA DA AGRICULTURA DE INTERESSE SOCIAL – PPAIS ref jane...",
+      "data_inicio": "2026-11-11",
+      "data_fim": "2026-11-26",
+      "valor_total": 370976.3,
+      "patrocinador": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+      "locais": [
+        {
+          "municipio": "Limeira",
+          "uf": "SP"
+        }
+      ],
+      "areas_interesse": [
+        "Chamamento Público / MROSC"
+      ]
+    },
+    "public_url": "https://pncp.gov.br/app/editais/96291141000180/2027/36",
+    "pdf_link": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2027/36/arquivos/4",
+    "full_text": "FONTE: Portal Nacional de Contratações Públicas (PNCP)\nÓrgão / Patrocinador: SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA (CNPJ: 96291141000180)\nModalidade: Credenciamento\nLocalidade: Limeira - SP\nValor Total Estimado: R$ 370.976,30\nAbertura: 2026-11-11\nEncerramento das propostas: 2026-11-26\nObjeto: CHAMADA PÚBLICA VISANDO O CREDENCIAMENTO DE AGRICULTORES FAMILIARES PARA ATENDIMENTO DO PROGRAMA PAULISTA DA AGRICULTURA DE INTERESSE SOCIAL – PPAIS ref janeiro a abril 2027",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "pncp_96291141000180-1-000036_2027",
+      "resumo_objetivo": "Credenciamento de agricultores familiares para aquisição de gêneros alimentícios destinados ao atendimento da Penitenciária de Limeira por meio do Programa Paulista da Agricultura de Interesse Social (PPAIS).",
+      "temas_principais": [
+        "agricultura familiar",
+        "alimentação escolar e prisional",
+        "desenvolvimento rural",
+        "PPAIS"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "Limeira - SP"
+        ],
+        "natureza_juridica_excluida": [
+          "fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 370976.3,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Apresentar Declaração de Conformidade ao PPAIS (DCONP) emitida pelo ITESP ou CDRS",
+          "Respeitar o limite individual de venda de R$ 208.000,00 por DCONP/ano",
+          "Declaração de não emprego de menores e atendimento às normas de saúde e segurança do trabalho"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1KrYTE7it1IghTLulhUBIPlN6v3o95glf/view?usp=drivesdk"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19529",
+    "attributes": {
+      "nome": "ITARARÉ  SP - CHAMAMENTO PÚBLICO - SELEÇÃO DE PROJETOS DE MANIFESTAÇÃO CULTURAL (PNAB) - 2026",
+      "e_central?": true,
+      "data_inicio": "2026-10-27",
+      "data_fim": "2026-11-27",
+      "valor_total": 373729.1
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19529",
+    "pdf_link": "https://dosp.com.br/diario/sp/itarare/2026-10-26/ed-2045-898802-9309d8f9c360.pdf",
+    "full_text": "Ajuda ITARARÉ SP - CHAMAMENTO PÚBLICO - SELEÇÃO DE PROJETOS DE MANIFESTAÇÃO CULTURAL (PNAB) - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco C",
+    "deep_metadata": {
+      "edital_id": "19529",
+      "resumo_objetivo": "Seleção de projetos culturais para receberem apoio financeiro com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB, visando incentivar as diversas formas de manifestações culturais no Município de Itararé.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "patrimônio cultural",
+        "artes cênicas",
+        "música",
+        "audiovisual",
+        "artesanato"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "Itararé - SP"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 373729.1,
+        "exige_contrapartida": false,
+        "valor_total_edital": 373729.1
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Comprovação de domicílio no município de Itararé e atuação cultural há pelo menos 12 meses",
+          "Proposta de contrapartida social a ser executada em benefício da comunidade"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1mUbdXUoAdWSdO6dCY2Ljp3RbjW0IM517/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19586",
+    "attributes": {
+      "nome": "RIO DE JANEIRO - EDITAL FAPERJ 26/2026 - BOLSA DE INOVAÇÃO TECNOLÓGICA (INT) - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19586",
+    "pdf_link": "https://www.faperj.br/rp/downloads/Edital_FAPPERJ_N%C2%BA_26_2026_%E2%80%93_Bolsa_de_Inova%C3%A7%C3%A3o_Tecnol%C3%B3gica_(INT).pdf",
+    "full_text": "Ajuda RIO DE JANEIRO - EDITAL FAPERJ 26/2026 - BOLSA DE INOVAÇÃO TECNOLÓGICA (INT) - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Te",
+    "deep_metadata": {
+      "edital_id": "19586",
+      "resumo_objetivo": "O edital visa estimular o envolvimento de profissionais técnicos, graduados e pós-graduados com projetos de Pesquisa, Desenvolvimento e Inovação (P,D&I) em Micro, Pequenas e Médias Empresas (MPMEs) e Ambientes de Inovação no Estado do Rio de Janeiro.",
+      "temas_principais": [
+        "inovação tecnológica",
+        "pesquisa e desenvolvimento",
+        "bolsas",
+        "mpme"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": 1,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RJ"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": [
+          "fins lucrativos",
+          "MEI",
+          "microempreendedor individual"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 4999999.92,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": true,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Proponente deve possuir grau de mestre ou experiência comprovada em PD&I de no mínimo três anos (ou vínculo como gestor de ambiente de inovação com 2 anos de experiência)",
+          "Bolsista deve residir no Estado do Rio de Janeiro",
+          "Proibido para pessoas físicas sem vínculos formais, inclusive MEI"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1ExdfYm5fhFV3YfWjtkfLnHhdpvA_wROO/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19587",
+    "attributes": {
+      "nome": "RIO DE JANEIRO - BOLSA - INICIAÇÃO TECNOLÓGICA - 2026",
+      "e_central?": true
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19587",
+    "pdf_link": "https://www.faperj.br/rp/downloads/Edital_FAPERJ_N%C2%BA_27_2026_%E2%80%93_Bolsa_de_Inicia%C3%A7%C3%A3o_Tecnol%C3%B3gica_(IT).pdf",
+    "full_text": "Ajuda RIO DE JANEIRO - BOLSA - INICIAÇÃO TECNOLÓGICA - 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Pri",
+    "deep_metadata": {
+      "edital_id": "19587",
+      "resumo_objetivo": "Estimular a formação de estudantes de graduação em Pesquisa, Desenvolvimento e Inovação (PD&I) por meio da concessão de Bolsas de Iniciação Tecnológica (IT), fortalecendo o ecossistema de inovação e a competitividade do Estado do Rio de Janeiro.",
+      "temas_principais": [
+        "inovação",
+        "tecnologia",
+        "pesquisa e desenvolvimento",
+        "bolsa de estudos",
+        "graduação"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": 1,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RJ"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": [
+          "fins lucrativos",
+          "MEI",
+          "microempreendedor individual"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 1344000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": true,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Proponente deve possuir grau de mestre ou experiência comprovada em PD&I de no mínimo três anos, ou vínculo como Gestor de Ambiente Promotor de Inovação",
+          "Bolsista deve estar regularmente matriculado a partir do terceiro período e possuir CR igual ou superior a 6,5",
+          "Atividades do projeto devem ser realizadas exclusivamente no Estado do Rio de Janeiro"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1jlPmON4DTAbyx4M_7TU-XpZwkM273qGE/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19657",
+    "attributes": {
+      "nome": "EDITAL Nº 001 / 2026 - TJMG 1ª/BMS - COMARCA/BMS - V.ÚNICA - SEC",
+      "e_central?": true,
+      "data_inicio": "2026-10-26",
+      "data_fim": "2026-11-26"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19657",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/eBikV72Si0Nl6gIAFbW6sZHueeG2QEVDvz-k_VBQaGf3qG9mBuPHC_2idki5LBc4/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/124/268/original/ACESSE_O_EDITAL_-_Bom_Sucesso.pdf",
+    "full_text": "Ajuda EDITAL Nº 001 / 2026 - TJMG 1ª/BMS - COMARCA/BMS - V.ÚNICA - SEC © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Polít",
+    "deep_metadata": {
+      "edital_id": "19657",
+      "resumo_objetivo": "Seleção pública de projetos apresentados por entidades públicas ou privadas sem fins lucrativos para atendimento de áreas vitais de relevante cunho social na Comarca de Bom Sucesso/MG, financiados com recursos de prestações pecuniárias.",
+      "temas_principais": [
+        "segurança pública",
+        "educação",
+        "saúde",
+        "ressocialização",
+        "justiça restaurativa"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": 1,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Bom Sucesso - MG"
+        ],
+        "natureza_juridica_excluida": [
+          "fins lucrativos",
+          "pessoas naturais",
+          "instituições do Sistema de Justiça"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 156771.82,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Apresentação de cotações com ao menos 3 fornecedores",
+          "Certidão de regularidade do FGTS e débitos trabalhistas",
+          "Apresentação de projeto básico e ART em caso de obras"
+        ]
+      },
+      "fonte_dados": "pdf"
+    },
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19700",
+    "attributes": {
+      "nome": "Edital de Chamamento Público Nº 02/2026 – Teixeira, A Cidade da Cultura 2026",
+      "e_central?": true,
+      "data_inicio": "2026-11-04",
+      "data_fim": "2026-11-27",
+      "valor_total": 350000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19700",
+    "pdf_link": "https://smic.teixeiradefreitas.ba.gov.br/wp-content/uploads/2026/11/EDITAL-02-2026.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público Nº 02/2026 – Teixeira, A Cidade da Cultura 2026 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de",
+    "deep_metadata": {
+      "edital_id": "19700",
+      "resumo_objetivo": "Seleção de projetos culturais para firmar termo de execução cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB) no Município de Teixeira de Freitas - BA.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "patrimônio cultural",
+        "economia criativa"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "BA"
+        ],
+        "municipios_permitidos": [
+          "Teixeira de Freitas - BA"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 350000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 350000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Atuação na área da cultura há pelo menos 2 anos",
+          "Residência ou atuação no Município de Teixeira de Freitas - BA"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1zCaxD1gi7a9T_xQq-IlrsHX2Y_Gv0bt_/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19828",
+    "attributes": {
+      "nome": "16º Ciclo do Fundo de Projetos FEAPAES-SP (Vale Cap – Vale e Litoral)",
+      "e_central?": true,
+      "data_inicio": "2026-11-13",
+      "data_fim": "2026-11-26"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19828",
+    "full_text": "Ajuda 16º Ciclo do Fundo de Projetos FEAPAES-SP (Vale Cap – Vale e Litoral) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e ",
+    "deep_metadata": {
+      "edital_id": "19828",
+      "resumo_objetivo": "Financiamento de projetos para as APAEs do Estado de São Paulo nas áreas de assistência social, educação, saúde e apoio à gestão.",
+      "temas_principais": [
+        "assistência social",
+        "educação",
+        "saúde",
+        "pessoas com deficiência",
+        "terceiro setor"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 25000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Benefício exclusivo para APAEs do Estado de São Paulo"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19842",
+    "attributes": {
+      "nome": "CHAMAMENTO PÚBLICO 04/2026   REDE MUNICIPAL DE PONTOS DE CULTURA DE PAÇO DO LUMIAR CULTURA VIVA DO TAMANHO DO BRASIL!  PREMIAÇÃO DE PONTOS  DE CULTURA ",
+      "e_central?": false,
+      "data_inicio": "2026-11-17",
+      "data_fim": "2026-11-27"
+    },
+    "public_url": "https://prosas.com.br/editais/19842",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/IpjAmnFz4LYx9EsroPE0UvCckeheh7eAY-Gk-exzp7LPPQXkIkcC-9OHiESSUg6C/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/142/177/original/00-EDITAL_PREMIACAO_Cultura_VIVA.pdf",
+    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
+    "deep_metadata": {
+      "edital_id": "19842",
+      "resumo_objetivo": "Premiação de iniciativas, atividades ou ações já realizadas por Pontos de Cultura e coletivos culturais em Paço do Lumiar/MA, por meio da Política Nacional de Cultura Viva e da Política Nacional Aldir Blanc (PNAB).",
+      "temas_principais": [
+        "cultura",
+        "cultura viva",
+        "cultura popular",
+        "patrimônio cultural",
+        "cidadania"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MA"
+        ],
+        "municipios_permitidos": [
+          "Paço do Lumiar - MA"
+        ],
+        "natureza_juridica_excluida": [
+          "fins lucrativos",
+          "instituição de ensino e pesquisa",
+          "órgão público",
+          "partido político",
+          "Sistema S"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 10000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Comprovar no mínimo 2 anos de desenvolvimento de atividades culturais na comunidade local",
+          "Possuir Certificação de Mérito Cultural expedida pela atual Gestão Municipal em conjunto com o Conselho Municipal de Cultura de Paço do Lumiar/MA"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1CL-IMPtSazHB-vg9J6DYDWYDQ62fIDfW/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19826",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 281/2026 – PNAB Fomento Cultural (Pinheiro Machado/RS)",
+      "e_central?": true,
+      "data_inicio": "2026-11-16",
+      "data_fim": "2026-11-27",
+      "valor_total": 50000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19826",
+    "pdf_link": "https://www.pinheiromachado.rs.gov.br/editais/edital_de_chamamento_publico_n_281-2026_-_selecao_de_projet_12051038.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público nº 281/2026 – PNAB Fomento Cultural (Pinheiro Machado/RS) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato",
+    "deep_metadata": {
+      "edital_id": "19826",
+      "resumo_objetivo": "Seleção de projetos culturais para firmar termo de execução cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura no município de Pinheiro Machado/RS.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "fomento cultural"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RS"
+        ],
+        "municipios_permitidos": [
+          "Pinheiro Machado - RS"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 10000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 50000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Atuar ou residir no município de Pinheiro Machado/RS há pelo menos 2 anos",
+          "Comprovação de conta bancária específica e exclusiva para a execução do projeto em nome do proponente",
+          "Apresentação de portfólio artístico com comprovação de atuação cultural no município"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1hZLEvzVeuokZzX48gYqRgFfcDbBLGEC_/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19801",
+    "attributes": {
+      "nome": "Edital de Captação EBANX 2026/2027",
+      "e_central?": true,
+      "data_inicio": "2026-11-09",
+      "data_fim": "2026-11-27"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19801",
+    "pdf_link": "https://drive.google.com/uc?export=download&id=1mnQxzZuUy3JZH5sPy_QKb2EWg-RwCxAc",
+    "full_text": "Ajuda Edital de Captação EBANX 2026/2027 © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato Termos de Uso e Políticas de Privacidade Fale com o",
+    "deep_metadata": {
+      "edital_id": "19801",
+      "resumo_objetivo": "O edital tem o objetivo de selecionar projetos culturais, sociais e desportivos já aprovados em leis de incentivo fiscal para receber patrocínio incentivado do EBANX em 2027.",
+      "temas_principais": [
+        "cultura",
+        "diversidade",
+        "saúde",
+        "esporte",
+        "infância",
+        "pessoa idosa"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": true,
+        "estados_permitidos": [],
+        "municipios_permitidos": [],
+        "natureza_juridica_excluida": [
+          "órgãos governamentais",
+          "sindicato",
+          "associação classista",
+          "fins lucrativos (se vedado pela respectiva lei de incentivo)"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": true
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exige aprovação formal prévia do projeto em lei de incentivo (Mecenato Subsidiado, FIA, Fundo do Idoso, Lei de Incentivo ao Esporte, PRONON, PRONAS ou Lei Rouanet)",
+          "Exige prazo de captação de recursos vigente no exercício fiscal de 2026 e/ou 2027",
+          "Exige envio de vídeo de apresentação e defesa do projeto de 3 a 6 minutos",
+          "Exige preenchimento dos formulários KYP (Know Your Partner) do EBANX"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1e-FxE-s-aesoOBWs7DRsmKrzSeSPskzD/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19832",
+    "attributes": {
+      "nome": "Edital de Chamamento Público Municipal nº 003/2026 – Subsídio – Carnaval 2027, categoria Baterias Carnavalescas (Cristina/MG)",
+      "e_central?": true,
+      "data_inicio": "2026-11-13",
+      "data_fim": "2026-11-27",
+      "valor_total": 17700
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19832",
+    "pdf_link": "https://www.cristina.mg.gov.br/assets/file/Edital_003_2026_Cristina_Carnaval%202027.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público Municipal nº 003/2026 – Subsídio – Carnaval 2027, categoria Baterias Carnavalescas (Cristina/MG) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar In",
+    "deep_metadata": {
+      "edital_id": "19832",
+      "resumo_objetivo": "Concessão de subsídio municipal para o Carnaval 2027 na categoria Baterias Carnavalescas em Cristina/MG.",
+      "temas_principais": [
+        "cultura",
+        "carnaval",
+        "música"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Cristina - MG"
+        ],
+        "natureza_juridica_excluida": [
+          "com fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 5900,
+        "exige_contrapartida": false,
+        "valor_total_edital": 17700
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Pessoa física residente há pelo menos 2 anos em Cristina",
+          "Representar grupo ou coletivo de bateria carnavalesca de Cristina",
+          "Limitado a 1 projeto por proponente"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "retry_count": 1,
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19884",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 007/2026 – Premiação Patrimônio Cultural Imaterial Registrado - Categoria Capoeira",
+      "e_central?": true,
+      "data_inicio": "2026-11-17",
+      "data_fim": "2026-11-26",
+      "valor_total": 48000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19884",
+    "pdf_link": "https://fundacaoculturaldevarginha.com.br/wp-content/uploads/2026/11/EDITAL-_07_2026_PREMIACAO_CAPOEIRA.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público nº 007/2026 – Premiação Patrimônio Cultural Imaterial Registrado - Categoria Capoeira © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog B",
+    "deep_metadata": {
+      "edital_id": "19884",
+      "resumo_objetivo": "Premiação de grupos de Capoeira pelo reconhecimento da contribuição já realizada à salvaguarda do bem imaterial Capoeira de Varginha, na modalidade de doação sem encargo.",
+      "temas_principais": [
+        "cultura",
+        "capoeira",
+        "patrimônio cultural imaterial"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Varginha - MG"
+        ],
+        "natureza_juridica_excluida": [
+          "pessoa jurídica",
+          "fins lucrativos",
+          "igreja",
+          "sindicato"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 12000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 48000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para pessoas físicas maiores de 18 anos representantes de grupos de capoeira",
+          "Residência obrigatória em Varginha",
+          "Mínimo de 5 anos de atuação cultural comprovada no município",
+          "Apresentação de carta de anuência assinada por no mínimo 5 membros do grupo"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1iu_63v3kZ4ZJJ0b7g54ALmAetpnQK5bR/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19920",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 001/2026 – Edital de Fomento à Execução de Ações Culturais (PNAB) – Pimenta Bueno/RO (AMPIB)",
+      "e_central?": true,
+      "data_inicio": "2026-11-16",
+      "data_fim": "2026-11-26",
+      "valor_total": 268559.15
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19920",
+    "pdf_link": "https://pimentabueno.ro.gov.br/uploads/arquivo/EDITAL-DE-FOMENTO---001-2026.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público nº 001/2026 – Edital de Fomento à Execução de Ações Culturais (PNAB) – Pimenta Bueno/RO (AMPIB) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Iní",
+    "deep_metadata": {
+      "edital_id": "19920",
+      "resumo_objetivo": "Seleção de projetos culturais com recursos da PNAB para fomento a ações nas áreas de artesanato, música, capoeira, audiovisual, dança e artes visuais no município de Pimenta Bueno/RO.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "audiovisual",
+        "música",
+        "artesanato"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RO"
+        ],
+        "municipios_permitidos": [
+          "Pimenta Bueno - RO"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 5000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 268559.15
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Benefício exclusivo para moradores ou atuação em Pimenta Bueno - RO"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19938",
+    "attributes": {
+      "nome": "EDITAL SMCT Nº 34/2026  SELEÇÃO DE INTERESSADOS EM PARTICIPAR DA FEIRA DA CULTURA - EDIÇÃO NATAIS BRASILIS.",
+      "e_central?": false,
+      "data_inicio": "2026-11-19",
+      "data_fim": "2026-11-26"
+    },
+    "public_url": "https://prosas.com.br/editais/19938",
+    "pdf_link": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/cO-2tQlaugxU4z7q29ZiMF2ZKXArJk9F1KQ8kif7zUMJminTSG93hxfByvZrbbiz/n/gr1ojmmb7tst/b/prosas-prod/o/arquivos/arquivos/005/150/390/original/EDITAL_SMCT_N_34_2026_-_SELECAO_DE_INTERESSADOS_EM_PARTICIPAR_DA_FEIRA_DA_CULTURA_EDICAO_NATAIS_BRASILIS.pdf",
+    "full_text": "Ajuda Menu storage PT EN ES Editais Editais Privacidade Funcionalidades Blog Contato Para um melhor aproveitamento dos recursos da plataforma, utilize o navegador Google Chrome! Caso queira utiliza-lo, faça o download clicando . aqui Termos de Uso Fale com o DPO Para Administradores de editais Para Organizações Públicas Para Proponentes de projetos menu_open Arquivos Complementares Compartilhe esta página Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos ser",
+    "deep_metadata": {
+      "edital_id": "19938",
+      "resumo_objetivo": "Seleção de interessados em participar da Feira da Cultura - Edição Natais Brasilis, com o objetivo de divulgar e comercializar produtos de artesanato e manualidades.",
+      "temas_principais": [
+        "cultura",
+        "artesanato",
+        "arte"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Uberlândia - MG"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Residir e ter domicílio comprovado no município de Uberlândia"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1AAEe8p4_7lQU08tR_8Y_aNzjf_3O-tqr/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19930",
+    "attributes": {
+      "nome": "Edital de Chamamento Público FMS nº 002/2026 – Triagem, diagnóstico e tratamento em saúde ocular na Rede Municipal de Ensino (Águas Belas/PE)",
+      "e_central?": true,
+      "data_inicio": "2026-10-16",
+      "data_fim": "2026-11-26",
+      "valor_total": 1798287.9
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19930",
+    "full_text": "Ajuda Edital de Chamamento Público FMS nº 002/2026 – Triagem, diagnóstico e tratamento em saúde ocular na Rede Municipal de Ensino (Águas Belas/PE) © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Sup",
+    "deep_metadata": {
+      "edital_id": "19930",
+      "resumo_objetivo": "Seleção de Organização da Sociedade Civil (OSC) sem fins lucrativos para celebrar Termo de Colaboração visando à execução de ações de triagem, diagnóstico e tratamento em saúde ocular para estudantes da Rede Municipal de Ensino em Águas Belas/PE.",
+      "temas_principais": [
+        "saúde",
+        "educação",
+        "infância e adolescência",
+        "assistência social"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Águas Belas - PE"
+        ],
+        "natureza_juridica_excluida": [
+          "com fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 1798287.9,
+        "exige_contrapartida": false,
+        "valor_total_edital": 1798287.9
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para Organizações da Sociedade Civil (OSC) sem fins lucrativos"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19944",
+    "attributes": {
+      "nome": "Chamamento Público nº 1/2026 – Auxílio financeiro a blocos carnavalescos do Carnaval Paracatu 2027 – Paracatu/MG",
+      "e_central?": true,
+      "data_inicio": "2026-11-19",
+      "data_fim": "2026-11-27",
+      "valor_total": 120000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19944",
+    "pdf_link": "https://www.paracatu.mg.gov.br/editais/0577_261116113717_001_18023002.pdf",
+    "full_text": "Ajuda Chamamento Público nº 1/2026 – Auxílio financeiro a blocos carnavalescos do Carnaval Paracatu 2027 – Paracatu/MG © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blo",
+    "deep_metadata": {
+      "edital_id": "19944",
+      "resumo_objetivo": "O edital visa selecionar até 10 blocos carnavalescos com atuação comprovada no município para compor a programação oficial do Carnaval Paracatu 2027, oferecendo apoio financeiro mediante Termo de Execução Cultural.",
+      "temas_principais": [
+        "cultura",
+        "carnaval",
+        "turismo"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Paracatu - MG"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 120000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 120000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Atuação comprovada no município de Paracatu/MG"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1wc1am5C6DejbwM1Gw4JP9PGtnXN8Vzlr/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19937",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 002/2026 – Fomento Cultural PNAB Ciclo 2 – Teutônia/RS",
+      "e_central?": true,
+      "data_inicio": "2026-11-13",
+      "data_fim": "2026-11-27",
+      "valor_total": 242000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19937",
+    "pdf_link": "https://teutonia.rs.gov.br/uploads/paginadinamica/29730/EDITAL_002_2026___FOMENTO_CULTURAL.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público nº 002/2026 – Fomento Cultural PNAB Ciclo 2 – Teutônia/RS © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Contato",
+    "deep_metadata": {
+      "edital_id": "19937",
+      "resumo_objetivo": "Seleção de 11 projetos culturais pelo Fomento Cultural PNAB Ciclo 2 em Teutônia/RS, com recursos da Política Nacional Aldir Blanc.",
+      "temas_principais": [
+        "cultura",
+        "arte"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RS"
+        ],
+        "municipios_permitidos": [
+          "Teutônia - RS"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 22000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 242000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Possuir vínculo com Teutônia há 2 anos"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19941",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 03/2026 – Seleção de Projetos para Termo de Execução Cultural (PNAB) – Condado/PB",
+      "e_central?": true,
+      "data_inicio": "2026-11-18",
+      "data_fim": "2026-11-27",
+      "valor_total": 19908.06
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19941",
+    "pdf_link": "https://condado.pb.gov.br/images/arquivos/documentos/1795024254.pdf",
+    "full_text": "Ajuda Edital de Chamamento Público nº 03/2026 – Seleção de Projetos para Termo de Execução Cultural (PNAB) – Condado/PB © 2026 | Prosas Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Bl",
+    "deep_metadata": {
+      "edital_id": "19941",
+      "resumo_objetivo": "Seleção de projetos culturais para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc (PNAB), incentivando as diversas manifestações artísticas e culturais no município de Condado-PB.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "PNAB",
+        "patrimônio cultural"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PB"
+        ],
+        "municipios_permitidos": [
+          "Condado - PB"
+        ],
+        "natureza_juridica_excluida": [
+          "Pessoa jurídica",
+          "Empresa",
+          "Com fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 19908.06,
+        "exige_contrapartida": false,
+        "valor_total_edital": 19908.06
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Residência no município de Condado há pelo menos 2 anos",
+          "Exclusivo para pessoas físicas"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/11ncBKGK4Z6rMnq2l7vfS3SuHzg-tylh3/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19965",
+    "attributes": {
+      "nome": "Edital de Chamamento Público SMC nº 38/2026 – Largo da Memória (ativação cultural e restauro) – São Paulo/SP",
+      "e_central?": true,
+      "data_inicio": "2026-11-19",
+      "data_fim": "2026-11-26",
+      "valor_total": 3500000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19965",
+    "full_text": "Edital de Chamamento Público SMC nº 38/2026 – Largo da Memória (ativação cultural e restauro) – São Paulo/SP © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar In",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "19965",
+      "resumo_objetivo": "Seleção de proposta de agente cultural pessoa jurídica sem fins lucrativos para programação artística e ações de conservação, restauro e acessibilidade no Largo da Memória, em São Paulo.",
+      "temas_principais": [
+        "cultura",
+        "patrimônio histórico",
+        "educação"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": 2,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "São Paulo - SP"
+        ],
+        "natureza_juridica_excluida": [
+          "com fins lucrativos",
+          "pessoa física"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 3500000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 3500000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Plano de Trabalho deve contemplar no mínimo 70 ações culturais e educativas e 1 ação estruturante de revitalização e acessibilidade",
+          "Experiência comprovada em projetos similares"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19964",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 002/2026 – Fomento à Execução de Projetos Culturais (TEC) – PNAB Ciclo 2 – Ilha de Itamaracá/PE",
+      "e_central?": true,
+      "data_inicio": "2026-11-19",
+      "data_fim": "2026-11-26",
+      "valor_total": 180000.36
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19964",
+    "pdf_link": "https://ilhadeitamaraca.pe.gov.br/site/wp-content/uploads/2026/11/EDITAL-DE-CHAMAMENTO-PUBLICO-No-002_2026.docx-mesclado.pdf",
+    "full_text": "Edital de Chamamento Público nº 002/2026 – Fomento à Execução de Projetos Culturais (TEC) – PNAB Ciclo 2 – Ilha de Itamaracá/PE © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas ",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "19964",
+      "resumo_objetivo": "Seleção de 36 projetos culturais em 9 linguagens artísticas e culturais, com apoio financeiro individual de R$ 5.000,01, por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB), Ciclo 2, no Município da Ilha de Itamaracá/PE.",
+      "temas_principais": [
+        "cultura",
+        "cultura popular",
+        "artesanato",
+        "gastronomia",
+        "capoeira",
+        "teatro",
+        "audiovisual",
+        "fotografia",
+        "música"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Ilha de Itamaracá - PE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 5000.01,
+        "exige_contrapartida": false,
+        "valor_total_edital": 180000.36
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Possuir residência ou sede no Município da Ilha de Itamaracá/PE",
+          "Apresentar comprovação de regularidade fiscal federal, estadual, municipal, trabalhista e FGTS na fase de habilitação",
+          "Apresentar conta bancária específica e de titularidade do beneficiário ou representante formal"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1MxyM27vhm3B-oc9657qifk-4wDrXePNA/view?usp=drivesdk"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20031",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 004/2026 – PNAB – Fomento à Execução de Ações Culturais – Música (Cantor(a) e Instrumentista) (Xexéu/PE)",
+      "e_central?": true,
+      "data_inicio": "2026-11-19",
+      "data_fim": "2026-11-26",
+      "valor_total": 39000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20031",
+    "full_text": "Edital de Chamamento Público nº 004/2026 – PNAB – Fomento à Execução de Ações Culturais – Música (Cantor(a) e Instrumentista) (Xexéu/PE) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfi",
+    "deep_metadata": {
+      "edital_id": "20031",
+      "resumo_objetivo": "Edital de chamamento público da Política Nacional Aldir Blanc (PNAB) para fomento à execução de ações culturais na área de música (cantor(a) e instrumentista) no município de Xexéu/PE.",
+      "temas_principais": [
+        "cultura",
+        "música",
+        "artes"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Xexéu - PE"
+        ],
+        "natureza_juridica_excluida": [
+          "Pessoa jurídica"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 39000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 39000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Pessoa física maior de 18 anos residente em Xexéu/PE",
+          "Cadastro ativo no Mapa Cultural de Pernambuco"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20029",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 08/2026 – Subsídio para manutenção de espaços, ambientes e iniciativas artístico-culturais – PNAB (Tamboril/CE)",
+      "e_central?": true,
+      "data_inicio": "2026-11-19",
+      "data_fim": "2026-11-26",
+      "valor_total": 30000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20029",
+    "pdf_link": "https://www.mostardas.rs.gov.br/uploads/documento/50585/c7zBkzPmjQCtCaPttPujrM27-FicFWZm.pdf",
+    "full_text": "Edital de Chamamento Público nº 08/2026 – Subsídio para manutenção de espaços, ambientes e iniciativas artístico-culturais – PNAB (Tamboril/CE) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessa",
+    "deep_metadata": {
+      "edital_id": "20029",
+      "resumo_objetivo": "O edital visa conceder subsídio financeiro para a manutenção de espaços, ambientes e iniciativas artístico-culturais no município de Tamboril/CE, com recursos da Política Nacional Aldir Blanc (PNAB).",
+      "temas_principais": [
+        "cultura",
+        "arte"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "CE"
+        ],
+        "municipios_permitidos": [
+          "Tamboril - CE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 10000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 30000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Pelo menos 2 anos de atuação na área cultural",
+          "Benefício exclusivo para agentes culturais em Tamboril/CE"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "drive_backfill_attempted": true,
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20030",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 004/2026 – Seleção de projetos para firmar Termo de Execução Cultural com recursos da PNAB (Engenheiro Paulo de Frontin/RJ)",
+      "e_central?": true,
+      "data_inicio": "2026-11-19",
+      "data_fim": "2026-11-26",
+      "valor_total": 100415.9
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20030",
+    "full_text": "Edital de Chamamento Público nº 004/2026 – Seleção de projetos para firmar Termo de Execução Cultural com recursos da PNAB (Engenheiro Paulo de Frontin/RJ) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Ed",
+    "deep_metadata": {
+      "edital_id": "20030",
+      "resumo_objetivo": "Seleção de projetos culturais para firmar Termo de Execução Cultural com recursos da PNAB no município de Engenheiro Paulo de Frontin/RJ.",
+      "temas_principais": [
+        "cultura",
+        "artes"
+      ],
+      "prazo_de_inscricao": "2026-11-26",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RJ"
+        ],
+        "municipios_permitidos": [
+          "Engenheiro Paulo de Frontin - RJ"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 100415.9,
+        "exige_contrapartida": false,
+        "valor_total_edital": 100415.9
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Atuar ou residir no município há pelo menos 6 meses",
+          "Estar no Mapeamento Cultural municipal"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20040",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 003/2026 – Aldir Blanc Ciclo II (PNAB) – Categoria Artesanato (Capoeiras/PE)",
+      "e_central?": true,
+      "data_inicio": "2026-11-17",
+      "data_fim": "2026-11-27",
+      "valor_total": 9000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20040",
+    "full_text": "Edital de Chamamento Público nº 003/2026 – Aldir Blanc Ciclo II (PNAB) – Categoria Artesanato (Capoeiras/PE) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar In",
+    "deep_metadata": {
+      "edital_id": "20040",
+      "resumo_objetivo": "Seleção e credenciamento de projetos culturais de artesãos e artesãs para receberem apoio financeiro da Política Nacional Aldir Blanc (PNAB) no município de Capoeiras/PE.",
+      "temas_principais": [
+        "cultura",
+        "artesanato"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Capoeiras - PE"
+        ],
+        "natureza_juridica_excluida": [
+          "Pessoa Jurídica"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 9000,
+        "exige_contrapartida": true,
+        "valor_total_edital": 9000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para pessoas físicas residentes no município de Capoeiras/PE"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20014",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 002/2026 – Aldir Blanc Ciclo II – Seleção de projetos para Termo de Execução Cultural (PNAB) – “Capoeiras Valorizando: A Arte, O Artista e o Fazer Artístico” (Capoeiras/PE)",
+      "e_central?": true,
+      "data_inicio": "2026-11-17",
+      "data_fim": "2026-11-27",
+      "valor_total": 20000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20014",
+    "full_text": "Edital de Chamamento Público nº 002/2026 – Aldir Blanc Ciclo II – Seleção de projetos para Termo de Execução Cultural (PNAB) – “Capoeiras Valorizando: A Arte, O Artista e o Fazer Artístico” (Capoeiras/PE) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa id",
+    "deep_metadata": {
+      "edital_id": "20014",
+      "resumo_objetivo": "Seleção de projetos culturais para o Termo de Execução Cultural (PNAB) em Capoeiras/PE, valorizando a arte, o artista e o fazer artístico local através de recursos da Política Nacional Aldir Blanc.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "fomento cultural"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Capoeiras - PE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 20000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 20000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Cadastro homologado como agente cultural",
+          "Pessoas físicas residentes em Capoeiras"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20032",
+    "attributes": {
+      "nome": "Edital de Fomento a Ações Artísticas e Culturais – Política Nacional Aldir Blanc – Tamboril/CE – Edital nº 07/2026",
+      "e_central?": true,
+      "data_inicio": "2026-11-19",
+      "data_fim": "2026-11-27",
+      "valor_total": 17200
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20032",
+    "pdf_link": "https://mapacultural.secult.ce.gov.br/files/opportunity/8535/edital-07-2026-tamboril-completo-edital-anexos-assinado-compressed.pdf",
+    "full_text": "Edital de Fomento a Ações Artísticas e Culturais – Política Nacional Aldir Blanc – Tamboril/CE – Edital nº 07/2026 © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « vol",
+    "deep_metadata": {
+      "edital_id": "20032",
+      "resumo_objetivo": "Seleção de projetos de ações artísticas e culturais pelo Município de Tamboril/CE no âmbito da Política Nacional Aldir Blanc (PNAB). O objetivo é fomentar o setor cultural local por meio de apoio financeiro a agentes culturais.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "capoeira",
+        "povos de terreiro",
+        "maracatu",
+        "artesanato",
+        "reisado"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "CE"
+        ],
+        "municipios_permitidos": [
+          "Tamboril - CE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 3500,
+        "exige_contrapartida": true,
+        "valor_total_edital": 17200
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Ser residente ou sediado no Município de Tamboril/CE",
+          "Idade mínima de 18 anos completos para pessoas físicas e representantes"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1ocp8kBYO0ZdNZOqXbr2QLvGmXzgP9gF1/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20034",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 06/2026 – Seleção de projeto de formação e qualificação de agentes culturais e membros do Conselho Municipal de Políticas Culturais de Morada Nova – CE",
+      "e_central?": true,
+      "data_inicio": "2026-11-19",
+      "data_fim": "2026-11-27",
+      "valor_total": 10000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20034",
+    "pdf_link": "https://mapacultural.secult.ce.gov.br/files/opportunity/8533/edital-n-062026-de-formacao-cultural-pro-siec.pdf",
+    "full_text": "Edital de Chamamento Público nº 06/2026 – Seleção de projeto de formação e qualificação de agentes culturais e membros do Conselho Municipal de Políticas Culturais de Morada Nova – CE © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recu",
+    "deep_metadata": {
+      "edital_id": "20034",
+      "resumo_objetivo": "Seleção de projeto cultural de formação e qualificação de agentes culturais e membros do Conselho Municipal de Políticas Culturais de Morada Nova - CE.",
+      "temas_principais": [
+        "cultura",
+        "formação",
+        "capacitação",
+        "políticas culturais"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "CE"
+        ],
+        "municipios_permitidos": [
+          "Morada Nova - CE"
+        ],
+        "natureza_juridica_excluida": [
+          "fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 10000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 10000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Residir ou ser sediado em Morada Nova há pelo menos 2 anos",
+          "Ser maior de 18 anos"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1ARRmuCvhR9LoNuCx_7a1zuCeI7BKuTTs/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20037",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 03/2026 – Premiação Cultural Tupaciguara/MG",
+      "e_central?": true,
+      "data_inicio": "2026-11-23",
+      "data_fim": "2026-11-27",
+      "valor_total": 72000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20037",
+    "pdf_link": "https://culteditais.cultura.gov.br/files/opportunity/13357/00-edital-03-2026-premiacao-tupaciguara-assinado.pdf",
+    "full_text": "Edital de Chamamento Público nº 03/2026 – Premiação Cultural Tupaciguara/MG © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco T",
+    "deep_metadata": {
+      "edital_id": "20037",
+      "resumo_objetivo": "Concessão de premiações culturais a agentes culturais (pessoas físicas e grupos ou coletivos sem CNPJ) em reconhecimento a trajetórias e contribuições culturais já realizadas no Município de Tupaciguara/MG, com recursos da Política Nacional Aldir Blanc (PNAB).",
+      "temas_principais": [
+        "cultura",
+        "premiação cultural",
+        "arte"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Tupaciguara - MG"
+        ],
+        "natureza_juridica_excluida": [
+          "CNPJ",
+          "Microempreendedor Individual - MEI",
+          "pessoa jurídica com fins lucrativos",
+          "pessoa jurídica sem fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 72000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 72000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Idade mínima de 18 anos para pessoas físicas e representantes de grupos ou coletivos",
+          "Vínculo territorial ou cultural de no mínimo 2 anos com o Município de Tupaciguara/MG"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1J3iSZePFjOZXe_H2Y456JmFF4gAVP3xG/view?usp=drivesdk"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20038",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 001/2026 – Prêmio de Fomento à Cultura com recursos da PNAB (Serrinha/RN)",
+      "e_central?": true,
+      "data_inicio": "2026-11-23",
+      "data_fim": "2026-11-27",
+      "valor_total": 21000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20038",
+    "full_text": "Edital de Chamamento Público nº 001/2026 – Prêmio de Fomento à Cultura com recursos da PNAB (Serrinha/RN) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Iníci",
+    "deep_metadata": {
+      "edital_id": "20038",
+      "resumo_objetivo": "Reconhecer e premiar 30 agentes culturais com comprovada trajetória e contribuição artística ou cultural realizada no Município de Serrinha/RN.",
+      "temas_principais": [
+        "cultura",
+        "artes visuais",
+        "artes plásticas"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RN"
+        ],
+        "municipios_permitidos": [
+          "Serrinha - RN"
+        ],
+        "natureza_juridica_excluida": [
+          "pessoas jurídicas que não sejam MEI",
+          "fins lucrativos (exceto MEI)"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 21000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 21000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Pessoas físicas maiores de 18 anos ou MEIs",
+          "Residência no município de Serrinha/RN há pelo menos 24 meses",
+          "Comprovada trajetória e contribuição artística ou cultural realizada no Município de Serrinha/RN"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19976",
+    "attributes": {
+      "nome": "Speed GOV: Programa de Aceleração Prodesp + Sebrae for Startups",
+      "e_central?": true,
+      "data_inicio": "2026-10-19",
+      "data_fim": "2026-11-27"
+    },
+    "pipeline_status": "COMPLETED",
+    "pdf_link": "https://minio-cpe.sebrae.com.br/documento/politica-privacidade.pdf",
+    "full_text": "Speed GOV: Programa de Aceleração Prodesp + Sebrae for Startups © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Termos de Uso",
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19976",
+    "deep_metadata": {
+      "edital_id": "19976",
+      "resumo_objetivo": "Programa de aceleração voltado para startups de tecnologia com solução validada para vender ao setor público, promovendo capacitação comercial, orientação jurídica e conexão com desafios governamentais.",
+      "temas_principais": [
+        "startups",
+        "tecnologia",
+        "inovação",
+        "setor público"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "SP"
+        ],
+        "municipios_permitidos": [
+          "São Paulo - SP"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Startups de tecnologia que já têm solução validada"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1p0X5_3ABZMxzmWPDITJOuWgzybB4y2sV/view?usp=drivesdk"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20041",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 004/2026 – Aldir Blanc Ciclo II (PNAB) – Modalidade Curso de Música (Capoeiras/PE)",
+      "e_central?": true,
+      "data_inicio": "2026-11-17",
+      "data_fim": "2026-11-27",
+      "valor_total": 4000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20041",
+    "full_text": "Edital de Chamamento Público nº 004/2026 – Aldir Blanc Ciclo II (PNAB) – Modalidade Curso de Música (Capoeiras/PE) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « vol",
+    "deep_metadata": {
+      "edital_id": "20041",
+      "resumo_objetivo": "Seleção de projetos culturais de pessoas físicas para receber apoio financeiro destinado à realização de cursos de música voltados ao público infantojuvenil em Capoeiras/PE.",
+      "temas_principais": [
+        "cultura",
+        "música",
+        "educação"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Capoeiras - PE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 4000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 4000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para agentes culturais do município de Capoeiras"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20042",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 005/2026 – Aldir Blanc Ciclo II (PNAB) – Modalidade Workshop de Artesanato (Capoeiras/PE)",
+      "e_central?": true,
+      "data_inicio": "2026-11-17",
+      "data_fim": "2026-11-27",
+      "valor_total": 6000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20042",
+    "full_text": "Edital de Chamamento Público nº 005/2026 – Aldir Blanc Ciclo II (PNAB) – Modalidade Workshop de Artesanato (Capoeiras/PE) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suport",
+    "deep_metadata": {
+      "edital_id": "20042",
+      "resumo_objetivo": "Seleção de projetos culturais para a realização de workshops de artesanato no município de Capoeiras/PE, financiados com recursos da Política Nacional Aldir Blanc (PNAB).",
+      "temas_principais": [
+        "cultura",
+        "artesanato",
+        "workshop"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Capoeiras - PE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 6000,
+        "exige_contrapartida": true,
+        "valor_total_edital": 6000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para agentes culturais do município de Capoeiras/PE",
+          "Realização de workshop com duração mínima de 3 horas como contrapartida social"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20044",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 007/2026 – Aldir Blanc Ciclo II (PNAB) – Modalidade Apoio a Grupos ou Coletivos Culturais (Capoeiras/PE)",
+      "e_central?": true,
+      "data_inicio": "2026-11-17",
+      "data_fim": "2026-11-27",
+      "valor_total": 6000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20044",
+    "full_text": "Edital de Chamamento Público nº 007/2026 – Aldir Blanc Ciclo II (PNAB) – Modalidade Apoio a Grupos ou Coletivos Culturais (Capoeiras/PE) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfi",
+    "deep_metadata": {
+      "edital_id": "20044",
+      "resumo_objetivo": "Seleção de projetos de grupos ou coletivos culturais do município de Capoeiras/PE para receberem apoio financeiro da Política Nacional Aldir Blanc (PNAB).",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "coletivos culturais"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Capoeiras - PE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 6000,
+        "exige_contrapartida": true,
+        "valor_total_edital": 6000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Benefício exclusivo para residentes ou atuantes no Município de Capoeiras/PE",
+          "Contrapartida social de realização de apresentação artística gratuita ao vivo com duração mínima de 40 minutos"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20045",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 010/2026 – Aldir Blanc Ciclo II (PNAB) – Modalidade Apoio a associações de base comunitária cultural rural (Capoeiras/PE)",
+      "e_central?": true,
+      "data_inicio": "2026-11-17",
+      "data_fim": "2026-11-27",
+      "valor_total": 30000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20045",
+    "full_text": "Edital de Chamamento Público nº 010/2026 – Aldir Blanc Ciclo II (PNAB) – Modalidade Apoio a associações de base comunitária cultural rural (Capoeiras/PE) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Edit",
+    "deep_metadata": {
+      "edital_id": "20045",
+      "resumo_objetivo": "Apoiar associações sem fins lucrativos de base comunitária cultural rural no município de Capoeiras/PE por meio da Política Nacional Aldir Blanc (PNAB), visando instituir, estruturar e reafirmar o turismo cultural da zona rural.",
+      "temas_principais": [
+        "cultura",
+        "desenvolvimento comunitário",
+        "turismo cultural",
+        "associações"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Capoeiras - PE"
+        ],
+        "natureza_juridica_excluida": [
+          "com fins lucrativos",
+          "com fins econômicos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 30000,
+        "exige_contrapartida": true,
+        "valor_total_edital": 30000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Benefício exclusivo para associações de base comunitária cultural rural de Capoeiras/PE",
+          "Contrapartida social de disponibilização do espaço em parceria com o poder público para ações da Agenda Cultural de Capoeiras"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19952",
+    "attributes": {
+      "nome": "Chamamento Público nº 117/2026 – Edital nº 956/2026 – Premiação de Pontos e Pontões de Cultura (Cultura Viva/PNAB) – Capão da Canoa/RS",
+      "e_central?": true,
+      "data_inicio": "2026-11-23",
+      "data_fim": "2026-11-27",
+      "valor_total": 116621.44
+    },
+    "pipeline_status": "COMPLETED",
+    "full_text": "Chamamento Público nº 117/2026 – Edital nº 956/2026 – Premiação de Pontos e Pontões de Cultura (Cultura Viva/PNAB) – Capão da Canoa/RS © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil ",
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19952",
+    "deep_metadata": {
+      "edital_id": "19952",
+      "resumo_objetivo": "Premiação de Pontos e Pontões de Cultura no âmbito da Política Nacional Aldir Blanc (PNAB) e Cultura Viva no município de Capão da Canoa/RS.",
+      "temas_principais": [
+        "cultura",
+        "cultura viva",
+        "arte",
+        "cultura de base comunitária"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RS"
+        ],
+        "municipios_permitidos": [
+          "Capão da Canoa - RS"
+        ],
+        "natureza_juridica_excluida": [
+          "pessoa física",
+          "MEI",
+          "com fins lucrativos"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 29155.36,
+        "exige_contrapartida": false,
+        "valor_total_edital": 116621.44
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exclusivo para Pontos e Pontões de Cultura certificados ou coletivos que cumpram os requisitos da Política Nacional de Cultura Viva"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19962",
+    "attributes": {
+      "nome": "Edital Cultural de Chamamento Público nº 01/2026 – PNAB – Novo Xingu/RS",
+      "e_central?": true,
+      "data_inicio": "2026-11-16",
+      "data_fim": "2026-11-27",
+      "valor_total": 35340.88
+    },
+    "pipeline_status": "COMPLETED",
+    "pdf_link": "https://novoxingu.rs.gov.br/attachments/article/3234/Edital_PNAB_Novo_Xingu_2026_com_Anexos.docx_1_.pdf",
+    "full_text": "Edital Cultural de Chamamento Público nº 01/2026 – PNAB – Novo Xingu/RS © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Termo",
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19962",
+    "deep_metadata": {
+      "edital_id": "19962",
+      "resumo_objetivo": "O edital tem por objeto selecionar e apoiar propostas culturais e espaços culturais no Município de Novo Xingu/RS, com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB, contemplando fomento à cultura étnica e subsídio a espaços culturais tradicionalistas.",
+      "temas_principais": [
+        "cultura",
+        "cultura étnica",
+        "cultura tradicionalista",
+        "espaços culturais"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RS"
+        ],
+        "municipios_permitidos": [
+          "Novo Xingu - RS"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 35340.88,
+        "exige_contrapartida": false,
+        "valor_total_edital": 35340.88
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Possuir sede no Município de Novo Xingu/RS",
+          "Possuir finalidade cultural expressa em seu ato constitutivo ou estatuto",
+          "Para a Categoria 2, espaço cultural com pelo menos dois anos de funcionamento regular comprovado"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1npfAj9nOfMw65ct62ena67BFQqvD8_xK/view?usp=drivesdk"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19975",
+    "attributes": {
+      "nome": "Edital ITCG nº 01/2026 – Programa de Incubação 2027.1",
+      "e_central?": true,
+      "data_inicio": "2026-11-05",
+      "data_fim": "2026-11-27"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19975",
+    "pdf_link": "https://minio-cpe.sebrae.com.br/documento/politica-privacidade.pdf",
+    "full_text": "Edital ITCG nº 01/2026 – Programa de Incubação 2027.1 © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Termos de Uso e Polític",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "19975",
+      "resumo_objetivo": "O Edital ITCG nº 01/2026 seleciona startups e empresas de base tecnológica para o Programa de Incubação 2027.1, oferecendo jornada estruturada com mentorias e acompanhamento por etapas.",
+      "temas_principais": [
+        "startups",
+        "tecnologia",
+        "inovação",
+        "incubação"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PB"
+        ],
+        "municipios_permitidos": [
+          "Campina Grande - PB"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": null,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Seleção exclusiva para startups e empresas de base tecnológica"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1iPnWHYN11RVpCtLhRYujWi78S9g6vcpf/view?usp=drivesdk"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20046",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 011/2026 – Aldir Blanc Ciclo II (PNAB) – Categoria Game (campeonato/projeto de jogos eletrônicos) (Capoeiras/PE)",
+      "e_central?": true,
+      "data_inicio": "2026-11-17",
+      "data_fim": "2026-11-27",
+      "valor_total": 9500
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20046",
+    "full_text": "Edital de Chamamento Público nº 011/2026 – Aldir Blanc Ciclo II (PNAB) – Categoria Game (campeonato/projeto de jogos eletrônicos) (Capoeiras/PE) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acess",
+    "deep_metadata": {
+      "edital_id": "20046",
+      "resumo_objetivo": "Seleção de projeto de Pessoa Física na Categoria Game para realização de campeonato e/ou projeto de jogos eletrônicos no Município de Capoeiras/PE, promovendo inclusão digital e social.",
+      "temas_principais": [
+        "cultura",
+        "jogos eletrônicos",
+        "tecnologia",
+        "inclusão digital"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Capoeiras - PE"
+        ],
+        "natureza_juridica_excluida": [
+          "Pessoa Jurídica"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 9500,
+        "exige_contrapartida": true,
+        "valor_total_edital": 9500
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Seleção exclusiva para Pessoa Física",
+          "Contrapartida voltada à Agenda Cultural do município"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "pipeline_status": "COMPLETED",
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20043",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 006/2026 – Aldir Blanc Ciclo II (PNAB) – Modalidade Workshop em áreas diversas (fotografia, design, tranças afro, mídias sociais, argila etc.) (Capoeiras/PE)",
+      "e_central?": true,
+      "data_inicio": "2026-11-17",
+      "data_fim": "2026-11-27",
+      "valor_total": 2500
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20043",
+    "full_text": "Edital de Chamamento Público nº 006/2026 – Aldir Blanc Ciclo II (PNAB) – Modalidade Workshop em áreas diversas (fotografia, design, tranças afro, mídias sociais, argila etc.) (Capoeiras/PE) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação d",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "20043",
+      "resumo_objetivo": "Seleção de projetos culturais para a realização de workshops de curta duração em áreas diversas para compor a Agenda Cultural de Capoeiras.",
+      "temas_principais": [
+        "cultura",
+        "fotografia",
+        "design",
+        "cultura afro brasileira"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Capoeiras - PE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 2500,
+        "exige_contrapartida": false,
+        "valor_total_edital": 2500
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Benefício exclusivo para agentes culturais do município de Capoeiras"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20039",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 002/2026 – Seleção de projeto para Feira Multicultural (PNAB) (Serrinha/RN)",
+      "e_central?": true,
+      "data_inicio": "2026-11-23",
+      "data_fim": "2026-11-27",
+      "valor_total": 47500
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20039",
+    "full_text": "Edital de Chamamento Público nº 002/2026 – Seleção de projeto para Feira Multicultural (PNAB) (Serrinha/RN) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Iní",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "20039",
+      "resumo_objetivo": "Selecionar 01 projeto cultural para o planejamento, organização, produção e realização de uma Feira Multicultural em Serrinha/RN com recursos da PNAB.",
+      "temas_principais": [
+        "cultura",
+        "artes visuais",
+        "artesanato",
+        "patrimônio",
+        "gastronomia"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "RN"
+        ],
+        "municipios_permitidos": [
+          "Serrinha - RN"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 47500,
+        "exige_contrapartida": false,
+        "valor_total_edital": 47500
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Atuação cultural comprovada"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20036",
+    "attributes": {
+      "nome": "Regulamento Mostra Competitiva – 3ª Edição do Festival de Cinema do Sertão",
+      "e_central?": true,
+      "data_inicio": "2026-11-17",
+      "data_fim": "2026-11-27"
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20036",
+    "pdf_link": "https://mapacultural.secult.ce.gov.br/files/opportunity/8532/regulamento-3-edicao-do-festival-de-cinema-do-sertao-2.pdf",
+    "full_text": "Regulamento Mostra Competitiva – 3ª Edição do Festival de Cinema do Sertão © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blog Trabalhe Conosco Te",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "20036",
+      "resumo_objetivo": "O edital seleciona curtas-metragens para a Mostra Competitiva da 3ª Edição do Festival de Cinema do Sertão, visando promover e premiar a produção audiovisual do Sertão Central Cearense.",
+      "temas_principais": [
+        "audiovisual",
+        "cultura",
+        "cinema",
+        "curta-metragem"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "CE"
+        ],
+        "municipios_permitidos": [
+          "Banabuiú - CE",
+          "Choró - CE",
+          "Deputado Irapuan Pinheiro - CE",
+          "Ibaretama - CE",
+          "Ibicuitinga - CE",
+          "Milhã - CE",
+          "Mombaça - CE",
+          "Pedra Branca - CE",
+          "Piquet Carneiro - CE",
+          "Quixadá - CE",
+          "Quixeramobim - CE",
+          "Senador Pompeu - CE",
+          "Solonópole - CE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 2000,
+        "exige_contrapartida": false
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Curtas-metragens de ficção, documentário e animação com duração máxima de 30 minutos",
+          "Filmes finalizados entre janeiro de 2025 e outubro de 2026",
+          "Qualidade mínima Full HD (1920x1080)",
+          "Possuir legendas em português"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1QhM-macivj-Y4wHLt9GH2kWOCCtW0qvj/view?usp=drivesdk"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "19967",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 01/2026 – Premiação Cultural de Agentes Culturais (cultura alimentar, artesanato e manifestações artísticas) – PNAB – Piau/MG",
+      "e_central?": true,
+      "data_inicio": "2026-11-18",
+      "data_fim": "2026-11-27",
+      "valor_total": 10000
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=19967",
+    "pdf_link": "https://piau.mg.gov.br/uploads/publicacoes/8fa661c18603351fe5fb3089c528630d.pdf",
+    "full_text": "Edital de Chamamento Público nº 01/2026 – Premiação Cultural de Agentes Culturais (cultura alimentar, artesanato e manifestações artísticas) – PNAB – Piau/MG © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de ",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "19967",
+      "resumo_objetivo": "O edital tem por objetivo a concessão de premiação cultural a agentes culturais do Município de Piau/MG que tenham contribuído para a preservação, valorização e fortalecimento da cultura alimentar, do artesanato, da música e das demais manifestações artísticas e culturais locais.",
+      "temas_principais": [
+        "cultura",
+        "cultura alimentar",
+        "artesanato",
+        "música",
+        "manifestações artísticas"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MG"
+        ],
+        "municipios_permitidos": [
+          "Piau - MG"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 10000,
+        "exige_contrapartida": false,
+        "valor_total_edital": 10000
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Comprovar residência ou atuação no Município de Piau/MG conforme os requisitos específicos de cada categoria"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1Plsmy1FW1oBZSS4mIGuLCLF-4x61I9Gu/view?usp=drivesdk"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20073",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 014/2026 – Aldir Blanc Ciclo II (PNAB) – Capoeiras Valorizando: A Arte, O Artista e o Fazer Artístico – Gestão e operacionalização (Capoeiras/PE)",
+      "e_central?": true,
+      "data_inicio": "2026-11-23",
+      "data_fim": "2026-11-27",
+      "valor_total": 7993.4
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20073",
+    "full_text": "Edital de Chamamento Público nº 014/2026 – Aldir Blanc Ciclo II (PNAB) – Capoeiras Valorizando: A Arte, O Artista e o Fazer Artístico – Gestão e operacionalização (Capoeiras/PE) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos B",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "20073",
+      "resumo_objetivo": "Seleção de profissional para receber apoio financeiro na área de Gestão e Operacionalização, objetivando a formação de gestores públicos da cultura, apoio administrativo e consultoria para implementação de políticas culturais em Capoeiras/PE.",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "gestão cultural",
+        "políticas culturais"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Capoeiras - PE"
+        ],
+        "natureza_juridica_excluida": [
+          "pessoa jurídica"
+        ]
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 7993.4,
+        "exige_contrapartida": false,
+        "valor_total_edital": 7993.4
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Exige cadastro homologado como agente cultural",
+          "Exige residência em Capoeiras há pelo menos 6 meses"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20069",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 002/2026 – Seleção de Projetos PNAB (Aldir Blanc) – Água Boa/MT",
+      "e_central?": true,
+      "data_inicio": "2026-11-16",
+      "data_fim": "2026-11-27",
+      "valor_total": 258215.2
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20069",
+    "pdf_link": "https://www.aguaboa.mt.gov.br/attachments/article/7273/EDITAL%20ALDIR%20BLANC%20002-2026.pdf",
+    "full_text": "Edital de Chamamento Público nº 002/2026 – Seleção de Projetos PNAB (Aldir Blanc) – Água Boa/MT © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « voltar Início Blog Blo",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "20069",
+      "resumo_objetivo": "Seleção de projetos culturais para receberem apoio financeiro, visando incentivar as diversas formas de manifestações culturais do Município de Água Boa/MT através da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+      "temas_principais": [
+        "cultura",
+        "arte",
+        "audiovisual",
+        "música",
+        "patrimônio cultural"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "MT"
+        ],
+        "municipios_permitidos": [
+          "Água Boa - MT"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 258215.2,
+        "exige_contrapartida": false,
+        "valor_total_edital": 258215.2
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": true,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Atuar e residir no Município de Água Boa–MT há pelo menos seis meses",
+          "Apresentar currículo de prestação das atividades relativas ao projeto com descrição e fotos que comprovem atuação municipal em pelo menos 6 meses",
+          "Apresentação de Certidões Negativas de Débitos (federais, estaduais, municipais e trabalhistas)"
+        ]
+      },
+      "fonte_dados": "pdf",
+      "drive_pdf_link": "https://drive.google.com/file/d/1u-mwS7HWFhdpiqpOJOhZKVq5cCQmlGjd/view?usp=drivesdk"
+    },
+    "archived_at": "2026-11-28"
+  },
+  {
+    "id": "20047",
+    "attributes": {
+      "nome": "Edital de Chamamento Público nº 012/2026 – Aldir Blanc Ciclo II (PNAB) – Categoria Culinária Popular (Capoeiras/PE)",
+      "e_central?": true,
+      "data_inicio": "2026-11-17",
+      "data_fim": "2026-11-27",
+      "valor_total": 12374.63
+    },
+    "public_url": "https://produtos.prosas.com.br/editais/edital?edital_id=20047",
+    "full_text": "Edital de Chamamento Público nº 012/2026 – Aldir Blanc Ciclo II (PNAB) – Categoria Culinária Popular (Capoeiras/PE) © 2026 | PROSAS TECNOLOGIA SOCIAL LTDA Início Início Plataforma Plataforma Para Empresas Para Organizações Públicas Dados Dados para impacto Central de Editais Banco de Incentivados da Prosas - BIP Portal da Transparência dos Conselhos Portal da Lei Rouanet Portal da Lei do Esporte Programa de Dados Formações Formações Fomento à Cultura (PNAB) Fortalecimento de Conselhos (infância e pessoa idosa) Captação de Recursos Blog Blog Central de Editais Acessar Perfil Prosas Suporte « vo",
+    "pipeline_status": "COMPLETED",
+    "deep_metadata": {
+      "edital_id": "20047",
+      "resumo_objetivo": "Selecionar projeto na categoria Culinária Popular com apoio da Política Nacional Aldir Blanc de Fomento à Cultura, valorizando o conjunto de preparos, sabores, ingredientes e saberes tradicionais de Capoeiras/PE.",
+      "temas_principais": [
+        "cultura",
+        "culinária popular",
+        "patrimônio cultural"
+      ],
+      "prazo_de_inscricao": "2026-11-27",
+      "criterios_eliminatorios": {
+        "idade_minima_cnpj_anos": null,
+        "abrangencia_nacional": false,
+        "estados_permitidos": [
+          "PE"
+        ],
+        "municipios_permitidos": [
+          "Capoeiras - PE"
+        ],
+        "natureza_juridica_excluida": []
+      },
+      "financeiro": {
+        "valor_maximo_ou_global_reais": 12374.63,
+        "exige_contrapartida": false,
+        "valor_total_edital": 12374.63
+      },
+      "burocracia_e_documentos": {
+        "exige_cnd": false,
+        "exige_balanco_patrimonial": false,
+        "exige_cebas": false,
+        "exigencias_especificas_adicionais": [
+          "Benefício exclusivo para agentes culturais do município de Capoeiras/PE"
+        ]
+      },
+      "fonte_dados": "texto_pagina"
+    },
+    "archived_at": "2026-11-28"
   }
 ]
