@@ -1,1 +1,112 @@
-[]
+[
+  {
+    "ref": "AM-62",
+    "cnpj": "34101763000140",
+    "nome": "INSTITUTO AMIGOS SOLIDARIOS DO AMAZONAS - IAS - AM",
+    "phone": "5592992475438",
+    "simAtBrt": "27/11/2026, 15:36:37",
+    "status": "sent",
+    "provider": "meta",
+    "messageId": "wamid.HBgMNTU5MjkyNDc1NDM4FQIAERgSMDkzNjg2NjhEQkM5NDAxREJCAA==",
+    "sentAt": "2026-11-28T12:32:02.068Z"
+  },
+  {
+    "ref": "AM-71",
+    "cnpj": "24091653000191",
+    "nome": "INSTITUTO DE APOIO E INCLUSAO DA PESSOA COM DEFICIENCIA DO AMAZONAS",
+    "phone": "5592991824330",
+    "simAtBrt": "27/11/2026, 15:53:47",
+    "status": "sent",
+    "provider": "meta",
+    "messageId": "wamid.HBgMNTU5MjkxODI0MzMwFQIAERgSMTM2QTA1Q0MyRjY0RUE4MTkwAA==",
+    "sentAt": "2026-11-28T12:32:17.096Z"
+  },
+  {
+    "ref": "AM-68",
+    "cnpj": "27740250000114",
+    "nome": "ASSOCIACAO EDUCACIONAL, ESPORTIVA E SOCIAL VOZ ATIVA",
+    "phone": "5592982069585",
+    "simAtBrt": "27/11/2026, 16:02:53",
+    "status": "sent",
+    "provider": "meta",
+    "messageId": "wamid.HBgMNTU5MjgyMDY5NTg1FQIAERgSMzM3MTNDOTFDREQ5MEZCQjZEAA==",
+    "sentAt": "2026-11-28T12:32:30.064Z"
+  },
+  {
+    "ref": "AM-74",
+    "cnpj": "50487045000100",
+    "nome": "ASSOCIACAO DE KARATE KYOKUSHIN DOJO ELIANE",
+    "phone": "5592991132501",
+    "simAtBrt": "27/11/2026, 16:09:01",
+    "status": "sent",
+    "provider": "meta",
+    "messageId": "wamid.HBgMNTU5MjkxMTMyNTAxFQIAERgSRTY4OTcyMDIxM0ZBMEJEQjY2AA==",
+    "sentAt": "2026-11-28T12:32:41.013Z"
+  },
+  {
+    "ref": "AM-54",
+    "cnpj": "04238169000135",
+    "nome": "ASSOCIACAO DE PRODUTORES RURAIS DO ACAJATUBA - APRA",
+    "phone": "5592993590886",
+    "simAtBrt": "27/11/2026, 16:11:48",
+    "status": "sent",
+    "provider": "meta",
+    "messageId": "wamid.HBgMNTU5MjkzNTkwODg2FQIAERgSMTg0RDkwOUZBOEZENEQ2MjZDAA==",
+    "sentAt": "2026-11-28T12:32:50.796Z"
+  },
+  {
+    "ref": "AM-49",
+    "cnpj": "19751036000135",
+    "nome": "ASSOCIACAO COMUNITARIA E PRODUTORES RURAIS SAO JOAO - ACPRSJ",
+    "phone": "5592993751255",
+    "simAtBrt": "27/11/2026, 16:42:53",
+    "status": "sent",
+    "provider": "meta",
+    "messageId": "wamid.HBgMNTU5MjkzNzUxMjU1FQIAERgSRTNDQzk5MjgyN0UyOTIzQTYxAA==",
+    "sentAt": "2026-11-28T12:33:01.643Z"
+  },
+  {
+    "ref": "AM-63",
+    "cnpj": "35796551000198",
+    "nome": "INSTITUTO OLHAR SOLIDARIO",
+    "phone": "5592984098815",
+    "simAtBrt": "27/11/2026, 17:09:08",
+    "status": "sent",
+    "provider": "meta",
+    "messageId": "wamid.HBgMNTU5Mjg0MDk4ODE1FQIAERgSODBDNDg1MEYwNEZBNkU4MjY0AA==",
+    "sentAt": "2026-11-28T12:33:13.005Z"
+  },
+  {
+    "ref": "AM-61",
+    "cnpj": "33821478000131",
+    "nome": "INSTITUTO DE DESENVOLVIMENTO COMUNITARIO VIVER MELHOR - IDECOVIM",
+    "phone": "5592984383985",
+    "simAtBrt": "27/11/2026, 17:10:51",
+    "status": "sent",
+    "provider": "meta",
+    "messageId": "wamid.HBgMNTU5Mjg0MzgzOTg1FQIAERgSN0RDOTE5QzEwNkUyRTU2NzI2AA==",
+    "sentAt": "2026-11-28T12:33:25.536Z"
+  },
+  {
+    "ref": "AM-76",
+    "cnpj": "19504121000107",
+    "nome": "INSTITUTO SOCIAL NORTE BRASIL-ISNB",
+    "phone": "5592981898337",
+    "simAtBrt": "27/11/2026, 16:11:35",
+    "status": "sent",
+    "provider": "meta",
+    "messageId": "wamid.HBgMNTU5MjgxODk4MzM3FQIAERgSNzZBNUJDMjYyNTk2N0VENkRFAA==",
+    "sentAt": "2026-11-28T12:33:37.858Z"
+  },
+  {
+    "ref": "AM-56",
+    "cnpj": "00646294000123",
+    "nome": "ASSOCIACAO COMUNITARIA RURAL SAO JOSE",
+    "phone": "5592995038125",
+    "simAtBrt": "27/11/2026, 18:11:59",
+    "status": "sent",
+    "provider": "meta",
+    "messageId": "wamid.HBgMNTU5Mjk1MDM4MTI1FQIAERgSMkNEOUJGNUIyNTFGMzg0MjZGAA==",
+    "sentAt": "2026-11-28T12:33:47.908Z"
+  }
+]
